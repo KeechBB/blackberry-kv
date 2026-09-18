@@ -4,17 +4,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BlackBerry КВ — слоты месяца</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="atmosphere" aria-hidden="true">
+    <div class="fog fog-a"></div>
+    <div class="fog fog-b"></div>
+    <div class="grid"></div>
+  </div>
+
   <main class="wrap">
-    <header class="head">
-      <p class="brand">BlackBerry</p>
-      <h1 id="title">КВ — слоты месяца</h1>
-      <div class="stats" id="stats"></div>
+    <header class="hero">
+      <div class="hero-brand">
+        <img class="crest" src="assets/blackberry.png" alt="BlackBerry" width="160" height="160" />
+        <div class="hero-copy">
+          <p class="eyebrow">bbsquad.online</p>
+          <h1>BLACKBERRY</h1>
+          <p class="tagline" id="title">КВ — слоты месяца</p>
+        </div>
+      </div>
+      <div class="hero-stats" id="stats"></div>
     </header>
-    <section>
-      <h2>Все слоты месяца</h2>
+
+    <section class="board">
+      <div class="board-head">
+        <h2>Все слоты месяца</h2>
+        <p class="board-sub">Тикеты — наши : их</p>
+      </div>
       <div class="table-scroll">
         <table>
           <thead>
@@ -38,6 +57,7 @@
       <p class="note" id="note"></p>
     </section>
   </main>
+
   <script src="app.js"></script>
 </body>
 </html>

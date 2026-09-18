@@ -26,15 +26,15 @@
     const wr = played.length ? Math.round((100 * wins) / played.length) : 0;
 
     document.getElementById("stats").innerHTML = [
-      ["Всего", matches.length],
-      ["Сыграно", played.length],
-      ["Впереди", upcoming.length],
-      ["W–D–L", `${wins}–${draws}–${losses}`],
-      ["Winrate", `${wr}%`],
+      ["Всего", matches.length, ""],
+      ["Сыграно", played.length, ""],
+      ["Впереди", upcoming.length, ""],
+      ["W–D–L", `${wins}–${draws}–${losses}`, ""],
+      ["Winrate", `${wr}%`, "winrate"],
     ]
       .map(
-        ([k, v]) =>
-          `<div class="stat"><span class="k">${k}</span><span class="v">${v}</span></div>`
+        ([k, v, cls]) =>
+          `<div class="stat ${cls}"><span class="k">${k}</span><span class="v">${v}</span></div>`
       )
       .join("");
 
