@@ -720,8 +720,8 @@
         (p, i) => `<tr>
         <td class="ctr">${i + 1}</td>
         <td>${nickLinkHtml(p.nick)}</td>
-        <td>${escapeHtml(p.clan || "—")}</td>
-        <td>${escapeHtml(p.squad || "—")}</td>
+        <td class="ctr">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr">${escapeHtml(p.squad || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
         <td class="ctr">${p.res}</td>

@@ -932,7 +932,7 @@ body.modal-open { overflow: hidden; }
 }
 .rating-table th {
   white-space: nowrap;
-  vertical-align: bottom;
+  vertical-align: middle;
   font-size: 0.78rem;
   letter-spacing: 0.02em;
   text-align: center;
@@ -942,9 +942,18 @@ body.modal-open { overflow: hidden; }
 .rating-table th.col-mvp-war,
 .rating-table th.col-mvp-anti {
   white-space: normal;
-  line-height: 1.15;
-  min-width: 4.6rem;
-  max-width: 5.8rem;
+  line-height: 1.2;
+  min-width: 5.2rem;
+  max-width: 7rem;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.rating-table th[data-rsort="clan"],
+.rating-table th[data-rsort="squad"],
+.rating-table td:nth-child(3),
+.rating-table td:nth-child(4) {
   text-align: center;
 }
 .rating-table th.col-mvp-anti,
