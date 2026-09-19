@@ -132,6 +132,44 @@ body.layout-cw .wrap {
   justify-content: center;
   gap: 12px;
 }
+.topnav-auth {
+  justify-self: end;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.btn-auth {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(232, 121, 249, 0.65);
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.4), rgba(217, 70, 239, 0.28));
+  color: #fff;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-family: var(--font-display);
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-auth:hover {
+  border-color: rgba(232, 121, 249, 0.9);
+  box-shadow: 0 0 22px rgba(167, 139, 250, 0.35);
+}
+.btn-auth.ghost {
+  background: transparent;
+  border-color: rgba(196, 181, 253, 0.45);
+  color: #f5f0ff;
+  font-weight: 600;
+}
+.btn-auth.ghost:hover {
+  background: rgba(167, 139, 250, 0.14);
+}
 .nav-btn {
   border: 1px solid rgba(196, 181, 253, 0.45);
   background: rgba(167, 139, 250, 0.08);
@@ -180,6 +218,11 @@ body.layout-cw .wrap {
     justify-items: center;
   }
   .topnav-brand { justify-self: center; }
+  .topnav-auth {
+    justify-self: center;
+    width: 100%;
+    justify-content: center;
+  }
   .nav-btn {
     padding: 10px 18px;
     font-size: 1rem;
