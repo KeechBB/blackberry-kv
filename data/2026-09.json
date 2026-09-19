@@ -1,9 +1,10 @@
 {
   "month": "2026-09",
   "title": "BlackBerry КВ — сентябрь 2026",
-  "note": "Тикеты — наши:их. Winrate = победы встреч / сыгранные (ничья не победа). Junior заморожен с 14.09.",
+  "note": "Тикеты — наши:их. Winrate = победы встреч / сыгранные (ничья не победа). Junior заморожен с 14.09. Клик по строке — стата игроков (когда внесена со скринов).",
   "matches": [
     {
+      "id": "04-20royals",
       "day": 4,
       "timeMsk": "18:00",
       "timeUtc": "—",
@@ -142,6 +143,7 @@
       "note": "r2 пиррова"
     },
     {
+      "id": "18-ih",
       "day": 18,
       "timeMsk": "21:00",
       "timeUtc": "18:00",
@@ -155,7 +157,8 @@
       "meeting": "2–0",
       "r1": "141:0",
       "r2": "43:0",
-      "note": "Iron Horde · bbsquad FCL ARENA"
+      "note": "Iron Horde · bbsquad FCL ARENA",
+      "playersUrl": "data/players/18-ih.json"
     },
     {
       "day": 22,

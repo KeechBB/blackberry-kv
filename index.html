@@ -21,7 +21,6 @@
       <div class="hero-brand">
         <img class="crest" src="assets/blackberry.png" alt="BlackBerry" width="160" height="160" />
         <div class="hero-copy">
-          <p class="eyebrow">bbsquad.online</p>
           <h1>BLACKBERRY</h1>
           <p class="tagline" id="title">КВ — слоты месяца</p>
         </div>
@@ -32,7 +31,7 @@
     <section class="board">
       <div class="board-head">
         <h2>Все слоты месяца</h2>
-        <p class="board-sub">Тикеты — наши : их</p>
+        <p class="board-sub">Тикеты — наши : их · клик по строке — стата игроков</p>
       </div>
       <div class="table-scroll">
         <table>
@@ -57,6 +56,25 @@
       <p class="note" id="note"></p>
     </section>
   </main>
+
+  <div class="modal" id="match-modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <header class="modal-head">
+        <div>
+          <h2 id="modal-title">Катка</h2>
+          <p class="modal-sub" id="modal-sub"></p>
+        </div>
+        <button type="button" class="modal-close" data-close aria-label="Закрыть">×</button>
+      </header>
+      <div class="modal-tabs" id="modal-tabs" hidden>
+        <button type="button" class="tab active" data-tab="total">Итого</button>
+        <button type="button" class="tab" data-tab="r1">Раунд 1</button>
+        <button type="button" class="tab" data-tab="r2">Раунд 2</button>
+      </div>
+      <div class="modal-body" id="modal-body"></div>
+    </div>
+  </div>
 
   <script src="app.js"></script>
 </body>
