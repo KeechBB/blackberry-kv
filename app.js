@@ -224,20 +224,32 @@
     return rows.reduce((m, p) => Math.max(m, Number(p[key]) || 0), 0);
   }
 
+  function kdOf(p) {
+    const kills = Number(p.kills) || 0;
+    const deaths = Number(p.deaths) || 0;
+    return deaths === 0 ? kills : kills / deaths;
+  }
+
   function pickMvps(rows) {
     if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
-    const tops = {
-      medic: maxOf(rows, "res"),
-      killer: maxOf(rows, "kills"),
-      damage: maxOf(rows, "dmg"),
-      antiDeath: maxOf(rows, "deaths"),
-    };
+    const kinds = [
+      { key: "medic", field: "res", preferHigherKd: true },
+      { key: "killer", field: "kills", preferHigherKd: true },
+      { key: "damage", field: "dmg", preferHigherKd: true },
+      { key: "antiDeath", field: "deaths", preferHigherKd: false },
+    ];
     const out = { medic: [], killer: [], damage: [], antiDeath: [] };
-    rows.forEach((p) => {
-      if (tops.medic > 0 && p.res === tops.medic) out.medic.push(p.nick);
-      if (tops.killer > 0 && p.kills === tops.killer) out.killer.push(p.nick);
-      if (tops.damage > 0 && p.dmg === tops.damage) out.damage.push(p.nick);
-      if (tops.antiDeath > 0 && p.deaths === tops.antiDeath) out.antiDeath.push(p.nick);
+    kinds.forEach(({ key, field, preferHigherKd }) => {
+      const top = maxOf(rows, field);
+      if (top <= 0) return;
+      const tied = rows.filter((p) => (Number(p[field]) || 0) === top);
+      tied.sort((a, b) => {
+        const ak = kdOf(a);
+        const bk = kdOf(b);
+        if (ak !== bk) return preferHigherKd ? bk - ak : ak - bk;
+        return String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
+      });
+      out[key] = [tied[0].nick];
     });
     return out;
   }
