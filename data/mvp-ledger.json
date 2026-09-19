@@ -1,9 +1,18 @@
 {
-  "note": "Накопительный MVP/Anti-MVP по КВ. Ничья: MVP→выше KD, Anti-MVP→ниже KD. Потом в профили.",
+  "note": "За раунд: 3 MVP (Medic/Killer/Damage) + 1 Anti-MVP. За игру: 6 MVP + 2 Anti. Один человек может взять несколько MVP в раунде. Ничья: MVP→выше KD, Anti→ниже KD.",
+  "perRound": {
+    "mvp": 3,
+    "anti": 1,
+    "samePersonMultipleMvp": true
+  },
+  "perMatch": {
+    "mvp": 6,
+    "anti": 2
+  },
   "tiebreak": {
     "mvp": "higher KD",
     "antiDeath": "lower KD",
-    "kdEqual": "nick locale ru"
+    "kdEqual": "nick"
   },
   "updated": "2026-09-19",
   "matches": [

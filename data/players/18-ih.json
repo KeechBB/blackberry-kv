@@ -488,5 +488,35 @@
       "build": "5300 / 8400",
       "fobsCreated": "4 / 3"
     }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Gadler"
+      ],
+      "killer": [
+        "Diray"
+      ],
+      "damage": [
+        "Blizzardrix"
+      ],
+      "antiDeath": [
+        "angel"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "Diray"
+      ],
+      "damage": [
+        "Gadler"
+      ],
+      "antiDeath": [
+        "angel"
+      ]
+    }
   }
 }

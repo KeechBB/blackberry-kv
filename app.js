@@ -158,7 +158,7 @@
             r1,
             r2,
             details: data.details || null,
-            mvpByRound: {
+            mvpByRound: data.mvp || {
               r1: pickMvps(r1),
               r2: pickMvps(r2),
             },
@@ -231,6 +231,7 @@
   }
 
   function pickMvps(rows) {
+    // За раунд: 1 Medic + 1 Killer + 1 Damage + 1 Anti-MVP (один человек может взять несколько MVP).
     if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
     const kinds = [
       { key: "medic", field: "res", preferHigherKd: true },
