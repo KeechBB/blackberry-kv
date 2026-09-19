@@ -23,7 +23,7 @@
   const INDEX_URL = "data/index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
-  const DATA_VER = "20260919-hellfix";
+  const DATA_VER = "20260919-numfix";
 
   function dataUrl(url) {
     if (!url) return url;
@@ -80,6 +80,10 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  function num(v) {
+    return v == null || v === "" ? "—" : escapeHtml(v);
   }
 
   function syncDualScroll(wrap) {
