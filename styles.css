@@ -27,6 +27,7 @@ html, body {
   color: var(--ink);
   font-family: var(--font-body);
   background: var(--bg);
+  color-scheme: dark;
 }
 
 .atmosphere {
@@ -258,12 +259,44 @@ html, body {
 }
 .filter select,
 .filter input {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(167, 139, 250, 0.28);
   border-radius: 12px;
-  background: rgba(0, 0, 0, 0.28);
+  background: #14111f;
   color: var(--ink);
   padding: 10px 12px;
   font: inherit;
+  color-scheme: dark;
+}
+.filter select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, #c4b5fd 50%),
+    linear-gradient(135deg, #c4b5fd 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 12px) calc(50% - 3px);
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  background-color: #14111f;
+  padding-right: 34px;
+}
+.filter select:hover,
+.filter select:focus,
+.filter input:hover,
+.filter input:focus {
+  border-color: rgba(167, 139, 250, 0.55);
+  background-color: #1a1528;
+  outline: none;
+}
+.filter select option,
+.filter select optgroup {
+  background-color: #14111f;
+  color: #f2eefc;
+}
+.filter select option:checked,
+.filter select option:hover {
+  background-color: #2a2150;
+  color: #fff;
+}
+.filter input::placeholder {
+  color: #7a738f;
 }
 .filter-grow { flex: 1 1 220px; }
 .month-chips {
