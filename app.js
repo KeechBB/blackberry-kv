@@ -24,6 +24,14 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const DATA_VER = "20260919-maps";
+  const isEmbed =
+    new URLSearchParams(location.search).has("embed") || window.self !== window.top;
+  if (isEmbed) {
+    document.documentElement.classList.add("embed");
+    if (!location.hash || location.hash === "#" || location.hash === "#/") {
+      history.replaceState(null, "", `${location.pathname}${location.search}#/cw`);
+    }
+  }
 
   function dataUrl(url) {
     if (!url) return url;

@@ -140,6 +140,11 @@ body.layout-cw .wrap {
   justify-content: flex-end;
   gap: 10px;
 }
+
+/* Inside platform iframe: hide duplicate header (auth lives on bb-squad.ru) */
+html.embed .topnav {
+  display: none;
+}
 .btn-auth {
   display: inline-flex;
   align-items: center;
