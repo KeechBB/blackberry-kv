@@ -153,12 +153,13 @@
         .then((data) => {
           const r1 = enrichRows(data.r1 || []);
           const r2 = enrichRows(data.r2 || []);
+          // Всегда пересчитываем MVP на клиенте (ничья → KD), файл mvp — канон для ledger.
           modalPlayers = {
             total: enrichRows(data.total || data.players || sumRounds(r1, r2)),
             r1,
             r2,
             details: data.details || null,
-            mvpByRound: data.mvp || {
+            mvpByRound: {
               r1: pickMvps(r1),
               r2: pickMvps(r2),
             },
@@ -231,18 +232,13 @@
   }
 
   function pickMvps(rows) {
-    // За раунд: 1 Medic + 1 Killer + 1 Damage + 1 Anti-MVP (один человек может взять несколько MVP).
+    // За раунд: 1 Medic + 1 Killer + 1 Damage + 1 Anti-MVP.
+    // Ничья: MVP → выше KD; Anti-MVP Death → ниже KD (хуже играл).
     if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
-    const kinds = [
-      { key: "medic", field: "res", preferHigherKd: true },
-      { key: "killer", field: "kills", preferHigherKd: true },
-      { key: "damage", field: "dmg", preferHigherKd: true },
-      { key: "antiDeath", field: "deaths", preferHigherKd: false },
-    ];
-    const out = { medic: [], killer: [], damage: [], antiDeath: [] };
-    kinds.forEach(({ key, field, preferHigherKd }) => {
+
+    function winner(field, preferHigherKd) {
       const top = maxOf(rows, field);
-      if (top <= 0) return;
+      if (top <= 0) return null;
       const tied = rows.filter((p) => (Number(p[field]) || 0) === top);
       tied.sort((a, b) => {
         const ak = kdOf(a);
@@ -250,9 +246,15 @@
         if (ak !== bk) return preferHigherKd ? bk - ak : ak - bk;
         return String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
       });
-      out[key] = [tied[0].nick];
-    });
-    return out;
+      return tied[0].nick;
+    }
+
+    return {
+      medic: [winner("res", true)].filter(Boolean),
+      killer: [winner("kills", true)].filter(Boolean),
+      damage: [winner("dmg", true)].filter(Boolean),
+      antiDeath: [winner("deaths", false)].filter(Boolean),
+    };
   }
 
   function medalCountsForNick(nick) {
