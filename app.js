@@ -403,10 +403,10 @@
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
         <td class="ctr">${p.dmg}</td>
-        <td class="ctr">${p.mvpMedic}</td>
-        <td class="ctr">${p.mvpKiller}</td>
-        <td class="ctr">${p.mvpDamage}</td>
-        <td class="ctr">${p.antiDeath}</td>
+        <td class="ctr col-mvp-medic">${p.mvpMedic}</td>
+        <td class="ctr col-mvp-killer">${p.mvpKiller}</td>
+        <td class="ctr col-mvp-war">${p.mvpDamage}</td>
+        <td class="ctr col-mvp-anti">${p.antiDeath}</td>
       </tr>`
       )
       .join("");
@@ -594,10 +594,11 @@
   function renderMedals(nick) {
     const counts = modalTab === "total" ? medalCountsForNick(nick) : roundMvpsForNick(nick);
     const parts = [];
+    const kindClass = { medic: "medic", killer: "killer", damage: "war", antiDeath: "anti" };
     ["medic", "killer", "damage", "antiDeath"].forEach((kind) => {
       const n = counts[kind];
       if (!n) return;
-      const cls = kind === "antiDeath" ? "mvp-badge anti" : "mvp-badge";
+      const cls = `mvp-badge ${kindClass[kind]}`;
       const label = n > 1 ? `×${n} ${MVP_LABEL[kind]}` : MVP_LABEL[kind];
       parts.push(
         `<span class="${cls}" title="${escapeHtml(label)}">` +

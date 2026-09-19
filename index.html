@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260919-nav" />
+  <link rel="stylesheet" href="styles.css?v=20260919-cwfix" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -62,15 +62,8 @@
         </div>
         <div class="month-chips" id="month-chips" aria-label="Месяцы"></div>
 
-        <header class="hero hero-compact">
-          <div class="hero-brand">
-            <img class="crest crest-sm" src="assets/blackberry.png" alt="" width="88" height="88" />
-            <div class="hero-copy">
-              <h2 id="title">КВ — слоты месяца</h2>
-            </div>
-          </div>
-          <div class="hero-stats" id="stats"></div>
-        </header>
+        <div class="hero-stats hero-stats-inline" id="stats"></div>
+        <p class="cw-month-title" id="title">КВ — слоты месяца</p>
 
         <section class="board">
           <div class="board-head">
@@ -133,10 +126,10 @@
                   <th class="ctr sortable" data-rsort="deaths">Смерти</th>
                   <th class="ctr sortable" data-rsort="kd">KD</th>
                   <th class="ctr sortable" data-rsort="dmg">Боевой счёт</th>
-                  <th class="ctr sortable" data-rsort="mvpMedic">MVP Medic</th>
-                  <th class="ctr sortable" data-rsort="mvpKiller">MVP Killer</th>
-                  <th class="ctr sortable" data-rsort="mvpDamage">MVP War-Score</th>
-                  <th class="ctr sortable" data-rsort="antiDeath">Anti-MVP</th>
+                  <th class="ctr sortable col-mvp-medic" data-rsort="mvpMedic">MVP Medic</th>
+                  <th class="ctr sortable col-mvp-killer" data-rsort="mvpKiller">MVP Killer</th>
+                  <th class="ctr sortable col-mvp-war" data-rsort="mvpDamage">MVP War-Score</th>
+                  <th class="ctr sortable col-mvp-anti" data-rsort="antiDeath">Anti-MVP</th>
                 </tr>
               </thead>
               <tbody id="rating-rows"></tbody>
@@ -167,6 +160,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260919-shell"></script>
+  <script src="app.js?v=20260919-cwfix"></script>
 </body>
 </html>
