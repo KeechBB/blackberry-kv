@@ -789,37 +789,34 @@
   }
 
   function paintDetails() {
-    const d = modalPlayers.details;
-    if (!d) return "";
-    const block = modalTab === "r1" ? d.r1 : modalTab === "r2" ? d.r2 : d.total;
-    if (!block) return "";
-    const title =
-      modalTab === "r1"
-        ? `Сводка R1 · ${escapeHtml(block.tickets || "")} · ${escapeHtml(block.len || "")}`
-        : modalTab === "r2"
-          ? `Сводка R2 · ${escapeHtml(block.tickets || "")} · ${escapeHtml(block.len || "")}`
-          : `Сводка встречи · ${escapeHtml(block.tickets || "")}`;
-    const rows = [
-      ["Цели", block.goals],
-      ["Пехота", block.infantry],
-      ["ФОБ", block.fob],
-      ["Техника", block.veh],
-      ["Bleed", block.bleed],
-      ["БК", block.ammo],
-      ["Стройка", block.build],
-      ["ФОБ поставлено", block.fobsCreated],
-    ].filter(([, v]) => v != null && v !== "");
+    const m = modalMatch;
+    if (!m) return "";
+    const d = modalPlayers && modalPlayers.details;
+    const dateStr = `${pad(m.day)}.${monthKey}.${m._year || currentMonthMeta?.year || "2026"}`;
+
+    let tickets = "—";
+    let len = "—";
+    if (modalTab === "r1") {
+      tickets = (d && d.r1 && d.r1.tickets) || m.r1 || "—";
+      len = (d && d.r1 && d.r1.len) || "—";
+    } else if (modalTab === "r2") {
+      tickets = (d && d.r2 && d.r2.tickets) || m.r2 || "—";
+      len = (d && d.r2 && d.r2.len) || "—";
+    } else {
+      const t1 = (d && d.r1 && d.r1.tickets) || m.r1 || "—";
+      const t2 = (d && d.r2 && d.r2.tickets) || m.r2 || "—";
+      tickets = `${t1} · ${t2}`;
+      const l1 = d && d.r1 && d.r1.len;
+      const l2 = d && d.r2 && d.r2.len;
+      len = l1 || l2 ? [l1, l2].filter(Boolean).join(" · ") : "—";
+    }
+
     return `
-      <div class="match-summary">
-        <p class="match-summary-title">${title}</p>
-        <p class="match-summary-hint">наши : их · из Details</p>
+      <div class="match-summary match-summary-slim">
         <div class="match-summary-grid">
-          ${rows
-            .map(
-              ([k, v]) =>
-                `<div class="match-summary-item"><span class="k">${escapeHtml(k)}</span><span class="v">${escapeHtml(v)}</span></div>`
-            )
-            .join("")}
+          <div class="match-summary-item"><span class="k">Дата</span><span class="v">${escapeHtml(dateStr)}</span></div>
+          <div class="match-summary-item"><span class="k">Тикеты</span><span class="v">${escapeHtml(tickets)}</span></div>
+          <div class="match-summary-item"><span class="k">Время</span><span class="v">${escapeHtml(len)}</span></div>
         </div>
       </div>`;
   }
