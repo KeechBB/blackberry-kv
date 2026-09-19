@@ -183,6 +183,7 @@
   function showView(name) {
     document.getElementById("view-home").hidden = name !== "home";
     document.getElementById("view-cw").hidden = name !== "cw";
+    document.body.classList.toggle("layout-cw", name === "cw");
     document.querySelectorAll(".nav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.nav === name);
     });
