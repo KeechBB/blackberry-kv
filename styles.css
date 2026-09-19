@@ -727,15 +727,26 @@ body.modal-open { overflow: hidden; }
 }
 .nick-cell {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
 }
-.nick-name { font-weight: 600; }
+.nick-name {
+  font-weight: 600;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .mvp-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 4px;
+  flex: 0 0 auto;
 }
 .mvp-badge {
   display: inline-flex;
