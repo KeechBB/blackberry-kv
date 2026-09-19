@@ -23,6 +23,13 @@
   const INDEX_URL = "data/index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
+  const DATA_VER = "20260919-hellfix";
+
+  function dataUrl(url) {
+    if (!url) return url;
+    const sep = String(url).includes("?") ? "&" : "?";
+    return `${url}${sep}v=${DATA_VER}`;
+  }
   const MVP_ICONS = {
     medic: "assets/mvp/medic.svg",
     killer: "assets/mvp/killer.svg",
@@ -312,7 +319,7 @@
     if (!meta) return;
     currentMonthMeta = meta;
     monthKey = pad(meta.month);
-    fetch(meta.url)
+    fetch(dataUrl(meta.url))
       .then((r) => {
         if (!r.ok) throw new Error("Не удалось загрузить месяц");
         return r.json();
@@ -396,7 +403,7 @@
   /* ——— rating ——— */
   function ensureLedger() {
     if (ledger) return Promise.resolve(ledger);
-    return fetch(LEDGER_URL)
+    return fetch(dataUrl(LEDGER_URL))
       .then((r) => (r.ok ? r.json() : { players: {}, matches: [] }))
       .then((data) => {
         ledger = data;
@@ -419,7 +426,7 @@
       return;
     }
 
-    Promise.all(metas.map((meta) => fetch(meta.url).then((r) => r.json()).then((data) => ({ meta, data }))))
+    Promise.all(metas.map((meta) => fetch(dataUrl(meta.url)).then((r) => r.json()).then((data) => ({ meta, data }))))
       .then((months) => {
         const matchList = [];
         months.forEach(({ data }) => {
@@ -429,7 +436,7 @@
         });
         return Promise.all(
           matchList.map((m) =>
-            fetch(m.playersUrl)
+            fetch(dataUrl(m.playersUrl))
               .then((r) => (r.ok ? r.json() : null))
               .then((pj) => ({ match: m, players: pj }))
               .catch(() => ({ match: m, players: null }))
@@ -634,7 +641,7 @@
     }
 
     if (m.playersUrl) {
-      fetch(m.playersUrl)
+      fetch(dataUrl(m.playersUrl))
         .then((r) => {
           if (!r.ok) throw new Error("Нет файла статистики");
           return r.json();
@@ -655,10 +662,11 @@
           labelTabs(m);
           paintPlayers();
         })
-        .catch(() => {
+        .catch((err) => {
+          console.error("players load failed", m.playersUrl, err);
           modalBody.innerHTML =
-            `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
-            `Ресы / ноки / килы / смерти / боевой счёт — со скринов табло.</p>`;
+            `<p class="modal-empty">Не удалось загрузить статистику.<br>` +
+            `Обнови страницу (Ctrl+F5) и открой катку ещё раз.</p>`;
         });
       return;
     }
@@ -1030,11 +1038,11 @@
 
   /* ——— boot ——— */
   Promise.all([
-    fetch(INDEX_URL).then((r) => {
+    fetch(dataUrl(INDEX_URL)).then((r) => {
       if (!r.ok) throw new Error("Нет каталога месяцев");
       return r.json();
     }),
-    fetch(TIERS_URL)
+    fetch(dataUrl(TIERS_URL))
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null),
   ])
