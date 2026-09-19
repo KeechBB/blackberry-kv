@@ -807,6 +807,24 @@ body.modal-open { overflow: hidden; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.nick-profile-link {
+  color: #efe8ff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.4);
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nick-profile-link:hover {
+  color: #c4b5fd;
+  border-bottom-color: #c4b5fd;
+}
+.rating-table .nick-profile-link {
+  display: inline;
+}
 .mvp-row {
   display: flex;
   flex-wrap: nowrap;

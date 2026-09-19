@@ -25,6 +25,7 @@
   const TIERS_URL = "data/tiers.json";
   const DATA_VER = "20260919-maps";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
+  const PROFILE_BASE = "https://bb-squad.ru/players";
   const isEmbed =
     new URLSearchParams(location.search).has("embed") || window.self !== window.top;
   if (isEmbed) {
@@ -143,6 +144,27 @@
       .replace(/^\[bb\]\s*/i, "")
       .replace(/^\[cam\]\s*/i, "")
       .toLowerCase();
+  }
+
+  function profileNick(nick) {
+    return String(nick || "")
+      .trim()
+      .replace(/^\[bb\]\s*/i, "")
+      .replace(/^\[cam\]\s*/i, "")
+      .trim();
+  }
+
+  function profileHref(nick) {
+    const clean = profileNick(nick);
+    if (!clean || clean === "—") return null;
+    return `${PROFILE_BASE}/${encodeURIComponent(clean)}`;
+  }
+
+  function nickLinkHtml(nick) {
+    const label = nick || "—";
+    const href = profileHref(nick);
+    if (!href) return escapeHtml(label);
+    return `<a class="nick-profile-link" href="${escapeHtml(href)}" target="_top" rel="noopener">${escapeHtml(label)}</a>`;
   }
 
   function inRating(nick) {
@@ -627,7 +649,7 @@
       .map(
         (p, i) => `<tr>
         <td class="ctr">${i + 1}</td>
-        <td>${escapeHtml(p.nick)}</td>
+        <td>${nickLinkHtml(p.nick)}</td>
         <td>${escapeHtml(p.clan || "—")}</td>
         <td>${escapeHtml(p.squad || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
@@ -985,7 +1007,7 @@
                 const kd = kdValue(p);
                 return `<tr>
               <td class="ctr">${i + 1}</td>
-              <td><div class="nick-cell"><span class="nick-name">${escapeHtml(p.nick || "—")}</span>${renderMedals(p.nick)}</div></td>
+              <td><div class="nick-cell">${nickLinkHtml(p.nick || "—")}${renderMedals(p.nick)}</div></td>
               ${cellRecord(p.res, records.res > 0 && p.res === records.res, false)}
               ${cellRecord(p.nok, records.nok > 0 && p.nok === records.nok, false)}
               ${cellRecord(p.kills, records.kills > 0 && p.kills === records.kills, false)}
