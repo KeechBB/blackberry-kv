@@ -385,6 +385,46 @@ body.modal-open { overflow: hidden; }
   background: rgba(167, 139, 250, 0.08);
 }
 
+.match-summary {
+  margin: 0 0 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.22);
+}
+.match-summary-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+.match-summary-hint {
+  margin: 4px 0 10px;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+.match-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px 12px;
+}
+.match-summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.match-summary-item .k {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: var(--font-display);
+}
+.match-summary-item .v {
+  font-variant-numeric: tabular-nums;
+  font-size: 0.92rem;
+}
+
 @keyframes rise {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }

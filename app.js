@@ -141,6 +141,7 @@
             total: data.total || data.players || sumRounds(r1, r2),
             r1,
             r2,
+            details: data.details || null,
           };
           labelTabs(m);
           paintPlayers();
@@ -202,6 +203,7 @@
     const sorted = rows.slice().sort((a, b) => (b.kills || 0) - (a.kills || 0) || (b.dmg || 0) - (a.dmg || 0));
     const foot = totalsRow(sorted);
     modalBody.innerHTML = `
+      ${paintDetails()}
       <div class="players-scroll">
         <table class="players-table">
           <thead>
@@ -242,6 +244,43 @@
             </tr>
           </tfoot>
         </table>
+      </div>`;
+  }
+
+  function paintDetails() {
+    const d = modalPlayers.details;
+    if (!d) return "";
+    const block =
+      modalTab === "r1" ? d.r1 : modalTab === "r2" ? d.r2 : d.total;
+    if (!block) return "";
+    const title =
+      modalTab === "r1"
+        ? `Сводка R1 · ${escapeHtml(block.tickets || "")} · ${escapeHtml(block.len || "")}`
+        : modalTab === "r2"
+          ? `Сводка R2 · ${escapeHtml(block.tickets || "")} · ${escapeHtml(block.len || "")}`
+          : `Сводка встречи · ${escapeHtml(block.tickets || "")}`;
+    const rows = [
+      ["Цели", block.goals],
+      ["Пехота", block.infantry],
+      ["ФОБ", block.fob],
+      ["Техника", block.veh],
+      ["Bleed", block.bleed],
+      ["БК", block.ammo],
+      ["Стройка", block.build],
+      ["ФОБ поставлено", block.fobsCreated],
+    ].filter(([, v]) => v != null && v !== "");
+    return `
+      <div class="match-summary">
+        <p class="match-summary-title">${title}</p>
+        <p class="match-summary-hint">наши : их · из Details</p>
+        <div class="match-summary-grid">
+          ${rows
+            .map(
+              ([k, v]) =>
+                `<div class="match-summary-item"><span class="k">${escapeHtml(k)}</span><span class="v">${escapeHtml(v)}</span></div>`
+            )
+            .join("")}
+        </div>
       </div>`;
   }
 
