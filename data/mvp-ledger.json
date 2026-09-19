@@ -1,5 +1,5 @@
 {
-  "note": "За раунд: 3 MVP (Medic/Killer/Damage) + 1 Anti-MVP. За игру: 6 MVP + 2 Anti. Один человек может взять несколько MVP в раунде. Ничья: MVP→выше KD, Anti→ниже KD.",
+  "note": "За раунд: 3 MVP + 1 Anti. Ничья: метрика → KD (MVP↑ / Anti↓) → боевой счёт (MVP↑ / Anti↓) → ник.",
   "perRound": {
     "mvp": 3,
     "anti": 1,

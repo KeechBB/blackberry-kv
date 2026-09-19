@@ -617,7 +617,7 @@
       (p) => (Number(p.res) || 0) + (Number(p.nok) || 0) + (Number(p.kills) || 0) + (Number(p.deaths) || 0) > 0
     );
     if (!pool.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
-    function winner(field, preferHigherKd) {
+    function winner(field, preferHigherKd, preferHigherDmg) {
       const top = maxOf(pool, field);
       if (top <= 0) return null;
       const tied = pool.filter((p) => (Number(p[field]) || 0) === top);
@@ -625,15 +625,18 @@
         const ak = kdOf(a);
         const bk = kdOf(b);
         if (ak !== bk) return preferHigherKd ? bk - ak : ak - bk;
+        const ad = Number(a.dmg) || 0;
+        const bd = Number(b.dmg) || 0;
+        if (ad !== bd) return preferHigherDmg ? bd - ad : ad - bd;
         return String(a.nick || "").localeCompare(String(b.nick || ""), "ru", { sensitivity: "base" });
       });
       return tied[0].nick;
     }
     return {
-      medic: [winner("res", true)].filter(Boolean),
-      killer: [winner("kills", true)].filter(Boolean),
-      damage: [winner("dmg", true)].filter(Boolean),
-      antiDeath: [winner("deaths", false)].filter(Boolean),
+      medic: [winner("res", true, true)].filter(Boolean),
+      killer: [winner("kills", true, true)].filter(Boolean),
+      damage: [winner("dmg", true, true)].filter(Boolean),
+      antiDeath: [winner("deaths", false, false)].filter(Boolean),
     };
   }
 
