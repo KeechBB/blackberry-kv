@@ -202,18 +202,6 @@
       "status": "upcoming"
     },
     {
-      "day": 25,
-      "timeMsk": "20:00",
-      "timeUtc": "17:00",
-      "opp": "CUT",
-      "map": "SEC 26 GooseBay AAS v1",
-      "size": "26v26",
-      "server": "CUT",
-      "rules": "SEC",
-      "stack": "Main",
-      "status": "upcoming"
-    },
-    {
       "day": 27,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
