@@ -1,0 +1,249 @@
+{
+  "note": "Накопительный MVP/Anti-MVP по КВ. Потом уйдёт в профили игроков.",
+  "updated": "2026-09-19",
+  "matches": [
+    {
+      "id": "18-ih",
+      "day": 18,
+      "opp": "IH",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "lepurple",
+          "Gadler"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "Blizzardrix"
+        ],
+        "antiDeath": [
+          "angel",
+          "freak"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "Diray",
+          "S.M.P",
+          "Gadler"
+        ],
+        "damage": [
+          "Gadler"
+        ],
+        "antiDeath": [
+          "iKEppA",
+          "lepurple",
+          "Summer",
+          "angel"
+        ]
+      }
+    }
+  ],
+  "players": {
+    "Blizzardrix": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP Damage"
+        }
+      ]
+    },
+    "Diray": {
+      "mvpMedic": 0,
+      "mvpKiller": 2,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Gadler": {
+      "mvpMedic": 1,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP Damage"
+        }
+      ]
+    },
+    "Morty": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "S.M.P": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Summer": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "angel": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 2,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "freak": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "iKEppA": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "lepurple": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    }
+  }
+}
