@@ -66,6 +66,8 @@
   let ratingRows = [];
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
+  let matchSortKey = "date";
+  let matchSortDir = "asc";
   let rosterByNick = {};
 
   let modalMatch = null;
@@ -374,13 +376,16 @@
       });
   }
 
-  function matchColValue(m, col) {
-    const st = m.status || "upcoming";
-    switch (col) {
+  function matchSortValue(m, key) {
+    switch (key) {
       case "date":
-        return `${pad(m.day)}.${monthKey}`;
-      case "time":
-        return m.timeMsk || "";
+        return Number(m.day) || 0;
+      case "time": {
+        const t = String(m.timeMsk || "");
+        const parts = t.split(":");
+        if (parts.length >= 2) return Number(parts[0]) * 60 + Number(parts[1]);
+        return t;
+      }
       case "clan":
         return m.clan || "BlackBerry";
       case "opp":
@@ -399,54 +404,70 @@
         return m.r1 || "";
       case "r2":
         return m.r2 || "";
-      case "status":
-        return st;
+      case "status": {
+        const order = { win: 1, draw: 2, lose: 3, upcoming: 4 };
+        return order[m.status || "upcoming"] || 9;
+      }
       default:
         return "";
     }
   }
 
-  function colFilterValues() {
-    const out = {};
-    document.querySelectorAll(".matches-table .col-filter").forEach((el) => {
-      const key = el.dataset.col;
-      if (!key) return;
-      out[key] = (el.value || "").trim().toLowerCase();
-    });
-    return out;
-  }
-
   function filteredMatches() {
     const q = (document.getElementById("filter-clan").value || "").trim().toLowerCase();
-    const cols = colFilterValues();
-    return matches.filter((m) => {
-      if (q) {
+    let list = matches;
+    if (q) {
+      list = list.filter((m) => {
         const clanName = String(m.clan || "BlackBerry").toLowerCase();
         const opp = String(m.opp || "").toLowerCase();
-        if (!clanName.includes(q) && !opp.includes(q)) return false;
+        return clanName.includes(q) || opp.includes(q);
+      });
+    }
+    const dir = matchSortDir === "asc" ? 1 : -1;
+    const textKeys = new Set(["clan", "opp", "map", "size", "server", "stack", "meeting", "r1", "r2"]);
+    return list.slice().sort((a, b) => {
+      const av = matchSortValue(a, matchSortKey);
+      const bv = matchSortValue(b, matchSortKey);
+      if (textKeys.has(matchSortKey) || typeof av === "string" || typeof bv === "string") {
+        const cmp = String(av).localeCompare(String(bv), "ru", { numeric: true, sensitivity: "base" });
+        if (cmp) return dir * cmp;
+      } else if (av !== bv) {
+        return dir * (Number(av) - Number(bv));
       }
-      for (const [col, needle] of Object.entries(cols)) {
-        if (!needle) continue;
-        const raw = matchColValue(m, col);
-        if (col === "status") {
-          if (String(raw).toLowerCase() !== needle) return false;
-          continue;
-        }
-        if (!String(raw).toLowerCase().includes(needle)) return false;
-      }
-      return true;
+      const dayCmp = (Number(a.day) || 0) - (Number(b.day) || 0);
+      if (dayCmp) return dayCmp;
+      return String(a.timeMsk || "").localeCompare(String(b.timeMsk || ""), "ru");
     });
   }
 
-  function wireMatchColFilters() {
+  function paintMatchSortMarks() {
+    document.querySelectorAll(".matches-table th.sortable").forEach((th) => {
+      const key = th.dataset.msort;
+      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      th.dataset.label = base;
+      const active = matchSortKey === key;
+      const arrow = active ? (matchSortDir === "asc" ? "▲" : "▼") : "";
+      th.classList.toggle("is-sorted", active);
+      th.setAttribute("aria-sort", active ? (matchSortDir === "asc" ? "ascending" : "descending") : "none");
+      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+    });
+  }
+
+  function wireMatchSort() {
     const table = document.querySelector(".matches-table");
-    if (!table || table.dataset.filtersWired) return;
-    table.dataset.filtersWired = "1";
-    table.querySelectorAll(".col-filter").forEach((el) => {
-      const evt = el.tagName === "SELECT" ? "change" : "input";
-      el.addEventListener(evt, paintMatchesTable);
-      el.addEventListener("click", (e) => e.stopPropagation());
-      el.addEventListener("keydown", (e) => e.stopPropagation());
+    if (!table || table.dataset.sortWired) return;
+    table.dataset.sortWired = "1";
+    table.querySelectorAll("th.sortable").forEach((th) => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.msort;
+        if (!key) return;
+        if (matchSortKey === key) matchSortDir = matchSortDir === "asc" ? "desc" : "asc";
+        else {
+          matchSortKey = key;
+          matchSortDir = key === "date" || key === "time" || key === "status" ? "asc" : "asc";
+        }
+        paintMatchesTable();
+      });
     });
   }
 
@@ -470,6 +491,7 @@
 
   function paintMatchesTable() {
     const list = filteredMatches();
+    paintMatchSortMarks();
     paintStats(list);
     const tbody = document.getElementById("rows");
     if (!list.length) {
@@ -1197,7 +1219,7 @@
       tiersData = tiers;
       tierByNick = buildTierIndex(tiers);
       fillYearMonthSelects();
-      wireMatchColFilters();
+      wireMatchSort();
       paintMonthChips();
       loadSelectedMonth();
       applyHash();

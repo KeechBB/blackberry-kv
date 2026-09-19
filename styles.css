@@ -569,51 +569,12 @@ th {
   background: rgba(0, 0, 0, 0.28);
 }
 
-.matches-table thead tr.col-filters th {
-  padding: 6px 8px 10px;
-  background: rgba(0, 0, 0, 0.38);
-  border-bottom: 1px solid rgba(167, 139, 250, 0.14);
-  text-transform: none;
-  letter-spacing: 0;
-  font-weight: 400;
-  vertical-align: middle;
-}
-
-.matches-table .col-filter {
-  width: 100%;
-  min-width: 52px;
-  max-width: 140px;
-  box-sizing: border-box;
-  padding: 6px 8px;
-  border-radius: 8px;
-  border: 1px solid rgba(167, 139, 250, 0.22);
-  background: rgba(8, 6, 16, 0.85);
-  color: var(--ink);
-  font: inherit;
-  font-size: 0.78rem;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.matches-table .col-filter:hover,
-.matches-table .col-filter:focus {
-  outline: none;
-  border-color: rgba(192, 132, 252, 0.55);
-}
-
-.matches-table .col-filter::placeholder {
-  color: rgba(180, 190, 210, 0.35);
-}
-
-.matches-table th:has(.col-filter[data-col="map"]) .col-filter,
-.matches-table th:has(.col-filter[data-col="server"]) .col-filter {
-  max-width: 180px;
-}
-
-.matches-table th:has(.col-filter[data-col="status"]) .col-filter {
-  max-width: 120px;
+.matches-table th.sortable {
   cursor: pointer;
+  user-select: none;
 }
+.matches-table th.sortable:hover { color: var(--ink); }
+.matches-table th.is-sorted { color: var(--ink); }
 
 tr:last-child td { border-bottom: none; }
 tbody tr { transition: background 0.2s ease; }
