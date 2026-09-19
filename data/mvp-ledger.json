@@ -17,6 +17,40 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "11-dcai",
+      "day": 11,
+      "opp": "DCAI",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "Archi"
+        ],
+        "killer": [
+          "r4mp"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "DarkVader"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "ADUN"
+        ],
+        "killer": [
+          "Durik"
+        ],
+        "damage": [
+          "Durik"
+        ],
+        "antiDeath": [
+          "Trigger"
+        ]
+      }
+    },
+    {
       "id": "12-hell",
       "day": 12,
       "opp": "HELL",
@@ -257,11 +291,19 @@
   ],
   "players": {
     "ADUN": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "12-hell",
           "day": 12,
@@ -309,6 +351,22 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Archi": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -384,6 +442,22 @@
         }
       ]
     },
+    "DarkVader": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Diray": {
       "mvpMedic": 0,
       "mvpKiller": 4,
@@ -426,10 +500,26 @@
     },
     "Durik": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "15-dcai",
           "day": 15,
@@ -764,8 +854,16 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "12-hell",
           "day": 12,
@@ -779,9 +877,17 @@
     "Trixx": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "12-hell",
           "day": 12,
@@ -925,6 +1031,22 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "r4mp": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
