@@ -22,6 +22,7 @@
   ];
   const INDEX_URL = "data/index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
+  const TIERS_URL = "data/tiers.json";
   const MVP_ICONS = {
     medic: "assets/mvp/medic.svg",
     killer: "assets/mvp/killer.svg",
@@ -34,12 +35,15 @@
     damage: "MVP War-Score",
     antiDeath: "Anti-MVP Death",
   };
+  const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
 
   let catalog = [];
   let currentMonthMeta = null;
   let monthData = null;
   let matches = [];
   let ledger = null;
+  let tiersData = null;
+  let tierByNick = new Map();
   let ratingRows = [];
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
@@ -71,6 +75,54 @@
 
   function num(v) {
     return v == null || v === "" ? "—" : escapeHtml(v);
+  }
+
+  function nickKey(nick) {
+    return String(nick || "")
+      .trim()
+      .replace(/^\[bb\]\s*/i, "")
+      .replace(/^\[cam\]\s*/i, "")
+      .toLowerCase();
+  }
+
+  function buildTierIndex(data) {
+    const map = new Map();
+    if (!data) return map;
+    const aliases = data.aliases || {};
+    Object.keys(aliases).forEach((k) => {
+      /* alias keys already lower */
+    });
+    [
+      [1, data.tier1 || []],
+      [2, data.tier2 || []],
+      [3, data.tier3 || []],
+    ].forEach(([tier, list]) => {
+      list.forEach((n) => map.set(nickKey(n), tier));
+    });
+    Object.entries(aliases).forEach(([alias, canon]) => {
+      const t = map.get(nickKey(canon));
+      if (t) map.set(nickKey(alias), t);
+    });
+    // common scoreboard spellings
+    [
+      ["_vagner_", 2],
+      ["vagner", 2],
+      ["cat", 1],
+      ["lordwolf", 1],
+      ["ikeappa", 1],
+      ["ikeppa", 1],
+    ].forEach(([k, t]) => {
+      if (!map.has(k)) map.set(k, t);
+    });
+    return map;
+  }
+
+  function tierOf(nick) {
+    return tierByNick.get(nickKey(nick)) || 4;
+  }
+
+  function tierLabel(tier) {
+    return TIER_LABEL[tier] || TIER_LABEL[4];
   }
 
   /* ——— navigation ——— */
@@ -347,6 +399,7 @@
           if (!map.has(nick)) {
             map.set(nick, {
               nick,
+              tier: tierOf(nick),
               kv: 0,
               res: 0,
               nok: 0,
@@ -444,6 +497,10 @@
     const dir = ratingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
       if (ratingSortKey === "nick") return dir * a.nick.localeCompare(b.nick, "ru");
+      if (ratingSortKey === "tier") {
+        if (a.tier !== b.tier) return dir * (a.tier - b.tier);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
       const av = Number(a[ratingSortKey]) || 0;
       const bv = Number(b[ratingSortKey]) || 0;
       if (av !== bv) return dir * (av - bv);
@@ -454,7 +511,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="13" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="14" class="empty-row">Нет игроков</td></tr>`;
       return;
     }
     tbody.innerHTML = rows
@@ -462,6 +519,7 @@
         (p, i) => `<tr>
         <td class="ctr">${i + 1}</td>
         <td>${escapeHtml(p.nick)}</td>
+        <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
         <td class="ctr">${p.res}</td>
         <td class="ctr">${p.nok}</td>
@@ -484,7 +542,7 @@
       if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
       else {
         ratingSortKey = key;
-        ratingSortDir = key === "nick" ? "asc" : "desc";
+        ratingSortDir = key === "nick" || key === "tier" ? "asc" : "desc";
       }
       paintRatingTable();
     });
@@ -876,13 +934,19 @@
   });
 
   /* ——— boot ——— */
-  fetch(INDEX_URL)
-    .then((r) => {
+  Promise.all([
+    fetch(INDEX_URL).then((r) => {
       if (!r.ok) throw new Error("Нет каталога месяцев");
       return r.json();
-    })
-    .then((data) => {
+    }),
+    fetch(TIERS_URL)
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null),
+  ])
+    .then(([data, tiers]) => {
       catalog = data.months || [];
+      tiersData = tiers;
+      tierByNick = buildTierIndex(tiers);
       fillYearMonthSelects();
       paintMonthChips();
       loadSelectedMonth();

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260919-sortind" />
+  <link rel="stylesheet" href="styles.css?v=20260919-tier" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -128,6 +128,7 @@
                 <tr>
                   <th class="ctr">№</th>
                   <th class="sortable" data-rsort="nick" data-label="Ник">Ник</th>
+                  <th class="ctr sortable" data-rsort="tier" data-label="Ранг">Ранг</th>
                   <th class="ctr sortable" data-rsort="kv" data-label="Кол-во КВ">Кол-во КВ</th>
                   <th class="ctr sortable" data-rsort="res" data-label="Ресы">Ресы</th>
                   <th class="ctr sortable" data-rsort="nok" data-label="Ноки">Ноки</th>
@@ -138,7 +139,7 @@
                   <th class="ctr sortable col-mvp-medic" data-rsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
                   <th class="ctr sortable col-mvp-killer" data-rsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
                   <th class="ctr sortable col-mvp-war" data-rsort="mvpDamage" data-label="MVP War-Score">MVP War-Score</th>
-                  <th class="ctr sortable col-mvp-anti" data-rsort="antiDeath" data-label="Anti-MVP">Anti-MVP</th>
+                  <th class="ctr sortable col-mvp-anti" data-rsort="antiDeath" data-label="Anti-MVP" title="Anti-MVP Death">Anti-MVP</th>
                 </tr>
               </thead>
               <tbody id="rating-rows"></tbody>
@@ -169,6 +170,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260919-freakanti"></script>
+  <script src="app.js?v=20260919-tier"></script>
 </body>
 </html>

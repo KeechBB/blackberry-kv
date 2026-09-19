@@ -17,6 +17,40 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "16-hell",
+      "day": 16,
+      "opp": "HELL",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "_VaGNeR_"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "Blizzardrix"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Mukuru"
+        ],
+        "antiDeath": [
+          "Radislave"
+        ]
+      }
+    },
+    {
       "id": "17-44th",
       "day": 17,
       "opp": "44th",
@@ -106,8 +140,16 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 1,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "18-ih",
           "day": 18,
@@ -199,11 +241,19 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "17-44th",
           "day": 17,
@@ -211,6 +261,22 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Kuchenchips": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -227,6 +293,46 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Mukuru": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Radislave": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -251,6 +357,22 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "_VaGNeR_": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -291,6 +413,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "iKEppA": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     }

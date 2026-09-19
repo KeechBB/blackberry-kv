@@ -112,6 +112,7 @@
       "r2": "68:0"
     },
     {
+      "id": "16-hell",
       "day": 16,
       "timeMsk": "20:00",
       "timeUtc": "—",
@@ -124,7 +125,8 @@
       "status": "win",
       "meeting": "2–0",
       "r1": "148:0",
-      "r2": "138:0"
+      "r2": "138:0",
+      "playersUrl": "data/players/16-hell.json"
     },
     {
       "id": "17-44th",

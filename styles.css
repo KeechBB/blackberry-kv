@@ -718,6 +718,19 @@ body.modal-open { overflow: hidden; }
 .col-mvp-killer { color: var(--mvp-killer) !important; }
 .col-mvp-war { color: var(--mvp-war) !important; }
 .col-mvp-anti { color: var(--mvp-anti) !important; }
+.rating-table {
+  min-width: 1100px;
+}
+.rating-table th {
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+.rating-table th.col-mvp-anti,
+.rating-table td.col-mvp-anti {
+  min-width: 5.5rem;
+  padding-left: 10px;
+  padding-right: 12px;
+}
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
 .rating-table th.col-mvp-war,
@@ -731,6 +744,15 @@ body.modal-open { overflow: hidden; }
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
+.rating-table td.tier {
+  font-weight: 600;
+  white-space: nowrap;
+  font-size: 0.84rem;
+}
+.rating-table td.tier-1 { color: #7dd3fc; }
+.rating-table td.tier-2 { color: #86efac; }
+.rating-table td.tier-3 { color: #fde047; }
+.rating-table td.tier-4 { color: var(--muted); }
 .players-table tfoot td {
   border-top: 1px solid rgba(167, 139, 250, 0.28);
   border-bottom: none;
