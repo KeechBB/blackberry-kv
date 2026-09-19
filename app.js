@@ -709,31 +709,75 @@
 
   function pickMvps(rows) {
     if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
-    // Камера / нулевые строки без боя — не в MVP.
     const pool = rows.filter(
       (p) => (Number(p.res) || 0) + (Number(p.nok) || 0) + (Number(p.kills) || 0) + (Number(p.deaths) || 0) > 0
     );
     if (!pool.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
-    function winner(field, preferHigherKd, preferHigherDmg) {
-      const top = maxOf(pool, field);
+    function nickCmp(a, b) {
+      return String(a.nick || "").localeCompare(String(b.nick || ""), "ru", { sensitivity: "base" });
+    }
+    function pickMedic() {
+      const top = maxOf(pool, "res");
       if (top <= 0) return null;
-      const tied = pool.filter((p) => (Number(p[field]) || 0) === top);
+      const tied = pool.filter((p) => (Number(p.res) || 0) === top);
+      tied.sort((a, b) => {
+        const ad = Number(a.dmg) || 0;
+        const bd = Number(b.dmg) || 0;
+        if (ad !== bd) return bd - ad;
+        return nickCmp(a, b);
+      });
+      return tied[0].nick;
+    }
+    function pickKiller() {
+      const top = maxOf(pool, "kills");
+      if (top <= 0) return null;
+      const tied = pool.filter((p) => (Number(p.kills) || 0) === top);
+      tied.sort((a, b) => {
+        const an = Number(a.nok) || 0;
+        const bn = Number(b.nok) || 0;
+        if (an !== bn) return bn - an;
+        const ak = kdOf(a);
+        const bk = kdOf(b);
+        if (ak !== bk) return bk - ak;
+        const ad = Number(a.dmg) || 0;
+        const bd = Number(b.dmg) || 0;
+        if (ad !== bd) return bd - ad;
+        return nickCmp(a, b);
+      });
+      return tied[0].nick;
+    }
+    function pickDamage() {
+      const top = maxOf(pool, "dmg");
+      if (top <= 0) return null;
+      const tied = pool.filter((p) => (Number(p.dmg) || 0) === top);
       tied.sort((a, b) => {
         const ak = kdOf(a);
         const bk = kdOf(b);
-        if (ak !== bk) return preferHigherKd ? bk - ak : ak - bk;
+        if (ak !== bk) return bk - ak;
+        return nickCmp(a, b);
+      });
+      return tied[0].nick;
+    }
+    function pickAnti() {
+      const top = maxOf(pool, "deaths");
+      if (top <= 0) return null;
+      const tied = pool.filter((p) => (Number(p.deaths) || 0) === top);
+      tied.sort((a, b) => {
+        const ak = kdOf(a);
+        const bk = kdOf(b);
+        if (ak !== bk) return ak - bk;
         const ad = Number(a.dmg) || 0;
         const bd = Number(b.dmg) || 0;
-        if (ad !== bd) return preferHigherDmg ? bd - ad : ad - bd;
-        return String(a.nick || "").localeCompare(String(b.nick || ""), "ru", { sensitivity: "base" });
+        if (ad !== bd) return ad - bd;
+        return nickCmp(a, b);
       });
       return tied[0].nick;
     }
     return {
-      medic: [winner("res", true, true)].filter(Boolean),
-      killer: [winner("kills", true, true)].filter(Boolean),
-      damage: [winner("dmg", true, true)].filter(Boolean),
-      antiDeath: [winner("deaths", false, false)].filter(Boolean),
+      medic: [pickMedic()].filter(Boolean),
+      killer: [pickKiller()].filter(Boolean),
+      damage: [pickDamage()].filter(Boolean),
+      antiDeath: [pickAnti()].filter(Boolean),
     };
   }
 

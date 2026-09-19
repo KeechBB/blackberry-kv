@@ -26,7 +26,7 @@
           "Radislave"
         ],
         "killer": [
-          "_VaGNeR_"
+          "Kuchenchips"
         ],
         "damage": [
           "Kuchenchips"
@@ -57,7 +57,7 @@
       "meeting": "1–1",
       "r1": {
         "medic": [
-          "AkiN"
+          "Kroasawn"
         ],
         "killer": [
           "Diray"
@@ -120,22 +120,6 @@
     }
   ],
   "players": {
-    "AkiN": {
-      "mvpMedic": 1,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "17-44th",
-          "day": 17,
-          "opp": "44th",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
     "Blizzardrix": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -241,7 +225,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -258,6 +242,14 @@
           "matchId": "17-44th",
           "day": 17,
           "opp": "44th",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "17-44th",
+          "day": 17,
+          "opp": "44th",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -266,10 +258,18 @@
     },
     "Kuchenchips": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "16-hell",
           "day": 16,
@@ -357,22 +357,6 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
-        }
-      ]
-    },
-    "_VaGNeR_": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "16-hell",
-          "day": 16,
-          "opp": "HELL",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
         }
       ]
     },
