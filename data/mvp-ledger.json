@@ -17,6 +17,74 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "13-20r",
+      "day": 13,
+      "opp": "20Royals",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "firs"
+        ],
+        "killer": [
+          "ADUN"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Zik"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "ART"
+        ],
+        "damage": [
+          "ART"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      }
+    },
+    {
+      "id": "13-two",
+      "day": 13,
+      "opp": "TWO",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "Bks"
+        ],
+        "killer": [
+          "SHURUP"
+        ],
+        "damage": [
+          "SHURUP"
+        ],
+        "antiDeath": [
+          "rezZzister"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "lepurple"
+        ],
+        "killer": [
+          "Nestor Mahno"
+        ],
+        "damage": [
+          "Keech"
+        ],
+        "antiDeath": [
+          "Keech"
+        ]
+      }
+    },
+    {
       "id": "15-dcai",
       "day": 15,
       "opp": "DCAI",
@@ -154,6 +222,62 @@
     }
   ],
   "players": {
+    "ADUN": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "ART": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Bks": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Blizzardrix": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -277,9 +401,25 @@
     "Keech": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
-      "antiDeath": 0,
+      "mvpDamage": 2,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "15-dcai",
           "day": 15,
@@ -386,6 +526,22 @@
         }
       ]
     },
+    "Mahorka": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Morty": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -418,12 +574,36 @@
         }
       ]
     },
+    "Nestor Mahno": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "Radislave": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "16-hell",
           "day": 16,
@@ -442,12 +622,44 @@
         }
       ]
     },
+    "SHURUP": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 2,
+      "mvpDamage": 3,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "17-44th",
           "day": 17,
@@ -463,6 +675,22 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Zik": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -506,6 +734,22 @@
         }
       ]
     },
+    "firs": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "freak": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -543,6 +787,38 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        }
+      ]
+    },
+    "lepurple": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "rezZzister": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     }

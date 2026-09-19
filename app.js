@@ -23,7 +23,7 @@
   const INDEX_URL = "data/index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
-  const DATA_VER = "20260919-dcai15";
+  const DATA_VER = "20260919-junior13";
 
   function dataUrl(url) {
     if (!url) return url;
@@ -44,7 +44,7 @@
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
   // Камера / не в составе — не в рейтинге игроков.
-  const RATING_EXCLUDE = new Set(["shrein"]);
+  const RATING_EXCLUDE = new Set(["shrein", "flex"]);
 
   let catalog = [];
   let currentMonthMeta = null;

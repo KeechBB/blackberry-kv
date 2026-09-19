@@ -67,6 +67,7 @@
       "note": "r2 пиррова"
     },
     {
+      "id": "13-20r",
       "day": 13,
       "timeMsk": "21:00",
       "timeUtc": "18:00",
@@ -79,9 +80,11 @@
       "status": "lose",
       "meeting": "0–2",
       "r1": "0:133",
-      "r2": "0:157"
+      "r2": "0:157",
+      "playersUrl": "data/players/13-20r.json"
     },
     {
+      "id": "13-two",
       "day": 13,
       "timeMsk": "23:00",
       "timeUtc": "20:00",
@@ -94,7 +97,8 @@
       "status": "lose",
       "meeting": "0–2",
       "r1": "0:117",
-      "r2": "0:77"
+      "r2": "0:77",
+      "playersUrl": "data/players/13-two.json"
     },
     {
       "id": "15-dcai",

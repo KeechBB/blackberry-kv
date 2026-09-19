@@ -1,0 +1,608 @@
+{
+  "matchId": "13-two",
+  "opp": "TWO",
+  "note": "Junior vs TWO (TWC). Ресы/ноки/килы/смерти/боевой счёт. FLEX камера. R1 на табло ~34 из 36.",
+  "r1": [
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 52
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 286
+    },
+    {
+      "nick": "firs",
+      "res": 3,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 71
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 176
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 133
+    },
+    {
+      "nick": "spartan",
+      "res": 10,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 128
+    },
+    {
+      "nick": "MadMax",
+      "res": 10,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 172
+    },
+    {
+      "nick": "Ilyich",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 101
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 22
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 156
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 130
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 165
+    },
+    {
+      "nick": "Bks",
+      "res": 12,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 91
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 17,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 319
+    },
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 302
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 271
+    },
+    {
+      "nick": "ADUN",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 180
+    },
+    {
+      "nick": "Animo",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 186
+    },
+    {
+      "nick": "LOST",
+      "res": 6,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 231
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 287
+    },
+    {
+      "nick": "rezZzister",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 12,
+      "dmg": 80
+    },
+    {
+      "nick": "Rindaye",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 94
+    },
+    {
+      "nick": "HunterN7",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 228
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 291
+    },
+    {
+      "nick": "SHURUP",
+      "res": 1,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 9,
+      "dmg": 512
+    },
+    {
+      "nick": "Prolik",
+      "res": 5,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 82
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 87
+    },
+    {
+      "nick": "Mahorka",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 86
+    },
+    {
+      "nick": "Zik",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 111
+    },
+    {
+      "nick": "Bahus",
+      "res": 2,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 124
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 39
+    },
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 64
+    },
+    {
+      "nick": "Tankist",
+      "res": 3,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 299
+    },
+    {
+      "nick": "FLEX",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "r2": [
+    {
+      "nick": "AkiN",
+      "res": 2,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 49
+    },
+    {
+      "nick": "HunterN7",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 162
+    },
+    {
+      "nick": "Bks",
+      "res": 8,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 127
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 173
+    },
+    {
+      "nick": "Bahus",
+      "res": 5,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 172
+    },
+    {
+      "nick": "Durik",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 127
+    },
+    {
+      "nick": "Zik",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 97
+    },
+    {
+      "nick": "Prolik",
+      "res": 12,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 60
+    },
+    {
+      "nick": "spartan",
+      "res": 2,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 175
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 20,
+      "kills": 14,
+      "deaths": 14,
+      "dmg": 551
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 7,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 314
+    },
+    {
+      "nick": "S.M.P",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 347
+    },
+    {
+      "nick": "Morty",
+      "res": 10,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 10,
+      "dmg": 186
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 2,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 369
+    },
+    {
+      "nick": "Runetik",
+      "res": 2,
+      "nok": 14,
+      "kills": 7,
+      "deaths": 12,
+      "dmg": 307
+    },
+    {
+      "nick": "lepurple",
+      "res": 14,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 129
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 250
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 4,
+      "dmg": 486
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 219
+    },
+    {
+      "nick": "KillReal",
+      "res": 13,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 82
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 10,
+      "dmg": 258
+    },
+    {
+      "nick": "Summer",
+      "res": 11,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 224
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 3,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 232
+    },
+    {
+      "nick": "Koperor",
+      "res": 1,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 190
+    },
+    {
+      "nick": "VET",
+      "res": 7,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 125
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 173
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 232
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 10,
+      "dmg": 265
+    },
+    {
+      "nick": "MadMax",
+      "res": 9,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 152
+    },
+    {
+      "nick": "Maga",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 80
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 2,
+      "nok": 20,
+      "kills": 14,
+      "deaths": 6,
+      "dmg": 412
+    },
+    {
+      "nick": "Radislave",
+      "res": 9,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 117
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 290
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 306
+    },
+    {
+      "nick": "FLEX",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "details": {
+    "r1": {
+      "us": "CAF",
+      "them": "CRF",
+      "tickets": "0:117",
+      "len": "47:58"
+    },
+    "r2": {
+      "us": "CRF",
+      "them": "CAF",
+      "tickets": "0:77",
+      "len": "52:58"
+    },
+    "total": {
+      "tickets": "0–2 (0:117 · 0:77)"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Bks"
+      ],
+      "killer": [
+        "SHURUP"
+      ],
+      "damage": [
+        "SHURUP"
+      ],
+      "antiDeath": [
+        "rezZzister"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "lepurple"
+      ],
+      "killer": [
+        "Nestor Mahno"
+      ],
+      "damage": [
+        "Keech"
+      ],
+      "antiDeath": [
+        "Keech"
+      ]
+    }
+  }
+}
