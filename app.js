@@ -24,6 +24,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const DATA_VER = "20260919-maps";
+  const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const isEmbed =
     new URLSearchParams(location.search).has("embed") || window.self !== window.top;
   if (isEmbed) {
@@ -64,6 +65,7 @@
   let ratingRows = [];
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
+  let rosterByNick = {};
 
   let modalMatch = null;
   let modalTab = "total";
@@ -379,15 +381,17 @@
     paintStats(list);
     const tbody = document.getElementById("rows");
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="11" class="empty-row">Нет матчей по фильтру</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="12" class="empty-row">Нет матчей по фильтру</td></tr>`;
       return;
     }
     tbody.innerHTML = list
       .map((m) => {
         const st = m.status || "upcoming";
+        const clanName = m.clan || "BlackBerry";
         return `<tr class="${st} clickable" data-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${monthKey}</td>
           <td class="num">${m.timeMsk || "—"}</td>
+          <td>${escapeHtml(clanName)}</td>
           <td>${escapeHtml(m.opp || "—")}</td>
           <td>${escapeHtml(m.map || "—")}</td>
           <td class="ctr">${escapeHtml(m.size || "—")}</td>
@@ -414,6 +418,27 @@
   }
 
   /* ——— rating ——— */
+  function loadRoster() {
+    return fetch(ROSTER_URL, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : { byNick: {} }))
+      .then((data) => {
+        rosterByNick = data.byNick || {};
+        return rosterByNick;
+      })
+      .catch(() => {
+        rosterByNick = {};
+        return rosterByNick;
+      });
+  }
+
+  function rosterOf(nick) {
+    const info = rosterByNick[nickKey(nick)] || null;
+    return {
+      clan: info?.clan || "—",
+      squad: info?.squad || "—",
+    };
+  }
+
   function ensureLedger() {
     if (ledger) return Promise.resolve(ledger);
     return fetch(dataUrl(LEDGER_URL))
@@ -439,8 +464,17 @@
       return;
     }
 
-    Promise.all(metas.map((meta) => fetch(dataUrl(meta.url)).then((r) => r.json()).then((data) => ({ meta, data }))))
-      .then((months) => {
+    Promise.all([
+      loadRoster(),
+      Promise.all(
+        metas.map((meta) =>
+          fetch(dataUrl(meta.url))
+            .then((r) => r.json())
+            .then((data) => ({ meta, data }))
+        )
+      ),
+    ])
+      .then(([, months]) => {
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
@@ -461,9 +495,12 @@
         const touch = (nick) => {
           if (!inRating(nick)) return null;
           if (!map.has(nick)) {
+            const ro = rosterOf(nick);
             map.set(nick, {
               nick,
               tier: tierOf(nick),
+              clan: ro.clan,
+              squad: ro.squad,
               kv: 0,
               res: 0,
               nok: 0,
@@ -565,7 +602,9 @@
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
     const dir = ratingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
-      if (ratingSortKey === "nick") return dir * a.nick.localeCompare(b.nick, "ru");
+      if (ratingSortKey === "nick" || ratingSortKey === "clan" || ratingSortKey === "squad") {
+        return dir * String(a[ratingSortKey] || "").localeCompare(String(b[ratingSortKey] || ""), "ru");
+      }
       if (ratingSortKey === "tier") {
         if (a.tier !== b.tier) return dir * (a.tier - b.tier);
         return a.nick.localeCompare(b.nick, "ru");
@@ -580,7 +619,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="14" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -589,6 +628,8 @@
         (p, i) => `<tr>
         <td class="ctr">${i + 1}</td>
         <td>${escapeHtml(p.nick)}</td>
+        <td>${escapeHtml(p.clan || "—")}</td>
+        <td>${escapeHtml(p.squad || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
         <td class="ctr">${p.res}</td>
@@ -613,7 +654,7 @@
       if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
       else {
         ratingSortKey = key;
-        ratingSortDir = key === "nick" || key === "tier" ? "asc" : "desc";
+        ratingSortDir = key === "nick" || key === "tier" || key === "clan" || key === "squad" ? "asc" : "desc";
       }
       paintRatingTable();
     });
