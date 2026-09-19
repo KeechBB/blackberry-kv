@@ -17,7 +17,8 @@
       "status": "lose",
       "meeting": "0–2",
       "r1": "0:329",
-      "r2": "0:345"
+      "r2": "0:345",
+      "playersUrl": "data/players/04-20royals.json"
     },
     {
       "id": "07-avg",

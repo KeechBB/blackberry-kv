@@ -17,6 +17,40 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "04-20royals",
+      "day": 4,
+      "opp": "20Royals",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "uglyfromyoung"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "VITALYA"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Водитель Газели"
+        ],
+        "killer": [
+          "r4mp"
+        ],
+        "damage": [
+          "COBRA"
+        ],
+        "antiDeath": [
+          "Forks"
+        ]
+      }
+    },
+    {
       "id": "07-avg",
       "day": 7,
       "opp": "AVG",
@@ -460,6 +494,22 @@
         }
       ]
     },
+    "COBRA": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Chidori": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -559,6 +609,22 @@
           "day": 15,
           "opp": "DCAI",
           "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Forks": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -813,11 +879,19 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 3,
+      "mvpMedic": 4,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "07-avg",
           "day": 7,
@@ -879,9 +953,17 @@
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 6,
+      "mvpDamage": 7,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "07-avg",
           "day": 7,
@@ -993,6 +1075,22 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "VITALYA": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -1142,10 +1240,18 @@
     },
     "r4mp": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "11-dcai",
           "day": 11,
@@ -1169,6 +1275,38 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "uglyfromyoung": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Водитель Газели": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     }
