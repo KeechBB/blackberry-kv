@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BlackBerry КВ — слоты месяца</title>
+  <title>BlackBerry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20260919-nav" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -16,44 +16,135 @@
     <div class="grid"></div>
   </div>
 
-  <main class="wrap">
-    <header class="hero">
-      <div class="hero-brand">
-        <img class="crest" src="assets/blackberry.png" alt="BlackBerry" width="160" height="160" />
-        <div class="hero-copy">
-          <h1>BLACKBERRY</h1>
-          <p class="tagline" id="title">КВ — слоты месяца</p>
-        </div>
-      </div>
-      <div class="hero-stats" id="stats"></div>
-    </header>
+  <header class="topnav">
+    <a href="#/" class="topnav-brand" data-nav="home">
+      <img src="assets/blackberry.png" alt="" width="36" height="36" />
+      <span>BLACKBERRY</span>
+    </a>
+    <nav class="topnav-links" aria-label="Разделы">
+      <button type="button" class="nav-btn active" data-nav="home">Главная</button>
+      <button type="button" class="nav-btn" data-nav="cw">Клановые войны</button>
+    </nav>
+  </header>
 
-    <section class="board">
-      <div class="board-head">
-        <h2>Все слоты месяца</h2>
-        <p class="board-sub">Тикеты — наши : их · клик по строке — стата игроков</p>
+  <main class="wrap">
+    <section id="view-home" class="view view-home">
+      <div class="home-stub">
+        <img class="crest crest-xl" src="assets/blackberry.png" alt="BlackBerry" width="220" height="220" />
+        <h1>BLACKBERRY</h1>
+        <p class="home-stub-label">В разработке</p>
       </div>
-      <div class="table-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Дата</th>
-              <th class="num">МСК</th>
-              <th>Соперник</th>
-              <th>Карта</th>
-              <th class="ctr">Формат</th>
-              <th>Сервер</th>
-              <th class="ctr">Состав</th>
-              <th class="ctr">Счёт</th>
-              <th class="num">R1</th>
-              <th class="num">R2</th>
-              <th>Статус</th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
-        </table>
+    </section>
+
+    <section id="view-cw" class="view" hidden>
+      <header class="cw-head">
+        <h1 class="cw-title">Клановые войны</h1>
+        <div class="subnav" role="tablist" aria-label="Разделы КВ">
+          <button type="button" class="subnav-btn active" data-cw="matches" role="tab">Календарь матчей</button>
+          <button type="button" class="subnav-btn" data-cw="rating" role="tab">Рейтинг игроков</button>
+        </div>
+      </header>
+
+      <div id="cw-matches" class="cw-panel">
+        <div class="filters">
+          <label class="filter">
+            <span>Год</span>
+            <select id="filter-year"></select>
+          </label>
+          <label class="filter">
+            <span>Месяц</span>
+            <select id="filter-month"></select>
+          </label>
+          <label class="filter filter-grow">
+            <span>Поиск клана</span>
+            <input id="filter-clan" type="search" placeholder="Например IH, HELL…" autocomplete="off" />
+          </label>
+        </div>
+        <div class="month-chips" id="month-chips" aria-label="Месяцы"></div>
+
+        <header class="hero hero-compact">
+          <div class="hero-brand">
+            <img class="crest crest-sm" src="assets/blackberry.png" alt="" width="88" height="88" />
+            <div class="hero-copy">
+              <h2 id="title">КВ — слоты месяца</h2>
+            </div>
+          </div>
+          <div class="hero-stats" id="stats"></div>
+        </header>
+
+        <section class="board">
+          <div class="board-head">
+            <h2>Матчи</h2>
+            <p class="board-sub">Тикеты — наши : их · клик по строке — стата игроков</p>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Дата</th>
+                  <th class="num">МСК</th>
+                  <th>Соперник</th>
+                  <th>Карта</th>
+                  <th class="ctr">Формат</th>
+                  <th>Сервер</th>
+                  <th class="ctr">Состав</th>
+                  <th class="ctr">Счёт</th>
+                  <th class="num">R1</th>
+                  <th class="num">R2</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody id="rows"></tbody>
+            </table>
+          </div>
+          <p class="note" id="note"></p>
+        </section>
       </div>
-      <p class="note" id="note"></p>
+
+      <div id="cw-rating" class="cw-panel" hidden>
+        <div class="filters">
+          <label class="filter">
+            <span>Год</span>
+            <select id="rating-year"></select>
+          </label>
+          <label class="filter">
+            <span>Месяц</span>
+            <select id="rating-month"></select>
+          </label>
+          <label class="filter filter-grow">
+            <span>Поиск ника</span>
+            <input id="rating-nick" type="search" placeholder="Ник игрока…" autocomplete="off" />
+          </label>
+        </div>
+        <section class="board">
+          <div class="board-head">
+            <h2>Рейтинг игроков</h2>
+            <p class="board-sub">Сумма итоговых показателей по каткам с внесённой статой · MVP из раундов</p>
+          </div>
+          <div class="table-scroll">
+            <table class="rating-table">
+              <thead>
+                <tr>
+                  <th class="ctr">№</th>
+                  <th>Ник</th>
+                  <th class="ctr sortable" data-rsort="res">Ресы</th>
+                  <th class="ctr sortable" data-rsort="nok">Ноки</th>
+                  <th class="ctr sortable" data-rsort="kills">Килы</th>
+                  <th class="ctr sortable" data-rsort="deaths">Смерти</th>
+                  <th class="ctr sortable" data-rsort="kd">KD</th>
+                  <th class="ctr sortable" data-rsort="dmg">Боевой счёт</th>
+                  <th class="ctr sortable" data-rsort="mvpMedic">MVP Medic</th>
+                  <th class="ctr sortable" data-rsort="mvpKiller">MVP Killer</th>
+                  <th class="ctr sortable" data-rsort="mvpDamage">MVP War-Score</th>
+                  <th class="ctr sortable" data-rsort="antiDeath">Anti-MVP</th>
+                </tr>
+              </thead>
+              <tbody id="rating-rows"></tbody>
+            </table>
+          </div>
+          <p class="note" id="rating-note"></p>
+        </section>
+      </div>
     </section>
   </main>
 
@@ -76,6 +167,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260919-warscore"></script>
+  <script src="app.js?v=20260919-shell"></script>
 </body>
 </html>

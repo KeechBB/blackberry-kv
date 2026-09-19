@@ -5,9 +5,23 @@
     draw: "ничья",
     upcoming: "скоро",
   };
-
-  const MONTH = "09";
-  const DATA_URL = "data/2026-09.json";
+  const MONTH_RU = [
+    "",
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь",
+  ];
+  const INDEX_URL = "data/index.json";
+  const LEDGER_URL = "data/mvp-ledger.json";
   const MVP_ICONS = {
     medic: "assets/mvp/medic.svg",
     killer: "assets/mvp/killer.svg",
@@ -21,12 +35,21 @@
     antiDeath: "Anti-MVP Death",
   };
 
+  let catalog = [];
+  let currentMonthMeta = null;
+  let monthData = null;
   let matches = [];
+  let ledger = null;
+  let ratingRows = [];
+  let ratingSortKey = "kills";
+  let ratingSortDir = "desc";
+
   let modalMatch = null;
   let modalTab = "total";
   let modalPlayers = null;
   let sortKey = "kills";
   let sortDir = "desc";
+  let monthKey = "09";
 
   const modal = document.getElementById("match-modal");
   const modalTitle = document.getElementById("modal-title");
@@ -46,37 +69,177 @@
       .replace(/"/g, "&quot;");
   }
 
-  function render(data) {
-    document.getElementById("title").textContent = data.title || "КВ — слоты месяца";
-    document.getElementById("note").textContent = data.note || "";
+  function num(v) {
+    return v == null || v === "" ? "—" : escapeHtml(v);
+  }
 
-    matches = data.matches || [];
-    const played = matches.filter((m) => m.status !== "upcoming");
-    const upcoming = matches.filter((m) => m.status === "upcoming");
+  /* ——— navigation ——— */
+  function showView(name) {
+    document.getElementById("view-home").hidden = name !== "home";
+    document.getElementById("view-cw").hidden = name !== "cw";
+    document.querySelectorAll(".nav-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.nav === name);
+    });
+    if (name === "cw") showCwPanel(document.querySelector(".subnav-btn.active")?.dataset.cw || "matches");
+  }
+
+  function showCwPanel(panel) {
+    document.getElementById("cw-matches").hidden = panel !== "matches";
+    document.getElementById("cw-rating").hidden = panel !== "rating";
+    document.querySelectorAll(".subnav-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.cw === panel);
+    });
+    if (panel === "rating") loadRating();
+  }
+
+  document.querySelectorAll("[data-nav]").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      e.preventDefault();
+      showView(el.dataset.nav);
+      history.replaceState(null, "", el.dataset.nav === "cw" ? "#/cw" : "#/");
+    });
+  });
+  document.querySelectorAll(".subnav-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showCwPanel(btn.dataset.cw);
+      history.replaceState(null, "", btn.dataset.cw === "rating" ? "#/cw/rating" : "#/cw");
+    });
+  });
+
+  function applyHash() {
+    const h = location.hash || "#/";
+    if (h.startsWith("#/cw")) {
+      showView("cw");
+      showCwPanel(h.includes("rating") ? "rating" : "matches");
+    } else {
+      showView("home");
+    }
+  }
+  window.addEventListener("hashchange", applyHash);
+
+  /* ——— catalog / filters ——— */
+  function fillYearMonthSelects() {
+    const years = [...new Set(catalog.map((m) => m.year))].sort((a, b) => b - a);
+    const yearSel = document.getElementById("filter-year");
+    const ratingYear = document.getElementById("rating-year");
+    yearSel.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
+    ratingYear.innerHTML = yearSel.innerHTML;
+
+    const syncMonths = (yearEl, monthEl) => {
+      const y = Number(yearEl.value);
+      const months = catalog.filter((m) => m.year === y).sort((a, b) => b.month - a.month);
+      monthEl.innerHTML = months
+        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .join("");
+    };
+    const onYear = () => {
+      syncMonths(yearSel, document.getElementById("filter-month"));
+      loadSelectedMonth();
+      paintMonthChips();
+    };
+    yearSel.addEventListener("change", onYear);
+    document.getElementById("filter-month").addEventListener("change", () => {
+      loadSelectedMonth();
+      paintMonthChips();
+    });
+    document.getElementById("filter-clan").addEventListener("input", paintMatchesTable);
+
+    ratingYear.addEventListener("change", () => {
+      syncMonths(ratingYear, document.getElementById("rating-month"));
+      loadRating();
+    });
+    document.getElementById("rating-month").addEventListener("change", loadRating);
+    document.getElementById("rating-nick").addEventListener("input", paintRatingTable);
+
+    if (years.length) {
+      yearSel.value = String(years[0]);
+      ratingYear.value = String(years[0]);
+      syncMonths(yearSel, document.getElementById("filter-month"));
+      syncMonths(ratingYear, document.getElementById("rating-month"));
+    }
+  }
+
+  function paintMonthChips() {
+    const y = Number(document.getElementById("filter-year").value);
+    const selected = document.getElementById("filter-month").value;
+    const months = catalog.filter((m) => m.year === y).sort((a, b) => a.month - b.month);
+    const box = document.getElementById("month-chips");
+    box.innerHTML = months
+      .map(
+        (m) =>
+          `<button type="button" class="chip ${m.id === selected ? "active" : ""}" data-month="${m.id}">${MONTH_RU[m.month]}</button>`
+      )
+      .join("");
+    box.querySelectorAll(".chip").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.getElementById("filter-month").value = btn.dataset.month;
+        loadSelectedMonth();
+        paintMonthChips();
+      });
+    });
+  }
+
+  function loadSelectedMonth() {
+    const id = document.getElementById("filter-month").value;
+    const meta = catalog.find((m) => m.id === id);
+    if (!meta) return;
+    currentMonthMeta = meta;
+    monthKey = pad(meta.month);
+    fetch(meta.url)
+      .then((r) => {
+        if (!r.ok) throw new Error("Не удалось загрузить месяц");
+        return r.json();
+      })
+      .then((data) => {
+        monthData = data;
+        matches = (data.matches || []).map((m, i) => ({ ...m, _i: i, _month: meta.month, _year: meta.year }));
+        document.getElementById("title").textContent = data.title || meta.label;
+        document.getElementById("note").textContent = data.note || "";
+        paintStats(matches);
+        paintMatchesTable();
+      })
+      .catch((err) => {
+        document.getElementById("note").textContent = String(err.message || err);
+      });
+  }
+
+  function filteredMatches() {
+    const q = (document.getElementById("filter-clan").value || "").trim().toLowerCase();
+    if (!q) return matches;
+    return matches.filter((m) => String(m.opp || "").toLowerCase().includes(q));
+  }
+
+  function paintStats(list) {
+    const played = list.filter((m) => m.status !== "upcoming");
+    const upcoming = list.filter((m) => m.status === "upcoming");
     const wins = played.filter((m) => m.status === "win").length;
     const draws = played.filter((m) => m.status === "draw").length;
     const losses = played.filter((m) => m.status === "lose").length;
     const wr = played.length ? Math.round((100 * wins) / played.length) : 0;
-
     document.getElementById("stats").innerHTML = [
-      ["Всего", matches.length, ""],
+      ["Всего", list.length, ""],
       ["Сыграно", played.length, ""],
       ["Впереди", upcoming.length, ""],
       ["W–D–L", `${wins}–${draws}–${losses}`, ""],
       ["Winrate", `${wr}%`, "winrate"],
     ]
-      .map(
-        ([k, v, cls]) =>
-          `<div class="stat ${cls}"><span class="k">${k}</span><span class="v">${v}</span></div>`
-      )
+      .map(([k, v, cls]) => `<div class="stat ${cls}"><span class="k">${k}</span><span class="v">${v}</span></div>`)
       .join("");
+  }
 
+  function paintMatchesTable() {
+    const list = filteredMatches();
+    paintStats(list);
     const tbody = document.getElementById("rows");
-    tbody.innerHTML = matches
-      .map((m, i) => {
+    if (!list.length) {
+      tbody.innerHTML = `<tr><td colspan="11" class="empty-row">Нет матчей по фильтру</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = list
+      .map((m) => {
         const st = m.status || "upcoming";
-        return `<tr class="${st} clickable" data-i="${i}" tabindex="0" role="button">
-          <td>${pad(m.day)}.${MONTH}</td>
+        return `<tr class="${st} clickable" data-i="${m._i}" tabindex="0" role="button">
+          <td>${pad(m.day)}.${monthKey}</td>
           <td class="num">${m.timeMsk || "—"}</td>
           <td>${escapeHtml(m.opp || "—")}</td>
           <td>${escapeHtml(m.map || "—")}</td>
@@ -103,6 +266,165 @@
     });
   }
 
+  /* ——— rating ——— */
+  function ensureLedger() {
+    if (ledger) return Promise.resolve(ledger);
+    return fetch(LEDGER_URL)
+      .then((r) => (r.ok ? r.json() : { players: {}, matches: [] }))
+      .then((data) => {
+        ledger = data;
+        return ledger;
+      })
+      .catch(() => {
+        ledger = { players: {}, matches: [] };
+        return ledger;
+      });
+  }
+
+  function loadRating() {
+    const note = document.getElementById("rating-note");
+    note.textContent = "Считаем рейтинг…";
+    const monthId = document.getElementById("rating-month").value;
+    const meta = catalog.find((m) => m.id === monthId);
+    if (!meta) {
+      note.textContent = "Нет выбран для рейтинга";
+      return;
+    }
+
+    Promise.all([fetch(meta.url).then((r) => r.json()), ensureLedger()])
+      .then(([data]) => {
+        const matchList = (data.matches || []).filter((m) => m.status !== "upcoming" && m.playersUrl);
+        return Promise.all(
+          matchList.map((m) =>
+            fetch(m.playersUrl)
+              .then((r) => (r.ok ? r.json() : null))
+              .then((pj) => ({ match: m, players: pj }))
+              .catch(() => ({ match: m, players: null }))
+          )
+        );
+      })
+      .then((bundles) => {
+        const map = new Map();
+        const touch = (nick) => {
+          if (!map.has(nick)) {
+            map.set(nick, {
+              nick,
+              res: 0,
+              nok: 0,
+              kills: 0,
+              deaths: 0,
+              dmg: 0,
+              mvpMedic: 0,
+              mvpKiller: 0,
+              mvpDamage: 0,
+              antiDeath: 0,
+            });
+          }
+          return map.get(nick);
+        };
+
+        bundles.forEach(({ match, players }) => {
+          if (!players) return;
+          const r1 = players.r1 || [];
+          const r2 = players.r2 || [];
+          const total = players.total || players.players || sumRounds(r1, r2);
+          total.forEach((p) => {
+            if (!p || !p.nick) return;
+            const row = touch(p.nick);
+            row.res += Number(p.res) || 0;
+            row.nok += Number(p.nok) || 0;
+            row.kills += Number(p.kills) || 0;
+            row.deaths += Number(p.deaths) || 0;
+            row.dmg += Number(p.dmg) || 0;
+          });
+
+          const mvp = players.mvp || {
+            r1: pickMvps(enrichRows(r1)),
+            r2: pickMvps(enrichRows(r2)),
+          };
+          ["r1", "r2"].forEach((rk) => {
+            const block = mvp[rk] || {};
+            (block.medic || []).forEach((n) => {
+              touch(n).mvpMedic += 1;
+            });
+            (block.killer || []).forEach((n) => {
+              touch(n).mvpKiller += 1;
+            });
+            (block.damage || []).forEach((n) => {
+              touch(n).mvpDamage += 1;
+            });
+            (block.antiDeath || []).forEach((n) => {
+              touch(n).antiDeath += 1;
+            });
+          });
+        });
+
+        ratingRows = Array.from(map.values()).map((p) => ({
+          ...p,
+          kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
+        }));
+        const withStats = bundles.filter((b) => b.players).length;
+        note.textContent = withStats
+          ? `Каток со статой: ${withStats}. Ников: ${ratingRows.length}.`
+          : "Пока нет каток с внесённой статой игроков — рейтинг пуст.";
+        paintRatingTable();
+      })
+      .catch((err) => {
+        note.textContent = String(err.message || err);
+      });
+  }
+
+  function paintRatingTable() {
+    const q = (document.getElementById("rating-nick").value || "").trim().toLowerCase();
+    let rows = ratingRows;
+    if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
+    const dir = ratingSortDir === "asc" ? 1 : -1;
+    rows = rows.slice().sort((a, b) => {
+      if (ratingSortKey === "nick") return dir * a.nick.localeCompare(b.nick, "ru");
+      const av = Number(a[ratingSortKey]) || 0;
+      const bv = Number(b[ratingSortKey]) || 0;
+      if (av !== bv) return dir * (av - bv);
+      return a.nick.localeCompare(b.nick, "ru");
+    });
+
+    const tbody = document.getElementById("rating-rows");
+    if (!rows.length) {
+      tbody.innerHTML = `<tr><td colspan="12" class="empty-row">Нет игроков</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = rows
+      .map(
+        (p, i) => `<tr>
+        <td class="ctr">${i + 1}</td>
+        <td>${escapeHtml(p.nick)}</td>
+        <td class="ctr">${p.res}</td>
+        <td class="ctr">${p.nok}</td>
+        <td class="ctr">${p.kills}</td>
+        <td class="ctr">${p.deaths}</td>
+        <td class="ctr">${p.kd}</td>
+        <td class="ctr">${p.dmg}</td>
+        <td class="ctr">${p.mvpMedic}</td>
+        <td class="ctr">${p.mvpKiller}</td>
+        <td class="ctr">${p.mvpDamage}</td>
+        <td class="ctr">${p.antiDeath}</td>
+      </tr>`
+      )
+      .join("");
+  }
+
+  document.querySelectorAll(".rating-table th.sortable").forEach((th) => {
+    th.addEventListener("click", () => {
+      const key = th.dataset.rsort;
+      if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
+      else {
+        ratingSortKey = key;
+        ratingSortDir = key === "nick" ? "asc" : "desc";
+      }
+      paintRatingTable();
+    });
+  });
+
+  /* ——— match modal (player stats) ——— */
   function closeModal() {
     modal.hidden = true;
     document.body.classList.remove("modal-open");
@@ -115,7 +437,7 @@
     modalTab = "total";
     sortKey = "kills";
     sortDir = "desc";
-    modalTitle.textContent = `${pad(m.day)}.${MONTH} vs ${m.opp || "—"}`;
+    modalTitle.textContent = `${pad(m.day)}.${monthKey} vs ${m.opp || "—"}`;
     modalSub.textContent = [
       m.map,
       m.size,
@@ -132,15 +454,7 @@
     modalTabs.hidden = true;
 
     if (m.status === "upcoming") {
-      modalBody.innerHTML =
-        `<p class="modal-empty">Катка ещё не сыграна — статистики нет.</p>`;
-      return;
-    }
-
-    if (m.players && Array.isArray(m.players)) {
-      modalPlayers = { total: m.players, r1: m.playersR1 || null, r2: m.playersR2 || null };
-      labelTabs(m);
-      paintPlayers();
+      modalBody.innerHTML = `<p class="modal-empty">Катка ещё не сыграна — статистики нет.</p>`;
       return;
     }
 
@@ -153,7 +467,6 @@
         .then((data) => {
           const r1 = enrichRows(data.r1 || []);
           const r2 = enrichRows(data.r2 || []);
-          // Всегда пересчитываем MVP на клиенте (ничья → KD), файл mvp — канон для ledger.
           modalPlayers = {
             total: enrichRows(data.total || data.players || sumRounds(r1, r2)),
             r1,
@@ -170,14 +483,14 @@
         .catch(() => {
           modalBody.innerHTML =
             `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
-            `Ресы / ноки / килы / смерти / урон возьмём со скринов табло этой катки.</p>`;
+            `Ресы / ноки / килы / смерти / боевой счёт — со скринов табло.</p>`;
         });
       return;
     }
 
     modalBody.innerHTML =
       `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
-      `Ресы / ноки / килы / смерти / урон возьмём со скринов табло этой катки.</p>`;
+      `Ресы / ноки / килы / смерти / боевой счёт — со скринов табло.</p>`;
   }
 
   function enrichRows(rows) {
@@ -232,10 +545,7 @@
   }
 
   function pickMvps(rows) {
-    // За раунд: 1 Medic + 1 Killer + 1 Damage + 1 Anti-MVP.
-    // Ничья: MVP → выше KD; Anti-MVP Death → ниже KD (хуже играл).
     if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
-
     function winner(field, preferHigherKd) {
       const top = maxOf(rows, field);
       if (top <= 0) return null;
@@ -248,7 +558,6 @@
       });
       return tied[0].nick;
     }
-
     return {
       medic: [winner("res", true)].filter(Boolean),
       killer: [winner("kills", true)].filter(Boolean),
@@ -293,8 +602,7 @@
       parts.push(
         `<span class="${cls}" title="${escapeHtml(label)}">` +
           `<img src="${MVP_ICONS[kind]}" alt="" width="14" height="14" />` +
-          `<span>${escapeHtml(label)}</span>` +
-          `</span>`
+          `<span>${escapeHtml(label)}</span></span>`
       );
     });
     return parts.length ? `<span class="mvp-row">${parts.join("")}</span>` : "";
@@ -316,9 +624,7 @@
   function sortRows(rows) {
     const dir = sortDir === "asc" ? 1 : -1;
     return rows.slice().sort((a, b) => {
-      if (sortKey === "nick") {
-        return dir * String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
-      }
+      if (sortKey === "nick") return dir * String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
       const av = sortKey === "kd" ? kdValue(a) : Number(a[sortKey]) || 0;
       const bv = sortKey === "kd" ? kdValue(b) : Number(b[sortKey]) || 0;
       if (av !== bv) return dir * (av - bv);
@@ -386,12 +692,7 @@
                 const kd = kdValue(p);
                 return `<tr>
               <td class="ctr">${i + 1}</td>
-              <td>
-                <div class="nick-cell">
-                  <span class="nick-name">${escapeHtml(p.nick || "—")}</span>
-                  ${renderMedals(p.nick)}
-                </div>
-              </td>
+              <td><div class="nick-cell"><span class="nick-name">${escapeHtml(p.nick || "—")}</span>${renderMedals(p.nick)}</div></td>
               ${cellRecord(p.res, records.res > 0 && p.res === records.res, false)}
               ${cellRecord(p.nok, records.nok > 0 && p.nok === records.nok, false)}
               ${cellRecord(p.kills, records.kills > 0 && p.kills === records.kills, false)}
@@ -438,8 +739,7 @@
   function paintDetails() {
     const d = modalPlayers.details;
     if (!d) return "";
-    const block =
-      modalTab === "r1" ? d.r1 : modalTab === "r2" ? d.r2 : d.total;
+    const block = modalTab === "r1" ? d.r1 : modalTab === "r2" ? d.r2 : d.total;
     if (!block) return "";
     const title =
       modalTab === "r1"
@@ -485,10 +785,6 @@
     );
   }
 
-  function num(v) {
-    return v == null || v === "" ? "—" : escapeHtml(v);
-  }
-
   modal.addEventListener("click", (e) => {
     if (e.target.closest("[data-close]")) closeModal();
   });
@@ -504,13 +800,21 @@
     paintPlayers();
   });
 
-  fetch(DATA_URL)
+  /* ——— boot ——— */
+  fetch(INDEX_URL)
     .then((r) => {
-      if (!r.ok) throw new Error("Не удалось загрузить данные");
+      if (!r.ok) throw new Error("Нет каталога месяцев");
       return r.json();
     })
-    .then(render)
+    .then((data) => {
+      catalog = data.months || [];
+      fillYearMonthSelects();
+      paintMonthChips();
+      loadSelectedMonth();
+      applyHash();
+    })
     .catch((err) => {
       document.getElementById("note").textContent = String(err.message || err);
+      applyHash();
     });
 })();
