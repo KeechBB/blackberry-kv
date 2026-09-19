@@ -36,6 +36,8 @@
     antiDeath: "Anti-MVP Death",
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
+  // Камера / не в составе — не в рейтинге игроков.
+  const RATING_EXCLUDE = new Set(["shrein"]);
 
   let catalog = [];
   let currentMonthMeta = null;
@@ -120,6 +122,10 @@
       .replace(/^\[bb\]\s*/i, "")
       .replace(/^\[cam\]\s*/i, "")
       .toLowerCase();
+  }
+
+  function inRating(nick) {
+    return Boolean(nick) && !RATING_EXCLUDE.has(nickKey(nick));
   }
 
   function buildTierIndex(data) {
@@ -433,6 +439,7 @@
       .then((bundles) => {
         const map = new Map();
         const touch = (nick) => {
+          if (!inRating(nick)) return null;
           if (!map.has(nick)) {
             map.set(nick, {
               nick,
@@ -460,7 +467,7 @@
           const inMeeting = new Set();
 
           total.forEach((p) => {
-            if (!p || !p.nick) return;
+            if (!p || !p.nick || !inRating(p.nick)) return;
             inMeeting.add(p.nick);
             const row = touch(p.nick);
             row.res += Number(p.res) || 0;
@@ -470,10 +477,11 @@
             row.dmg += Number(p.dmg) || 0;
           });
           [...r1, ...r2].forEach((p) => {
-            if (p && p.nick) inMeeting.add(p.nick);
+            if (p && p.nick && inRating(p.nick)) inMeeting.add(p.nick);
           });
           inMeeting.forEach((nick) => {
-            touch(nick).kv += 1;
+            const row = touch(nick);
+            if (row) row.kv += 1;
           });
 
           const mvp = players.mvp || {
@@ -483,16 +491,20 @@
           ["r1", "r2"].forEach((rk) => {
             const block = mvp[rk] || {};
             (block.medic || []).forEach((n) => {
-              touch(n).mvpMedic += 1;
+              const row = touch(n);
+              if (row) row.mvpMedic += 1;
             });
             (block.killer || []).forEach((n) => {
-              touch(n).mvpKiller += 1;
+              const row = touch(n);
+              if (row) row.mvpKiller += 1;
             });
             (block.damage || []).forEach((n) => {
-              touch(n).mvpDamage += 1;
+              const row = touch(n);
+              if (row) row.mvpDamage += 1;
             });
             (block.antiDeath || []).forEach((n) => {
-              touch(n).antiDeath += 1;
+              const row = touch(n);
+              if (row) row.antiDeath += 1;
             });
           });
         });
