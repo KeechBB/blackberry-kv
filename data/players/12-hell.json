@@ -1,7 +1,7 @@
 {
   "matchId": "12-hell",
   "opp": "HELL",
-  "note": "Junior vs HELL. Ресы/ноки/килы/смерти/боевой счёт. Keech камера. Shrein в r2 играл (не камера).",
+  "note": "Junior vs HELL. Ресы/ноки/килы/смерти/боевой счёт. Shrein в r2 играл.",
   "r1": [
     {
       "nick": "VET",
@@ -162,14 +162,6 @@
       "kills": 13,
       "deaths": 1,
       "dmg": 718
-    },
-    {
-      "nick": "Keech",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "r2": [
@@ -340,14 +332,6 @@
       "kills": 11,
       "deaths": 10,
       "dmg": 466
-    },
-    {
-      "nick": "Keech",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "details": {

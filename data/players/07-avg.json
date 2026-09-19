@@ -1,7 +1,7 @@
 {
   "matchId": "07-avg",
   "opp": "AVG",
-  "note": "Junior vs AVG (+мерки). Ресы/ноки/килы/смерти/боевой счёт. Keech камера (KAMEPA / камера).",
+  "note": "Junior vs AVG (+мерки). Ресы/ноки/килы/смерти/боевой счёт. Камера не вносится.",
   "r1": [
     {
       "nick": "Jimmy Neutron",
@@ -210,14 +210,6 @@
       "kills": 4,
       "deaths": 0,
       "dmg": 963
-    },
-    {
-      "nick": "Keech",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "r2": [
@@ -428,14 +420,6 @@
       "kills": 4,
       "deaths": 3,
       "dmg": 428
-    },
-    {
-      "nick": "Keech",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "details": {

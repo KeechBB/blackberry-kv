@@ -1,7 +1,7 @@
 {
   "matchId": "13-two",
   "opp": "TWO",
-  "note": "Junior vs TWO (TWC). Ресы/ноки/килы/смерти/боевой счёт. FLEX камера. R1 на табло ~34 из 36.",
+  "note": "Junior vs TWO (TWC). Ресы/ноки/килы/смерти/боевой счёт. Камера не вносится. R1 на табло ~34 из 36.",
   "r1": [
     {
       "nick": "Jimmy Neutron",
@@ -266,14 +266,6 @@
       "kills": 9,
       "deaths": 3,
       "dmg": 299
-    },
-    {
-      "nick": "FLEX",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "r2": [
@@ -548,14 +540,6 @@
       "kills": 10,
       "deaths": 5,
       "dmg": 306
-    },
-    {
-      "nick": "FLEX",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "details": {

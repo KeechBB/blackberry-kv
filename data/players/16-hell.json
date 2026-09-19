@@ -210,14 +210,6 @@
       "kills": 3,
       "deaths": 4,
       "dmg": 98
-    },
-    {
-      "nick": "Shrein",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "r2": [
@@ -428,14 +420,6 @@
       "kills": 0,
       "deaths": 1,
       "dmg": 4
-    },
-    {
-      "nick": "Shrein",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "details": {

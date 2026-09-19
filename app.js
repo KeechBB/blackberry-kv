@@ -23,7 +23,7 @@
   const INDEX_URL = "data/index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
-  const DATA_VER = "20260919-avg07";
+  const DATA_VER = "20260919-nocam";
 
   function dataUrl(url) {
     if (!url) return url;

@@ -1,7 +1,7 @@
 {
   "matchId": "11-dcai",
   "opp": "DCAI",
-  "note": "Junior vs DCAI. Ресы/ноки/килы/смерти/боевой счёт. Keech камера (cast).",
+  "note": "Junior vs DCAI. Ресы/ноки/килы/смерти/боевой счёт. Камера не вносится.",
   "r1": [
     {
       "nick": "CERBER",
@@ -210,14 +210,6 @@
       "kills": 1,
       "deaths": 6,
       "dmg": 50
-    },
-    {
-      "nick": "Keech",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "r2": [
@@ -428,14 +420,6 @@
       "kills": 2,
       "deaths": 1,
       "dmg": 237
-    },
-    {
-      "nick": "Keech",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 500
     }
   ],
   "details": {
