@@ -697,18 +697,32 @@ body.modal-open { overflow: hidden; }
 
 .modal-body {
   padding: 14px 20px 20px;
-  overflow: auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
 }
 .modal-empty, .modal-loading {
   margin: 12px 0;
   color: var(--muted);
   line-height: 1.55;
 }
-.players-scroll { overflow-x: auto; }
+.players-scroll {
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+  margin-top: 8px;
+  -webkit-overflow-scrolling: touch;
+}
+.modal-body > .match-summary {
+  flex-shrink: 0;
+}
 .players-table {
   width: 100%;
   min-width: 920px;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 0.9rem;
   table-layout: fixed;
 }
@@ -718,15 +732,19 @@ body.modal-open { overflow: hidden; }
   border-bottom: 1px solid rgba(167, 139, 250, 0.1);
   vertical-align: middle;
 }
-.players-table th {
+.players-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
   color: var(--muted);
   font-family: var(--font-display);
   font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: center;
-  background: rgba(0, 0, 0, 0.22);
+  background: #120e1c;
   white-space: nowrap;
+  box-shadow: 0 1px 0 rgba(167, 139, 250, 0.25);
 }
 .players-table th.sortable {
   cursor: pointer;
