@@ -51,6 +51,7 @@
       "r2": "0:203"
     },
     {
+      "id": "12-hell",
       "day": 12,
       "timeMsk": "20:00",
       "timeUtc": "—",
@@ -64,7 +65,8 @@
       "meeting": "2–0",
       "r1": "170:0",
       "r2": "18:0",
-      "note": "r2 пиррова"
+      "note": "r2 пиррова",
+      "playersUrl": "data/players/12-hell.json"
     },
     {
       "id": "13-20r",

@@ -1,0 +1,399 @@
+{
+  "matchId": "12-hell",
+  "opp": "HELL",
+  "note": "Junior vs HELL. Ресы/ноки/килы/смерти/боевой счёт. Keech камера. Shrein в r2 играл (не камера).",
+  "r1": [
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 132
+    },
+    {
+      "nick": "ART",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 105
+    },
+    {
+      "nick": "ADUN",
+      "res": 8,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 27
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 72
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 62
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 108
+    },
+    {
+      "nick": "One Attack",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 29
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 205
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 119
+    },
+    {
+      "nick": "Zik",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 72
+    },
+    {
+      "nick": "Prolik",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 104
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 32
+    },
+    {
+      "nick": "tank2284",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 155
+    },
+    {
+      "nick": "Muhomor",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 99
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 249
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 160
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 28
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 290
+    },
+    {
+      "nick": "Moonky123",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 3
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 15,
+      "kills": 13,
+      "deaths": 1,
+      "dmg": 718
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "r2": [
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 158
+    },
+    {
+      "nick": "ART",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 222
+    },
+    {
+      "nick": "ADUN",
+      "res": 11,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 48
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 188
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 28
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 232
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 292
+    },
+    {
+      "nick": "Prolik",
+      "res": 7,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 174
+    },
+    {
+      "nick": "Zik",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 175
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 5,
+      "dmg": 393
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 70
+    },
+    {
+      "nick": "Shrein",
+      "res": 6,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 77
+    },
+    {
+      "nick": "Varyag",
+      "res": 1,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 271
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 13,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 1094
+    },
+    {
+      "nick": "One Attack",
+      "res": 5,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 10,
+      "dmg": 302
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 102
+    },
+    {
+      "nick": "Koperor",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 202
+    },
+    {
+      "nick": "Muhomor",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 193
+    },
+    {
+      "nick": "tank2284",
+      "res": 2,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 207
+    },
+    {
+      "nick": "Moonky123",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 101
+    },
+    {
+      "nick": "Tankist",
+      "res": 5,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 10,
+      "dmg": 466
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "details": {
+    "r1": {
+      "us": "IMF",
+      "them": "BAF",
+      "tickets": "170:0"
+    },
+    "r2": {
+      "us": "BAF",
+      "them": "IMF",
+      "tickets": "18:0",
+      "len": "53:11"
+    },
+    "total": {
+      "tickets": "2–0 (170:0 · 18:0)"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "ADUN"
+      ],
+      "killer": [
+        "Tankist"
+      ],
+      "damage": [
+        "Tankist"
+      ],
+      "antiDeath": [
+        "Trigger"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "ADUN"
+      ],
+      "killer": [
+        "Barsik"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "Zik"
+      ]
+    }
+  }
+}
