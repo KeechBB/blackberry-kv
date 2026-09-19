@@ -377,6 +377,13 @@ body.modal-open { overflow: hidden; }
   text-align: left;
   background: rgba(0, 0, 0, 0.22);
 }
+.players-table tfoot td {
+  border-top: 1px solid rgba(167, 139, 250, 0.28);
+  border-bottom: none;
+  font-weight: 600;
+  color: var(--ink);
+  background: rgba(167, 139, 250, 0.08);
+}
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(14px); }

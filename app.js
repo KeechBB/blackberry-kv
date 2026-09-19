@@ -123,6 +123,7 @@
 
     if (m.players && Array.isArray(m.players)) {
       modalPlayers = { total: m.players, r1: m.playersR1 || null, r2: m.playersR2 || null };
+      labelTabs(m);
       paintPlayers();
       return;
     }
@@ -134,11 +135,14 @@
           return r.json();
         })
         .then((data) => {
+          const r1 = data.r1 || null;
+          const r2 = data.r2 || null;
           modalPlayers = {
-            total: data.total || data.players || [],
-            r1: data.r1 || null,
-            r2: data.r2 || null,
+            total: data.total || data.players || sumRounds(r1, r2),
+            r1,
+            r2,
           };
+          labelTabs(m);
           paintPlayers();
         })
         .catch(() => {
@@ -152,6 +156,31 @@
     modalBody.innerHTML =
       `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
       `Ресы / ноки / килы / смерти / урон возьмём со скринов табло этой катки.</p>`;
+  }
+
+  function sumRounds(r1, r2) {
+    const map = new Map();
+    const add = (row) => {
+      if (!row || !row.nick) return;
+      const cur = map.get(row.nick) || { nick: row.nick, res: 0, nok: 0, kills: 0, deaths: 0, dmg: 0 };
+      cur.res += Number(row.res) || 0;
+      cur.nok += Number(row.nok) || 0;
+      cur.kills += Number(row.kills) || 0;
+      cur.deaths += Number(row.deaths) || 0;
+      cur.dmg += Number(row.dmg) || 0;
+      map.set(row.nick, cur);
+    };
+    (r1 || []).forEach(add);
+    (r2 || []).forEach(add);
+    return Array.from(map.values());
+  }
+
+  function labelTabs(m) {
+    const r1Label = m.r1 && m.r1 !== "—" ? `Раунд 1 · ${m.r1}` : "Раунд 1";
+    const r2Label = m.r2 && m.r2 !== "—" ? `Раунд 2 · ${m.r2}` : "Раунд 2";
+    modalTabs.querySelector('[data-tab="total"]').textContent = "Итого";
+    modalTabs.querySelector('[data-tab="r1"]').textContent = r1Label;
+    modalTabs.querySelector('[data-tab="r2"]').textContent = r2Label;
   }
 
   function paintPlayers() {
@@ -171,6 +200,7 @@
     }
 
     const sorted = rows.slice().sort((a, b) => (b.kills || 0) - (a.kills || 0) || (b.dmg || 0) - (a.dmg || 0));
+    const foot = totalsRow(sorted);
     modalBody.innerHTML = `
       <div class="players-scroll">
         <table class="players-table">
@@ -200,8 +230,32 @@
               )
               .join("")}
           </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td>Всего</td>
+              <td class="num">${num(foot.res)}</td>
+              <td class="num">${num(foot.nok)}</td>
+              <td class="num">${num(foot.kills)}</td>
+              <td class="num">${num(foot.deaths)}</td>
+              <td class="num">${num(foot.dmg)}</td>
+            </tr>
+          </tfoot>
         </table>
       </div>`;
+  }
+
+  function totalsRow(rows) {
+    return rows.reduce(
+      (a, p) => ({
+        res: a.res + (Number(p.res) || 0),
+        nok: a.nok + (Number(p.nok) || 0),
+        kills: a.kills + (Number(p.kills) || 0),
+        deaths: a.deaths + (Number(p.deaths) || 0),
+        dmg: a.dmg + (Number(p.dmg) || 0),
+      }),
+      { res: 0, nok: 0, kills: 0, deaths: 0, dmg: 0 }
+    );
   }
 
   function num(v) {
