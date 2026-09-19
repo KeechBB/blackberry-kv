@@ -17,7 +17,7 @@
   const MVP_LABEL = {
     medic: "MVP Medic",
     killer: "MVP Killer",
-    damage: "MVP Damage",
+    damage: "MVP War-Score",
     antiDeath: "Anti-MVP Death",
   };
 
@@ -377,7 +377,7 @@
               ${th("kills", "Килы", "ctr")}
               ${th("deaths", "Смерти", "ctr")}
               ${th("kd", "KD", "ctr")}
-              ${th("dmg", "Урон", "ctr")}
+              ${th("dmg", "Боевой счёт", "ctr")}
             </tr>
           </thead>
           <tbody>

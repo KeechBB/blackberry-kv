@@ -64,7 +64,7 @@
           "opp": "IH",
           "round": "r1",
           "type": "damage",
-          "label": "MVP Damage"
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -112,7 +112,7 @@
           "opp": "IH",
           "round": "r2",
           "type": "damage",
-          "label": "MVP Damage"
+          "label": "MVP War-Score"
         }
       ]
     },
