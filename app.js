@@ -424,6 +424,19 @@
       });
   }
 
+  function paintRatingSortMarks() {
+    document.querySelectorAll(".rating-table th.sortable").forEach((th) => {
+      const key = th.dataset.rsort;
+      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      th.dataset.label = base;
+      const active = ratingSortKey === key;
+      const arrow = active ? (ratingSortDir === "asc" ? "▲" : "▼") : "";
+      th.classList.toggle("is-sorted", active);
+      th.setAttribute("aria-sort", active ? (ratingSortDir === "asc" ? "ascending" : "descending") : "none");
+      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+    });
+  }
+
   function paintRatingTable() {
     const q = (document.getElementById("rating-nick").value || "").trim().toLowerCase();
     let rows = ratingRows;
@@ -436,6 +449,8 @@
       if (av !== bv) return dir * (av - bv);
       return a.nick.localeCompare(b.nick, "ru");
     });
+
+    paintRatingSortMarks();
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
@@ -691,11 +706,14 @@
 
   function sortMark(key) {
     if (sortKey !== key) return "";
-    return sortDir === "asc" ? " ↑" : " ↓";
+    return sortDir === "asc" ? "▲" : "▼";
   }
 
   function th(key, label, cls) {
-    return `<th class="sortable ${cls || ""}" data-sort="${key}" title="Сортировать">${escapeHtml(label)}${sortMark(key)}</th>`;
+    const active = sortKey === key;
+    const aria = active ? (sortDir === "asc" ? "ascending" : "descending") : "none";
+    const mark = sortMark(key);
+    return `<th class="sortable ${cls || ""} ${active ? "is-sorted" : ""}" data-sort="${key}" aria-sort="${aria}" title="Сортировать">${escapeHtml(label)}<span class="sort-ind" aria-hidden="true">${mark}</span></th>`;
   }
 
   function cellRecord(value, isRecord, anti) {

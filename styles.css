@@ -320,8 +320,26 @@ html, body {
   color: var(--muted);
   padding: 24px 12px !important;
 }
-.rating-table th.sortable { cursor: pointer; user-select: none; }
-.rating-table th.sortable:hover { color: var(--ink); }
+.rating-table th.sortable,
+.players-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.rating-table th.sortable:hover,
+.players-table th.sortable:hover { color: var(--ink); }
+.rating-table th.is-sorted,
+.players-table th.is-sorted { color: var(--ink); }
+.sort-ind {
+  display: inline-block;
+  min-width: 0.85em;
+  margin-left: 0.28em;
+  font-size: 0.72em;
+  line-height: 1;
+  vertical-align: 0.05em;
+  color: var(--accent, #c4a574);
+  opacity: 0;
+}
+th.is-sorted .sort-ind { opacity: 1; }
 .rating-table td.ctr, .rating-table th.ctr {
   text-align: center;
   font-variant-numeric: tabular-nums;
