@@ -316,16 +316,22 @@
   function loadRating() {
     const note = document.getElementById("rating-note");
     note.textContent = "Считаем рейтинг…";
-    const monthId = document.getElementById("rating-month").value;
-    const meta = catalog.find((m) => m.id === monthId);
-    if (!meta) {
-      note.textContent = "Нет выбран для рейтинга";
+    const metas = selectedRatingMetas();
+    if (!metas.length) {
+      note.textContent = "Нет месяцев для рейтинга";
+      ratingRows = [];
+      paintRatingTable();
       return;
     }
 
-    Promise.all([fetch(meta.url).then((r) => r.json()), ensureLedger()])
-      .then(([data]) => {
-        const matchList = (data.matches || []).filter((m) => m.status !== "upcoming" && m.playersUrl);
+    Promise.all(metas.map((meta) => fetch(meta.url).then((r) => r.json()).then((data) => ({ meta, data }))))
+      .then((months) => {
+        const matchList = [];
+        months.forEach(({ data }) => {
+          (data.matches || []).forEach((m) => {
+            if (m.status !== "upcoming" && m.playersUrl) matchList.push(m);
+          });
+        });
         return Promise.all(
           matchList.map((m) =>
             fetch(m.playersUrl)
@@ -341,6 +347,7 @@
           if (!map.has(nick)) {
             map.set(nick, {
               nick,
+              kv: 0,
               res: 0,
               nok: 0,
               kills: 0,
@@ -355,19 +362,28 @@
           return map.get(nick);
         };
 
-        bundles.forEach(({ match, players }) => {
+        bundles.forEach(({ players }) => {
           if (!players) return;
           const r1 = players.r1 || [];
           const r2 = players.r2 || [];
           const total = players.total || players.players || sumRounds(r1, r2);
+          const inMeeting = new Set();
+
           total.forEach((p) => {
             if (!p || !p.nick) return;
+            inMeeting.add(p.nick);
             const row = touch(p.nick);
             row.res += Number(p.res) || 0;
             row.nok += Number(p.nok) || 0;
             row.kills += Number(p.kills) || 0;
             row.deaths += Number(p.deaths) || 0;
             row.dmg += Number(p.dmg) || 0;
+          });
+          [...r1, ...r2].forEach((p) => {
+            if (p && p.nick) inMeeting.add(p.nick);
+          });
+          inMeeting.forEach((nick) => {
+            touch(nick).kv += 1;
           });
 
           const mvp = players.mvp || {
@@ -396,8 +412,10 @@
           kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
         }));
         const withStats = bundles.filter((b) => b.players).length;
+        const scope = document.getElementById("rating-scope").value;
+        const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Каток со статой: ${withStats}. Ников: ${ratingRows.length}.`
+          ? `Период: ${scopeRu}. Каток со статой: ${withStats}. Ников: ${ratingRows.length}.`
           : "Пока нет каток с внесённой статой игроков — рейтинг пуст.";
         paintRatingTable();
       })
@@ -421,7 +439,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="12" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="13" class="empty-row">Нет игроков</td></tr>`;
       return;
     }
     tbody.innerHTML = rows
@@ -429,6 +447,7 @@
         (p, i) => `<tr>
         <td class="ctr">${i + 1}</td>
         <td>${escapeHtml(p.nick)}</td>
+        <td class="ctr">${p.kv}</td>
         <td class="ctr">${p.res}</td>
         <td class="ctr">${p.nok}</td>
         <td class="ctr">${p.kills}</td>
