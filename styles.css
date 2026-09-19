@@ -871,6 +871,7 @@ body.modal-open { overflow: hidden; }
   vertical-align: bottom;
   font-size: 0.78rem;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
