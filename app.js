@@ -73,8 +73,45 @@
       .replace(/"/g, "&quot;");
   }
 
-  function num(v) {
-    return v == null || v === "" ? "—" : escapeHtml(v);
+  function syncDualScroll(wrap) {
+    if (!wrap) return;
+    const top = wrap.querySelector(".table-scroll-top");
+    const main = wrap.querySelector(".table-scroll-main");
+    const spacer = wrap.querySelector(".table-scroll-spacer");
+    if (!top || !main || !spacer) return;
+    const w = main.scrollWidth;
+    spacer.style.width = w + "px";
+    top.hidden = main.scrollWidth <= main.clientWidth + 1;
+  }
+
+  function bindDualScroll(wrap) {
+    if (!wrap || wrap.dataset.dualBound) return;
+    const top = wrap.querySelector(".table-scroll-top");
+    const main = wrap.querySelector(".table-scroll-main");
+    if (!top || !main) return;
+    wrap.dataset.dualBound = "1";
+    let lock = false;
+    top.addEventListener("scroll", () => {
+      if (lock) return;
+      lock = true;
+      main.scrollLeft = top.scrollLeft;
+      lock = false;
+    });
+    main.addEventListener("scroll", () => {
+      if (lock) return;
+      lock = true;
+      top.scrollLeft = main.scrollLeft;
+      lock = false;
+    });
+    window.addEventListener("resize", () => syncDualScroll(wrap));
+    syncDualScroll(wrap);
+  }
+
+  function refreshDualScrolls() {
+    document.querySelectorAll("[data-dual-scroll]").forEach((wrap) => {
+      bindDualScroll(wrap);
+      syncDualScroll(wrap);
+    });
   }
 
   function nickKey(nick) {
@@ -512,6 +549,7 @@
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
       tbody.innerHTML = `<tr><td colspan="14" class="empty-row">Нет игроков</td></tr>`;
+      refreshDualScrolls();
       return;
     }
     tbody.innerHTML = rows
@@ -534,6 +572,7 @@
       </tr>`
       )
       .join("");
+    refreshDualScrolls();
   }
 
   document.querySelectorAll(".rating-table th.sortable").forEach((th) => {

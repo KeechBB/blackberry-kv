@@ -460,6 +460,38 @@ th.is-sorted .sort-ind { opacity: 1; }
     0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
+.table-scroll-wrap {
+  display: grid;
+  gap: 0;
+}
+.table-scroll-wrap .table-scroll-main {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.table-scroll-top {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 14px;
+  border: 1px solid var(--line);
+  border-bottom: none;
+  border-radius: 18px 18px 0 0;
+  background: rgba(0, 0, 0, 0.22);
+}
+.table-scroll-top::-webkit-scrollbar {
+  height: 12px;
+}
+.table-scroll-top::-webkit-scrollbar-thumb {
+  background: rgba(180, 190, 210, 0.45);
+  border-radius: 999px;
+}
+.table-scroll-top::-webkit-scrollbar-track {
+  background: transparent;
+}
+.table-scroll-spacer {
+  height: 1px;
+  pointer-events: none;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
