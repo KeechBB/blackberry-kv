@@ -97,6 +97,7 @@
       "r2": "0:77"
     },
     {
+      "id": "15-dcai",
       "day": 15,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
@@ -109,7 +110,8 @@
       "status": "win",
       "meeting": "2–0",
       "r1": "150:0",
-      "r2": "68:0"
+      "r2": "68:0",
+      "playersUrl": "data/players/15-dcai.json"
     },
     {
       "id": "16-hell",

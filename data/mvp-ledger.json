@@ -17,6 +17,40 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "15-dcai",
+      "day": 15,
+      "opp": "DCAI",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "KillReal"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Keech"
+        ],
+        "antiDeath": [
+          "Durik"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "KillReal"
+        ],
+        "killer": [
+          "Kuchenchips"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "daddy"
+        ]
+      }
+    },
+    {
       "id": "16-hell",
       "day": 16,
       "opp": "HELL",
@@ -200,6 +234,22 @@
         }
       ]
     },
+    "Durik": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Gadler": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -221,6 +271,46 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Keech": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "KillReal": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -258,10 +348,26 @@
     },
     "Kuchenchips": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpKiller": 2,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "16-hell",
           "day": 16,
@@ -384,6 +490,22 @@
         }
       ]
     },
+    "daddy": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "freak": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -402,10 +524,18 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "16-hell",
           "day": 16,

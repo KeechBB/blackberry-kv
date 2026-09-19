@@ -1,0 +1,504 @@
+{
+  "matchId": "15-dcai",
+  "opp": "DCAI",
+  "note": "Только наши. Ресы/ноки/килы/смерти/боевой счёт со scoreboard. Итого = сумма R1+R2. Shrein камера — в файле, не в рейтинге.",
+  "r1": [
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 648
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 98
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 243
+    },
+    {
+      "nick": "lepurple",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 50
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 219
+    },
+    {
+      "nick": "VET",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 525
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 91
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 68
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 221
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 91
+    },
+    {
+      "nick": "Radislave",
+      "res": 3,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 91
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 140
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 250
+    },
+    {
+      "nick": "KillReal",
+      "res": 6,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 28
+    },
+    {
+      "nick": "Lazy",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 300
+    },
+    {
+      "nick": "Zerox",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 73
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 36
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 41
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 467
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 516
+    },
+    {
+      "nick": "JESTER",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 100
+    },
+    {
+      "nick": "Azure",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 30
+    },
+    {
+      "nick": "MuskeR",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 85
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 45
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 56
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 463
+    },
+    {
+      "nick": "Shrein",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "r2": [
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 185
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 206
+    },
+    {
+      "nick": "Radislave",
+      "res": 8,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 44
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 158
+    },
+    {
+      "nick": "daddy",
+      "res": 2,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 11,
+      "dmg": 246
+    },
+    {
+      "nick": "Summer",
+      "res": 3,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 175
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 15,
+      "kills": 13,
+      "deaths": 5,
+      "dmg": 336
+    },
+    {
+      "nick": "KillReal",
+      "res": 21,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 58
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 195
+    },
+    {
+      "nick": "Lazy",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 77
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 7,
+      "dmg": 273
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 1,
+      "nok": 23,
+      "kills": 19,
+      "deaths": 5,
+      "dmg": 860
+    },
+    {
+      "nick": "Gadler",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 117
+    },
+    {
+      "nick": "iKEppA",
+      "res": 2,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 303
+    },
+    {
+      "nick": "lepurple",
+      "res": 9,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 65
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 1,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 4,
+      "dmg": 331
+    },
+    {
+      "nick": "VET",
+      "res": 15,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 30
+    },
+    {
+      "nick": "Zerox",
+      "res": 0,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 219
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 68
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 71
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 109
+    },
+    {
+      "nick": "qop",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 195
+    },
+    {
+      "nick": "MuskeR",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 129
+    },
+    {
+      "nick": "Azure",
+      "res": 6,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 51
+    },
+    {
+      "nick": "JESTER",
+      "res": 3,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 160
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 147
+    },
+    {
+      "nick": "Shrein",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "details": {
+    "r1": {
+      "us": "IMF",
+      "them": "BAF",
+      "tickets": "150:0",
+      "len": "27:00",
+      "goals": "+55 / +10",
+      "infantry": "70 / 90",
+      "fob": "0 / -40",
+      "veh": "-15 / -28",
+      "bleed": "0 / 12",
+      "ammo": "7900 / 4700",
+      "build": "1000 / 4200",
+      "fobsCreated": "1 / 2"
+    },
+    "r2": {
+      "us": "BAF",
+      "them": "IMF",
+      "tickets": "68:0",
+      "len": "44:30",
+      "goals": "+45 / +20",
+      "infantry": "116 / 123",
+      "fob": "0 / -20",
+      "veh": "-41 / -25",
+      "bleed": "0 / 7",
+      "ammo": "12400 / 11635",
+      "build": "2793 / 4000",
+      "fobsCreated": "1 / 2"
+    },
+    "total": {
+      "tickets": "2–0 (150:0 · 68:0)"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "KillReal"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Keech"
+      ],
+      "antiDeath": [
+        "Durik"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "KillReal"
+      ],
+      "killer": [
+        "Kuchenchips"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "daddy"
+      ]
+    }
+  }
+}
