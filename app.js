@@ -41,7 +41,7 @@
   let matches = [];
   let ledger = null;
   let ratingRows = [];
-  let ratingSortKey = "kills";
+  let ratingSortKey = "kv";
   let ratingSortDir = "desc";
 
   let modalMatch = null;
@@ -123,29 +123,49 @@
     const yearSel = document.getElementById("filter-year");
     const ratingYear = document.getElementById("rating-year");
     yearSel.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
-    ratingYear.innerHTML = yearSel.innerHTML;
+    ratingYear.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
 
-    const syncMonths = (yearEl, monthEl) => {
-      const y = Number(yearEl.value);
+    const syncMatchMonths = () => {
+      const y = Number(yearSel.value);
       const months = catalog.filter((m) => m.year === y).sort((a, b) => b.month - a.month);
-      monthEl.innerHTML = months
+      document.getElementById("filter-month").innerHTML = months
         .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
         .join("");
     };
-    const onYear = () => {
-      syncMonths(yearSel, document.getElementById("filter-month"));
+    const syncRatingMonths = () => {
+      const y = Number(ratingYear.value);
+      const months = catalog.filter((m) => m.year === y).sort((a, b) => b.month - a.month);
+      document.getElementById("rating-month").innerHTML = months
+        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .join("");
+    };
+
+    yearSel.addEventListener("change", () => {
+      syncMatchMonths();
       loadSelectedMonth();
       paintMonthChips();
-    };
-    yearSel.addEventListener("change", onYear);
+    });
     document.getElementById("filter-month").addEventListener("change", () => {
       loadSelectedMonth();
       paintMonthChips();
     });
     document.getElementById("filter-clan").addEventListener("input", paintMatchesTable);
 
+    const scopeEl = document.getElementById("rating-scope");
+    const yearWrap = document.getElementById("rating-year-wrap");
+    const monthWrap = document.getElementById("rating-month-wrap");
+    const syncRatingScopeUi = () => {
+      const scope = scopeEl.value;
+      yearWrap.hidden = scope === "all";
+      monthWrap.hidden = scope !== "month";
+    };
+    scopeEl.addEventListener("change", () => {
+      syncRatingScopeUi();
+      if (scopeEl.value === "month") syncRatingMonths();
+      loadRating();
+    });
     ratingYear.addEventListener("change", () => {
-      syncMonths(ratingYear, document.getElementById("rating-month"));
+      syncRatingMonths();
       loadRating();
     });
     document.getElementById("rating-month").addEventListener("change", loadRating);
@@ -154,9 +174,21 @@
     if (years.length) {
       yearSel.value = String(years[0]);
       ratingYear.value = String(years[0]);
-      syncMonths(yearSel, document.getElementById("filter-month"));
-      syncMonths(ratingYear, document.getElementById("rating-month"));
+      syncMatchMonths();
+      syncRatingMonths();
+      scopeEl.value = "all";
+      syncRatingScopeUi();
     }
+  }
+
+  function selectedRatingMetas() {
+    const scope = document.getElementById("rating-scope").value;
+    if (scope === "all") return catalog.slice();
+    const y = Number(document.getElementById("rating-year").value);
+    if (scope === "year") return catalog.filter((m) => m.year === y);
+    const id = document.getElementById("rating-month").value;
+    const one = catalog.find((m) => m.id === id);
+    return one ? [one] : [];
   }
 
   function paintMonthChips() {
