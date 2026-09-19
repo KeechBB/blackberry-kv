@@ -374,10 +374,80 @@
       });
   }
 
+  function matchColValue(m, col) {
+    const st = m.status || "upcoming";
+    switch (col) {
+      case "date":
+        return `${pad(m.day)}.${monthKey}`;
+      case "time":
+        return m.timeMsk || "";
+      case "clan":
+        return m.clan || "BlackBerry";
+      case "opp":
+        return m.opp || "";
+      case "map":
+        return m.map || "";
+      case "size":
+        return m.size || "";
+      case "server":
+        return m.server || "";
+      case "stack":
+        return m.stack || "";
+      case "meeting":
+        return m.meeting || "";
+      case "r1":
+        return m.r1 || "";
+      case "r2":
+        return m.r2 || "";
+      case "status":
+        return st;
+      default:
+        return "";
+    }
+  }
+
+  function colFilterValues() {
+    const out = {};
+    document.querySelectorAll(".matches-table .col-filter").forEach((el) => {
+      const key = el.dataset.col;
+      if (!key) return;
+      out[key] = (el.value || "").trim().toLowerCase();
+    });
+    return out;
+  }
+
   function filteredMatches() {
     const q = (document.getElementById("filter-clan").value || "").trim().toLowerCase();
-    if (!q) return matches;
-    return matches.filter((m) => String(m.opp || "").toLowerCase().includes(q));
+    const cols = colFilterValues();
+    return matches.filter((m) => {
+      if (q) {
+        const clanName = String(m.clan || "BlackBerry").toLowerCase();
+        const opp = String(m.opp || "").toLowerCase();
+        if (!clanName.includes(q) && !opp.includes(q)) return false;
+      }
+      for (const [col, needle] of Object.entries(cols)) {
+        if (!needle) continue;
+        const raw = matchColValue(m, col);
+        if (col === "status") {
+          if (String(raw).toLowerCase() !== needle) return false;
+          continue;
+        }
+        if (!String(raw).toLowerCase().includes(needle)) return false;
+      }
+      return true;
+    });
+  }
+
+  function wireMatchColFilters() {
+    const table = document.querySelector(".matches-table");
+    if (!table || table.dataset.filtersWired) return;
+    table.dataset.filtersWired = "1";
+    table.querySelectorAll(".col-filter").forEach((el) => {
+      const evt = el.tagName === "SELECT" ? "change" : "input";
+      el.addEventListener(evt, paintMatchesTable);
+      el.addEventListener("click", (e) => e.stopPropagation());
+      el.addEventListener("keydown", (e) => e.stopPropagation());
+    });
   }
 
   function paintStats(list) {
@@ -1127,6 +1197,7 @@
       tiersData = tiers;
       tierByNick = buildTierIndex(tiers);
       fillYearMonthSelects();
+      wireMatchColFilters();
       paintMonthChips();
       loadSelectedMonth();
       applyHash();

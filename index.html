@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260919-nicklink" />
+  <link rel="stylesheet" href="styles.css?v=20260919-colfilters" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -77,7 +77,7 @@
             <p class="board-sub">Тикеты — наши : их · клик по строке — стата игроков</p>
           </div>
           <div class="table-scroll">
-            <table>
+            <table class="matches-table">
               <thead>
                 <tr>
                   <th>Дата</th>
@@ -92,6 +92,28 @@
                   <th class="num">R1</th>
                   <th class="num">R2</th>
                   <th>Статус</th>
+                </tr>
+                <tr class="col-filters">
+                  <th><input class="col-filter" data-col="date" type="search" placeholder="…" aria-label="Фильтр: дата" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="time" type="search" placeholder="…" aria-label="Фильтр: МСК" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="clan" type="search" placeholder="…" aria-label="Фильтр: клан" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="opp" type="search" placeholder="…" aria-label="Фильтр: соперник" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="map" type="search" placeholder="…" aria-label="Фильтр: карта" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="size" type="search" placeholder="…" aria-label="Фильтр: формат" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="server" type="search" placeholder="…" aria-label="Фильтр: сервер" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="stack" type="search" placeholder="…" aria-label="Фильтр: состав" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="meeting" type="search" placeholder="…" aria-label="Фильтр: счёт" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="r1" type="search" placeholder="…" aria-label="Фильтр: R1" autocomplete="off" /></th>
+                  <th><input class="col-filter" data-col="r2" type="search" placeholder="…" aria-label="Фильтр: R2" autocomplete="off" /></th>
+                  <th>
+                    <select class="col-filter" data-col="status" aria-label="Фильтр: статус">
+                      <option value="">Все</option>
+                      <option value="win">победа</option>
+                      <option value="lose">поражение</option>
+                      <option value="draw">ничья</option>
+                      <option value="upcoming">скоро</option>
+                    </select>
+                  </th>
                 </tr>
               </thead>
               <tbody id="rows"></tbody>
@@ -184,6 +206,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260919-nicklink"></script>
+  <script src="app.js?v=20260919-colfilters"></script>
 </body>
 </html>
