@@ -597,10 +597,15 @@
 
   function pickMvps(rows) {
     if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
+    // Камера / нулевые строки без боя — не в MVP.
+    const pool = rows.filter(
+      (p) => (Number(p.res) || 0) + (Number(p.nok) || 0) + (Number(p.kills) || 0) + (Number(p.deaths) || 0) > 0
+    );
+    if (!pool.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
     function winner(field, preferHigherKd) {
-      const top = maxOf(rows, field);
+      const top = maxOf(pool, field);
       if (top <= 0) return null;
-      const tied = rows.filter((p) => (Number(p[field]) || 0) === top);
+      const tied = pool.filter((p) => (Number(p[field]) || 0) === top);
       tied.sort((a, b) => {
         const ak = kdOf(a);
         const bk = kdOf(b);

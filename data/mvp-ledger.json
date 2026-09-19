@@ -29,7 +29,7 @@
           "Diray"
         ],
         "damage": [
-          "Shrein"
+          "Tankist"
         ],
         "antiDeath": [
           "Chidori"
@@ -246,10 +246,10 @@
         }
       ]
     },
-    "Shrein": {
+    "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
         {
@@ -259,15 +259,7 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
-        }
-      ]
-    },
-    "Tankist": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
+        },
         {
           "matchId": "17-44th",
           "day": 17,
