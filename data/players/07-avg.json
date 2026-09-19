@@ -1,0 +1,488 @@
+{
+  "matchId": "07-avg",
+  "opp": "AVG",
+  "note": "Junior vs AVG (+мерки). Ресы/ноки/килы/смерти/боевой счёт. Keech камера (KAMEPA / камера).",
+  "r1": [
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 71
+    },
+    {
+      "nick": "MadMax",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 112
+    },
+    {
+      "nick": "firs",
+      "res": 6,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 42
+    },
+    {
+      "nick": "_RyBa.lleX_",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 50
+    },
+    {
+      "nick": "ADUN",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 171
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 254
+    },
+    {
+      "nick": "saosk.beb",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 49
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 9,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 169
+    },
+    {
+      "nick": "Senti",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 56
+    },
+    {
+      "nick": "Zik",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 10,
+      "dmg": 60
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 227
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 120
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 166
+    },
+    {
+      "nick": "Bashik",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 114
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 68
+    },
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 286
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 141
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 147
+    },
+    {
+      "nick": "DOSTAVKA",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 273
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 100
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 5,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 111
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 21
+    },
+    {
+      "nick": "Jerom101",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 271
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 11,
+      "dmg": 108
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 505
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 963
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "r2": [
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 162
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 134
+    },
+    {
+      "nick": "Senti",
+      "res": 3,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 49
+    },
+    {
+      "nick": "Prolik",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 19
+    },
+    {
+      "nick": "saosk.beb",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 54
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 64
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 79
+    },
+    {
+      "nick": "MadMax",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 138
+    },
+    {
+      "nick": "firs",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 33
+    },
+    {
+      "nick": "SerChan1",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 61
+    },
+    {
+      "nick": "ADUN",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 73
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 76
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 120
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 56
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 107
+    },
+    {
+      "nick": "Jerom101",
+      "res": 2,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 140
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 154
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 214
+    },
+    {
+      "nick": "Bashik",
+      "res": 2,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 151
+    },
+    {
+      "nick": "Mighty",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 186
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 75
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 41
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 232
+    },
+    {
+      "nick": "DOSTAVKA",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 67
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 9
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 428
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500
+    }
+  ],
+  "details": {
+    "r1": {
+      "us": "COA",
+      "them": "HOAK",
+      "tickets": "0:138",
+      "len": "35:54"
+    },
+    "r2": {
+      "us": "HOAK",
+      "them": "COA",
+      "tickets": "0:145",
+      "len": "27:07"
+    },
+    "total": {
+      "tickets": "0–2 (0:138 · 0:145)"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "firs"
+      ],
+      "killer": [
+        "Mighty"
+      ],
+      "damage": [
+        "Tankist"
+      ],
+      "antiDeath": [
+        "Mahorka"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Radislave"
+      ],
+      "killer": [
+        "Trixx"
+      ],
+      "damage": [
+        "Tankist"
+      ],
+      "antiDeath": [
+        "Mahorka"
+      ]
+    }
+  }
+}

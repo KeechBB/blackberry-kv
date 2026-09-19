@@ -17,6 +17,40 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "07-avg",
+      "day": 7,
+      "opp": "AVG",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "firs"
+        ],
+        "killer": [
+          "Mighty"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "Trixx"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      }
+    },
+    {
       "id": "11-dcai",
       "day": 11,
       "opp": "DCAI",
@@ -686,8 +720,24 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 3,
       "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "13-20r",
           "day": 13,
@@ -695,6 +745,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Mighty": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -747,11 +813,19 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "13-20r",
           "day": 13,
@@ -805,9 +879,25 @@
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 4,
+      "mvpDamage": 6,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "12-hell",
           "day": 12,
@@ -876,10 +966,18 @@
     },
     "Trixx": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "11-dcai",
           "day": 11,
@@ -963,11 +1061,19 @@
       ]
     },
     "firs": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "13-20r",
           "day": 13,

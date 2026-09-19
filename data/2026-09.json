@@ -20,6 +20,7 @@
       "r2": "0:345"
     },
     {
+      "id": "07-avg",
       "day": 7,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
@@ -33,7 +34,8 @@
       "meeting": "0–2",
       "r1": "0:138",
       "r2": "0:145",
-      "note": "AVG с мерками на добор"
+      "note": "AVG с мерками на добор",
+      "playersUrl": "data/players/07-avg.json"
     },
     {
       "id": "11-dcai",
