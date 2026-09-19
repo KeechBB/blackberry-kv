@@ -54,7 +54,7 @@
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
   // Камера / не в составе — не в рейтинге игроков.
-  const RATING_EXCLUDE = new Set(["shrein", "flex"]);
+  const RATING_EXCLUDE = new Set(["shrein"]);
 
   let catalog = [];
   let currentMonthMeta = null;
