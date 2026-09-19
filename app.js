@@ -539,8 +539,8 @@
             r2,
             details: data.details || null,
             mvpByRound: {
-              r1: pickMvps(r1),
-              r2: pickMvps(r2),
+              r1: (data.mvp && data.mvp.r1) || pickMvps(r1),
+              r2: (data.mvp && data.mvp.r2) || pickMvps(r2),
             },
           };
           labelTabs(m);
@@ -625,7 +625,7 @@
         const ak = kdOf(a);
         const bk = kdOf(b);
         if (ak !== bk) return preferHigherKd ? bk - ak : ak - bk;
-        return String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
+        return String(a.nick || "").localeCompare(String(b.nick || ""), "ru", { sensitivity: "base" });
       });
       return tied[0].nick;
     }

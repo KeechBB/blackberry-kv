@@ -46,7 +46,7 @@
           "Tankist"
         ],
         "antiDeath": [
-          "Keech"
+          "freak"
         ]
       }
     },
@@ -198,22 +198,6 @@
         }
       ]
     },
-    "Keech": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "17-44th",
-          "day": 17,
-          "opp": "44th",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
     "Kroasawn": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -288,6 +272,22 @@
           "matchId": "18-ih",
           "day": 18,
           "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "freak": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "17-44th",
+          "day": 17,
+          "opp": "44th",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
