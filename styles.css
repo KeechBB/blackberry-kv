@@ -585,6 +585,15 @@ th {
 .matches-table th.sortable:hover { color: var(--ink); }
 .matches-table th.is-sorted { color: var(--ink); }
 
+#train-matches-table th,
+#train-matches-table td {
+  text-align: center;
+}
+
+#train-matches-table .status {
+  justify-content: center;
+}
+
 tr:last-child td { border-bottom: none; }
 tbody tr { transition: background 0.2s ease; }
 tbody tr:hover td { background: rgba(167, 139, 250, 0.08); }

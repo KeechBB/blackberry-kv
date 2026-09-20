@@ -536,12 +536,6 @@
     switch (key) {
       case "date":
         return Number(m.day) || 0;
-      case "time": {
-        const t = String(m.timeMsk || "");
-        const parts = t.split(":");
-        if (parts.length >= 2) return Number(parts[0]) * 60 + Number(parts[1]);
-        return t;
-      }
       case "map":
         return String(m.map || "");
       case "mode":
@@ -618,7 +612,7 @@
     paintTrainSortMarks();
     paintTrainStats(list);
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="10" class="empty-row">Нет тренировок по фильтру</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="9" class="empty-row">Нет тренировок по фильтру</td></tr>`;
       return;
     }
     tbody.innerHTML = list
@@ -628,15 +622,14 @@
         const win = factionShort(m.winner);
         return `<tr class="clickable" data-train-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${trainMonthKey}</td>
-          <td class="num">${escapeHtml(m.timeMsk || "—")}</td>
           <td>${escapeHtml(m.map || "—")}</td>
-          <td class="ctr">${escapeHtml(m.mode || "—")}</td>
+          <td>${escapeHtml(m.mode || "—")}</td>
           <td>${escapeHtml(m.server || "—")}</td>
-          <td class="ctr" title="${escapeHtml(factionTitle(m.factionA))}">${escapeHtml(fa)}</td>
-          <td class="num">${m.ticketsA != null ? m.ticketsA : "—"}</td>
-          <td class="ctr" title="${escapeHtml(factionTitle(m.factionB))}">${escapeHtml(fb)}</td>
-          <td class="num">${m.ticketsB != null ? m.ticketsB : "—"}</td>
-          <td class="ctr" title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win)}</span></td>
+          <td title="${escapeHtml(factionTitle(m.factionA))}">${escapeHtml(fa)}</td>
+          <td>${m.ticketsA != null ? m.ticketsA : "—"}</td>
+          <td title="${escapeHtml(factionTitle(m.factionB))}">${escapeHtml(fb)}</td>
+          <td>${m.ticketsB != null ? m.ticketsB : "—"}</td>
+          <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win)}</span></td>
         </tr>`;
       })
       .join("");
