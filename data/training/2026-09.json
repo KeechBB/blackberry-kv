@@ -36,6 +36,23 @@
       "winner": "RGF",
       "status": "done",
       "playersUrl": "data/training/players/20-mutaha.json"
+    },
+    {
+      "id": "20-narva",
+      "day": 20,
+      "timeMsk": "—",
+      "map": "SEC 26 Narva AAS v3",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "31:26",
+      "factionA": "RGF",
+      "ticketsA": 23,
+      "factionB": "USA",
+      "ticketsB": 0,
+      "winner": "RGF",
+      "status": "done",
+      "playersUrl": "data/training/players/20-narva.json"
     }
   ]
 }
