@@ -1241,6 +1241,10 @@
               kills: 0,
               deaths: 0,
               dmg: 0,
+              mvpMedic: 0,
+              mvpKiller: 0,
+              mvpDamage: 0,
+              antiDeath: 0,
             });
           }
           return map.get(nick);
@@ -1271,6 +1275,27 @@
                 p.team &&
                 String(p.team).toUpperCase() === String(match.winner).toUpperCase());
             if (won) row.wins += 1;
+          });
+
+          /* MVP только для рейтинга тренировок — в mvp-ledger / профиль КВ не пишем */
+          const mvp =
+            (players.mvp && players.mvp.train) ||
+            pickMvps(enrichRows(list.filter((p) => p && p.nick && inRating(p.nick))));
+          (mvp.medic || []).forEach((n) => {
+            const row = touch(n);
+            if (row) row.mvpMedic += 1;
+          });
+          (mvp.killer || []).forEach((n) => {
+            const row = touch(n);
+            if (row) row.mvpKiller += 1;
+          });
+          (mvp.damage || []).forEach((n) => {
+            const row = touch(n);
+            if (row) row.mvpDamage += 1;
+          });
+          (mvp.antiDeath || []).forEach((n) => {
+            const row = touch(n);
+            if (row) row.antiDeath += 1;
           });
         });
 
@@ -1349,7 +1374,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="11" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1367,6 +1392,10 @@
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
         <td class="ctr">${p.dmg}</td>
+        <td class="ctr col-mvp-medic">${p.mvpMedic || 0}</td>
+        <td class="ctr col-mvp-killer">${p.mvpKiller || 0}</td>
+        <td class="ctr col-mvp-war">${p.mvpDamage || 0}</td>
+        <td class="ctr col-mvp-anti">${p.antiDeath || 0}</td>
       </tr>`
       )
       .join("");
