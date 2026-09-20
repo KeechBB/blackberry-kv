@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260921-training2" />
+  <link rel="stylesheet" href="styles.css?v=20260921-tm-section" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -26,6 +26,7 @@
     <nav class="topnav-links" aria-label="Разделы">
       <button type="button" class="nav-btn active" data-nav="home">Главная</button>
       <button type="button" class="nav-btn" data-nav="cw">Клановые войны</button>
+      <button type="button" class="nav-btn" data-nav="tm">Тренировочные матчи</button>
     </nav>
     <div class="topnav-auth">
       <a class="btn-auth ghost" href="https://bb-squad.ru/register">Регистрация</a>
@@ -48,7 +49,6 @@
         <div class="subnav" role="tablist" aria-label="Разделы КВ">
           <button type="button" class="subnav-btn active" data-cw="matches" role="tab">Календарь матчей</button>
           <button type="button" class="subnav-btn" data-cw="rating" role="tab">Рейтинг игроков</button>
-          <button type="button" class="subnav-btn" data-cw="training" role="tab">Тренировочные матчи</button>
         </div>
       </header>
 
@@ -127,15 +127,15 @@
         </div>
         <section class="board">
           <div class="board-head">
-            <h2>Рейтинг игроков</h2>
-            <p class="board-sub">Сумма итоговых по каткам · кол-во КВ = участия во встречах · MVP из раундов</p>
+            <h2>Рейтинг игроков · КВ</h2>
+            <p class="board-sub">Только клановые войны · кол-во КВ · MVP из раундов</p>
           </div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
               <div class="table-scroll-spacer"></div>
             </div>
             <div class="table-scroll table-scroll-main">
-            <table class="rating-table">
+            <table class="rating-table" id="cw-rating-table">
               <thead>
                 <tr>
                   <th class="ctr sortable" data-rsort="regNo" data-label="№" title="Номер регистрации на сайте">№</th>
@@ -143,7 +143,6 @@
                   <th class="ctr sortable" data-rsort="clan" data-label="Клан">Клан</th>
                   <th class="ctr sortable" data-rsort="tier" data-label="Ранг">Ранг</th>
                   <th class="ctr sortable" data-rsort="kv" data-label="Кол-во КВ">Кол-во КВ</th>
-                  <th class="ctr sortable" data-rsort="trainPct" data-label="Тр.%" title="% побед на тренировочных матчах">Тр.%</th>
                   <th class="ctr sortable" data-rsort="res" data-label="Ресы">Ресы</th>
                   <th class="ctr sortable" data-rsort="nok" data-label="Ноки">Ноки</th>
                   <th class="ctr sortable" data-rsort="kills" data-label="Килы">Килы</th>
@@ -163,8 +162,18 @@
           <p class="note" id="rating-note"></p>
         </section>
       </div>
+    </section>
 
-      <div id="cw-training" class="cw-panel" hidden>
+    <section id="view-tm" class="view" hidden>
+      <header class="cw-head">
+        <h1 class="cw-title">Тренировочные матчи</h1>
+        <div class="subnav" role="tablist" aria-label="Разделы тренировок">
+          <button type="button" class="subnav-btn active" data-tm="matches" role="tab">Матчи</button>
+          <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
+        </div>
+      </header>
+
+      <div id="tm-matches" class="cw-panel">
         <div class="filters">
           <label class="filter">
             <span>Год</span>
@@ -176,7 +185,7 @@
           </label>
           <label class="filter filter-grow">
             <span>Поиск</span>
-            <input id="train-filter-q" type="search" placeholder="Карта, сервер, сторона…" autocomplete="off" />
+            <input id="train-filter-q" type="search" placeholder="Карта, сервер, фракция…" autocomplete="off" />
           </label>
         </div>
         <div class="month-chips" id="train-month-chips" aria-label="Месяцы тренировок"></div>
@@ -186,8 +195,8 @@
 
         <section class="board">
           <div class="board-head">
-            <h2>Тренировки</h2>
-            <p class="board-sub">Без соперника и R1/R2 · фракции + тикеты каждой · обе стороны BB</p>
+            <h2>Матчи</h2>
+            <p class="board-sub">Обе стороны BB · фракции + тикеты · клик — стата игроков</p>
           </div>
           <div class="table-scroll">
             <table class="matches-table" id="train-matches-table">
@@ -209,6 +218,63 @@
             </table>
           </div>
           <p class="note" id="train-note"></p>
+        </section>
+      </div>
+
+      <div id="tm-rating" class="cw-panel" hidden>
+        <div class="filters">
+          <label class="filter">
+            <span>Период</span>
+            <select id="train-rating-scope">
+              <option value="all">За всё время</option>
+              <option value="year">Год</option>
+              <option value="month">Месяц</option>
+            </select>
+          </label>
+          <label class="filter" id="train-rating-year-wrap">
+            <span>Год</span>
+            <select id="train-rating-year"></select>
+          </label>
+          <label class="filter" id="train-rating-month-wrap">
+            <span>Месяц</span>
+            <select id="train-rating-month"></select>
+          </label>
+          <label class="filter filter-grow">
+            <span>Поиск ника</span>
+            <input id="train-rating-nick" type="search" placeholder="Ник игрока…" autocomplete="off" />
+          </label>
+        </div>
+        <section class="board">
+          <div class="board-head">
+            <h2>Рейтинг игроков · тренировки</h2>
+            <p class="board-sub">Только тренировочные матчи · не связан с рейтингом КВ</p>
+          </div>
+          <div class="table-scroll-wrap" data-dual-scroll>
+            <div class="table-scroll-top" aria-hidden="true">
+              <div class="table-scroll-spacer"></div>
+            </div>
+            <div class="table-scroll table-scroll-main">
+            <table class="rating-table" id="train-rating-table">
+              <thead>
+                <tr>
+                  <th class="ctr sortable" data-trsort="regNo" data-label="№">№</th>
+                  <th class="sortable" data-trsort="nick" data-label="Ник">Ник</th>
+                  <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
+                  <th class="ctr sortable" data-trsort="games" data-label="Каток">Каток</th>
+                  <th class="ctr sortable" data-trsort="winPct" data-label="% побед" title="% побед на тренировках">% побед</th>
+                  <th class="ctr sortable" data-trsort="res" data-label="Ресы">Ресы</th>
+                  <th class="ctr sortable" data-trsort="nok" data-label="Ноки">Ноки</th>
+                  <th class="ctr sortable" data-trsort="kills" data-label="Килы">Килы</th>
+                  <th class="ctr sortable" data-trsort="deaths" data-label="Смерти">Смерти</th>
+                  <th class="ctr sortable" data-trsort="kd" data-label="KD">KD</th>
+                  <th class="ctr sortable" data-trsort="dmg" data-label="Боевой счёт">Боевой счёт</th>
+                </tr>
+              </thead>
+              <tbody id="train-rating-rows"></tbody>
+            </table>
+            </div>
+          </div>
+          <p class="note" id="train-rating-note"></p>
         </section>
       </div>
     </section>
@@ -233,6 +299,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260921-training2"></script>
+  <script src="app.js?v=20260921-tm-section"></script>
 </body>
 </html>

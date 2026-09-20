@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260921-training";
+  const DATA_VER = "20260921-tm-section";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -91,6 +91,9 @@
   let ratingRows = [];
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
+  let trainRatingRows = [];
+  let trainRatingSortKey = "games";
+  let trainRatingSortDir = "desc";
   let matchSortKey = "date";
   let matchSortDir = "desc";
   let rosterByNick = {};
@@ -253,55 +256,93 @@
   function showView(name) {
     document.getElementById("view-home").hidden = name !== "home";
     document.getElementById("view-cw").hidden = name !== "cw";
-    document.body.classList.toggle("layout-cw", name === "cw");
+    const tm = document.getElementById("view-tm");
+    if (tm) tm.hidden = name !== "tm";
+    document.body.classList.toggle("layout-cw", name === "cw" || name === "tm");
     document.querySelectorAll(".nav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.nav === name);
     });
-    if (name === "cw") showCwPanel(document.querySelector(".subnav-btn.active")?.dataset.cw || "matches");
+    if (name === "cw") {
+      const active = document.querySelector("#view-cw .subnav-btn.active");
+      showCwPanel(active?.dataset.cw || "matches");
+    }
+    if (name === "tm") {
+      const active = document.querySelector("#view-tm .subnav-btn.active");
+      showTmPanel(active?.dataset.tm || "matches");
+    }
   }
 
   function showCwPanel(panel) {
     document.getElementById("cw-matches").hidden = panel !== "matches";
     document.getElementById("cw-rating").hidden = panel !== "rating";
-    const trainEl = document.getElementById("cw-training");
-    if (trainEl) trainEl.hidden = panel !== "training";
-    document.querySelectorAll(".subnav-btn").forEach((btn) => {
+    document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.cw === panel);
     });
     if (panel === "rating") loadRating();
-    if (panel === "training") {
+  }
+
+  function showTmPanel(panel) {
+    const matches = document.getElementById("tm-matches");
+    const rating = document.getElementById("tm-rating");
+    if (matches) matches.hidden = panel !== "matches";
+    if (rating) rating.hidden = panel !== "rating";
+    document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
+      btn.classList.toggle("active", btn.dataset.tm === panel);
+    });
+    if (panel === "matches") {
       ensureTrainingFilters();
       loadSelectedTrainingMonth();
+    }
+    if (panel === "rating") {
+      ensureTrainRatingFilters();
+      loadTrainingRating();
     }
   }
 
   document.querySelectorAll("[data-nav]").forEach((el) => {
     el.addEventListener("click", (e) => {
       e.preventDefault();
-      showView(el.dataset.nav);
-      history.replaceState(null, "", el.dataset.nav === "cw" ? "#/cw" : "#/");
+      const nav = el.dataset.nav;
+      showView(nav);
+      const hash = nav === "cw" ? "#/cw" : nav === "tm" ? "#/tm" : "#/";
+      history.replaceState(null, "", hash);
     });
   });
-  document.querySelectorAll(".subnav-btn").forEach((btn) => {
+  document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       showCwPanel(btn.dataset.cw);
-      const hash =
-        btn.dataset.cw === "rating"
-          ? "#/cw/rating"
-          : btn.dataset.cw === "training"
-            ? "#/cw/training"
-            : "#/cw";
-      history.replaceState(null, "", hash);
+      history.replaceState(
+        null,
+        "",
+        btn.dataset.cw === "rating" ? "#/cw/rating" : "#/cw"
+      );
+    });
+  });
+  document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showTmPanel(btn.dataset.tm);
+      history.replaceState(
+        null,
+        "",
+        btn.dataset.tm === "rating" ? "#/tm/rating" : "#/tm"
+      );
     });
   });
 
   function applyHash() {
     const h = location.hash || "#/";
-    if (h.startsWith("#/cw")) {
+    if (h.startsWith("#/cw/training") || h === "#/cw/training") {
+      history.replaceState(null, "", "#/tm");
+      showView("tm");
+      showTmPanel("matches");
+      return;
+    }
+    if (h.startsWith("#/tm")) {
+      showView("tm");
+      showTmPanel(h.includes("rating") ? "rating" : "matches");
+    } else if (h.startsWith("#/cw")) {
       showView("cw");
-      if (h.includes("rating")) showCwPanel("rating");
-      else if (h.includes("training")) showCwPanel("training");
-      else showCwPanel("matches");
+      showCwPanel(h.includes("rating") ? "rating" : "matches");
     } else {
       showView("home");
     }
@@ -885,54 +926,24 @@
             .then((data) => ({ meta, data }))
         )
       ),
-      Promise.all(
-        (trainingCatalog.length ? trainingCatalog : []).map((meta) => {
-          const scope = document.getElementById("rating-scope").value;
-          const y = Number(document.getElementById("rating-year").value);
-          const mid = document.getElementById("rating-month").value;
-          if (scope === "year" && meta.year !== y) return Promise.resolve(null);
-          if (scope === "month" && meta.id !== mid) return Promise.resolve(null);
-          return fetch(dataUrl(meta.url))
-            .then((r) => (r.ok ? r.json() : null))
-            .then((data) => (data ? { meta, data } : null))
-            .catch(() => null);
-        })
-      ),
     ])
-      .then(([, months, trainMonths]) => {
+      .then(([, months]) => {
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
             if (m.status !== "upcoming" && m.playersUrl) matchList.push(m);
           });
         });
-        const trainList = [];
-        (trainMonths || []).forEach((bundle) => {
-          if (!bundle || !bundle.data) return;
-          (bundle.data.matches || []).forEach((m) => {
-            if (m.status !== "upcoming" && m.playersUrl) trainList.push(m);
-          });
-        });
-        return Promise.all([
-          Promise.all(
-            matchList.map((m) =>
-              fetch(dataUrl(m.playersUrl))
-                .then((r) => (r.ok ? r.json() : null))
-                .then((pj) => ({ match: m, players: pj }))
-                .catch(() => ({ match: m, players: null }))
-            )
-          ),
-          Promise.all(
-            trainList.map((m) =>
-              fetch(dataUrl(m.playersUrl))
-                .then((r) => (r.ok ? r.json() : null))
-                .then((pj) => ({ match: m, players: pj }))
-                .catch(() => ({ match: m, players: null }))
-            )
-          ),
-        ]);
+        return Promise.all(
+          matchList.map((m) =>
+            fetch(dataUrl(m.playersUrl))
+              .then((r) => (r.ok ? r.json() : null))
+              .then((pj) => ({ match: m, players: pj }))
+              .catch(() => ({ match: m, players: null }))
+          )
+        );
       })
-      .then(([bundles, trainBundles]) => {
+      .then((bundles) => {
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
@@ -945,9 +956,6 @@
               squad: ro.squad,
               regNo: ro.regNo,
               kv: 0,
-              trainGames: 0,
-              trainWins: 0,
-              trainPct: null,
               res: 0,
               nok: 0,
               kills: 0,
@@ -1012,43 +1020,16 @@
           });
         });
 
-        (trainBundles || []).forEach(({ match, players }) => {
-          if (!players) return;
-          const list =
-            players.players && players.players.length
-              ? players.players
-              : [].concat(players.teamA || [], players.teamB || []);
-          const seen = new Set();
-          list.forEach((p) => {
-            if (!p || !p.nick || !inRating(p.nick)) return;
-            if (seen.has(p.nick)) return;
-            seen.add(p.nick);
-            const row = touch(p.nick);
-            if (!row) return;
-            row.trainGames += 1;
-            const won =
-              p.won === true ||
-              (match.winner &&
-                p.team &&
-                String(p.team).toUpperCase() === String(match.winner).toUpperCase());
-            if (won) row.trainWins += 1;
-          });
-        });
-
         ratingRows = Array.from(map.values()).map((p) => ({
           ...p,
           kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
-          trainPct:
-            p.trainGames > 0
-              ? Math.round((1000 * p.trainWins) / p.trainGames) / 10
-              : null,
         }));
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток со статой: ${withStats}. Ников: ${ratingRows.length}.`
-          : "Пока нет каток с внесённой статой игроков — рейтинг пуст.";
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}.`
+          : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
       .catch((err) => {
@@ -1057,7 +1038,7 @@
   }
 
   function paintRatingSortMarks() {
-    document.querySelectorAll(".rating-table th.sortable").forEach((th) => {
+    document.querySelectorAll("#cw-rating-table th.sortable").forEach((th) => {
       const key = th.dataset.rsort;
       const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
       th.dataset.label = base;
@@ -1098,7 +1079,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1110,7 +1091,6 @@
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
-        <td class="ctr" title="${p.trainGames ? `${p.trainWins}/${p.trainGames}` : "нет тренировок"}">${p.trainPct != null ? `${p.trainPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
         <td class="ctr">${p.nok}</td>
         <td class="ctr">${p.kills}</td>
@@ -1127,7 +1107,7 @@
     refreshDualScrolls();
   }
 
-  document.querySelectorAll(".rating-table th.sortable").forEach((th) => {
+  document.querySelectorAll("#cw-rating-table th.sortable").forEach((th) => {
     th.addEventListener("click", () => {
       const key = th.dataset.rsort;
       if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
@@ -1138,6 +1118,267 @@
       paintRatingTable();
     });
   });
+
+  /* ——— training rating (separate from CW) ——— */
+  let trainRatingFiltersReady = false;
+  function ensureTrainRatingFilters() {
+    if (trainRatingFiltersReady) return;
+    const yearSel = document.getElementById("train-rating-year");
+    const monthSel = document.getElementById("train-rating-month");
+    const scopeEl = document.getElementById("train-rating-scope");
+    if (!yearSel || !monthSel || !scopeEl) return;
+
+    const years = [...new Set(trainingCatalog.map((m) => m.year))].sort((a, b) => b - a);
+    yearSel.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
+    const syncMonths = () => {
+      const y = Number(yearSel.value);
+      const months = trainingCatalog
+        .filter((m) => m.year === y)
+        .sort((a, b) => b.month - a.month);
+      monthSel.innerHTML = months
+        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .join("");
+    };
+    const yearWrap = document.getElementById("train-rating-year-wrap");
+    const monthWrap = document.getElementById("train-rating-month-wrap");
+    const syncScopeUi = () => {
+      const scope = scopeEl.value;
+      if (yearWrap) yearWrap.hidden = scope === "all";
+      if (monthWrap) monthWrap.hidden = scope !== "month";
+    };
+    scopeEl.addEventListener("change", () => {
+      syncScopeUi();
+      if (scopeEl.value === "month") syncMonths();
+      loadTrainingRating();
+    });
+    yearSel.addEventListener("change", () => {
+      syncMonths();
+      loadTrainingRating();
+    });
+    monthSel.addEventListener("change", loadTrainingRating);
+    const nickEl = document.getElementById("train-rating-nick");
+    if (nickEl) nickEl.addEventListener("input", paintTrainingRatingTable);
+    document.querySelectorAll("#train-rating-table th.sortable").forEach((th) => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.trsort;
+        if (trainRatingSortKey === key) {
+          trainRatingSortDir = trainRatingSortDir === "asc" ? "desc" : "asc";
+        } else {
+          trainRatingSortKey = key;
+          trainRatingSortDir =
+            key === "nick" || key === "clan" || key === "regNo" ? "asc" : "desc";
+        }
+        paintTrainingRatingTable();
+      });
+    });
+    if (years.length) {
+      yearSel.value = String(years[0]);
+      syncMonths();
+      scopeEl.value = "all";
+      syncScopeUi();
+    }
+    trainRatingFiltersReady = true;
+  }
+
+  function selectedTrainingRatingMetas() {
+    const scope = document.getElementById("train-rating-scope")?.value || "all";
+    if (scope === "all") return trainingCatalog.slice();
+    const y = Number(document.getElementById("train-rating-year")?.value);
+    if (scope === "year") return trainingCatalog.filter((m) => m.year === y);
+    const id = document.getElementById("train-rating-month")?.value;
+    const one = trainingCatalog.find((m) => m.id === id);
+    return one ? [one] : [];
+  }
+
+  function loadTrainingRating() {
+    const note = document.getElementById("train-rating-note");
+    if (!note) return;
+    note.textContent = "Считаем рейтинг тренировок…";
+    const metas = selectedTrainingRatingMetas();
+    if (!metas.length) {
+      note.textContent = "Нет месяцев тренировок";
+      trainRatingRows = [];
+      paintTrainingRatingTable();
+      return;
+    }
+
+    Promise.all([
+      loadRoster(),
+      Promise.all(
+        metas.map((meta) =>
+          fetch(dataUrl(meta.url))
+            .then((r) => (r.ok ? r.json() : null))
+            .then((data) => (data ? { meta, data } : null))
+            .catch(() => null)
+        )
+      ),
+    ])
+      .then(([, months]) => {
+        const matchList = [];
+        (months || []).forEach((bundle) => {
+          if (!bundle || !bundle.data) return;
+          (bundle.data.matches || []).forEach((m) => {
+            if (m.status !== "upcoming" && m.playersUrl) matchList.push(m);
+          });
+        });
+        return Promise.all(
+          matchList.map((m) =>
+            fetch(dataUrl(m.playersUrl))
+              .then((r) => (r.ok ? r.json() : null))
+              .then((pj) => ({ match: m, players: pj }))
+              .catch(() => ({ match: m, players: null }))
+          )
+        );
+      })
+      .then((bundles) => {
+        const map = new Map();
+        const touch = (nick) => {
+          if (!inRating(nick)) return null;
+          if (!map.has(nick)) {
+            const ro = rosterOf(nick);
+            map.set(nick, {
+              nick,
+              clan: ro.clan,
+              regNo: ro.regNo,
+              games: 0,
+              wins: 0,
+              winPct: null,
+              res: 0,
+              nok: 0,
+              kills: 0,
+              deaths: 0,
+              dmg: 0,
+            });
+          }
+          return map.get(nick);
+        };
+
+        bundles.forEach(({ match, players }) => {
+          if (!players) return;
+          const list =
+            players.players && players.players.length
+              ? players.players
+              : [].concat(players.teamA || [], players.teamB || []);
+          const seen = new Set();
+          list.forEach((p) => {
+            if (!p || !p.nick || !inRating(p.nick)) return;
+            const row = touch(p.nick);
+            if (!row) return;
+            row.res += Number(p.res) || 0;
+            row.nok += Number(p.nok) || 0;
+            row.kills += Number(p.kills) || 0;
+            row.deaths += Number(p.deaths) || 0;
+            row.dmg += Number(p.dmg) || 0;
+            if (seen.has(p.nick)) return;
+            seen.add(p.nick);
+            row.games += 1;
+            const won =
+              p.won === true ||
+              (match.winner &&
+                p.team &&
+                String(p.team).toUpperCase() === String(match.winner).toUpperCase());
+            if (won) row.wins += 1;
+          });
+        });
+
+        trainRatingRows = Array.from(map.values()).map((p) => ({
+          ...p,
+          kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
+          winPct:
+            p.games > 0 ? Math.round((1000 * p.wins) / p.games) / 10 : null,
+        }));
+        const withStats = bundles.filter((b) => b.players).length;
+        const scope = document.getElementById("train-rating-scope")?.value || "all";
+        const scopeRu =
+          scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+        note.textContent = withStats
+          ? `Период: ${scopeRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
+          : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
+        paintTrainingRatingTable();
+      })
+      .catch((err) => {
+        note.textContent = String(err.message || err);
+      });
+  }
+
+  function paintTrainingRatingSortMarks() {
+    document.querySelectorAll("#train-rating-table th.sortable").forEach((th) => {
+      const key = th.dataset.trsort;
+      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      th.dataset.label = base;
+      const active = trainRatingSortKey === key;
+      const arrow = active ? (trainRatingSortDir === "asc" ? "▲" : "▼") : "";
+      th.classList.toggle("is-sorted", active);
+      th.setAttribute(
+        "aria-sort",
+        active ? (trainRatingSortDir === "asc" ? "ascending" : "descending") : "none"
+      );
+      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+    });
+  }
+
+  function paintTrainingRatingTable() {
+    const tbody = document.getElementById("train-rating-rows");
+    if (!tbody) return;
+    const q = (document.getElementById("train-rating-nick")?.value || "")
+      .trim()
+      .toLowerCase();
+    let rows = trainRatingRows;
+    if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
+    const dir = trainRatingSortDir === "asc" ? 1 : -1;
+    rows = rows.slice().sort((a, b) => {
+      if (trainRatingSortKey === "nick" || trainRatingSortKey === "clan") {
+        return (
+          dir *
+          String(a[trainRatingSortKey] || "").localeCompare(
+            String(b[trainRatingSortKey] || ""),
+            "ru"
+          )
+        );
+      }
+      if (trainRatingSortKey === "regNo") {
+        const av = a.regNo == null ? Number.POSITIVE_INFINITY : Number(a.regNo);
+        const bv = b.regNo == null ? Number.POSITIVE_INFINITY : Number(b.regNo);
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
+      if (trainRatingSortKey === "winPct") {
+        const av = a.winPct == null ? -1 : Number(a.winPct);
+        const bv = b.winPct == null ? -1 : Number(b.winPct);
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
+      const av = Number(a[trainRatingSortKey]) || 0;
+      const bv = Number(b[trainRatingSortKey]) || 0;
+      if (av !== bv) return dir * (av - bv);
+      return a.nick.localeCompare(b.nick, "ru");
+    });
+
+    paintTrainingRatingSortMarks();
+    if (!rows.length) {
+      tbody.innerHTML = `<tr><td colspan="11" class="empty-row">Нет игроков</td></tr>`;
+      refreshDualScrolls();
+      return;
+    }
+    tbody.innerHTML = rows
+      .map(
+        (p) => `<tr>
+        <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
+        <td>${nickLinkHtml(p.nick)}</td>
+        <td class="ctr">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr">${p.games}</td>
+        <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
+        <td class="ctr">${p.res}</td>
+        <td class="ctr">${p.nok}</td>
+        <td class="ctr">${p.kills}</td>
+        <td class="ctr">${p.deaths}</td>
+        <td class="ctr">${p.kd}</td>
+        <td class="ctr">${p.dmg}</td>
+      </tr>`
+      )
+      .join("");
+    refreshDualScrolls();
+  }
 
   /* ——— match modal (player stats) ——— */
   function closeModal() {
