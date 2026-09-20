@@ -215,6 +215,20 @@
       "note": "NO SCOUT"
     },
     {
+      "id": "26-alpha",
+      "day": 26,
+      "timeMsk": "19:30",
+      "timeUtc": "16:30",
+      "opp": "ALPHA",
+      "map": "FCL Anvil",
+      "size": "16v16",
+      "server": "BB",
+      "rules": "FCL",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "NO SCOUT · заявка Junior → мейн"
+    },
+    {
       "day": 27,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
