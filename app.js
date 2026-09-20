@@ -1075,7 +1075,7 @@
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
     const dir = ratingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
-      if (ratingSortKey === "nick" || ratingSortKey === "clan" || ratingSortKey === "squad") {
+      if (ratingSortKey === "nick" || ratingSortKey === "clan") {
         return dir * String(a[ratingSortKey] || "").localeCompare(String(b[ratingSortKey] || ""), "ru");
       }
       if (ratingSortKey === "regNo") {
@@ -1098,7 +1098,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1108,7 +1108,6 @@
         <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
-        <td class="ctr">${escapeHtml(p.squad || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
         <td class="ctr" title="${p.trainGames ? `${p.trainWins}/${p.trainGames}` : "нет тренировок"}">${p.trainPct != null ? `${p.trainPct}%` : "—"}</td>
@@ -1134,7 +1133,7 @@
       if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
       else {
         ratingSortKey = key;
-        ratingSortDir = key === "nick" || key === "tier" || key === "clan" || key === "squad" || key === "regNo" ? "asc" : "desc";
+        ratingSortDir = key === "nick" || key === "tier" || key === "clan" || key === "regNo" ? "asc" : "desc";
       }
       paintRatingTable();
     });
