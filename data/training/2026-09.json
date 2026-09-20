@@ -19,6 +19,23 @@
       "winner": "ADF",
       "status": "done",
       "playersUrl": "data/training/players/20-anvil.json"
+    },
+    {
+      "id": "20-mutaha",
+      "day": 20,
+      "timeMsk": "—",
+      "map": "Mutaha AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "45:40",
+      "factionA": "RGF",
+      "ticketsA": 157,
+      "factionB": "USA",
+      "ticketsB": 0,
+      "winner": "RGF",
+      "status": "done",
+      "playersUrl": "data/training/players/20-mutaha.json"
     }
   ]
 }
