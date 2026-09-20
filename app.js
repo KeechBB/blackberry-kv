@@ -23,8 +23,9 @@
   const INDEX_URL = "data/index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
-  const DATA_VER = "20260919-maps";
+  const DATA_VER = "20260919-nocut";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
+  const PROFILE_BASE = "https://bb-squad.ru/players";
   const isEmbed =
     new URLSearchParams(location.search).has("embed") || window.self !== window.top;
   if (isEmbed) {
@@ -53,7 +54,7 @@
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
   // Камера / не в составе — не в рейтинге игроков.
-  const RATING_EXCLUDE = new Set(["shrein", "flex"]);
+  const RATING_EXCLUDE = new Set(["shrein"]);
 
   let catalog = [];
   let currentMonthMeta = null;
@@ -65,6 +66,8 @@
   let ratingRows = [];
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
+  let matchSortKey = "date";
+  let matchSortDir = "desc";
   let rosterByNick = {};
 
   let modalMatch = null;
@@ -143,6 +146,27 @@
       .replace(/^\[bb\]\s*/i, "")
       .replace(/^\[cam\]\s*/i, "")
       .toLowerCase();
+  }
+
+  function profileNick(nick) {
+    return String(nick || "")
+      .trim()
+      .replace(/^\[bb\]\s*/i, "")
+      .replace(/^\[cam\]\s*/i, "")
+      .trim();
+  }
+
+  function profileHref(nick) {
+    const clean = profileNick(nick);
+    if (!clean || clean === "—") return null;
+    return `${PROFILE_BASE}/${encodeURIComponent(clean)}`;
+  }
+
+  function nickLinkHtml(nick) {
+    const label = nick || "—";
+    const href = profileHref(nick);
+    if (!href) return escapeHtml(label);
+    return `<a class="nick-profile-link" href="${escapeHtml(href)}" target="_top" rel="noopener">${escapeHtml(label)}</a>`;
   }
 
   function inRating(nick) {
@@ -352,10 +376,106 @@
       });
   }
 
+  function matchSortValue(m, key) {
+    switch (key) {
+      case "date":
+        return Number(m.day) || 0;
+      case "time": {
+        const t = String(m.timeMsk || "");
+        const parts = t.split(":");
+        if (parts.length >= 2) return Number(parts[0]) * 60 + Number(parts[1]);
+        return t;
+      }
+      case "clan":
+        return m.clan || "BlackBerry";
+      case "opp":
+        return m.opp || "";
+      case "map":
+        return m.map || "";
+      case "size":
+        return m.size || "";
+      case "server":
+        return m.server || "";
+      case "stack":
+        return m.stack || "";
+      case "meeting":
+        return m.meeting || "";
+      case "r1":
+        return m.r1 || "";
+      case "r2":
+        return m.r2 || "";
+      case "status": {
+        const order = { win: 1, draw: 2, lose: 3, upcoming: 4 };
+        return order[m.status || "upcoming"] || 9;
+      }
+      default:
+        return "";
+    }
+  }
+
   function filteredMatches() {
     const q = (document.getElementById("filter-clan").value || "").trim().toLowerCase();
-    if (!q) return matches;
-    return matches.filter((m) => String(m.opp || "").toLowerCase().includes(q));
+    let list = matches;
+    if (q) {
+      list = list.filter((m) => {
+        const clanName = String(m.clan || "BlackBerry").toLowerCase();
+        const opp = String(m.opp || "").toLowerCase();
+        return clanName.includes(q) || opp.includes(q);
+      });
+    }
+    const dir = matchSortDir === "asc" ? 1 : -1;
+    const textKeys = new Set(["clan", "opp", "map", "size", "server", "stack", "meeting", "r1", "r2"]);
+    return list.slice().sort((a, b) => {
+      const av = matchSortValue(a, matchSortKey);
+      const bv = matchSortValue(b, matchSortKey);
+      if (textKeys.has(matchSortKey) || typeof av === "string" || typeof bv === "string") {
+        const cmp = String(av).localeCompare(String(bv), "ru", { numeric: true, sensitivity: "base" });
+        if (cmp) return dir * cmp;
+      } else if (av !== bv) {
+        return dir * (Number(av) - Number(bv));
+      }
+      if (matchSortKey === "date" || matchSortKey === "time") {
+        return (
+          dir *
+          String(a.timeMsk || "").localeCompare(String(b.timeMsk || ""), "ru")
+        );
+      }
+      const dayCmp = (Number(b.day) || 0) - (Number(a.day) || 0);
+      if (dayCmp) return dayCmp;
+      return String(b.timeMsk || "").localeCompare(String(a.timeMsk || ""), "ru");
+    });
+  }
+
+  function paintMatchSortMarks() {
+    document.querySelectorAll(".matches-table th.sortable").forEach((th) => {
+      const key = th.dataset.msort;
+      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      th.dataset.label = base;
+      const active = matchSortKey === key;
+      const arrow = active ? (matchSortDir === "asc" ? "▲" : "▼") : "";
+      th.classList.toggle("is-sorted", active);
+      th.setAttribute("aria-sort", active ? (matchSortDir === "asc" ? "ascending" : "descending") : "none");
+      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+    });
+  }
+
+  function wireMatchSort() {
+    const table = document.querySelector(".matches-table");
+    if (!table || table.dataset.sortWired) return;
+    table.dataset.sortWired = "1";
+    table.querySelectorAll("th.sortable").forEach((th) => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.msort;
+        if (!key) return;
+        if (matchSortKey === key) matchSortDir = matchSortDir === "asc" ? "desc" : "asc";
+        else {
+          matchSortKey = key;
+          matchSortDir =
+            key === "date" || key === "time" ? "desc" : key === "status" ? "asc" : "asc";
+        }
+        paintMatchesTable();
+      });
+    });
   }
 
   function paintStats(list) {
@@ -378,6 +498,7 @@
 
   function paintMatchesTable() {
     const list = filteredMatches();
+    paintMatchSortMarks();
     paintStats(list);
     const tbody = document.getElementById("rows");
     if (!list.length) {
@@ -436,6 +557,7 @@
     return {
       clan: info?.clan || "—",
       squad: info?.squad || "—",
+      regNo: info?.regNo != null ? Number(info.regNo) : null,
     };
   }
 
@@ -501,6 +623,7 @@
               tier: tierOf(nick),
               clan: ro.clan,
               squad: ro.squad,
+              regNo: ro.regNo,
               kv: 0,
               res: 0,
               nok: 0,
@@ -605,6 +728,12 @@
       if (ratingSortKey === "nick" || ratingSortKey === "clan" || ratingSortKey === "squad") {
         return dir * String(a[ratingSortKey] || "").localeCompare(String(b[ratingSortKey] || ""), "ru");
       }
+      if (ratingSortKey === "regNo") {
+        const av = a.regNo == null ? Number.POSITIVE_INFINITY : Number(a.regNo);
+        const bv = b.regNo == null ? Number.POSITIVE_INFINITY : Number(b.regNo);
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
       if (ratingSortKey === "tier") {
         if (a.tier !== b.tier) return dir * (a.tier - b.tier);
         return a.nick.localeCompare(b.nick, "ru");
@@ -625,11 +754,11 @@
     }
     tbody.innerHTML = rows
       .map(
-        (p, i) => `<tr>
-        <td class="ctr">${i + 1}</td>
-        <td>${escapeHtml(p.nick)}</td>
-        <td>${escapeHtml(p.clan || "—")}</td>
-        <td>${escapeHtml(p.squad || "—")}</td>
+        (p) => `<tr>
+        <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
+        <td>${nickLinkHtml(p.nick)}</td>
+        <td class="ctr">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr">${escapeHtml(p.squad || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
         <td class="ctr">${p.res}</td>
@@ -654,7 +783,7 @@
       if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
       else {
         ratingSortKey = key;
-        ratingSortDir = key === "nick" || key === "tier" || key === "clan" || key === "squad" ? "asc" : "desc";
+        ratingSortDir = key === "nick" || key === "tier" || key === "clan" || key === "squad" || key === "regNo" ? "asc" : "desc";
       }
       paintRatingTable();
     });
@@ -985,7 +1114,7 @@
                 const kd = kdValue(p);
                 return `<tr>
               <td class="ctr">${i + 1}</td>
-              <td><div class="nick-cell"><span class="nick-name">${escapeHtml(p.nick || "—")}</span>${renderMedals(p.nick)}</div></td>
+              <td><div class="nick-cell">${nickLinkHtml(p.nick || "—")}${renderMedals(p.nick)}</div></td>
               ${cellRecord(p.res, records.res > 0 && p.res === records.res, false)}
               ${cellRecord(p.nok, records.nok > 0 && p.nok === records.nok, false)}
               ${cellRecord(p.kills, records.kills > 0 && p.kills === records.kills, false)}
@@ -1105,6 +1234,7 @@
       tiersData = tiers;
       tierByNick = buildTierIndex(tiers);
       fillYearMonthSelects();
+      wireMatchSort();
       paintMonthChips();
       loadSelectedMonth();
       applyHash();

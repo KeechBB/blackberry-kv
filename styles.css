@@ -504,7 +504,8 @@ th.is-sorted .sort-ind { opacity: 1; }
 }
 
 .table-scroll {
-  overflow-x: auto;
+  overflow: auto;
+  max-height: min(70vh, 820px);
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--panel);
@@ -512,6 +513,14 @@ th.is-sorted .sort-ind { opacity: 1; }
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.03) inset,
     0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.table-scroll thead th {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: rgba(12, 10, 20, 0.96);
+  box-shadow: 0 1px 0 rgba(167, 139, 250, 0.18);
 }
 
 .table-scroll-wrap {
@@ -568,6 +577,13 @@ th {
   letter-spacing: 0.08em;
   background: rgba(0, 0, 0, 0.28);
 }
+
+.matches-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+.matches-table th.sortable:hover { color: var(--ink); }
+.matches-table th.is-sorted { color: var(--ink); }
 
 tr:last-child td { border-bottom: none; }
 tbody tr { transition: background 0.2s ease; }
@@ -807,6 +823,24 @@ body.modal-open { overflow: hidden; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.nick-profile-link {
+  color: #efe8ff;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.4);
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nick-profile-link:hover {
+  color: #c4b5fd;
+  border-bottom-color: #c4b5fd;
+}
+.rating-table .nick-profile-link {
+  display: inline;
+}
 .mvp-row {
   display: flex;
   flex-wrap: nowrap;
@@ -868,7 +902,7 @@ body.modal-open { overflow: hidden; }
 }
 .rating-table th {
   white-space: nowrap;
-  vertical-align: bottom;
+  vertical-align: middle;
   font-size: 0.78rem;
   letter-spacing: 0.02em;
   text-align: center;
@@ -878,9 +912,18 @@ body.modal-open { overflow: hidden; }
 .rating-table th.col-mvp-war,
 .rating-table th.col-mvp-anti {
   white-space: normal;
-  line-height: 1.15;
-  min-width: 4.6rem;
-  max-width: 5.8rem;
+  line-height: 1.2;
+  min-width: 5.2rem;
+  max-width: 7rem;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.rating-table th[data-rsort="clan"],
+.rating-table th[data-rsort="squad"],
+.rating-table td:nth-child(3),
+.rating-table td:nth-child(4) {
   text-align: center;
 }
 .rating-table th.col-mvp-anti,

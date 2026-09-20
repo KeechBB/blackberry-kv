@@ -3,11 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
   <title>BlackBerry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260919-th-center" />
+  <link rel="stylesheet" href="styles.css?v=20260919-matchsort" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -75,21 +77,21 @@
             <p class="board-sub">Тикеты — наши : их · клик по строке — стата игроков</p>
           </div>
           <div class="table-scroll">
-            <table>
+            <table class="matches-table">
               <thead>
                 <tr>
-                  <th>Дата</th>
-                  <th class="num">МСК</th>
-                  <th>Клан</th>
-                  <th>Соперник</th>
-                  <th>Карта</th>
-                  <th class="ctr">Формат</th>
-                  <th>Сервер</th>
-                  <th class="ctr">Состав</th>
-                  <th class="ctr">Счёт</th>
-                  <th class="num">R1</th>
-                  <th class="num">R2</th>
-                  <th>Статус</th>
+                  <th class="sortable" data-msort="date" data-label="Дата">Дата</th>
+                  <th class="num sortable" data-msort="time" data-label="МСК">МСК</th>
+                  <th class="sortable" data-msort="clan" data-label="Клан">Клан</th>
+                  <th class="sortable" data-msort="opp" data-label="Соперник">Соперник</th>
+                  <th class="sortable" data-msort="map" data-label="Карта">Карта</th>
+                  <th class="ctr sortable" data-msort="size" data-label="Формат">Формат</th>
+                  <th class="sortable" data-msort="server" data-label="Сервер">Сервер</th>
+                  <th class="ctr sortable" data-msort="stack" data-label="Состав">Состав</th>
+                  <th class="ctr sortable" data-msort="meeting" data-label="Счёт">Счёт</th>
+                  <th class="num sortable" data-msort="r1" data-label="R1">R1</th>
+                  <th class="num sortable" data-msort="r2" data-label="R2">R2</th>
+                  <th class="sortable" data-msort="status" data-label="Статус">Статус</th>
                 </tr>
               </thead>
               <tbody id="rows"></tbody>
@@ -135,10 +137,10 @@
             <table class="rating-table">
               <thead>
                 <tr>
-                  <th class="ctr">№</th>
+                  <th class="ctr sortable" data-rsort="regNo" data-label="№" title="Номер регистрации на сайте">№</th>
                   <th class="sortable" data-rsort="nick" data-label="Ник">Ник</th>
-                  <th class="sortable" data-rsort="clan" data-label="Клан">Клан</th>
-                  <th class="sortable" data-rsort="squad" data-label="Состав">Состав</th>
+                  <th class="ctr sortable" data-rsort="clan" data-label="Клан">Клан</th>
+                  <th class="ctr sortable" data-rsort="squad" data-label="Состав">Состав</th>
                   <th class="ctr sortable" data-rsort="tier" data-label="Ранг">Ранг</th>
                   <th class="ctr sortable" data-rsort="kv" data-label="Кол-во КВ">Кол-во КВ</th>
                   <th class="ctr sortable" data-rsort="res" data-label="Ресы">Ресы</th>
@@ -182,6 +184,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260919-clan-squad"></script>
+  <script src="app.js?v=20260919-matchsort"></script>
 </body>
 </html>
