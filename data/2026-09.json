@@ -226,6 +226,19 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "NO SCOUT"
+    },
+    {
+      "day": 29,
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
+      "opp": "H1gh",
+      "map": "SEC 26 Chora AAS v1",
+      "size": "26v26",
+      "server": "any",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "NO SCOUT · 2nd vs H1gh"
     }
   ]
 }
