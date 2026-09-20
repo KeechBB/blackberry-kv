@@ -21,11 +21,29 @@
     "Декабрь",
   ];
   const INDEX_URL = "data/index.json";
+  const TRAINING_INDEX_URL = "data/training-index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
-  const DATA_VER = "20260919-nocut";
+  const FACTIONS_URL = "data/factions.json";
+  const DATA_VER = "20260921-training";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
+  const FACTION_FALLBACK = {
+    WPMC: "ЧВК СТАРОЕ",
+    TLF: "Турция",
+    USMC: "Морская Пехота",
+    GFI: "Иран",
+    USA: "Америка",
+    RGF: "Россия",
+    CRF: "Новая канада",
+    VDV: "ВДВ",
+    CAF: "Канада",
+    MEI: "Талибы",
+    BAF: "Англия",
+    IMF: "Сербы",
+    ADF: "Австралия",
+    PLA: "Китай",
+  };
   const isEmbed =
     new URLSearchParams(location.search).has("embed") || window.self !== window.top;
   if (isEmbed) {
@@ -57,9 +75,16 @@
   const RATING_EXCLUDE = new Set(["shrein"]);
 
   let catalog = [];
+  let trainingCatalog = [];
+  let factionLabels = { ...FACTION_FALLBACK };
   let currentMonthMeta = null;
   let monthData = null;
   let matches = [];
+  let trainMonthMeta = null;
+  let trainMatches = [];
+  let trainMonthKey = "09";
+  let trainSortKey = "date";
+  let trainSortDir = "desc";
   let ledger = null;
   let tiersData = null;
   let tierByNick = new Map();
@@ -76,6 +101,17 @@
   let sortKey = "kills";
   let sortDir = "desc";
   let monthKey = "09";
+
+  function factionTitle(code) {
+    if (!code) return "—";
+    const c = String(code).toUpperCase();
+    const ru = factionLabels[c] || FACTION_FALLBACK[c];
+    return ru ? `${c} · ${ru}` : c;
+  }
+
+  function factionShort(code) {
+    return code ? String(code).toUpperCase() : "—";
+  }
 
   const modal = document.getElementById("match-modal");
   const modalTitle = document.getElementById("modal-title");
@@ -227,10 +263,16 @@
   function showCwPanel(panel) {
     document.getElementById("cw-matches").hidden = panel !== "matches";
     document.getElementById("cw-rating").hidden = panel !== "rating";
+    const trainEl = document.getElementById("cw-training");
+    if (trainEl) trainEl.hidden = panel !== "training";
     document.querySelectorAll(".subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.cw === panel);
     });
     if (panel === "rating") loadRating();
+    if (panel === "training") {
+      ensureTrainingFilters();
+      loadSelectedTrainingMonth();
+    }
   }
 
   document.querySelectorAll("[data-nav]").forEach((el) => {
@@ -243,7 +285,13 @@
   document.querySelectorAll(".subnav-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       showCwPanel(btn.dataset.cw);
-      history.replaceState(null, "", btn.dataset.cw === "rating" ? "#/cw/rating" : "#/cw");
+      const hash =
+        btn.dataset.cw === "rating"
+          ? "#/cw/rating"
+          : btn.dataset.cw === "training"
+            ? "#/cw/training"
+            : "#/cw";
+      history.replaceState(null, "", hash);
     });
   });
 
@@ -251,7 +299,9 @@
     const h = location.hash || "#/";
     if (h.startsWith("#/cw")) {
       showView("cw");
-      showCwPanel(h.includes("rating") ? "rating" : "matches");
+      if (h.includes("rating")) showCwPanel("rating");
+      else if (h.includes("training")) showCwPanel("training");
+      else showCwPanel("matches");
     } else {
       showView("home");
     }
@@ -320,6 +370,246 @@
       scopeEl.value = "all";
       syncRatingScopeUi();
     }
+  }
+
+  let trainingFiltersReady = false;
+  function ensureTrainingFilters() {
+    if (trainingFiltersReady) return;
+    const yearSel = document.getElementById("train-filter-year");
+    const monthSel = document.getElementById("train-filter-month");
+    if (!yearSel || !monthSel) return;
+    const years = [...new Set(trainingCatalog.map((m) => m.year))].sort((a, b) => b - a);
+    yearSel.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
+    const syncMonths = () => {
+      const y = Number(yearSel.value);
+      const months = trainingCatalog
+        .filter((m) => m.year === y)
+        .sort((a, b) => b.month - a.month);
+      monthSel.innerHTML = months
+        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .join("");
+    };
+    yearSel.addEventListener("change", () => {
+      syncMonths();
+      paintTrainMonthChips();
+      loadSelectedTrainingMonth();
+    });
+    monthSel.addEventListener("change", () => {
+      paintTrainMonthChips();
+      loadSelectedTrainingMonth();
+    });
+    const qEl = document.getElementById("train-filter-q");
+    if (qEl) qEl.addEventListener("input", paintTrainingTable);
+    document.querySelectorAll("#train-matches-table th.sortable").forEach((th) => {
+      th.addEventListener("click", () => {
+        const key = th.dataset.tsort;
+        if (trainSortKey === key) trainSortDir = trainSortDir === "asc" ? "desc" : "asc";
+        else {
+          trainSortKey = key;
+          trainSortDir = key === "date" || key === "ticketsA" || key === "ticketsB" ? "desc" : "asc";
+        }
+        paintTrainingTable();
+      });
+    });
+    if (years.length) {
+      yearSel.value = String(years[0]);
+      syncMonths();
+    }
+    trainingFiltersReady = true;
+  }
+
+  function paintTrainMonthChips() {
+    const box = document.getElementById("train-month-chips");
+    if (!box) return;
+    const yearSel = document.getElementById("train-filter-year");
+    const monthSel = document.getElementById("train-filter-month");
+    if (!yearSel || !monthSel) return;
+    const y = Number(yearSel.value);
+    const selected = monthSel.value;
+    const months = trainingCatalog
+      .filter((m) => m.year === y)
+      .sort((a, b) => a.month - b.month);
+    box.innerHTML = months
+      .map(
+        (m) =>
+          `<button type="button" class="month-chip${m.id === selected ? " active" : ""}" data-train-month="${m.id}">${MONTH_RU[m.month] || m.month}</button>`
+      )
+      .join("");
+    box.querySelectorAll("[data-train-month]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        monthSel.value = btn.dataset.trainMonth;
+        paintTrainMonthChips();
+        loadSelectedTrainingMonth();
+      });
+    });
+  }
+
+  function loadSelectedTrainingMonth() {
+    const monthSel = document.getElementById("train-filter-month");
+    const note = document.getElementById("train-note");
+    const title = document.getElementById("train-title");
+    if (!monthSel || !trainingCatalog.length) {
+      if (note) note.textContent = "Нет каталога тренировок";
+      trainMatches = [];
+      paintTrainingTable();
+      return;
+    }
+    const meta = trainingCatalog.find((m) => m.id === monthSel.value);
+    if (!meta) return;
+    trainMonthMeta = meta;
+    trainMonthKey = pad(meta.month);
+    fetch(dataUrl(meta.url))
+      .then((r) => {
+        if (!r.ok) throw new Error("Не удалось загрузить месяц тренировок");
+        return r.json();
+      })
+      .then((data) => {
+        trainMatches = (data.matches || []).map((m, i) => ({
+          ...m,
+          _i: i,
+          _month: meta.month,
+          _year: meta.year,
+          _kind: "training",
+        }));
+        if (title) title.textContent = data.title || meta.label;
+        if (note) note.textContent = data.note || "";
+        paintTrainStats(trainMatches);
+        paintTrainingTable();
+      })
+      .catch((err) => {
+        if (note) note.textContent = String(err.message || err);
+      });
+  }
+
+  function paintTrainStats(list) {
+    const box = document.getElementById("train-stats");
+    if (!box) return;
+    const done = list.filter((m) => m.status !== "upcoming");
+    box.innerHTML = `
+      <div class="stat"><strong>${list.length}</strong><span>каток</span></div>
+      <div class="stat"><strong>${done.length}</strong><span>сыграно</span></div>
+    `;
+  }
+
+  function trainSortValue(m, key) {
+    switch (key) {
+      case "date":
+        return Number(m.day) || 0;
+      case "time": {
+        const t = String(m.timeMsk || "");
+        const parts = t.split(":");
+        if (parts.length >= 2) return Number(parts[0]) * 60 + Number(parts[1]);
+        return t;
+      }
+      case "map":
+        return String(m.map || "");
+      case "mode":
+        return String(m.mode || "");
+      case "server":
+        return String(m.server || "");
+      case "factionA":
+        return String(m.factionA || "");
+      case "factionB":
+        return String(m.factionB || "");
+      case "ticketsA":
+        return Number(m.ticketsA) || 0;
+      case "ticketsB":
+        return Number(m.ticketsB) || 0;
+      case "winner":
+        return String(m.winner || "");
+      default:
+        return "";
+    }
+  }
+
+  function filteredTrainingMatches() {
+    const q = (document.getElementById("train-filter-q")?.value || "").trim().toLowerCase();
+    let list = trainMatches.slice();
+    if (q) {
+      list = list.filter((m) => {
+        const blob = [
+          m.map,
+          m.mode,
+          m.server,
+          m.factionA,
+          m.factionB,
+          m.winner,
+          factionTitle(m.factionA),
+          factionTitle(m.factionB),
+        ]
+          .join(" ")
+          .toLowerCase();
+        return blob.includes(q);
+      });
+    }
+    const dir = trainSortDir === "asc" ? 1 : -1;
+    list.sort((a, b) => {
+      const av = trainSortValue(a, trainSortKey);
+      const bv = trainSortValue(b, trainSortKey);
+      if (typeof av === "number" && typeof bv === "number") {
+        if (av !== bv) return dir * (av - bv);
+      } else {
+        const cmp = String(av).localeCompare(String(bv), "ru", { sensitivity: "base" });
+        if (cmp) return dir * cmp;
+      }
+      return (Number(a.day) || 0) - (Number(b.day) || 0);
+    });
+    return list;
+  }
+
+  function paintTrainSortMarks() {
+    document.querySelectorAll("#train-matches-table th.sortable").forEach((th) => {
+      const key = th.dataset.tsort;
+      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      th.dataset.label = base;
+      const active = trainSortKey === key;
+      const arrow = active ? (trainSortDir === "asc" ? "▲" : "▼") : "";
+      th.classList.toggle("is-sorted", active);
+      th.setAttribute("aria-sort", active ? (trainSortDir === "asc" ? "ascending" : "descending") : "none");
+      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+    });
+  }
+
+  function paintTrainingTable() {
+    const tbody = document.getElementById("train-rows");
+    if (!tbody) return;
+    const list = filteredTrainingMatches();
+    paintTrainSortMarks();
+    paintTrainStats(list);
+    if (!list.length) {
+      tbody.innerHTML = `<tr><td colspan="10" class="empty-row">Нет тренировок по фильтру</td></tr>`;
+      return;
+    }
+    tbody.innerHTML = list
+      .map((m) => {
+        const fa = factionShort(m.factionA);
+        const fb = factionShort(m.factionB);
+        const win = factionShort(m.winner);
+        return `<tr class="clickable" data-train-i="${m._i}" tabindex="0" role="button">
+          <td>${pad(m.day)}.${trainMonthKey}</td>
+          <td class="num">${escapeHtml(m.timeMsk || "—")}</td>
+          <td>${escapeHtml(m.map || "—")}</td>
+          <td class="ctr">${escapeHtml(m.mode || "—")}</td>
+          <td>${escapeHtml(m.server || "—")}</td>
+          <td class="ctr" title="${escapeHtml(factionTitle(m.factionA))}">${escapeHtml(fa)}</td>
+          <td class="num">${m.ticketsA != null ? m.ticketsA : "—"}</td>
+          <td class="ctr" title="${escapeHtml(factionTitle(m.factionB))}">${escapeHtml(fb)}</td>
+          <td class="num">${m.ticketsB != null ? m.ticketsB : "—"}</td>
+          <td class="ctr" title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win)}</span></td>
+        </tr>`;
+      })
+      .join("");
+
+    tbody.querySelectorAll("tr.clickable").forEach((tr) => {
+      const open = () => openMatch(trainMatches[Number(tr.dataset.trainI)]);
+      tr.addEventListener("click", open);
+      tr.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          open();
+        }
+      });
+    });
   }
 
   function selectedRatingMetas() {
@@ -595,24 +885,54 @@
             .then((data) => ({ meta, data }))
         )
       ),
+      Promise.all(
+        (trainingCatalog.length ? trainingCatalog : []).map((meta) => {
+          const scope = document.getElementById("rating-scope").value;
+          const y = Number(document.getElementById("rating-year").value);
+          const mid = document.getElementById("rating-month").value;
+          if (scope === "year" && meta.year !== y) return Promise.resolve(null);
+          if (scope === "month" && meta.id !== mid) return Promise.resolve(null);
+          return fetch(dataUrl(meta.url))
+            .then((r) => (r.ok ? r.json() : null))
+            .then((data) => (data ? { meta, data } : null))
+            .catch(() => null);
+        })
+      ),
     ])
-      .then(([, months]) => {
+      .then(([, months, trainMonths]) => {
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
             if (m.status !== "upcoming" && m.playersUrl) matchList.push(m);
           });
         });
-        return Promise.all(
-          matchList.map((m) =>
-            fetch(dataUrl(m.playersUrl))
-              .then((r) => (r.ok ? r.json() : null))
-              .then((pj) => ({ match: m, players: pj }))
-              .catch(() => ({ match: m, players: null }))
-          )
-        );
+        const trainList = [];
+        (trainMonths || []).forEach((bundle) => {
+          if (!bundle || !bundle.data) return;
+          (bundle.data.matches || []).forEach((m) => {
+            if (m.status !== "upcoming" && m.playersUrl) trainList.push(m);
+          });
+        });
+        return Promise.all([
+          Promise.all(
+            matchList.map((m) =>
+              fetch(dataUrl(m.playersUrl))
+                .then((r) => (r.ok ? r.json() : null))
+                .then((pj) => ({ match: m, players: pj }))
+                .catch(() => ({ match: m, players: null }))
+            )
+          ),
+          Promise.all(
+            trainList.map((m) =>
+              fetch(dataUrl(m.playersUrl))
+                .then((r) => (r.ok ? r.json() : null))
+                .then((pj) => ({ match: m, players: pj }))
+                .catch(() => ({ match: m, players: null }))
+            )
+          ),
+        ]);
       })
-      .then((bundles) => {
+      .then(([bundles, trainBundles]) => {
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
@@ -625,6 +945,9 @@
               squad: ro.squad,
               regNo: ro.regNo,
               kv: 0,
+              trainGames: 0,
+              trainWins: 0,
+              trainPct: null,
               res: 0,
               nok: 0,
               kills: 0,
@@ -689,9 +1012,36 @@
           });
         });
 
+        (trainBundles || []).forEach(({ match, players }) => {
+          if (!players) return;
+          const list =
+            players.players && players.players.length
+              ? players.players
+              : [].concat(players.teamA || [], players.teamB || []);
+          const seen = new Set();
+          list.forEach((p) => {
+            if (!p || !p.nick || !inRating(p.nick)) return;
+            if (seen.has(p.nick)) return;
+            seen.add(p.nick);
+            const row = touch(p.nick);
+            if (!row) return;
+            row.trainGames += 1;
+            const won =
+              p.won === true ||
+              (match.winner &&
+                p.team &&
+                String(p.team).toUpperCase() === String(match.winner).toUpperCase());
+            if (won) row.trainWins += 1;
+          });
+        });
+
         ratingRows = Array.from(map.values()).map((p) => ({
           ...p,
           kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
+          trainPct:
+            p.trainGames > 0
+              ? Math.round((1000 * p.trainWins) / p.trainGames) / 10
+              : null,
         }));
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("rating-scope").value;
@@ -748,7 +1098,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -761,6 +1111,7 @@
         <td class="ctr">${escapeHtml(p.squad || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
+        <td class="ctr" title="${p.trainGames ? `${p.trainWins}/${p.trainGames}` : "нет тренировок"}">${p.trainPct != null ? `${p.trainPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
         <td class="ctr">${p.nok}</td>
         <td class="ctr">${p.kills}</td>
@@ -795,6 +1146,11 @@
     document.body.classList.remove("modal-open");
     modalMatch = null;
     modalPlayers = null;
+    resetModalTabAttrs();
+    modalTabs.querySelector('[data-tab="total"]').textContent = "Итого";
+    const tabs = modalTabs.querySelectorAll(".tab");
+    if (tabs[1]) tabs[1].textContent = "Раунд 1";
+    if (tabs[2]) tabs[2].textContent = "Раунд 2";
   }
 
   function openMatch(m) {
@@ -802,16 +1158,30 @@
     modalTab = "total";
     sortKey = "kills";
     sortDir = "desc";
-    modalTitle.textContent = `${pad(m.day)}.${monthKey} vs ${m.opp || "—"}`;
-    modalSub.textContent = [
-      m.map,
-      m.size,
-      m.stack,
-      m.meeting && m.meeting !== "—" ? `счёт ${m.meeting}` : null,
-      STATUS_RU[m.status] || m.status,
-    ]
-      .filter(Boolean)
-      .join(" · ");
+    const isTrain = m._kind === "training";
+    if (isTrain) {
+      modalTitle.textContent = `${pad(m.day)}.${trainMonthKey || monthKey} · ${m.map || "тренировка"}`;
+      modalSub.textContent = [
+        factionTitle(m.factionA) + ` ${m.ticketsA ?? "—"}`,
+        factionTitle(m.factionB) + ` ${m.ticketsB ?? "—"}`,
+        m.winner ? `победа ${factionShort(m.winner)}` : null,
+        m.duration ? `время ${m.duration}` : null,
+        m.server,
+      ]
+        .filter(Boolean)
+        .join(" · ");
+    } else {
+      modalTitle.textContent = `${pad(m.day)}.${monthKey} vs ${m.opp || "—"}`;
+      modalSub.textContent = [
+        m.map,
+        m.size,
+        m.stack,
+        m.meeting && m.meeting !== "—" ? `счёт ${m.meeting}` : null,
+        STATUS_RU[m.status] || m.status,
+      ]
+        .filter(Boolean)
+        .join(" · ");
+    }
 
     modalBody.innerHTML = `<p class="modal-loading">Загрузка…</p>`;
     modal.hidden = false;
@@ -830,19 +1200,46 @@
           return r.json();
         })
         .then((data) => {
-          const r1 = enrichRows(data.r1 || []);
-          const r2 = enrichRows(data.r2 || []);
-          modalPlayers = {
-            total: enrichRows(data.total || data.players || sumRounds(r1, r2)),
-            r1,
-            r2,
-            details: data.details || null,
-            mvpByRound: {
-              r1: (data.mvp && data.mvp.r1) || pickMvps(r1),
-              r2: (data.mvp && data.mvp.r2) || pickMvps(r2),
-            },
-          };
-          labelTabs(m);
+          if (isTrain) {
+            const teamA = enrichRows(data.teamA || []);
+            const teamB = enrichRows(data.teamB || []);
+            const all = enrichRows(
+              data.players && data.players.length
+                ? data.players
+                : teamA.concat(teamB)
+            );
+            modalPlayers = {
+              total: all,
+              teamA,
+              teamB,
+              r1: [],
+              r2: [],
+              details: data.details || null,
+              mvpByRound: {
+                r1: pickMvps(all),
+                r2: { medic: [], killer: [], damage: [], antiDeath: [] },
+              },
+              _training: true,
+              _factionA: m.factionA || data.sideA?.name || "A",
+              _factionB: m.factionB || data.sideB?.name || "B",
+            };
+            labelTrainTabs(m);
+          } else {
+            const r1 = enrichRows(data.r1 || []);
+            const r2 = enrichRows(data.r2 || []);
+            modalPlayers = {
+              total: enrichRows(data.total || data.players || sumRounds(r1, r2)),
+              r1,
+              r2,
+              details: data.details || null,
+              mvpByRound: {
+                r1: (data.mvp && data.mvp.r1) || pickMvps(r1),
+                r2: (data.mvp && data.mvp.r2) || pickMvps(r2),
+              },
+            };
+            labelTabs(m);
+            resetModalTabAttrs();
+          }
           paintPlayers();
         })
         .catch((err) => {
@@ -857,6 +1254,25 @@
     modalBody.innerHTML =
       `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
       `Ресы / ноки / килы / смерти / боевой счёт — со скринов табло.</p>`;
+  }
+
+  function labelTrainTabs(m) {
+    const a = factionShort(m.factionA);
+    const b = factionShort(m.factionB);
+    modalTabs.querySelector('[data-tab="total"]').textContent = "Все";
+    modalTabs.querySelector('[data-tab="r1"]').textContent =
+      `${a} · ${m.ticketsA ?? "—"}`;
+    modalTabs.querySelector('[data-tab="r2"]').textContent =
+      `${b} · ${m.ticketsB ?? "—"}`;
+    modalTabs.querySelector('[data-tab="r1"]').dataset.tab = "teamA";
+    modalTabs.querySelector('[data-tab="r2"]').dataset.tab = "teamB";
+  }
+
+  function resetModalTabAttrs() {
+    const t1 = modalTabs.querySelectorAll(".tab")[1];
+    const t2 = modalTabs.querySelectorAll(".tab")[2];
+    if (t1) t1.dataset.tab = "r1";
+    if (t2) t2.dataset.tab = "r2";
   }
 
   function enrichRows(rows) {
@@ -987,7 +1403,9 @@
   function medalCountsForNick(nick) {
     const counts = { medic: 0, killer: 0, damage: 0, antiDeath: 0 };
     const by = modalPlayers.mvpByRound || {};
-    ["r1", "r2"].forEach((rk) => {
+    const keys =
+      modalPlayers && modalPlayers._training ? ["r1"] : ["r1", "r2"];
+    keys.forEach((rk) => {
       const m = by[rk];
       if (!m) return;
       Object.keys(counts).forEach((kind) => {
@@ -998,7 +1416,17 @@
   }
 
   function roundMvpsForNick(nick) {
-    const key = modalTab === "r1" ? "r1" : "r2";
+    if (modalPlayers && modalPlayers._training) {
+      const m = (modalPlayers.mvpByRound || {}).r1;
+      if (!m) return { medic: 0, killer: 0, damage: 0, antiDeath: 0 };
+      return {
+        medic: (m.medic || []).includes(nick) ? 1 : 0,
+        killer: (m.killer || []).includes(nick) ? 1 : 0,
+        damage: (m.damage || []).includes(nick) ? 1 : 0,
+        antiDeath: (m.antiDeath || []).includes(nick) ? 1 : 0,
+      };
+    }
+    const key = modalTab === "r1" || modalTab === "teamA" ? "r1" : "r2";
     const m = (modalPlayers.mvpByRound || {})[key];
     if (!m) return { medic: 0, killer: 0, damage: 0, antiDeath: 0 };
     return {
@@ -1028,6 +1456,11 @@
   }
 
   function currentRows() {
+    if (modalPlayers && modalPlayers._training) {
+      if (modalTab === "teamA" || modalTab === "r1") return modalPlayers.teamA || [];
+      if (modalTab === "teamB" || modalTab === "r2") return modalPlayers.teamB || [];
+      return modalPlayers.total || [];
+    }
     if (modalTab === "r1" && modalPlayers.r1) return modalPlayers.r1;
     if (modalTab === "r2" && modalPlayers.r2) return modalPlayers.r2;
     return modalPlayers.total || [];
@@ -1069,7 +1502,12 @@
   }
 
   function paintPlayers() {
-    const hasRounds = !!(modalPlayers.r1 && modalPlayers.r1.length) || !!(modalPlayers.r2 && modalPlayers.r2.length);
+    const isTrain = !!(modalPlayers && modalPlayers._training);
+    const hasRounds = isTrain
+      ? !!(modalPlayers.teamA && modalPlayers.teamA.length) ||
+        !!(modalPlayers.teamB && modalPlayers.teamB.length)
+      : !!(modalPlayers.r1 && modalPlayers.r1.length) ||
+        !!(modalPlayers.r2 && modalPlayers.r2.length);
     modalTabs.hidden = !hasRounds;
     modalTabs.querySelectorAll(".tab").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tab === modalTab);
@@ -1162,7 +1600,23 @@
     const m = modalMatch;
     if (!m) return "";
     const d = modalPlayers && modalPlayers.details;
-    const dateStr = `${pad(m.day)}.${monthKey}.${m._year || currentMonthMeta?.year || "2026"}`;
+    const isTrain = m._kind === "training" || (modalPlayers && modalPlayers._training);
+    const dateStr = isTrain
+      ? `${pad(m.day)}.${trainMonthKey}.${m._year || trainMonthMeta?.year || "2026"}`
+      : `${pad(m.day)}.${monthKey}.${m._year || currentMonthMeta?.year || "2026"}`;
+
+    if (isTrain) {
+      return `
+      <div class="match-summary match-summary-slim">
+        <div class="match-summary-grid">
+          <div class="match-summary-item"><span class="k">Дата</span><span class="v">${escapeHtml(dateStr)}</span></div>
+          <div class="match-summary-item"><span class="k">${escapeHtml(factionShort(m.factionA))}</span><span class="v">${m.ticketsA != null ? m.ticketsA : "—"}</span></div>
+          <div class="match-summary-item"><span class="k">${escapeHtml(factionShort(m.factionB))}</span><span class="v">${m.ticketsB != null ? m.ticketsB : "—"}</span></div>
+          <div class="match-summary-item"><span class="k">Победитель</span><span class="v">${escapeHtml(factionShort(m.winner))}</span></div>
+          <div class="match-summary-item"><span class="k">Время</span><span class="v">${escapeHtml(m.duration || "—")}</span></div>
+        </div>
+      </div>`;
+    }
 
     let tickets = "—";
     let len = "—";
@@ -1228,9 +1682,19 @@
     fetch(dataUrl(TIERS_URL))
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null),
+    fetch(dataUrl(TRAINING_INDEX_URL))
+      .then((r) => (r.ok ? r.json() : { months: [] }))
+      .catch(() => ({ months: [] })),
+    fetch(dataUrl(FACTIONS_URL))
+      .then((r) => (r.ok ? r.json() : null))
+      .catch(() => null),
   ])
-    .then(([data, tiers]) => {
+    .then(([data, tiers, trainIdx, factions]) => {
       catalog = data.months || [];
+      trainingCatalog = (trainIdx && trainIdx.months) || [];
+      if (factions && typeof factions === "object") {
+        factionLabels = { ...FACTION_FALLBACK, ...factions };
+      }
       tiersData = tiers;
       tierByNick = buildTierIndex(tiers);
       fillYearMonthSelects();

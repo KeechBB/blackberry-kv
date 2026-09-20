@@ -1,0 +1,24 @@
+{
+  "month": "2026-09",
+  "title": "BlackBerry — тренировочные матчи · сентябрь 2026",
+  "note": "Обе стороны — участники клана. Тикеты по фракциям. Клик по строке — стата игроков (когда внесена).",
+  "matches": [
+    {
+      "id": "20-anvil",
+      "day": 20,
+      "timeMsk": "—",
+      "map": "Anvil AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "47:44",
+      "factionA": "CAF",
+      "ticketsA": 0,
+      "factionB": "ADF",
+      "ticketsB": 74,
+      "winner": "ADF",
+      "status": "done",
+      "playersUrl": "data/training/players/20-anvil.json"
+    }
+  ]
+}

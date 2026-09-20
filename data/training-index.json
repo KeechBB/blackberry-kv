@@ -1,0 +1,11 @@
+{
+  "months": [
+    {
+      "id": "2026-09",
+      "year": 2026,
+      "month": 9,
+      "label": "Сентябрь 2026",
+      "url": "data/training/2026-09.json"
+    }
+  ]
+}
