@@ -205,13 +205,14 @@
       "day": 25,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
-      "opp": "CUT",
-      "map": "SEC 26 GooseBay AAS v1",
+      "opp": "H1gh",
+      "map": "SEC 26 Narva AAS v1",
       "size": "26v26",
-      "server": "CUT",
+      "server": "any",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming"
+      "status": "upcoming",
+      "note": "NO SCOUT"
     },
     {
       "day": 27,
@@ -225,6 +226,19 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "NO SCOUT"
+    },
+    {
+      "day": 29,
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
+      "opp": "H1gh",
+      "map": "SEC 26 Chora AAS v1",
+      "size": "26v26",
+      "server": "any",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "NO SCOUT · 2nd vs H1gh"
     }
   ]
 }
