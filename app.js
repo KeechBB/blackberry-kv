@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260921-tm-section";
+  const DATA_VER = "20260921-mvp-fix";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -1278,29 +1278,27 @@
           });
 
           /* MVP только для рейтинга тренировок — в mvp-ledger / профиль КВ не пишем */
+          const pool = list.filter((p) => p && p.nick && inRating(p.nick));
           const mvp =
-            (players.mvp && players.mvp.train) ||
-            pickMvps(enrichRows(list.filter((p) => p && p.nick && inRating(p.nick))));
-          (mvp.medic || []).forEach((n) => {
-            const row = touch(n);
-            if (row) row.mvpMedic += 1;
-          });
-          (mvp.killer || []).forEach((n) => {
-            const row = touch(n);
-            if (row) row.mvpKiller += 1;
-          });
-          (mvp.damage || []).forEach((n) => {
-            const row = touch(n);
-            if (row) row.mvpDamage += 1;
-          });
-          (mvp.antiDeath || []).forEach((n) => {
-            const row = touch(n);
-            if (row) row.antiDeath += 1;
-          });
+            (players.mvp && players.mvp.train) || pickMvps(enrichRows(pool));
+          const bump = (nicks, key) => {
+            (nicks || []).forEach((n) => {
+              const row = touch(n);
+              if (row) row[key] += 1;
+            });
+          };
+          bump(mvp.medic, "mvpMedic");
+          bump(mvp.killer, "mvpKiller");
+          bump(mvp.damage, "mvpDamage");
+          bump(mvp.antiDeath, "antiDeath");
         });
 
         trainRatingRows = Array.from(map.values()).map((p) => ({
           ...p,
+          mvpMedic: Number(p.mvpMedic) || 0,
+          mvpKiller: Number(p.mvpKiller) || 0,
+          mvpDamage: Number(p.mvpDamage) || 0,
+          antiDeath: Number(p.antiDeath) || 0,
           kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
           winPct:
             p.games > 0 ? Math.round((1000 * p.wins) / p.games) / 10 : null,
@@ -1392,10 +1390,10 @@
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
         <td class="ctr">${p.dmg}</td>
-        <td class="ctr col-mvp-medic">${p.mvpMedic || 0}</td>
-        <td class="ctr col-mvp-killer">${p.mvpKiller || 0}</td>
-        <td class="ctr col-mvp-war">${p.mvpDamage || 0}</td>
-        <td class="ctr col-mvp-anti">${p.antiDeath || 0}</td>
+        <td class="ctr col-mvp-medic">${Number(p.mvpMedic) || 0}</td>
+        <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
+        <td class="ctr col-mvp-war">${Number(p.mvpDamage) || 0}</td>
+        <td class="ctr col-mvp-anti">${Number(p.antiDeath) || 0}</td>
       </tr>`
       )
       .join("");
