@@ -4,6 +4,23 @@
   "note": "Обе стороны — участники клана. Тикеты по фракциям. Клик по строке — стата игроков (когда внесена).",
   "matches": [
     {
+      "id": "19-goosebay",
+      "day": 19,
+      "timeMsk": "—",
+      "map": "SEC 26 GooseBay AAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "35:29",
+      "factionA": "VDV",
+      "ticketsA": 37,
+      "factionB": "CAF",
+      "ticketsB": 0,
+      "winner": "VDV",
+      "status": "done",
+      "playersUrl": "data/training/players/19-goosebay.json"
+    },
+    {
       "id": "20-anvil",
       "day": 20,
       "timeMsk": "—",
