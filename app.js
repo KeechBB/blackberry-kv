@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260921-17mutaha2";
+  const DATA_VER = "20260921-vagnerfix";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -88,6 +88,7 @@
   let ledger = null;
   let tiersData = null;
   let tierByNick = new Map();
+  let displayNickByKey = new Map();
   let ratingRows = [];
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
@@ -214,21 +215,31 @@
 
   function buildTierIndex(data) {
     const map = new Map();
-    if (!data) return map;
+    const display = new Map();
+    if (!data) {
+      displayNickByKey = display;
+      return map;
+    }
     const aliases = data.aliases || {};
-    Object.keys(aliases).forEach((k) => {
-      /* alias keys already lower */
-    });
     [
       [1, data.tier1 || []],
       [2, data.tier2 || []],
       [3, data.tier3 || []],
     ].forEach(([tier, list]) => {
-      list.forEach((n) => map.set(nickKey(n), tier));
+      list.forEach((n) => {
+        const key = nickKey(n);
+        map.set(key, tier);
+        display.set(key, String(n).trim());
+      });
     });
     Object.entries(aliases).forEach(([alias, canon]) => {
       const t = map.get(nickKey(canon));
       if (t) map.set(nickKey(alias), t);
+      const label = String(canon || "").trim();
+      if (label) {
+        display.set(nickKey(alias), label);
+        display.set(nickKey(canon), label);
+      }
     });
     // common scoreboard spellings
     [
@@ -241,7 +252,14 @@
     ].forEach(([k, t]) => {
       if (!map.has(k)) map.set(k, t);
     });
+    displayNickByKey = display;
     return map;
+  }
+
+  function displayNick(nick) {
+    const clean = profileNick(nick);
+    const key = nickKey(clean);
+    return displayNickByKey.get(key) || clean;
   }
 
   function tierOf(nick) {
@@ -940,10 +958,11 @@
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
-          if (!map.has(nick)) {
+          const key = nickKey(nick);
+          if (!map.has(key)) {
             const ro = rosterOf(nick);
-            map.set(nick, {
-              nick,
+            map.set(key, {
+              nick: displayNick(nick),
               tier: tierOf(nick),
               clan: ro.clan,
               squad: ro.squad,
@@ -960,7 +979,7 @@
               antiDeath: 0,
             });
           }
-          return map.get(nick);
+          return map.get(key);
         };
 
         bundles.forEach(({ players }) => {
@@ -972,7 +991,7 @@
 
           total.forEach((p) => {
             if (!p || !p.nick || !inRating(p.nick)) return;
-            inMeeting.add(p.nick);
+            inMeeting.add(nickKey(p.nick));
             const row = touch(p.nick);
             row.res += Number(p.res) || 0;
             row.nok += Number(p.nok) || 0;
@@ -981,10 +1000,10 @@
             row.dmg += Number(p.dmg) || 0;
           });
           [...r1, ...r2].forEach((p) => {
-            if (p && p.nick && inRating(p.nick)) inMeeting.add(p.nick);
+            if (p && p.nick && inRating(p.nick)) inMeeting.add(nickKey(p.nick));
           });
-          inMeeting.forEach((nick) => {
-            const row = touch(nick);
+          inMeeting.forEach((key) => {
+            const row = map.get(key);
             if (row) row.kv += 1;
           });
 
@@ -1227,10 +1246,11 @@
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
-          if (!map.has(nick)) {
+          const key = nickKey(nick);
+          if (!map.has(key)) {
             const ro = rosterOf(nick);
-            map.set(nick, {
-              nick,
+            map.set(key, {
+              nick: displayNick(nick),
               clan: ro.clan,
               regNo: ro.regNo,
               games: 0,
@@ -1247,7 +1267,7 @@
               antiDeath: 0,
             });
           }
-          return map.get(nick);
+          return map.get(key);
         };
 
         bundles.forEach(({ match, players }) => {
@@ -1266,8 +1286,9 @@
             row.kills += Number(p.kills) || 0;
             row.deaths += Number(p.deaths) || 0;
             row.dmg += Number(p.dmg) || 0;
-            if (seen.has(p.nick)) return;
-            seen.add(p.nick);
+            const key = nickKey(p.nick);
+            if (seen.has(key)) return;
+            seen.add(key);
             row.games += 1;
             const won =
               p.won === true ||
@@ -1281,10 +1302,10 @@
           const pool = list.filter((p) => p && p.nick && inRating(p.nick));
           const mvp =
             (players.mvp && players.mvp.train) || pickMvps(enrichRows(pool));
-          const bump = (nicks, key) => {
+          const bump = (nicks, keyName) => {
             (nicks || []).forEach((n) => {
               const row = touch(n);
-              if (row) row[key] += 1;
+              if (row) row[keyName] += 1;
             });
           };
           bump(mvp.medic, "mvpMedic");
