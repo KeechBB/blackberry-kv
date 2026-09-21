@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260921-19narva";
+  const DATA_VER = "20260921-train6";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -499,7 +499,7 @@
     if (!meta) return;
     trainMonthMeta = meta;
     trainMonthKey = pad(meta.month);
-    fetch(dataUrl(meta.url))
+    fetch(dataUrl(meta.url), { cache: "no-store" })
       .then((r) => {
         if (!r.ok) throw new Error("Не удалось загрузить месяц тренировок");
         return r.json();
