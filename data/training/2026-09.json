@@ -4,6 +4,23 @@
   "note": "Обе стороны — участники клана. Тикеты по фракциям. Клик по строке — стата игроков (когда внесена).",
   "matches": [
     {
+      "id": "17-mutaha",
+      "day": 17,
+      "timeMsk": "—",
+      "map": "SEC 26 Mutaha PAAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "45:34",
+      "factionA": "IMF",
+      "ticketsA": 0,
+      "factionB": "BAF",
+      "ticketsB": 20,
+      "winner": "BAF",
+      "status": "done",
+      "playersUrl": "data/training/players/17-mutaha.json"
+    },
+    {
       "id": "19-goosebay",
       "day": 19,
       "timeMsk": "—",
