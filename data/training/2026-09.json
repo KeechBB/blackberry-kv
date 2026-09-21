@@ -38,6 +38,23 @@
       "playersUrl": "data/training/players/18-goosebay.json"
     },
     {
+      "id": "18-goosebay-2",
+      "day": 18,
+      "timeMsk": "—",
+      "map": "SEC 26 GooseBay AAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "50:11",
+      "factionA": "CAF",
+      "ticketsA": 0,
+      "factionB": "VDV",
+      "ticketsB": 31,
+      "winner": "VDV",
+      "status": "done",
+      "playersUrl": "data/training/players/18-goosebay-2.json"
+    },
+    {
       "id": "19-goosebay",
       "day": 19,
       "timeMsk": "—",
