@@ -21,6 +21,23 @@
       "playersUrl": "data/training/players/17-mutaha.json"
     },
     {
+      "id": "17-mutaha-2",
+      "day": 17,
+      "timeMsk": "—",
+      "map": "SEC 26 Mutaha PAAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "26:33",
+      "factionA": "BAF",
+      "ticketsA": 160,
+      "factionB": "IMF",
+      "ticketsB": 0,
+      "winner": "BAF",
+      "status": "done",
+      "playersUrl": "data/training/players/17-mutaha-2.json"
+    },
+    {
       "id": "18-goosebay",
       "day": 18,
       "timeMsk": "—",
