@@ -38,6 +38,23 @@
       "playersUrl": "data/training/players/19-goosebay.json"
     },
     {
+      "id": "19-narva",
+      "day": 19,
+      "timeMsk": "—",
+      "map": "SEC 26 Narva AAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "13:32",
+      "factionA": "VDV",
+      "ticketsA": 98,
+      "factionB": "BAF",
+      "ticketsB": 171,
+      "winner": "BAF",
+      "status": "done",
+      "playersUrl": "data/training/players/19-narva.json"
+    },
+    {
       "id": "20-anvil",
       "day": 20,
       "timeMsk": "—",
