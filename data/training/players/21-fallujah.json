@@ -1,0 +1,1523 @@
+{
+  "matchId": "21-fallujah",
+  "map": "Fallujah AAS v1",
+  "mode": "AAS",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "59:19",
+  "winner": "MEI",
+  "sideA": {
+    "name": "USMC",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "MEI",
+    "tickets": 35
+  },
+  "note": "2-я катка тренировочного дня 21.09. Обе стороны BB. OCR со scoreboard; dmg=боевой счёт (col9). akin0v (USMC) и AkiN (MEI) оба. MEI суммы индивидов чуть ниже team row (скролл/шапки отрядов).",
+  "teamA": [
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 162,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 269,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Mr Assist",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 65,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 5,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 51,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Mighty",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 115,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "lepurple",
+      "res": 11,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 135,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 131,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Runetik",
+      "res": 4,
+      "nok": 12,
+      "kills": 12,
+      "deaths": 10,
+      "dmg": 323,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Mahorka",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 11,
+      "dmg": 111,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Skromnyi",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 53,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 11,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 82,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 3,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 232,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Rindaye",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 300,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 320,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Bashik",
+      "res": 11,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 94,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 17,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 349,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Pymba",
+      "res": 1,
+      "nok": 20,
+      "kills": 15,
+      "deaths": 6,
+      "dmg": 466,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "akin0v",
+      "res": 11,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 215,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 34,
+      "kills": 24,
+      "deaths": 3,
+      "dmg": 793,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 237,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 17,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 110,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 330,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 22,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 477,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 67,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "JESTER",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 121,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "NECO",
+      "res": 9,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 65,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Wi-Fi",
+      "res": 4,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 164,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Solitario",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 175,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 8,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 66,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 256,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Muhomor",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 838,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 109,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Azure",
+      "res": 7,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 67,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 573,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 304,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "firs",
+      "res": 5,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 86,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 59,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 642,
+      "team": "USMC",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 294,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Animo",
+      "res": 9,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 115,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 171,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "WoodMan",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 192,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "k1t",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 144,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 119,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 34,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 349,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Zik",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 278,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "ADUN",
+      "res": 19,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 117,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 8,
+      "dmg": 579,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 1905,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 14,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 260,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 201,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 13,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 746,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Pugovka",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 292,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Joplik",
+      "res": 6,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 65,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 636,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Doc",
+      "res": 5,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 139,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "RostislavKVL",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 244,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 21,
+      "kills": 13,
+      "deaths": 2,
+      "dmg": 420,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 45,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 367,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Chappi",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 146,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Radislave",
+      "res": 13,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 84,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 591,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 0,
+      "nok": 19,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 478,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 9,
+      "dmg": 395,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 240,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 16,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 195,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 381,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 198,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "section",
+      "res": 9,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 213,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 260,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Buti",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 263,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 586,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Senti",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 249,
+      "team": "MEI",
+      "won": true
+    }
+  ],
+  "players": [
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 162,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 269,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Mr Assist",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 65,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 5,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 51,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Mighty",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 115,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "lepurple",
+      "res": 11,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 135,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 131,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Runetik",
+      "res": 4,
+      "nok": 12,
+      "kills": 12,
+      "deaths": 10,
+      "dmg": 323,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Mahorka",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 11,
+      "dmg": 111,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Skromnyi",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 53,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 11,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 82,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 3,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 232,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Rindaye",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 300,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 320,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Bashik",
+      "res": 11,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 94,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 17,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 349,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Pymba",
+      "res": 1,
+      "nok": 20,
+      "kills": 15,
+      "deaths": 6,
+      "dmg": 466,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "akin0v",
+      "res": 11,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 215,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 34,
+      "kills": 24,
+      "deaths": 3,
+      "dmg": 793,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 237,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 17,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 110,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 330,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 22,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 477,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 67,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "JESTER",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 121,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "NECO",
+      "res": 9,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 65,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Wi-Fi",
+      "res": 4,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 164,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Solitario",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 175,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 8,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 66,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 256,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Muhomor",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 838,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 109,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Azure",
+      "res": 7,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 67,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 573,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 304,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "firs",
+      "res": 5,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 86,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 59,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 642,
+      "team": "USMC",
+      "won": false
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 294,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Animo",
+      "res": 9,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 115,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 171,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "WoodMan",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 192,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "k1t",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 144,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 119,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 34,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 349,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Zik",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 278,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "ADUN",
+      "res": 19,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 117,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 8,
+      "dmg": 579,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 1905,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 14,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 260,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 201,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 13,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 746,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Pugovka",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 292,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Joplik",
+      "res": 6,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 65,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 636,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Doc",
+      "res": 5,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 139,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "RostislavKVL",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 244,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 21,
+      "kills": 13,
+      "deaths": 2,
+      "dmg": 420,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 45,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 367,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Chappi",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 146,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Radislave",
+      "res": 13,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 84,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 591,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 0,
+      "nok": 19,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 478,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 9,
+      "dmg": 395,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 240,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 16,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 195,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 381,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 198,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "section",
+      "res": 9,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 213,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 260,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Buti",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 263,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 586,
+      "team": "MEI",
+      "won": true
+    },
+    {
+      "nick": "Senti",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 249,
+      "team": "MEI",
+      "won": true
+    }
+  ]
+}
