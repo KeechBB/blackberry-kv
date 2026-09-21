@@ -155,6 +155,23 @@
       "winner": "RGF",
       "status": "done",
       "playersUrl": "data/training/players/20-narva.json"
+    },
+    {
+      "id": "21-manicouagan",
+      "day": 21,
+      "timeMsk": "—",
+      "map": "Manicouagan AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "49:49",
+      "factionA": "RGF",
+      "ticketsA": 0,
+      "factionB": "USA",
+      "ticketsB": 56,
+      "winner": "USA",
+      "status": "done",
+      "playersUrl": "data/training/players/21-manicouagan.json"
     }
   ]
 }
