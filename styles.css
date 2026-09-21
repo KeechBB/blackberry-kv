@@ -1032,3 +1032,97 @@ body.modal-open { overflow: hidden; }
   th, td { padding: 11px 12px; font-size: 0.84rem; }
   .crest { width: 96px; }
 }
+
+/* ——— training analytics ——— */
+.ta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+.ta-card {
+  margin: 0;
+  padding: 18px 18px 14px;
+}
+.ta-card-wide {
+  grid-column: 1 / -1;
+}
+.ta-subh {
+  margin: 14px 0 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.ta-subh:first-child { margin-top: 0; }
+.ta-bars {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ta-bar-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.88rem;
+  margin-bottom: 4px;
+}
+.ta-bar-label strong {
+  font-variant-numeric: tabular-nums;
+  color: #e9d5ff;
+  white-space: nowrap;
+}
+.ta-bar-track {
+  height: 7px;
+  border-radius: 999px;
+  background: rgba(167, 139, 250, 0.12);
+  overflow: hidden;
+}
+.ta-bar-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+.ta-facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.ta-facts li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(167, 139, 250, 0.1);
+  font-size: 0.9rem;
+}
+.ta-facts li span { color: var(--muted); }
+.ta-facts li strong {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.ta-tops {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.ta-top-block h3 {
+  margin: 0 0 8px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.ta-table { font-size: 0.88rem; }
+@media (max-width: 900px) {
+  .ta-grid { grid-template-columns: 1fr; }
+  .ta-card-wide { grid-column: auto; }
+}

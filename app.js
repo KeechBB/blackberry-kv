@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260921-dedushkin";
+  const DATA_VER = "20260921-train-analytics";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -310,8 +310,10 @@
   function showTmPanel(panel) {
     const matches = document.getElementById("tm-matches");
     const rating = document.getElementById("tm-rating");
+    const analytics = document.getElementById("tm-analytics");
     if (matches) matches.hidden = panel !== "matches";
     if (rating) rating.hidden = panel !== "rating";
+    if (analytics) analytics.hidden = panel !== "analytics";
     document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tm === panel);
     });
@@ -322,6 +324,10 @@
     if (panel === "rating") {
       ensureTrainRatingFilters();
       loadTrainingRating();
+    }
+    if (panel === "analytics") {
+      ensureTrainAnalyticsFilters();
+      loadTrainingAnalytics();
     }
   }
 
@@ -350,7 +356,11 @@
       history.replaceState(
         null,
         "",
-        btn.dataset.tm === "rating" ? "#/tm/rating" : "#/tm"
+        btn.dataset.tm === "rating"
+          ? "#/tm/rating"
+          : btn.dataset.tm === "analytics"
+            ? "#/tm/analytics"
+            : "#/tm"
       );
     });
   });
@@ -365,7 +375,13 @@
     }
     if (h.startsWith("#/tm")) {
       showView("tm");
-      showTmPanel(h.includes("rating") ? "rating" : "matches");
+      showTmPanel(
+        h.includes("analytics")
+          ? "analytics"
+          : h.includes("rating")
+            ? "rating"
+            : "matches"
+      );
     } else if (h.startsWith("#/cw")) {
       showView("cw");
       showCwPanel(h.includes("rating") ? "rating" : "matches");
@@ -1186,7 +1202,9 @@
         } else {
           trainRatingSortKey = key;
           trainRatingSortDir =
-            key === "nick" || key === "clan" || key === "regNo" ? "asc" : "desc";
+            key === "nick" || key === "clan" || key === "regNo" || key === "tier"
+              ? "asc"
+              : "desc";
         }
         paintTrainingRatingTable();
       });
@@ -1261,6 +1279,7 @@
               nick: displayNick(nick),
               clan: ro.clan,
               regNo: ro.regNo,
+              tier: tierOf(nick),
               games: 0,
               wins: 0,
               winPct: null,
@@ -1381,6 +1400,12 @@
           )
         );
       }
+      if (trainRatingSortKey === "tier") {
+        const av = Number(a.tier) || 4;
+        const bv = Number(b.tier) || 4;
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
       if (trainRatingSortKey === "regNo") {
         const av = a.regNo == null ? Number.POSITIVE_INFINITY : Number(a.regNo);
         const bv = b.regNo == null ? Number.POSITIVE_INFINITY : Number(b.regNo);
@@ -1401,7 +1426,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1411,6 +1436,7 @@
         <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
@@ -1428,6 +1454,677 @@
       .join("");
     refreshDualScrolls();
   }
+
+  /* ——— training analytics ——— */
+  let trainAnFiltersReady = false;
+
+  function parseDurationSec(s) {
+    if (!s || typeof s !== "string" || !s.includes(":")) return null;
+    const parts = s.split(":").map((x) => Number(x));
+    if (parts.length === 2 && parts.every((n) => Number.isFinite(n))) {
+      return parts[0] * 60 + parts[1];
+    }
+    if (parts.length === 3 && parts.every((n) => Number.isFinite(n))) {
+      return parts[0] * 3600 + parts[1] * 60 + parts[2];
+    }
+    return null;
+  }
+
+  function formatDurationSec(sec) {
+    if (sec == null || !Number.isFinite(sec)) return "—";
+    const m = Math.floor(sec / 60);
+    const s = Math.round(sec % 60);
+    return `${m}:${String(s).padStart(2, "0")}`;
+  }
+
+  function mapFamilyName(map) {
+    const raw = String(map || "");
+    const m = raw.match(
+      /(?:SEC\s*\d+\s+)?([A-Za-z][A-Za-z0-9]*)/i
+    );
+    if (!m) return raw || "—";
+    const name = m[1];
+    const known = {
+      goosebay: "GooseBay",
+      mutaha: "Mutaha",
+      narva: "Narva",
+      anvil: "Anvil",
+      chora: "Chora",
+      harju: "Harju",
+      yehorivka: "Yehorivka",
+      kohat: "Kohat",
+      albasrah: "AlBasrah",
+    };
+    return known[name.toLowerCase()] || name;
+  }
+
+  function ensureTrainAnalyticsFilters() {
+    if (trainAnFiltersReady) return;
+    const yearSel = document.getElementById("train-an-year");
+    const monthSel = document.getElementById("train-an-month");
+    const scopeEl = document.getElementById("train-an-scope");
+    if (!yearSel || !monthSel || !scopeEl) return;
+
+    const years = [...new Set(trainingCatalog.map((m) => m.year))].sort((a, b) => b - a);
+    yearSel.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
+    const syncMonths = () => {
+      const y = Number(yearSel.value);
+      const months = trainingCatalog
+        .filter((m) => m.year === y)
+        .sort((a, b) => b.month - a.month);
+      monthSel.innerHTML = months
+        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .join("");
+    };
+    const yearWrap = document.getElementById("train-an-year-wrap");
+    const monthWrap = document.getElementById("train-an-month-wrap");
+    const syncScopeUi = () => {
+      const scope = scopeEl.value;
+      if (yearWrap) yearWrap.hidden = scope === "all";
+      if (monthWrap) monthWrap.hidden = scope !== "month";
+    };
+    scopeEl.addEventListener("change", () => {
+      syncScopeUi();
+      if (scopeEl.value === "month") syncMonths();
+      loadTrainingAnalytics();
+    });
+    yearSel.addEventListener("change", () => {
+      syncMonths();
+      loadTrainingAnalytics();
+    });
+    monthSel.addEventListener("change", loadTrainingAnalytics);
+    if (years.length) {
+      yearSel.value = String(years[0]);
+      syncMonths();
+      scopeEl.value = "all";
+      syncScopeUi();
+    }
+    trainAnFiltersReady = true;
+  }
+
+  function selectedTrainingAnalyticsMetas() {
+    const scope = document.getElementById("train-an-scope")?.value || "all";
+    if (scope === "all") return trainingCatalog.slice();
+    const y = Number(document.getElementById("train-an-year")?.value);
+    if (scope === "year") return trainingCatalog.filter((m) => m.year === y);
+    const id = document.getElementById("train-an-month")?.value;
+    const one = trainingCatalog.find((m) => m.id === id);
+    return one ? [one] : [];
+  }
+
+  function taBars(rows) {
+    if (!rows.length) return `<p class="muted">Нет данных</p>`;
+    const max = Math.max(...rows.map((r) => r.count), 1);
+    return `<ul class="ta-bars">${rows
+      .map((r) => {
+        const pct = Math.round((100 * r.count) / max);
+        const share = r.share != null ? ` · ${r.share}%` : "";
+        const extra = r.extra ? ` · ${escapeHtml(r.extra)}` : "";
+        return `<li>
+          <div class="ta-bar-label">
+            <span>${escapeHtml(r.label)}</span>
+            <strong>${r.count}${share}${extra}</strong>
+          </div>
+          <div class="ta-bar-track"><span style="width:${pct}%"></span></div>
+        </li>`;
+      })
+      .join("")}</ul>`;
+  }
+
+  function taTopTable(title, rows, cols) {
+    if (!rows.length) {
+      return `<div class="ta-top-block"><h3>${escapeHtml(title)}</h3><p class="muted">Нет данных</p></div>`;
+    }
+    const head = cols.map((c) => `<th class="${c.cls || ""}">${escapeHtml(c.label)}</th>`).join("");
+    const body = rows
+      .map((r) => {
+        const tds = cols
+          .map((c) => {
+            const v = typeof c.value === "function" ? c.value(r) : r[c.key];
+            return `<td class="${c.cls || ""}">${v}</td>`;
+          })
+          .join("");
+        return `<tr>${tds}</tr>`;
+      })
+      .join("");
+    return `<div class="ta-top-block">
+      <h3>${escapeHtml(title)}</h3>
+      <div class="table-scroll"><table class="rating-table ta-table"><thead><tr>${head}</tr></thead><tbody>${body}</tbody></table></div>
+    </div>`;
+  }
+
+  function loadTrainingAnalytics() {
+    const note = document.getElementById("train-an-note");
+    const body = document.getElementById("train-an-body");
+    const kpis = document.getElementById("train-an-kpis");
+    if (!note || !body || !kpis) return;
+    note.textContent = "Считаем аналитику тренировок…";
+    body.hidden = true;
+    kpis.innerHTML = "";
+
+    const metas = selectedTrainingAnalyticsMetas();
+    if (!metas.length) {
+      note.textContent = "Нет месяцев тренировок";
+      return;
+    }
+
+    Promise.all([
+      loadRoster(),
+      Promise.all(
+        metas.map((meta) =>
+          fetch(dataUrl(meta.url))
+            .then((r) => (r.ok ? r.json() : null))
+            .then((data) => (data ? { meta, data } : null))
+            .catch(() => null)
+        )
+      ),
+    ])
+      .then(([, months]) => {
+        const matchList = [];
+        (months || []).forEach((bundle) => {
+          if (!bundle || !bundle.data) return;
+          (bundle.data.matches || []).forEach((m) => {
+            if (m.status === "upcoming") return;
+            matchList.push({
+              ...m,
+              _year: bundle.meta.year,
+              _month: bundle.meta.month,
+              _monthId: bundle.meta.id,
+            });
+          });
+        });
+        return Promise.all(
+          matchList.map((m) =>
+            m.playersUrl
+              ? fetch(dataUrl(m.playersUrl))
+                  .then((r) => (r.ok ? r.json() : null))
+                  .then((pj) => ({ match: m, players: pj }))
+                  .catch(() => ({ match: m, players: null }))
+              : Promise.resolve({ match: m, players: null })
+          )
+        );
+      })
+      .then((bundles) => {
+        paintTrainingAnalytics(bundles || []);
+      })
+      .catch((err) => {
+        note.textContent = String(err.message || err);
+      });
+  }
+
+  function paintTrainingAnalytics(bundles) {
+    const note = document.getElementById("train-an-note");
+    const body = document.getElementById("train-an-body");
+    const kpis = document.getElementById("train-an-kpis");
+    if (!note || !body || !kpis) return;
+
+    const matches = bundles.map((b) => b.match);
+    if (!matches.length) {
+      note.textContent = "В выбранном периоде нет сыгранных тренировок";
+      body.hidden = true;
+      return;
+    }
+
+    const mapCount = new Map();
+    const familyCount = new Map();
+    const modeCount = new Map();
+    const serverCount = new Map();
+    const factionStat = new Map();
+    const dayStat = new Map();
+    const durations = [];
+    const rosters = [];
+    const playerMap = new Map();
+    const uniqueNicks = new Set();
+    let totalKills = 0;
+    let totalDeaths = 0;
+    let totalDmg = 0;
+    let totalRes = 0;
+    let totalNok = 0;
+    let winnerTickets = [];
+    let closeGames = 0;
+    let blowouts = 0;
+
+    const touchFaction = (code) => {
+      const key = String(code || "?").toUpperCase();
+      if (!factionStat.has(key)) {
+        factionStat.set(key, { code: key, games: 0, wins: 0, ticketsSum: 0, ticketsN: 0 });
+      }
+      return factionStat.get(key);
+    };
+
+    const touchPlayer = (nick) => {
+      if (!nick || !inRating(nick)) return null;
+      const key = resolveNickKey(nick);
+      uniqueNicks.add(key);
+      if (!playerMap.has(key)) {
+        playerMap.set(key, {
+          nick: displayNick(nick),
+          tier: tierOf(nick),
+          games: 0,
+          wins: 0,
+          kills: 0,
+          deaths: 0,
+          dmg: 0,
+          res: 0,
+          nok: 0,
+          mvpMedic: 0,
+          mvpKiller: 0,
+          mvpDamage: 0,
+          antiDeath: 0,
+        });
+      }
+      return playerMap.get(key);
+    };
+
+    bundles.forEach(({ match: m, players }) => {
+      const map = m.map || "—";
+      mapCount.set(map, (mapCount.get(map) || 0) + 1);
+      const fam = mapFamilyName(map);
+      familyCount.set(fam, (familyCount.get(fam) || 0) + 1);
+      const mode = m.mode || "—";
+      modeCount.set(mode, (modeCount.get(mode) || 0) + 1);
+      const server = m.server || "—";
+      serverCount.set(server, (serverCount.get(server) || 0) + 1);
+
+      const dayKey = `${m._year}-${String(m._month).padStart(2, "0")}-${String(m.day).padStart(2, "0")}`;
+      if (!dayStat.has(dayKey)) {
+        dayStat.set(dayKey, {
+          key: dayKey,
+          label: `${pad(m.day)}.${pad(m._month)}.${m._year}`,
+          matches: 0,
+          maps: [],
+          players: new Set(),
+          rosterSum: 0,
+          durationSum: 0,
+          durationN: 0,
+        });
+      }
+      const day = dayStat.get(dayKey);
+      day.matches += 1;
+      day.maps.push(mapFamilyName(map));
+
+      const dur = parseDurationSec(m.duration);
+      if (dur != null) {
+        durations.push(dur);
+        day.durationSum += dur;
+        day.durationN += 1;
+      }
+
+      const fa = touchFaction(m.factionA);
+      const fb = touchFaction(m.factionB);
+      fa.games += 1;
+      fb.games += 1;
+      if (m.ticketsA != null && Number.isFinite(Number(m.ticketsA))) {
+        fa.ticketsSum += Number(m.ticketsA);
+        fa.ticketsN += 1;
+      }
+      if (m.ticketsB != null && Number.isFinite(Number(m.ticketsB))) {
+        fb.ticketsSum += Number(m.ticketsB);
+        fb.ticketsN += 1;
+      }
+      const win = String(m.winner || "").toUpperCase();
+      if (win && factionStat.has(win)) factionStat.get(win).wins += 1;
+
+      const tA = Number(m.ticketsA);
+      const tB = Number(m.ticketsB);
+      if (Number.isFinite(tA) && Number.isFinite(tB)) {
+        const wTickets = win === String(m.factionA).toUpperCase() ? tA : win === String(m.factionB).toUpperCase() ? tB : Math.max(tA, tB);
+        const lTickets = win === String(m.factionA).toUpperCase() ? tB : win === String(m.factionB).toUpperCase() ? tA : Math.min(tA, tB);
+        winnerTickets.push(wTickets);
+        const margin = Math.abs(tA - tB);
+        if (lTickets === 0 && wTickets >= 80) blowouts += 1;
+        else if (margin <= 40) closeGames += 1;
+      }
+
+      let roster = 0;
+      if (players) {
+        const list =
+          players.players && players.players.length
+            ? players.players
+            : [].concat(players.teamA || [], players.teamB || []);
+        const seen = new Set();
+        list.forEach((p) => {
+          if (!p || !p.nick) return;
+          roster += 1;
+          const row = touchPlayer(p.nick);
+          if (!row) return;
+          const key = resolveNickKey(p.nick);
+          day.players.add(key);
+          row.kills += Number(p.kills) || 0;
+          row.deaths += Number(p.deaths) || 0;
+          row.dmg += Number(p.dmg) || 0;
+          row.res += Number(p.res) || 0;
+          row.nok += Number(p.nok) || 0;
+          totalKills += Number(p.kills) || 0;
+          totalDeaths += Number(p.deaths) || 0;
+          totalDmg += Number(p.dmg) || 0;
+          totalRes += Number(p.res) || 0;
+          totalNok += Number(p.nok) || 0;
+          if (seen.has(key)) return;
+          seen.add(key);
+          row.games += 1;
+          if (
+            p.won === true ||
+            (m.winner &&
+              p.team &&
+              String(p.team).toUpperCase() === String(m.winner).toUpperCase())
+          ) {
+            row.wins += 1;
+          }
+        });
+        const mvp =
+          (players.mvp && players.mvp.train) || pickMvps(enrichRows(list.filter((p) => p && p.nick && inRating(p.nick))));
+        const bumpMvp = (nicks, field) => {
+          (nicks || []).forEach((n) => {
+            const row = touchPlayer(n);
+            if (row) row[field] += 1;
+          });
+        };
+        bumpMvp(mvp.medic, "mvpMedic");
+        bumpMvp(mvp.killer, "mvpKiller");
+        bumpMvp(mvp.damage, "mvpDamage");
+        bumpMvp(mvp.antiDeath, "antiDeath");
+      }
+      if (roster > 0) {
+        rosters.push(roster);
+        day.rosterSum += roster;
+      }
+    });
+
+    const n = matches.length;
+    const avgDur = durations.length
+      ? durations.reduce((a, b) => a + b, 0) / durations.length
+      : null;
+    const avgRoster = rosters.length
+      ? Math.round(rosters.reduce((a, b) => a + b, 0) / rosters.length)
+      : null;
+    const avgWinTickets = winnerTickets.length
+      ? Math.round(
+          winnerTickets.reduce((a, b) => a + b, 0) / winnerTickets.length
+        )
+      : null;
+
+    const scope = document.getElementById("train-an-scope")?.value || "all";
+    const scopeRu =
+      scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+    note.textContent = `Период: ${scopeRu}. Матчей: ${n}. Уникальных игроков: ${uniqueNicks.size}.`;
+
+    kpis.innerHTML = [
+      ["Матчей", String(n)],
+      ["Дней", String(dayStat.size)],
+      ["Игроков", String(uniqueNicks.size)],
+      ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
+      ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
+      ["Килы ∑", String(totalKills)],
+      ["Смерти ∑", String(totalDeaths)],
+      ["Боевой ∑", String(totalDmg)],
+    ]
+      .map(
+        ([k, v]) =>
+          `<div class="stat"><span class="k">${escapeHtml(k)}</span><span class="v">${escapeHtml(v)}</span></div>`
+      )
+      .join("");
+
+    const toRanked = (mapObj) => {
+      const arr = [...mapObj.entries()]
+        .map(([label, count]) => ({
+          label,
+          count,
+          share: Math.round((1000 * count) / n) / 10,
+        }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "ru"));
+      return arr;
+    };
+
+    document.getElementById("train-an-maps").innerHTML = `
+      <h3 class="ta-subh">Семейства карт</h3>
+      ${taBars(toRanked(familyCount))}
+      <h3 class="ta-subh">Точные слои</h3>
+      ${taBars(toRanked(mapCount))}
+    `;
+
+    document.getElementById("train-an-modes").innerHTML = `
+      <h3 class="ta-subh">Режимы</h3>
+      ${taBars(toRanked(modeCount))}
+      <h3 class="ta-subh">Серверы</h3>
+      ${taBars(toRanked(serverCount))}
+    `;
+
+    const factionRows = [...factionStat.values()]
+      .map((f) => ({
+        ...f,
+        winPct: f.games ? Math.round((1000 * f.wins) / f.games) / 10 : null,
+        avgTickets: f.ticketsN
+          ? Math.round(f.ticketsSum / f.ticketsN)
+          : null,
+      }))
+      .sort(
+        (a, b) =>
+          b.games - a.games ||
+          (b.winPct || 0) - (a.winPct || 0) ||
+          a.code.localeCompare(b.code)
+      );
+    document.getElementById("train-an-factions").innerHTML = factionRows
+      .map(
+        (f) => `<tr>
+        <td title="${escapeHtml(factionTitle(f.code))}"><strong>${escapeHtml(f.code)}</strong> <span class="muted">${escapeHtml(factionShort(f.code))}</span></td>
+        <td class="ctr">${f.games}</td>
+        <td class="ctr">${f.wins}</td>
+        <td class="ctr">${f.winPct != null ? f.winPct + "%" : "—"}</td>
+        <td class="ctr">${f.avgTickets != null ? f.avgTickets : "—"}</td>
+      </tr>`
+      )
+      .join("");
+
+    const minDur = durations.length ? Math.min(...durations) : null;
+    const maxDur = durations.length ? Math.max(...durations) : null;
+    const shortest = matches
+      .map((m) => ({ m, sec: parseDurationSec(m.duration) }))
+      .filter((x) => x.sec != null)
+      .sort((a, b) => a.sec - b.sec)[0];
+    const longest = matches
+      .map((m) => ({ m, sec: parseDurationSec(m.duration) }))
+      .filter((x) => x.sec != null)
+      .sort((a, b) => b.sec - a.sec)[0];
+
+    document.getElementById("train-an-pace").innerHTML = `
+      <ul class="ta-facts">
+        <li><span>Средняя длительность</span><strong>${avgDur != null ? formatDurationSec(avgDur) : "—"}</strong></li>
+        <li><span>Самая короткая</span><strong>${
+          shortest
+            ? `${formatDurationSec(shortest.sec)} · ${escapeHtml(mapFamilyName(shortest.m.map))} (${pad(shortest.m.day)}.${pad(shortest.m._month)})`
+            : "—"
+        }</strong></li>
+        <li><span>Самая длинная</span><strong>${
+          longest
+            ? `${formatDurationSec(longest.sec)} · ${escapeHtml(mapFamilyName(longest.m.map))} (${pad(longest.m.day)}.${pad(longest.m._month)})`
+            : "—"
+        }</strong></li>
+        <li><span>Диапазон</span><strong>${
+          minDur != null ? `${formatDurationSec(minDur)} – ${formatDurationSec(maxDur)}` : "—"
+        }</strong></li>
+        <li><span>Ср. тикеты победителя</span><strong>${avgWinTickets != null ? avgWinTickets : "—"}</strong></li>
+        <li><span>Близкие катки (Δ≤40)</span><strong>${closeGames} / ${n}</strong></li>
+        <li><span>Разгромы (проигравший 0, победитель ≥80)</span><strong>${blowouts} / ${n}</strong></li>
+      </ul>
+    `;
+
+    const minR = rosters.length ? Math.min(...rosters) : null;
+    const maxR = rosters.length ? Math.max(...rosters) : null;
+    document.getElementById("train-an-attendance").innerHTML = `
+      <ul class="ta-facts">
+        <li><span>Уникальных ников</span><strong>${uniqueNicks.size}</strong></li>
+        <li><span>Средний состав на катку</span><strong>${avgRoster != null ? avgRoster : "—"}</strong></li>
+        <li><span>Мин / макс состав</span><strong>${
+          minR != null ? `${minR} / ${maxR}` : "—"
+        }</strong></li>
+        <li><span>Сумма ресов / ноков</span><strong>${totalRes} / ${totalNok}</strong></li>
+        <li><span>KD периода (суммы)</span><strong>${
+          totalDeaths === 0
+            ? totalKills
+            : Math.round((100 * totalKills) / totalDeaths) / 100
+        }</strong></li>
+      </ul>
+      <h3 class="ta-subh">Состав по каткам</h3>
+      ${taBars(
+        bundles
+          .map(({ match: m, players }) => {
+            const list = players
+              ? players.players && players.players.length
+                ? players.players
+                : [].concat(players.teamA || [], players.teamB || [])
+              : [];
+            return {
+              label: `${pad(m.day)}.${pad(m._month)} · ${mapFamilyName(m.map)}`,
+              count: list.length,
+              extra: m.duration || "",
+            };
+          })
+          .filter((r) => r.count > 0)
+          .sort((a, b) => b.count - a.count)
+      )}
+    `;
+
+    const tierCount = new Map();
+    playerMap.forEach((p) => {
+      const t = p.tier || 4;
+      tierCount.set(t, (tierCount.get(t) || 0) + 1);
+    });
+    const tierRows = [1, 2, 3, 4].map((t) => ({
+      label: tierLabel(t),
+      count: tierCount.get(t) || 0,
+      share: uniqueNicks.size
+        ? Math.round((1000 * (tierCount.get(t) || 0)) / uniqueNicks.size) / 10
+        : 0,
+    }));
+    document.getElementById("train-an-tiers").innerHTML = taBars(tierRows);
+
+    document.getElementById("train-an-calendar").innerHTML = [...dayStat.values()]
+      .sort((a, b) => a.key.localeCompare(b.key))
+      .map((d) => {
+        const avgR = d.matches ? Math.round(d.rosterSum / d.matches) : null;
+        const avgD =
+          d.durationN > 0 ? formatDurationSec(d.durationSum / d.durationN) : "—";
+        const maps = [...new Set(d.maps)].join(", ");
+        return `<tr>
+          <td>${escapeHtml(d.label)}</td>
+          <td class="ctr">${d.matches}</td>
+          <td>${escapeHtml(maps)}</td>
+          <td class="ctr">${d.players.size}</td>
+          <td class="ctr">${avgR != null ? avgR : "—"}</td>
+          <td class="ctr">${avgD}</td>
+        </tr>`;
+      })
+      .join("");
+
+    const players = [...playerMap.values()].map((p) => ({
+      ...p,
+      kd: p.deaths === 0 ? p.kills : Math.round((100 * p.kills) / p.deaths) / 100,
+      winPct: p.games ? Math.round((1000 * p.wins) / p.games) / 10 : null,
+    }));
+
+    const topGames = players.slice().sort((a, b) => b.games - a.games || b.kills - a.kills).slice(0, 12);
+    const topKills = players.slice().sort((a, b) => b.kills - a.kills || b.kd - a.kd).slice(0, 12);
+    const topKd = players
+      .filter((p) => p.games >= 2 && p.deaths + p.kills > 0)
+      .slice()
+      .sort((a, b) => b.kd - a.kd || b.kills - a.kills)
+      .slice(0, 12);
+    const topDmg = players.slice().sort((a, b) => b.dmg - a.dmg || b.kills - a.kills).slice(0, 12);
+    const topWin = players
+      .filter((p) => p.games >= 2)
+      .slice()
+      .sort((a, b) => (b.winPct || 0) - (a.winPct || 0) || b.games - a.games)
+      .slice(0, 12);
+
+    const nickCol = {
+      label: "Ник",
+      value: (r) => nickLinkHtml(r.nick),
+    };
+    document.getElementById("train-an-tops").innerHTML = [
+      taTopTable("Больше каток", topGames, [
+        nickCol,
+        { label: "Каток", cls: "ctr", key: "games" },
+        { label: "W%", cls: "ctr", value: (r) => (r.winPct != null ? r.winPct + "%" : "—") },
+      ]),
+      taTopTable("Килы", topKills, [
+        nickCol,
+        { label: "Килы", cls: "ctr", key: "kills" },
+        { label: "KD", cls: "ctr", key: "kd" },
+      ]),
+      taTopTable("KD (мин. 2 катки)", topKd, [
+        nickCol,
+        { label: "KD", cls: "ctr", key: "kd" },
+        { label: "K/D", cls: "ctr", value: (r) => `${r.kills}/${r.deaths}` },
+      ]),
+      taTopTable("Боевой счёт", topDmg, [
+        nickCol,
+        { label: "Счёт", cls: "ctr", key: "dmg" },
+        { label: "Килы", cls: "ctr", key: "kills" },
+      ]),
+      taTopTable("% побед (мин. 2)", topWin, [
+        nickCol,
+        { label: "W%", cls: "ctr", value: (r) => (r.winPct != null ? r.winPct + "%" : "—") },
+        { label: "Каток", cls: "ctr", key: "games" },
+      ]),
+    ].join("");
+
+    const topMedic = players.slice().sort((a, b) => b.mvpMedic - a.mvpMedic || b.res - a.res).filter((p) => p.mvpMedic > 0).slice(0, 10);
+    const topKiller = players.slice().sort((a, b) => b.mvpKiller - a.mvpKiller || b.kills - a.kills).filter((p) => p.mvpKiller > 0).slice(0, 10);
+    const topWar = players.slice().sort((a, b) => b.mvpDamage - a.mvpDamage || b.dmg - a.dmg).filter((p) => p.mvpDamage > 0).slice(0, 10);
+    const topAnti = players.slice().sort((a, b) => b.antiDeath - a.antiDeath || b.deaths - a.deaths).filter((p) => p.antiDeath > 0).slice(0, 10);
+
+    document.getElementById("train-an-mvp").innerHTML = [
+      taTopTable("MVP Medic", topMedic, [
+        nickCol,
+        { label: "MVP", cls: "ctr col-mvp-medic", key: "mvpMedic" },
+        { label: "Ресы", cls: "ctr", key: "res" },
+      ]),
+      taTopTable("MVP Killer", topKiller, [
+        nickCol,
+        { label: "MVP", cls: "ctr col-mvp-killer", key: "mvpKiller" },
+        { label: "Килы", cls: "ctr", key: "kills" },
+      ]),
+      taTopTable("MVP War-Score", topWar, [
+        nickCol,
+        { label: "MVP", cls: "ctr col-mvp-war", key: "mvpDamage" },
+        { label: "Счёт", cls: "ctr", key: "dmg" },
+      ]),
+      taTopTable("Anti-MVP", topAnti, [
+        nickCol,
+        { label: "Anti", cls: "ctr col-mvp-anti", key: "antiDeath" },
+        { label: "Смерти", cls: "ctr", key: "deaths" },
+      ]),
+    ].join("");
+
+    document.getElementById("train-an-matches").innerHTML = bundles
+      .slice()
+      .sort((a, b) => {
+        const ak = `${a.match._year}-${a.match._month}-${a.match.day}-${a.match.id}`;
+        const bk = `${b.match._year}-${b.match._month}-${b.match.day}-${b.match.id}`;
+        return ak.localeCompare(bk);
+      })
+      .map(({ match: m, players }) => {
+        const list = players
+          ? players.players && players.players.length
+            ? players.players
+            : [].concat(players.teamA || [], players.teamB || [])
+          : [];
+        return `<tr>
+          <td>${pad(m.day)}.${pad(m._month)}.${m._year}</td>
+          <td>${escapeHtml(m.map || "—")}</td>
+          <td>${escapeHtml(m.mode || "—")}</td>
+          <td class="ctr">${escapeHtml(m.duration || "—")}</td>
+          <td class="ctr">${list.length || "—"}</td>
+          <td>${escapeHtml(factionShort(m.factionA))} ${m.ticketsA ?? "—"} : ${m.ticketsB ?? "—"} ${escapeHtml(factionShort(m.factionB))}</td>
+          <td>${m.winner ? escapeHtml(factionShort(m.winner)) : "—"}</td>
+        </tr>`;
+      })
+      .join("");
+
+    body.hidden = false;
+  }
+
 
   /* ——— match modal (player stats) ——— */
   function closeModal() {

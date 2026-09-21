@@ -170,6 +170,7 @@
         <div class="subnav" role="tablist" aria-label="Разделы тренировок">
           <button type="button" class="subnav-btn active" data-tm="matches" role="tab">Матчи</button>
           <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
+          <button type="button" class="subnav-btn" data-tm="analytics" role="tab">Аналитика</button>
         </div>
       </header>
 
@@ -259,6 +260,7 @@
                   <th class="ctr sortable" data-trsort="regNo" data-label="№">№</th>
                   <th class="sortable" data-trsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
+                  <th class="ctr sortable" data-trsort="tier" data-label="Ранг">Ранг</th>
                   <th class="ctr sortable" data-trsort="games" data-label="Каток">Каток</th>
                   <th class="ctr sortable" data-trsort="winPct" data-label="% побед" title="% побед на тренировках">% побед</th>
                   <th class="ctr sortable" data-trsort="res" data-label="Ресы">Ресы</th>
@@ -279,6 +281,155 @@
           </div>
           <p class="note" id="train-rating-note"></p>
         </section>
+      </div>
+
+      <div id="tm-analytics" class="cw-panel" hidden>
+        <div class="filters">
+          <label class="filter">
+            <span>Период</span>
+            <select id="train-an-scope">
+              <option value="all">За всё время</option>
+              <option value="year">Год</option>
+              <option value="month">Месяц</option>
+            </select>
+          </label>
+          <label class="filter" id="train-an-year-wrap">
+            <span>Год</span>
+            <select id="train-an-year"></select>
+          </label>
+          <label class="filter" id="train-an-month-wrap">
+            <span>Месяц</span>
+            <select id="train-an-month"></select>
+          </label>
+        </div>
+
+        <p class="note" id="train-an-note">Считаем аналитику тренировок…</p>
+
+        <div class="hero-stats hero-stats-inline" id="train-an-kpis"></div>
+
+        <div class="ta-grid" id="train-an-body" hidden>
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Где играли · карты</h2>
+              <p class="board-sub">Частота слоёв и семейств карт</p>
+            </div>
+            <div id="train-an-maps"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Что играли · режимы</h2>
+              <p class="board-sub">OSI / AAS и серверы</p>
+            </div>
+            <div id="train-an-modes"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>На чём · фракции</h2>
+              <p class="board-sub">Сколько раз выходили · победы · % побед</p>
+            </div>
+            <div class="table-scroll">
+              <table class="rating-table ta-table">
+                <thead>
+                  <tr>
+                    <th>Фракция</th>
+                    <th class="ctr">Каток</th>
+                    <th class="ctr">Побед</th>
+                    <th class="ctr">% побед</th>
+                    <th class="ctr">Ср. тикеты</th>
+                  </tr>
+                </thead>
+                <tbody id="train-an-factions"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Как долго · темп</h2>
+              <p class="board-sub">Длительность раундов и разрыв по тикетам</p>
+            </div>
+            <div id="train-an-pace"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Сколько играло</h2>
+              <p class="board-sub">Состав на катку · уникальные ники · по дням</p>
+            </div>
+            <div id="train-an-attendance"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Тиры на поле</h2>
+              <p class="board-sub">Состав по рангам (уникальные игроки периода)</p>
+            </div>
+            <div id="train-an-tiers"></div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>Календарь тренировок</h2>
+              <p class="board-sub">Дни · число каток · явка</p>
+            </div>
+            <div class="table-scroll">
+              <table class="rating-table ta-table">
+                <thead>
+                  <tr>
+                    <th>День</th>
+                    <th class="ctr">Каток</th>
+                    <th>Карты</th>
+                    <th class="ctr">Явка (уник.)</th>
+                    <th class="ctr">Ср. состав</th>
+                    <th class="ctr">Ср. длит.</th>
+                  </tr>
+                </thead>
+                <tbody id="train-an-calendar"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>Топ игроков периода</h2>
+              <p class="board-sub">По каткам, киллам, KD, боевому счёту и % побед (мин. 2 катки)</p>
+            </div>
+            <div class="ta-tops" id="train-an-tops"></div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>MVP тренировок</h2>
+              <p class="board-sub">Счётчики MVP только из тренировочных матчей</p>
+            </div>
+            <div class="ta-tops" id="train-an-mvp"></div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>Все матчи периода</h2>
+              <p class="board-sub">Краткая лента для сверки</p>
+            </div>
+            <div class="table-scroll">
+              <table class="matches-table ta-table">
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Карта</th>
+                    <th>Режим</th>
+                    <th class="ctr">Длит.</th>
+                    <th class="ctr">Состав</th>
+                    <th>Счёт</th>
+                    <th>Победитель</th>
+                  </tr>
+                </thead>
+                <tbody id="train-an-matches"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
   </main>

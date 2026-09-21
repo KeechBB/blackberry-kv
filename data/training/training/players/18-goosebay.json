@@ -1,0 +1,1214 @@
+{
+  "matchId": "18-goosebay",
+  "map": "SEC 26 GooseBay AAS v1",
+  "mode": "OSI",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "36:34",
+  "winner": "VDV",
+  "sideA": {
+    "name": "VDV",
+    "tickets": 73
+  },
+  "sideB": {
+    "name": "CAF",
+    "tickets": 0
+  },
+  "note": "1-я катка тренировочного дня 18.09. Обе стороны BB. OCR scoreboard (рес/нок/кил/смерть/урон = ст. 1/3/4/5/9).",
+  "awards": {
+    "topSquad": "Squad 6 (VDV)",
+    "topMedic": "KillReal",
+    "topSupply": "Ilyich"
+  },
+  "details": {
+    "vdv": {
+      "start": 180,
+      "remain": 73,
+      "gained": 20,
+      "lost": 127,
+      "infantryDeaths": 102,
+      "fobRadios": 0,
+      "vehicleTickets": 25,
+      "ammo": 13100,
+      "construction": 8500,
+      "fobsCreated": 2
+    },
+    "caf": {
+      "start": 180,
+      "remain": 0,
+      "gained": 10,
+      "lost": 190,
+      "infantryDeaths": 132,
+      "fobRadios": 2,
+      "vehicleTickets": 18,
+      "ammo": 8300,
+      "construction": 11000,
+      "fobsCreated": 3
+    }
+  },
+  "teamA": [
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 140,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "HunterN7",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 20,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 19,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 361,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "KillReal",
+      "res": 13,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 121,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "JESTER",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 122,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "FLEX",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 112,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Koperor",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 204,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 128,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 205,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 633,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "NECO",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 2,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 105,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 526,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Bahus",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 3,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 138,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Keech",
+      "res": 6,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 221,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "ART",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 32,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 227,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "akin0v",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 73,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 233,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 275,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 17,
+      "kills": 16,
+      "deaths": 3,
+      "dmg": 413,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 325,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "S.M.P",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 6,
+      "dmg": 700,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "ADUN",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 55,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 256,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "GAD",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 72,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 363,
+      "team": "VDV",
+      "won": true
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 62,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Sex",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 45,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 81,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 1,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 161,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Jopllik",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 75,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 79,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 135,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Pugovka",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 156,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 8,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 129,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 216,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 157,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Foden",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 152,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "AkiN",
+      "res": 5,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 116,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 147,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 109,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 260,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "firs",
+      "res": 8,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 87,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 126,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "default",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 96,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 211,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "VITALYA",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 122,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "rupture",
+      "res": 9,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 29,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Jerom101",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 157,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Mahorka",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 37,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 138,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 22,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 14,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 802,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0,
+      "team": "CAF",
+      "won": false
+    }
+  ],
+  "players": [
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 140,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "HunterN7",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 20,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 19,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 361,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "KillReal",
+      "res": 13,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 121,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "JESTER",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 122,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "FLEX",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 112,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Koperor",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 204,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 128,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 205,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 633,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "NECO",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 2,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 105,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 526,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Bahus",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 3,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 138,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Keech",
+      "res": 6,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 221,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "ART",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 32,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 227,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "akin0v",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 73,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 233,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 275,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 17,
+      "kills": 16,
+      "deaths": 3,
+      "dmg": 413,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 325,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "S.M.P",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 6,
+      "dmg": 700,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "ADUN",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 55,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 256,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "GAD",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 72,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 363,
+      "team": "VDV",
+      "won": true
+    },
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 62,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Sex",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 45,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 81,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 1,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 161,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Jopllik",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 75,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 79,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 135,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Pugovka",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 156,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 8,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 129,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 216,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 157,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Foden",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 152,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "AkiN",
+      "res": 5,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 116,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 147,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 109,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 260,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "firs",
+      "res": 8,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 87,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 126,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "default",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 96,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 211,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "VITALYA",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 122,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "rupture",
+      "res": 9,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 29,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Jerom101",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 157,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Mahorka",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 37,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 138,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 22,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 14,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 802,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0,
+      "team": "CAF",
+      "won": false
+    }
+  ]
+}
