@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260921-vagnerfix";
+  const DATA_VER = "20260921-dedushkin";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -197,13 +197,13 @@
   }
 
   function profileHref(nick) {
-    const clean = profileNick(nick);
+    const clean = displayNick(nick);
     if (!clean || clean === "—") return null;
     return `${PROFILE_BASE}/${encodeURIComponent(clean)}`;
   }
 
   function nickLinkHtml(nick) {
-    const label = nick || "—";
+    const label = displayNick(nick) || nick || "—";
     const href = profileHref(nick);
     if (!href) return escapeHtml(label);
     return `<a class="nick-profile-link" href="${escapeHtml(href)}" target="_top" rel="noopener">${escapeHtml(label)}</a>`;
@@ -262,8 +262,16 @@
     return displayNickByKey.get(key) || clean;
   }
 
+  /** Ключ для склейки рейтинга: алиасы (VaGNeR / Dedushkin Ghoul 福父 …) → канон */
+  function resolveNickKey(nick) {
+    const clean = profileNick(nick);
+    const key = nickKey(clean);
+    const canon = displayNickByKey.get(key);
+    return canon ? nickKey(canon) : key;
+  }
+
   function tierOf(nick) {
-    return tierByNick.get(nickKey(nick)) || 4;
+    return tierByNick.get(resolveNickKey(nick)) || tierByNick.get(nickKey(nick)) || 4;
   }
 
   function tierLabel(tier) {
@@ -958,9 +966,9 @@
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
-          const key = nickKey(nick);
+          const key = resolveNickKey(nick);
           if (!map.has(key)) {
-            const ro = rosterOf(nick);
+            const ro = rosterOf(displayNick(nick));
             map.set(key, {
               nick: displayNick(nick),
               tier: tierOf(nick),
@@ -991,7 +999,7 @@
 
           total.forEach((p) => {
             if (!p || !p.nick || !inRating(p.nick)) return;
-            inMeeting.add(nickKey(p.nick));
+            inMeeting.add(resolveNickKey(p.nick));
             const row = touch(p.nick);
             row.res += Number(p.res) || 0;
             row.nok += Number(p.nok) || 0;
@@ -1000,7 +1008,7 @@
             row.dmg += Number(p.dmg) || 0;
           });
           [...r1, ...r2].forEach((p) => {
-            if (p && p.nick && inRating(p.nick)) inMeeting.add(nickKey(p.nick));
+            if (p && p.nick && inRating(p.nick)) inMeeting.add(resolveNickKey(p.nick));
           });
           inMeeting.forEach((key) => {
             const row = map.get(key);
@@ -1246,9 +1254,9 @@
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
-          const key = nickKey(nick);
+          const key = resolveNickKey(nick);
           if (!map.has(key)) {
-            const ro = rosterOf(nick);
+            const ro = rosterOf(displayNick(nick));
             map.set(key, {
               nick: displayNick(nick),
               clan: ro.clan,
@@ -1286,7 +1294,7 @@
             row.kills += Number(p.kills) || 0;
             row.deaths += Number(p.deaths) || 0;
             row.dmg += Number(p.dmg) || 0;
-            const key = nickKey(p.nick);
+            const key = resolveNickKey(p.nick);
             if (seen.has(key)) return;
             seen.add(key);
             row.games += 1;
