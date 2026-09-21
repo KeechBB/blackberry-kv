@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-const DATA_VER = "20260921-m2-fallujah";
+  const DATA_VER = "20260921-m2-fallujah";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
