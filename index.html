@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260921-mvp-fix" />
+  <link rel="stylesheet" href="styles.css?v=20260922-cw-analytics" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -49,6 +49,7 @@
         <div class="subnav" role="tablist" aria-label="Разделы КВ">
           <button type="button" class="subnav-btn active" data-cw="matches" role="tab">Календарь матчей</button>
           <button type="button" class="subnav-btn" data-cw="rating" role="tab">Рейтинг игроков</button>
+          <button type="button" class="subnav-btn" data-cw="analytics" role="tab">Аналитика</button>
         </div>
       </header>
 
@@ -161,6 +162,172 @@
           </div>
           <p class="note" id="rating-note"></p>
         </section>
+      </div>
+
+      <div id="cw-analytics" class="cw-panel" hidden>
+        <div class="filters">
+          <label class="filter">
+            <span>Период</span>
+            <select id="cw-an-scope">
+              <option value="all">За всё время</option>
+              <option value="year">Год</option>
+              <option value="month">Месяц</option>
+            </select>
+          </label>
+          <label class="filter" id="cw-an-year-wrap">
+            <span>Год</span>
+            <select id="cw-an-year"></select>
+          </label>
+          <label class="filter" id="cw-an-month-wrap">
+            <span>Месяц</span>
+            <select id="cw-an-month"></select>
+          </label>
+          <label class="filter">
+            <span>Состав</span>
+            <select id="cw-an-stack">
+              <option value="all">Все</option>
+              <option value="Main">Main</option>
+              <option value="Junior">Junior</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="note" id="cw-an-note">Считаем аналитику КВ…</p>
+        <div class="hero-stats hero-stats-inline" id="cw-an-kpis"></div>
+
+        <div class="ta-grid" id="cw-an-body" hidden>
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Результаты · серии</h2>
+              <p class="board-sub">Победы / ничьи / поражения · по составу</p>
+            </div>
+            <div id="cw-an-results"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Карты</h2>
+              <p class="board-sub">Семейства и точные слои · winrate</p>
+            </div>
+            <div id="cw-an-maps"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Соперники</h2>
+              <p class="board-sub">Встречи · счёт серии · % побед</p>
+            </div>
+            <div class="table-scroll">
+              <table class="rating-table ta-table">
+                <thead>
+                  <tr>
+                    <th>Клан</th>
+                    <th class="ctr">Игр</th>
+                    <th class="ctr">W</th>
+                    <th class="ctr">D</th>
+                    <th class="ctr">L</th>
+                    <th class="ctr">%</th>
+                    <th>Составы</th>
+                  </tr>
+                </thead>
+                <tbody id="cw-an-opps"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Формат · серверы</h2>
+              <p class="board-sub">26v26 / 36v36 · домашний / чужой сервер</p>
+            </div>
+            <div id="cw-an-formats"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Тикеты · темп</h2>
+              <p class="board-sub">Остатки R1/R2 · длительность · пехота/техника из Details</p>
+            </div>
+            <div id="cw-an-pace"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Тиры на поле</h2>
+              <p class="board-sub">Уникальные игроки · средний микс на катку</p>
+            </div>
+            <div id="cw-an-tiers"></div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>Состав по каткам</h2>
+              <p class="board-sub">Сколько тир 1/2/3/вне · явка · счёт · карта</p>
+            </div>
+            <div class="table-scroll">
+              <table class="rating-table ta-table">
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Соперник</th>
+                    <th>Карта</th>
+                    <th class="ctr">Стек</th>
+                    <th class="ctr">Счёт</th>
+                    <th class="ctr">Явка</th>
+                    <th class="ctr">T1</th>
+                    <th class="ctr">T2</th>
+                    <th class="ctr">T3</th>
+                    <th class="ctr">Проч.</th>
+                    <th class="ctr">%T1</th>
+                  </tr>
+                </thead>
+                <tbody id="cw-an-rosters"></tbody>
+              </table>
+            </div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>Топы игроков</h2>
+              <p class="board-sub">По участию, килам, KD, боевому счёту</p>
+            </div>
+            <div class="ta-tops" id="cw-an-tops"></div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>MVP медали</h2>
+              <p class="board-sub">Medic / Killer / War-Score / Anti-MVP за период</p>
+            </div>
+            <div class="ta-tops" id="cw-an-mvp"></div>
+          </section>
+
+          <section class="board ta-card ta-card-wide">
+            <div class="board-head">
+              <h2>Лог каток</h2>
+              <p class="board-sub">Все сыгранные встречи периода с тикетами и деталями</p>
+            </div>
+            <div class="table-scroll">
+              <table class="rating-table ta-table">
+                <thead>
+                  <tr>
+                    <th>Дата</th>
+                    <th>Opp</th>
+                    <th>Карта</th>
+                    <th class="ctr">Стек</th>
+                    <th class="ctr">Счёт</th>
+                    <th class="ctr">R1</th>
+                    <th class="ctr">R2</th>
+                    <th class="ctr">Длит.</th>
+                    <th class="ctr">Явка</th>
+                    <th>Фракции</th>
+                  </tr>
+                </thead>
+                <tbody id="cw-an-matches"></tbody>
+              </table>
+            </div>
+          </section>
+        </div>
       </div>
     </section>
 
@@ -453,6 +620,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260921-dedushkin"></script>
+  <script src="app.js?v=20260922-cw-analytics"></script>
 </body>
 </html>

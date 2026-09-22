@@ -25,7 +25,7 @@
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
-  const DATA_VER = "20260922-20r-goose";
+  const DATA_VER = "20260922-cw-analytics";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -301,10 +301,16 @@
   function showCwPanel(panel) {
     document.getElementById("cw-matches").hidden = panel !== "matches";
     document.getElementById("cw-rating").hidden = panel !== "rating";
+    const an = document.getElementById("cw-analytics");
+    if (an) an.hidden = panel !== "analytics";
     document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.cw === panel);
     });
     if (panel === "rating") loadRating();
+    if (panel === "analytics") {
+      ensureCwAnalyticsFilters();
+      loadCwAnalytics();
+    }
   }
 
   function showTmPanel(panel) {
@@ -343,11 +349,13 @@
   document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       showCwPanel(btn.dataset.cw);
-      history.replaceState(
-        null,
-        "",
-        btn.dataset.cw === "rating" ? "#/cw/rating" : "#/cw"
-      );
+      const hash =
+        btn.dataset.cw === "rating"
+          ? "#/cw/rating"
+          : btn.dataset.cw === "analytics"
+            ? "#/cw/analytics"
+            : "#/cw";
+      history.replaceState(null, "", hash);
     });
   });
   document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
@@ -384,7 +392,13 @@
       );
     } else if (h.startsWith("#/cw")) {
       showView("cw");
-      showCwPanel(h.includes("rating") ? "rating" : "matches");
+      showCwPanel(
+        h.includes("analytics")
+          ? "analytics"
+          : h.includes("rating")
+            ? "rating"
+            : "matches"
+      );
     } else {
       showView("home");
     }
@@ -1457,6 +1471,746 @@
 
   /* ——— training analytics ——— */
   let trainAnFiltersReady = false;
+  let cwAnFiltersReady = false;
+
+  function parseTicketPair(raw) {
+    const m = String(raw || "").match(/(\d+)\s*[:：]\s*(\d+)/);
+    if (!m) return null;
+    return { us: Number(m[1]), them: Number(m[2]) };
+  }
+
+  function cwPlayerList(players) {
+    if (!players) return [];
+    if (players.total && players.total.length) return players.total;
+    if (players.players && players.players.length) return players.players;
+    const r1 = players.r1 || [];
+    const r2 = players.r2 || [];
+    if (!r1.length && !r2.length) return [];
+    return sumRounds(r1, r2);
+  }
+
+  function cwUniqueNicks(players) {
+    const set = new Set();
+    if (!players) return [];
+    [...(players.r1 || []), ...(players.r2 || []), ...cwPlayerList(players)].forEach(
+      (p) => {
+        if (p && p.nick && inRating(p.nick)) set.add(resolveNickKey(p.nick));
+      }
+    );
+    return [...set];
+  }
+
+  function ensureCwAnalyticsFilters() {
+    if (cwAnFiltersReady) return;
+    const yearSel = document.getElementById("cw-an-year");
+    const monthSel = document.getElementById("cw-an-month");
+    const scopeEl = document.getElementById("cw-an-scope");
+    const stackEl = document.getElementById("cw-an-stack");
+    if (!yearSel || !monthSel || !scopeEl) return;
+
+    const years = [...new Set(catalog.map((m) => m.year))].sort((a, b) => b - a);
+    yearSel.innerHTML = years.map((y) => `<option value="${y}">${y}</option>`).join("");
+    const syncMonths = () => {
+      const y = Number(yearSel.value);
+      const months = catalog
+        .filter((m) => m.year === y)
+        .sort((a, b) => b.month - a.month);
+      monthSel.innerHTML = months
+        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .join("");
+    };
+    const yearWrap = document.getElementById("cw-an-year-wrap");
+    const monthWrap = document.getElementById("cw-an-month-wrap");
+    const syncScopeUi = () => {
+      const scope = scopeEl.value;
+      if (yearWrap) yearWrap.hidden = scope === "all";
+      if (monthWrap) monthWrap.hidden = scope !== "month";
+    };
+    const reload = () => loadCwAnalytics();
+    scopeEl.addEventListener("change", () => {
+      syncScopeUi();
+      if (scopeEl.value === "month") syncMonths();
+      reload();
+    });
+    yearSel.addEventListener("change", () => {
+      syncMonths();
+      reload();
+    });
+    monthSel.addEventListener("change", reload);
+    if (stackEl) stackEl.addEventListener("change", reload);
+    if (years.length) {
+      yearSel.value = String(years[0]);
+      syncMonths();
+      scopeEl.value = "all";
+      syncScopeUi();
+    }
+    cwAnFiltersReady = true;
+  }
+
+  function selectedCwAnalyticsMetas() {
+    const scope = document.getElementById("cw-an-scope")?.value || "all";
+    if (scope === "all") return catalog.slice();
+    const y = Number(document.getElementById("cw-an-year")?.value);
+    if (scope === "year") return catalog.filter((m) => m.year === y);
+    const id = document.getElementById("cw-an-month")?.value;
+    const one = catalog.find((m) => m.id === id);
+    return one ? [one] : [];
+  }
+
+  function loadCwAnalytics() {
+    const note = document.getElementById("cw-an-note");
+    const body = document.getElementById("cw-an-body");
+    const kpis = document.getElementById("cw-an-kpis");
+    if (!note || !body || !kpis) return;
+    note.textContent = "Считаем аналитику КВ…";
+    body.hidden = true;
+    kpis.innerHTML = "";
+
+    const metas = selectedCwAnalyticsMetas();
+    if (!metas.length) {
+      note.textContent = "Нет месяцев КВ";
+      return;
+    }
+
+    const stackFilter = document.getElementById("cw-an-stack")?.value || "all";
+
+    Promise.all([
+      loadRoster(),
+      Promise.all(
+        metas.map((meta) =>
+          fetch(dataUrl(meta.url))
+            .then((r) => (r.ok ? r.json() : null))
+            .then((data) => (data ? { meta, data } : null))
+            .catch(() => null)
+        )
+      ),
+    ])
+      .then(([, months]) => {
+        const matchList = [];
+        (months || []).forEach((bundle) => {
+          if (!bundle || !bundle.data) return;
+          (bundle.data.matches || []).forEach((m) => {
+            if (m.status === "upcoming") return;
+            if (
+              stackFilter !== "all" &&
+              String(m.stack || "").toLowerCase() !== stackFilter.toLowerCase()
+            ) {
+              return;
+            }
+            matchList.push({
+              ...m,
+              _year: bundle.meta.year,
+              _month: bundle.meta.month,
+              _monthId: bundle.meta.id,
+            });
+          });
+        });
+        return Promise.all(
+          matchList.map((m) =>
+            m.playersUrl
+              ? fetch(dataUrl(m.playersUrl))
+                  .then((r) => (r.ok ? r.json() : null))
+                  .then((pj) => ({ match: m, players: pj }))
+                  .catch(() => ({ match: m, players: null }))
+              : Promise.resolve({ match: m, players: null })
+          )
+        );
+      })
+      .then((bundles) => {
+        paintCwAnalytics(bundles || []);
+      })
+      .catch((err) => {
+        note.textContent = String(err.message || err);
+      });
+  }
+
+  function paintCwAnalytics(bundles) {
+    const note = document.getElementById("cw-an-note");
+    const body = document.getElementById("cw-an-body");
+    const kpis = document.getElementById("cw-an-kpis");
+    if (!note || !body || !kpis) return;
+
+    if (!bundles.length) {
+      note.textContent = "В выбранном периоде нет сыгранных КВ";
+      body.hidden = true;
+      return;
+    }
+
+    const wins = bundles.filter((b) => b.match.status === "win").length;
+    const draws = bundles.filter((b) => b.match.status === "draw").length;
+    const losses = bundles.filter((b) => b.match.status === "lose").length;
+    const n = bundles.length;
+    const winrate = n ? Math.round((1000 * wins) / n) / 10 : 0;
+
+    const mapCount = new Map();
+    const familyCount = new Map();
+    const familyWins = new Map();
+    const sizeCount = new Map();
+    const serverCount = new Map();
+    const stackStat = new Map();
+    const oppStat = new Map();
+    const playerMap = new Map();
+    const uniqueNicks = new Set();
+    const rosterSizes = [];
+    const durations = [];
+    const ticketMargins = [];
+    let totalKills = 0;
+    let totalDeaths = 0;
+    let totalDmg = 0;
+    let totalRes = 0;
+    let totalNok = 0;
+    let infUs = 0;
+    let infThem = 0;
+    let vehUs = 0;
+    let vehThem = 0;
+    let detailsN = 0;
+    const tierSeatSum = { 1: 0, 2: 0, 3: 0, 4: 0 };
+    let tierSeatMatches = 0;
+
+    const touchStack = (name) => {
+      const key = name || "—";
+      if (!stackStat.has(key)) {
+        stackStat.set(key, { name: key, games: 0, wins: 0, draws: 0, losses: 0 });
+      }
+      return stackStat.get(key);
+    };
+    const touchOpp = (name) => {
+      const key = name || "—";
+      if (!oppStat.has(key)) {
+        oppStat.set(key, {
+          name: key,
+          games: 0,
+          wins: 0,
+          draws: 0,
+          losses: 0,
+          stacks: new Set(),
+        });
+      }
+      return oppStat.get(key);
+    };
+    const touchPlayer = (nick) => {
+      if (!nick || !inRating(nick)) return null;
+      const key = resolveNickKey(nick);
+      uniqueNicks.add(key);
+      if (!playerMap.has(key)) {
+        const ro = rosterOf(displayNick(nick));
+        playerMap.set(key, {
+          nick: displayNick(nick),
+          tier: tierOf(nick),
+          clan: ro.clan,
+          games: 0,
+          kills: 0,
+          deaths: 0,
+          dmg: 0,
+          res: 0,
+          nok: 0,
+          mvpMedic: 0,
+          mvpKiller: 0,
+          mvpDamage: 0,
+          antiDeath: 0,
+        });
+      }
+      return playerMap.get(key);
+    };
+
+    const matchRows = [];
+
+    bundles.forEach(({ match: m, players }) => {
+      const map = m.map || "—";
+      mapCount.set(map, (mapCount.get(map) || 0) + 1);
+      const fam = mapFamilyName(map);
+      familyCount.set(fam, (familyCount.get(fam) || 0) + 1);
+      if (m.status === "win") {
+        familyWins.set(fam, (familyWins.get(fam) || 0) + 1);
+      }
+      const size = m.size || "—";
+      sizeCount.set(size, (sizeCount.get(size) || 0) + 1);
+      const server = m.server || "—";
+      serverCount.set(server, (serverCount.get(server) || 0) + 1);
+
+      const st = touchStack(m.stack || "—");
+      st.games += 1;
+      if (m.status === "win") st.wins += 1;
+      else if (m.status === "draw") st.draws += 1;
+      else if (m.status === "lose") st.losses += 1;
+
+      const opp = touchOpp(m.opp || "—");
+      opp.games += 1;
+      opp.stacks.add(m.stack || "—");
+      if (m.status === "win") opp.wins += 1;
+      else if (m.status === "draw") opp.draws += 1;
+      else if (m.status === "lose") opp.losses += 1;
+
+      const r1t =
+        parseTicketPair(m.r1) ||
+        parseTicketPair(players?.summary?.r1Tickets) ||
+        parseTicketPair(players?.details?.r1?.tickets);
+      const r2t =
+        parseTicketPair(m.r2) ||
+        parseTicketPair(players?.summary?.r2Tickets) ||
+        parseTicketPair(players?.details?.r2?.tickets);
+      if (r1t) ticketMargins.push(r1t.us - r1t.them);
+      if (r2t) ticketMargins.push(r2t.us - r2t.them);
+
+      const len1 = parseDurationSec(players?.summary?.r1Len || players?.details?.r1?.len);
+      const len2 = parseDurationSec(players?.summary?.r2Len || players?.details?.r2?.len);
+      if (len1 != null) durations.push(len1);
+      if (len2 != null) durations.push(len2);
+
+      const d1 = players?.details?.r1;
+      const d2 = players?.details?.r2;
+      const parseSigned = (s) => {
+        const mm = String(s || "").match(/(-?\d+)\s*\/\s*(-?\d+)/);
+        return mm ? { us: Number(mm[1]), them: Number(mm[2]) } : null;
+      };
+      [d1, d2].forEach((d) => {
+        if (!d) return;
+        const inf = parseSigned(d.infantry);
+        const veh = parseSigned(d.veh);
+        if (inf) {
+          infUs += Math.abs(inf.us);
+          infThem += Math.abs(inf.them);
+          detailsN += 1;
+        }
+        if (veh) {
+          vehUs += Math.abs(veh.us);
+          vehThem += Math.abs(veh.them);
+        }
+      });
+
+      const nicks = cwUniqueNicks(players);
+      const tierCounts = { 1: 0, 2: 0, 3: 0, 4: 0 };
+      nicks.forEach((key) => {
+        const nick =
+          [...(players?.r1 || []), ...(players?.r2 || []), ...cwPlayerList(players)].find(
+            (p) => p && resolveNickKey(p.nick) === key
+          )?.nick || key;
+        const t = tierOf(nick) || 4;
+        tierCounts[t] = (tierCounts[t] || 0) + 1;
+        touchPlayer(nick);
+      });
+      if (nicks.length) {
+        rosterSizes.push(nicks.length);
+        tierSeatMatches += 1;
+        [1, 2, 3, 4].forEach((t) => {
+          tierSeatSum[t] += tierCounts[t] || 0;
+        });
+      }
+
+      const totals = cwPlayerList(players);
+      const seenGame = new Set();
+      totals.forEach((p) => {
+        if (!p || !p.nick) return;
+        const row = touchPlayer(p.nick);
+        if (!row) return;
+        row.res += Number(p.res) || 0;
+        row.nok += Number(p.nok) || 0;
+        row.kills += Number(p.kills) || 0;
+        row.deaths += Number(p.deaths) || 0;
+        row.dmg += Number(p.dmg) || 0;
+        totalRes += Number(p.res) || 0;
+        totalNok += Number(p.nok) || 0;
+        totalKills += Number(p.kills) || 0;
+        totalDeaths += Number(p.deaths) || 0;
+        totalDmg += Number(p.dmg) || 0;
+      });
+      nicks.forEach((key) => {
+        const row = playerMap.get(key);
+        if (row && !seenGame.has(key)) {
+          row.games += 1;
+          seenGame.add(key);
+        }
+      });
+
+      const mvp = players?.mvp || {};
+      ["r1", "r2"].forEach((rk) => {
+        const block = mvp[rk] || {};
+        (block.medic || []).forEach((n) => {
+          const row = touchPlayer(n);
+          if (row) row.mvpMedic += 1;
+        });
+        (block.killer || []).forEach((n) => {
+          const row = touchPlayer(n);
+          if (row) row.mvpKiller += 1;
+        });
+        (block.damage || []).forEach((n) => {
+          const row = touchPlayer(n);
+          if (row) row.mvpDamage += 1;
+        });
+        (block.antiDeath || []).forEach((n) => {
+          const row = touchPlayer(n);
+          if (row) row.antiDeath += 1;
+        });
+      });
+
+      const factions = [d1?.us, d2?.us].filter(Boolean).join(" / ") || "—";
+      const durLabel =
+        len1 != null || len2 != null
+          ? [len1, len2]
+              .filter((x) => x != null)
+              .map(formatDurationSec)
+              .join(" + ")
+          : "—";
+
+      matchRows.push({
+        m,
+        nicks: nicks.length,
+        tierCounts,
+        t1pct: nicks.length
+          ? Math.round((1000 * (tierCounts[1] || 0)) / nicks.length) / 10
+          : null,
+        r1: m.r1 || players?.summary?.r1Tickets || "—",
+        r2: m.r2 || players?.summary?.r2Tickets || "—",
+        durLabel,
+        factions,
+      });
+    });
+
+    const scope = document.getElementById("cw-an-scope")?.value || "all";
+    const stackFilter = document.getElementById("cw-an-stack")?.value || "all";
+    const scopeRu =
+      scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+    const stackRu =
+      stackFilter === "all" ? "все составы" : stackFilter;
+    note.textContent = `Период: ${scopeRu} · ${stackRu}. Встреч: ${n} (${wins}W-${draws}D-${losses}L). Игроков: ${uniqueNicks.size}.`;
+
+    const avgRoster = rosterSizes.length
+      ? Math.round(rosterSizes.reduce((a, b) => a + b, 0) / rosterSizes.length)
+      : null;
+    const avgDur = durations.length
+      ? durations.reduce((a, b) => a + b, 0) / durations.length
+      : null;
+    const avgMargin = ticketMargins.length
+      ? Math.round(
+          ticketMargins.reduce((a, b) => a + b, 0) / ticketMargins.length
+        )
+      : null;
+
+    kpis.innerHTML = [
+      ["Встреч", String(n)],
+      ["Победы", `${wins} (${winrate}%)`],
+      ["Ничьи", String(draws)],
+      ["Поражения", String(losses)],
+      ["Игроков", String(uniqueNicks.size)],
+      ["Ср. явка", avgRoster != null ? String(avgRoster) : "—"],
+      ["Ср. раунд", avgDur != null ? formatDurationSec(avgDur) : "—"],
+      ["Ср. Δ тикетов", avgMargin != null ? String(avgMargin) : "—"],
+    ]
+      .map(
+        ([k, v]) =>
+          `<div class="stat"><span class="k">${escapeHtml(k)}</span><span class="v">${escapeHtml(v)}</span></div>`
+      )
+      .join("");
+
+    const stackRows = [...stackStat.values()]
+      .map((s) => ({
+        ...s,
+        pct: s.games ? Math.round((1000 * s.wins) / s.games) / 10 : 0,
+      }))
+      .sort((a, b) => b.games - a.games);
+    document.getElementById("cw-an-results").innerHTML = `
+      <ul class="ta-facts">
+        <li><span>Общий winrate</span><strong>${winrate}%</strong></li>
+        <li><span>Счёт встреч</span><strong>${wins}–${draws}–${losses}</strong></li>
+      </ul>
+      <h3 class="ta-subh">По составу</h3>
+      ${taBars(
+        stackRows.map((s) => ({
+          label: s.name,
+          count: s.games,
+          share: Math.round((1000 * s.games) / n) / 10,
+          extra: `${s.wins}W/${s.draws}D/${s.losses}L · ${s.pct}%`,
+        }))
+      )}
+    `;
+
+    const toRanked = (mapObj) =>
+      [...mapObj.entries()]
+        .map(([label, count]) => ({
+          label,
+          count,
+          share: Math.round((1000 * count) / n) / 10,
+          extra:
+            familyWins.has(label) && count
+              ? `W ${Math.round((1000 * (familyWins.get(label) || 0)) / count) / 10}%`
+              : "",
+        }))
+        .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label, "ru"));
+
+    document.getElementById("cw-an-maps").innerHTML = `
+      <h3 class="ta-subh">Семейства</h3>
+      ${taBars(toRanked(familyCount))}
+      <h3 class="ta-subh">Точные слои</h3>
+      ${taBars(
+        [...mapCount.entries()]
+          .map(([label, count]) => ({
+            label,
+            count,
+            share: Math.round((1000 * count) / n) / 10,
+          }))
+          .sort((a, b) => b.count - a.count)
+      )}
+    `;
+
+    document.getElementById("cw-an-opps").innerHTML = [...oppStat.values()]
+      .map((o) => ({
+        ...o,
+        pct: o.games ? Math.round((1000 * o.wins) / o.games) / 10 : 0,
+      }))
+      .sort((a, b) => b.games - a.games || b.pct - a.pct)
+      .map(
+        (o) => `<tr>
+        <td><strong>${escapeHtml(o.name)}</strong></td>
+        <td class="ctr">${o.games}</td>
+        <td class="ctr">${o.wins}</td>
+        <td class="ctr">${o.draws}</td>
+        <td class="ctr">${o.losses}</td>
+        <td class="ctr">${o.pct}%</td>
+        <td>${escapeHtml([...o.stacks].join(", "))}</td>
+      </tr>`
+      )
+      .join("");
+
+    document.getElementById("cw-an-formats").innerHTML = `
+      <h3 class="ta-subh">Формат</h3>
+      ${taBars(
+        [...sizeCount.entries()]
+          .map(([label, count]) => ({
+            label,
+            count,
+            share: Math.round((1000 * count) / n) / 10,
+          }))
+          .sort((a, b) => b.count - a.count)
+      )}
+      <h3 class="ta-subh">Серверы</h3>
+      ${taBars(
+        [...serverCount.entries()]
+          .map(([label, count]) => ({
+            label,
+            count,
+            share: Math.round((1000 * count) / n) / 10,
+          }))
+          .sort((a, b) => b.count - a.count)
+      )}
+    `;
+
+    const blowouts = ticketMargins.filter((d) => d >= 100).length;
+    const closeR = ticketMargins.filter((d) => Math.abs(d) <= 20).length;
+    document.getElementById("cw-an-pace").innerHTML = `
+      <ul class="ta-facts">
+        <li><span>Средняя длительность раунда</span><strong>${avgDur != null ? formatDurationSec(avgDur) : "—"}</strong></li>
+        <li><span>Раундов с тикетами</span><strong>${ticketMargins.length}</strong></li>
+        <li><span>Средняя Δ (наши − их)</span><strong>${avgMargin != null ? avgMargin : "—"}</strong></li>
+        <li><span>Разгромы (Δ≥100)</span><strong>${blowouts}</strong></li>
+        <li><span>Близкие раунды (|Δ|≤20)</span><strong>${closeR}</strong></li>
+        <li><span>Пехота ∑ |наши| / |их|</span><strong>${detailsN ? `${infUs} / ${infThem}` : "—"}</strong></li>
+        <li><span>Техника ∑ |наши| / |их|</span><strong>${detailsN ? `${vehUs} / ${vehThem}` : "—"}</strong></li>
+        <li><span>Килы / смерти / KD</span><strong>${totalKills} / ${totalDeaths} / ${
+          totalDeaths === 0
+            ? totalKills
+            : Math.round((100 * totalKills) / totalDeaths) / 100
+        }</strong></li>
+      </ul>
+    `;
+
+    const uniqueTier = new Map();
+    playerMap.forEach((p) => {
+      const t = p.tier || 4;
+      uniqueTier.set(t, (uniqueTier.get(t) || 0) + 1);
+    });
+    const avgTierMix = [1, 2, 3, 4].map((t) => ({
+      label: `${tierLabel(t)} · ср. на катку`,
+      count:
+        tierSeatMatches > 0
+          ? Math.round((10 * tierSeatSum[t]) / tierSeatMatches) / 10
+          : 0,
+      share:
+        tierSeatMatches > 0 && rosterSizes.length
+          ? Math.round(
+              (1000 * (tierSeatSum[t] / tierSeatMatches)) /
+                (rosterSizes.reduce((a, b) => a + b, 0) / rosterSizes.length)
+            ) / 10
+          : 0,
+    }));
+    document.getElementById("cw-an-tiers").innerHTML = `
+      <h3 class="ta-subh">Уникальные игроки периода</h3>
+      ${taBars(
+        [1, 2, 3, 4].map((t) => ({
+          label: tierLabel(t),
+          count: uniqueTier.get(t) || 0,
+          share: uniqueNicks.size
+            ? Math.round((1000 * (uniqueTier.get(t) || 0)) / uniqueNicks.size) / 10
+            : 0,
+        }))
+      )}
+      <h3 class="ta-subh">Средний микс на одну катку</h3>
+      ${taBars(avgTierMix)}
+    `;
+
+    document.getElementById("cw-an-rosters").innerHTML = matchRows
+      .slice()
+      .sort((a, b) => {
+        const ak = `${a.m._year}-${a.m._month}-${a.m.day}-${a.m.opp}`;
+        const bk = `${b.m._year}-${b.m._month}-${b.m.day}-${b.m.opp}`;
+        return ak.localeCompare(bk);
+      })
+      .map(({ m, nicks: nn, tierCounts, t1pct }) => {
+        const st = m.status || "";
+        return `<tr class="${st}">
+          <td>${pad(m.day)}.${pad(m._month)}.${m._year}</td>
+          <td><strong>${escapeHtml(m.opp || "—")}</strong></td>
+          <td>${escapeHtml(mapFamilyName(m.map))}</td>
+          <td class="ctr">${escapeHtml(m.stack || "—")}</td>
+          <td class="ctr">${escapeHtml(m.meeting || "—")}</td>
+          <td class="ctr">${nn || "—"}</td>
+          <td class="ctr tier tier-1">${tierCounts[1] || 0}</td>
+          <td class="ctr tier tier-2">${tierCounts[2] || 0}</td>
+          <td class="ctr tier tier-3">${tierCounts[3] || 0}</td>
+          <td class="ctr tier tier-4">${tierCounts[4] || 0}</td>
+          <td class="ctr">${t1pct != null ? t1pct + "%" : "—"}</td>
+        </tr>`;
+      })
+      .join("");
+
+    const players = [...playerMap.values()].map((p) => ({
+      ...p,
+      kd: p.deaths === 0 ? p.kills : Math.round((100 * p.kills) / p.deaths) / 100,
+    }));
+    const nickCol = { label: "Ник", value: (r) => nickLinkHtml(r.nick) };
+    document.getElementById("cw-an-tops").innerHTML = [
+      taTopTable(
+        "Больше КВ",
+        players.slice().sort((a, b) => b.games - a.games || b.kills - a.kills).slice(0, 12),
+        [
+          nickCol,
+          { label: "КВ", cls: "ctr", key: "games" },
+          {
+            label: "Ранг",
+            cls: "ctr",
+            value: (r) =>
+              `<span class="tier tier-${r.tier || 4}">${escapeHtml(tierLabel(r.tier || 4))}</span>`,
+          },
+        ]
+      ),
+      taTopTable(
+        "Килы",
+        players.slice().sort((a, b) => b.kills - a.kills || b.kd - a.kd).slice(0, 12),
+        [
+          nickCol,
+          { label: "Килы", cls: "ctr", key: "kills" },
+          { label: "KD", cls: "ctr", key: "kd" },
+        ]
+      ),
+      taTopTable(
+        "KD (мин. 2 КВ)",
+        players
+          .filter((p) => p.games >= 2 && p.kills + p.deaths > 0)
+          .slice()
+          .sort((a, b) => b.kd - a.kd || b.kills - a.kills)
+          .slice(0, 12),
+        [
+          nickCol,
+          { label: "KD", cls: "ctr", key: "kd" },
+          { label: "K/D", cls: "ctr", value: (r) => `${r.kills}/${r.deaths}` },
+        ]
+      ),
+      taTopTable(
+        "Боевой счёт",
+        players.slice().sort((a, b) => b.dmg - a.dmg || b.kills - a.kills).slice(0, 12),
+        [
+          nickCol,
+          { label: "Счёт", cls: "ctr", key: "dmg" },
+          { label: "Килы", cls: "ctr", key: "kills" },
+        ]
+      ),
+      taTopTable(
+        "Ресы",
+        players.slice().sort((a, b) => b.res - a.res || b.games - a.games).slice(0, 12),
+        [
+          nickCol,
+          { label: "Ресы", cls: "ctr", key: "res" },
+          { label: "КВ", cls: "ctr", key: "games" },
+        ]
+      ),
+    ].join("");
+
+    document.getElementById("cw-an-mvp").innerHTML = [
+      taTopTable(
+        "MVP Medic",
+        players
+          .filter((p) => p.mvpMedic > 0)
+          .sort((a, b) => b.mvpMedic - a.mvpMedic || b.res - a.res)
+          .slice(0, 10),
+        [
+          nickCol,
+          { label: "MVP", cls: "ctr col-mvp-medic", key: "mvpMedic" },
+          { label: "Ресы", cls: "ctr", key: "res" },
+        ]
+      ),
+      taTopTable(
+        "MVP Killer",
+        players
+          .filter((p) => p.mvpKiller > 0)
+          .sort((a, b) => b.mvpKiller - a.mvpKiller || b.kills - a.kills)
+          .slice(0, 10),
+        [
+          nickCol,
+          { label: "MVP", cls: "ctr col-mvp-killer", key: "mvpKiller" },
+          { label: "Килы", cls: "ctr", key: "kills" },
+        ]
+      ),
+      taTopTable(
+        "MVP War-Score",
+        players
+          .filter((p) => p.mvpDamage > 0)
+          .sort((a, b) => b.mvpDamage - a.mvpDamage || b.dmg - a.dmg)
+          .slice(0, 10),
+        [
+          nickCol,
+          { label: "MVP", cls: "ctr col-mvp-war", key: "mvpDamage" },
+          { label: "Счёт", cls: "ctr", key: "dmg" },
+        ]
+      ),
+      taTopTable(
+        "Anti-MVP",
+        players
+          .filter((p) => p.antiDeath > 0)
+          .sort((a, b) => b.antiDeath - a.antiDeath || b.deaths - a.deaths)
+          .slice(0, 10),
+        [
+          nickCol,
+          { label: "Anti", cls: "ctr col-mvp-anti", key: "antiDeath" },
+          { label: "Смерти", cls: "ctr", key: "deaths" },
+        ]
+      ),
+    ].join("");
+
+    document.getElementById("cw-an-matches").innerHTML = matchRows
+      .slice()
+      .sort((a, b) => {
+        const ak = `${a.m._year}-${a.m._month}-${a.m.day}-${a.m.opp}`;
+        const bk = `${b.m._year}-${b.m._month}-${b.m.day}-${b.m.opp}`;
+        return ak.localeCompare(bk);
+      })
+      .map(({ m, nicks: nn, r1, r2, durLabel, factions }) => {
+        const st = m.status || "";
+        return `<tr class="${st}">
+          <td>${pad(m.day)}.${pad(m._month)}.${m._year}</td>
+          <td><strong>${escapeHtml(m.opp || "—")}</strong></td>
+          <td>${escapeHtml(m.map || "—")}</td>
+          <td class="ctr">${escapeHtml(m.stack || "—")}</td>
+          <td class="ctr">${escapeHtml(m.meeting || "—")}</td>
+          <td class="ctr">${escapeHtml(r1)}</td>
+          <td class="ctr">${escapeHtml(r2)}</td>
+          <td class="ctr">${escapeHtml(durLabel)}</td>
+          <td class="ctr">${nn || "—"}</td>
+          <td>${escapeHtml(factions)}</td>
+        </tr>`;
+      })
+      .join("");
+
+    body.hidden = false;
+  }
 
   function parseDurationSec(s) {
     if (!s || typeof s !== "string" || !s.includes(":")) return null;
