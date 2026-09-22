@@ -189,9 +189,10 @@
       "rules": "SEC",
       "stack": "Main",
       "status": "win",
-      "meeting": "1–0",
+      "meeting": "2–0",
       "r1": "158:0",
-      "note": "R1 158:0 · ждём R2",
+      "r2": "132:0",
+      "note": "Main · GM Arena · 158:0 · 132:0",
       "playersUrl": "data/players/22-gm.json"
     },
     {
