@@ -234,6 +234,19 @@
       "note": "NO SCOUT · Junior"
     },
     {
+      "day": 26,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "20Royals",
+      "map": "SEC 26 GooseBay AAS v1",
+      "size": "26v26",
+      "server": "20R",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "NO SCOUT · 1st Main vs 20R"
+    },
+    {
       "day": 27,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
