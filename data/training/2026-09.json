@@ -223,6 +223,23 @@
       "winner": "USA",
       "status": "done",
       "playersUrl": "data/training/players/22-narva-2.json"
+    },
+    {
+      "id": "22-fallujah",
+      "day": 22,
+      "timeMsk": "—",
+      "map": "SEC 26 Fallujah AAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "29:48",
+      "factionA": "IMF",
+      "ticketsA": 105,
+      "factionB": "CAF",
+      "ticketsB": 0,
+      "winner": "IMF",
+      "status": "done",
+      "playersUrl": "data/training/players/22-fallujah.json"
     }
   ]
 }

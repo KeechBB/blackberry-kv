@@ -1,0 +1,614 @@
+{
+  "matchId": "22-fallujah",
+  "map": "SEC 26 Fallujah AAS v1",
+  "mode": "OSI",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "29:48",
+  "winner": "IMF",
+  "sideA": {
+    "name": "IMF",
+    "tickets": 105
+  },
+  "sideB": {
+    "name": "CAF",
+    "tickets": 0
+  },
+  "note": "3-я катка 22.09. Обе стороны BB. OCR scoreboard; dmg=боевой счёт (col9), nok=col3, kills=col4. PARTIAL: Squad4 IMF в шапке 9/103/45/36/19 при 3 видимых (m3rz0st/Jopllik/r4mp) — ~3 игрока не попали в кадр/OCR; CAF ~2 игрока недобор до team row. Summary: top squad УРРРРРРААААААА, supply Forks, medic firs.",
+  "awards": {
+    "topSquad": "Squad 4 УРРРРРРААААААА (IMF)",
+    "topMedic": "firs",
+    "topSupply": "Forks"
+  },
+  "details": {
+    "caf": {
+      "start": 200,
+      "remain": 0,
+      "gained": 20,
+      "lost": 186,
+      "ticketBleed": 4,
+      "infantryDeaths": 177,
+      "fobRadios": 0,
+      "vehicleTickets": 5,
+      "fobsCreated": 3,
+      "ammo": 4300,
+      "construction": 4800
+    },
+    "imf": {
+      "start": 200,
+      "remain": 105,
+      "gained": 70,
+      "lost": 165,
+      "ticketBleed": 0,
+      "infantryDeaths": 165,
+      "fobRadios": 0,
+      "vehicleTickets": 0,
+      "fobsCreated": 2,
+      "ammo": 8900,
+      "construction": 2200
+    }
+  },
+  "teamA": [
+    {
+      "nick": "m3rz0st",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 185,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Jopllik",
+      "res": 2,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 191,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 16,
+      "kills": 14,
+      "deaths": 3,
+      "dmg": 349,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 153,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 162,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Shrein",
+      "res": 11,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 82,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Chappi",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 123,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 182,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 336,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 22,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 449,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "firs",
+      "res": 15,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 41,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 136,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Moonky123",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 95,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Koperor",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 166,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 135,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 3,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 240,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 10,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 91,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Skromnyi",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 112,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 259,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 302,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "KillReal",
+      "res": 8,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 152,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 297,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Buti",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 120,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Pugovka",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 242,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 229,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "NECO",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 179,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "FLEX",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 80,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "Solitario",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 11,
+      "dmg": 240,
+      "team": "IMF",
+      "won": true
+    },
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 151,
+      "team": "IMF",
+      "won": true
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 269,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 132,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 7,
+      "dmg": 228,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 249,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 195,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 6,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 151,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 180,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Animo",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 169,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 210,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 120,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Wi-Fi",
+      "res": 1,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 179,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 14,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 256,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "k1t",
+      "res": 4,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 62,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 62,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 261,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 13,
+      "kills": 12,
+      "deaths": 8,
+      "dmg": 333,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 210,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 228,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Prolik",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 39,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 18,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 394,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 319,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 123,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Rindaye",
+      "res": 4,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 106,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 153,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Luumbar",
+      "res": 12,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 29,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 295,
+      "team": "CAF",
+      "won": false
+    },
+    {
+      "nick": "Lina Suetolog",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 29,
+      "team": "CAF",
+      "won": false
+    }
+  ]
+}
