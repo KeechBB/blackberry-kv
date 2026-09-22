@@ -355,6 +355,32 @@
           "angel"
         ]
       }
+    },
+    {
+      "id": "22-gm",
+      "day": 22,
+      "opp": "GM",
+      "meeting": "1–0",
+      "r1": {
+        "medic": [
+          "lepurple"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Gadler"
+        ],
+        "antiDeath": [
+          "Durik"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
     }
   ],
   "players": {
@@ -586,7 +612,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "11-dcai",
@@ -608,6 +634,14 @@
           "matchId": "15-dcai",
           "day": 15,
           "opp": "DCAI",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -633,7 +667,7 @@
     "Gadler": {
       "mvpMedic": 1,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
         {
@@ -649,6 +683,14 @@
           "day": 18,
           "opp": "IH",
           "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -1200,7 +1242,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
+      "mvpKiller": 3,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
@@ -1219,11 +1261,19 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
     "lepurple": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -1233,6 +1283,14 @@
           "day": 13,
           "opp": "TWO",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }

@@ -178,6 +178,7 @@
       "playersUrl": "data/players/18-ih.json"
     },
     {
+      "id": "22-gm",
       "day": 22,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
@@ -187,7 +188,11 @@
       "server": "GM",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming"
+      "status": "win",
+      "meeting": "1–0",
+      "r1": "158:0",
+      "note": "R1 158:0 · ждём R2",
+      "playersUrl": "data/players/22-gm.json"
     },
     {
       "day": 24,
