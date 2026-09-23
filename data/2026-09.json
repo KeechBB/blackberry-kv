@@ -286,6 +286,20 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · vs clan 1–1 (17.09 Main)"
+    },
+    {
+      "id": "30-dcai",
+      "day": 30,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "DCAI",
+      "map": "SEC 26 Mutaha AAS v1",
+      "size": "26v26",
+      "server": "Dcai",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "3rd vs DCAI · not 15.09 PAAS"
     }
   ]
 }
