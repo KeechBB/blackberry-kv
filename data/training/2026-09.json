@@ -240,6 +240,23 @@
       "winner": "IMF",
       "status": "done",
       "playersUrl": "data/training/players/22-fallujah.json"
+    },
+    {
+      "id": "23-mutaha",
+      "day": 23,
+      "timeMsk": "—",
+      "map": "Mutaha AAS v2",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "46:10",
+      "factionA": "AFU",
+      "ticketsA": 0,
+      "factionB": "RGF",
+      "ticketsB": 109,
+      "winner": "RGF",
+      "status": "done",
+      "playersUrl": "data/training/players/23-mutaha.json"
     }
   ]
 }

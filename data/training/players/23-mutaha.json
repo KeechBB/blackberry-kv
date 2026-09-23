@@ -1,0 +1,716 @@
+{
+  "matchId": "23-mutaha",
+  "map": "Mutaha AAS v2",
+  "mode": "AAS",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "46:10",
+  "winner": "RGF",
+  "sideA": {
+    "name": "AFU",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "RGF",
+    "tickets": 109
+  },
+  "note": "1-я катка тренировочного дня 23.09. Обе стороны BB. Mutaha AAS v2. OCR scoreboard; dmg=боевой счёт (col9), nok=col3, kills=col4. PARTIAL: AFU TEX OTTO после Otto (~2 res / 0 nok / 0 kills / 5 deaths / ~22 dmg) не в кадре; RGF Отряд 4 после Gadler (armor, ~34 nok / 23 kills / dmg ~1509) не в кадре. Summary: top squad Отряд 5, medic Kroasawn, supply Trigger.",
+  "awards": {
+    "topSquad": "Отряд 5 (RGF)",
+    "topMedic": "Kroasawn",
+    "topSupply": "Trigger"
+  },
+  "details": {
+    "afu": {
+      "start": 250,
+      "remain": 0,
+      "gained": 40,
+      "lost": 290,
+      "ticketBleed": 0,
+      "infantryDeaths": 204,
+      "fobRadios": 0,
+      "vehicleTickets": 86,
+      "fobsCreated": 0,
+      "ammo": null,
+      "construction": null
+    },
+    "rgf": {
+      "start": 250,
+      "remain": 109,
+      "gained": 60,
+      "lost": 201,
+      "ticketBleed": 0,
+      "infantryDeaths": 168,
+      "fobRadios": 0,
+      "vehicleTickets": 33,
+      "fobsCreated": 1,
+      "ammo": 14916,
+      "construction": 6864
+    }
+  },
+  "teamA": [
+    {
+      "nick": "Runetik",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 152,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Pugovka",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 186,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 86,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 76,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 6,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 44,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 84,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Azure",
+      "res": 8,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 187,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 146,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "MadMax",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 116,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Oguzok",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 146,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "default",
+      "res": 3,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 299,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Mr.Assist",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 11,
+      "dmg": 100,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 10,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 85,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "RIMURU",
+      "res": 2,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 378,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 163,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Radislave",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 124,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Mighty",
+      "res": 12,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 111,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "qop",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 913,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Zik",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 68,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 823,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "firs",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 73,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 46,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Antoher152",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 167,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Trigger",
+      "res": 4,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 59,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 18,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 551,
+      "role": "CMD",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 25,
+      "kills": 12,
+      "deaths": 9,
+      "dmg": 495,
+      "role": "FTL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 6,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 314,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 19,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 377,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 11,
+      "dmg": 288,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "vomit",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 55,
+      "role": "FTL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "freak",
+      "res": 2,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 10,
+      "dmg": 720,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 10,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 207,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 692,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "lorgon",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 110,
+      "role": "SL",
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 7,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Bugor",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 126,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 86,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "section",
+      "res": 0,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 235,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 213,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Jim_Washington",
+      "res": 3,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 109,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Bahus",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 111,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 160,
+      "role": "SL",
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Senti",
+      "res": 2,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 298,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Rindaye",
+      "res": 11,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 106,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 12,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 214,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Mahorka",
+      "res": 1,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 96,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 2,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 79,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Jopllik",
+      "res": 8,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 74,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Bks",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 266,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 700,
+      "role": "CMD",
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 14,
+      "kills": 13,
+      "deaths": 9,
+      "dmg": 477,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 397,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "ADUN",
+      "res": 11,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 121,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Freez",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 206,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1001,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "CORWAX",
+      "res": 7,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 128,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Barsik",
+      "res": 2,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 126,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 88,
+      "role": "SL",
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 395,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 386,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Jumbo",
+      "res": 15,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 112,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Nickname",
+      "res": 2,
+      "nok": 18,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 439,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "JESTER",
+      "res": 2,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 394,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 23,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 186,
+      "team": "RGF",
+      "won": true
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 15,
+      "role": "SL",
+      "team": "RGF",
+      "won": true
+    }
+  ]
+}

@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260922-fallujah-m3";
+    new URLSearchParams(location.search).get("v") || "20260923-mutaha-m1";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -44,6 +44,7 @@
     IMF: "Сербы",
     ADF: "Австралия",
     PLA: "Китай",
+    AFU: "ВСУ",
   };
   const isEmbed =
     new URLSearchParams(location.search).has("embed") || window.self !== window.top;
