@@ -257,6 +257,23 @@
       "winner": "RGF",
       "status": "done",
       "playersUrl": "data/training/players/23-mutaha.json"
+    },
+    {
+      "id": "23-fallujah",
+      "day": 23,
+      "timeMsk": "—",
+      "map": "Fallujah RAAS v2",
+      "mode": "RAAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "01:00:41",
+      "factionA": "RGF",
+      "ticketsA": 98,
+      "factionB": "USA",
+      "ticketsB": 0,
+      "winner": "RGF",
+      "status": "done",
+      "playersUrl": "data/training/players/23-fallujah.json"
     }
   ]
 }
