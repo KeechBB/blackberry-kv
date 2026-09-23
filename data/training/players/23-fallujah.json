@@ -13,7 +13,7 @@
     "name": "USA",
     "tickets": 0
   },
-  "note": "2-я катка тренировочного дня 23.09. Обе стороны BB. Fallujah RAAS v2. OCR scoreboard; dmg=боевой счёт (col9), nok=col3, kills=col4. PARTIAL: USA ~4 игрока не в кадре (Squad 2 / LORGON / Squad 1). Summary: top squad Отряд 2 (RGF), medic Kroasawn, supply firs.",
+  "note": "2-я катка тренировочного дня 23.09. Обе стороны BB. Fallujah RAAS v2. OCR scoreboard; dmg=боевой счёт (col9), nok=col3, kills=col4. PARTIAL: USA ~3 игрока ещё не в кадре (Squad 2 / LORGON / Squad 1); vomit добавлен вручную. Summary: top squad Отряд 2 (RGF), medic Kroasawn, supply firs.",
   "awards": {
     "topSquad": "Отряд 2 (RGF)",
     "topMedic": "Kroasawn",
@@ -689,6 +689,16 @@
       "kills": 18,
       "deaths": 4,
       "dmg": 1080,
+      "team": "USA",
+      "won": false
+    },
+    {
+      "nick": "vomit",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 158,
       "team": "USA",
       "won": false
     }
