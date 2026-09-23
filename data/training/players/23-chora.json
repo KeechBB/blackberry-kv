@@ -1,0 +1,462 @@
+{
+  "matchId": "23-chora",
+  "map": "SEC 26 Chora AAS v1",
+  "mode": "OSI",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "42:37",
+  "winner": "HOAK",
+  "sideA": {
+    "name": "AFU",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "HOAK",
+    "tickets": 94
+  },
+  "note": "3-я катка тренировочного дня 23.09. Обе стороны BB. SEC 26 Chora AAS v1 OSI. OCR scoreboard; dmg=боевой счёт (col9), nok=col3, kills=col4. Summary: top squad «ой блять я вас всех так лублу» (AFU), medic VET, supply CORWAX.",
+  "awards": {
+    "topSquad": "ой блять я вас всех так лублу (AFU)",
+    "topMedic": "VET",
+    "topSupply": "CORWAX"
+  },
+  "details": {
+    "afu": {
+      "start": 200,
+      "remain": 0,
+      "gained": 10,
+      "lost": 210,
+      "ticketBleed": 33,
+      "infantryDeaths": 141,
+      "fobRadios": 1,
+      "vehicleTickets": 16,
+      "fobsCreated": 1,
+      "ammo": 13100,
+      "construction": 1900
+    },
+    "hoak": {
+      "start": 200,
+      "remain": 94,
+      "gained": 20,
+      "lost": 126,
+      "ticketBleed": 0,
+      "infantryDeaths": 121,
+      "fobRadios": 0,
+      "vehicleTickets": 5,
+      "fobsCreated": 1,
+      "ammo": 10200,
+      "construction": 1800
+    }
+  },
+  "teamA": [
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 222,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 160,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "firs",
+      "res": 9,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 53,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 72,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 8,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 58,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 195,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "RIMURU",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 7,
+      "dmg": 283,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Radislave",
+      "res": 9,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 46,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 227,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 46,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Runetik",
+      "res": 0,
+      "nok": 25,
+      "kills": 18,
+      "deaths": 13,
+      "dmg": 523,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 410,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 12,
+      "dmg": 278,
+      "role": "SL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 23,
+      "kills": 15,
+      "deaths": 11,
+      "dmg": 507,
+      "role": "FTL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 10,
+      "dmg": 261,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 304,
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 10,
+      "dmg": 366,
+      "role": "FTL",
+      "team": "AFU",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 13,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 182,
+      "team": "AFU",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 23,
+      "kills": 14,
+      "deaths": 8,
+      "dmg": 462,
+      "role": "SL",
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Nickname",
+      "res": 3,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 273,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 19,
+      "kills": 14,
+      "deaths": 4,
+      "dmg": 466,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 11,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 66,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 266,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Jumbo",
+      "res": 12,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 74,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 95,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 15,
+      "kills": 12,
+      "deaths": 8,
+      "dmg": 388,
+      "role": "SL",
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Freez",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 222,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 607,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "CORWAX",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 10,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "akin0v",
+      "res": 2,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 233,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Jopllik",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 161,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 232,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "lorgon",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 111,
+      "role": "SL",
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Koperor",
+      "res": 2,
+      "nok": 16,
+      "kills": 10,
+      "deaths": 2,
+      "dmg": 317,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "3A BAPKA",
+      "res": 2,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 183,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 17,
+      "kills": 12,
+      "deaths": 1,
+      "dmg": 386,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Rindaye",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 116,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Bahus",
+      "res": 8,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 30,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Tankist",
+      "res": 11,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 127,
+      "team": "HOAK",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 165,
+      "team": "HOAK",
+      "won": true
+    }
+  ]
+}

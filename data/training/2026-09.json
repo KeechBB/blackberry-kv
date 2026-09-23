@@ -274,6 +274,23 @@
       "winner": "RGF",
       "status": "done",
       "playersUrl": "data/training/players/23-fallujah.json"
+    },
+    {
+      "id": "23-chora",
+      "day": 23,
+      "timeMsk": "—",
+      "map": "SEC 26 Chora AAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "42:37",
+      "factionA": "AFU",
+      "ticketsA": 0,
+      "factionB": "HOAK",
+      "ticketsB": 94,
+      "winner": "HOAK",
+      "status": "done",
+      "playersUrl": "data/training/players/23-chora.json"
     }
   ]
 }
