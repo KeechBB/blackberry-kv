@@ -291,6 +291,23 @@
       "winner": "HOAK",
       "status": "done",
       "playersUrl": "data/training/players/23-chora.json"
+    },
+    {
+      "id": "24-yehorivka",
+      "day": 24,
+      "timeMsk": "—",
+      "map": "Yehorivka AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "53:54",
+      "factionA": "USA",
+      "ticketsA": 0,
+      "factionB": "RGF",
+      "ticketsB": 79,
+      "winner": "RGF",
+      "status": "done",
+      "playersUrl": "data/training/players/24-yehorivka.json"
     }
   ]
 }
