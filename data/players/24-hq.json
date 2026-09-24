@@ -1,7 +1,7 @@
 {
   "matchId": "24-hq",
   "opp": "HQ",
-  "note": "R1 only. Ресы/ноки/килы/смерти сошлись с итогами табло (95/213/152/193). R2 ещё не сыгран — FINAL нет.",
+  "note": "FINAL 0–2. R1 0:203 (USA), R2 0:207 (RGF). Ресы/ноки/килы/смерти сошлись с табло.",
   "r1": [
     {
       "nick": "Summer",
@@ -292,13 +292,302 @@
       "dmg": 83
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 177
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 232
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 167
+    },
+    {
+      "nick": "Radislave",
+      "res": 7,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 32
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 202
+    },
+    {
+      "nick": "KillReal",
+      "res": 10,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 95
+    },
+    {
+      "nick": "FLEX",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 102
+    },
+    {
+      "nick": "akin0v",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 158
+    },
+    {
+      "nick": "Azure",
+      "res": 8,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 206
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 469
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 10,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 103
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 125
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 97
+    },
+    {
+      "nick": "Runetik",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 55
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 141
+    },
+    {
+      "nick": "Morty",
+      "res": 10,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 84
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 127
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 100
+    },
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 268
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 173
+    },
+    {
+      "nick": "lepurple",
+      "res": 8,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 65
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 201
+    },
+    {
+      "nick": "VET",
+      "res": 6,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 102
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 63
+    },
+    {
+      "nick": "JESTER",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 64
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 159
+    },
+    {
+      "nick": "T-800",
+      "res": 5,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 60
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 5,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 40
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 140
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 42
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 639
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 430
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 181
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 66
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 382
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 99
+    }
+  ],
   "summary": {
-    "meeting": "R1 сыгран",
+    "meeting": "0–2",
     "r1Tickets": "0:203",
-    "r2Tickets": "",
+    "r2Tickets": "0:207",
     "r1Len": "37:55",
-    "r2Len": ""
+    "r2Len": "39:16"
   },
   "details": {
     "r1": {
@@ -307,8 +596,33 @@
       "tickets": "0:203",
       "len": "37:55"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "us": "RGF",
+      "them": "USA",
+      "tickets": "0:207",
+      "len": "39:16",
+      "start": 300,
+      "goals": "+60 / +90",
+      "infantry": "-232 / -123",
+      "fob": "-20 / 0",
+      "veh": "-66 / -49",
+      "bleed": "-12 / -11",
+      "ammo": "11444 / 17323",
+      "build": "7000 / 6000",
+      "fobsCreated": "3 / 3"
+    },
+    "total": {
+      "tickets": "0–2 (0:203 · 0:207)",
+      "len": "37:55 + 39:16",
+      "goals": "+60 / +90",
+      "infantry": "-232 / -123",
+      "fob": "-20 / 0",
+      "veh": "-66 / -49",
+      "bleed": "-12 / -11",
+      "ammo": "11444 / 17323",
+      "build": "7000 / 6000",
+      "fobsCreated": "3 / 3"
+    }
   },
   "mvp": {
     "r1": {
@@ -326,10 +640,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "_VaGNeR_"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "KillReal"
+      ]
     }
   }
 }

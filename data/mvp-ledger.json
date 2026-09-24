@@ -394,7 +394,7 @@
       "id": "24-hq",
       "day": 24,
       "opp": "HQ",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "Morty"
@@ -410,10 +410,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "_VaGNeR_"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "KillReal"
+        ]
       }
     }
   ],
@@ -790,7 +798,7 @@
       "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "15-dcai",
@@ -815,11 +823,19 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 3,
+      "mvpMedic": 4,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -847,13 +863,21 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
     "Kuchenchips": {
       "mvpMedic": 0,
       "mvpKiller": 2,
-      "mvpDamage": 3,
+      "mvpDamage": 4,
       "antiDeath": 0,
       "awards": [
         {
@@ -893,6 +917,14 @@
           "day": 24,
           "opp": "HQ",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -1247,6 +1279,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "_VaGNeR_": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },

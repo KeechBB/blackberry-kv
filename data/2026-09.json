@@ -206,9 +206,11 @@
       "server": "HQ",
       "rules": "SEC / OSI",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "lose",
+      "meeting": "0–2",
       "r1": "0:203",
-      "note": "R1 0:203 · R2 ожидает · NO SCOUT",
+      "r2": "0:207",
+      "note": "Main · 0:203 · 0:207",
       "playersUrl": "data/players/24-hq.json"
     },
     {
