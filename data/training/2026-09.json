@@ -308,6 +308,23 @@
       "winner": "RGF",
       "status": "done",
       "playersUrl": "data/training/players/24-yehorivka.json"
+    },
+    {
+      "id": "24-mutaha",
+      "day": 24,
+      "timeMsk": "—",
+      "map": "Mutaha AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "45:47",
+      "factionA": "GFI",
+      "ticketsA": 55,
+      "factionB": "PLA",
+      "ticketsB": 0,
+      "winner": "GFI",
+      "status": "done",
+      "playersUrl": "data/training/players/24-mutaha.json"
     }
   ]
 }
