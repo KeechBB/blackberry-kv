@@ -300,6 +300,20 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "3rd vs DCAI · not 15.09 PAAS"
+    },
+    {
+      "id": "30-ih",
+      "day": 30,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "IH",
+      "map": "Hotdrop Goose Bay",
+      "size": "20v20",
+      "server": "ANY",
+      "rules": "HOTDROP",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · HOTDROP · vs clan 2–0 (18.09 Main)"
     }
   ]
 }
