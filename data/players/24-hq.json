@@ -1,0 +1,335 @@
+{
+  "matchId": "24-hq",
+  "opp": "HQ",
+  "note": "R1 only. Ресы/ноки/килы/смерти сошлись с итогами табло (95/213/152/193). R2 ещё не сыгран — FINAL нет.",
+  "r1": [
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 139
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 306
+    },
+    {
+      "nick": "KillReal",
+      "res": 8,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 23
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 139
+    },
+    {
+      "nick": "Radislave",
+      "res": 7,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 85
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 14,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 235
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 46
+    },
+    {
+      "nick": "akin0v",
+      "res": 0,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 184
+    },
+    {
+      "nick": "Azure",
+      "res": 6,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 81
+    },
+    {
+      "nick": "CERBER",
+      "res": 1,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 64
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 11,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 74
+    },
+    {
+      "nick": "yanchik",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 128
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 217
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 18,
+      "kills": 15,
+      "deaths": 4,
+      "dmg": 391
+    },
+    {
+      "nick": "lepurple",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 40
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 233
+    },
+    {
+      "nick": "VET",
+      "res": 10,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 85
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 90
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 118
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 76
+    },
+    {
+      "nick": "T-800",
+      "res": 8,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 54
+    },
+    {
+      "nick": "JESTER",
+      "res": 2,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 88
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 60
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 111
+    },
+    {
+      "nick": "Runetik",
+      "res": 10,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 161
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 83
+    },
+    {
+      "nick": "Morty",
+      "res": 20,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 119
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 175
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 122
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 15,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 310
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 7,
+      "dmg": 439
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 209
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 156
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 107
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 10,
+      "dmg": 776
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 83
+    }
+  ],
+  "r2": [],
+  "summary": {
+    "meeting": "R1 сыгран",
+    "r1Tickets": "0:203",
+    "r2Tickets": "",
+    "r1Len": "37:55",
+    "r2Len": ""
+  },
+  "details": {
+    "r1": {
+      "us": "USA",
+      "them": "RGF",
+      "tickets": "0:203",
+      "len": "37:55"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "Gadler"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

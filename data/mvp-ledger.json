@@ -360,7 +360,7 @@
       "id": "22-gm",
       "day": 22,
       "opp": "GM",
-      "meeting": "1–0",
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "lepurple"
@@ -373,6 +373,40 @@
         ],
         "antiDeath": [
           "Durik"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "KillReal"
+        ],
+        "killer": [
+          "Gadler"
+        ],
+        "damage": [
+          "Gadler"
+        ],
+        "antiDeath": [
+          "Radislave"
+        ]
+      }
+    },
+    {
+      "id": "24-hq",
+      "day": 24,
+      "opp": "HQ",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "Gadler"
         ]
       },
       "r2": {
@@ -666,9 +700,9 @@
     },
     "Gadler": {
       "mvpMedic": 1,
-      "mvpKiller": 0,
-      "mvpDamage": 2,
-      "antiDeath": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 3,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "18-ih",
@@ -693,6 +727,30 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -729,7 +787,7 @@
       ]
     },
     "KillReal": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -746,6 +804,14 @@
           "matchId": "15-dcai",
           "day": 15,
           "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -787,7 +853,7 @@
     "Kuchenchips": {
       "mvpMedic": 0,
       "mvpKiller": 2,
-      "mvpDamage": 2,
+      "mvpDamage": 3,
       "antiDeath": 0,
       "awards": [
         {
@@ -818,6 +884,14 @@
           "matchId": "16-hell",
           "day": 16,
           "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
@@ -873,7 +947,7 @@
       ]
     },
     "Morty": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -883,6 +957,14 @@
           "day": 18,
           "opp": "IH",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -924,7 +1006,7 @@
       "mvpMedic": 4,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "04-20royals",
@@ -962,6 +1044,14 @@
           "matchId": "16-hell",
           "day": 16,
           "opp": "HELL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -1242,7 +1332,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 3,
+      "mvpKiller": 4,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
@@ -1266,6 +1356,14 @@
           "matchId": "22-gm",
           "day": 22,
           "opp": "GM",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"

@@ -983,7 +983,7 @@
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
-            if (m.status !== "upcoming" && m.playersUrl) matchList.push(m);
+            if (m.playersUrl) matchList.push(m);
           });
         });
         return Promise.all(
@@ -1273,7 +1273,7 @@
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
           (bundle.data.matches || []).forEach((m) => {
-            if (m.status !== "upcoming" && m.playersUrl) matchList.push(m);
+            if (m.playersUrl) matchList.push(m);
           });
         });
         return Promise.all(
@@ -2931,7 +2931,7 @@
     document.body.classList.add("modal-open");
     modalTabs.hidden = true;
 
-    if (m.status === "upcoming") {
+    if (m.status === "upcoming" && !m.playersUrl) {
       modalBody.innerHTML = `<p class="modal-empty">Катка ещё не сыграна — статистики нет.</p>`;
       return;
     }

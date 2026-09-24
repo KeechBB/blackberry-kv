@@ -196,6 +196,7 @@
       "playersUrl": "data/players/22-gm.json"
     },
     {
+      "id": "24-hq",
       "day": 24,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
@@ -203,9 +204,12 @@
       "map": "SEC 36 Narva AAS v4",
       "size": "36v36",
       "server": "HQ",
-      "rules": "SEC",
+      "rules": "SEC / OSI",
       "stack": "Main",
-      "status": "upcoming"
+      "status": "upcoming",
+      "r1": "0:203",
+      "note": "R1 0:203 · R2 ожидает · NO SCOUT",
+      "playersUrl": "data/players/24-hq.json"
     },
     {
       "day": 25,
