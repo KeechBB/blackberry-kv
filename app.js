@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260925-pwr-rank";
+    new URLSearchParams(location.search).get("v") || "20260925-sandro-pwr-col";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -1557,10 +1557,10 @@
         (p) => `<tr>
         <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
         <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
+        <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
-        <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
