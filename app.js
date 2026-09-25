@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260925-fixed-place";
+    new URLSearchParams(location.search).get("v") || "20260925-an-pwr";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -2893,11 +2893,48 @@
       })
       .join("");
 
-    const players = [...playerMap.values()].map((p) => ({
-      ...p,
-      kd: p.deaths === 0 ? p.kills : Math.round((100 * p.kills) / p.deaths) / 100,
-      winPct: p.games ? Math.round((1000 * p.wins) / p.games) / 10 : null,
-    }));
+    const players = [...playerMap.values()].map((p) => {
+      const winPct = p.games ? Math.round((1000 * p.wins) / p.games) / 10 : null;
+      const kd = p.deaths === 0 ? p.kills : Math.round((100 * p.kills) / p.deaths) / 100;
+      const base = { ...p, winPct, kd };
+      const { pwr, label, rankKey } = calcTrainPwr(base);
+      return { ...base, pwr, pwrLabel: label, rankKey };
+    });
+    players
+      .slice()
+      .sort(
+        (a, b) =>
+          (Number(b.pwr) || 0) - (Number(a.pwr) || 0) ||
+          b.games - a.games ||
+          String(a.nick).localeCompare(String(b.nick), "ru")
+      )
+      .forEach((p, i) => {
+        p.place = i + 1;
+      });
+
+    const avgPwr = players.length
+      ? Math.round(players.reduce((s, p) => s + (Number(p.pwr) || 0), 0) / players.length)
+      : null;
+    const topPwrVal = players.length
+      ? Math.max(...players.map((p) => Number(p.pwr) || 0))
+      : null;
+
+    kpis.innerHTML = [
+      ["Матчей", String(n)],
+      ["Дней", String(dayStat.size)],
+      ["Игроков", String(uniqueNicks.size)],
+      ["Ср. PWR", avgPwr != null ? String(avgPwr) : "—"],
+      ["Топ PWR", topPwrVal != null ? String(topPwrVal) : "—"],
+      ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
+      ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
+      ["Килы ∑", String(totalKills)],
+      ["Боевой ∑", String(totalDmg)],
+    ]
+      .map(
+        ([k, v]) =>
+          `<div class="stat"><span class="k">${escapeHtml(k)}</span><span class="v">${escapeHtml(v)}</span></div>`
+      )
+      .join("");
 
     const topGames = players.slice().sort((a, b) => b.games - a.games || b.kills - a.kills).slice(0, 12);
     const topKills = players.slice().sort((a, b) => b.kills - a.kills || b.kd - a.kd).slice(0, 12);
@@ -2912,12 +2949,27 @@
       .slice()
       .sort((a, b) => (b.winPct || 0) - (a.winPct || 0) || b.games - a.games)
       .slice(0, 12);
+    const topPwr = players
+      .slice()
+      .sort((a, b) => (b.pwr || 0) - (a.pwr || 0) || b.games - a.games)
+      .slice(0, 12);
 
     const nickCol = {
       label: "Ник",
       value: (r) => nickLinkHtml(r.nick),
     };
     document.getElementById("train-an-tops").innerHTML = [
+      taTopTable("PWR / Rank", topPwr, [
+        nickCol,
+        { label: "Место", cls: "ctr", key: "place" },
+        {
+          label: "Rank",
+          cls: "ctr",
+          value: (r) =>
+            `<span class="rank-badge rank-${escapeHtml(r.rankKey || "iron")}">${escapeHtml(r.pwrLabel || "—")}</span>`,
+        },
+        { label: "PWR", cls: "ctr", key: "pwr" },
+      ]),
       taTopTable("Больше каток", topGames, [
         nickCol,
         { label: "Каток", cls: "ctr", key: "games" },
@@ -2944,6 +2996,25 @@
         { label: "Каток", cls: "ctr", key: "games" },
       ]),
     ].join("");
+
+    const rankOrder = (TRAIN_PWR.bands || []).map((b) => b[2]);
+    const rankCount = new Map(rankOrder.map((k) => [k, 0]));
+    players.forEach((p) => {
+      const k = p.rankKey || "iron";
+      rankCount.set(k, (rankCount.get(k) || 0) + 1);
+    });
+    const rankBars = rankOrder.map((key) => {
+      const band = TRAIN_PWR.bands.find((b) => b[2] === key);
+      return {
+        label: band ? band[1] : key,
+        count: rankCount.get(key) || 0,
+        share: players.length
+          ? Math.round((1000 * (rankCount.get(key) || 0)) / players.length) / 10
+          : 0,
+      };
+    });
+    const pwrRanksEl = document.getElementById("train-an-pwr-ranks");
+    if (pwrRanksEl) pwrRanksEl.innerHTML = taBars(rankBars);
 
     const topMedic = players.slice().sort((a, b) => b.mvpMedic - a.mvpMedic || b.res - a.res).filter((p) => p.mvpMedic > 0).slice(0, 10);
     const topKiller = players.slice().sort((a, b) => b.mvpKiller - a.mvpKiller || b.kills - a.kills).filter((p) => p.mvpKiller > 0).slice(0, 10);
