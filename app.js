@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260925-place-col";
+    new URLSearchParams(location.search).get("v") || "20260925-fixed-place";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -1467,6 +1467,18 @@
           const { pwr, band, label, rankKey } = calcTrainPwr(base);
           return { ...base, pwr, pwrBand: band, pwrLabel: label, rankKey };
         });
+        /* Место в общем рейтинге по PWR — не меняется от поиска/сортировки колонок */
+        trainRatingRows
+          .slice()
+          .sort(
+            (a, b) =>
+              (Number(b.pwr) || 0) - (Number(a.pwr) || 0) ||
+              (Number(b.games) || 0) - (Number(a.games) || 0) ||
+              String(a.nick).localeCompare(String(b.nick), "ru")
+          )
+          .forEach((p, i) => {
+            p.place = i + 1;
+          });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("train-rating-scope")?.value || "all";
         const scopeRu =
@@ -1554,8 +1566,8 @@
     }
     tbody.innerHTML = rows
       .map(
-        (p, i) => `<tr>
-        <td class="ctr col-place">${i + 1}</td>
+        (p) => `<tr>
+        <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
         <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
