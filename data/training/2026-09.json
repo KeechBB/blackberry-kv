@@ -325,6 +325,40 @@
       "winner": "GFI",
       "status": "done",
       "playersUrl": "data/training/players/24-mutaha.json"
+    },
+    {
+      "id": "25-lashkar",
+      "day": 25,
+      "timeMsk": "—",
+      "map": "Lashkar AAS v2",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "01:01:48",
+      "factionA": "USA",
+      "ticketsA": 0,
+      "factionB": "GFI",
+      "ticketsB": 46,
+      "winner": "GFI",
+      "status": "done",
+      "playersUrl": "data/training/players/25-lashkar.json"
+    },
+    {
+      "id": "25-narva-2",
+      "day": 25,
+      "timeMsk": "—",
+      "map": "Narva AAS v3",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "44:35",
+      "factionA": "BAF",
+      "ticketsA": 0,
+      "factionB": "VDV",
+      "ticketsB": 65,
+      "winner": "VDV",
+      "status": "done",
+      "playersUrl": "data/training/players/25-narva-2.json"
     }
   ]
 }
