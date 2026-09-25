@@ -1,0 +1,257 @@
+{
+  "matchId": "25-h1gh",
+  "opp": "H1gh",
+  "note": "R1 0:161 (BAF vs VDV), 29:57. R2 ещё нет. Камера Shrein не внесена.",
+  "r1": [
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 101
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 149
+    },
+    {
+      "nick": "KillReal",
+      "res": 5,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 83
+    },
+    {
+      "nick": "angel",
+      "res": 2,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 181
+    },
+    {
+      "nick": "Trixx",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 105
+    },
+    {
+      "nick": "Buti",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 16
+    },
+    {
+      "nick": "yanchik",
+      "res": 2,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 68
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 163
+    },
+    {
+      "nick": "Mukuru",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 228
+    },
+    {
+      "nick": "T-800",
+      "res": 7,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 128
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 189
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 122
+    },
+    {
+      "nick": "lepurple",
+      "res": 7,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 62
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 263
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 49
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 123
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 80
+    },
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 95
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 50
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 160
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 204
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 58
+    },
+    {
+      "nick": "Runetik",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 94
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 9,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 65
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 239
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 123
+    }
+  ],
+  "r2": [],
+  "details": {
+    "r1": {
+      "us": "BAF",
+      "them": "VDV",
+      "tickets": "0:161",
+      "len": "29:57",
+      "start": 200,
+      "goals": "+10 / +40",
+      "infantry": "-153 / -64",
+      "fob": "0 / 0",
+      "veh": "-23 / -15",
+      "bleed": "-24 / 0",
+      "ammo": "4300 / 17600",
+      "build": "1700 / 3900",
+      "fobsCreated": "1 / 1"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "ZensU"
+      ],
+      "damage": [
+        "iKEppA"
+      ],
+      "antiDeath": [
+        "Runetik"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

@@ -475,16 +475,32 @@
   },
   "mvp": {
     "r1": {
-      "medic": ["lepurple"],
-      "killer": ["iKEppA"],
-      "damage": ["Gadler"],
-      "antiDeath": ["Durik"]
+      "medic": [
+        "lepurple"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Gadler"
+      ],
+      "antiDeath": [
+        "Durik"
+      ]
     },
     "r2": {
-      "medic": ["KillReal"],
-      "killer": ["Gadler"],
-      "damage": ["Gadler"],
-      "antiDeath": ["Radislave"]
+      "medic": [
+        "KillReal"
+      ],
+      "killer": [
+        "Gadler"
+      ],
+      "damage": [
+        "Gadler"
+      ],
+      "antiDeath": [
+        "Radislave"
+      ]
     }
   }
 }

@@ -423,6 +423,32 @@
           "KillReal"
         ]
       }
+    },
+    {
+      "id": "25-h1gh",
+      "day": 25,
+      "opp": "H1gh",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "ZensU"
+        ],
+        "damage": [
+          "iKEppA"
+        ],
+        "antiDeath": [
+          "Runetik"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
     }
   ],
   "players": {
@@ -835,7 +861,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 4,
+      "mvpMedic": 5,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -869,6 +895,14 @@
           "day": 24,
           "opp": "HQ",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-h1gh",
+          "day": 25,
+          "opp": "H1gh",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -1090,6 +1124,22 @@
         }
       ]
     },
+    "Runetik": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "25-h1gh",
+          "day": 25,
+          "opp": "H1gh",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "SHURUP": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -1258,6 +1308,22 @@
         }
       ]
     },
+    "ZensU": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-h1gh",
+          "day": 25,
+          "opp": "H1gh",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "Zik": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1381,7 +1447,7 @@
     "iKEppA": {
       "mvpMedic": 0,
       "mvpKiller": 4,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
         {
@@ -1415,6 +1481,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-h1gh",
+          "day": 25,
+          "opp": "H1gh",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },

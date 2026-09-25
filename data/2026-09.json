@@ -214,17 +214,20 @@
       "playersUrl": "data/players/24-hq.json"
     },
     {
+      "id": "25-h1gh",
       "day": 25,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "H1gh",
       "map": "SEC 26 Narva AAS v1",
       "size": "26v26",
-      "server": "any",
-      "rules": "SEC",
+      "server": "BSS Custom [FW]",
+      "rules": "SEC / OSI",
       "stack": "Main",
       "status": "upcoming",
-      "note": "NO SCOUT"
+      "r1": "0:161",
+      "note": "R1 0:161 · ждём R2 · NO SCOUT",
+      "playersUrl": "data/players/25-h1gh.json"
     },
     {
       "id": "26-alpha",
