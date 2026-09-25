@@ -899,6 +899,12 @@ body.modal-open { overflow: hidden; }
 .col-mvp-killer { color: var(--mvp-killer) !important; }
 .col-mvp-war { color: var(--mvp-war) !important; }
 .col-mvp-anti { color: var(--mvp-anti) !important; }
+.rating-table .col-place {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: rgba(196, 181, 253, 0.9);
+  width: 3.2rem;
+}
 .rating-table .col-pwr {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;

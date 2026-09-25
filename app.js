@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260925-sandro-pwr-col";
+    new URLSearchParams(location.search).get("v") || "20260925-place-col";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -1554,8 +1554,8 @@
     }
     tbody.innerHTML = rows
       .map(
-        (p) => `<tr>
-        <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
+        (p, i) => `<tr>
+        <td class="ctr col-place">${i + 1}</td>
         <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
         <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
