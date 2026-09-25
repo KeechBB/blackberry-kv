@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260923-chora-m3";
+    new URLSearchParams(location.search).get("v") || "20260925-train-pwr";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -74,6 +74,32 @@
     antiDeath: "Anti-MVP Death",
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
+  /** Композитный PWR 0–1000 для рейтинга тренировок (без MVP). */
+  const TRAIN_PWR = {
+    mRes: 4,
+    mNok: 3,
+    mKill: 2.5,
+    mDmg: 150,
+    mDeath: 6,
+    confGames: 5,
+    support: { res: 0.7, nok: 0.15, dmg: 0.15 },
+    fight: { kill: 0.35, nok: 0.25, dmg: 0.3, res: 0.1 },
+    roleMax: 0.65,
+    roleAvg: 0.35,
+    impact: { role: 0.55, surv: 0.2, win: 0.25 },
+    bands: [
+      [0, "Новобранец"],
+      [100, "Рядовой"],
+      [200, "Проверенный"],
+      [300, "Боец"],
+      [400, "Специалист"],
+      [500, "Ветеран"],
+      [600, "Элита"],
+      [700, "Ас"],
+      [800, "Легенда"],
+      [900, "Миф"],
+    ],
+  };
   // Камера / не в составе — не в рейтинге игроков.
   const RATING_EXCLUDE = new Set(["shrein"]);
 
@@ -96,8 +122,58 @@
   let ratingSortKey = "kv";
   let ratingSortDir = "desc";
   let trainRatingRows = [];
-  let trainRatingSortKey = "games";
+  let trainRatingSortKey = "pwr";
   let trainRatingSortDir = "desc";
+
+  function softSat(x, mid) {
+    const v = Math.max(0, Number(x) || 0);
+    const m = Number(mid) || 1;
+    return v / (v + m);
+  }
+
+  /** @returns {{ pwr: number, band: number, label: string }} */
+  function calcTrainPwr(row) {
+    const g = Math.max(1, Number(row.games) || 0);
+    const r = (Number(row.res) || 0) / g;
+    const n = (Number(row.nok) || 0) / g;
+    const k = (Number(row.kills) || 0) / g;
+    const d = (Number(row.deaths) || 0) / g;
+    const c = (Number(row.dmg) || 0) / g;
+    const w =
+      row.winPct == null || Number(row.games) <= 0
+        ? 0
+        : Math.min(1, Math.max(0, Number(row.winPct) / 100));
+
+    const R = softSat(r, TRAIN_PWR.mRes);
+    const N = softSat(n, TRAIN_PWR.mNok);
+    const K = softSat(k, TRAIN_PWR.mKill);
+    const C = softSat(c, TRAIN_PWR.mDmg);
+    const Surv = 1 - softSat(d, TRAIN_PWR.mDeath);
+
+    const s = TRAIN_PWR.support;
+    const f = TRAIN_PWR.fight;
+    const Support = s.res * R + s.nok * N + s.dmg * C;
+    const Fight = f.kill * K + f.nok * N + f.dmg * C + f.res * R;
+    const Role =
+      TRAIN_PWR.roleMax * Math.max(Support, Fight) +
+      TRAIN_PWR.roleAvg * ((Support + Fight) / 2);
+
+    const imp = TRAIN_PWR.impact;
+    const Impact = imp.role * Role + imp.surv * Surv + imp.win * w;
+    const Conf = g / (g + TRAIN_PWR.confGames);
+    let pwr = Math.round(Impact * Conf * 1000);
+    if (pwr < 0) pwr = 0;
+    if (pwr > 1000) pwr = 1000;
+    const band = Math.min(900, Math.floor(pwr / 100) * 100);
+    let label = TRAIN_PWR.bands[0][1];
+    for (let i = TRAIN_PWR.bands.length - 1; i >= 0; i--) {
+      if (pwr >= TRAIN_PWR.bands[i][0]) {
+        label = TRAIN_PWR.bands[i][1];
+        break;
+      }
+    }
+    return { pwr, band, label };
+  }
   let matchSortKey = "date";
   let matchSortDir = "desc";
   let rosterByNick = {};
@@ -1358,16 +1434,21 @@
           bump(mvp.antiDeath, "antiDeath");
         });
 
-        trainRatingRows = Array.from(map.values()).map((p) => ({
-          ...p,
-          mvpMedic: Number(p.mvpMedic) || 0,
-          mvpKiller: Number(p.mvpKiller) || 0,
-          mvpDamage: Number(p.mvpDamage) || 0,
-          antiDeath: Number(p.antiDeath) || 0,
-          kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
-          winPct:
-            p.games > 0 ? Math.round((1000 * p.wins) / p.games) / 10 : null,
-        }));
+        trainRatingRows = Array.from(map.values()).map((p) => {
+          const winPct =
+            p.games > 0 ? Math.round((1000 * p.wins) / p.games) / 10 : null;
+          const base = {
+            ...p,
+            mvpMedic: Number(p.mvpMedic) || 0,
+            mvpKiller: Number(p.mvpKiller) || 0,
+            mvpDamage: Number(p.mvpDamage) || 0,
+            antiDeath: Number(p.antiDeath) || 0,
+            kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
+            winPct,
+          };
+          const { pwr, band, label } = calcTrainPwr(base);
+          return { ...base, pwr, pwrBand: band, pwrLabel: label };
+        });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("train-rating-scope")?.value || "all";
         const scopeRu =
@@ -1443,7 +1524,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1454,6 +1535,9 @@
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
+        <td class="ctr col-pwr" title="${escapeHtml(p.pwrLabel || "")}">${
+          p.pwr != null ? `${p.pwr}<span class="pwr-band"> · ${escapeHtml(p.pwrLabel || "")}</span>` : "—"
+        }</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
