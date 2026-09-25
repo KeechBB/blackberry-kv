@@ -909,6 +909,68 @@ body.modal-open { overflow: hidden; }
   opacity: 0.72;
   font-size: 0.92em;
 }
+.rank-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.35;
+  border: 1px solid transparent;
+}
+.rank-iron {
+  color: #c5c6c8;
+  background: rgba(120, 122, 128, 0.28);
+  border-color: rgba(180, 182, 188, 0.35);
+}
+.rank-bronze {
+  color: #e0a06a;
+  background: rgba(166, 104, 48, 0.3);
+  border-color: rgba(205, 127, 50, 0.45);
+}
+.rank-silver {
+  color: #e8eef4;
+  background: rgba(160, 174, 190, 0.28);
+  border-color: rgba(192, 200, 210, 0.5);
+}
+.rank-gold {
+  color: #ffe566;
+  background: rgba(212, 160, 23, 0.28);
+  border-color: rgba(241, 196, 15, 0.55);
+}
+.rank-platinum {
+  color: #9ef0e8;
+  background: rgba(46, 160, 155, 0.28);
+  border-color: rgba(78, 205, 196, 0.5);
+}
+.rank-diamond {
+  color: #b8ecff;
+  background: rgba(64, 150, 210, 0.3);
+  border-color: rgba(93, 173, 226, 0.55);
+}
+.rank-ascendant {
+  color: #9dffc0;
+  background: rgba(30, 150, 100, 0.3);
+  border-color: rgba(46, 204, 113, 0.5);
+}
+.rank-immortal {
+  color: #ff8a9a;
+  background: rgba(200, 50, 70, 0.28);
+  border-color: rgba(255, 70, 85, 0.5);
+}
+.rank-master {
+  color: #d4b3ff;
+  background: rgba(120, 70, 200, 0.3);
+  border-color: rgba(170, 120, 255, 0.55);
+}
+.rank-radiant {
+  color: #fff4a8;
+  background: linear-gradient(135deg, rgba(255, 200, 40, 0.35), rgba(255, 100, 80, 0.25));
+  border-color: rgba(255, 220, 80, 0.65);
+  text-shadow: 0 0 8px rgba(255, 210, 60, 0.45);
+}
 .rating-table {
   width: 100%;
   min-width: 0;

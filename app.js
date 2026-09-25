@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260925-train-pwr";
+    new URLSearchParams(location.search).get("v") || "20260925-pwr-rank";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -87,17 +87,22 @@
     roleMax: 0.65,
     roleAvg: 0.35,
     impact: { role: 0.55, surv: 0.2, win: 0.25 },
+    /** Множитель состава (тир клана). */
+    tierMult: { 1: 1.4, 2: 1.3, 3: 1.2, 4: 1.1 },
+    /** KD < 1 → штраф. */
+    kdLowMult: 0.9,
+    /** Ступени как в Valorant / Apex. [minPWR, label, cssKey] */
     bands: [
-      [0, "Новобранец"],
-      [100, "Рядовой"],
-      [200, "Проверенный"],
-      [300, "Боец"],
-      [400, "Специалист"],
-      [500, "Ветеран"],
-      [600, "Элита"],
-      [700, "Ас"],
-      [800, "Легенда"],
-      [900, "Миф"],
+      [0, "Iron", "iron"],
+      [100, "Bronze", "bronze"],
+      [200, "Silver", "silver"],
+      [300, "Gold", "gold"],
+      [400, "Platinum", "platinum"],
+      [500, "Diamond", "diamond"],
+      [600, "Ascendant", "ascendant"],
+      [700, "Immortal", "immortal"],
+      [800, "Master", "master"],
+      [900, "Radiant", "radiant"],
     ],
   };
   // Камера / не в составе — не в рейтинге игроков.
@@ -131,7 +136,7 @@
     return v / (v + m);
   }
 
-  /** @returns {{ pwr: number, band: number, label: string }} */
+  /** @returns {{ pwr: number, band: number, label: string, rankKey: string }} */
   function calcTrainPwr(row) {
     const g = Math.max(1, Number(row.games) || 0);
     const r = (Number(row.res) || 0) / g;
@@ -161,18 +166,31 @@
     const imp = TRAIN_PWR.impact;
     const Impact = imp.role * Role + imp.surv * Surv + imp.win * w;
     const Conf = g / (g + TRAIN_PWR.confGames);
-    let pwr = Math.round(Impact * Conf * 1000);
+
+    const tier = Number(row.tier) || 4;
+    const tierMult = TRAIN_PWR.tierMult[tier] || TRAIN_PWR.tierMult[4];
+    const kd =
+      row.kd != null
+        ? Number(row.kd)
+        : d === 0
+          ? k
+          : k / Math.max(d, 1e-9);
+    const kdMult = kd < 1 ? TRAIN_PWR.kdLowMult : 1;
+
+    let pwr = Math.round(Impact * Conf * 1000 * tierMult * kdMult);
     if (pwr < 0) pwr = 0;
     if (pwr > 1000) pwr = 1000;
     const band = Math.min(900, Math.floor(pwr / 100) * 100);
     let label = TRAIN_PWR.bands[0][1];
+    let rankKey = TRAIN_PWR.bands[0][2];
     for (let i = TRAIN_PWR.bands.length - 1; i >= 0; i--) {
       if (pwr >= TRAIN_PWR.bands[i][0]) {
         label = TRAIN_PWR.bands[i][1];
+        rankKey = TRAIN_PWR.bands[i][2];
         break;
       }
     }
-    return { pwr, band, label };
+    return { pwr, band, label, rankKey };
   }
   let matchSortKey = "date";
   let matchSortDir = "desc";
@@ -1446,8 +1464,8 @@
             kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
             winPct,
           };
-          const { pwr, band, label } = calcTrainPwr(base);
-          return { ...base, pwr, pwrBand: band, pwrLabel: label };
+          const { pwr, band, label, rankKey } = calcTrainPwr(base);
+          return { ...base, pwr, pwrBand: band, pwrLabel: label, rankKey };
         });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("train-rating-scope")?.value || "all";
@@ -1516,6 +1534,12 @@
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
+      if (trainRatingSortKey === "pwrLabel" || trainRatingSortKey === "rank") {
+        const av = Number(a.pwr) || 0;
+        const bv = Number(b.pwr) || 0;
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
       const av = Number(a[trainRatingSortKey]) || 0;
       const bv = Number(b[trainRatingSortKey]) || 0;
       if (av !== bv) return dir * (av - bv);
@@ -1524,7 +1548,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1532,12 +1556,11 @@
       .map(
         (p) => `<tr>
         <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
+        <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
-        <td class="ctr col-pwr" title="${escapeHtml(p.pwrLabel || "")}">${
-          p.pwr != null ? `${p.pwr}<span class="pwr-band"> · ${escapeHtml(p.pwrLabel || "")}</span>` : "—"
-        }</td>
+        <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
