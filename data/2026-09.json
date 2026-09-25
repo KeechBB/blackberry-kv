@@ -224,9 +224,11 @@
       "server": "BSS Custom [FW]",
       "rules": "SEC / OSI",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "lose",
+      "meeting": "0–2",
       "r1": "0:161",
-      "note": "R1 0:161 · ждём R2 · NO SCOUT",
+      "r2": "0:163",
+      "note": "Main · 0:161 · 0:163",
       "playersUrl": "data/players/25-h1gh.json"
     },
     {

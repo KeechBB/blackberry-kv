@@ -1,7 +1,7 @@
 {
   "matchId": "25-h1gh",
   "opp": "H1gh",
-  "note": "R1 0:161 (BAF vs VDV), 29:57. R2 ещё нет. Камера Shrein не внесена.",
+  "note": "FINAL 0–2. R1 0:161 (мы BAF), R2 0:163 (мы VDV). Камера Shrein не внесена. В БУТИ на табло 4 ника при header 7/64 — возможный disconnect.",
   "r1": [
     {
       "nick": "Summer",
@@ -212,7 +212,200 @@
       "dmg": 123
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 81
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 143
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 7,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 58
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 118
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 116
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 52
+    },
+    {
+      "nick": "AkiN",
+      "res": 14,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 53
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 11,
+      "dmg": 103
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 142
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 162
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 74
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 173
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 8,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 160
+    },
+    {
+      "nick": "KillReal",
+      "res": 6,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 55
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 102
+    },
+    {
+      "nick": "Buti",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 108
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 76
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 47
+    },
+    {
+      "nick": "T-800",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 14
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 117
+    },
+    {
+      "nick": "LordWolf",
+      "res": 4,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 84
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 114
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 83
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 48
+    }
+  ],
   "details": {
     "r1": {
       "us": "BAF",
@@ -229,8 +422,33 @@
       "build": "1700 / 3900",
       "fobsCreated": "1 / 1"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "us": "VDV",
+      "them": "BAF",
+      "tickets": "0:163",
+      "len": "30:01",
+      "start": 200,
+      "goals": "+20 / +30",
+      "infantry": "-147 / -54",
+      "fob": "0 / 0",
+      "veh": "-57 / 0",
+      "bleed": "-6 / -13",
+      "ammo": "3300 / 22650",
+      "build": "2700 / 4400",
+      "fobsCreated": "1 / 1"
+    },
+    "total": {
+      "tickets": "0–2 (0:161 · 0:163)",
+      "len": "29:57 + 30:01",
+      "goals": "+30 / +70",
+      "infantry": "-300 / -118",
+      "fob": "0 / 0",
+      "veh": "-80 / -15",
+      "bleed": "-30 / -13",
+      "ammo": "7600 / 40250",
+      "build": "4400 / 8300",
+      "fobsCreated": "2 / 2"
+    }
   },
   "mvp": {
     "r1": {
@@ -248,10 +466,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "AkiN"
+      ],
+      "killer": [
+        "Pymba"
+      ],
+      "damage": [
+        "Pymba"
+      ],
+      "antiDeath": [
+        "Keech"
+      ]
     }
   }
 }
