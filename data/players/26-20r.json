@@ -1,0 +1,255 @@
+{
+  "matchId": "26-20r",
+  "opp": "20Royals",
+  "note": "R1 31:0 (мы VDV · они CAF). Серия 1–0, ждём r2. Камера не вносилась.",
+  "r1": [
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 209
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 332
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 111
+    },
+    {
+      "nick": "akin0v",
+      "res": 5,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 150
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 130
+    },
+    {
+      "nick": "angel",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 226
+    },
+    {
+      "nick": "ADUN",
+      "res": 2,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 39
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 119
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 179
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 8,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 74
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 610
+    },
+    {
+      "nick": "Radislave",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 30
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 73
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 0,
+      "dmg": 835
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 15,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 306
+    },
+    {
+      "nick": "Pymba",
+      "res": 1,
+      "nok": 20,
+      "kills": 17,
+      "deaths": 6,
+      "dmg": 443
+    },
+    {
+      "nick": "KillReal",
+      "res": 9,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 89
+    },
+    {
+      "nick": "freak",
+      "res": 4,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 330
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 258
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 264
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 5,
+      "dmg": 286
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 97
+    },
+    {
+      "nick": "Tankist",
+      "res": 2,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 312
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 165
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 497
+    },
+    {
+      "nick": "Jopllik",
+      "res": 4,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 35
+    }
+  ],
+  "r2": [],
+  "details": {
+    "r1": {
+      "us": "VDV",
+      "them": "CAF",
+      "tickets": "31:0",
+      "len": "40:14",
+      "start": 180,
+      "goals": "+20 / +10",
+      "infantry": "-133 / -143",
+      "fob": "0 / -20",
+      "veh": "-36 / -28",
+      "bleed": "0 / 0",
+      "ammo": "11400 / 11645",
+      "build": "3600 / 2700",
+      "fobsCreated": "1 / 1"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "KillReal"
+      ],
+      "killer": [
+        "Pymba"
+      ],
+      "damage": [
+        "ZensU"
+      ],
+      "antiDeath": [
+        "Gadler"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

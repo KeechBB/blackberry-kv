@@ -459,6 +459,32 @@
       }
     },
     {
+      "id": "26-20r",
+      "day": 26,
+      "opp": "20Royals",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "KillReal"
+        ],
+        "killer": [
+          "Pymba"
+        ],
+        "damage": [
+          "ZensU"
+        ],
+        "antiDeath": [
+          "Gadler"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "26-alpha",
       "day": 26,
       "opp": "ALPHA",
@@ -794,7 +820,7 @@
       "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 3,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "18-ih",
@@ -840,6 +866,14 @@
           "matchId": "24-hq",
           "day": 24,
           "opp": "HQ",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -919,7 +953,7 @@
       ]
     },
     "KillReal": {
-      "mvpMedic": 3,
+      "mvpMedic": 4,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -955,6 +989,14 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -1168,7 +1210,7 @@
     },
     "Pymba": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
@@ -1187,6 +1229,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -1473,7 +1523,7 @@
     "ZensU": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
         {
@@ -1483,6 +1533,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },

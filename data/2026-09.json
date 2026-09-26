@@ -250,17 +250,20 @@
       "playersUrl": "data/players/26-alpha.json"
     },
     {
+      "id": "26-20r",
       "day": 26,
       "timeMsk": "21:00",
       "timeUtc": "18:00",
       "opp": "20Royals",
       "map": "SEC 26 GooseBay AAS v1",
       "size": "26v26",
-      "server": "20R",
-      "rules": "SEC",
+      "server": "20Royals EU Scrim",
+      "rules": "SEC / OSI",
       "stack": "Main",
       "status": "upcoming",
-      "note": "NO SCOUT · 1st Main vs 20R"
+      "r1": "31:0",
+      "note": "Main · r1 31:0 · серия 1–0 · ждём r2",
+      "playersUrl": "data/players/26-20r.json"
     },
     {
       "day": 27,
