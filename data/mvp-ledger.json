@@ -462,7 +462,7 @@
       "id": "26-20r",
       "day": 26,
       "opp": "20Royals",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "KillReal"
@@ -478,10 +478,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "MrChaykaa"
+        ]
       }
     },
     {
@@ -1001,7 +1009,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 5,
+      "mvpMedic": 6,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -1043,6 +1051,14 @@
           "day": 25,
           "opp": "H1gh",
           "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
+          "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -1173,6 +1189,22 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "MrChaykaa": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -1354,8 +1386,8 @@
     },
     "Tankist": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 9,
+      "mvpKiller": 2,
+      "mvpDamage": 10,
       "antiDeath": 1,
       "awards": [
         {
@@ -1418,6 +1450,22 @@
           "matchId": "17-44th",
           "day": 17,
           "opp": "44th",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "26-20r",
+          "day": 26,
+          "opp": "20Royals",
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"

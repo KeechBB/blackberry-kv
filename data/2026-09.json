@@ -260,9 +260,11 @@
       "server": "20Royals EU Scrim",
       "rules": "SEC / OSI",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "31:0",
-      "note": "Main · r1 31:0 · серия 1–0 · ждём r2",
+      "r2": "65:0",
+      "note": "Main · сумма 96:0",
       "playersUrl": "data/players/26-20r.json"
     },
     {

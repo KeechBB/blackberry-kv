@@ -1,7 +1,7 @@
 {
   "matchId": "26-20r",
   "opp": "20Royals",
-  "note": "R1 31:0 (мы VDV · они CAF). Серия 1–0, ждём r2. Камера не вносилась.",
+  "note": "FINAL 2–0. Сумма 96:0. R1 31:0 (VDV), R2 65:0 (CAF).",
   "r1": [
     {
       "nick": "Keech",
@@ -212,7 +212,216 @@
       "dmg": 35
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 169
+    },
+    {
+      "nick": "angel",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 206
+    },
+    {
+      "nick": "ADUN",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 16
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 151
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 158
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 12,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 97
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 159
+    },
+    {
+      "nick": "Radislave",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 49
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 212
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 262
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 90
+    },
+    {
+      "nick": "iKEppA",
+      "res": 2,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 372
+    },
+    {
+      "nick": "lepurple",
+      "res": 3,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 130
+    },
+    {
+      "nick": "akin0v",
+      "res": 4,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 103
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 50
+    },
+    {
+      "nick": "Jopllik",
+      "res": 6,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 38
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 319
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 286
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 89
+    },
+    {
+      "nick": "Tankist",
+      "res": 4,
+      "nok": 15,
+      "kills": 14,
+      "deaths": 4,
+      "dmg": 915
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 6,
+      "dmg": 298
+    },
+    {
+      "nick": "KillReal",
+      "res": 6,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 30
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 150
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 146
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 308
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 166
+    }
+  ],
   "details": {
     "r1": {
       "us": "VDV",
@@ -228,6 +437,30 @@
       "ammo": "11400 / 11645",
       "build": "3600 / 2700",
       "fobsCreated": "1 / 1"
+    },
+    "r2": {
+      "us": "CAF",
+      "them": "VDV",
+      "tickets": "65:0",
+      "len": "34:25",
+      "start": 180,
+      "goals": "+20 / +10",
+      "infantry": "-107 / -127",
+      "fob": "0 / -20",
+      "veh": "-28 / -43",
+      "bleed": "0 / 0",
+      "ammo": "12921 / 8300",
+      "build": "6600 / 4200",
+      "fobsCreated": "1 / 2"
+    },
+    "total": {
+      "tickets": "2–0 · сумма 96:0 (31:0 · 65:0)",
+      "len": "40:14 + 34:25",
+      "infantry": "-240 / -270",
+      "fob": "0 / -40",
+      "veh": "-64 / -71",
+      "bleed": "0 / 0",
+      "fobsCreated": "2 / 3"
     }
   },
   "mvp": {
@@ -246,10 +479,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "Tankist"
+      ],
+      "damage": [
+        "Tankist"
+      ],
+      "antiDeath": [
+        "MrChaykaa"
+      ]
     }
   }
 }
