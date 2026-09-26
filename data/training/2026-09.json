@@ -361,6 +361,24 @@
       "playersUrl": "data/training/players/25-narva-2.json"
     },
     {
+      "id": "26-chora",
+      "day": 26,
+      "timeMsk": "—",
+      "map": "Chora AAS v2",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "49:20",
+      "factionA": "RGF",
+      "ticketsA": 53,
+      "factionB": "USA",
+      "ticketsB": 0,
+      "winner": "RGF",
+      "status": "done",
+      "note": "Match 1",
+      "playersUrl": "data/training/players/26-chora.json"
+    },
+    {
       "id": "26-chora-2",
       "day": 26,
       "timeMsk": "—",
