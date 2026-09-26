@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260927-cw-pwr";
+    new URLSearchParams(location.search).get("v") || "20260927-pwr-delta-col";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -199,9 +199,49 @@
   let modalMatch = null;
   let modalTab = "total";
   let modalPlayers = null;
+  /** @type {Record<string, number>} */
+  let modalPwrDeltas = {};
   let sortKey = "kills";
   let sortDir = "desc";
   let monthKey = "09";
+
+  function pwrDeltaApiUrl(kind, matchId) {
+    const q = `kind=${encodeURIComponent(kind)}&matchId=${encodeURIComponent(matchId)}`;
+    if (
+      /bb-squad\.ru$/i.test(location.hostname) ||
+      location.pathname.includes("kv-static")
+    ) {
+      return `/api/match-pwr-delta?${q}`;
+    }
+    return `https://bb-squad.ru/api/match-pwr-delta?${q}`;
+  }
+
+  function loadModalPwrDeltas(m) {
+    modalPwrDeltas = {};
+    if (!m || !m.id) return Promise.resolve();
+    const kind = m._kind === "training" ? "train" : "cw";
+    return fetch(pwrDeltaApiUrl(kind, m.id), { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : { deltas: {} }))
+      .then((payload) => {
+        const raw = (payload && payload.deltas) || {};
+        const out = {};
+        Object.keys(raw).forEach((nick) => {
+          out[String(nick).trim().toLowerCase()] = Number(raw[nick]) || 0;
+        });
+        modalPwrDeltas = out;
+      })
+      .catch(() => {
+        modalPwrDeltas = {};
+      });
+  }
+
+  function formatPwrDelta(nick) {
+    const d = modalPwrDeltas[String(nick || "").trim().toLowerCase()];
+    if (d == null) return { text: "—", cls: "pwr-delta zero" };
+    if (d > 0) return { text: `+${d}`, cls: "pwr-delta plus" };
+    if (d < 0) return { text: String(d), cls: "pwr-delta minus" };
+    return { text: "0", cls: "pwr-delta zero" };
+  }
 
   function factionTitle(code) {
     if (!code) return "—";
@@ -3167,12 +3207,14 @@
     }
 
     if (m.playersUrl) {
-      fetch(dataUrl(m.playersUrl))
-        .then((r) => {
+      Promise.all([
+        fetch(dataUrl(m.playersUrl)).then((r) => {
           if (!r.ok) throw new Error("Нет файла статистики");
           return r.json();
-        })
-        .then((data) => {
+        }),
+        loadModalPwrDeltas(m),
+      ])
+        .then(([data]) => {
           if (isTrain) {
             const teamA = enrichRows(data.teamA || []);
             const teamB = enrichRows(data.teamB || []);
@@ -3450,6 +3492,14 @@
     const dir = sortDir === "asc" ? 1 : -1;
     return rows.slice().sort((a, b) => {
       if (sortKey === "nick") return dir * String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
+      if (sortKey === "pwrDelta") {
+        const av = modalPwrDeltas[String(a.nick || "").trim().toLowerCase()];
+        const bv = modalPwrDeltas[String(b.nick || "").trim().toLowerCase()];
+        const an = av == null ? Number.NEGATIVE_INFINITY : av;
+        const bn = bv == null ? Number.NEGATIVE_INFINITY : bv;
+        if (an !== bn) return dir * (an - bn);
+        return String(a.nick || "").localeCompare(String(b.nick || ""), "ru");
+      }
       const av = sortKey === "kd" ? kdValue(a) : Number(a[sortKey]) || 0;
       const bv = sortKey === "kd" ? kdValue(b) : Number(b[sortKey]) || 0;
       if (av !== bv) return dir * (av - bv);
@@ -3494,6 +3544,7 @@
 
     const sorted = sortRows(rows);
     const foot = totalsRow(sorted);
+    const showPwrDelta = modalTab === "total";
     const records = {
       res: maxOf(sorted, "res"),
       nok: maxOf(sorted, "nok"),
@@ -3517,12 +3568,14 @@
               ${th("deaths", "Смерти", "ctr")}
               ${th("kd", "KD", "ctr")}
               ${th("dmg", "Боевой счёт", "ctr")}
+              ${showPwrDelta ? th("pwrDelta", "Δ PWR", "ctr") : ""}
             </tr>
           </thead>
           <tbody>
             ${sorted
               .map((p, i) => {
                 const kd = kdValue(p);
+                const pd = formatPwrDelta(p.nick);
                 return `<tr>
               <td class="ctr">${i + 1}</td>
               <td><div class="nick-cell">${nickLinkHtml(p.nick || "—")}${renderMedals(p.nick)}</div></td>
@@ -3532,6 +3585,7 @@
               ${cellRecord(p.deaths, records.deaths > 0 && p.deaths === records.deaths, true)}
               ${cellRecord(formatKd(kd), records.kd > 0 && kd === records.kd, false)}
               ${cellRecord(p.dmg, records.dmg > 0 && p.dmg === records.dmg, false)}
+              ${showPwrDelta ? `<td class="ctr ${pd.cls}">${pd.text}</td>` : ""}
             </tr>`;
               })
               .join("")}
@@ -3546,6 +3600,7 @@
               <td class="ctr">${num(foot.deaths)}</td>
               <td class="ctr">${formatKd(foot.deaths ? Math.round((foot.kills / foot.deaths) * 100) / 100 : foot.kills)}</td>
               <td class="ctr">${num(foot.dmg)}</td>
+              ${showPwrDelta ? `<td class="ctr">—</td>` : ""}
             </tr>
           </tfoot>
         </table>

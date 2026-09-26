@@ -1204,3 +1204,7 @@ body.modal-open { overflow: hidden; }
   .ta-grid { grid-template-columns: 1fr; }
   .ta-card-wide { grid-column: auto; }
 }
+
+.pwr-delta.plus { color: #6ee7b7; font-weight: 700; }
+.pwr-delta.minus { color: #f87171; font-weight: 700; }
+.pwr-delta.zero { color: rgba(226, 220, 245, 0.55); font-weight: 600; }
