@@ -242,9 +242,11 @@
       "server": "#2 bbsquad.online | FCL ARENA",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "48:0",
-      "note": "Junior · r1 48:0 · серия 1–0 · ждём r2"
+      "r2": "49:42",
+      "note": "Junior · сумма 97:42 · r2 пиррова"
     },
     {
       "day": 26,
