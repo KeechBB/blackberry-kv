@@ -26,7 +26,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260926-train-chora-m1";
+    new URLSearchParams(location.search).get("v") || "20260927-cw-pwr";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -124,7 +124,7 @@
   let tierByNick = new Map();
   let displayNickByKey = new Map();
   let ratingRows = [];
-  let ratingSortKey = "kv";
+  let ratingSortKey = "pwr";
   let ratingSortDir = "desc";
   let trainRatingRows = [];
   let trainRatingSortKey = "pwr";
@@ -1103,6 +1103,7 @@
               squad: ro.squad,
               regNo: ro.regNo,
               kv: 0,
+              wins: 0,
               res: 0,
               nok: 0,
               kills: 0,
@@ -1117,7 +1118,7 @@
           return map.get(key);
         };
 
-        bundles.forEach(({ players }) => {
+        bundles.forEach(({ match, players }) => {
           if (!players) return;
           const r1 = players.r1 || [];
           const r2 = players.r2 || [];
@@ -1137,9 +1138,13 @@
           [...r1, ...r2].forEach((p) => {
             if (p && p.nick && inRating(p.nick)) inMeeting.add(resolveNickKey(p.nick));
           });
+          const status = String(match.status || "").toLowerCase();
+          const meetingWon = status === "win";
           inMeeting.forEach((key) => {
             const row = map.get(key);
-            if (row) row.kv += 1;
+            if (!row) return;
+            row.kv += 1;
+            if (meetingWon) row.wins += 1;
           });
 
           const mvp = players.mvp || {
@@ -1167,10 +1172,30 @@
           });
         });
 
-        ratingRows = Array.from(map.values()).map((p) => ({
-          ...p,
-          kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
-        }));
+        ratingRows = Array.from(map.values()).map((p) => {
+          const games = Number(p.kv) || 0;
+          const winPct =
+            games > 0 ? Math.round((1000 * (Number(p.wins) || 0)) / games) / 10 : null;
+          const base = {
+            ...p,
+            games,
+            kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
+            winPct,
+          };
+          const { pwr, band, label, rankKey } = calcTrainPwr(base);
+          return { ...base, pwr, pwrBand: band, pwrLabel: label, rankKey };
+        });
+        ratingRows
+          .slice()
+          .sort(
+            (a, b) =>
+              (Number(b.pwr) || 0) - (Number(a.pwr) || 0) ||
+              (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
+              String(a.nick).localeCompare(String(b.nick), "ru")
+          )
+          .forEach((p, i) => {
+            p.place = i + 1;
+          });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
@@ -1216,6 +1241,18 @@
         if (a.tier !== b.tier) return dir * (a.tier - b.tier);
         return a.nick.localeCompare(b.nick, "ru");
       }
+      if (ratingSortKey === "winPct") {
+        const av = a.winPct == null ? -1 : Number(a.winPct);
+        const bv = b.winPct == null ? -1 : Number(b.winPct);
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
+      if (ratingSortKey === "pwrLabel" || ratingSortKey === "rank") {
+        const av = Number(a.pwr) || 0;
+        const bv = Number(b.pwr) || 0;
+        if (av !== bv) return dir * (av - bv);
+        return a.nick.localeCompare(b.nick, "ru");
+      }
       const av = Number(a[ratingSortKey]) || 0;
       const bv = Number(b[ratingSortKey]) || 0;
       if (av !== bv) return dir * (av - bv);
@@ -1226,18 +1263,21 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
     tbody.innerHTML = rows
       .map(
         (p) => `<tr>
-        <td class="ctr">${p.regNo != null ? p.regNo : "—"}</td>
+        <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
+        <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
+        <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.kv}</td>
+        <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr">${p.res}</td>
         <td class="ctr">${p.nok}</td>
         <td class="ctr">${p.kills}</td>

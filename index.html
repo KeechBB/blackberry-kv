@@ -127,9 +127,9 @@
           </label>
         </div>
         <section class="board">
-          <div class="board-head">
+          <div className="board-head">
             <h2>Рейтинг игроков · КВ</h2>
-            <p class="board-sub">Только клановые войны · кол-во КВ · MVP из раундов</p>
+            <p class="board-sub">Только клановые войны · PWR / Rank · MVP из раундов</p>
           </div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
@@ -139,11 +139,14 @@
             <table class="rating-table" id="cw-rating-table">
               <thead>
                 <tr>
-                  <th class="ctr sortable" data-rsort="regNo" data-label="№" title="Номер регистрации на сайте">№</th>
+                  <th class="ctr" data-label="Место" title="Место в общем рейтинге по PWR (не меняется от поиска)">Место</th>
+                  <th class="ctr sortable col-rank" data-rsort="pwr" data-label="Rank" title="Ранг по PWR (Iron→Radiant). Тир состава ×1.1–1.4; KD&lt;1 → ×0.9">Rank</th>
+                  <th class="ctr sortable col-pwr" data-rsort="pwr" data-label="PWR" title="Композитный скор 0–1000: вклад за катку (медик/стрелок), выживаемость, % побед; ×тир; KD&lt;1 штраф">PWR</th>
                   <th class="sortable" data-rsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-rsort="clan" data-label="Клан">Клан</th>
-                  <th class="ctr sortable" data-rsort="tier" data-label="Ранг">Ранг</th>
-                  <th class="ctr sortable" data-rsort="kv" data-label="Кол-во КВ">Кол-во КВ</th>
+                  <th class="ctr sortable" data-rsort="tier" data-label="Тир">Тир</th>
+                  <th class="ctr sortable" data-rsort="kv" data-label="Каток">Каток</th>
+                  <th class="ctr sortable" data-rsort="winPct" data-label="% побед" title="% побед во встречах КВ">% побед</th>
                   <th class="ctr sortable" data-rsort="res" data-label="Ресы">Ресы</th>
                   <th class="ctr sortable" data-rsort="nok" data-label="Ноки">Ноки</th>
                   <th class="ctr sortable" data-rsort="kills" data-label="Килы">Килы</th>
