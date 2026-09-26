@@ -295,6 +295,40 @@
       "meeting": "0–2",
       "r1": {
         "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Chidori"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "freak"
+        ]
+      }
+    },
+    {
+      "id": "18-ih",
+      "day": 18,
+      "opp": "IH",
+      "meeting": "2вЂ“0",
+      "r1": {
+        "medic": [
           "Gadler"
         ],
         "killer": [
