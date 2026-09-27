@@ -1,0 +1,725 @@
+{
+  "matchId": "27-mutaha",
+  "map": "Mutaha AAS v1",
+  "mode": "AAS",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "45:58",
+  "winner": "GFI",
+  "sideA": {
+    "name": "GFI",
+    "tickets": 73
+  },
+  "sideB": {
+    "name": "MEI",
+    "tickets": 0
+  },
+  "note": "1-я катка тренировочного дня 27.09. Обе стороны BB. Mutaha AAS v1. Summary: top squad GFI S2, medic Radislave, supply Kroasawn. Победа=GFI 73–0.",
+  "awards": {
+    "topSquad": "Squad 2 (GFI)",
+    "topMedic": "Radislave",
+    "topSupply": "Kroasawn"
+  },
+  "details": {
+    "gfi": {
+      "start": 250,
+      "remain": 73,
+      "gained": 110,
+      "lost": 287,
+      "ticketBleed": 0,
+      "infantryDeaths": 182,
+      "fobRadios": 1,
+      "vehicleTickets": 85,
+      "fobsCreated": 2,
+      "ammo": null,
+      "construction": null
+    },
+    "mei": {
+      "start": 250,
+      "remain": 0,
+      "gained": 40,
+      "lost": 306,
+      "ticketBleed": 19,
+      "infantryDeaths": 202,
+      "fobRadios": 0,
+      "vehicleTickets": 85,
+      "fobsCreated": null,
+      "ammo": null,
+      "construction": null
+    }
+  },
+  "teamA": [
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 47,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 1710,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 93,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 3,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 117,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 17,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 458,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 293,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "firs",
+      "res": 16,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 168,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "ART",
+      "res": 2,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 10,
+      "dmg": 292,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 42,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "Zerox",
+      "res": 0,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 270,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "r4mp",
+      "res": 4,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 72,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 177,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Taipan",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 100,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 10,
+      "dmg": 90,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "nightmare-",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 115,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Azure",
+      "res": 5,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 129,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 31,
+      "kills": 20,
+      "deaths": 7,
+      "dmg": 813,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 14,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 285,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 145,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 125,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 241,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Pugovka",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 354,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "lepurple",
+      "res": 2,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 318,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Antoher152",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 178,
+      "team": "GFI",
+      "won": true,
+      "role": "FTL"
+    },
+    {
+      "nick": "RIMURU",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 48,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 338,
+      "team": "GFI",
+      "won": true,
+      "role": "FTL"
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 193,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "VET",
+      "res": 7,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 162,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 20,
+      "kills": 16,
+      "deaths": 6,
+      "dmg": 446,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "LOST",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 215,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "Chappi",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 136,
+      "team": "GFI",
+      "won": true
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 47,
+      "team": "GFI",
+      "won": true,
+      "role": "SL"
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 11,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 566,
+      "team": "GFI",
+      "won": true
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "qop",
+      "res": 2,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 60,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 260,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "NECO",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 165,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Goob",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 121,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "CORWAX",
+      "res": 8,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 37,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "daddy",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 222,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Bugor",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 161,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "hillfill",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 128,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "_ByBaJleX_",
+      "res": 7,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 134,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Lina Suetolog",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 35,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "akin0v",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 269,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 730,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 9,
+      "dmg": 370,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "KillReal",
+      "res": 5,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 8,
+      "dmg": 237,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 323,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Radislave",
+      "res": 18,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 83,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 15,
+      "dmg": 305,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Mukuru",
+      "res": 2,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 166,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 10,
+      "dmg": 902,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "KingOfLobs",
+      "res": 5,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 171,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "k1t",
+      "res": 13,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 225,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "3A BAPKA",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 133,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 2,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 343,
+      "team": "MEI",
+      "won": false,
+      "role": "SL"
+    },
+    {
+      "nick": "Muhomor",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 324,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 3,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 191,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 0,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 2,
+      "dmg": 473,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 39,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 182,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 22,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 15,
+      "kills": 15,
+      "deaths": 7,
+      "dmg": 402,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "Grechnevy",
+      "res": 5,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 87,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 15,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 346,
+      "team": "MEI",
+      "won": false
+    },
+    {
+      "nick": "VITALYA",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 138,
+      "team": "MEI",
+      "won": false
+    }
+  ]
+}

@@ -395,6 +395,24 @@
       "status": "done",
       "note": "Match 2 · PARTIAL RGF S2",
       "playersUrl": "data/training/players/26-chora-2.json"
+    },
+    {
+      "id": "27-mutaha",
+      "day": 27,
+      "timeMsk": "—",
+      "map": "Mutaha AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "45:58",
+      "factionA": "GFI",
+      "ticketsA": 73,
+      "factionB": "MEI",
+      "ticketsB": 0,
+      "winner": "GFI",
+      "status": "done",
+      "note": "Match 1",
+      "playersUrl": "data/training/players/27-mutaha.json"
     }
   ]
 }
