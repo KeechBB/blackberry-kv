@@ -413,6 +413,24 @@
       "status": "done",
       "note": "Match 1",
       "playersUrl": "data/training/players/27-mutaha.json"
+    },
+    {
+      "id": "27-fools",
+      "day": 27,
+      "timeMsk": "—",
+      "map": "Fool's Road AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "50:41",
+      "factionA": "USA",
+      "ticketsA": 0,
+      "factionB": "RGF",
+      "ticketsB": 169,
+      "winner": "RGF",
+      "status": "done",
+      "note": "Match 2",
+      "playersUrl": "data/training/players/27-fools.json"
     }
   ]
 }
