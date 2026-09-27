@@ -530,7 +530,7 @@
       "id": "27-sph",
       "day": 27,
       "opp": "SPH",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "akin0v"
@@ -546,10 +546,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Blizzardrix"
+        ],
+        "antiDeath": [
+          "S.M.P"
+        ]
       }
     }
   ],
@@ -685,7 +693,7 @@
     "Blizzardrix": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 1,
       "awards": [
         {
@@ -701,6 +709,14 @@
           "day": 18,
           "opp": "IH",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -1315,7 +1331,7 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 6,
+      "mvpMedic": 7,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 2,
@@ -1383,6 +1399,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -1397,6 +1421,22 @@
           "day": 25,
           "opp": "H1gh",
           "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "S.M.P": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -1780,7 +1820,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 5,
+      "mvpKiller": 6,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
@@ -1829,6 +1869,14 @@
           "day": 27,
           "opp": "SPH",
           "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
         }

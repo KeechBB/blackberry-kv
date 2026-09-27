@@ -1,7 +1,7 @@
 {
   "matchId": "27-sph",
   "opp": "SPH",
-  "note": "R1 only · 114:0 (мы WPMC · они ADF). Ждём R2. Сервер [SPH] Servidor de Eventos.",
+  "note": "FINAL 2–0. Сумма 180:0. R1 114:0 (мы WPMC), R2 66:0 (мы ADF). Сервер [SPH] Servidor de Eventos.",
   "r1": [
     {
       "nick": "Chidori",
@@ -212,7 +212,216 @@
       "dmg": 251
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "qop",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 48
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 138
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 119
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 55
+    },
+    {
+      "nick": "Radislave",
+      "res": 15,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 10
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 234
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 480
+    },
+    {
+      "nick": "AkiN",
+      "res": 4,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 172
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 215
+    },
+    {
+      "nick": "Zerox",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 219
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 19,
+      "kills": 17,
+      "deaths": 1,
+      "dmg": 424
+    },
+    {
+      "nick": "lepurple",
+      "res": 8,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 77
+    },
+    {
+      "nick": "akin0v",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 90
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 65
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 98
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 27
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 703
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 147
+    },
+    {
+      "nick": "FLEX",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 188
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 135
+    },
+    {
+      "nick": "VET",
+      "res": 8,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 116
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 70
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 78
+    },
+    {
+      "nick": "Diray",
+      "res": 2,
+      "nok": 18,
+      "kills": 13,
+      "deaths": 3,
+      "dmg": 356
+    },
+    {
+      "nick": "KillReal",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 96
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 342
+    }
+  ],
   "details": {
     "r1": {
       "us": "WPMC",
@@ -229,8 +438,30 @@
       "build": "3000 / 4000",
       "fobsCreated": "1 / 2"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "us": "ADF",
+      "them": "WPMC",
+      "tickets": "66:0",
+      "len": "29:44",
+      "start": 180,
+      "goals": "+20 / +10",
+      "infantry": "-81 / -123",
+      "fob": "-20 / -20",
+      "veh": "-33 / -31",
+      "bleed": "0 / -16",
+      "ammo": "6042 / 6818",
+      "build": "3000 / 5000",
+      "fobsCreated": "2 / 2"
+    },
+    "total": {
+      "tickets": "2–0 · сумма 180:0 (114:0 · 66:0)",
+      "len": "30:54 + 29:44",
+      "infantry": "-162 / -241",
+      "fob": "-20 / -60",
+      "veh": "-38 / -59",
+      "bleed": "0 / -20",
+      "fobsCreated": "3 / 4"
+    }
   },
   "mvp": {
     "r1": {
@@ -248,10 +479,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Radislave"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Blizzardrix"
+      ],
+      "antiDeath": [
+        "S.M.P"
+      ]
     }
   }
 }

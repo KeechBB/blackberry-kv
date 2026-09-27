@@ -278,9 +278,11 @@
       "server": "[SPH] Servidor de Eventos",
       "rules": "SEC League",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "114:0",
-      "note": "Main · R1 114:0 · ждём R2",
+      "r2": "66:0",
+      "note": "Main · сумма 180:0",
       "playersUrl": "data/players/27-sph.json"
     },
     {
