@@ -1,0 +1,21 @@
+{
+  "month": "2026-10",
+  "title": "BlackBerry КВ — октябрь 2026",
+  "note": "Тикеты — наши:их. Победа встречи = большая сумма тикетов за два раунда (ничьих нет). Winrate = победы / сыгранные. Клик по строке — стата игроков (когда внесена со скринов).",
+  "matches": [
+    {
+      "id": "03-imp",
+      "day": 3,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "IMP",
+      "map": "Hotdrop Goose Bay",
+      "size": "20v20",
+      "server": "ANY",
+      "rules": "HOTDROP",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · HOTDROP · NO SCOUT · NO MEETINGS"
+    }
+  ]
+}
