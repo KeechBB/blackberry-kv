@@ -268,17 +268,20 @@
       "playersUrl": "data/players/26-20r.json"
     },
     {
+      "id": "27-sph",
       "day": 27,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "SPH",
       "map": "SEC 26 Chora AAS v2",
       "size": "26v26",
-      "server": "any",
+      "server": "[SPH] Servidor de Eventos",
       "rules": "SEC League",
       "stack": "Main",
       "status": "upcoming",
-      "note": "NO SCOUT"
+      "r1": "114:0",
+      "note": "Main · R1 114:0 · ждём R2",
+      "playersUrl": "data/players/27-sph.json"
     },
     {
       "day": 29,
