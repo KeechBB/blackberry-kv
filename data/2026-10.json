@@ -32,6 +32,20 @@
       "note": "Junior · SEC · vs clan 2–0 (Main 27.09 Chora) · NO SCOUT"
     },
     {
+      "id": "03-alpha",
+      "day": 3,
+      "timeMsk": "19:00",
+      "timeUtc": "16:00",
+      "opp": "ALPHA",
+      "map": "FCL BlackCoast",
+      "size": "16v16",
+      "server": "#2 bbsquad.online | FCL ARENA",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · vs clan 2–0 (26.09 Anvil) · NO SCOUT · same day Main vs IMP 21:00"
+    },
+    {
       "id": "03-imp",
       "day": 3,
       "timeMsk": "21:00",
@@ -43,7 +57,7 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · HOTDROP · NO SCOUT · NO MEETINGS"
+      "note": "Main · HOTDROP · NO SCOUT · NO MEETINGS · same day Junior vs ALPHA 19:00"
     },
     {
       "id": "07-dcai",
