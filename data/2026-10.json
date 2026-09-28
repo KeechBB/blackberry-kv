@@ -4,6 +4,20 @@
   "note": "Тикеты — наши:их. Победа встречи = большая сумма тикетов за два раунда (ничьих нет). Winrate = победы / сыгранные. Клик по строке — стата игроков (когда внесена со скринов).",
   "matches": [
     {
+      "id": "01-gm",
+      "day": 1,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "GM",
+      "map": "SEC 26 Chora AAS v2",
+      "size": "26v26",
+      "server": "GM",
+      "rules": "SEC",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · SEC · vs clan 2–0 (Main 22.09 Goose) · NO SCOUT"
+    },
+    {
       "id": "03-imp",
       "day": 3,
       "timeMsk": "21:00",
