@@ -431,6 +431,24 @@
       "status": "done",
       "note": "Match 2",
       "playersUrl": "data/training/players/27-fools.json"
+    },
+    {
+      "id": "28-goosebay",
+      "day": 28,
+      "timeMsk": "—",
+      "map": "GooseBay Skirmish",
+      "mode": "Skirmish",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "30:37",
+      "factionA": "USA",
+      "ticketsA": 84,
+      "factionB": "RGF",
+      "ticketsB": 0,
+      "winner": "USA",
+      "status": "done",
+      "note": "Match 1 · слой на табло был HotDrop Sanxian — канон GooseBay",
+      "playersUrl": "data/training/players/28-goosebay.json"
     }
   ]
 }
