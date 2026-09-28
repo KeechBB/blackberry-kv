@@ -18,6 +18,20 @@
       "note": "Junior · SEC · vs clan 2–0 (Main 22.09 Goose) · NO SCOUT"
     },
     {
+      "id": "02-sph",
+      "day": 2,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "SPH",
+      "map": "SEC 26 Chora AAS v2",
+      "size": "26v26",
+      "server": "ANY",
+      "rules": "SEC",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · SEC · vs clan 2–0 (Main 27.09 Chora) · NO SCOUT"
+    },
+    {
       "id": "03-imp",
       "day": 3,
       "timeMsk": "21:00",
