@@ -467,6 +467,24 @@
       "status": "done",
       "note": "Match 2",
       "playersUrl": "data/training/players/28-mutaha-2.json"
+    },
+    {
+      "id": "28-mutaha-3",
+      "day": 28,
+      "timeMsk": "—",
+      "map": "SEC 26 Mutaha PAAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "35:54",
+      "factionA": "IMF",
+      "ticketsA": 0,
+      "factionB": "BAF",
+      "ticketsB": 49,
+      "winner": "BAF",
+      "status": "done",
+      "note": "Match 3",
+      "playersUrl": "data/training/players/28-mutaha-3.json"
     }
   ]
 }
