@@ -449,6 +449,24 @@
       "status": "done",
       "note": "Match 1 · слой на табло был HotDrop Sanxian — канон GooseBay",
       "playersUrl": "data/training/players/28-goosebay.json"
+    },
+    {
+      "id": "28-mutaha-2",
+      "day": 28,
+      "timeMsk": "—",
+      "map": "SEC 26 Mutaha PAAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "34:35",
+      "factionA": "IMF",
+      "ticketsA": 0,
+      "factionB": "BAF",
+      "ticketsB": 27,
+      "winner": "BAF",
+      "status": "done",
+      "note": "Match 2",
+      "playersUrl": "data/training/players/28-mutaha-2.json"
     }
   ]
 }
