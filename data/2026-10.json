@@ -16,6 +16,20 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · HOTDROP · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "07-dcai",
+      "day": 7,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "DCAI",
+      "map": "HotDrop Narva",
+      "size": "20v20",
+      "server": "Dcai",
+      "rules": "HOTDROP",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · HOTDROP · vs clan 2–0 (15.09 PAAS) · not 30.09 Mutaha"
     }
   ]
 }
