@@ -272,7 +272,18 @@ html.embed .topnav {
   font-size: 0.92rem;
 }
 
-.cw-head { margin-bottom: 16px; }
+.cw-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px 18px;
+  margin-bottom: 16px;
+}
+.cw-head-main {
+  flex: 1 1 220px;
+  min-width: 0;
+}
 .cw-title {
   margin: 0 0 12px;
   font-family: var(--font-display);
@@ -980,6 +991,79 @@ body.modal-open { overflow: hidden; }
   border-color: rgba(255, 220, 80, 0.65);
   text-shadow: 0 0 8px rgba(255, 210, 60, 0.45);
 }
+
+/* PWR rank ladder — compact strip in rating headers */
+.pwr-rank-scale {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 320px;
+  max-width: min(100%, 920px);
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid rgba(167, 139, 250, 0.32);
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, rgba(36, 28, 58, 0.92), rgba(18, 14, 30, 0.88));
+  box-shadow:
+    inset 0 1px 0 rgba(196, 181, 253, 0.1),
+    0 0 0 1px rgba(0, 0, 0, 0.25);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.pwr-rank-scale[hidden] {
+  display: none !important;
+}
+.pwr-scale-label {
+  flex: 0 0 auto;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(196, 181, 253, 0.75);
+  line-height: 1.15;
+  padding-right: 4px;
+  border-right: 1px solid rgba(167, 139, 250, 0.22);
+  margin-right: 2px;
+  white-space: nowrap;
+}
+.pwr-scale-track {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: max-content;
+  padding: 1px 0;
+}
+.pwr-scale-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+.pwr-scale-range {
+  font-size: 0.58rem;
+  color: rgba(180, 170, 210, 0.78);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.pwr-scale-arrow {
+  flex: 0 0 auto;
+  color: rgba(196, 181, 253, 0.45);
+  font-size: 0.78rem;
+  line-height: 1;
+  margin-top: 11px;
+  user-select: none;
+}
+.pwr-rank-scale .rank-badge {
+  font-size: 0.62rem;
+  padding: 1px 5px;
+  letter-spacing: 0.03em;
+}
+
 .rating-table {
   width: 100%;
   min-width: 0;

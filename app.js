@@ -213,6 +213,44 @@
     }
     return { pwr, band, label, rankKey };
   }
+
+  function pwrRankScaleHtml() {
+    const bands = TRAIN_PWR.bands;
+    const steps = bands
+      .map((b, i) => {
+        const min = b[0];
+        const max = i < bands.length - 1 ? bands[i + 1][0] - 1 : 1000;
+        const step =
+          `<span class="pwr-scale-step">` +
+          `<span class="pwr-scale-range">${min}–${max}</span>` +
+          `<span class="rank-badge rank-${b[2]}">${escapeHtml(b[1])}</span>` +
+          `</span>`;
+        const arrow =
+          i < bands.length - 1
+            ? `<span class="pwr-scale-arrow" aria-hidden="true">→</span>`
+            : "";
+        return step + arrow;
+      })
+      .join("");
+    return (
+      `<span class="pwr-scale-label">PWR<br />ranks</span>` +
+      `<div class="pwr-scale-track">${steps}</div>`
+    );
+  }
+
+  function fillPwrRankScales() {
+    const html = pwrRankScaleHtml();
+    ["cw-pwr-rank-scale", "tm-pwr-rank-scale"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.innerHTML = html;
+    });
+  }
+
+  function setPwrRankScaleVisible(id, visible) {
+    const el = document.getElementById(id);
+    if (el) el.hidden = !visible;
+  }
+
   let matchSortKey = "date";
   let matchSortDir = "desc";
   let rosterByNick = {};
@@ -464,6 +502,7 @@
     document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.cw === panel);
     });
+    setPwrRankScaleVisible("cw-pwr-rank-scale", panel === "rating");
     if (panel === "rating") loadRating();
     if (panel === "analytics") {
       ensureCwAnalyticsFilters();
@@ -483,6 +522,7 @@
     document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tm === panel);
     });
+    setPwrRankScaleVisible("tm-pwr-rank-scale", panel === "rating");
     if (panel === "matches") {
       ensureTrainingFilters();
       loadSelectedTrainingMonth();
@@ -4095,6 +4135,7 @@
       }
       tiersData = tiers;
       tierByNick = buildTierIndex(tiers);
+      fillPwrRankScales();
       fillYearMonthSelects();
       wireMatchSort();
       paintMonthChips();
@@ -4103,6 +4144,7 @@
     })
     .catch((err) => {
       document.getElementById("note").textContent = String(err.message || err);
+      fillPwrRankScales();
       applyHash();
     });
 })();

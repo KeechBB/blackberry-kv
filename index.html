@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260929-kits-misc" />
+  <link rel="stylesheet" href="styles.css?v=20260929-pwr-scale" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -45,12 +45,15 @@
 
     <section id="view-cw" class="view" hidden>
       <header class="cw-head">
-        <h1 class="cw-title">Клановые войны</h1>
-        <div class="subnav" role="tablist" aria-label="Разделы КВ">
-          <button type="button" class="subnav-btn active" data-cw="matches" role="tab">Календарь матчей</button>
-          <button type="button" class="subnav-btn" data-cw="rating" role="tab">Рейтинг игроков</button>
-          <button type="button" class="subnav-btn" data-cw="analytics" role="tab">Аналитика</button>
+        <div class="cw-head-main">
+          <h1 class="cw-title">Клановые войны</h1>
+          <div class="subnav" role="tablist" aria-label="Разделы КВ">
+            <button type="button" class="subnav-btn active" data-cw="matches" role="tab">Календарь матчей</button>
+            <button type="button" class="subnav-btn" data-cw="rating" role="tab">Рейтинг игроков</button>
+            <button type="button" class="subnav-btn" data-cw="analytics" role="tab">Аналитика</button>
+          </div>
         </div>
+        <div id="cw-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="PWR ranks"></div>
       </header>
 
       <div id="cw-matches" class="cw-panel">
@@ -127,7 +130,7 @@
           </label>
         </div>
         <section class="board">
-          <div className="board-head">
+          <div class="board-head">
             <h2>Рейтинг игроков · КВ</h2>
             <p class="board-sub">Только клановые войны · PWR / Rank · MVP из раундов</p>
           </div>
@@ -336,13 +339,16 @@
 
     <section id="view-tm" class="view" hidden>
       <header class="cw-head">
-        <h1 class="cw-title">Тренировочные матчи</h1>
-        <div class="subnav" role="tablist" aria-label="Разделы тренировок">
-          <button type="button" class="subnav-btn active" data-tm="matches" role="tab">Матчи</button>
-          <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
-          <button type="button" class="subnav-btn" data-tm="analytics" role="tab">Аналитика</button>
-          <button type="button" class="subnav-btn" data-tm="hits" role="tab">Прочая статистика</button>
+        <div class="cw-head-main">
+          <h1 class="cw-title">Тренировочные матчи</h1>
+          <div class="subnav" role="tablist" aria-label="Разделы тренировок">
+            <button type="button" class="subnav-btn active" data-tm="matches" role="tab">Матчи</button>
+            <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
+            <button type="button" class="subnav-btn" data-tm="analytics" role="tab">Аналитика</button>
+            <button type="button" class="subnav-btn" data-tm="hits" role="tab">Прочая статистика</button>
+          </div>
         </div>
+        <div id="tm-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="PWR ranks"></div>
       </header>
 
       <div id="tm-matches" class="cw-panel">
@@ -651,6 +657,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260929-kits-misc"></script>
+  <script src="app.js?v=20260929-pwr-scale"></script>
 </body>
 </html>
