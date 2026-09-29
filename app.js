@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260929-44th-final";
+    new URLSearchParams(location.search).get("v") || "20260929-train-albasrah";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
