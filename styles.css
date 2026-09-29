@@ -277,12 +277,16 @@ html.embed .topnav {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 10px 18px;
+  gap: 12px 18px;
   margin-bottom: 16px;
 }
 .cw-head-main {
   flex: 1 1 220px;
   min-width: 0;
+}
+.cw-head .pwr-rank-scale {
+  flex: 1 1 100%;
+  order: 2;
 }
 .cw-title {
   margin: 0 0 12px;
@@ -992,17 +996,19 @@ body.modal-open { overflow: hidden; }
   text-shadow: 0 0 8px rgba(255, 210, 60, 0.45);
 }
 
-/* PWR rank ladder — compact strip in rating headers */
+/* PWR rank ladder — rating header scale */
 .pwr-rank-scale {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex: 1 1 320px;
-  max-width: min(100%, 920px);
+  justify-content: center;
+  gap: 14px;
+  flex: 1 1 100%;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
-  padding: 8px 10px;
+  padding: 14px 18px;
   border: 1px solid rgba(167, 139, 250, 0.32);
-  border-radius: 12px;
+  border-radius: 14px;
   background:
     linear-gradient(135deg, rgba(36, 28, 58, 0.92), rgba(18, 14, 30, 0.88));
   box-shadow:
@@ -1018,50 +1024,63 @@ body.modal-open { overflow: hidden; }
 .pwr-scale-label {
   flex: 0 0 auto;
   font-family: var(--font-display);
-  font-size: 0.62rem;
+  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(196, 181, 253, 0.75);
-  line-height: 1.15;
-  padding-right: 4px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 0 10px 0 2px;
   border-right: 1px solid rgba(167, 139, 250, 0.22);
-  margin-right: 2px;
+  margin-right: 4px;
   white-space: nowrap;
 }
 .pwr-scale-track {
   display: flex;
-  align-items: center;
-  gap: 4px;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  flex: 1 1 auto;
+  width: 100%;
   min-width: max-content;
-  padding: 1px 0;
+  padding: 2px 0;
 }
 .pwr-scale-step {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3px;
+  justify-content: flex-end;
+  gap: 6px;
+  text-align: center;
 }
 .pwr-scale-range {
-  font-size: 0.58rem;
-  color: rgba(180, 170, 210, 0.78);
+  display: block;
+  width: 100%;
+  font-size: 0.95rem;
+  color: rgba(180, 170, 210, 0.85);
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.01em;
-  line-height: 1;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  text-align: center;
   white-space: nowrap;
 }
 .pwr-scale-arrow {
   flex: 0 0 auto;
-  color: rgba(196, 181, 253, 0.45);
-  font-size: 0.78rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.7em;
+  color: rgba(196, 181, 253, 0.5);
+  font-size: 1.25rem;
   line-height: 1;
-  margin-top: 11px;
   user-select: none;
 }
 .pwr-rank-scale .rank-badge {
-  font-size: 0.62rem;
-  padding: 1px 5px;
-  letter-spacing: 0.03em;
+  font-size: 1.05rem;
+  padding: 5px 12px;
+  letter-spacing: 0.04em;
+  border-radius: 6px;
 }
 
 .rating-table {
