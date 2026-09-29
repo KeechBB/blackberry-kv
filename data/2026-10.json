@@ -29,7 +29,21 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · vs clan 2–0 (Main 27.09 Chora) · NO SCOUT"
+      "note": "Junior · SEC · vs clan 2–0 (Main 27.09 Chora) · NO SCOUT · same slot Main vs AVG AlBasrah"
+    },
+    {
+      "id": "02-avg",
+      "day": 2,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "AVG",
+      "map": "SEC 26 AlBasrah AAS v1",
+      "size": "26v26",
+      "server": "ANY",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · vs clan Junior 0–2 (07.09 Harju+мерки) · NO SCOUT · same slot Junior vs SPH"
     },
     {
       "id": "03-alpha",
