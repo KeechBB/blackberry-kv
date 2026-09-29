@@ -503,6 +503,24 @@
       "status": "done",
       "note": "Match 1 · minor · USA 53–0",
       "playersUrl": "data/training/players/29-albasrah.json"
+    },
+    {
+      "id": "29-albasrah-2",
+      "day": 29,
+      "timeMsk": "—",
+      "map": "SEC 26 AlBasras AAS v1",
+      "mode": "OSI",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "41:37",
+      "factionA": "USA",
+      "ticketsA": 0,
+      "factionB": "MEI",
+      "ticketsB": 35,
+      "winner": "MEI",
+      "status": "done",
+      "note": "Match 2 · minor · MEI 35–0",
+      "playersUrl": "data/training/players/29-albasrah-2.json"
     }
   ]
 }
