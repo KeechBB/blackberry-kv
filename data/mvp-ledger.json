@@ -559,6 +559,32 @@
           "S.M.P"
         ]
       }
+    },
+    {
+      "id": "29-44th",
+      "day": 29,
+      "opp": "44th",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "Barsik"
+        ],
+        "damage": [
+          "Tatarin"
+        ],
+        "antiDeath": [
+          "Radislave"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
     }
   ],
   "players": {
@@ -660,7 +686,7 @@
     },
     "Barsik": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
@@ -669,6 +695,14 @@
           "day": 12,
           "opp": "HELL",
           "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
         }
@@ -1331,10 +1365,10 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 7,
+      "mvpMedic": 8,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "04-20royals",
@@ -1407,6 +1441,22 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -1573,6 +1623,22 @@
           "day": 26,
           "opp": "ALPHA",
           "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Tatarin": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
         }

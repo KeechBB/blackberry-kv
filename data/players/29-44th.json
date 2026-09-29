@@ -1,0 +1,256 @@
+{
+  "matchId": "29-44th",
+  "opp": "44th",
+  "note": "Junior R1. Камера [CAM] Shrein не внесена. R2 ещё нет.",
+  "r1": [
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 89
+    },
+    {
+      "nick": "r4mp",
+      "res": 2,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 169
+    },
+    {
+      "nick": "Hazzi",
+      "res": 5,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 107
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 593
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 5,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 41
+    },
+    {
+      "nick": "lorgon",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 100
+    },
+    {
+      "nick": "akin0v",
+      "res": 9,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 10,
+      "dmg": 229
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 24,
+      "kills": 18,
+      "deaths": 3,
+      "dmg": 490
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 298
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 222
+    },
+    {
+      "nick": "Radislave",
+      "res": 16,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 122
+    },
+    {
+      "nick": "Oguzok",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 181
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 197
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 1,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 151
+    },
+    {
+      "nick": "firs",
+      "res": 6,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 85
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 269
+    },
+    {
+      "nick": "ART",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 194
+    },
+    {
+      "nick": "Bahus",
+      "res": 9,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 70
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 202
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 54
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 172
+    },
+    {
+      "nick": "ADUN",
+      "res": 6,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 24
+    },
+    {
+      "nick": "Mighty",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 106
+    },
+    {
+      "nick": "on_hik",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 36
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 18
+    },
+    {
+      "nick": "Tankist",
+      "res": 1,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 139
+    }
+  ],
+  "r2": [],
+  "details": {
+    "r1": {
+      "us": "БВС",
+      "them": "НО",
+      "tickets": "0:94",
+      "len": "40:38",
+      "goals": "+20 / +20",
+      "infantry": "140 / 101",
+      "fob": "0 / 0",
+      "veh": "60 / 5",
+      "bleed": "0 / 0",
+      "ammo": "5500 / 16100",
+      "build": "4500 / 3000",
+      "fobsCreated": "2 / 1"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Radislave"
+      ],
+      "killer": [
+        "Barsik"
+      ],
+      "damage": [
+        "Tatarin"
+      ],
+      "antiDeath": [
+        "Radislave"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}
