@@ -1266,6 +1266,13 @@ body.modal-open { overflow: hidden; }
   height: auto;
   flex: 0 0 auto;
 }
+.hitmap-tier-svg .hitmap-zone-hit:focus {
+  outline: none;
+}
+.hitmap-tier-svg .hitmap-zone:hover .hitmap-zone-glow,
+.hitmap-tier-svg .hitmap-zone:focus-within .hitmap-zone-glow {
+  opacity: 1 !important;
+}
 .hitmap-strip-list {
   list-style: none;
   margin: 0;

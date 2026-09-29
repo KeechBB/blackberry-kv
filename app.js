@@ -2728,6 +2728,108 @@
     Bip01_R_Foot: [142, 330],
   };
 
+  const HIT_ZONE_R = {
+    Bip01_Head: 22,
+    Bip01_Neck: 12,
+    Bip01_Spine2: 20,
+    Bip01_Spine: 18,
+    Bip01_Pelvis: 18,
+    Bip01_L_Clavicle: 12,
+    Bip01_R_Clavicle: 12,
+    Bip01_L_UpperArm: 16,
+    Bip01_R_UpperArm: 16,
+    Bip01_L_Forearm: 14,
+    Bip01_R_Forearm: 14,
+    Bip01_L_Hand: 12,
+    Bip01_R_Hand: 12,
+    Bip01_L_Thigh: 16,
+    Bip01_R_Thigh: 16,
+    Bip01_L_Calf: 14,
+    Bip01_R_Calf: 14,
+    Bip01_L_Foot: 12,
+    Bip01_R_Foot: 12,
+  };
+
+  function hitZonesHtml(tier) {
+    const bones = tier.bones || {};
+    const bonePct = tier.bonePct || {};
+    return HIT_BONE_ORDER.map((bone) => {
+      const anchor = HIT_ANCHORS[bone];
+      if (!anchor) return "";
+      const [cx, cy] = anchor;
+      const r = HIT_ZONE_R[bone] || 14;
+      const label = HIT_BONE_RU[bone] || bone;
+      const n = Number(bones[bone]) || 0;
+      const pct = bonePct[bone] != null ? bonePct[bone] : null;
+      const pctText =
+        pct == null
+          ? ""
+          : Number.isInteger(pct)
+            ? `${pct}%`
+            : `${Number(pct).toFixed(1)}%`;
+      const tip =
+        n > 0 && pctText
+          ? `${label} · ${n} (${pctText})`
+          : label;
+      return `<g class="hitmap-zone" data-bone="${escapeHtml(bone)}" data-label="${escapeHtml(tip)}">
+        <circle class="hitmap-zone-glow" cx="${cx}" cy="${cy}" r="${r + 4}" fill="rgba(167,139,250,0.28)" stroke="rgba(196,181,253,0.85)" stroke-width="1.5" opacity="0" style="pointer-events:none"></circle>
+        <circle class="hitmap-zone-hit" cx="${cx}" cy="${cy}" r="${r}" fill="transparent" style="cursor:pointer">
+          <title>${escapeHtml(tip)}</title>
+        </circle>
+      </g>`;
+    }).join("");
+  }
+
+  function wireHitmapZoneHovers(root) {
+    if (!root) return;
+    root.querySelectorAll(".hitmap-tier-svg").forEach((svg) => {
+      let tipEl = svg.querySelector(".hitmap-zone-float");
+      if (!tipEl) {
+        tipEl = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        tipEl.setAttribute("class", "hitmap-zone-float");
+        tipEl.setAttribute("style", "pointer-events:none");
+        tipEl.innerHTML =
+          '<rect rx="6" fill="rgba(20,16,32,0.92)" stroke="rgba(167,139,250,0.45)" stroke-width="1"></rect>' +
+          '<text class="hitmap-zone-float-t" text-anchor="middle" fill="#f5f3ff" font-size="11" font-weight="700"></text>';
+        svg.appendChild(tipEl);
+      }
+      const rect = tipEl.querySelector("rect");
+      const text = tipEl.querySelector("text");
+      tipEl.setAttribute("opacity", "0");
+      svg.querySelectorAll(".hitmap-zone").forEach((zone) => {
+        const hit = zone.querySelector(".hitmap-zone-hit");
+        const glow = zone.querySelector(".hitmap-zone-glow");
+        if (!hit) return;
+        const show = () => {
+          const label = zone.getAttribute("data-label") || "";
+          const cx = Number(hit.getAttribute("cx"));
+          const cy = Number(hit.getAttribute("cy"));
+          const r = Number(hit.getAttribute("r")) || 14;
+          const boxW = Math.max(72, label.length * 6.5 + 16);
+          const boxX = Math.min(240 - boxW - 4, Math.max(4, cx - boxW / 2));
+          const boxY = Math.max(8, cy - r - 28);
+          rect.setAttribute("x", String(boxX));
+          rect.setAttribute("y", String(boxY));
+          rect.setAttribute("width", String(boxW));
+          rect.setAttribute("height", "22");
+          text.setAttribute("x", String(boxX + boxW / 2));
+          text.setAttribute("y", String(boxY + 15));
+          text.textContent = label;
+          tipEl.setAttribute("opacity", "1");
+          if (glow) glow.setAttribute("opacity", "1");
+        };
+        const hide = () => {
+          tipEl.setAttribute("opacity", "0");
+          if (glow) glow.setAttribute("opacity", "0");
+        };
+        hit.addEventListener("mouseenter", show);
+        hit.addEventListener("mouseleave", hide);
+        hit.addEventListener("focus", show);
+        hit.addEventListener("blur", hide);
+      });
+    });
+  }
+
   function hitDotOffsets(n) {
     if (n <= 0) return [];
     const out = [[0, 0]];
@@ -2818,11 +2920,6 @@
               <stop offset="0%" stop-color="rgba(243,230,216,0.55)"></stop>
               <stop offset="100%" stop-color="rgba(90,72,58,0.45)"></stop>
             </radialGradient>
-            <linearGradient id="helm-${uid}" x1="0%" y1="0%" x2="18%" y2="100%">
-              <stop offset="0%" stop-color="rgba(142,150,122,0.82)"></stop>
-              <stop offset="45%" stop-color="rgba(78,88,62,0.9)"></stop>
-              <stop offset="100%" stop-color="rgba(42,48,34,0.92)"></stop>
-            </linearGradient>
           </defs>
           <g fill="url(#skin-${uid})" stroke="rgba(203,183,164,0.85)" stroke-width="1.4" stroke-linejoin="round">
             <ellipse cx="120" cy="46" rx="23" ry="26"></ellipse>
@@ -2839,16 +2936,12 @@
             <ellipse cx="104" cy="332" rx="14" ry="6"></ellipse>
             <ellipse cx="136" cy="332" rx="14" ry="6"></ellipse>
           </g>
-          <g fill="url(#helm-${uid})" stroke="rgba(176,186,154,0.78)" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true">
-            <path d="M88 39 C90 15 150 15 152 39 C154.5 44.5 151 51 140 56 C131 59.5 120 60.5 120 60.5 C120 60.5 109 59.5 100 56 C89 51 85.5 44.5 88 39 Z"></path>
-            <path d="M86.5 38.5 C93 47 105 52.5 120 52.5 C135 52.5 147 47 153.5 38.5" fill="none" stroke="rgba(210,218,180,0.3)" stroke-width="1.15" stroke-linecap="round"></path>
-            <path d="M120 17.5 L120 50" fill="none" stroke="rgba(220,228,190,0.15)" stroke-width="1.2" stroke-linecap="round"></path>
-          </g>
           <g fill="none" stroke="rgba(168,144,120,0.35)" stroke-width="0.7">
             <path d="M120 88 L120 168"></path>
             <path d="M100 110 C110 118 130 118 140 110"></path>
           </g>
-          <g>${dots}</g>
+          <g style="pointer-events:none">${dots}</g>
+          <g class="hitmap-zones">${hitZonesHtml(tier)}</g>
         </svg>
         <ul class="hitmap-strip-list">${strip || '<li class="muted">Нет данных</li>'}</ul>
       </div>
@@ -2874,6 +2967,7 @@
         }
         const cards = data.tiers.map(renderTierHitmapCard).join("");
         grid.innerHTML = cards;
+        wireHitmapZoneHovers(grid);
         grid.hidden = false;
         const withPlayers = data.tiers.filter((t) => t.players > 0).length;
         note.textContent = withPlayers
