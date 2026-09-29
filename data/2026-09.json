@@ -286,6 +286,7 @@
       "playersUrl": "data/players/27-sph.json"
     },
     {
+      "id": "29-h1gh",
       "day": 29,
       "timeMsk": "20:30",
       "timeUtc": "17:30",
@@ -295,8 +296,8 @@
       "server": "any",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "NO SCOUT · 2nd vs H1gh"
+      "status": "cancel",
+      "note": "отмена · NO SCOUT · 2nd vs H1gh"
     },
     {
       "id": "29-44th",

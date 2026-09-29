@@ -4,6 +4,7 @@
     lose: "поражение",
     draw: "ничья",
     upcoming: "скоро",
+    cancel: "отмена",
   };
   const MONTH_RU = [
     "",
@@ -26,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20260928-alpha-oct3";
+    new URLSearchParams(location.search).get("v") || "20260929-h1gh-cancel";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
@@ -922,7 +923,7 @@
       case "r2":
         return m.r2 || "";
       case "status": {
-        const order = { win: 1, draw: 2, lose: 3, upcoming: 4 };
+        const order = { win: 1, draw: 2, lose: 3, upcoming: 4, cancel: 5 };
         return order[m.status || "upcoming"] || 9;
       }
       default:
@@ -995,8 +996,12 @@
     });
   }
 
+  function isPlayedStatus(st) {
+    return st === "win" || st === "lose" || st === "draw";
+  }
+
   function paintStats(list) {
-    const played = list.filter((m) => m.status !== "upcoming");
+    const played = list.filter((m) => isPlayedStatus(m.status));
     const upcoming = list.filter((m) => m.status === "upcoming");
     const wins = played.filter((m) => m.status === "win").length;
     const draws = played.filter((m) => m.status === "draw").length;

@@ -607,6 +607,7 @@ tr.win td:first-child { box-shadow: inset 3px 0 0 var(--win); }
 tr.lose td:first-child { box-shadow: inset 3px 0 0 var(--lose); }
 tr.draw td:first-child { box-shadow: inset 3px 0 0 var(--draw); }
 tr.upcoming td:first-child { box-shadow: inset 3px 0 0 var(--soon); }
+tr.cancel td:first-child { box-shadow: inset 3px 0 0 var(--muted); }
 
 .status {
   display: inline-flex;
@@ -625,6 +626,7 @@ tr.upcoming td:first-child { box-shadow: inset 3px 0 0 var(--soon); }
 .dot.lose { background: var(--lose); color: var(--lose); }
 .dot.draw { background: var(--draw); color: var(--draw); }
 .dot.upcoming { background: var(--soon); color: var(--soon); }
+.dot.cancel { background: var(--muted); color: var(--muted); }
 
 .note {
   margin: 18px 4px 0;
