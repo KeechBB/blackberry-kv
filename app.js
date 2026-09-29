@@ -30,6 +30,25 @@
     new URLSearchParams(location.search).get("v") || "20260929-h1gh-cancel";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
+  const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
+  const KIT_SLICE_COLORS = [
+    "#a78bfa",
+    "#60a5fa",
+    "#34d399",
+    "#fbbf24",
+    "#f97316",
+    "#f472b6",
+    "#22d3ee",
+    "#c084fc",
+    "#4ade80",
+    "#fb7185",
+    "#38bdf8",
+    "#eab308",
+    "#a3e635",
+    "#e879f9",
+    "#2dd4bf",
+    "#94a3b8",
+  ];
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
     WPMC: "ЧВК СТАРОЕ",
@@ -478,6 +497,7 @@
     }
     if (panel === "hits") {
       loadTrainingHitmaps();
+      loadTrainingKits();
     }
   }
 
@@ -2814,6 +2834,146 @@
       })
       .catch((err) => {
         note.textContent = `Не удалось загрузить: ${err.message || err}`;
+        grid.hidden = true;
+      });
+  }
+
+  function kitDonutPaths(rows) {
+    if (!rows || !rows.length) return [];
+    const cx = 60;
+    const cy = 60;
+    const rOuter = 52;
+    const rInner = 30;
+    const total = rows.reduce((s, r) => s + (Number(r.pct) || 0), 0) || 100;
+    let angle = -Math.PI / 2;
+    const gap = 0.035;
+    const out = [];
+    rows.forEach((row, i) => {
+      const pct = Number(row.pct) || 0;
+      const sweep = (pct / total) * (Math.PI * 2 - gap * rows.length);
+      const a0 = angle;
+      const a1 = angle + sweep;
+      angle = a1 + gap;
+      const x0o = cx + rOuter * Math.cos(a0);
+      const y0o = cy + rOuter * Math.sin(a0);
+      const x1o = cx + rOuter * Math.cos(a1);
+      const y1o = cy + rOuter * Math.sin(a1);
+      const x0i = cx + rInner * Math.cos(a1);
+      const y0i = cy + rInner * Math.sin(a1);
+      const x1i = cx + rInner * Math.cos(a0);
+      const y1i = cy + rInner * Math.sin(a0);
+      const large = sweep > Math.PI ? 1 : 0;
+      const d = [
+        `M ${x0o} ${y0o}`,
+        `A ${rOuter} ${rOuter} 0 ${large} 1 ${x1o} ${y1o}`,
+        `L ${x0i} ${y0i}`,
+        `A ${rInner} ${rInner} 0 ${large} 0 ${x1i} ${y1i}`,
+        "Z",
+      ].join(" ");
+      out.push({
+        d,
+        color: KIT_SLICE_COLORS[i % KIT_SLICE_COLORS.length],
+        kit: row.kit,
+        pct,
+      });
+    });
+    return out;
+  }
+
+  function renderTierKitCard(tier) {
+    const kits = Array.isArray(tier.kits) ? tier.kits : [];
+    if (!kits.length) {
+      return `<article class="kit-tier-card">
+        <header class="kit-tier-head">
+          <h3>${escapeHtml(tier.label || `Тир ${tier.tier}`)}</h3>
+          <p class="muted">${tier.players || 0} игр.</p>
+        </header>
+        <p class="muted kit-empty">Нет данных</p>
+      </article>`;
+    }
+    const top = kits[0];
+    const slices = kitDonutPaths(kits)
+      .map(
+        (s) =>
+          `<path d="${s.d}" fill="${s.color}"><title>${escapeHtml(
+            s.kit
+          )}: ${s.pct}%</title></path>`
+      )
+      .join("");
+    const legend = kits
+      .map((row, i) => {
+        const pctText = Number.isInteger(row.pct)
+          ? `${row.pct}%`
+          : `${Number(row.pct).toFixed(1)}%`;
+        return `<li>
+          <span class="kit-swatch" style="background:${
+            KIT_SLICE_COLORS[i % KIT_SLICE_COLORS.length]
+          }"></span>
+          <span class="kit-name">${escapeHtml(row.kit)}</span>
+          <span class="kit-pct">${escapeHtml(pctText)}</span>
+        </li>`;
+      })
+      .join("");
+    const topPct = Number.isInteger(top.pct)
+      ? `${top.pct}%`
+      : `${Number(top.pct).toFixed(1)}%`;
+    const topLabel =
+      String(top.kit).length > 14
+        ? `${String(top.kit).slice(0, 13)}…`
+        : top.kit;
+    return `<article class="kit-tier-card">
+      <header class="kit-tier-head">
+        <h3>${escapeHtml(tier.label || `Тир ${tier.tier}`)}</h3>
+        <p class="muted">${tier.players || 0} игр.</p>
+      </header>
+      <div class="kit-tier-body">
+        <svg class="kit-tier-donut" viewBox="0 0 120 120" role="img" aria-label="${escapeHtml(
+          tier.label || ""
+        )}">
+          ${slices}
+          <circle cx="60" cy="60" r="26" fill="rgba(12,10,22,0.92)"></circle>
+          <text x="60" y="56" text-anchor="middle" fill="#f5f3ff" font-size="11" font-weight="700">${escapeHtml(
+            topPct
+          )}</text>
+          <text x="60" y="72" text-anchor="middle" fill="rgba(196,181,253,0.9)" font-size="6.5">${escapeHtml(
+            topLabel
+          )}</text>
+        </svg>
+        <ul class="kit-tier-legend">${legend}</ul>
+      </div>
+    </article>`;
+  }
+
+  function loadTrainingKits() {
+    const note = document.getElementById("train-kits-note");
+    const grid = document.getElementById("train-kits-grid");
+    if (!note || !grid) return;
+    note.hidden = false;
+    note.textContent = "Загружаем диаграммы ролей…";
+    grid.hidden = true;
+    grid.innerHTML = "";
+    fetch(KIT_TIERS_URL, { cache: "no-store" })
+      .then((r) => {
+        if (!r.ok) throw new Error(`API ${r.status}`);
+        return r.json();
+      })
+      .then((data) => {
+        if (!data || !data.ok || !Array.isArray(data.tiers)) {
+          throw new Error(data && data.error ? data.error : "Пустой ответ");
+        }
+        grid.innerHTML = data.tiers.map(renderTierKitCard).join("");
+        grid.hidden = false;
+        const withPlayers = data.tiers.filter((t) => t.players > 0).length;
+        note.textContent = withPlayers
+          ? `Средний % китов · равный вес игрока внутри тира · обновлено ${
+              data.updatedAt
+                ? new Date(data.updatedAt).toLocaleString("ru-RU")
+                : "—"
+            }`
+          : "Пока нет ролей у зареганных — поиграйте стандартными китами на TR1.";
+      })
+      .catch((err) => {
+        note.textContent = `Не удалось загрузить роли: ${err.message || err}`;
         grid.hidden = true;
       });
   }

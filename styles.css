@@ -1157,8 +1157,8 @@ body.modal-open { overflow: hidden; }
   margin-top: 8px;
 }
 .hitmap-tier-svg {
-  width: 46%;
-  max-width: 140px;
+  width: 58%;
+  max-width: 200px;
   height: auto;
   flex: 0 0 auto;
 }
@@ -1168,8 +1168,8 @@ body.modal-open { overflow: hidden; }
   padding: 0;
   flex: 1 1 auto;
   min-width: 0;
-  max-height: 280px;
-  overflow: auto;
+  max-height: none;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -1208,6 +1208,89 @@ body.modal-open { overflow: hidden; }
 }
 @media (max-width: 640px) {
   .hitmap-tier-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ——— kit tiers (TM «Прочая статистика») ——— */
+.kit-tier-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 12px;
+}
+.kit-tier-card {
+  border: 1px solid rgba(167, 139, 250, 0.18);
+  border-radius: 14px;
+  background: rgba(12, 10, 22, 0.45);
+  padding: 12px 12px 10px;
+  min-width: 0;
+}
+.kit-tier-head h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.kit-tier-head .muted {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+}
+.kit-tier-body {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 8px;
+}
+.kit-tier-donut {
+  width: 108px;
+  height: 108px;
+  flex: 0 0 auto;
+}
+.kit-tier-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.kit-tier-legend li {
+  display: grid;
+  grid-template-columns: 8px minmax(0, 1fr) auto;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+.kit-swatch {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+.kit-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--muted);
+}
+.kit-pct {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: #e9e4ff;
+}
+.kit-empty {
+  margin: 8px 0 0;
+  font-size: 0.82rem;
+}
+@media (max-width: 1100px) {
+  .kit-tier-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .kit-tier-grid {
     grid-template-columns: 1fr;
   }
 }

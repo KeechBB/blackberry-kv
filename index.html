@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260929-hitmap-tiers" />
+  <link rel="stylesheet" href="styles.css?v=20260929-kits-misc" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -341,7 +341,7 @@
           <button type="button" class="subnav-btn active" data-tm="matches" role="tab">Матчи</button>
           <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
           <button type="button" class="subnav-btn" data-tm="analytics" role="tab">Аналитика</button>
-          <button type="button" class="subnav-btn" data-tm="hits" role="tab">Статистика попаданий</button>
+          <button type="button" class="subnav-btn" data-tm="hits" role="tab">Прочая статистика</button>
         </div>
       </header>
 
@@ -616,13 +616,17 @@
       <div id="tm-hits" class="cw-panel" hidden>
         <section class="board">
           <div class="board-head">
-            <h2>Статистика попаданий · по тирам</h2>
+            <h2>Прочая статистика · по тирам</h2>
             <p class="board-sub">
-              Средний профиль попаданий зареганных игроков каждого тира (данные TR1 / BBHitZone)
+              Попадания (BBHitZone) и роли (DeployRole) — средние по зареганным игрокам каждого тира, TR1
             </p>
           </div>
+          <h3 class="ta-subh">Попадания</h3>
           <p class="note" id="train-hits-note">Загружаем карты попаданий…</p>
           <div class="hitmap-tier-grid" id="train-hits-grid" hidden></div>
+          <h3 class="ta-subh">Роли / киты</h3>
+          <p class="note" id="train-kits-note">Загружаем диаграммы ролей…</p>
+          <div class="kit-tier-grid" id="train-kits-grid" hidden></div>
         </section>
       </div>
     </section>
@@ -647,6 +651,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260929-hitmap-orange"></script>
+  <script src="app.js?v=20260929-kits-misc"></script>
 </body>
 </html>
