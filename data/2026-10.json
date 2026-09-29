@@ -86,6 +86,20 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · HOTDROP · vs clan 2–0 (15.09 PAAS) · not 30.09 Mutaha"
+    },
+    {
+      "id": "11-solid",
+      "day": 11,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": ".solid",
+      "map": "SEC 26 Mutaha AAS v1",
+      "size": "26v26",
+      "server": ".solid",
+      "rules": "SEC",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · SEC · NO SCOUT · NO MEETINGS · лого соперника нет"
     }
   ]
 }
