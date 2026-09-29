@@ -958,6 +958,7 @@ body.modal-open { overflow: hidden; }
   background: rgba(64, 150, 210, 0.3);
   border-color: rgba(93, 173, 226, 0.55);
 }
+.rank-legend,
 .rank-ascendant {
   color: #9dffc0;
   background: rgba(30, 150, 100, 0.3);
