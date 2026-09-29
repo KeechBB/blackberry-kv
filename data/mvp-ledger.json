@@ -564,7 +564,7 @@
       "id": "29-44th",
       "day": 29,
       "opp": "44th",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "Radislave"
@@ -580,10 +580,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "Oguzok"
+        ],
+        "damage": [
+          "spartan"
+        ],
+        "antiDeath": [
+          "akin0v"
+        ]
       }
     }
   ],
@@ -1085,7 +1093,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 6,
+      "mvpMedic": 7,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 0,
@@ -1145,6 +1153,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -1326,6 +1342,22 @@
           "matchId": "13-two",
           "day": 13,
           "opp": "TWO",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Oguzok": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
@@ -1784,7 +1816,7 @@
       "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "27-sph",
@@ -1793,6 +1825,14 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -2009,6 +2049,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "spartan": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },

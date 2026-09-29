@@ -310,9 +310,11 @@
       "server": "44th Match Server",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "lose",
+      "meeting": "0–2",
       "r1": "0:94",
-      "note": "Junior · R1 0:94 · ждём R2",
+      "r2": "0:147",
+      "note": "Junior · сумма 0:241",
       "playersUrl": "data/players/29-44th.json"
     },
     {

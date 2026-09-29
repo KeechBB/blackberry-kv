@@ -1,7 +1,7 @@
 {
   "matchId": "29-44th",
   "opp": "44th",
-  "note": "Junior R1. Камера [CAM] Shrein не внесена. R2 ещё нет.",
+  "note": "Junior 0–2 · сумма 0:241 (R1 0:94 · R2 0:147). Камера [CAM] Shrein не внесена.",
   "r1": [
     {
       "nick": "KTO--TO",
@@ -212,7 +212,208 @@
       "dmg": 139
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "akin0v",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 78
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 172
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 214
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 7,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 112
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 151
+    },
+    {
+      "nick": "Radislave",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 39
+    },
+    {
+      "nick": "CORWAX",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 163
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 29
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 207
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 197
+    },
+    {
+      "nick": "Forks",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 20
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 60
+    },
+    {
+      "nick": "lorgon",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 96
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 61
+    },
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 157
+    },
+    {
+      "nick": "on_hik",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 48
+    },
+    {
+      "nick": "ADUN",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 21
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 172
+    },
+    {
+      "nick": "ART",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 98
+    },
+    {
+      "nick": "firs",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 38
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 59
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 229
+    },
+    {
+      "nick": "Bahus",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 23
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 11
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 189
+    }
+  ],
   "details": {
     "r1": {
       "us": "БВС",
@@ -228,8 +429,23 @@
       "build": "4500 / 3000",
       "fobsCreated": "2 / 1"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "us": "НО",
+      "them": "БВС",
+      "tickets": "0:147",
+      "len": "31:18",
+      "goals": "+20 / +45",
+      "infantry": "111 / 63",
+      "fob": "20 / 0",
+      "veh": "62 / 15",
+      "bleed": "0 / 0",
+      "ammo": "3000 / 14810",
+      "build": "3000 / 3400",
+      "fobsCreated": "2 / 1"
+    },
+    "total": {
+      "tickets": "0–2 · сумма 0:241 (0:94 · 0:147)"
+    }
   },
   "mvp": {
     "r1": {
@@ -247,10 +463,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "Oguzok"
+      ],
+      "damage": [
+        "spartan"
+      ],
+      "antiDeath": [
+        "akin0v"
+      ]
     }
   }
 }
