@@ -2679,10 +2679,35 @@
     return out;
   }
 
+  function isHitLimbBone(bone) {
+    return (
+      bone.includes("UpperArm") ||
+      bone.includes("Forearm") ||
+      bone.includes("Hand") ||
+      bone.includes("Thigh") ||
+      bone.includes("Calf") ||
+      bone.includes("Foot")
+    );
+  }
+
+  function hitDotsForShare(n, minN, maxN) {
+    if (n <= 0) return 0;
+    if (maxN <= minN) return 15;
+    const t = (n - minN) / (maxN - minN);
+    return Math.max(1, Math.min(15, Math.round(1 + t * 14)));
+  }
+
   function renderTierHitmapCard(tier) {
     const bones = tier.bones || {};
     const bonePct = tier.bonePct || {};
-    const strip = HIT_BONE_ORDER.filter((b) => (bonePct[b] || bones[b] || 0) > 0)
+    const stripBones = HIT_BONE_ORDER.filter(
+      (b) => (bonePct[b] || bones[b] || 0) > 0
+    ).sort((a, b) => {
+      const pa = bonePct[a] != null ? bonePct[a] : 0;
+      const pb = bonePct[b] != null ? bonePct[b] : 0;
+      return pb - pa || String(HIT_BONE_RU[a] || a).localeCompare(HIT_BONE_RU[b] || b, "ru");
+    });
+    const strip = stripBones
       .map((b) => {
         const pct = bonePct[b] != null ? bonePct[b] : 0;
         const pctText = Number.isInteger(pct) ? `${pct}%` : `${pct.toFixed(1)}%`;
@@ -2694,14 +2719,29 @@
       })
       .join("");
 
+    const entries = Object.entries(bones).filter(
+      ([bone, n]) => HIT_ANCHORS[bone] && n > 0
+    );
+    let minH = Infinity;
+    let maxH = 0;
+    entries.forEach(([, n]) => {
+      const v = Number(n) || 0;
+      if (v < minH) minH = v;
+      if (v > maxH) maxH = v;
+    });
+    if (!Number.isFinite(minH)) minH = 0;
+
     let dots = "";
-    Object.entries(bones).forEach(([bone, n]) => {
+    entries.forEach(([bone, n]) => {
       const anchor = HIT_ANCHORS[bone];
-      if (!anchor || !n) return;
       const [cx, cy] = anchor;
-      const show = Math.min(Number(n) || 0, 12);
-      hitDotOffsets(show).forEach(([dx, dy], i) => {
-        dots += `<circle cx="${cx + dx}" cy="${cy + dy}" r="3.2" fill="#e11d48" stroke="rgba(255,241,242,0.7)" stroke-width="0.7"></circle>`;
+      const show = hitDotsForShare(Number(n) || 0, minH, maxH);
+      const fill = isHitLimbBone(bone) ? "#f97316" : "#e11d48";
+      const stroke = isHitLimbBone(bone)
+        ? "rgba(255,237,213,0.95)"
+        : "rgba(255,241,242,0.7)";
+      hitDotOffsets(show).forEach(([dx, dy]) => {
+        dots += `<circle cx="${cx + dx}" cy="${cy + dy}" r="3.2" fill="${fill}" stroke="${stroke}" stroke-width="0.7"></circle>`;
       });
     });
 
