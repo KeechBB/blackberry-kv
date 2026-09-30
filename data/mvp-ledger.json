@@ -627,6 +627,32 @@
           "CAT"
         ]
       }
+    },
+    {
+      "id": "30-ih",
+      "day": 30,
+      "opp": "IH",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "freak"
+        ],
+        "killer": [
+          "Bahus"
+        ],
+        "damage": [
+          "Bahus"
+        ],
+        "antiDeath": [
+          "Koperor"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
     }
   ],
   "players": {
@@ -723,6 +749,30 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Bahus": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -1163,6 +1213,22 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Koperor": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -2015,7 +2081,7 @@
       ]
     },
     "freak": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -2035,6 +2101,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },

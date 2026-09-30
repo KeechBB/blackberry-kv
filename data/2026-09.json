@@ -341,13 +341,15 @@
       "timeMsk": "21:00",
       "timeUtc": "18:00",
       "opp": "IH",
-      "map": "Hotdrop Goose Bay",
+      "map": "HotDrop Sanxian",
       "size": "20v20",
-      "server": "ANY",
+      "server": "Blackberry Training #1",
       "rules": "HOTDROP",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · HOTDROP · vs clan 2–0 (18.09 Main)"
+      "r1": "0:195",
+      "note": "Junior R1 0:195 · Sanxian · R2 ещё нет",
+      "playersUrl": "data/players/30-ih.json"
     }
   ]
 }

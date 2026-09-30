@@ -1,0 +1,213 @@
+{
+  "matchId": "30-ih",
+  "opp": "IH",
+  "note": "Junior R1 0:195 (мы USA · они СВ РФ). HotDrop Sanxian · 17:24 · TR1. Тяжёлое поражение. Awards: medic freak (supply/squad у IH). R2 ещё нет.",
+  "r1": [
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 69
+    },
+    {
+      "nick": "Hazzi",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 9
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 25
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 35
+    },
+    {
+      "nick": "Bahus",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 76
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 56
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 44
+    },
+    {
+      "nick": "Oguzok",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 38
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 13
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 43
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 26
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 19
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 22
+    },
+    {
+      "nick": "ADUN",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 20
+    },
+    {
+      "nick": "Varyag",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 28
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 15
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 29
+    },
+    {
+      "nick": "freak",
+      "res": 6,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 31
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 58
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 46
+    }
+  ],
+  "r2": [],
+  "details": {
+    "r1": {
+      "tickets": "0:195",
+      "len": "17:24",
+      "goals": "+0 / +30",
+      "infantry": "90:30",
+      "fob": "1:0",
+      "veh": "2:1",
+      "bleed": "82:0",
+      "ammo": "2485:14400",
+      "build": "3300:3000",
+      "fobsCreated": "2:2"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "awards": {
+    "r1": {
+      "topSquad": "Squad 3 MAVI (IH)",
+      "topMedic": "freak",
+      "topSupply": "IH Batu"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "freak"
+      ],
+      "killer": [
+        "Bahus"
+      ],
+      "damage": [
+        "Bahus"
+      ],
+      "antiDeath": [
+        "Koperor"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}
