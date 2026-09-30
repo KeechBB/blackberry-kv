@@ -1,0 +1,261 @@
+{
+  "matchId": "30-dcai",
+  "opp": "DCAI",
+  "note": "Main R1 111:0 (мы IMF · они BAF). Mutaha PAAS v1 · 32:15 · сервер DCAI. Awards: Squad 2, medic Kroasawn, supply Radislave. R2 ещё нет.",
+  "r1": [
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 148
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 118
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 12,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 114
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 401
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 138
+    },
+    {
+      "nick": "Treppen",
+      "res": 2,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 125
+    },
+    {
+      "nick": "Pymba",
+      "res": 2,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 318
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 1,
+      "dmg": 312
+    },
+    {
+      "nick": "KillReal",
+      "res": 10,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 34
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 0,
+      "dmg": 704
+    },
+    {
+      "nick": "akin0v",
+      "res": 9,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 74
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 152
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 278
+    },
+    {
+      "nick": "lepurple",
+      "res": 9,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 130
+    },
+    {
+      "nick": "vasserman",
+      "res": 2,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 94
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 196
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 232
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 192
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 92
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 86
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 91
+    },
+    {
+      "nick": "Radislave",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 19
+    },
+    {
+      "nick": "JESTER",
+      "res": 2,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 843
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 541
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 25
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 17,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 678
+    }
+  ],
+  "r2": [],
+  "details": {
+    "r1": {
+      "tickets": "111:0",
+      "len": "32:15",
+      "goals": "+30 / +10",
+      "infantry": "81:120",
+      "fob": "0:2",
+      "veh": "4:8",
+      "bleed": "0:12",
+      "ammo": "12500:4622",
+      "build": "4500:4300",
+      "fobsCreated": "2:2"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "awards": {
+    "r1": {
+      "topSquad": "Squad 2",
+      "topMedic": "Kroasawn",
+      "topSupply": "Radislave"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "Tankist"
+      ],
+      "damage": [
+        "JESTER"
+      ],
+      "antiDeath": [
+        "Keech"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

@@ -593,6 +593,32 @@
           "akin0v"
         ]
       }
+    },
+    {
+      "id": "30-dcai",
+      "day": 30,
+      "opp": "DCAI",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "JESTER"
+        ],
+        "antiDeath": [
+          "Keech"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
     }
   ],
   "players": {
@@ -972,6 +998,22 @@
         }
       ]
     },
+    "JESTER": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Jimmy Neutron": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1008,7 +1050,7 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 2,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "13-two",
@@ -1039,6 +1081,14 @@
           "day": 25,
           "opp": "H1gh",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -1093,7 +1143,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 7,
+      "mvpMedic": 8,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 0,
@@ -1159,6 +1209,14 @@
           "day": 29,
           "opp": "44th",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -1550,7 +1608,7 @@
     },
     "Tankist": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
+      "mvpKiller": 3,
       "mvpDamage": 10,
       "antiDeath": 1,
       "awards": [
@@ -1657,6 +1715,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },

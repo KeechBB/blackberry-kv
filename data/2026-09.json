@@ -323,13 +323,15 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "DCAI",
-      "map": "SEC 26 Mutaha AAS v1",
+      "map": "SEC 26 Mutaha PAAS v1",
       "size": "26v26",
       "server": "Dcai",
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "3rd vs DCAI · not 15.09 PAAS"
+      "r1": "111:0",
+      "note": "R1 111:0 · PAAS · R2 ещё нет",
+      "playersUrl": "data/players/30-dcai.json"
     },
     {
       "id": "30-ih",
