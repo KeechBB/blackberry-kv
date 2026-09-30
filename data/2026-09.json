@@ -346,9 +346,11 @@
       "server": "Blackberry Training #1",
       "rules": "HOTDROP",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "lose",
+      "meeting": "0–2",
       "r1": "0:195",
-      "note": "Junior R1 0:195 · Sanxian · R2 ещё нет",
+      "r2": "0:224",
+      "note": "сумма 0:419 · Junior · Sanxian",
       "playersUrl": "data/players/30-ih.json"
     }
   ]

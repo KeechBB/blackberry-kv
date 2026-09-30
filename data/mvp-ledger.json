@@ -632,7 +632,7 @@
       "id": "30-ih",
       "day": 30,
       "opp": "IH",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "freak"
@@ -648,16 +648,24 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "ADUN"
+        ],
+        "killer": [
+          "Trixx"
+        ],
+        "damage": [
+          "Koperor"
+        ],
+        "antiDeath": [
+          "VET"
+        ]
       }
     }
   ],
   "players": {
     "ADUN": {
-      "mvpMedic": 3,
+      "mvpMedic": 4,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -693,6 +701,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -1219,7 +1235,7 @@
     "Koperor": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
         {
@@ -1229,6 +1245,14 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -1874,7 +1898,7 @@
     },
     "Trixx": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
@@ -1901,6 +1925,30 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "VET": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
