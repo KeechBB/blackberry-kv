@@ -85,7 +85,21 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · NO SCOUT · NO MEETINGS"
+      "note": "Junior · SEC · NO SCOUT · NO MEETINGS · same slot Main vs 20R v1"
+    },
+    {
+      "id": "04-20r",
+      "day": 4,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "20Royals",
+      "map": "SEC 26 Chora AAS v1",
+      "size": "26v26",
+      "server": "20R",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · vs clan 2–0 (26.09 Goose) · same slot Junior vs Fury v2"
     },
     {
       "id": "07-dcai",
