@@ -328,9 +328,11 @@
       "server": "Dcai",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "111:0",
-      "note": "R1 111:0 · PAAS · R2 ещё нет",
+      "r2": "185:0",
+      "note": "сумма 296:0 · PAAS · 3rd vs DCAI",
       "playersUrl": "data/players/30-dcai.json"
     },
     {

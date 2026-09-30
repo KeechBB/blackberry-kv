@@ -598,7 +598,7 @@
       "id": "30-dcai",
       "day": 30,
       "opp": "DCAI",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Kroasawn"
@@ -614,10 +614,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "akin0v"
+        ],
+        "killer": [
+          "Mukuru"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "CAT"
+        ]
       }
     }
   ],
@@ -787,6 +795,22 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "CAT": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -1376,7 +1400,7 @@
     },
     "Mukuru": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
@@ -1387,6 +1411,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -1609,7 +1641,7 @@
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 3,
-      "mvpDamage": 10,
+      "mvpDamage": 11,
       "antiDeath": 1,
       "awards": [
         {
@@ -1723,6 +1755,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -1879,7 +1919,7 @@
       ]
     },
     "akin0v": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -1899,6 +1939,14 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
