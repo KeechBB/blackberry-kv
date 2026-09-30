@@ -1058,7 +1058,8 @@ body.modal-open { overflow: hidden; }
   display: block;
   width: 100%;
   font-size: 0.95rem;
-  color: rgba(180, 170, 210, 0.85);
+  font-weight: 700;
+  color: #ffffff;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
   line-height: 1.1;
