@@ -539,6 +539,24 @@
       "status": "done",
       "note": "Match 1 · minor · RGF 56–0",
       "playersUrl": "data/training/players/30-mutaha.json"
+    },
+    {
+      "id": "30-narva",
+      "day": 30,
+      "timeMsk": "—",
+      "map": "Narva AAS v2",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "42:32",
+      "factionA": "USA",
+      "ticketsA": 125,
+      "factionB": "RGF",
+      "ticketsB": 0,
+      "winner": "USA",
+      "status": "done",
+      "note": "Match 2 · minor · USA 125–0",
+      "playersUrl": "data/training/players/30-narva.json"
     }
   ]
 }
