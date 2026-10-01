@@ -53,7 +53,7 @@
             <button type="button" class="subnav-btn" data-cw="analytics" role="tab">Аналитика</button>
           </div>
         </div>
-        <div id="cw-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="PWR ranks"></div>
+        <div id="cw-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="RP ranks"></div>
       </header>
 
       <div id="cw-matches" class="cw-panel">
@@ -132,7 +132,7 @@
         <section class="board">
           <div class="board-head">
             <h2>Рейтинг игроков · КВ</h2>
-            <p class="board-sub">Только клановые войны · PWR / Rank · MVP из раундов</p>
+            <p class="board-sub">Только клановые войны · без RP (пока) · MVP из раундов</p>
           </div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
@@ -142,9 +142,7 @@
             <table class="rating-table" id="cw-rating-table">
               <thead>
                 <tr>
-                  <th class="ctr" data-label="Место" title="Место в общем рейтинге по PWR (не меняется от поиска)">Место</th>
-                  <th class="ctr sortable col-rank" data-rsort="pwr" data-label="Rank" title="Ранг по PWR (Iron→Radiant). Тир состава ×1.1–1.4; KD&lt;1 → ×0.9">Rank</th>
-                  <th class="ctr sortable col-pwr" data-rsort="pwr" data-label="PWR" title="Композитный скор 0–1000: вклад за катку (медик/стрелок), выживаемость, % побед; ×тир; KD&lt;1 штраф">PWR</th>
+                  <th class="ctr" data-label="Место" title="Место по числу каток КВ">Место</th>
                   <th class="sortable" data-rsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-rsort="clan" data-label="Клан">Клан</th>
                   <th class="ctr sortable" data-rsort="tier" data-label="Тир">Тир</th>
@@ -348,7 +346,7 @@
             <button type="button" class="subnav-btn" data-tm="hits" role="tab">Прочая статистика</button>
           </div>
         </div>
-        <div id="tm-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="PWR ranks"></div>
+        <div id="tm-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="RP ranks"></div>
       </header>
 
       <div id="tm-matches" class="cw-panel">
@@ -424,7 +422,7 @@
         <section class="board">
           <div class="board-head">
             <h2>Рейтинг игроков · тренировки</h2>
-            <p class="board-sub">Только тренировочные матчи · MVP только здесь · не в профиле КВ</p>
+            <p class="board-sub">Только тренировочные матчи · RP (Respect Points) · MVP только здесь</p>
           </div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
@@ -434,9 +432,9 @@
             <table class="rating-table" id="train-rating-table">
               <thead>
                 <tr>
-                  <th class="ctr" data-label="Место" title="Место в общем рейтинге по PWR (не меняется от поиска)">Место</th>
-                  <th class="ctr sortable col-rank" data-trsort="pwr" data-label="Rank" title="Ранг по PWR (Iron→Radiant). Тир состава ×1.1–1.4; KD&lt;1 → ×0.9">Rank</th>
-                  <th class="ctr sortable col-pwr" data-trsort="pwr" data-label="PWR" title="Композитный скор 0–1000: вклад за катку (медик/стрелок), выживаемость, % побед; ×тир; KD&lt;1 штраф; без MVP">PWR</th>
+                  <th class="ctr" data-label="Место" title="Место в общем рейтинге по RP (не меняется от поиска)">Место</th>
+                  <th class="ctr sortable col-rank" data-trsort="rp" data-label="Rank" title="Ранг по RP: Iron I→Radiant III (шаг 150), затем Predator">Rank</th>
+                  <th class="ctr sortable col-pwr" data-trsort="rp" data-label="RP" title="Respect Points: Die()/give-up, старт 1000; скрытый PWR — вес формулы">RP</th>
                   <th class="sortable" data-trsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
                   <th class="ctr sortable" data-trsort="tier" data-label="Тир">Тир</th>
@@ -573,7 +571,7 @@
           <section class="board ta-card ta-card-wide">
             <div class="board-head">
               <h2>Топ игроков периода</h2>
-              <p class="board-sub">PWR / Rank, катки, килы, KD, боевой счёт и % побед</p>
+              <p class="board-sub">RP / Rank, катки, килы, KD, боевой счёт и % побед</p>
             </div>
             <div class="ta-tops" id="train-an-tops"></div>
           </section>

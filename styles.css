@@ -934,7 +934,8 @@ body.modal-open { overflow: hidden; }
 }
 .rank-badge {
   display: inline-block;
-  padding: 2px 8px;
+  padding: 3px 14px;
+  min-width: 6.2rem;
   border-radius: 4px;
   font-weight: 700;
   font-size: 0.78rem;
@@ -942,6 +943,11 @@ body.modal-open { overflow: hidden; }
   text-transform: uppercase;
   line-height: 1.35;
   border: 1px solid transparent;
+  text-align: center;
+}
+.rank-badge-wide {
+  min-width: 7.4rem;
+  padding: 4px 16px;
 }
 .rank-iron {
   color: #c5c6c8;
@@ -995,6 +1001,19 @@ body.modal-open { overflow: hidden; }
   border-color: rgba(255, 220, 80, 0.65);
   text-shadow: 0 0 8px rgba(255, 210, 60, 0.45);
 }
+.rank-predator {
+  color: #ffd4a8;
+  background: linear-gradient(135deg, rgba(180, 40, 20, 0.45), rgba(80, 10, 10, 0.4));
+  border-color: rgba(255, 120, 60, 0.7);
+  text-shadow: 0 0 10px rgba(255, 80, 40, 0.5);
+}
+.rank-predator small {
+  display: inline-block;
+  margin-top: 1px;
+  font-size: 0.72em;
+  letter-spacing: 0.06em;
+  opacity: 0.9;
+}
 
 /* PWR rank ladder — rating header scale */
 .pwr-rank-scale {
@@ -1043,7 +1062,8 @@ body.modal-open { overflow: hidden; }
   gap: 10px;
   flex: 1 1 auto;
   width: 100%;
-  min-width: max-content;
+  flex-wrap: wrap;
+  row-gap: 8px;
   padding: 2px 0;
 }
 .pwr-scale-step {
@@ -1078,10 +1098,11 @@ body.modal-open { overflow: hidden; }
   user-select: none;
 }
 .pwr-rank-scale .rank-badge {
-  font-size: 1.05rem;
-  padding: 5px 12px;
-  letter-spacing: 0.04em;
+  font-size: 0.78rem;
+  padding: 5px 10px;
+  letter-spacing: 0.03em;
   border-radius: 6px;
+  min-width: 5.6rem;
 }
 
 .rating-table {

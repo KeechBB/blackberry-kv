@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-20r-oppr1";
+    new URLSearchParams(location.search).get("v") || "20261001-rp-v1";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -95,7 +95,72 @@
     antiDeath: "Anti-MVP Death",
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
-  /** Композитный PWR 0–1000 для рейтинга тренировок (без MVP). */
+  /** Respect Points ranks: step 150, Iron I → Radiant III, then Predator. */
+  const TRAIN_RP = {
+    startRp: 1000,
+    step: 150,
+    radiant3Max: 4500,
+    names: [
+      ["Iron", "iron"],
+      ["Bronze", "bronze"],
+      ["Silver", "silver"],
+      ["Gold", "gold"],
+      ["Platinum", "platinum"],
+      ["Diamond", "diamond"],
+      ["Legend", "legend"],
+      ["Immortal", "immortal"],
+      ["Master", "master"],
+      ["Radiant", "radiant"],
+    ],
+    roman: ["I", "II", "III"],
+  };
+
+  function rpRankFromScore(rp) {
+    const rpI = Math.round(Number(rp) || 0);
+    if (rpI > TRAIN_RP.radiant3Max) {
+      return { label: "PREDATOR", rankKey: "predator", predator: true };
+    }
+    const idx = rpI < 1 ? 0 : Math.min(29, Math.floor((rpI - 1) / TRAIN_RP.step));
+    const [name, key] = TRAIN_RP.names[Math.floor(idx / 3)];
+    return {
+      label: `${name.toUpperCase()} ${TRAIN_RP.roman[idx % 3]}`,
+      rankKey: key,
+      predator: false,
+    };
+  }
+
+  let rpLedgerCache = null;
+  function loadRpLedger() {
+    if (rpLedgerCache) return Promise.resolve(rpLedgerCache);
+    return fetch(dataUrl("data/training/rp-ledger.json"))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        rpLedgerCache = data;
+        return data;
+      })
+      .catch(() => null);
+  }
+
+  function rpLookupMap(ledger) {
+    const map = new Map();
+    if (!ledger?.players) return map;
+    Object.values(ledger.players).forEach((p) => {
+      if (!p || !p.nick) return;
+      const entry = {
+        rp: Math.round((Number(p.rp) || 0) * 10) / 10,
+        rankLabel: p.predatorPlace
+          ? `PREDATOR #${p.predatorPlace}`
+          : p.rankLabel,
+        rankKey: p.rankKey || "iron",
+        predatorPlace: p.predatorPlace ?? null,
+      };
+      map.set(String(p.nick).trim().toLowerCase(), entry);
+      map.set(resolveNickKey(p.nick), entry);
+    });
+    return map;
+  }
+
+  /** Композитный PWR 0–1000 — скрытый вес; в UI тренировок больше не показываем. */
   const TRAIN_PWR = {
     mRes: 4,
     mNok: 3,
@@ -145,10 +210,10 @@
   let tierByNick = new Map();
   let displayNickByKey = new Map();
   let ratingRows = [];
-  let ratingSortKey = "pwr";
+  let ratingSortKey = "kv";
   let ratingSortDir = "desc";
   let trainRatingRows = [];
-  let trainRatingSortKey = "pwr";
+  let trainRatingSortKey = "rp";
   let trainRatingSortDir = "desc";
 
   function softSat(x, mid) {
@@ -215,38 +280,61 @@
   }
 
   function pwrRankScaleHtml() {
-    const bands = TRAIN_PWR.bands;
-    const steps = bands
-      .map((b, i) => {
-        const min = b[0];
-        const max = i < bands.length - 1 ? bands[i + 1][0] - 1 : 1000;
-        const step =
+    const steps = [];
+    TRAIN_RP.names.forEach(([name, key], ni) => {
+      TRAIN_RP.roman.forEach((rom, ri) => {
+        const idx = ni * 3 + ri;
+        const min = idx * TRAIN_RP.step + 1;
+        const max = (idx + 1) * TRAIN_RP.step;
+        steps.push(
           `<span class="pwr-scale-step">` +
-          `<span class="pwr-scale-range">${min}–${max}</span>` +
-          `<span class="rank-badge rank-${b[2]}">${escapeHtml(b[1])}</span>` +
-          `</span>`;
-        const arrow =
-          i < bands.length - 1
+            `<span class="pwr-scale-range">${min}–${max}</span>` +
+            `<span class="rank-badge rank-${key} rank-badge-wide">${escapeHtml(name.toUpperCase())} ${rom}</span>` +
+            `</span>`
+        );
+      });
+    });
+    steps.push(
+      `<span class="pwr-scale-step">` +
+        `<span class="pwr-scale-range">${TRAIN_RP.radiant3Max + 1}+</span>` +
+        `<span class="rank-badge rank-predator rank-badge-wide">PREDATOR<br /><small>#</small></span>` +
+        `</span>`
+    );
+    const withArrows = steps
+      .map(
+        (s, i) =>
+          s +
+          (i < steps.length - 1
             ? `<span class="pwr-scale-arrow" aria-hidden="true">→</span>`
-            : "";
-        return step + arrow;
-      })
+            : "")
+      )
       .join("");
     return (
-      `<span class="pwr-scale-label">PWR<br />ranks</span>` +
-      `<div class="pwr-scale-track">${steps}</div>`
+      `<span class="pwr-scale-label">RP<br />ranks</span>` +
+      `<div class="pwr-scale-track">${withArrows}</div>`
     );
   }
 
   function fillPwrRankScales() {
     const html = pwrRankScaleHtml();
-    ["cw-pwr-rank-scale", "tm-pwr-rank-scale"].forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) el.innerHTML = html;
-    });
+    const el = document.getElementById("tm-pwr-rank-scale");
+    if (el) {
+      el.innerHTML = html;
+      el.setAttribute("aria-label", "RP ranks");
+    }
+    const cw = document.getElementById("cw-pwr-rank-scale");
+    if (cw) {
+      cw.innerHTML = "";
+      cw.hidden = true;
+    }
   }
 
   function setPwrRankScaleVisible(id, visible) {
+    if (id === "cw-pwr-rank-scale") {
+      const el = document.getElementById(id);
+      if (el) el.hidden = true;
+      return;
+    }
     const el = document.getElementById(id);
     if (el) el.hidden = !visible;
   }
@@ -297,8 +385,9 @@
   function formatPwrDelta(nick) {
     const d = modalPwrDeltas[String(nick || "").trim().toLowerCase()];
     if (d == null) return { text: "—", cls: "pwr-delta zero" };
-    if (d > 0) return { text: `+${d}`, cls: "pwr-delta plus" };
-    if (d < 0) return { text: String(d), cls: "pwr-delta minus" };
+    const v = Math.round(Number(d) * 10) / 10;
+    if (v > 0) return { text: `+${v}`, cls: "pwr-delta plus" };
+    if (v < 0) return { text: String(v), cls: "pwr-delta minus" };
     return { text: "0", cls: "pwr-delta zero" };
   }
 
@@ -502,7 +591,7 @@
     document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.cw === panel);
     });
-    setPwrRankScaleVisible("cw-pwr-rank-scale", panel === "rating");
+    setPwrRankScaleVisible("cw-pwr-rank-scale", false);
     if (panel === "rating") loadRating();
     if (panel === "analytics") {
       ensureCwAnalyticsFilters();
@@ -1304,8 +1393,8 @@
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.pwr) || 0) - (Number(a.pwr) || 0) ||
               (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
+              (Number(b.kills) || 0) - (Number(a.kills) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
           )
           .forEach((p, i) => {
@@ -1378,7 +1467,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1386,8 +1475,6 @@
       .map(
         (p) => `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
-        <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
@@ -1508,6 +1595,7 @@
 
     Promise.all([
       loadRoster(),
+      loadRpLedger(),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -1517,7 +1605,7 @@
         )
       ),
     ])
-      .then(([, months]) => {
+      .then(([, ledger, months]) => {
         const matchList = [];
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
@@ -1532,9 +1620,10 @@
               .then((pj) => ({ match: m, players: pj }))
               .catch(() => ({ match: m, players: null }))
           )
-        );
+        ).then((bundles) => ({ bundles, ledger }));
       })
-      .then((bundles) => {
+      .then(({ bundles, ledger }) => {
+        const rpMap = rpLookupMap(ledger);
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
@@ -1619,15 +1708,34 @@
             kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
             winPct,
           };
-          const { pwr, band, label, rankKey } = calcTrainPwr(base);
-          return { ...base, pwr, pwrBand: band, pwrLabel: label, rankKey };
+          const rpHit =
+            rpMap.get(resolveNickKey(p.nick)) ||
+            rpMap.get(String(p.nick).trim().toLowerCase());
+          if (rpHit) {
+            return {
+              ...base,
+              rp: rpHit.rp,
+              pwr: rpHit.rp,
+              pwrLabel: rpHit.rankLabel,
+              rankKey: rpHit.rankKey,
+              predatorPlace: rpHit.predatorPlace,
+            };
+          }
+          return {
+            ...base,
+            rp: null,
+            pwr: null,
+            pwrLabel: "—",
+            rankKey: "iron",
+            predatorPlace: null,
+          };
         });
-        /* Место в общем рейтинге по PWR — не меняется от поиска/сортировки колонок */
+        /* Место в общем рейтинге по RP */
         trainRatingRows
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.pwr) || 0) - (Number(a.pwr) || 0) ||
+              (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) ||
               (Number(b.games) || 0) - (Number(a.games) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
           )
@@ -1639,7 +1747,7 @@
         const scopeRu =
           scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
+          ? `Период: ${scopeRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}. RP: Die()/give-up.`
           : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
         paintTrainingRatingTable();
       })
@@ -1701,9 +1809,9 @@
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
-      if (trainRatingSortKey === "pwrLabel" || trainRatingSortKey === "rank") {
-        const av = Number(a.pwr) || 0;
-        const bv = Number(b.pwr) || 0;
+      if (trainRatingSortKey === "pwrLabel" || trainRatingSortKey === "rank" || trainRatingSortKey === "pwr" || trainRatingSortKey === "rp") {
+        const av = a.rp == null ? -1e9 : Number(a.rp);
+        const bv = b.rp == null ? -1e9 : Number(b.rp);
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
@@ -1723,8 +1831,8 @@
       .map(
         (p) => `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-rank"><span class="rank-badge rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}</span></td>
-        <td class="ctr col-pwr">${p.pwr != null ? p.pwr : "—"}</td>
+        <td class="ctr col-rank"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></td>
+        <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
@@ -2641,6 +2749,7 @@
 
     Promise.all([
       loadRoster(),
+      loadRpLedger(),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -2650,7 +2759,7 @@
         )
       ),
     ])
-      .then(([, months]) => {
+      .then(([, ledger, months]) => {
         const matchList = [];
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
@@ -2673,10 +2782,10 @@
                   .catch(() => ({ match: m, players: null }))
               : Promise.resolve({ match: m, players: null })
           )
-        );
+        ).then((bundles) => ({ bundles, ledger }));
       })
-      .then((bundles) => {
-        paintTrainingAnalytics(bundles || []);
+      .then(({ bundles, ledger }) => {
+        paintTrainingAnalytics(bundles || [], ledger);
       })
       .catch((err) => {
         note.textContent = String(err.message || err);
@@ -3343,7 +3452,7 @@
     paintKitRankTable();
   }
 
-  function paintTrainingAnalytics(bundles) {
+  function paintTrainingAnalytics(bundles, ledger) {
     const note = document.getElementById("train-an-note");
     const body = document.getElementById("train-an-body");
     const kpis = document.getElementById("train-an-kpis");
@@ -3708,18 +3817,30 @@
       })
       .join("");
 
+    const rpMap = rpLookupMap(ledger);
     const players = [...playerMap.values()].map((p) => {
       const winPct = p.games ? Math.round((1000 * p.wins) / p.games) / 10 : null;
       const kd = p.deaths === 0 ? p.kills : Math.round((100 * p.kills) / p.deaths) / 100;
       const base = { ...p, winPct, kd };
-      const { pwr, label, rankKey } = calcTrainPwr(base);
-      return { ...base, pwr, pwrLabel: label, rankKey };
+      const rpHit =
+        rpMap.get(resolveNickKey(p.nick)) ||
+        rpMap.get(String(p.nick).trim().toLowerCase());
+      if (rpHit) {
+        return {
+          ...base,
+          rp: rpHit.rp,
+          pwr: rpHit.rp,
+          pwrLabel: rpHit.rankLabel,
+          rankKey: rpHit.rankKey,
+        };
+      }
+      return { ...base, rp: null, pwr: null, pwrLabel: "—", rankKey: "iron" };
     });
     players
       .slice()
       .sort(
         (a, b) =>
-          (Number(b.pwr) || 0) - (Number(a.pwr) || 0) ||
+          (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) ||
           b.games - a.games ||
           String(a.nick).localeCompare(String(b.nick), "ru")
       )
@@ -3727,19 +3848,20 @@
         p.place = i + 1;
       });
 
-    const avgPwr = players.length
-      ? Math.round(players.reduce((s, p) => s + (Number(p.pwr) || 0), 0) / players.length)
+    const withRp = players.filter((p) => p.rp != null);
+    const avgPwr = withRp.length
+      ? Math.round(withRp.reduce((s, p) => s + (Number(p.rp) || 0), 0) / withRp.length)
       : null;
-    const topPwrVal = players.length
-      ? Math.max(...players.map((p) => Number(p.pwr) || 0))
+    const topPwrVal = withRp.length
+      ? Math.max(...withRp.map((p) => Number(p.rp) || 0))
       : null;
 
     kpis.innerHTML = [
       ["Матчей", String(n)],
       ["Дней", String(dayStat.size)],
       ["Игроков", String(uniqueNicks.size)],
-      ["Ср. PWR", avgPwr != null ? String(avgPwr) : "—"],
-      ["Топ PWR", topPwrVal != null ? String(topPwrVal) : "—"],
+      ["Ср. RP", avgPwr != null ? String(avgPwr) : "—"],
+      ["Топ RP", topPwrVal != null ? String(topPwrVal) : "—"],
       ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
       ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
       ["Килы ∑", String(totalKills)],
@@ -3766,7 +3888,7 @@
       .slice(0, 12);
     const topPwr = players
       .slice()
-      .sort((a, b) => (b.pwr || 0) - (a.pwr || 0) || b.games - a.games)
+      .sort((a, b) => (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) || b.games - a.games)
       .slice(0, 12);
 
     const nickCol = {
@@ -3774,16 +3896,16 @@
       value: (r) => nickLinkHtml(r.nick),
     };
     document.getElementById("train-an-tops").innerHTML = [
-      taTopTable("PWR / Rank", topPwr, [
+      taTopTable("RP / Rank", topPwr, [
         nickCol,
         { label: "Место", cls: "ctr", key: "place" },
         {
           label: "Rank",
           cls: "ctr",
           value: (r) =>
-            `<span class="rank-badge rank-${escapeHtml(r.rankKey || "iron")}">${escapeHtml(r.pwrLabel || "—")}</span>`,
+            `<span class="rank-badge rank-badge-wide rank-${escapeHtml(r.rankKey || "iron")}">${escapeHtml(r.pwrLabel || "—")}</span>`,
         },
-        { label: "PWR", cls: "ctr", key: "pwr" },
+        { label: "RP", cls: "ctr", key: "rp" },
       ]),
       taTopTable("Больше каток", topGames, [
         nickCol,
@@ -3812,16 +3934,19 @@
       ]),
     ].join("");
 
-    const rankOrder = (TRAIN_PWR.bands || []).map((b) => b[2]);
+    const rankOrder = TRAIN_RP.names.map((n) => n[1]).concat(["predator"]);
     const rankCount = new Map(rankOrder.map((k) => [k, 0]));
     players.forEach((p) => {
       const k = p.rankKey || "iron";
       rankCount.set(k, (rankCount.get(k) || 0) + 1);
     });
     const rankBars = rankOrder.map((key) => {
-      const band = TRAIN_PWR.bands.find((b) => b[2] === key);
+      const name =
+        key === "predator"
+          ? "Predator"
+          : (TRAIN_RP.names.find((n) => n[1] === key) || [key])[0];
       return {
-        label: band ? band[1] : key,
+        label: name,
         count: rankCount.get(key) || 0,
         share: players.length
           ? Math.round((1000 * (rankCount.get(key) || 0)) / players.length) / 10
@@ -4279,7 +4404,7 @@
 
     const sorted = sortRows(rows);
     const foot = totalsRow(sorted);
-    const showPwrDelta = modalTab === "total";
+    const showPwrDelta = modalTab === "total" && !!(modalPlayers && modalPlayers._training);
     const records = {
       res: maxOf(sorted, "res"),
       nok: maxOf(sorted, "nok"),
@@ -4303,7 +4428,7 @@
               ${th("deaths", "Смерти", "ctr")}
               ${th("kd", "KD", "ctr")}
               ${th("dmg", "Боевой счёт", "ctr")}
-              ${showPwrDelta ? th("pwrDelta", "Δ PWR", "ctr") : ""}
+              ${showPwrDelta ? th("pwrDelta", "Δ RP", "ctr") : ""}
             </tr>
           </thead>
           <tbody>
