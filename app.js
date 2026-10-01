@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-rp-v2";
+    new URLSearchParams(location.search).get("v") || "20261001-rp-v3";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -210,7 +210,7 @@
   let tierByNick = new Map();
   let displayNickByKey = new Map();
   let ratingRows = [];
-  let ratingSortKey = "kv";
+  let ratingSortKey = "rp";
   let ratingSortDir = "desc";
   let trainRatingRows = [];
   let trainRatingSortKey = "rp";
@@ -1306,6 +1306,7 @@
 
     Promise.all([
       loadRoster(),
+      loadRpLedger(),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -1314,7 +1315,7 @@
         )
       ),
     ])
-      .then(([, months]) => {
+      .then(([, rpLedger, months]) => {
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
@@ -1328,9 +1329,10 @@
               .then((pj) => ({ match: m, players: pj }))
               .catch(() => ({ match: m, players: null }))
           )
-        );
+        ).then((bundles) => ({ bundles, rpLedger }));
       })
-      .then((bundles) => {
+      .then(({ bundles, rpLedger }) => {
+        const rpMap = rpLookupMap(rpLedger);
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
@@ -1423,13 +1425,33 @@
             kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
             winPct,
           };
-          const { pwr, band, label, rankKey } = calcTrainPwr(base);
-          return { ...base, pwr, pwrBand: band, pwrLabel: label, rankKey };
+          const rpHit =
+            rpMap.get(resolveNickKey(p.nick)) ||
+            rpMap.get(String(p.nick).trim().toLowerCase());
+          if (rpHit) {
+            return {
+              ...base,
+              rp: rpHit.rp,
+              pwr: rpHit.rp,
+              pwrLabel: rpHit.rankLabel,
+              rankKey: rpHit.rankKey,
+              predatorPlace: rpHit.predatorPlace,
+            };
+          }
+          return {
+            ...base,
+            rp: null,
+            pwr: null,
+            pwrLabel: "—",
+            rankKey: "iron",
+            predatorPlace: null,
+          };
         });
         ratingRows
           .slice()
           .sort(
             (a, b) =>
+              (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) ||
               (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
               (Number(b.kills) || 0) - (Number(a.kills) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
@@ -1441,7 +1463,7 @@
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}.`
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. RP — с тренировок.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
@@ -1488,9 +1510,9 @@
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
-      if (ratingSortKey === "pwrLabel" || ratingSortKey === "rank") {
-        const av = Number(a.pwr) || 0;
-        const bv = Number(b.pwr) || 0;
+      if (ratingSortKey === "pwrLabel" || ratingSortKey === "rank" || ratingSortKey === "pwr" || ratingSortKey === "rp") {
+        const av = a.rp == null ? -1e9 : Number(a.rp);
+        const bv = b.rp == null ? -1e9 : Number(b.rp);
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
@@ -1504,7 +1526,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1512,6 +1534,8 @@
       .map(
         (p) => `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
+        <td class="ctr col-rank"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></td>
+        <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
