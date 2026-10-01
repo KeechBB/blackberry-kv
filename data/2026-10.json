@@ -113,7 +113,21 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · HOTDROP · vs clan 2–0 (15.09 PAAS) · not 30.09 Mutaha"
+      "note": "Main · HOTDROP · vs clan 2–0 (15.09 PAAS) · not 30.09 Mutaha · also 09.10 Goose Bay"
+    },
+    {
+      "id": "09-dcai",
+      "day": 9,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "DCAI",
+      "map": "HotDrop Goose Bay",
+      "size": "20v20",
+      "server": "FCL ARENA #2",
+      "rules": "HOTDROP",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · HOTDROP · vs clan 2–0 (15.09+30.09) · not 07.10 Narva · FCL ARENA #2"
     },
     {
       "id": "11-solid",
