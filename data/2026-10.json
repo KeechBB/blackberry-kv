@@ -15,7 +15,9 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · vs clan 2–0 (Main 22.09 Goose) · NO SCOUT"
+      "r1": "0:115",
+      "note": "Junior · R1 0:115 (36:55) · ждём R2 · наши R1 стата неполная (13/26)",
+      "playersUrl": "data/players/01-gm.json"
     },
     {
       "id": "02-sph",

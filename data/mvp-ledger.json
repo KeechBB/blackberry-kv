@@ -17,6 +17,32 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "01-gm",
+      "day": 1,
+      "opp": "GM",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "Forks"
+        ],
+        "damage": [
+          "COBRA"
+        ],
+        "antiDeath": [
+          "Forks"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "04-20royals",
       "day": 4,
       "opp": "20Royals",
@@ -883,9 +909,17 @@
     "COBRA": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "04-20royals",
           "day": 4,
@@ -1010,10 +1044,26 @@
     },
     "Forks": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "04-20royals",
           "day": 4,
@@ -1577,11 +1627,19 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 8,
+      "mvpMedic": 9,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "04-20royals",
           "day": 4,
