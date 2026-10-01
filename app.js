@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-rp-v3";
+    new URLSearchParams(location.search).get("v") || "20261001-rp-v4";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -3964,7 +3964,7 @@
           label: "Rank",
           cls: "ctr",
           value: (r) =>
-            `<span class="rank-badge rank-badge-wide rank-${escapeHtml(r.rankKey || "iron")}">${escapeHtml(r.pwrLabel || "—")}</span>`,
+            `<span class="rank-badge rank-${escapeHtml(r.rankKey || "iron")}">${escapeHtml(r.pwrLabel || "—")}</span>`,
         },
         { label: "RP", cls: "ctr", key: "rp" },
       ]),

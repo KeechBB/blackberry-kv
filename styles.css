@@ -1692,8 +1692,15 @@ body.modal-open { overflow: hidden; }
 }
 .ta-tops {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+.ta-top-block {
+  min-width: 0;
+  max-width: 100%;
+  overflow: hidden;
 }
 .ta-top-block h3 {
   margin: 0 0 8px;
@@ -1702,10 +1709,61 @@ body.modal-open { overflow: hidden; }
   text-transform: uppercase;
   color: var(--muted);
 }
-.ta-table { font-size: 0.88rem; }
+.ta-top-block .table-scroll {
+  width: 100%;
+  max-width: 100%;
+  max-height: none;
+  overflow-x: auto;
+  overflow-y: visible;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  box-shadow: none;
+}
+.ta-table {
+  width: 100%;
+  min-width: 0 !important;
+  table-layout: fixed;
+  font-size: 0.84rem;
+}
+.ta-table th,
+.ta-table td {
+  padding: 7px 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.ta-table th:first-child,
+.ta-table td:first-child {
+  width: 32%;
+  text-align: left;
+}
+.ta-table th:not(:first-child),
+.ta-table td:not(:first-child) {
+  width: auto;
+  text-align: center;
+}
+.ta-top-block .rank-badge,
+.ta-top-block .rank-badge-wide {
+  display: inline-block;
+  min-width: 0 !important;
+  max-width: 100%;
+  padding: 2px 6px !important;
+  font-size: 0.66rem !important;
+  letter-spacing: 0.02em;
+  box-sizing: border-box;
+}
+@media (min-width: 1400px) {
+  .ta-tops {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 @media (max-width: 900px) {
   .ta-grid { grid-template-columns: 1fr; }
   .ta-card-wide { grid-column: auto; }
+  .ta-tops {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pwr-delta.plus { color: #6ee7b7; font-weight: 700; }
