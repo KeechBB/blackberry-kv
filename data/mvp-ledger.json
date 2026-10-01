@@ -23,10 +23,10 @@
       "meeting": "0–2",
       "r1": {
         "medic": [
-          "Radislave"
+          "freak"
         ],
         "killer": [
-          "Forks"
+          "Koperor"
         ],
         "damage": [
           "COBRA"
@@ -1052,18 +1052,10 @@
     },
     "Forks": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 2,
       "awards": [
-        {
-          "matchId": "01-gm",
-          "day": 1,
-          "opp": "GM",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
         {
           "matchId": "01-gm",
           "day": 1,
@@ -1308,10 +1300,18 @@
     },
     "Koperor": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "30-ih",
           "day": 30,
@@ -1667,19 +1667,11 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 9,
+      "mvpMedic": 8,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
       "awards": [
-        {
-          "matchId": "01-gm",
-          "day": 1,
-          "opp": "GM",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
         {
           "matchId": "04-20royals",
           "day": 4,
@@ -2227,11 +2219,19 @@
       ]
     },
     "freak": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "01-gm",
           "day": 1,

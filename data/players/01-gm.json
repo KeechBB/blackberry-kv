@@ -1,7 +1,7 @@
 {
   "matchId": "01-gm",
   "opp": "GM",
-  "note": "Junior FINAL 0–2 · сумма 0:251 (R1 0:115 · R2 0:136). Chora AAS v2 · RNL Match 2. Наши R1 неполные (13/26). R2 наши полные 26. oppR1 полный; oppR2 не оцифрован.",
+  "note": "Junior FINAL 0–2 · сумма 0:251 (R1 0:115 · R2 0:136). Chora AAS v2 · RNL Match 2. Наши R1+R2 полные 26. oppR1 полный; oppR2 не оцифрован.",
   "r1": [
     {
       "nick": "VET",
@@ -106,6 +106,110 @@
       "kills": 3,
       "deaths": 6,
       "dmg": 99
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 124
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 206
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 94
+    },
+    {
+      "nick": "Goob",
+      "res": 5,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 123
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 187
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 131
+    },
+    {
+      "nick": "Mahorka",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 17
+    },
+    {
+      "nick": "ART",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 44
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 160
+    },
+    {
+      "nick": "freak",
+      "res": 24,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 69
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 227
+    },
+    {
+      "nick": "Bahus",
+      "res": 8,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 67
+    },
+    {
+      "nick": "Muhomor",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 88
     }
   ],
   "r2": [
@@ -549,10 +653,10 @@
   "mvp": {
     "r1": {
       "medic": [
-        "Radislave"
+        "freak"
       ],
       "killer": [
-        "Forks"
+        "Koperor"
       ],
       "damage": [
         "COBRA"
