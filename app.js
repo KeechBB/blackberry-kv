@@ -3091,11 +3091,13 @@
   function loadTrainingKits() {
     const note = document.getElementById("train-kits-note");
     const grid = document.getElementById("train-kits-grid");
+    const rankPanel = document.getElementById("train-kits-rank");
     if (!note || !grid) return;
     note.hidden = false;
     note.textContent = "Загружаем диаграммы ролей…";
     grid.hidden = true;
     grid.innerHTML = "";
+    if (rankPanel) rankPanel.hidden = true;
     fetch(KIT_TIERS_URL, { cache: "no-store" })
       .then((r) => {
         if (!r.ok) throw new Error(`API ${r.status}`);
@@ -3115,11 +3117,230 @@
                 : "—"
             }`
           : "Пока нет ролей у зареганных — поиграйте стандартными китами на TR1.";
+        if (data.ranking && Array.isArray(data.ranking.players)) {
+          initKitRankPanel(data.ranking);
+        }
       })
       .catch((err) => {
         note.textContent = `Не удалось загрузить роли: ${err.message || err}`;
         grid.hidden = true;
+        if (rankPanel) rankPanel.hidden = true;
       });
+  }
+
+  let kitRankState = null;
+
+  function kitRankSlot(player, level) {
+    if (!player || !Array.isArray(player.levels)) return null;
+    return player.levels.find((l) => Number(l.level) === Number(level)) || null;
+  }
+
+  function kitRankFillKitSelect(players, level) {
+    const sel = document.getElementById("kit-rank-kit");
+    if (!sel) return;
+    const prev = sel.value || "all";
+    const kits = new Set();
+    for (const p of players) {
+      const slot = kitRankSlot(p, level);
+      if (slot && slot.kit) kits.add(slot.kit);
+    }
+    const sorted = [...kits].sort((a, b) => a.localeCompare(b, "ru"));
+    sel.innerHTML =
+      `<option value="all">Все</option>` +
+      sorted
+        .map(
+          (k) =>
+            `<option value="${escapeHtml(k)}">${escapeHtml(k)}</option>`
+        )
+        .join("");
+    sel.value = sorted.includes(prev) || prev === "all" ? prev : "all";
+  }
+
+  function renderKitRankInsights(insights, filteredN, level) {
+    const el = document.getElementById("kit-rank-insights");
+    if (!el) return;
+    const ins = insights || {};
+    const cards = [
+      ["В таблице", String(filteredN)],
+      ["Игроков всего", String(ins.players || 0)],
+      ["Ср. китов / игрок", String(ins.avgKitsUsed ?? "—")],
+      ["Ср. % ур.1", ins.avgL1Pct != null ? `${ins.avgL1Pct}%` : "—"],
+      ["Спецы (не стрелок ур.1)", ins.specialistsPct != null ? `${ins.specialistsPct}%` : "—"],
+      ["Стрелок как ур.1", ins.riflemanL1Pct != null ? `${ins.riflemanL1Pct}%` : "—"],
+      ["Топ кит ур.1", ins.topL1Kit || "—"],
+      ["Редкий кит ур.1", ins.rarestL1Kit || "—"],
+      ["Смотрим уровень", `Ур. ${level}`],
+    ];
+    el.innerHTML = cards
+      .map(
+        ([k, v]) =>
+          `<div class="kit-rank-kpi"><span class="k">${escapeHtml(
+            k
+          )}</span><span class="v">${escapeHtml(v)}</span></div>`
+      )
+      .join("");
+  }
+
+  function renderKitRankSummary(ranking, level, tierFilter) {
+    const el = document.getElementById("kit-rank-summary");
+    if (!el) return;
+    const byLevel = (ranking.byLevel && ranking.byLevel[level]) || [];
+    const byTierRaw =
+      (ranking.byLevelTier && ranking.byLevelTier[level]) || [];
+    const byTier =
+      tierFilter === "all"
+        ? byTierRaw
+        : byTierRaw.filter((r) => String(r.tier) === String(tierFilter));
+
+    const maxC = byLevel.reduce((m, r) => Math.max(m, r.count || 0), 0) || 1;
+    const bars = byLevel.length
+      ? byLevel
+          .map((r) => {
+            const w = Math.round((100 * r.count) / maxC);
+            const pctText = Number.isInteger(r.pct)
+              ? `${r.pct}%`
+              : `${Number(r.pct).toFixed(1)}%`;
+            return `<li>
+              <div class="bar-meta">
+                <span>${escapeHtml(r.kit)}</span>
+                <strong>${r.count} · ${escapeHtml(pctText)}</strong>
+              </div>
+              <div class="bar-track"><div class="bar-fill" style="width:${w}%"></div></div>
+            </li>`;
+          })
+          .join("")
+      : `<li class="muted">Нет данных для ур. ${level}</li>`;
+
+    const tiersPresent = [...new Set(byTier.map((r) => r.tier))].sort(
+      (a, b) => a - b
+    );
+    const tierBlocks = tiersPresent.length
+      ? tiersPresent
+          .map((t) => {
+            const rows = byTier
+              .filter((r) => r.tier === t)
+              .sort(
+                (a, b) =>
+                  b.count - a.count ||
+                  String(a.kit).localeCompare(String(b.kit), "ru")
+              );
+            const lis = rows
+              .map(
+                (r) =>
+                  `<li><span>${escapeHtml(r.kit)}</span><strong>${
+                    r.count
+                  }</strong></li>`
+              )
+              .join("");
+            return `<div class="kit-rank-tier-block"><h5>Тир ${t}</h5><ul>${lis}</ul></div>`;
+          })
+          .join("")
+      : `<p class="muted">Нет разбивки по тирам</p>`;
+
+    el.innerHTML = `
+      <div class="kit-rank-sum-card">
+        <h4>Сколько каких китов · ур. ${level}</h4>
+        <p class="muted">Сколько игроков имеют этот кит на выбранном уровне</p>
+        <ul class="kit-rank-bars">${bars}</ul>
+      </div>
+      <div class="kit-rank-sum-card">
+        <h4>По тирам · ур. ${level}</h4>
+        <p class="muted">${
+          tierFilter === "all"
+            ? "Все тиры"
+            : `Фильтр: тир ${escapeHtml(String(tierFilter))}`
+        }</p>
+        <div class="kit-rank-tier-grid">${tierBlocks}</div>
+      </div>`;
+  }
+
+  function paintKitRankTable() {
+    if (!kitRankState) return;
+    const levelSel = document.getElementById("kit-rank-level");
+    const tierSel = document.getElementById("kit-rank-tier");
+    const kitSel = document.getElementById("kit-rank-kit");
+    const nickInp = document.getElementById("kit-rank-nick");
+    const tbody = document.getElementById("kit-rank-tbody");
+    if (!levelSel || !tierSel || !kitSel || !nickInp || !tbody) return;
+
+    const level = Number(levelSel.value) || 1;
+    const tierF = tierSel.value || "all";
+    kitRankFillKitSelect(kitRankState.players, level);
+    const kitF = kitSel.value || "all";
+    const nickQ = nickInp.value.trim().toLowerCase();
+
+    let rows = kitRankState.players.filter((p) => {
+      if (tierF !== "all" && String(p.tier) !== String(tierF)) return false;
+      const slot = kitRankSlot(p, level);
+      if (!slot) return false;
+      if (kitF !== "all" && slot.kit !== kitF) return false;
+      if (nickQ && !String(p.nick).toLowerCase().includes(nickQ)) return false;
+      return true;
+    });
+    rows = rows.slice().sort((a, b) => {
+      const sa = kitRankSlot(a, level);
+      const sb = kitRankSlot(b, level);
+      const pa = sa ? Number(sa.pct) || 0 : 0;
+      const pb = sb ? Number(sb.pct) || 0 : 0;
+      return pb - pa || String(a.nick).localeCompare(String(b.nick), "ru");
+    });
+
+    tbody.innerHTML = rows.length
+      ? rows
+          .map((p, i) => {
+            const slot = kitRankSlot(p, level);
+            const l1 = kitRankSlot(p, 1);
+            const l2 = kitRankSlot(p, 2);
+            const l3 = kitRankSlot(p, 3);
+            const pctText = slot
+              ? Number.isInteger(slot.pct)
+                ? `${slot.pct}%`
+                : `${Number(slot.pct).toFixed(1)}%`
+              : "—";
+            const fmt = (s) =>
+              s
+                ? `${escapeHtml(s.kit)} <span class="kit-cell-muted">(${
+                    Number.isInteger(s.pct)
+                      ? s.pct
+                      : Number(s.pct).toFixed(1)
+                  }%)</span>`
+                : `<span class="kit-cell-muted">—</span>`;
+            return `<tr>
+              <td class="ctr">${i + 1}</td>
+              <td>${escapeHtml(p.nick)}</td>
+              <td class="ctr">${p.tier}</td>
+              <td class="kit-cell-active">${escapeHtml(slot ? slot.kit : "—")}</td>
+              <td class="ctr">${escapeHtml(pctText)}</td>
+              <td>${fmt(l1)}</td>
+              <td>${fmt(l2)}</td>
+              <td>${fmt(l3)}</td>
+              <td class="ctr">${p.total || 0}</td>
+            </tr>`;
+          })
+          .join("")
+      : `<tr><td colspan="9" class="muted">Нет игроков по фильтру</td></tr>`;
+
+    renderKitRankInsights(kitRankState.insights, rows.length, level);
+    renderKitRankSummary(kitRankState, level, tierF);
+  }
+
+  function initKitRankPanel(ranking) {
+    const panel = document.getElementById("train-kits-rank");
+    if (!panel) return;
+    kitRankState = ranking;
+    panel.hidden = false;
+    const levelSel = document.getElementById("kit-rank-level");
+    const tierSel = document.getElementById("kit-rank-tier");
+    const kitSel = document.getElementById("kit-rank-kit");
+    const nickInp = document.getElementById("kit-rank-nick");
+    if (!panel.dataset.wired) {
+      panel.dataset.wired = "1";
+      [levelSel, tierSel, kitSel].forEach((el) => {
+        if (el) el.addEventListener("change", paintKitRankTable);
+      });
+      if (nickInp) nickInp.addEventListener("input", paintKitRankTable);
+    }
+    paintKitRankTable();
   }
 
   function paintTrainingAnalytics(bundles) {

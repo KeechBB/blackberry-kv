@@ -633,6 +633,68 @@
           <h3 class="ta-subh">Роли / киты</h3>
           <p class="note" id="train-kits-note">Загружаем диаграммы ролей…</p>
           <div class="kit-tier-grid" id="train-kits-grid" hidden></div>
+
+          <h3 class="ta-subh">Рейтинг по китам</h3>
+          <p class="board-sub kit-rank-lead">
+            Ур.&nbsp;1 — самый частый кит игрока, ур.&nbsp;2 — второй, ур.&nbsp;3 — третий (по доле спавнов в боевом окне).
+          </p>
+          <div class="kit-rank-panel" id="train-kits-rank" hidden>
+            <div class="kit-rank-filters" id="kit-rank-filters">
+              <label class="kit-rank-field">
+                <span>Уровень</span>
+                <select id="kit-rank-level" aria-label="Уровень кита">
+                  <option value="1">Ур. 1 · основной</option>
+                  <option value="2">Ур. 2 · второй</option>
+                  <option value="3">Ур. 3 · третий</option>
+                </select>
+              </label>
+              <label class="kit-rank-field">
+                <span>Тир</span>
+                <select id="kit-rank-tier" aria-label="Тир">
+                  <option value="all">Все</option>
+                  <option value="1">Тир 1</option>
+                  <option value="2">Тир 2</option>
+                  <option value="3">Тир 3</option>
+                  <option value="4">Тир 4</option>
+                </select>
+              </label>
+              <label class="kit-rank-field">
+                <span>Кит</span>
+                <select id="kit-rank-kit" aria-label="Кит">
+                  <option value="all">Все</option>
+                </select>
+              </label>
+              <label class="kit-rank-field kit-rank-field-grow">
+                <span>Ник</span>
+                <input
+                  type="search"
+                  id="kit-rank-nick"
+                  placeholder="фильтр по нику…"
+                  autocomplete="off"
+                />
+              </label>
+            </div>
+            <div class="kit-rank-insights" id="kit-rank-insights"></div>
+            <div class="table-scroll">
+              <table class="matches-table ta-table kit-rank-table">
+                <thead>
+                  <tr>
+                    <th class="ctr">#</th>
+                    <th>Ник</th>
+                    <th class="ctr">Тир</th>
+                    <th>Кит (ур.)</th>
+                    <th class="ctr">%</th>
+                    <th>Ур.1</th>
+                    <th>Ур.2</th>
+                    <th>Ур.3</th>
+                    <th class="ctr">Спавны</th>
+                  </tr>
+                </thead>
+                <tbody id="kit-rank-tbody"></tbody>
+              </table>
+            </div>
+            <div class="kit-rank-summary" id="kit-rank-summary"></div>
+          </div>
         </section>
       </div>
     </section>
@@ -657,6 +719,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=20260929-hitmap-hover"></script>
+  <script src="app.js?v=20261001-kit-rank"></script>
 </body>
 </html>
