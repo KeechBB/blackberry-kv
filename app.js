@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-rp-v4";
+    new URLSearchParams(location.search).get("v") || "20261001-rp-v5";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -2771,6 +2771,126 @@
       .join("")}</ul>`;
   }
 
+  const RANK_DONUT_COLORS = {
+    iron: "#9ca3af",
+    bronze: "#d97706",
+    silver: "#cbd5e1",
+    gold: "#eab308",
+    platinum: "#2dd4bf",
+    diamond: "#38bdf8",
+    legend: "#22c55e",
+    immortal: "#f43f5e",
+    master: "#a78bfa",
+    radiant: "#fbbf24",
+    predator: "#fb923c",
+  };
+
+  function taRankDonut(rows) {
+    const present = (rows || []).filter((r) => (Number(r.count) || 0) > 0);
+    if (!present.length) {
+      return `<div class="ta-donut-wrap"><p class="muted">Нет данных</p></div>`;
+    }
+    const total = present.reduce((s, r) => s + (Number(r.count) || 0), 0) || 1;
+    const cx = 100;
+    const cy = 100;
+    const rOuter = 78;
+    const rInner = 46;
+    const gap = 0.04;
+    let angle = -Math.PI / 2;
+    const slices = present.map((r, i) => {
+      const count = Number(r.count) || 0;
+      const share =
+        r.share != null
+          ? Number(r.share)
+          : Math.round((1000 * count) / total) / 10;
+      const sweep =
+        (count / total) * (Math.PI * 2 - gap * present.length);
+      const a0 = angle;
+      const a1 = angle + Math.max(sweep, 0.02);
+      angle = a1 + gap;
+      const x0o = cx + rOuter * Math.cos(a0);
+      const y0o = cy + rOuter * Math.sin(a0);
+      const x1o = cx + rOuter * Math.cos(a1);
+      const y1o = cy + rOuter * Math.sin(a1);
+      const x0i = cx + rInner * Math.cos(a1);
+      const y0i = cy + rInner * Math.sin(a1);
+      const x1i = cx + rInner * Math.cos(a0);
+      const y1i = cy + rInner * Math.sin(a0);
+      const large = sweep > Math.PI ? 1 : 0;
+      const d = [
+        `M ${x0o} ${y0o}`,
+        `A ${rOuter} ${rOuter} 0 ${large} 1 ${x1o} ${y1o}`,
+        `L ${x0i} ${y0i}`,
+        `A ${rInner} ${rInner} 0 ${large} 0 ${x1i} ${y1i}`,
+        "Z",
+      ].join(" ");
+      const key = r.key || r.label || `r${i}`;
+      const color =
+        RANK_DONUT_COLORS[key] ||
+        `hsl(${(i * 37) % 360} 70% 55%)`;
+      const tip = `${r.label}: ${count} игр. · ${share}%`;
+      return { d, color, tip, label: r.label, count, share, key };
+    });
+
+    const top = present.slice().sort((a, b) => b.count - a.count)[0];
+    const centerLabel = top
+      ? `${escapeHtml(top.label)}<br /><strong>${top.count}</strong>`
+      : "";
+
+    const paths = slices
+      .map(
+        (s) =>
+          `<path class="ta-donut-slice" data-tip="${escapeHtml(s.tip)}" d="${s.d}" fill="${s.color}" stroke="rgba(8,6,16,0.85)" stroke-width="1.5"><title>${escapeHtml(s.tip)}</title></path>`
+      )
+      .join("");
+
+    const legend = slices
+      .map(
+        (s) =>
+          `<li title="${escapeHtml(s.tip)}">` +
+          `<span class="ta-donut-dot" style="background:${s.color}"></span>` +
+          `<span class="ta-donut-leg-name">${escapeHtml(s.label)}</span>` +
+          `<strong>${s.count}</strong>` +
+          `<span class="muted">${s.share}%</span>` +
+          `</li>`
+      )
+      .join("");
+
+    return (
+      `<div class="ta-donut-wrap">` +
+      `<div class="ta-donut-chart">` +
+      `<svg viewBox="0 0 200 200" class="ta-donut-svg" role="img" aria-label="Распределение рангов">` +
+      paths +
+      `</svg>` +
+      `<div class="ta-donut-center" id="ta-donut-tip">${centerLabel}</div>` +
+      `</div>` +
+      `<ul class="ta-donut-legend">${legend}</ul>` +
+      `</div>`
+    );
+  }
+
+  function wireRankDonut(root) {
+    if (!root) return;
+    const tip = root.querySelector(".ta-donut-center");
+    const defaultHtml = tip ? tip.innerHTML : "";
+    root.querySelectorAll(".ta-donut-slice").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        const t = el.getAttribute("data-tip") || "";
+        if (tip && t) {
+          const parts = t.split(" · ");
+          const head = parts[0] || t;
+          const rest = parts.slice(1).join(" · ");
+          tip.innerHTML = `${escapeHtml(head)}${rest ? `<br /><strong>${escapeHtml(rest)}</strong>` : ""}`;
+        }
+        el.classList.add("is-hot");
+      });
+      el.addEventListener("mouseleave", () => {
+        if (tip) tip.innerHTML = defaultHtml;
+        el.classList.remove("is-hot");
+      });
+    });
+  }
+
   function taTopTable(title, rows, cols) {
     if (!rows.length) {
       return `<div class="ta-top-block"><h3>${escapeHtml(title)}</h3><p class="muted">Нет данных</p></div>`;
@@ -4007,6 +4127,7 @@
           ? "Predator"
           : (TRAIN_RP.names.find((n) => n[1] === key) || [key])[0];
       return {
+        key,
         label: name,
         count: rankCount.get(key) || 0,
         share: players.length
@@ -4015,7 +4136,12 @@
       };
     });
     const pwrRanksEl = document.getElementById("train-an-pwr-ranks");
-    if (pwrRanksEl) pwrRanksEl.innerHTML = taBars(rankBars);
+    if (pwrRanksEl) {
+      pwrRanksEl.innerHTML =
+        `<div class="ta-rank-bars">${taBars(rankBars)}</div>` +
+        `<div class="ta-rank-donut">${taRankDonut(rankBars)}</div>`;
+      wireRankDonut(pwrRanksEl);
+    }
 
     const topMedic = players.slice().sort((a, b) => b.mvpMedic - a.mvpMedic || b.res - a.res).filter((p) => p.mvpMedic > 0).slice(0, 10);
     const topKiller = players.slice().sort((a, b) => b.mvpKiller - a.mvpKiller || b.kills - a.kills).filter((p) => p.mvpKiller > 0).slice(0, 10);

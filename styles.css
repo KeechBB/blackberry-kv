@@ -1669,6 +1669,107 @@ body.modal-open { overflow: hidden; }
   border-radius: inherit;
   background: linear-gradient(90deg, #7c3aed, #a78bfa);
 }
+.ta-rank-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+  gap: 18px 22px;
+  align-items: center;
+  min-width: 0;
+}
+.ta-rank-bars,
+.ta-rank-donut {
+  min-width: 0;
+}
+.ta-donut-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.ta-donut-chart {
+  position: relative;
+  width: min(220px, 100%);
+  aspect-ratio: 1;
+}
+.ta-donut-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.ta-donut-slice {
+  cursor: pointer;
+  transform-origin: 100px 100px;
+  transition: opacity 0.15s ease, filter 0.15s ease;
+}
+.ta-donut-slice:hover,
+.ta-donut-slice.is-hot {
+  filter: brightness(1.18);
+  opacity: 1;
+}
+.ta-donut-chart:has(.ta-donut-slice:hover) .ta-donut-slice:not(:hover),
+.ta-donut-chart:has(.ta-donut-slice.is-hot) .ta-donut-slice:not(.is-hot) {
+  opacity: 0.45;
+}
+.ta-donut-center {
+  position: absolute;
+  inset: 28%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.25;
+  color: var(--muted);
+  pointer-events: none;
+}
+.ta-donut-center strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 1.05rem;
+  color: var(--ink, #f5f3ff);
+}
+.ta-donut-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.ta-donut-legend li {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) auto auto;
+  gap: 6px 8px;
+  align-items: center;
+  font-size: 0.78rem;
+  padding: 3px 4px;
+  border-radius: 6px;
+}
+.ta-donut-legend li:hover {
+  background: rgba(167, 139, 250, 0.08);
+}
+.ta-donut-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15);
+}
+.ta-donut-leg-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ta-donut-legend strong {
+  font-variant-numeric: tabular-nums;
+}
+@media (max-width: 900px) {
+  .ta-rank-split {
+    grid-template-columns: 1fr;
+  }
+}
 .ta-facts {
   list-style: none;
   margin: 0;
