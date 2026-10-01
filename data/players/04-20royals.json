@@ -1,7 +1,7 @@
 {
   "matchId": "04-20royals",
   "opp": "20Royals",
-  "note": "Junior vs 20Royals, Chora AAS 36v36. Ресы/ноки/килы/смерти/боевой счёт. Камера не вносится.",
+  "note": "Junior vs 20Royals, Chora AAS 36v36. Ресы/ноки/килы/смерти/боевой счёт. Камера не вносится. oppR1 — соперники R1 со скрина.",
   "r1": [
     {
       "nick": "Nestor Mahno",
@@ -628,5 +628,287 @@
         "Forks"
       ]
     }
-  }
+  },
+  "oppR1": [
+    {
+      "nick": "VoltZ",
+      "res": 1,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 289
+    },
+    {
+      "nick": "RiP RaT Fob The Builder",
+      "res": 0,
+      "nok": 25,
+      "kills": 22,
+      "deaths": 7,
+      "dmg": 563
+    },
+    {
+      "nick": ".solid Frev",
+      "res": 9,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 84
+    },
+    {
+      "nick": "Sauce",
+      "res": 1,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 256
+    },
+    {
+      "nick": "Thot Patrol",
+      "res": 0,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 7,
+      "dmg": 350
+    },
+    {
+      "nick": "Kray",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 457
+    },
+    {
+      "nick": "Alham",
+      "res": 1,
+      "nok": 26,
+      "kills": 21,
+      "deaths": 2,
+      "dmg": 553
+    },
+    {
+      "nick": "Sukkii",
+      "res": 12,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 86
+    },
+    {
+      "nick": "22ROMEO",
+      "res": 6,
+      "nok": 16,
+      "kills": 14,
+      "deaths": 5,
+      "dmg": 333
+    },
+    {
+      "nick": "Snoob",
+      "res": 1,
+      "nok": 17,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 292
+    },
+    {
+      "nick": "Pr0digy",
+      "res": 0,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 272
+    },
+    {
+      "nick": "HungryPapa",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 101
+    },
+    {
+      "nick": "UIU_Trooper",
+      "res": 1,
+      "nok": 22,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 434
+    },
+    {
+      "nick": "ver_aimt",
+      "res": 12,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 254
+    },
+    {
+      "nick": "SlickNick4700",
+      "res": 0,
+      "nok": 21,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 502
+    },
+    {
+      "nick": "AbradantMatthew",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 93
+    },
+    {
+      "nick": "harry A",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 102
+    },
+    {
+      "nick": "Turtle",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 343
+    },
+    {
+      "nick": "iRoNic",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 237
+    },
+    {
+      "nick": "Hazza",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 601
+    },
+    {
+      "nick": "Phenix",
+      "res": 0,
+      "nok": 28,
+      "kills": 17,
+      "deaths": 1,
+      "dmg": 1137
+    },
+    {
+      "nick": "Spartacus xXx",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 501
+    },
+    {
+      "nick": "W4MP1DUDL3",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 146
+    },
+    {
+      "nick": "Bravo",
+      "res": 2,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 147
+    },
+    {
+      "nick": "FedeV2",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 88
+    },
+    {
+      "nick": "Furature-Amiral",
+      "res": 0,
+      "nok": 15,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 298
+    },
+    {
+      "nick": "zexz",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 198
+    },
+    {
+      "nick": "Igor",
+      "res": 0,
+      "nok": 13,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 238
+    },
+    {
+      "nick": "GYLFI_theKING",
+      "res": 1,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 491
+    },
+    {
+      "nick": "+ Prince Ali +",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 198
+    },
+    {
+      "nick": "jackstoner",
+      "res": 4,
+      "nok": 18,
+      "kills": 15,
+      "deaths": 4,
+      "dmg": 375
+    },
+    {
+      "nick": "WW JCarril",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 199
+    },
+    {
+      "nick": "DaPieMaster",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 565
+    },
+    {
+      "nick": "LockJaw",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 36
+    },
+    {
+      "nick": "Tree",
+      "res": 0,
+      "nok": 20,
+      "kills": 16,
+      "deaths": 0,
+      "dmg": 1687
+    }
+  ]
 }
