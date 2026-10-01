@@ -1074,6 +1074,37 @@ body.modal-open { overflow: hidden; }
   gap: 6px;
   text-align: center;
 }
+.pwr-scale-tier-btns {
+  display: inline-flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+.pwr-scale-tier-btn {
+  min-width: 1.55rem;
+  height: 1.45rem;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(196, 181, 253, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(230, 220, 255, 0.78);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+.pwr-scale-tier-btn:hover {
+  border-color: rgba(196, 181, 253, 0.55);
+  color: #fff;
+}
+.pwr-scale-tier-btn.is-active {
+  border-color: rgba(240, 171, 252, 0.7);
+  background: rgba(192, 38, 211, 0.28);
+  color: #fce7f3;
+}
+.pwr-scale-step-predator .rank-badge {
+  min-height: 2.4rem;
+}
 .pwr-scale-range {
   display: block;
   width: 100%;

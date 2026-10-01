@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-rp-v1";
+    new URLSearchParams(location.search).get("v") || "20261001-rp-v2";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -147,7 +147,7 @@
     Object.values(ledger.players).forEach((p) => {
       if (!p || !p.nick) return;
       const entry = {
-        rp: Math.round((Number(p.rp) || 0) * 10) / 10,
+        rp: Math.round(Number(p.rp) || 0),
         rankLabel: p.predatorPlace
           ? `PREDATOR #${p.predatorPlace}`
           : p.rankLabel,
@@ -282,20 +282,31 @@
   function pwrRankScaleHtml() {
     const steps = [];
     TRAIN_RP.names.forEach(([name, key], ni) => {
-      TRAIN_RP.roman.forEach((rom, ri) => {
+      const ranges = TRAIN_RP.roman.map((_, ri) => {
         const idx = ni * 3 + ri;
-        const min = idx * TRAIN_RP.step + 1;
-        const max = (idx + 1) * TRAIN_RP.step;
-        steps.push(
-          `<span class="pwr-scale-step">` +
-            `<span class="pwr-scale-range">${min}–${max}</span>` +
-            `<span class="rank-badge rank-${key} rank-badge-wide">${escapeHtml(name.toUpperCase())} ${rom}</span>` +
-            `</span>`
-        );
+        return {
+          roman: TRAIN_RP.roman[ri],
+          min: idx * TRAIN_RP.step + 1,
+          max: (idx + 1) * TRAIN_RP.step,
+        };
       });
+      const def = ranges[0];
+      const btns = ranges
+        .map(
+          (r, ri) =>
+            `<button type="button" class="pwr-scale-tier-btn${ri === 0 ? " is-active" : ""}" data-roman="${r.roman}" data-min="${r.min}" data-max="${r.max}" aria-pressed="${ri === 0 ? "true" : "false"}">${ri + 1}</button>`
+        )
+        .join("");
+      steps.push(
+        `<span class="pwr-scale-step" data-rank-key="${key}" data-rank-name="${escapeHtml(name.toUpperCase())}">` +
+          `<span class="pwr-scale-range">${def.min}–${def.max}</span>` +
+          `<span class="rank-badge rank-${key} rank-badge-wide"><span class="pwr-scale-badge-label">${escapeHtml(name.toUpperCase())} ${def.roman}</span></span>` +
+          `<span class="pwr-scale-tier-btns" role="group" aria-label="${escapeHtml(name)} I–III">${btns}</span>` +
+          `</span>`
+      );
     });
     steps.push(
-      `<span class="pwr-scale-step">` +
+      `<span class="pwr-scale-step pwr-scale-step-predator">` +
         `<span class="pwr-scale-range">${TRAIN_RP.radiant3Max + 1}+</span>` +
         `<span class="rank-badge rank-predator rank-badge-wide">PREDATOR<br /><small>#</small></span>` +
         `</span>`
@@ -315,12 +326,38 @@
     );
   }
 
+  function wirePwrRankScaleTiers(root) {
+    if (!root || root.dataset.tierWired === "1") return;
+    root.dataset.tierWired = "1";
+    root.addEventListener("click", (ev) => {
+      const btn = ev.target && ev.target.closest && ev.target.closest(".pwr-scale-tier-btn");
+      if (!btn || !root.contains(btn)) return;
+      const step = btn.closest(".pwr-scale-step");
+      if (!step) return;
+      const rangeEl = step.querySelector(".pwr-scale-range");
+      const labelEl = step.querySelector(".pwr-scale-badge-label");
+      const name = step.getAttribute("data-rank-name") || "";
+      const roman = btn.getAttribute("data-roman") || "I";
+      const min = btn.getAttribute("data-min") || "";
+      const max = btn.getAttribute("data-max") || "";
+      if (rangeEl) rangeEl.textContent = `${min}–${max}`;
+      if (labelEl) labelEl.textContent = `${name} ${roman}`;
+      step.querySelectorAll(".pwr-scale-tier-btn").forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    });
+  }
+
   function fillPwrRankScales() {
     const html = pwrRankScaleHtml();
     const el = document.getElementById("tm-pwr-rank-scale");
     if (el) {
       el.innerHTML = html;
       el.setAttribute("aria-label", "RP ranks");
+      el.dataset.tierWired = "";
+      wirePwrRankScaleTiers(el);
     }
     const cw = document.getElementById("cw-pwr-rank-scale");
     if (cw) {
@@ -385,7 +422,7 @@
   function formatPwrDelta(nick) {
     const d = modalPwrDeltas[String(nick || "").trim().toLowerCase()];
     if (d == null) return { text: "—", cls: "pwr-delta zero" };
-    const v = Math.round(Number(d) * 10) / 10;
+    const v = Math.round(Number(d) || 0);
     if (v > 0) return { text: `+${v}`, cls: "pwr-delta plus" };
     if (v < 0) return { text: String(v), cls: "pwr-delta minus" };
     return { text: "0", cls: "pwr-delta zero" };
