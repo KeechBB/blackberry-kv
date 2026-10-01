@@ -116,6 +116,20 @@
       "note": "Main · HOTDROP · vs clan 2–0 (15.09 PAAS) · not 30.09 Mutaha · also 09.10 Goose Bay"
     },
     {
+      "id": "08-hq",
+      "day": 8,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "HQ",
+      "map": "SEC 26 Mutaha AAS v1",
+      "size": "26v26",
+      "server": "HQ",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · vs clan 0–2 (24.09 Narva 36) · Mutaha 26 · NO SCOUT"
+    },
+    {
       "id": "09-dcai",
       "day": 9,
       "timeMsk": "20:00",
