@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const STATUS_RU = {
     win: "победа",
     lose: "поражение",
@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-rp-v5";
+    new URLSearchParams(location.search).get("v") || "20261001-rp-v6-revive";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
