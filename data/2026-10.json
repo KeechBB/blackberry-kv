@@ -144,6 +144,20 @@
       "note": "Main · HOTDROP · vs clan 2–0 (15.09+30.09) · not 07.10 Narva · FCL ARENA #2"
     },
     {
+      "id": "10-fal",
+      "day": 10,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "FAL",
+      "map": "SEC 26 Mutaha AAS v1",
+      "size": "20v20",
+      "server": "BB",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · FALCONS · Mutaha 20 · BB server · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "11-solid",
       "day": 11,
       "timeMsk": "21:00",
