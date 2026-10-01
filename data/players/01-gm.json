@@ -1,7 +1,7 @@
 {
   "matchId": "01-gm",
   "opp": "GM",
-  "note": "Junior R1 0:115 · Chora AAS v2 · 36:55 · сервер RNL Match 2. Наши R1: только верх табло (13/26) — нет freak и нижних отрядов; дослать скролл BB. oppR1 полный 26.",
+  "note": "Junior FINAL 0–2 · сумма 0:251 (R1 0:115 · R2 0:136). Chora AAS v2 · RNL Match 2. Наши R1 неполные (13/26). R2 наши полные 26. oppR1 полный; oppR2 не оцифрован.",
   "r1": [
     {
       "nick": "VET",
@@ -108,7 +108,216 @@
       "dmg": 99
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 72
+    },
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 126
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 71
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 10,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 199
+    },
+    {
+      "nick": "Radislave",
+      "res": 11,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 26
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 11,
+      "dmg": 110
+    },
+    {
+      "nick": "Goob",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 117
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 11,
+      "dmg": 66
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 160
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 215
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 3,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 158
+    },
+    {
+      "nick": "Muhomor",
+      "res": 2,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 201
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 85
+    },
+    {
+      "nick": "Bahus",
+      "res": 7,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 28
+    },
+    {
+      "nick": "freak",
+      "res": 14,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 78
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 97
+    },
+    {
+      "nick": "Mahorka",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 42
+    },
+    {
+      "nick": "ART",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 71
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 34
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 7,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 162
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 65
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 60
+    },
+    {
+      "nick": "KingOfLobs",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 40
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 177
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 66
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 103
+    }
+  ],
   "oppR1": [
     {
       "nick": "AluCeption",
@@ -326,8 +535,16 @@
       "us": "ЗЧВК",
       "them": "COA / ADF"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "tickets": "0:136",
+      "len": "29:13",
+      "us": "COA",
+      "them": "ЗЧВК"
+    },
+    "total": {
+      "tickets": "0–2 · сумма 0:251 (0:115 · 0:136)",
+      "len": "36:55 + 29:13"
+    }
   },
   "mvp": {
     "r1": {
@@ -345,10 +562,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "freak"
+      ],
+      "killer": [
+        "Muhomor"
+      ],
+      "damage": [
+        "spartan"
+      ],
+      "antiDeath": [
+        "HSVarvar"
+      ]
     }
   }
 }

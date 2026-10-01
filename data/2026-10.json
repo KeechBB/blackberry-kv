@@ -14,9 +14,11 @@
       "server": "GM",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "lose",
+      "meeting": "0–2",
       "r1": "0:115",
-      "note": "Junior · R1 0:115 (36:55) · ждём R2 · наши R1 стата неполная (13/26)",
+      "r2": "0:136",
+      "note": "Junior · сумма 0:251 (0:115 · 0:136) · R1 наши стата неполная 13/26",
       "playersUrl": "data/players/01-gm.json"
     },
     {

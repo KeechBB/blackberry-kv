@@ -20,7 +20,7 @@
       "id": "01-gm",
       "day": 1,
       "opp": "GM",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "Radislave"
@@ -36,10 +36,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "freak"
+        ],
+        "killer": [
+          "Muhomor"
+        ],
+        "damage": [
+          "spartan"
+        ],
+        "antiDeath": [
+          "HSVarvar"
+        ]
       }
     },
     {
@@ -1138,6 +1146,22 @@
         }
       ]
     },
+    "HSVarvar": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "JESTER": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1535,6 +1559,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Muhomor": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -2187,11 +2227,19 @@
       ]
     },
     "freak": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "17-44th",
           "day": 17,
@@ -2349,9 +2397,17 @@
     "spartan": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "29-44th",
           "day": 29,
