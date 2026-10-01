@@ -1078,6 +1078,7 @@ body.modal-open { overflow: hidden; }
   display: inline-flex;
   gap: 4px;
   margin-top: 2px;
+  min-height: 1.45rem;
 }
 .pwr-scale-tier-btn {
   min-width: 1.55rem;
@@ -1102,8 +1103,21 @@ body.modal-open { overflow: hidden; }
   background: rgba(192, 38, 211, 0.28);
   color: #fce7f3;
 }
+/* Пустой ряд как у 1/2/3 — бейдж PREDATOR на одной линии с Radiant */
+.pwr-scale-step-predator::after {
+  content: "";
+  display: block;
+  width: 1px;
+  min-height: 1.45rem;
+  margin-top: 2px;
+  visibility: hidden;
+}
 .pwr-scale-step-predator .rank-badge {
   min-height: 2.4rem;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .pwr-scale-range {
   display: block;
@@ -1122,7 +1136,9 @@ body.modal-open { overflow: hidden; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 1.7em;
+  align-self: center;
+  height: auto;
+  margin-bottom: 0.85rem;
   color: rgba(196, 181, 253, 0.5);
   font-size: 1.25rem;
   line-height: 1;
