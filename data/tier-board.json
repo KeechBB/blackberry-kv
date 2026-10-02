@@ -1,0 +1,421 @@
+{
+  "updatedAt": "2026-10-02T15:27:27",
+  "source": "tier-autofit · Fit CW-only",
+  "holdDays": 2,
+  "displayDays": 2,
+  "transfers": [
+    {
+      "nick": "AkiN",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "KillReal",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Tankist",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "freak",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Radislave",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Kroasawn",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "VET",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "MrChaykaa",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Barsik",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Otto",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Azure",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "Trixx",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ"
+    },
+    {
+      "nick": "akin0v",
+      "fromTier": 4,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Из тир 4 / резерва"
+    },
+    {
+      "nick": "yanchik",
+      "fromTier": 4,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Из тир 4 / вне среза"
+    },
+    {
+      "nick": "Forks",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений"
+    },
+    {
+      "nick": "ADUN",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений"
+    },
+    {
+      "nick": "Varyag",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений"
+    },
+    {
+      "nick": "GAD",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Активность / форма"
+    }
+  ],
+  "candidates": [
+    {
+      "nick": "Oguzok",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "strong",
+      "fit": 96.7,
+      "role": "Стрелок",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false,
+      "note": "Сильный ↑ · удержание 0/2д"
+    },
+    {
+      "nick": "Hazzi",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "strong",
+      "fit": 95.6,
+      "role": "Стрелок",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false,
+      "note": "Сильный ↑ · удержание 0/2д"
+    },
+    {
+      "nick": "Radislave",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "strong",
+      "fit": 95.2,
+      "role": "Медик",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false,
+      "note": "Сильный ↑ · удержание 0/2д"
+    },
+    {
+      "nick": "Tankist",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "strong",
+      "fit": 95.1,
+      "role": "Тех / водитель",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false,
+      "note": "Сильный ↑ · удержание 0/2д"
+    },
+    {
+      "nick": "Varyag",
+      "fromTier": 3,
+      "toTier": 4,
+      "dir": "down",
+      "band": "hard",
+      "fit": 67.0,
+      "role": "Медик",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false,
+      "note": "Форма ↓ · удержание 0/2д"
+    },
+    {
+      "nick": "JESTER",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "hard",
+      "fit": 70.6,
+      "role": "Стрелок",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false,
+      "note": "Форма ↓ · удержание 0/2д"
+    },
+    {
+      "nick": "Kroasawn",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "almost",
+      "fit": 94.7,
+      "role": "Медик",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "uglyfromyoung",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 93.8,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "ART",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 93.3,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "NestorMahno",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 93.3,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Muhomor",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 92.0,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Bahus",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.8,
+      "role": "Медик",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Edge_CM",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.7,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "ZensU",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.3,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Jerom101",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.2,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "SHURUP",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 90.6,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "LOST",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 90.2,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "VET",
+      "fromTier": 2,
+      "toTier": 3,
+      "dir": "down",
+      "band": "warn",
+      "fit": 75.8,
+      "role": "Медик",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Otto",
+      "fromTier": 2,
+      "toTier": 3,
+      "dir": "down",
+      "band": "warn",
+      "fit": 82.0,
+      "role": "КО (SL)",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "AkiN",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 82.3,
+      "role": "ГП",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Treppen",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 82.8,
+      "role": "КО (SL)",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Gadler",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 83.5,
+      "role": "Тех / водитель",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "S.M.P",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 83.7,
+      "role": "Тандем",
+      "note": "Жёлтая зона · Fit 75–85%"
+    }
+  ],
+  "appliedNow": []
+}

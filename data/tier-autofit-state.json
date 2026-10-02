@@ -1,0 +1,261 @@
+{
+  "updatedAt": "2026-10-02",
+  "holdDays": 2,
+  "displayDays": 2,
+  "watches": [
+    {
+      "nick": "Oguzok",
+      "kind": "promote",
+      "fromTier": 4,
+      "toTier": 3,
+      "fit": 96.7,
+      "band": "strong",
+      "role": "Стрелок",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Hazzi",
+      "kind": "promote",
+      "fromTier": 4,
+      "toTier": 3,
+      "fit": 95.6,
+      "band": "strong",
+      "role": "Стрелок",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Radislave",
+      "kind": "promote",
+      "fromTier": 2,
+      "toTier": 1,
+      "fit": 95.2,
+      "band": "strong",
+      "role": "Медик",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Tankist",
+      "kind": "promote",
+      "fromTier": 2,
+      "toTier": 1,
+      "fit": 95.1,
+      "band": "strong",
+      "role": "Тех / водитель",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Varyag",
+      "kind": "demote",
+      "fromTier": 3,
+      "toTier": 4,
+      "fit": 67.0,
+      "band": "hard",
+      "role": "Медик",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "JESTER",
+      "kind": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "fit": 70.6,
+      "band": "hard",
+      "role": "Стрелок",
+      "since": "2026-10-02",
+      "daysHeld": 0,
+      "ready": false
+    }
+  ],
+  "transfers": [
+    {
+      "nick": "AkiN",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "KillReal",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Tankist",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "freak",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Radislave",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Kroasawn",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "VET",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "MrChaykaa",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Barsik",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Otto",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Azure",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "Trixx",
+      "fromTier": 3,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений ORR/КВ",
+      "actor": "система"
+    },
+    {
+      "nick": "akin0v",
+      "fromTier": 4,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Из тир 4 / резерва",
+      "actor": "система"
+    },
+    {
+      "nick": "yanchik",
+      "fromTier": 4,
+      "toTier": 2,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Из тир 4 / вне среза",
+      "actor": "система"
+    },
+    {
+      "nick": "Forks",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений",
+      "actor": "система"
+    },
+    {
+      "nick": "ADUN",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений",
+      "actor": "система"
+    },
+    {
+      "nick": "Varyag",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Пакет повышений",
+      "actor": "система"
+    },
+    {
+      "nick": "GAD",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "at": "2026-10-02",
+      "fit": null,
+      "note": "Активность / форма",
+      "actor": "система"
+    }
+  ]
+}
