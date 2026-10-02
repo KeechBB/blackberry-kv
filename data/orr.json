@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-10-02",
   "source": "DeployRole logs TR1 → role family per match-day",
-  "note": "ORR = текущая форма/польза в составе (не вечный скилл).",
+  "note": "ORR = текущая форма/польза в составе (не вечный скилл). Канон: со всех матчей на сайте; агент обновляет после каждого залива (rating-metrics.mdc).",
   "byNick": {
     "diray": 673,
     "lordwolf": 659,

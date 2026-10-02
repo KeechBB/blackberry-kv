@@ -1,5 +1,5 @@
 {
-  "note": "Канон: sostav/osnovnoj-sostav.md. Тир 4 = нет в тир 1–3. Ники на табло нормализуются без учёта регистра. Повышение 2026-10-02 (ORR/КВ/сент. бой).",
+  "note": "Канон: sostav/osnovnoj-sostav.md. Тир 4 = нет в тир 1–3. Ники на табло нормализуются без учёта регистра. Повышение 2026-10-02; GAD T1→T2 2026-10-02 (активность).",
   "aliases": {
     "lordwolf": "LordWolf",
     "keech": "Keech",
@@ -75,7 +75,6 @@
     "iKEppA",
     "Treppen",
     "Runetik",
-    "GAD",
     "JESTER",
     "AkiN",
     "KillReal"
@@ -102,7 +101,8 @@
     "Azure",
     "Trixx",
     "akin0v",
-    "yanchik"
+    "yanchik",
+    "GAD"
   ],
   "tier3": [
     "Taipan",
