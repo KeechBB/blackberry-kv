@@ -6,7 +6,14 @@
       "month": 9,
       "label": "Сентябрь 2026",
       "url": "data/training/2026-09.json"
+    },
+    {
+      "id": "2026-10",
+      "year": 2026,
+      "month": 10,
+      "label": "Октябрь 2026",
+      "url": "data/training/2026-10.json"
     }
   ],
-  "bust": "20260930-narva-m2"
+  "bust": "20261002-gorodok-m1"
 }
