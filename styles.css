@@ -1892,3 +1892,135 @@ body.modal-open { overflow: hidden; }
 .pwr-delta.plus { color: #6ee7b7; font-weight: 700; }
 .pwr-delta.minus { color: #f87171; font-weight: 700; }
 .pwr-delta.zero { color: rgba(226, 220, 245, 0.55); font-weight: 600; }
+
+/* —— Тиры Fit (TM tab) —— */
+.tfs-filters { margin-bottom: 14px; }
+.tfs-subnav,
+.tfs-tier-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.tfs-chip {
+  appearance: none;
+  border: 1px solid rgba(167, 139, 250, 0.22);
+  background: rgba(14, 12, 24, 0.72);
+  color: rgba(232, 226, 248, 0.78);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease, transform 0.12s ease;
+}
+.tfs-chip:hover {
+  border-color: rgba(196, 181, 253, 0.45);
+  color: #f5f1ff;
+}
+.tfs-chip.active {
+  border-color: rgba(196, 181, 253, 0.65);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.35), rgba(91, 33, 182, 0.28));
+  color: #f8f5ff;
+  box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.18) inset;
+}
+.tfs-tier-lead {
+  margin: 0 0 18px;
+  color: rgba(210, 200, 235, 0.72);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  max-width: 72ch;
+}
+#tfs-kpis {
+  margin: 0 0 18px;
+}
+.tfs-boards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.tfs-role-card {
+  border: 1px solid rgba(167, 139, 250, 0.14);
+  border-radius: 16px;
+  background:
+    linear-gradient(165deg, rgba(36, 24, 64, 0.35), rgba(10, 8, 18, 0.55) 42%),
+    rgba(10, 8, 18, 0.55);
+  padding: 16px 18px 12px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+}
+.tfs-role-card h3 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.tfs-bench {
+  margin: 0 0 12px;
+  color: rgba(190, 180, 220, 0.7);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.tfs-table { width: 100%; }
+.tfs-table th,
+.tfs-table td {
+  white-space: nowrap;
+}
+.tfs-rec {
+  color: #eab308 !important;
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(234, 179, 8, 0.25);
+}
+.tfs-row-best {
+  background: rgba(234, 179, 8, 0.07);
+}
+.tfs-row-best td:first-child {
+  box-shadow: inset 3px 0 0 #eab308;
+}
+.tfs-pause {
+  color: rgba(196, 181, 253, 0.72);
+  font-size: 0.78rem;
+  font-weight: 500;
+}
+.tfs-band-strong {
+  color: #6ee7b7;
+  font-weight: 700;
+}
+.tfs-band-almost {
+  color: #eab308;
+  font-weight: 700;
+}
+.tfs-cand-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+.tfs-card {
+  border: 1px solid rgba(167, 139, 250, 0.14);
+  border-radius: 16px;
+  background: rgba(10, 8, 18, 0.5);
+  padding: 14px 16px 16px;
+}
+.tfs-card .board-head { margin-bottom: 10px; }
+.tfs-warn-head { margin-top: 22px; }
+.tfs-an-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.tfs-an-grid .tfs-card-wide { grid-column: 1 / -1; }
+.tfs-kpi-note {
+  margin: 4px 0 0;
+  font-size: 0.78rem;
+  color: rgba(180, 170, 210, 0.65);
+}
+.tfs-foot {
+  margin: 8px 0 0;
+  font-size: 0.75rem;
+  color: rgba(170, 160, 200, 0.6);
+}
+@media (max-width: 900px) {
+  .tfs-an-grid { grid-template-columns: 1fr; }
+  .tfs-an-grid .tfs-card-wide { grid-column: auto; }
+}

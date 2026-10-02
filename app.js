@@ -28,7 +28,7 @@
   const ORR_URL = "data/orr.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261002-gad-t2";
+    new URLSearchParams(location.search).get("v") || "20261002-tfs-fit";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -643,10 +643,12 @@
     const rating = document.getElementById("tm-rating");
     const analytics = document.getElementById("tm-analytics");
     const hits = document.getElementById("tm-hits");
+    const tiers = document.getElementById("tm-tiers");
     if (matches) matches.hidden = panel !== "matches";
     if (rating) rating.hidden = panel !== "rating";
     if (analytics) analytics.hidden = panel !== "analytics";
     if (hits) hits.hidden = panel !== "hits";
+    if (tiers) tiers.hidden = panel !== "tiers";
     document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tm === panel);
     });
@@ -666,6 +668,9 @@
     if (panel === "hits") {
       loadTrainingHitmaps();
       loadTrainingKits();
+    }
+    if (panel === "tiers" && typeof window.loadTfsFit === "function") {
+      window.loadTfsFit(dataUrl("data/tfs-fit.json"));
     }
   }
 
@@ -702,7 +707,9 @@
             ? "#/tm/analytics"
             : btn.dataset.tm === "hits"
               ? "#/tm/hits"
-              : "#/tm"
+              : btn.dataset.tm === "tiers"
+                ? "#/tm/tiers"
+                : "#/tm"
       );
     });
   });
@@ -718,13 +725,15 @@
     if (h.startsWith("#/tm")) {
       showView("tm");
       showTmPanel(
-        h.includes("/hits")
-          ? "hits"
-          : h.includes("analytics")
-            ? "analytics"
-            : h.includes("rating")
-              ? "rating"
-              : "matches"
+        h.includes("/tiers")
+          ? "tiers"
+          : h.includes("/hits")
+            ? "hits"
+            : h.includes("analytics")
+              ? "analytics"
+              : h.includes("rating")
+                ? "rating"
+                : "matches"
       );
     } else if (h.startsWith("#/cw")) {
       showView("cw");

@@ -1,0 +1,2765 @@
+{
+  "updatedAt": "2026-10-02",
+  "source": "KV CW players only — training excluded",
+  "windowMeetings": 12,
+  "meetingsUsed": [
+    "17-44th",
+    "18-ih",
+    "22-gm",
+    "24-hq",
+    "25-h1gh",
+    "26-20r",
+    "26-alpha",
+    "27-sph",
+    "29-44th",
+    "30-dcai",
+    "30-ih",
+    "01-gm"
+  ],
+  "meetingsCount": 12,
+  "maxRoundsInWindow": 24,
+  "thresholds": {
+    "promoteT1": 82.0,
+    "holdT1": 72.0,
+    "holdT2": 60.0,
+    "minRounds": 8
+  },
+  "players": [
+    {
+      "nick": "Diray",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 1,
+      "tfs": 92.5,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 0.69,
+        "kd": 3.1,
+        "dmg_g": 320.0,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 8.6,
+        "kd": 100.0,
+        "dmg": 91.4,
+        "kills": 100.0,
+        "surv": 93.6,
+        "pres": 95.2,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "iKEppA",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 1,
+      "tfs": 89.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 2.32,
+        "dmg_g": 285.6,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 100.0,
+        "dmg": 81.6,
+        "kills": 100.0,
+        "surv": 75.1,
+        "pres": 95.2,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Tankist",
+      "roleBucket": "CREW",
+      "roleLabel": "Водитель (техника)",
+      "currentTier": 2,
+      "tfs": 87.4,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 10,
+      "meetingsInWindow": 5,
+      "stats": {
+        "res_g": 1.9,
+        "kd": 1.74,
+        "dmg_g": 457.6,
+        "pres": 0.42
+      },
+      "components": {
+        "res": 23.8,
+        "kd": 86.9,
+        "dmg": 100.0,
+        "kills": 91.2,
+        "surv": 70.9,
+        "pres": 59.5,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Chidori",
+      "roleBucket": "CMD",
+      "roleLabel": "CMD",
+      "currentTier": 1,
+      "tfs": 80.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 0.19,
+        "kd": 0.89,
+        "dmg_g": 134.6,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 2.3,
+        "kd": 44.7,
+        "dmg": 38.5,
+        "kills": 52.3,
+        "surv": 64.3,
+        "pres": 95.2,
+        "nok": 91.7
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Pymba",
+      "roleBucket": "GP",
+      "roleLabel": "ГП",
+      "currentTier": 1,
+      "tfs": 78.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 0.38,
+        "kd": 1.83,
+        "dmg_g": 267.5,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 4.7,
+        "kd": 91.7,
+        "dmg": 76.4,
+        "kills": 100.0,
+        "surv": 66.7,
+        "pres": 47.6,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "KillReal",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 1,
+      "tfs": 77.5,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 7.06,
+        "kd": 0.29,
+        "dmg_g": 80.4,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 88.3,
+        "kd": 14.7,
+        "dmg": 23.0,
+        "kills": 13.3,
+        "surv": 80.8,
+        "pres": 95.2,
+        "nok": 24.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Zerox",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 76.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 2.43,
+        "dmg_g": 227.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 100.0,
+        "dmg": 64.9,
+        "kills": 100.0,
+        "surv": 83.3,
+        "pres": 11.9,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Kroasawn",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 2,
+      "tfs": 75.5,
+      "verdict": "HOLD_T1",
+      "gatesOk": true,
+      "suggestedTier": null,
+      "rounds": 18,
+      "meetingsInWindow": 9,
+      "stats": {
+        "res_g": 6.56,
+        "kd": 0.58,
+        "dmg_g": 133.8,
+        "pres": 0.75
+      },
+      "components": {
+        "res": 81.9,
+        "kd": 28.9,
+        "dmg": 38.2,
+        "kills": 30.6,
+        "surv": 70.6,
+        "pres": 100.0,
+        "nok": 62.0
+      },
+      "notes": []
+    },
+    {
+      "nick": "Morty",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 1,
+      "tfs": 75.5,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 6,
+      "meetingsInWindow": 3,
+      "stats": {
+        "res_g": 12.17,
+        "kd": 0.77,
+        "dmg_g": 121.7,
+        "pres": 0.25
+      },
+      "components": {
+        "res": 100.0,
+        "kd": 38.3,
+        "dmg": 34.8,
+        "kills": 47.9,
+        "surv": 60.6,
+        "pres": 35.7,
+        "nok": 77.8
+      },
+      "notes": [
+        "мало раундов КВ (6 < 8)",
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "ZensU",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 75.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 0.86,
+        "kd": 1.7,
+        "dmg_g": 276.1,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 10.7,
+        "kd": 84.8,
+        "dmg": 78.9,
+        "kills": 50.0,
+        "surv": 100.0,
+        "pres": 83.3,
+        "nok": 86.9
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Radislave",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 2,
+      "tfs": 74.9,
+      "verdict": "HOLD_T1",
+      "gatesOk": true,
+      "suggestedTier": null,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 6.62,
+        "kd": 0.3,
+        "dmg_g": 79.6,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 82.8,
+        "kd": 15.2,
+        "dmg": 22.7,
+        "kills": 13.3,
+        "surv": 83.3,
+        "pres": 95.2,
+        "nok": 32.3
+      },
+      "notes": []
+    },
+    {
+      "nick": "Kuchenchips",
+      "roleBucket": "CREW",
+      "roleLabel": "Водитель (техника)",
+      "currentTier": 1,
+      "tfs": 74.6,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.89,
+        "dmg_g": 707.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 44.7,
+        "dmg": 100.0,
+        "kills": 100.0,
+        "surv": 33.3,
+        "pres": 11.9,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "lepurple",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 1,
+      "tfs": 74.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 6.31,
+        "kd": 0.66,
+        "dmg_g": 83.6,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 78.9,
+        "kd": 32.8,
+        "dmg": 23.9,
+        "kills": 29.7,
+        "surv": 80.8,
+        "pres": 95.2,
+        "nok": 62.5
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Keech",
+      "roleBucket": "CMD",
+      "roleLabel": "CMD",
+      "currentTier": 1,
+      "tfs": 73.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 1.07,
+        "kd": 0.7,
+        "dmg_g": 154.1,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 13.4,
+        "kd": 34.8,
+        "dmg": 44.0,
+        "kills": 49.1,
+        "surv": 54.3,
+        "pres": 83.3,
+        "nok": 92.9
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Hikkomaru",
+      "roleBucket": "AT_HEAVY",
+      "roleLabel": "Тандем",
+      "currentTier": 1,
+      "tfs": 69.6,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 1.32,
+        "dmg_g": 316.0,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 65.8,
+        "dmg": 90.3,
+        "kills": 78.1,
+        "surv": 63.5,
+        "pres": 23.8,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "angel",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 1,
+      "tfs": 69.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 1.42,
+        "dmg_g": 248.6,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 70.9,
+        "dmg": 71.0,
+        "kills": 69.6,
+        "surv": 75.3,
+        "pres": 83.3,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 1.42 < 1.5"
+      ]
+    },
+    {
+      "nick": "Mukuru",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 1,
+      "tfs": 68.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 12,
+      "meetingsInWindow": 6,
+      "stats": {
+        "res_g": 1.58,
+        "kd": 2.09,
+        "dmg_g": 187.1,
+        "pres": 0.5
+      },
+      "components": {
+        "res": 19.8,
+        "kd": 100.0,
+        "dmg": 53.5,
+        "kills": 47.9,
+        "surv": 100.0,
+        "pres": 71.4,
+        "nok": 83.3
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Blizzardrix",
+      "roleBucket": "SAPPER",
+      "roleLabel": "Сапёр",
+      "currentTier": 1,
+      "tfs": 65.4,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 12,
+      "meetingsInWindow": 6,
+      "stats": {
+        "res_g": 0.33,
+        "kd": 0.98,
+        "dmg_g": 318.6,
+        "pres": 0.5
+      },
+      "components": {
+        "res": 4.2,
+        "kd": 49.1,
+        "dmg": 91.0,
+        "kills": 57.3,
+        "surv": 64.5,
+        "pres": 71.4,
+        "nok": 97.2
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "CAT",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 1,
+      "tfs": 63.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 12,
+      "meetingsInWindow": 6,
+      "stats": {
+        "res_g": 0.08,
+        "kd": 1.44,
+        "dmg_g": 181.7,
+        "pres": 0.5
+      },
+      "components": {
+        "res": 1.0,
+        "kd": 72.1,
+        "dmg": 51.9,
+        "kills": 78.1,
+        "surv": 69.0,
+        "pres": 71.4,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "S.M.P",
+      "roleBucket": "AT_HEAVY",
+      "roleLabel": "Тандем",
+      "currentTier": 1,
+      "tfs": 61.8,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 10,
+      "meetingsInWindow": 6,
+      "stats": {
+        "res_g": 0.2,
+        "kd": 0.71,
+        "dmg_g": 293.8,
+        "pres": 0.42
+      },
+      "components": {
+        "res": 2.5,
+        "kd": 35.3,
+        "dmg": 83.9,
+        "kills": 45.0,
+        "surv": 59.5,
+        "pres": 59.5,
+        "nok": 76.7
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол dmg_g 293.80 < 300.0"
+      ]
+    },
+    {
+      "nick": "_VaGNeR_",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 61.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 1.4,
+        "dmg_g": 217.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 70.0,
+        "dmg": 62.0,
+        "kills": 87.5,
+        "surv": 60.6,
+        "pres": 11.9,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 1.40 < 1.5"
+      ]
+    },
+    {
+      "nick": "yanchik",
+      "roleBucket": "OTHER",
+      "roleLabel": "Прочее",
+      "currentTier": 2,
+      "tfs": 60.5,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 13,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 0.38,
+        "kd": 1.17,
+        "dmg_g": 183.0,
+        "pres": 0.54
+      },
+      "components": {
+        "res": 4.8,
+        "kd": 58.3,
+        "dmg": 52.3,
+        "kills": 53.8,
+        "surv": 79.5,
+        "pres": 77.4,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "Treppen",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 1,
+      "tfs": 59.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 0.21,
+        "kd": 1.02,
+        "dmg_g": 140.4,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 2.7,
+        "kd": 50.9,
+        "dmg": 40.1,
+        "kills": 52.7,
+        "surv": 71.8,
+        "pres": 83.3,
+        "nok": 90.5
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "VET",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 2,
+      "tfs": 57.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 4.79,
+        "kd": 0.34,
+        "dmg_g": 64.9,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 59.8,
+        "kd": 17.2,
+        "dmg": 18.6,
+        "kills": 20.5,
+        "surv": 63.1,
+        "pres": 83.3,
+        "nok": 39.3
+      },
+      "notes": [
+        "пол res_g 4.79 < 5.5"
+      ]
+    },
+    {
+      "nick": "Gadler",
+      "roleBucket": "CREW",
+      "roleLabel": "Водитель (техника)",
+      "currentTier": 1,
+      "tfs": 57.6,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 12,
+      "meetingsInWindow": 6,
+      "stats": {
+        "res_g": 0.67,
+        "kd": 0.66,
+        "dmg_g": 248.3,
+        "pres": 0.5
+      },
+      "components": {
+        "res": 8.3,
+        "kd": 32.8,
+        "dmg": 71.0,
+        "kills": 45.8,
+        "surv": 54.8,
+        "pres": 71.4,
+        "nok": 79.2
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол dmg_g 248.33 < 300.0"
+      ]
+    },
+    {
+      "nick": "Barsik",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 57.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 18,
+      "meetingsInWindow": 9,
+      "stats": {
+        "res_g": 0.28,
+        "kd": 1.18,
+        "dmg_g": 149.2,
+        "pres": 0.75
+      },
+      "components": {
+        "res": 3.5,
+        "kd": 58.9,
+        "dmg": 42.6,
+        "kills": 59.7,
+        "surv": 73.2,
+        "pres": 100.0,
+        "nok": 100.0
+      },
+      "notes": [
+        "пол kd 1.18 < 1.5"
+      ]
+    },
+    {
+      "nick": "Tatarin",
+      "roleBucket": "OTHER",
+      "roleLabel": "Прочее",
+      "currentTier": 4,
+      "tfs": 56.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 1.57,
+        "dmg_g": 207.5,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 78.6,
+        "dmg": 59.3,
+        "kills": 34.4,
+        "surv": 100.0,
+        "pres": 23.8,
+        "nok": 58.3
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "akin0v",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 2,
+      "tfs": 55.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 12,
+      "meetingsInWindow": 6,
+      "stats": {
+        "res_g": 4.58,
+        "kd": 0.75,
+        "dmg_g": 118.1,
+        "pres": 0.5
+      },
+      "components": {
+        "res": 57.3,
+        "kd": 37.3,
+        "dmg": 33.7,
+        "kills": 45.8,
+        "surv": 61.5,
+        "pres": 71.4,
+        "nok": 72.2
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ"
+      ]
+    },
+    {
+      "nick": "JESTER",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 1,
+      "tfs": 51.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 1.11,
+        "dmg_g": 200.6,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 55.3,
+        "dmg": 57.3,
+        "kills": 32.8,
+        "surv": 100.0,
+        "pres": 47.6,
+        "nok": 68.8
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 1.11 < 1.5"
+      ]
+    },
+    {
+      "nick": "AkiN",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 1,
+      "tfs": 51.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 21,
+      "meetingsInWindow": 11,
+      "stats": {
+        "res_g": 2.52,
+        "kd": 0.92,
+        "dmg_g": 133.9,
+        "pres": 0.88
+      },
+      "components": {
+        "res": 31.5,
+        "kd": 45.9,
+        "dmg": 38.2,
+        "kills": 39.9,
+        "surv": 83.8,
+        "pres": 100.0,
+        "nok": 72.2
+      },
+      "notes": [
+        "пол res_g 2.52 < 5.5"
+      ]
+    },
+    {
+      "nick": "freak",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 51.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 19,
+      "meetingsInWindow": 10,
+      "stats": {
+        "res_g": 3.0,
+        "kd": 0.93,
+        "dmg_g": 138.3,
+        "pres": 0.79
+      },
+      "components": {
+        "res": 37.5,
+        "kd": 46.7,
+        "dmg": 39.5,
+        "kills": 46.7,
+        "surv": 74.1,
+        "pres": 100.0,
+        "nok": 100.0
+      },
+      "notes": [
+        "пол kd 0.93 < 1.5"
+      ]
+    },
+    {
+      "nick": "LordWolf",
+      "roleBucket": "SAPPER",
+      "roleLabel": "Сапёр",
+      "currentTier": 1,
+      "tfs": 50.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 16,
+      "meetingsInWindow": 8,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.76,
+        "dmg_g": 165.2,
+        "pres": 0.67
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 37.8,
+        "dmg": 47.2,
+        "kills": 48.4,
+        "surv": 59.3,
+        "pres": 95.2,
+        "nok": 91.7
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол dmg_g 165.19 < 200.0"
+      ]
+    },
+    {
+      "nick": "Summer",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 1,
+      "tfs": 50.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 10,
+      "meetingsInWindow": 5,
+      "stats": {
+        "res_g": 0.3,
+        "kd": 0.7,
+        "dmg_g": 158.9,
+        "pres": 0.42
+      },
+      "components": {
+        "res": 3.8,
+        "kd": 35.1,
+        "dmg": 45.4,
+        "kills": 58.8,
+        "surv": 46.3,
+        "pres": 59.5,
+        "nok": 100.0
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол pres 0.42 < 0.5"
+      ]
+    },
+    {
+      "nick": "KTO--TO",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 4,
+      "tfs": 49.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 1.12,
+        "dmg_g": 99.5,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 56.0,
+        "dmg": 28.4,
+        "kills": 43.8,
+        "surv": 92.0,
+        "pres": 47.6,
+        "nok": 70.8
+      },
+      "notes": [
+        "пол pres 0.33 < 0.5"
+      ]
+    },
+    {
+      "nick": "Bahus",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 4,
+      "tfs": 47.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 3.75,
+        "kd": 0.41,
+        "dmg_g": 61.6,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 46.9,
+        "kd": 20.7,
+        "dmg": 17.6,
+        "kills": 18.8,
+        "surv": 80.8,
+        "pres": 47.6,
+        "nok": 35.4
+      },
+      "notes": [
+        "пол res_g 3.75 < 5.5"
+      ]
+    },
+    {
+      "nick": "Otto",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 2,
+      "tfs": 46.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 0.38,
+        "kd": 0.64,
+        "dmg_g": 167.1,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 4.7,
+        "kd": 32.0,
+        "dmg": 47.8,
+        "kills": 25.0,
+        "surv": 92.0,
+        "pres": 47.6,
+        "nok": 47.9
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол pres 0.33 < 0.5"
+      ]
+    },
+    {
+      "nick": "daddy",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 4,
+      "tfs": 45.6,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 0.25,
+        "kd": 0.89,
+        "dmg_g": 174.8,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 3.1,
+        "kd": 44.7,
+        "dmg": 49.9,
+        "kills": 53.1,
+        "surv": 63.5,
+        "pres": 23.8,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол pres 0.17 < 0.5"
+      ]
+    },
+    {
+      "nick": "Azure",
+      "roleBucket": "AT_LIGHT",
+      "roleLabel": "Лёгкая труба",
+      "currentTier": 2,
+      "tfs": 45.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 1.75,
+        "kd": 0.75,
+        "dmg_g": 172.8,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 21.9,
+        "kd": 37.5,
+        "dmg": 49.4,
+        "kills": 32.8,
+        "surv": 83.3,
+        "pres": 47.6,
+        "nok": 68.8
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол dmg_g 172.75 < 300.0"
+      ]
+    },
+    {
+      "nick": "Durik",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 3,
+      "tfs": 44.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 1.14,
+        "dmg_g": 115.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 57.1,
+        "dmg": 33.0,
+        "kills": 50.0,
+        "surv": 83.3,
+        "pres": 11.9,
+        "nok": 83.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 1.14 < 1.5"
+      ]
+    },
+    {
+      "nick": "qop",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 3,
+      "tfs": 44.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.82,
+        "dmg_g": 196.8,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 40.9,
+        "dmg": 56.2,
+        "kills": 28.1,
+        "surv": 100.0,
+        "pres": 23.8,
+        "nok": 37.5
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол pres 0.17 < 0.5"
+      ]
+    },
+    {
+      "nick": "Muhomor",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 43.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 1.0,
+        "dmg_g": 144.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 50.0,
+        "dmg": 41.3,
+        "kills": 56.2,
+        "surv": 66.7,
+        "pres": 11.9,
+        "nok": 83.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 1.00 < 1.5"
+      ]
+    },
+    {
+      "nick": "MrChaykaa",
+      "roleBucket": "AT_LIGHT",
+      "roleLabel": "Лёгкая труба",
+      "currentTier": 2,
+      "tfs": 43.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 1.07,
+        "kd": 0.66,
+        "dmg_g": 124.3,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 13.4,
+        "kd": 32.8,
+        "dmg": 35.5,
+        "kills": 39.3,
+        "surv": 63.1,
+        "pres": 83.3,
+        "nok": 71.4
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол dmg_g 124.29 < 300.0"
+      ]
+    },
+    {
+      "nick": "Nickname",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 41.6,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.9,
+        "dmg_g": 153.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 45.0,
+        "dmg": 43.7,
+        "kills": 56.2,
+        "surv": 60.6,
+        "pres": 11.9,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.90 < 1.5"
+      ]
+    },
+    {
+      "nick": "spartan",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 41.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.68,
+        "dmg_g": 208.2,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 34.0,
+        "dmg": 59.5,
+        "kills": 53.1,
+        "surv": 49.4,
+        "pres": 23.8,
+        "nok": 87.5
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.68 < 1.5"
+      ]
+    },
+    {
+      "nick": "Goob",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 39.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 2.5,
+        "kd": 0.88,
+        "dmg_g": 120.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 31.2,
+        "kd": 43.8,
+        "dmg": 34.3,
+        "kills": 43.8,
+        "surv": 74.1,
+        "pres": 11.9,
+        "nok": 91.7
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.88 < 1.5"
+      ]
+    },
+    {
+      "nick": "r4mp",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 4,
+      "tfs": 39.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 1.5,
+        "kd": 2.8,
+        "dmg_g": 183.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 18.8,
+        "kd": 100.0,
+        "dmg": 52.3,
+        "kills": 87.5,
+        "surv": 100.0,
+        "pres": 11.9,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол res_g 1.50 < 5.5"
+      ]
+    },
+    {
+      "nick": "COBRA",
+      "roleBucket": "AT_HEAVY",
+      "roleLabel": "Тандем",
+      "currentTier": 4,
+      "tfs": 38.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 0.25,
+        "kd": 0.38,
+        "dmg_g": 171.6,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 3.1,
+        "kd": 19.0,
+        "dmg": 49.0,
+        "kills": 25.0,
+        "surv": 58.0,
+        "pres": 47.6,
+        "nok": 75.0
+      },
+      "notes": [
+        "пол dmg_g 171.62 < 300.0"
+      ]
+    },
+    {
+      "nick": "One Attack",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 38.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 1.75,
+        "kd": 0.87,
+        "dmg_g": 104.5,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 21.9,
+        "kd": 43.3,
+        "dmg": 29.9,
+        "kills": 40.6,
+        "surv": 78.4,
+        "pres": 23.8,
+        "nok": 70.8
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.87 < 1.5"
+      ]
+    },
+    {
+      "nick": "ADUN",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 3,
+      "tfs": 38.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 2.62,
+        "kd": 0.23,
+        "dmg_g": 35.6,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 32.8,
+        "kd": 11.3,
+        "dmg": 10.2,
+        "kills": 10.9,
+        "surv": 76.2,
+        "pres": 47.6,
+        "nok": 14.6
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол res_g 2.62 < 5.5"
+      ]
+    },
+    {
+      "nick": "FLEX",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 2,
+      "tfs": 36.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 6,
+      "meetingsInWindow": 3,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 0.55,
+        "dmg_g": 116.0,
+        "pres": 0.25
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 27.6,
+        "dmg": 33.1,
+        "kills": 33.3,
+        "surv": 62.5,
+        "pres": 35.7,
+        "nok": 52.8
+      },
+      "notes": [
+        "мало раундов КВ (6 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол pres 0.25 < 0.5"
+      ]
+    },
+    {
+      "nick": "NestorMahno",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 35.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.78,
+        "dmg_g": 129.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 38.9,
+        "dmg": 36.9,
+        "kills": 43.8,
+        "surv": 66.7,
+        "pres": 11.9,
+        "nok": 91.7
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.78 < 1.5"
+      ]
+    },
+    {
+      "nick": "Mighty",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 3,
+      "tfs": 35.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 0.75,
+        "dmg_g": 131.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 37.5,
+        "dmg": 37.6,
+        "kills": 37.5,
+        "surv": 74.1,
+        "pres": 11.9,
+        "nok": 83.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.75 < 1.5"
+      ]
+    },
+    {
+      "nick": "firs",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 4,
+      "tfs": 34.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 3.0,
+        "kd": 0.3,
+        "dmg_g": 61.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 37.5,
+        "kd": 15.0,
+        "dmg": 17.6,
+        "kills": 18.8,
+        "surv": 60.6,
+        "pres": 11.9,
+        "nok": 33.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол res_g 3.00 < 5.5"
+      ]
+    },
+    {
+      "nick": "uglyfromyoung",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 34.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 2.0,
+        "kd": 0.73,
+        "dmg_g": 99.8,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 25.0,
+        "kd": 36.4,
+        "dmg": 28.5,
+        "kills": 25.0,
+        "surv": 100.0,
+        "pres": 23.8,
+        "nok": 50.0
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.73 < 1.5"
+      ]
+    },
+    {
+      "nick": "T-800",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 3,
+      "tfs": 33.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 3.38,
+        "kd": 0.63,
+        "dmg_g": 84.4,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 42.2,
+        "kd": 31.7,
+        "dmg": 24.1,
+        "kills": 29.7,
+        "surv": 78.4,
+        "pres": 47.6,
+        "nok": 54.2
+      },
+      "notes": [
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.63 < 1.5"
+      ]
+    },
+    {
+      "nick": "CORWAX",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 4,
+      "tfs": 33.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 1,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 2.0,
+        "dmg_g": 163.0,
+        "pres": 0.04
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 100.0,
+        "dmg": 46.6,
+        "kills": 75.0,
+        "surv": 95.2,
+        "pres": 6.0,
+        "nok": 100.0
+      },
+      "notes": [
+        "мало раундов КВ (1 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол res_g 1.00 < 5.5"
+      ]
+    },
+    {
+      "nick": "Forks",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 3,
+      "tfs": 33.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 7,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 0.57,
+        "kd": 0.33,
+        "dmg_g": 91.0,
+        "pres": 0.29
+      },
+      "components": {
+        "res": 7.1,
+        "kd": 16.7,
+        "dmg": 26.0,
+        "kills": 21.4,
+        "surv": 59.1,
+        "pres": 41.7,
+        "nok": 40.5
+      },
+      "notes": [
+        "мало раундов КВ (7 < 8)",
+        "пол pres 0.29 < 0.5"
+      ]
+    },
+    {
+      "nick": "Oguzok",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 32.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 6,
+      "meetingsInWindow": 3,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.59,
+        "dmg_g": 101.3,
+        "pres": 0.25
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 29.7,
+        "dmg": 29.0,
+        "kills": 39.6,
+        "surv": 57.1,
+        "pres": 35.7,
+        "nok": 58.3
+      },
+      "notes": [
+        "мало раундов КВ (6 < 8)",
+        "пол kd 0.59 < 1.5"
+      ]
+    },
+    {
+      "nick": "vasserman",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 3,
+      "tfs": 32.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 1.5,
+        "kd": 0.67,
+        "dmg_g": 112.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 18.8,
+        "kd": 33.3,
+        "dmg": 32.0,
+        "kills": 25.0,
+        "surv": 95.2,
+        "pres": 11.9,
+        "nok": 58.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.67 < 1.5"
+      ]
+    },
+    {
+      "nick": "Koperor",
+      "roleBucket": "AT_LIGHT",
+      "roleLabel": "Лёгкая труба",
+      "currentTier": 4,
+      "tfs": 31.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.57,
+        "dmg_g": 117.8,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 28.3,
+        "dmg": 33.6,
+        "kills": 40.6,
+        "surv": 53.3,
+        "pres": 23.8,
+        "nok": 87.5
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "пол dmg_g 117.75 < 300.0"
+      ]
+    },
+    {
+      "nick": "Trixx",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 30.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.49,
+        "dmg_g": 107.2,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 24.3,
+        "dmg": 30.6,
+        "kills": 28.1,
+        "surv": 65.0,
+        "pres": 47.6,
+        "nok": 68.8
+      },
+      "notes": [
+        "пол kd 0.49 < 1.5"
+      ]
+    },
+    {
+      "nick": "Trigger",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 4,
+      "tfs": 29.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 6,
+      "meetingsInWindow": 3,
+      "stats": {
+        "res_g": 0.17,
+        "kd": 0.3,
+        "dmg_g": 66.2,
+        "pres": 0.25
+      },
+      "components": {
+        "res": 2.1,
+        "kd": 15.2,
+        "dmg": 18.9,
+        "kills": 20.8,
+        "surv": 55.6,
+        "pres": 35.7,
+        "nok": 44.4
+      },
+      "notes": [
+        "мало раундов КВ (6 < 8)",
+        "пол pres 0.25 < 0.5"
+      ]
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 3,
+      "tfs": 28.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 14,
+      "meetingsInWindow": 7,
+      "stats": {
+        "res_g": 0.64,
+        "kd": 0.35,
+        "dmg_g": 80.7,
+        "pres": 0.58
+      },
+      "components": {
+        "res": 8.0,
+        "kd": 17.7,
+        "dmg": 23.1,
+        "kills": 25.0,
+        "surv": 54.3,
+        "pres": 83.3,
+        "nok": 52.4
+      },
+      "notes": [
+        "пол kd 0.35 < 1.5"
+      ]
+    },
+    {
+      "nick": "ART",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 27.8,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 0.75,
+        "kd": 0.5,
+        "dmg_g": 101.8,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 9.4,
+        "kd": 25.0,
+        "dmg": 29.1,
+        "kills": 31.2,
+        "surv": 60.6,
+        "pres": 23.8,
+        "nok": 66.7
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.50 < 1.5"
+      ]
+    },
+    {
+      "nick": "Runetik",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 1,
+      "tfs": 26.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": 2,
+      "rounds": 3,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 3.33,
+        "kd": 0.39,
+        "dmg_g": 103.3,
+        "pres": 0.12
+      },
+      "components": {
+        "res": 41.7,
+        "kd": 19.6,
+        "dmg": 29.5,
+        "kills": 37.5,
+        "surv": 40.8,
+        "pres": 17.9,
+        "nok": 50.0
+      },
+      "notes": [
+        "мало раундов КВ (3 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.39 < 1.5"
+      ]
+    },
+    {
+      "nick": "ZLOBA1917",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 4,
+      "tfs": 23.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 8,
+      "meetingsInWindow": 4,
+      "stats": {
+        "res_g": 0.12,
+        "kd": 0.13,
+        "dmg_g": 23.5,
+        "pres": 0.33
+      },
+      "components": {
+        "res": 1.6,
+        "kd": 6.5,
+        "dmg": 6.7,
+        "kills": 4.7,
+        "surv": 98.8,
+        "pres": 47.6,
+        "nok": 12.5
+      },
+      "notes": [
+        "пол res_g 0.12 < 5.5"
+      ]
+    },
+    {
+      "nick": "m3rz0st",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 23.4,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 6,
+      "meetingsInWindow": 3,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.41,
+        "dmg_g": 58.3,
+        "pres": 0.25
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 20.5,
+        "dmg": 16.7,
+        "kills": 18.8,
+        "surv": 80.0,
+        "pres": 35.7,
+        "nok": 36.1
+      },
+      "notes": [
+        "мало раундов КВ (6 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.41 < 1.5"
+      ]
+    },
+    {
+      "nick": "Hazzi",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 22.4,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 3,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 3.67,
+        "kd": 0.4,
+        "dmg_g": 48.7,
+        "pres": 0.12
+      },
+      "components": {
+        "res": 45.8,
+        "kd": 20.0,
+        "dmg": 13.9,
+        "kills": 16.7,
+        "surv": 87.0,
+        "pres": 17.9,
+        "nok": 33.3
+      },
+      "notes": [
+        "мало раундов КВ (3 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.40 < 1.5"
+      ]
+    },
+    {
+      "nick": "Buti",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 2,
+      "tfs": 20.8,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 0.4,
+        "dmg_g": 62.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 20.0,
+        "dmg": 17.7,
+        "kills": 12.5,
+        "surv": 100.0,
+        "pres": 11.9,
+        "nok": 25.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.40 < 1.5"
+      ]
+    },
+    {
+      "nick": "GAD",
+      "roleBucket": "CREW",
+      "roleLabel": "Водитель (техника)",
+      "currentTier": 2,
+      "tfs": 20.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.38,
+        "dmg_g": 68.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 18.8,
+        "dmg": 19.6,
+        "kills": 18.8,
+        "surv": 74.1,
+        "pres": 11.9,
+        "nok": 50.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол dmg_g 68.50 < 300.0"
+      ]
+    },
+    {
+      "nick": "Mahorka",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 20.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 2.25,
+        "kd": 0.33,
+        "dmg_g": 49.0,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 28.1,
+        "kd": 16.7,
+        "dmg": 14.0,
+        "kills": 18.8,
+        "surv": 66.7,
+        "pres": 23.8,
+        "nok": 25.0
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.33 < 1.5"
+      ]
+    },
+    {
+      "nick": "Edge_CM",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 20.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 1,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 5.0,
+        "kd": 0.33,
+        "dmg_g": 41.0,
+        "pres": 0.04
+      },
+      "components": {
+        "res": 62.5,
+        "kd": 16.7,
+        "dmg": 11.7,
+        "kills": 12.5,
+        "surv": 95.2,
+        "pres": 6.0,
+        "nok": 16.7
+      },
+      "notes": [
+        "мало раундов КВ (1 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.33 < 1.5"
+      ]
+    },
+    {
+      "nick": "Maga",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 19.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.43,
+        "dmg_g": 32.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 21.4,
+        "dmg": 9.1,
+        "kills": 18.8,
+        "surv": 83.3,
+        "pres": 11.9,
+        "nok": 33.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.43 < 1.5"
+      ]
+    },
+    {
+      "nick": "tank2284",
+      "roleBucket": "SL",
+      "roleLabel": "Командир отряда",
+      "currentTier": 4,
+      "tfs": 17.9,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.11,
+        "dmg_g": 21.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 5.6,
+        "dmg": 6.0,
+        "kills": 6.2,
+        "surv": 66.7,
+        "pres": 11.9,
+        "nok": 25.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол pres 0.08 < 0.5"
+      ]
+    },
+    {
+      "nick": "CERBER",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 16.4,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 1,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.25,
+        "dmg_g": 64.0,
+        "pres": 0.04
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 12.5,
+        "dmg": 18.3,
+        "kills": 12.5,
+        "surv": 74.1,
+        "pres": 6.0,
+        "nok": 66.7
+      },
+      "notes": [
+        "мало раундов КВ (1 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.25 < 1.5"
+      ]
+    },
+    {
+      "nick": "Varyag",
+      "roleBucket": "MEDIC",
+      "roleLabel": "Медик",
+      "currentTier": 3,
+      "tfs": 16.3,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 1.0,
+        "kd": 0.07,
+        "dmg_g": 36.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 12.5,
+        "kd": 3.6,
+        "dmg": 10.3,
+        "kills": 6.2,
+        "surv": 44.4,
+        "pres": 11.9,
+        "nok": 50.0
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол res_g 1.00 < 5.5"
+      ]
+    },
+    {
+      "nick": "lorgon",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 14.7,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.11,
+        "dmg_g": 98.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 5.6,
+        "dmg": 28.0,
+        "kills": 6.2,
+        "surv": 66.7,
+        "pres": 11.9,
+        "nok": 16.7
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.11 < 1.5"
+      ]
+    },
+    {
+      "nick": "on_hik",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 14.2,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 0.5,
+        "kd": 0.22,
+        "dmg_g": 42.0,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 6.2,
+        "kd": 11.1,
+        "dmg": 12.0,
+        "kills": 12.5,
+        "surv": 66.7,
+        "pres": 11.9,
+        "nok": 16.7
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.22 < 1.5"
+      ]
+    },
+    {
+      "nick": "HSVarvar",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 13.0,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 4,
+      "meetingsInWindow": 2,
+      "stats": {
+        "res_g": 0.0,
+        "kd": 0.13,
+        "dmg_g": 57.8,
+        "pres": 0.17
+      },
+      "components": {
+        "res": 0.0,
+        "kd": 6.5,
+        "dmg": 16.5,
+        "kills": 12.5,
+        "surv": 40.4,
+        "pres": 23.8,
+        "nok": 20.8
+      },
+      "notes": [
+        "мало раундов КВ (4 < 8)",
+        "пол kd 0.13 < 1.5"
+      ]
+    },
+    {
+      "nick": "Jopllik",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 12.5,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 5.0,
+        "kd": 0.09,
+        "dmg_g": 36.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 62.5,
+        "kd": 4.5,
+        "dmg": 10.4,
+        "kills": 6.2,
+        "surv": 55.6,
+        "pres": 11.9,
+        "nok": 16.7
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.09 < 1.5"
+      ]
+    },
+    {
+      "nick": "KingOfLobs",
+      "roleBucket": "RIFLE",
+      "roleLabel": "Стрелок",
+      "currentTier": 4,
+      "tfs": 12.1,
+      "verdict": "FAIL_GATE",
+      "gatesOk": false,
+      "suggestedTier": null,
+      "rounds": 2,
+      "meetingsInWindow": 1,
+      "stats": {
+        "res_g": 4.0,
+        "kd": 0.1,
+        "dmg_g": 34.5,
+        "pres": 0.08
+      },
+      "components": {
+        "res": 50.0,
+        "kd": 5.0,
+        "dmg": 9.9,
+        "kills": 6.2,
+        "surv": 60.6,
+        "pres": 11.9,
+        "nok": 8.3
+      },
+      "notes": [
+        "мало раундов КВ (2 < 8)",
+        "активность: нет 2 из последних 3 КВ",
+        "пол kd 0.10 < 1.5"
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "nick": "Diray",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 92.5,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Стрелок",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "iKEppA",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 89.0,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Стрелок",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Chidori",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 80.2,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "CMD",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Pymba",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 78.3,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "ГП",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "KillReal",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 77.5,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Медик",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Morty",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 75.5,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Медик",
+      "reason": "мало раундов КВ (6 < 8); активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Kuchenchips",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 74.6,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Водитель (техника)",
+      "reason": "мало раундов КВ (2 < 8); активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "lepurple",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 74.1,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Медик",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Keech",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 73.7,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "CMD",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Hikkomaru",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 69.6,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Тандем",
+      "reason": "мало раундов КВ (4 < 8); активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "angel",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 69.0,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Стрелок",
+      "reason": "активность: нет 2 из последних 3 КВ; пол kd 1.42 < 1.5"
+    },
+    {
+      "nick": "Mukuru",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 68.7,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Командир отряда",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Blizzardrix",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 65.4,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Сапёр",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "CAT",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 63.7,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Командир отряда",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "S.M.P",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 61.8,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Тандем",
+      "reason": "активность: нет 2 из последних 3 КВ; пол dmg_g 293.80 < 300.0"
+    },
+    {
+      "nick": "Treppen",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 59.3,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Командир отряда",
+      "reason": "активность: нет 2 из последних 3 КВ"
+    },
+    {
+      "nick": "Gadler",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 57.6,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Водитель (техника)",
+      "reason": "активность: нет 2 из последних 3 КВ; пол dmg_g 248.33 < 300.0"
+    },
+    {
+      "nick": "JESTER",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 51.7,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Стрелок",
+      "reason": "активность: нет 2 из последних 3 КВ; пол kd 1.11 < 1.5"
+    },
+    {
+      "nick": "AkiN",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 51.1,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Медик",
+      "reason": "пол res_g 2.52 < 5.5"
+    },
+    {
+      "nick": "LordWolf",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 50.9,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Сапёр",
+      "reason": "активность: нет 2 из последних 3 КВ; пол dmg_g 165.19 < 200.0"
+    },
+    {
+      "nick": "Summer",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 50.7,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Командир отряда",
+      "reason": "активность: нет 2 из последних 3 КВ; пол pres 0.42 < 0.5"
+    },
+    {
+      "nick": "Runetik",
+      "action": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "tfs": 26.7,
+      "verdict": "FAIL_GATE",
+      "roleLabel": "Стрелок",
+      "reason": "мало раундов КВ (3 < 8); активность: нет 2 из последних 3 КВ; пол kd 0.39 < 1.5"
+    }
+  ],
+  "note": "Полуавто: candidates — предложения; tiers.json меняет только капитан."
+}
