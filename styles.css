@@ -1935,6 +1935,51 @@ body.modal-open { overflow: hidden; }
 #tfs-kpis {
   margin: 0 0 18px;
 }
+.tfs-stat-grid {
+  display: grid;
+  gap: 12px 16px;
+}
+.tfs-stat-grid-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.tfs-stat-grid-kpis {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  padding: 12px 14px;
+  border: 1px solid rgba(167, 139, 250, 0.14);
+  border-radius: 14px;
+  background: rgba(10, 8, 18, 0.45);
+}
+.tfs-kpi {
+  min-width: 0;
+  padding: 2px 0;
+}
+.tfs-kpi .k {
+  display: block;
+  margin-bottom: 6px;
+  color: rgba(190, 180, 220, 0.72);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.25;
+  white-space: normal;
+}
+.tfs-kpi .v {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  color: #f5f1ff;
+}
+@media (max-width: 1100px) {
+  .tfs-stat-grid-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 700px) {
+  .tfs-stat-grid-4,
+  .tfs-stat-grid-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .tfs-boards {
   display: flex;
   flex-direction: column;

@@ -391,7 +391,7 @@
     ]
       .map(
         ([k, v]) =>
-          `<div class="hero-stat"><span class="hero-stat-label">${esc(k)}</span><strong>${esc(v)}</strong></div>`
+          `<div class="stat tfs-kpi"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>`
       )
       .join("");
   }
@@ -567,22 +567,22 @@
     $("tfs-an-body").innerHTML = `
       <section class="board tfs-card">
         <div class="board-head"><h2>Состав по тирам</h2><p class="board-sub">Игроки с КВ-статой в выбранном периоде</p></div>
-        <div class="hero-stats hero-stats-inline">
+        <div class="tfs-stat-grid tfs-stat-grid-4">
           ${[1, 2, 3, 4]
             .map(
               (t) =>
-                `<div class="hero-stat"><span class="hero-stat-label">Тир ${t}</span><strong>${esc(byTier[t] || 0)}</strong></div>`
+                `<div class="stat tfs-kpi"><span class="k">Тир ${t}</span><span class="v">${esc(byTier[t] || 0)}</span></div>`
             )
             .join("")}
         </div>
       </section>
       <section class="board tfs-card">
         <div class="board-head"><h2>Переходы</h2><p class="board-sub">Сводка кандидатов</p></div>
-        <div class="hero-stats hero-stats-inline">
-          <div class="hero-stat"><span class="hero-stat-label">Вверх</span><strong class="tfs-band-strong">${esc(a.promoteCount)}</strong></div>
-          <div class="hero-stat"><span class="hero-stat-label">Вниз</span><strong>${esc(a.demoteCount)}</strong></div>
-          <div class="hero-stat"><span class="hero-stat-label">Жёлтая зона</span><strong class="tfs-band-almost">${esc(a.warnCount)}</strong></div>
-          <div class="hero-stat"><span class="hero-stat-label">Пауза</span><strong>${esc(a.pauseCount)}</strong></div>
+        <div class="tfs-stat-grid tfs-stat-grid-4">
+          <div class="stat tfs-kpi"><span class="k">Вверх</span><span class="v tfs-band-strong">${esc(a.promoteCount)}</span></div>
+          <div class="stat tfs-kpi"><span class="k">Вниз</span><span class="v">${esc(a.demoteCount)}</span></div>
+          <div class="stat tfs-kpi"><span class="k">Жёлтая зона</span><span class="v tfs-band-almost">${esc(a.warnCount)}</span></div>
+          <div class="stat tfs-kpi"><span class="k">Пауза</span><span class="v">${esc(a.pauseCount)}</span></div>
         </div>
       </section>
       <section class="board tfs-card tfs-card-wide">
@@ -686,7 +686,7 @@
       return;
     }
     note.textContent = "Загружаем Тиры Fit…";
-    const ver = new URLSearchParams(location.search).get("v") || "20261002-tfs-fit";
+    const ver = new URLSearchParams(location.search).get("v") || "20261002-tfs-fit2";
     const href =
       fetchUrl ||
       TFS_URL + (TFS_URL.includes("?") ? "&" : "?") + "v=" + encodeURIComponent(ver);
