@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261002-akin-gp" />
+  <link rel="stylesheet" href="styles.css?v=20261002-fit-terms" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -134,6 +134,12 @@
             <h2>Рейтинг игроков · КВ</h2>
             <p class="board-sub">Клановые войны · ORR (текущая форма) · MVP из раундов</p>
           </div>
+          <aside class="metrics-glossary" aria-label="Термины рейтинга">
+            <p><strong>ORR</strong> — польза в составе, текущая форма (все матчи сайта).</p>
+            <p><strong>RP</strong> — очки уважения только с указанных тренировок.</p>
+            <p><strong>PWR</strong> — сила/ранг со всех матчей на сайте.</p>
+            <p><strong>FIT</strong> — насколько подходишь тиру по КВ (окно «Тиры» / вкладка Тиры Fit).</p>
+          </aside>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
               <div class="table-scroll-spacer"></div>
@@ -426,6 +432,12 @@
             <h2>Рейтинг игроков · тренировки</h2>
             <p class="board-sub">Только тренировочные матчи · RP (Respect Points) · MVP только здесь</p>
           </div>
+          <aside class="metrics-glossary" aria-label="Термины рейтинга">
+            <p><strong>ORR</strong> — польза в составе, текущая форма (все матчи сайта).</p>
+            <p><strong>RP</strong> — очки уважения только с указанных тренировок.</p>
+            <p><strong>PWR</strong> — сила/ранг со всех матчей на сайте.</p>
+            <p><strong>FIT</strong> — насколько подходишь тиру по КВ (вкладка Тиры Fit / окно на главной).</p>
+          </aside>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
               <div class="table-scroll-spacer"></div>
@@ -728,6 +740,11 @@
           <button type="button" class="tfs-chip" data-tfs-sec="analytics">Аналитика</button>
         </div>
 
+        <aside class="metrics-glossary" aria-label="Что такое FIT">
+          <p><strong>FIT</strong> — насколько подходишь тиру по <em>клановым войнам</em> (середина тира по роли = 100%). Тренировки не входят.</p>
+          <p><strong>ORR</strong> — польза в составе · <strong>RP</strong> — только указанные трены · <strong>PWR</strong> — сила со всех матчей сайта.</p>
+        </aside>
+
         <p class="note" id="tfs-note" hidden>Загружаем Тиры Fit…</p>
         <div class="tfs-stat-grid tfs-stat-grid-kpis" id="tfs-kpis" hidden></div>
 
@@ -756,7 +773,7 @@
                       <th class="ctr sortable" data-tfsort="fromTier" data-tfs-tbl="promote">Из</th>
                       <th class="ctr sortable" data-tfsort="toTier" data-tfs-tbl="promote">В</th>
                       <th class="sortable" data-tfsort="roleLabel" data-tfs-tbl="promote">Роль</th>
-                      <th class="ctr sortable" data-tfsort="fit" data-tfs-tbl="promote">Fit%</th>
+                      <th class="ctr sortable" data-tfsort="fit" data-tfs-tbl="promote" title="FIT — насколько подходишь тиру выше по КВ">Fit%</th>
                       <th class="ctr sortable" data-tfsort="band" data-tfs-tbl="promote">Зона</th>
                       <th class="ctr sortable" data-tfsort="g" data-tfs-tbl="promote">Игр</th>
                       <th class="ctr sortable" data-tfsort="kd" data-tfs-tbl="promote">KD</th>

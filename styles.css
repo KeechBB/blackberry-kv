@@ -518,6 +518,33 @@ th.is-sorted .sort-ind { opacity: 1; }
   font-size: 0.85rem;
 }
 
+.metrics-glossary {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(167, 139, 250, 0.22);
+  border-radius: 12px;
+  background: rgba(12, 10, 22, 0.55);
+  display: grid;
+  gap: 6px;
+}
+
+.metrics-glossary p {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: rgba(210, 200, 235, 0.78);
+}
+
+.metrics-glossary strong {
+  color: #f5f1ff;
+  font-weight: 700;
+}
+
+.metrics-glossary em {
+  font-style: normal;
+  color: #fde68a;
+}
+
 .table-scroll {
   overflow: auto;
   max-height: min(70vh, 820px);
