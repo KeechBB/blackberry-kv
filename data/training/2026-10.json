@@ -36,6 +36,23 @@
       "winner": "PLA",
       "status": "done",
       "playersUrl": "data/training/players/02-mutaha.json"
+    },
+    {
+      "id": "02-fallujah",
+      "day": 2,
+      "timeMsk": "23:29",
+      "map": "Fallujah AAS v1",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "01:02:52",
+      "factionA": "IMF",
+      "ticketsA": 194,
+      "factionB": "AFU",
+      "ticketsB": 0,
+      "winner": "IMF",
+      "status": "done",
+      "playersUrl": "data/training/players/02-fallujah.json"
     }
   ]
 }
