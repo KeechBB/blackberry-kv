@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-03",
   "source": "CW players only — training excluded",
   "thresholds": {
     "promoteStrong": 95.0,
@@ -336,7 +336,7 @@
       "nick": "NestorMahno",
       "tier": 4,
       "role": "Rifle",
-      "orr": 542,
+      "orr": 602,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -372,7 +372,7 @@
       "nick": "ATK.GIGN",
       "tier": 3,
       "role": "Rifle",
-      "orr": 250,
+      "orr": 313,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -387,7 +387,7 @@
       "nick": "Hazzi",
       "tier": 4,
       "role": "Rifle",
-      "orr": 551,
+      "orr": 610,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -437,7 +437,7 @@
       "nick": "Varyag",
       "tier": 3,
       "role": "Medic",
-      "orr": 594,
+      "orr": 639,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -488,7 +488,7 @@
       "nick": "Prolik",
       "tier": 4,
       "role": "Rifle",
-      "orr": 506,
+      "orr": 536,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -531,7 +531,7 @@
       "nick": "Mahorka",
       "tier": 4,
       "role": "Rifle",
-      "orr": 557,
+      "orr": 586,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -581,7 +581,7 @@
       "nick": "VET",
       "tier": 2,
       "role": "Medic",
-      "orr": 644,
+      "orr": 664,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -694,7 +694,7 @@
       "nick": "ART",
       "tier": 4,
       "role": "Rifle",
-      "orr": 514,
+      "orr": 572,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -737,7 +737,7 @@
       "nick": "Radislave",
       "tier": 2,
       "role": "Medic",
-      "orr": 656,
+      "orr": 658,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -843,7 +843,7 @@
       "nick": "m3rz0st",
       "tier": 4,
       "role": "Rifle",
-      "orr": 600,
+      "orr": 651,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -894,7 +894,7 @@
       "nick": "Edge_CM",
       "tier": 4,
       "role": "Rifle",
-      "orr": 553,
+      "orr": 599,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -916,7 +916,7 @@
       "nick": "Jerom101",
       "tier": 4,
       "role": "Rifle",
-      "orr": 501,
+      "orr": 576,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -945,7 +945,7 @@
       "nick": "Jimmy Neutron",
       "tier": 3,
       "role": "Rifle",
-      "orr": 556,
+      "orr": 591,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1059,7 +1059,7 @@
       "nick": "Forks",
       "tier": 3,
       "role": "SL",
-      "orr": 613,
+      "orr": 638,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1195,7 +1195,7 @@
       "nick": "Barsik",
       "tier": 2,
       "role": "Rifle",
-      "orr": 632,
+      "orr": 668,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1315,7 +1315,7 @@
       "nick": "CERBER",
       "tier": 4,
       "role": "Rifle",
-      "orr": 0,
+      "orr": 334,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1344,7 +1344,7 @@
       "nick": "Maga",
       "tier": 4,
       "role": "Rifle",
-      "orr": 535,
+      "orr": 589,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1373,7 +1373,7 @@
       "nick": "COBRA",
       "tier": 4,
       "role": "Tandem",
-      "orr": 584,
+      "orr": 641,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1437,7 +1437,7 @@
       "nick": "Trigger",
       "tier": 4,
       "role": "SL",
-      "orr": 568,
+      "orr": 585,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1508,7 +1508,7 @@
       "nick": "HSVarvar",
       "tier": 4,
       "role": "Rifle",
-      "orr": 0,
+      "orr": 252,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1537,7 +1537,7 @@
       "nick": "freak",
       "tier": 2,
       "role": "Rifle",
-      "orr": 637,
+      "orr": 684,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1658,7 +1658,7 @@
       "nick": "ZLOBA1917",
       "tier": 4,
       "role": "Medic",
-      "orr": 538,
+      "orr": 578,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1715,7 +1715,7 @@
       "nick": "Tankist",
       "tier": 2,
       "role": "Crew",
-      "orr": 670,
+      "orr": 721,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1800,7 +1800,7 @@
       "nick": "uglyfromyoung",
       "tier": 4,
       "role": "Rifle",
-      "orr": 580,
+      "orr": 624,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1850,7 +1850,7 @@
       "nick": "Rindaye",
       "tier": 4,
       "role": "Rifle",
-      "orr": 566,
+      "orr": 620,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1879,7 +1879,7 @@
       "nick": "r4mp",
       "tier": 4,
       "role": "Medic",
-      "orr": 565,
+      "orr": 635,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1908,7 +1908,7 @@
       "nick": "VITALYA",
       "tier": 4,
       "role": "Rifle",
-      "orr": 0,
+      "orr": 279,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -1923,7 +1923,7 @@
       "nick": "ADUN",
       "tier": 3,
       "role": "Medic",
-      "orr": 598,
+      "orr": 614,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -2001,7 +2001,7 @@
       "nick": "KTO--TO",
       "tier": 4,
       "role": "SL",
-      "orr": 568,
+      "orr": 610,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -2058,7 +2058,7 @@
       "nick": "Mighty",
       "tier": 3,
       "role": "Rifle",
-      "orr": 521,
+      "orr": 575,
       "meets": {
         "04-20royals": {
           "r": 2,
@@ -2101,7 +2101,7 @@
       "nick": "firs",
       "tier": 4,
       "role": "Medic",
-      "orr": 559,
+      "orr": 596,
       "meets": {
         "07-avg": {
           "r": 2,
@@ -2152,7 +2152,7 @@
       "nick": "AkiN",
       "tier": 1,
       "role": "GP",
-      "orr": 684,
+      "orr": 718,
       "meets": {
         "07-avg": {
           "r": 2,
@@ -2294,7 +2294,7 @@
       "nick": "Zik",
       "tier": 4,
       "role": "Rifle",
-      "orr": 522,
+      "orr": 572,
       "meets": {
         "07-avg": {
           "r": 1,
@@ -2330,7 +2330,7 @@
       "nick": "Trixx",
       "tier": 2,
       "role": "Rifle",
-      "orr": 606,
+      "orr": 649,
       "meets": {
         "07-avg": {
           "r": 2,
@@ -2416,7 +2416,7 @@
       "nick": "DOSTAVKA",
       "tier": 3,
       "role": "Rifle",
-      "orr": 233,
+      "orr": 337,
       "meets": {
         "07-avg": {
           "r": 2,
@@ -2431,7 +2431,7 @@
       "nick": "Sandro.86",
       "tier": 4,
       "role": "Rifle",
-      "orr": 526,
+      "orr": 540,
       "meets": {
         "07-avg": {
           "r": 2,
@@ -2482,7 +2482,7 @@
       "nick": "Durik",
       "tier": 3,
       "role": "Rifle",
-      "orr": 415,
+      "orr": 472,
       "meets": {
         "11-dcai": {
           "r": 2,
@@ -2539,8 +2539,8 @@
     {
       "nick": "Koperor",
       "tier": 4,
-      "role": "Tandem",
-      "orr": 567,
+      "role": "Rifle",
+      "orr": 612,
       "meets": {
         "11-dcai": {
           "r": 2,
@@ -2590,7 +2590,7 @@
       "nick": "tank2284",
       "tier": 4,
       "role": "SL",
-      "orr": 505,
+      "orr": 563,
       "meets": {
         "11-dcai": {
           "r": 2,
@@ -2692,7 +2692,7 @@
       "nick": "Muhomor",
       "tier": 4,
       "role": "Rifle",
-      "orr": 534,
+      "orr": 592,
       "meets": {
         "12-hell": {
           "r": 2,
@@ -2714,7 +2714,7 @@
       "nick": "Oguzok",
       "tier": 4,
       "role": "Rifle",
-      "orr": 572,
+      "orr": 619,
       "meets": {
         "12-hell": {
           "r": 2,
@@ -2764,7 +2764,7 @@
       "nick": "Moonky123",
       "tier": 4,
       "role": "Rifle",
-      "orr": 0,
+      "orr": 207,
       "meets": {
         "12-hell": {
           "r": 2,
@@ -2794,7 +2794,7 @@
       "nick": "spartan",
       "tier": 4,
       "role": "Rifle",
-      "orr": 0,
+      "orr": 329,
       "meets": {
         "13-two": {
           "r": 2,
@@ -2823,7 +2823,7 @@
       "nick": "Ilyich",
       "tier": 4,
       "role": "Rifle",
-      "orr": 519,
+      "orr": 560,
       "meets": {
         "13-two": {
           "r": 1,
@@ -2838,7 +2838,7 @@
       "nick": "Bks",
       "tier": 4,
       "role": "Rifle",
-      "orr": 504,
+      "orr": 584,
       "meets": {
         "13-two": {
           "r": 2,
@@ -2853,7 +2853,7 @@
       "nick": "Tatarin",
       "tier": 4,
       "role": "Rifle",
-      "orr": 591,
+      "orr": 664,
       "meets": {
         "13-two": {
           "r": 1,
@@ -2882,7 +2882,7 @@
       "nick": "Animo",
       "tier": 4,
       "role": "Medic",
-      "orr": 568,
+      "orr": 634,
       "meets": {
         "13-two": {
           "r": 1,
@@ -2897,7 +2897,7 @@
       "nick": "LOST",
       "tier": 4,
       "role": "Rifle",
-      "orr": 533,
+      "orr": 618,
       "meets": {
         "13-two": {
           "r": 1,
@@ -2942,7 +2942,7 @@
       "nick": "SHURUP",
       "tier": 4,
       "role": "Rifle",
-      "orr": 530,
+      "orr": 614,
       "meets": {
         "13-two": {
           "r": 2,
@@ -2957,7 +2957,7 @@
       "nick": "Bahus",
       "tier": 4,
       "role": "Medic",
-      "orr": 579,
+      "orr": 610,
       "meets": {
         "13-two": {
           "r": 2,
@@ -3000,7 +3000,7 @@
       "nick": "Keech",
       "tier": 1,
       "role": "CMD",
-      "orr": 637,
+      "orr": 678,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3078,7 +3078,7 @@
       "nick": "S.M.P",
       "tier": 1,
       "role": "Tandem",
-      "orr": 629,
+      "orr": 679,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3142,7 +3142,7 @@
       "nick": "Morty",
       "tier": 1,
       "role": "Medic",
-      "orr": 432,
+      "orr": 509,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3178,7 +3178,7 @@
       "nick": "Blizzardrix",
       "tier": 1,
       "role": "Sap",
-      "orr": 602,
+      "orr": 648,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3249,7 +3249,7 @@
       "nick": "Runetik",
       "tier": 1,
       "role": "Rifle",
-      "orr": 503,
+      "orr": 591,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3285,7 +3285,7 @@
       "nick": "lepurple",
       "tier": 1,
       "role": "Medic",
-      "orr": 658,
+      "orr": 682,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3370,7 +3370,7 @@
       "nick": "Chidori",
       "tier": 1,
       "role": "CMD",
-      "orr": 638,
+      "orr": 662,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3455,7 +3455,7 @@
       "nick": "Diray",
       "tier": 1,
       "role": "Rifle",
-      "orr": 673,
+      "orr": 723,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3540,7 +3540,7 @@
       "nick": "_VaGNeR_",
       "tier": 2,
       "role": "Rifle",
-      "orr": 501,
+      "orr": 576,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3569,7 +3569,7 @@
       "nick": "KillReal",
       "tier": 1,
       "role": "Medic",
-      "orr": 636,
+      "orr": 644,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3654,7 +3654,7 @@
       "nick": "LordWolf",
       "tier": 1,
       "role": "Sap",
-      "orr": 659,
+      "orr": 691,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3739,7 +3739,7 @@
       "nick": "Summer",
       "tier": 1,
       "role": "SL",
-      "orr": 611,
+      "orr": 661,
       "meets": {
         "13-two": {
           "r": 1,
@@ -3803,7 +3803,7 @@
       "nick": "angel",
       "tier": 1,
       "role": "Rifle",
-      "orr": 659,
+      "orr": 704,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -3874,7 +3874,7 @@
       "nick": "iKEppA",
       "tier": 1,
       "role": "Rifle",
-      "orr": 635,
+      "orr": 697,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -3952,7 +3952,7 @@
       "nick": "Hikkomaru",
       "tier": 1,
       "role": "Tandem",
-      "orr": 460,
+      "orr": 531,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -3987,8 +3987,8 @@
     {
       "nick": "MrChaykaa",
       "tier": 2,
-      "role": "Tandem",
-      "orr": 645,
+      "role": "Rifle",
+      "orr": 679,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4059,7 +4059,7 @@
       "nick": "Treppen",
       "tier": 1,
       "role": "SL",
-      "orr": 646,
+      "orr": 674,
       "meets": {
         "15-dcai": {
           "r": 1,
@@ -4130,7 +4130,7 @@
       "nick": "Lazy",
       "tier": 3,
       "role": "Rifle",
-      "orr": 266,
+      "orr": 355,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4145,7 +4145,7 @@
       "nick": "Zerox",
       "tier": 2,
       "role": "Rifle",
-      "orr": 491,
+      "orr": 579,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4167,7 +4167,7 @@
       "nick": "Mukuru",
       "tier": 1,
       "role": "SL",
-      "orr": 622,
+      "orr": 658,
       "meets": {
         "15-dcai": {
           "r": 1,
@@ -4231,7 +4231,7 @@
       "nick": "JESTER",
       "tier": 1,
       "role": "Rifle",
-      "orr": 544,
+      "orr": 590,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4280,8 +4280,8 @@
     {
       "nick": "Azure",
       "tier": 2,
-      "role": "Tandem",
-      "orr": 606,
+      "role": "Rifle",
+      "orr": 650,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4324,7 +4324,7 @@
       "nick": "MuskeR",
       "tier": 4,
       "role": "Rifle",
-      "orr": 251,
+      "orr": 339,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4339,7 +4339,7 @@
       "nick": "ZensU",
       "tier": 2,
       "role": "Rifle",
-      "orr": 609,
+      "orr": 656,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4410,7 +4410,7 @@
       "nick": "Gadler",
       "tier": 1,
       "role": "Crew",
-      "orr": 563,
+      "orr": 610,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4474,7 +4474,7 @@
       "nick": "Kuchenchips",
       "tier": 1,
       "role": "Crew",
-      "orr": 405,
+      "orr": 501,
       "meets": {
         "15-dcai": {
           "r": 2,
@@ -4503,7 +4503,7 @@
       "nick": "daddy",
       "tier": 4,
       "role": "SL",
-      "orr": 584,
+      "orr": 641,
       "meets": {
         "15-dcai": {
           "r": 1,
@@ -4532,7 +4532,7 @@
       "nick": "qop",
       "tier": 3,
       "role": "SL",
-      "orr": 540,
+      "orr": 584,
       "meets": {
         "15-dcai": {
           "r": 1,
@@ -4561,7 +4561,7 @@
       "nick": "Kroasawn",
       "tier": 2,
       "role": "Medic",
-      "orr": 647,
+      "orr": 668,
       "meets": {
         "16-hell": {
           "r": 2,
@@ -4639,7 +4639,7 @@
       "nick": "Buti",
       "tier": 2,
       "role": "Rifle",
-      "orr": 511,
+      "orr": 564,
       "meets": {
         "16-hell": {
           "r": 2,
@@ -4661,7 +4661,7 @@
       "nick": "CAT",
       "tier": 1,
       "role": "SL",
-      "orr": 650,
+      "orr": 686,
       "meets": {
         "16-hell": {
           "r": 2,
@@ -4718,7 +4718,7 @@
       "nick": "vasserman",
       "tier": 3,
       "role": "Rifle",
-      "orr": 404,
+      "orr": 474,
       "meets": {
         "16-hell": {
           "r": 2,
@@ -4740,7 +4740,7 @@
       "nick": "yanchik",
       "tier": 2,
       "role": "Rifle",
-      "orr": 610,
+      "orr": 662,
       "meets": {
         "17-44th": {
           "r": 2,
@@ -4797,7 +4797,7 @@
       "nick": "Otto",
       "tier": 2,
       "role": "SL",
-      "orr": 606,
+      "orr": 641,
       "meets": {
         "17-44th": {
           "r": 2,
@@ -4833,7 +4833,7 @@
       "nick": "akin0v",
       "tier": 2,
       "role": "SL",
-      "orr": 600,
+      "orr": 645,
       "meets": {
         "18-ih": {
           "r": 2,
@@ -4883,7 +4883,7 @@
       "nick": "T-800",
       "tier": 3,
       "role": "Rifle",
-      "orr": 574,
+      "orr": 628,
       "meets": {
         "18-ih": {
           "r": 2,
@@ -4919,7 +4919,7 @@
       "nick": "FLEX",
       "tier": 2,
       "role": "SL",
-      "orr": 589,
+      "orr": 639,
       "meets": {
         "18-ih": {
           "r": 2,
@@ -4948,7 +4948,7 @@
       "nick": "GAD",
       "tier": 2,
       "role": "Medic",
-      "orr": 408,
+      "orr": 472,
       "meets": {
         "18-ih": {
           "r": 2,
@@ -4978,7 +4978,7 @@
       "nick": "Pymba",
       "tier": 1,
       "role": "GP",
-      "orr": 604,
+      "orr": 677,
       "meets": {
         "25-h1gh": {
           "r": 2,
@@ -5059,7 +5059,7 @@
       "nick": "CORWAX",
       "tier": 4,
       "role": "Medic",
-      "orr": 512,
+      "orr": 530,
       "meets": {
         "29-44th": {
           "r": 1,
@@ -5074,7 +5074,7 @@
       "nick": "KingOfLobs",
       "tier": 4,
       "role": "Rifle",
-      "orr": 0,
+      "orr": 278,
       "meets": {
         "01-gm": {
           "r": 2,
@@ -5123,19 +5123,19 @@
           "res_g": 1.13,
           "kd": 1.36,
           "dmg_g": 206.9,
-          "orr": 644.0
+          "orr": 697.5
         },
         "CMD": {
           "n": 2,
           "thin": false,
           "who": [
-            "Chidori",
-            "Keech"
+            "Keech",
+            "Chidori"
           ],
           "res_g": 0.565,
           "kd": 0.97,
           "dmg_g": 178.95,
-          "orr": 637.5
+          "orr": 670.0
         },
         "Tandem": {
           "n": 2,
@@ -5147,7 +5147,7 @@
           "res_g": 0.5,
           "kd": 1.21,
           "dmg_g": 316.95,
-          "orr": 544.5
+          "orr": 605.0
         },
         "Medic": {
           "n": 2,
@@ -5159,7 +5159,7 @@
           "res_g": 6.885,
           "kd": 0.45,
           "dmg_g": 77.6,
-          "orr": 647.0
+          "orr": 663.0
         },
         "Sap": {
           "n": 2,
@@ -5171,7 +5171,7 @@
           "res_g": 0.605,
           "kd": 0.855,
           "dmg_g": 223.6,
-          "orr": 630.5
+          "orr": 669.5
         },
         "Rifle": {
           "n": 4,
@@ -5185,7 +5185,7 @@
           "res_g": 0.55,
           "kd": 1.9649999999999999,
           "dmg_g": 262.1,
-          "orr": 647.0
+          "orr": 700.5
         },
         "SL": {
           "n": 4,
@@ -5193,13 +5193,13 @@
           "who": [
             "CAT",
             "Treppen",
-            "Mukuru",
-            "Summer"
+            "Summer",
+            "Mukuru"
           ],
           "res_g": 0.725,
           "kd": 1.2550000000000001,
           "dmg_g": 174.14999999999998,
-          "orr": 634.0
+          "orr": 667.5
         },
         "Crew": {
           "n": 2,
@@ -5211,7 +5211,7 @@
           "res_g": 0.725,
           "kd": 1.3900000000000001,
           "dmg_g": 467.6,
-          "orr": 484.0
+          "orr": 555.5
         }
       },
       "2": {
@@ -5219,29 +5219,30 @@
           "n": 3,
           "thin": false,
           "who": [
-            "Radislave",
             "Kroasawn",
-            "VET"
+            "VET",
+            "Radislave"
           ],
           "res_g": 6.45,
           "kd": 0.5,
           "dmg_g": 108.6,
-          "orr": 647
+          "orr": 664
         },
         "Rifle": {
-          "n": 5,
+          "n": 7,
           "thin": false,
           "who": [
             "freak",
+            "MrChaykaa",
             "Barsik",
             "yanchik",
             "ZensU",
-            "Trixx"
+            "Azure"
           ],
-          "res_g": 0.56,
-          "kd": 1.06,
-          "dmg_g": 183.0,
-          "orr": 610
+          "res_g": 0.83,
+          "kd": 0.91,
+          "dmg_g": 148.0,
+          "orr": 662
         },
         "Crew": {
           "n": 1,
@@ -5252,31 +5253,19 @@
           "res_g": 1.77,
           "kd": 1.56,
           "dmg_g": 410.8,
-          "orr": 670
-        },
-        "Tandem": {
-          "n": 2,
-          "thin": false,
-          "who": [
-            "MrChaykaa",
-            "Azure"
-          ],
-          "res_g": 1.67,
-          "kd": 0.7150000000000001,
-          "dmg_g": 134.05,
-          "orr": 625.5
+          "orr": 721
         },
         "SL": {
           "n": 2,
           "thin": false,
           "who": [
-            "Otto",
-            "akin0v"
+            "akin0v",
+            "Otto"
           ],
           "res_g": 2.48,
           "kd": 0.6950000000000001,
           "dmg_g": 142.6,
-          "orr": 603.0
+          "orr": 643.0
         }
       },
       "3": {
@@ -5284,13 +5273,13 @@
           "n": 2,
           "thin": false,
           "who": [
-            "ADUN",
-            "Varyag"
+            "Varyag",
+            "ADUN"
           ],
           "res_g": 2.785,
           "kd": 0.385,
           "dmg_g": 83.9,
-          "orr": 596.0
+          "orr": 626.5
         },
         "Rifle": {
           "n": 4,
@@ -5304,7 +5293,7 @@
           "res_g": 0.49,
           "kd": 0.585,
           "dmg_g": 97.85,
-          "orr": 538.5
+          "orr": 583.0
         },
         "SL": {
           "n": 2,
@@ -5316,7 +5305,7 @@
           "res_g": 0.585,
           "kd": 0.7,
           "dmg_g": 152.35,
-          "orr": 576.5
+          "orr": 611.0
         }
       }
     },
@@ -5329,18 +5318,18 @@
             "n": 2,
             "thin": false,
             "who": [
-              "Chidori",
-              "Keech"
+              "Keech",
+              "Chidori"
             ],
             "res_g": 0.565,
             "kd": 0.97,
             "dmg_g": 178.95,
-            "orr": 637.5
+            "orr": 670.0
           },
           "bestInTier": "Keech",
           "records": {
             "fit": 99.9,
-            "orr": 638,
+            "orr": 678,
             "g": 21,
             "dmg_g": 210.3
           },
@@ -5352,7 +5341,7 @@
               "res_g": 0.89,
               "kd": 0.95,
               "dmg_g": 210.3,
-              "orr": 637,
+              "orr": 678,
               "g": 19,
               "pause": false,
               "bestInTier": true
@@ -5360,11 +5349,11 @@
             {
               "nick": "Chidori",
               "tier": 1,
-              "fit": 95.4,
+              "fit": 94.8,
               "res_g": 0.24,
               "kd": 0.99,
               "dmg_g": 147.6,
-              "orr": 638,
+              "orr": 662,
               "g": 21,
               "pause": false,
               "bestInTier": false
@@ -5380,18 +5369,18 @@
             "who": [
               "CAT",
               "Treppen",
-              "Mukuru",
-              "Summer"
+              "Summer",
+              "Mukuru"
             ],
             "res_g": 0.725,
             "kd": 1.2550000000000001,
             "dmg_g": 174.14999999999998,
-            "orr": 634.0
+            "orr": 667.5
           },
           "bestInTier": "Mukuru",
           "records": {
-            "fit": 96.7,
-            "orr": 650,
+            "fit": 96.9,
+            "orr": 686,
             "kd": 2.17,
             "dmg_g": 227.7
           },
@@ -5399,11 +5388,11 @@
             {
               "nick": "Mukuru",
               "tier": 1,
-              "fit": 96.7,
+              "fit": 96.9,
               "res_g": 1.33,
               "kd": 2.17,
               "dmg_g": 227.7,
-              "orr": 622,
+              "orr": 658,
               "g": 15,
               "pause": false,
               "bestInTier": true
@@ -5411,11 +5400,11 @@
             {
               "nick": "Summer",
               "tier": 1,
-              "fit": 89.4,
+              "fit": 90.4,
               "res_g": 1.2,
               "kd": 0.81,
               "dmg_g": 162.2,
-              "orr": 611,
+              "orr": 661,
               "g": 15,
               "pause": false,
               "bestInTier": false
@@ -5427,7 +5416,7 @@
               "res_g": 0.07,
               "kd": 1.61,
               "dmg_g": 186.1,
-              "orr": 650,
+              "orr": 686,
               "g": 14,
               "pause": false,
               "bestInTier": false
@@ -5439,7 +5428,7 @@
               "res_g": 0.25,
               "kd": 0.9,
               "dmg_g": 132.5,
-              "orr": 646,
+              "orr": 674,
               "g": 16,
               "pause": false,
               "bestInTier": false
@@ -5447,13 +5436,37 @@
             {
               "nick": "akin0v",
               "tier": 2,
-              "fit": 80.4,
+              "fit": 81.2,
               "res_g": 4.58,
               "kd": 0.75,
               "dmg_g": 118.1,
-              "orr": 600,
+              "orr": 645,
               "g": 12,
               "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "daddy",
+              "tier": 4,
+              "fit": 80.8,
+              "res_g": 0.6,
+              "kd": 0.83,
+              "dmg_g": 189.0,
+              "orr": 641,
+              "g": 5,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "qop",
+              "tier": 3,
+              "fit": 80.2,
+              "res_g": 0.8,
+              "kd": 0.92,
+              "dmg_g": 196.4,
+              "orr": 584,
+              "g": 5,
+              "pause": true,
               "bestInTier": false
             }
           ]
@@ -5471,24 +5484,24 @@
             "res_g": 6.885,
             "kd": 0.45,
             "dmg_g": 77.6,
-            "orr": 647.0
+            "orr": 663.0
           },
           "bestInTier": "KillReal",
           "records": {
-            "fit": 96.6,
+            "fit": 96.2,
             "res_g": 11.86,
-            "orr": 658,
+            "orr": 682,
             "g": 27
           },
           "rows": [
             {
               "nick": "KillReal",
               "tier": 1,
-              "fit": 96.6,
+              "fit": 96.2,
               "res_g": 7.48,
               "kd": 0.27,
               "dmg_g": 72.8,
-              "orr": 636,
+              "orr": 644,
               "g": 21,
               "pause": false,
               "bestInTier": true
@@ -5496,11 +5509,11 @@
             {
               "nick": "Radislave",
               "tier": 2,
-              "fit": 95.2,
+              "fit": 94.9,
               "res_g": 6.56,
               "kd": 0.34,
               "dmg_g": 74.3,
-              "orr": 656,
+              "orr": 658,
               "g": 27,
               "pause": false,
               "bestInTier": false
@@ -5512,7 +5525,7 @@
               "res_g": 6.45,
               "kd": 0.56,
               "dmg_g": 125.3,
-              "orr": 647,
+              "orr": 668,
               "g": 20,
               "pause": false,
               "bestInTier": false
@@ -5524,7 +5537,7 @@
               "res_g": 6.29,
               "kd": 0.63,
               "dmg_g": 82.4,
-              "orr": 658,
+              "orr": 682,
               "g": 21,
               "pause": false,
               "bestInTier": false
@@ -5532,11 +5545,11 @@
             {
               "nick": "Morty",
               "tier": 1,
-              "fit": 79.8,
+              "fit": 83.3,
               "res_g": 11.86,
               "kd": 0.7,
               "dmg_g": 130.9,
-              "orr": 432,
+              "orr": 509,
               "g": 7,
               "pause": true,
               "bestInTier": false
@@ -5558,14 +5571,14 @@
             "res_g": 0.55,
             "kd": 1.9649999999999999,
             "dmg_g": 262.1,
-            "orr": 647.0
+            "orr": 700.5
           },
           "bestInTier": "Diray",
           "records": {
             "fit": 100.0,
             "kd": 3.14,
             "dmg_g": 409.0,
-            "orr": 673
+            "orr": 723
           },
           "rows": [
             {
@@ -5575,7 +5588,7 @@
               "res_g": 0.57,
               "kd": 3.14,
               "dmg_g": 320.6,
-              "orr": 673,
+              "orr": 723,
               "g": 21,
               "pause": false,
               "bestInTier": true
@@ -5583,11 +5596,11 @@
             {
               "nick": "iKEppA",
               "tier": 1,
-              "fit": 99.3,
+              "fit": 99.7,
               "res_g": 0.53,
               "kd": 2.46,
               "dmg_g": 283.7,
-              "orr": 635,
+              "orr": 697,
               "g": 19,
               "pause": false,
               "bestInTier": false
@@ -5595,11 +5608,11 @@
             {
               "nick": "ZensU",
               "tier": 2,
-              "fit": 91.3,
+              "fit": 91.2,
               "res_g": 0.83,
               "kd": 1.69,
               "dmg_g": 233.4,
-              "orr": 609,
+              "orr": 656,
               "g": 18,
               "pause": false,
               "bestInTier": false
@@ -5611,7 +5624,7 @@
               "res_g": 0.39,
               "kd": 1.47,
               "dmg_g": 240.5,
-              "orr": 659,
+              "orr": 704,
               "g": 18,
               "pause": false,
               "bestInTier": false
@@ -5619,37 +5632,37 @@
             {
               "nick": "Tatarin",
               "tier": 4,
-              "fit": 82.1,
+              "fit": 83.1,
               "res_g": 0.0,
               "kd": 2.0,
               "dmg_g": 229.8,
-              "orr": 591,
+              "orr": 664,
               "g": 5,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "SHURUP",
+              "tier": 4,
+              "fit": 82.0,
+              "res_g": 0.5,
+              "kd": 1.64,
+              "dmg_g": 409.0,
+              "orr": 614,
+              "g": 2,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "_VaGNeR_",
               "tier": 2,
-              "fit": 80.3,
+              "fit": 81.8,
               "res_g": 0.4,
               "kd": 2.0,
               "dmg_g": 216.8,
-              "orr": 501,
+              "orr": 576,
               "g": 5,
               "pause": true,
-              "bestInTier": false
-            },
-            {
-              "nick": "SHURUP",
-              "tier": 4,
-              "fit": 80.3,
-              "res_g": 0.5,
-              "kd": 1.64,
-              "dmg_g": 409.0,
-              "orr": 530,
-              "g": 2,
-              "pause": false,
               "bestInTier": false
             },
             {
@@ -5659,7 +5672,7 @@
               "res_g": 1.0,
               "kd": 1.16,
               "dmg_g": 167.6,
-              "orr": 544,
+              "orr": 590,
               "g": 12,
               "pause": false,
               "bestInTier": false
@@ -5667,11 +5680,11 @@
             {
               "nick": "Runetik",
               "tier": 1,
-              "fit": 55.0,
+              "fit": 57.0,
               "res_g": 2.33,
               "kd": 0.58,
               "dmg_g": 151.8,
-              "orr": 503,
+              "orr": 591,
               "g": 6,
               "pause": true,
               "bestInTier": false
@@ -5691,24 +5704,24 @@
             "res_g": 1.13,
             "kd": 1.36,
             "dmg_g": 206.9,
-            "orr": 644.0
+            "orr": 697.5
           },
           "bestInTier": "Pymba",
           "records": {
-            "fit": 89.3,
+            "fit": 90.2,
             "kd": 1.83,
             "dmg_g": 267.5,
-            "orr": 684
+            "orr": 718
           },
           "rows": [
             {
               "nick": "Pymba",
               "tier": 1,
-              "fit": 89.3,
+              "fit": 90.2,
               "res_g": 0.38,
               "kd": 1.83,
               "dmg_g": 267.5,
-              "orr": 604,
+              "orr": 677,
               "g": 8,
               "pause": false,
               "bestInTier": true
@@ -5720,7 +5733,7 @@
               "res_g": 1.88,
               "kd": 0.89,
               "dmg_g": 146.3,
-              "orr": 684,
+              "orr": 718,
               "g": 33,
               "pause": false,
               "bestInTier": false
@@ -5740,24 +5753,24 @@
             "res_g": 0.5,
             "kd": 1.21,
             "dmg_g": 316.95,
-            "orr": 544.5
+            "orr": 605.0
           },
           "bestInTier": "Hikkomaru",
           "records": {
-            "fit": 89.8,
+            "fit": 90.8,
             "dmg_g": 343.0,
             "kd": 1.79,
-            "orr": 629
+            "orr": 679
           },
           "rows": [
             {
               "nick": "Hikkomaru",
               "tier": 1,
-              "fit": 89.8,
+              "fit": 90.8,
               "res_g": 0.75,
               "kd": 1.79,
               "dmg_g": 343.0,
-              "orr": 460,
+              "orr": 531,
               "g": 8,
               "pause": false,
               "bestInTier": true
@@ -5769,7 +5782,7 @@
               "res_g": 0.25,
               "kd": 0.63,
               "dmg_g": 290.9,
-              "orr": 629,
+              "orr": 679,
               "g": 12,
               "pause": false,
               "bestInTier": false
@@ -5789,14 +5802,14 @@
             "res_g": 0.725,
             "kd": 1.3900000000000001,
             "dmg_g": 467.6,
-            "orr": 484.0
+            "orr": 555.5
           },
           "bestInTier": "Gadler",
           "records": {
             "fit": 95.1,
             "dmg_g": 599.0,
             "kd": 1.71,
-            "orr": 670
+            "orr": 721
           },
           "rows": [
             {
@@ -5806,7 +5819,7 @@
               "res_g": 1.77,
               "kd": 1.56,
               "dmg_g": 410.8,
-              "orr": 670,
+              "orr": 721,
               "g": 22,
               "pause": false,
               "bestInTier": false
@@ -5814,11 +5827,11 @@
             {
               "nick": "Kuchenchips",
               "tier": 1,
-              "fit": 88.4,
+              "fit": 90.4,
               "res_g": 0.83,
               "kd": 1.71,
               "dmg_g": 599.0,
-              "orr": 405,
+              "orr": 501,
               "g": 6,
               "pause": true,
               "bestInTier": false
@@ -5830,7 +5843,7 @@
               "res_g": 0.62,
               "kd": 1.07,
               "dmg_g": 336.2,
-              "orr": 563,
+              "orr": 610,
               "g": 16,
               "pause": false,
               "bestInTier": true
@@ -5850,24 +5863,24 @@
             "res_g": 0.605,
             "kd": 0.855,
             "dmg_g": 223.6,
-            "orr": 630.5
+            "orr": 669.5
           },
           "bestInTier": "Blizzardrix",
           "records": {
-            "fit": 93.6,
+            "fit": 94.1,
             "dmg_g": 295.2,
-            "orr": 659,
+            "orr": 691,
             "res_g": 0.86
           },
           "rows": [
             {
               "nick": "Blizzardrix",
               "tier": 1,
-              "fit": 93.6,
+              "fit": 94.1,
               "res_g": 0.35,
               "kd": 0.95,
               "dmg_g": 295.2,
-              "orr": 602,
+              "orr": 648,
               "g": 17,
               "pause": false,
               "bestInTier": true
@@ -5879,7 +5892,7 @@
               "res_g": 0.86,
               "kd": 0.76,
               "dmg_g": 152.0,
-              "orr": 659,
+              "orr": 691,
               "g": 21,
               "pause": false,
               "bestInTier": false
@@ -5895,18 +5908,18 @@
             "n": 2,
             "thin": false,
             "who": [
-              "Otto",
-              "akin0v"
+              "akin0v",
+              "Otto"
             ],
             "res_g": 2.48,
             "kd": 0.6950000000000001,
             "dmg_g": 142.6,
-            "orr": 603.0
+            "orr": 643.0
           },
           "bestInTier": "akin0v",
           "records": {
-            "fit": 91.4,
-            "orr": 613,
+            "fit": 91.6,
+            "orr": 645,
             "kd": 0.83,
             "dmg_g": 189.0
           },
@@ -5914,47 +5927,47 @@
             {
               "nick": "akin0v",
               "tier": 2,
-              "fit": 91.4,
+              "fit": 91.6,
               "res_g": 4.58,
               "kd": 0.75,
               "dmg_g": 118.1,
-              "orr": 600,
+              "orr": 645,
               "g": 12,
               "pause": false,
               "bestInTier": true
             },
             {
-              "nick": "Forks",
-              "tier": 3,
-              "fit": 82.0,
-              "res_g": 0.37,
-              "kd": 0.48,
-              "dmg_g": 108.3,
-              "orr": 613,
-              "g": 19,
+              "nick": "Otto",
+              "tier": 2,
+              "fit": 81.9,
+              "res_g": 0.38,
+              "kd": 0.64,
+              "dmg_g": 167.1,
+              "orr": 641,
+              "g": 8,
               "pause": false,
               "bestInTier": false
             },
             {
-              "nick": "Otto",
-              "tier": 2,
-              "fit": 82.0,
-              "res_g": 0.38,
-              "kd": 0.64,
-              "dmg_g": 167.1,
-              "orr": 606,
-              "g": 8,
+              "nick": "Forks",
+              "tier": 3,
+              "fit": 81.7,
+              "res_g": 0.37,
+              "kd": 0.48,
+              "dmg_g": 108.3,
+              "orr": 638,
+              "g": 19,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "daddy",
               "tier": 4,
-              "fit": 80.3,
+              "fit": 81.5,
               "res_g": 0.6,
               "kd": 0.83,
               "dmg_g": 189.0,
-              "orr": 584,
+              "orr": 641,
               "g": 5,
               "pause": false,
               "bestInTier": false
@@ -5962,11 +5975,11 @@
             {
               "nick": "FLEX",
               "tier": 2,
-              "fit": 74.2,
+              "fit": 74.9,
               "res_g": 0.5,
               "kd": 0.55,
               "dmg_g": 116.0,
-              "orr": 589,
+              "orr": 639,
               "g": 6,
               "pause": true,
               "bestInTier": false
@@ -5980,20 +5993,20 @@
             "n": 3,
             "thin": false,
             "who": [
-              "Radislave",
               "Kroasawn",
-              "VET"
+              "VET",
+              "Radislave"
             ],
             "res_g": 6.45,
             "kd": 0.5,
             "dmg_g": 108.6,
-            "orr": 647
+            "orr": 664
           },
           "bestInTier": "Kroasawn",
           "records": {
             "fit": 97.5,
             "res_g": 6.56,
-            "orr": 656,
+            "orr": 668,
             "g": 30
           },
           "rows": [
@@ -6004,7 +6017,7 @@
               "res_g": 6.45,
               "kd": 0.56,
               "dmg_g": 125.3,
-              "orr": 647,
+              "orr": 668,
               "g": 20,
               "pause": false,
               "bestInTier": true
@@ -6012,11 +6025,11 @@
             {
               "nick": "Radislave",
               "tier": 2,
-              "fit": 95.9,
+              "fit": 95.6,
               "res_g": 6.56,
               "kd": 0.34,
               "dmg_g": 74.3,
-              "orr": 656,
+              "orr": 658,
               "g": 27,
               "pause": false,
               "bestInTier": false
@@ -6024,11 +6037,11 @@
             {
               "nick": "VET",
               "tier": 2,
-              "fit": 75.8,
+              "fit": 76.0,
               "res_g": 3.37,
               "kd": 0.5,
               "dmg_g": 108.6,
-              "orr": 644,
+              "orr": 664,
               "g": 30,
               "pause": false,
               "bestInTier": false
@@ -6036,11 +6049,11 @@
             {
               "nick": "GAD",
               "tier": 2,
-              "fit": 28.8,
+              "fit": 31.6,
               "res_g": 0.0,
               "kd": 0.38,
               "dmg_g": 68.5,
-              "orr": 408,
+              "orr": 472,
               "g": 2,
               "pause": true,
               "bestInTier": false
@@ -6051,242 +6064,170 @@
           "role": "Rifle",
           "roleLabel": "Стрелок",
           "bench": {
-            "n": 5,
+            "n": 7,
             "thin": false,
             "who": [
               "freak",
+              "MrChaykaa",
               "Barsik",
               "yanchik",
               "ZensU",
-              "Trixx"
+              "Azure"
             ],
-            "res_g": 0.56,
-            "kd": 1.06,
-            "dmg_g": 183.0,
-            "orr": 610
+            "res_g": 0.83,
+            "kd": 0.91,
+            "dmg_g": 148.0,
+            "orr": 662
           },
-          "bestInTier": "ZensU",
+          "bestInTier": "freak",
           "records": {
             "fit": 100.0,
             "kd": 2.42,
             "dmg_g": 409.0,
-            "orr": 637
+            "orr": 684
           },
           "rows": [
             {
-              "nick": "ZensU",
+              "nick": "freak",
               "tier": 2,
               "fit": 100.0,
-              "res_g": 0.83,
-              "kd": 1.69,
-              "dmg_g": 233.4,
-              "orr": 609,
-              "g": 18,
+              "res_g": 2.65,
+              "kd": 0.91,
+              "dmg_g": 148.0,
+              "orr": 684,
+              "g": 23,
               "pause": false,
               "bestInTier": true
             },
             {
-              "nick": "yanchik",
+              "nick": "ZensU",
               "tier": 2,
-              "fit": 95.6,
-              "res_g": 0.38,
-              "kd": 1.17,
-              "dmg_g": 183.0,
-              "orr": 610,
-              "g": 13,
+              "fit": 99.7,
+              "res_g": 0.83,
+              "kd": 1.69,
+              "dmg_g": 233.4,
+              "orr": 656,
+              "g": 18,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "Barsik",
               "tier": 2,
-              "fit": 91.4,
+              "fit": 95.3,
               "res_g": 0.22,
               "kd": 1.06,
               "dmg_g": 142.1,
-              "orr": 632,
+              "orr": 668,
               "g": 32,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "yanchik",
+              "tier": 2,
+              "fit": 94.5,
+              "res_g": 0.38,
+              "kd": 1.17,
+              "dmg_g": 183.0,
+              "orr": 662,
+              "g": 13,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "Trixx",
               "tier": 2,
-              "fit": 91.3,
+              "fit": 92.8,
               "res_g": 0.56,
               "kd": 0.76,
               "dmg_g": 204.7,
-              "orr": 606,
+              "orr": 649,
               "g": 18,
               "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "freak",
-              "tier": 2,
-              "fit": 91.0,
-              "res_g": 2.65,
-              "kd": 0.91,
-              "dmg_g": 148.0,
-              "orr": 637,
-              "g": 23,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "LOST",
-              "tier": 4,
-              "fit": 86.8,
-              "res_g": 6.0,
-              "kd": 1.14,
-              "dmg_g": 231.0,
-              "orr": 533,
-              "g": 1,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Tatarin",
-              "tier": 4,
-              "fit": 86.8,
-              "res_g": 0.0,
-              "kd": 2.0,
-              "dmg_g": 229.8,
-              "orr": 591,
-              "g": 5,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "SHURUP",
-              "tier": 4,
-              "fit": 86.6,
-              "res_g": 0.5,
-              "kd": 1.64,
-              "dmg_g": 409.0,
-              "orr": 530,
-              "g": 2,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "_VaGNeR_",
-              "tier": 2,
-              "fit": 86.0,
-              "res_g": 0.4,
-              "kd": 2.0,
-              "dmg_g": 216.8,
-              "orr": 501,
-              "g": 5,
-              "pause": true,
-              "bestInTier": false
-            },
-            {
-              "nick": "Zerox",
-              "tier": 2,
-              "fit": 85.8,
-              "res_g": 0.5,
-              "kd": 2.42,
-              "dmg_g": 186.5,
-              "orr": 491,
-              "g": 4,
-              "pause": true,
               "bestInTier": false
             },
             {
               "nick": "Oguzok",
               "tier": 4,
-              "fit": 83.5,
+              "fit": 90.6,
               "res_g": 0.5,
               "kd": 0.9,
               "dmg_g": 137.2,
-              "orr": 572,
+              "orr": 619,
               "g": 12,
               "pause": false,
               "bestInTier": false
             },
             {
-              "nick": "Muhomor",
-              "tier": 4,
-              "fit": 83.3,
-              "res_g": 0.75,
-              "kd": 1.12,
-              "dmg_g": 145.2,
-              "orr": 534,
-              "g": 4,
-              "pause": false,
-              "bestInTier": false
-            }
-          ]
-        },
-        "Tandem": {
-          "role": "Tandem",
-          "roleLabel": "Тандем",
-          "bench": {
-            "n": 2,
-            "thin": false,
-            "who": [
-              "MrChaykaa",
-              "Azure"
-            ],
-            "res_g": 1.67,
-            "kd": 0.7150000000000001,
-            "dmg_g": 134.05,
-            "orr": 625.5
-          },
-          "bestInTier": "Azure",
-          "records": {
-            "fit": 94.6,
-            "dmg_g": 197.8,
-            "kd": 0.85,
-            "orr": 645
-          },
-          "rows": [
-            {
               "nick": "Azure",
               "tier": 2,
-              "fit": 94.6,
+              "fit": 90.1,
               "res_g": 2.4,
               "kd": 0.77,
               "dmg_g": 146.3,
-              "orr": 606,
+              "orr": 650,
               "g": 10,
-              "pause": false,
-              "bestInTier": true
-            },
-            {
-              "nick": "MrChaykaa",
-              "tier": 2,
-              "fit": 93.0,
-              "res_g": 0.94,
-              "kd": 0.66,
-              "dmg_g": 121.8,
-              "orr": 645,
-              "g": 18,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "Koperor",
               "tier": 4,
-              "fit": 89.4,
+              "fit": 89.0,
               "res_g": 0.36,
               "kd": 0.85,
               "dmg_g": 160.6,
-              "orr": 567,
+              "orr": 612,
               "g": 11,
               "pause": false,
               "bestInTier": false
             },
             {
-              "nick": "COBRA",
+              "nick": "LOST",
               "tier": 4,
-              "fit": 87.2,
-              "res_g": 0.44,
-              "kd": 0.43,
-              "dmg_g": 197.8,
-              "orr": 584,
-              "g": 16,
+              "fit": 88.6,
+              "res_g": 6.0,
+              "kd": 1.14,
+              "dmg_g": 231.0,
+              "orr": 618,
+              "g": 1,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Muhomor",
+              "tier": 4,
+              "fit": 88.1,
+              "res_g": 0.75,
+              "kd": 1.12,
+              "dmg_g": 145.2,
+              "orr": 592,
+              "g": 4,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Tatarin",
+              "tier": 4,
+              "fit": 87.8,
+              "res_g": 0.0,
+              "kd": 2.0,
+              "dmg_g": 229.8,
+              "orr": 664,
+              "g": 5,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "MrChaykaa",
+              "tier": 2,
+              "fit": 87.3,
+              "res_g": 0.94,
+              "kd": 0.66,
+              "dmg_g": 121.8,
+              "orr": 679,
+              "g": 18,
               "pause": false,
               "bestInTier": false
             }
@@ -6304,14 +6245,14 @@
             "res_g": 1.77,
             "kd": 1.56,
             "dmg_g": 410.8,
-            "orr": 670
+            "orr": 721
           },
           "bestInTier": "Tankist",
           "records": {
             "fit": 100.0,
             "dmg_g": 410.8,
             "kd": 1.56,
-            "orr": 670
+            "orr": 721
           },
           "rows": [
             {
@@ -6321,7 +6262,7 @@
               "res_g": 1.77,
               "kd": 1.56,
               "dmg_g": 410.8,
-              "orr": 670,
+              "orr": 721,
               "g": 22,
               "pause": false,
               "bestInTier": true
@@ -6343,12 +6284,12 @@
             "res_g": 0.585,
             "kd": 0.7,
             "dmg_g": 152.35,
-            "orr": 576.5
+            "orr": 611.0
           },
           "bestInTier": "Forks",
           "records": {
             "fit": 89.2,
-            "orr": 613,
+            "orr": 641,
             "kd": 0.92,
             "dmg_g": 196.4
           },
@@ -6360,7 +6301,7 @@
               "res_g": 0.6,
               "kd": 0.83,
               "dmg_g": 189.0,
-              "orr": 584,
+              "orr": 641,
               "g": 5,
               "pause": false,
               "bestInTier": false
@@ -6368,11 +6309,11 @@
             {
               "nick": "qop",
               "tier": 3,
-              "fit": 86.6,
+              "fit": 87.4,
               "res_g": 0.8,
               "kd": 0.92,
               "dmg_g": 196.4,
-              "orr": 540,
+              "orr": 584,
               "g": 5,
               "pause": true,
               "bestInTier": false
@@ -6380,11 +6321,11 @@
             {
               "nick": "KTO--TO",
               "tier": 4,
-              "fit": 86.2,
+              "fit": 86.7,
               "res_g": 0.64,
               "kd": 0.56,
               "dmg_g": 99.6,
-              "orr": 568,
+              "orr": 610,
               "g": 14,
               "pause": false,
               "bestInTier": false
@@ -6396,7 +6337,7 @@
               "res_g": 0.37,
               "kd": 0.48,
               "dmg_g": 108.3,
-              "orr": 613,
+              "orr": 638,
               "g": 19,
               "pause": false,
               "bestInTier": true
@@ -6404,11 +6345,11 @@
             {
               "nick": "tank2284",
               "tier": 4,
-              "fit": 81.3,
+              "fit": 83.1,
               "res_g": 1.5,
               "kd": 0.75,
               "dmg_g": 123.7,
-              "orr": 505,
+              "orr": 563,
               "g": 6,
               "pause": false,
               "bestInTier": false
@@ -6422,30 +6363,30 @@
             "n": 2,
             "thin": false,
             "who": [
-              "ADUN",
-              "Varyag"
+              "Varyag",
+              "ADUN"
             ],
             "res_g": 2.785,
             "kd": 0.385,
             "dmg_g": 83.9,
-            "orr": 596.0
+            "orr": 626.5
           },
           "bestInTier": "ADUN",
           "records": {
-            "fit": 96.8,
+            "fit": 96.1,
             "res_g": 4.57,
-            "orr": 598,
+            "orr": 639,
             "g": 19
           },
           "rows": [
             {
               "nick": "ADUN",
               "tier": 3,
-              "fit": 96.8,
+              "fit": 96.1,
               "res_g": 4.32,
               "kd": 0.37,
               "dmg_g": 72.0,
-              "orr": 598,
+              "orr": 614,
               "g": 19,
               "pause": false,
               "bestInTier": true
@@ -6457,7 +6398,7 @@
               "res_g": 3.7,
               "kd": 0.55,
               "dmg_g": 78.9,
-              "orr": 579,
+              "orr": 610,
               "g": 10,
               "pause": false,
               "bestInTier": false
@@ -6465,11 +6406,11 @@
             {
               "nick": "firs",
               "tier": 4,
-              "fit": 86.9,
+              "fit": 87.4,
               "res_g": 4.57,
               "kd": 0.22,
               "dmg_g": 45.1,
-              "orr": 559,
+              "orr": 596,
               "g": 7,
               "pause": false,
               "bestInTier": false
@@ -6477,11 +6418,11 @@
             {
               "nick": "Varyag",
               "tier": 3,
-              "fit": 67.0,
+              "fit": 67.1,
               "res_g": 1.25,
               "kd": 0.4,
               "dmg_g": 95.8,
-              "orr": 594,
+              "orr": 639,
               "g": 8,
               "pause": false,
               "bestInTier": false
@@ -6503,14 +6444,14 @@
             "res_g": 0.49,
             "kd": 0.585,
             "dmg_g": 97.85,
-            "orr": 538.5
+            "orr": 583.0
           },
           "bestInTier": "Mighty",
           "records": {
             "fit": 96.7,
             "kd": 2.0,
             "dmg_g": 409.0,
-            "orr": 600
+            "orr": 664
           },
           "rows": [
             {
@@ -6520,7 +6461,7 @@
               "res_g": 0.5,
               "kd": 0.9,
               "dmg_g": 137.2,
-              "orr": 572,
+              "orr": 619,
               "g": 12,
               "pause": false,
               "bestInTier": false
@@ -6532,7 +6473,31 @@
               "res_g": 2.1,
               "kd": 0.69,
               "dmg_g": 123.9,
-              "orr": 551,
+              "orr": 610,
+              "g": 10,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Koperor",
+              "tier": 4,
+              "fit": 94.8,
+              "res_g": 0.36,
+              "kd": 0.85,
+              "dmg_g": 160.6,
+              "orr": 612,
+              "g": 11,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "ART",
+              "tier": 4,
+              "fit": 94.1,
+              "res_g": 0.4,
+              "kd": 0.73,
+              "dmg_g": 116.3,
+              "orr": 572,
               "g": 10,
               "pause": false,
               "bestInTier": false
@@ -6544,20 +6509,8 @@
               "res_g": 1.27,
               "kd": 0.54,
               "dmg_g": 111.7,
-              "orr": 580,
+              "orr": 624,
               "g": 11,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "ART",
-              "tier": 4,
-              "fit": 93.3,
-              "res_g": 0.4,
-              "kd": 0.73,
-              "dmg_g": 116.3,
-              "orr": 514,
-              "g": 10,
               "pause": false,
               "bestInTier": false
             },
@@ -6568,22 +6521,46 @@
               "res_g": 0.38,
               "kd": 0.72,
               "dmg_g": 150.2,
-              "orr": 542,
+              "orr": 602,
               "g": 8,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Jerom101",
+              "tier": 4,
+              "fit": 93.0,
+              "res_g": 3.33,
+              "kd": 0.76,
+              "dmg_g": 158.3,
+              "orr": 576,
+              "g": 6,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "Muhomor",
               "tier": 4,
-              "fit": 92.0,
+              "fit": 92.2,
               "res_g": 0.75,
               "kd": 1.12,
               "dmg_g": 145.2,
-              "orr": 534,
+              "orr": 592,
               "g": 4,
               "pause": false,
               "bestInTier": false
+            },
+            {
+              "nick": "Mighty",
+              "tier": 3,
+              "fit": 91.8,
+              "res_g": 0.44,
+              "kd": 0.54,
+              "dmg_g": 103.8,
+              "orr": 575,
+              "g": 9,
+              "pause": false,
+              "bestInTier": true
             },
             {
               "nick": "Edge_CM",
@@ -6592,68 +6569,32 @@
               "res_g": 2.0,
               "kd": 0.9,
               "dmg_g": 116.0,
-              "orr": 553,
+              "orr": 599,
               "g": 3,
               "pause": false,
               "bestInTier": false
             },
             {
-              "nick": "Jerom101",
+              "nick": "Bks",
               "tier": 4,
-              "fit": 91.2,
-              "res_g": 3.33,
-              "kd": 0.76,
-              "dmg_g": 158.3,
-              "orr": 501,
-              "g": 6,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Mighty",
-              "tier": 3,
-              "fit": 91.2,
-              "res_g": 0.44,
-              "kd": 0.54,
-              "dmg_g": 103.8,
-              "orr": 521,
-              "g": 9,
-              "pause": false,
-              "bestInTier": true
-            },
-            {
-              "nick": "T-800",
-              "tier": 3,
-              "fit": 91.0,
-              "res_g": 3.38,
-              "kd": 0.63,
-              "dmg_g": 84.4,
-              "orr": 574,
-              "g": 8,
+              "fit": 91.1,
+              "res_g": 10.0,
+              "kd": 1.17,
+              "dmg_g": 109.0,
+              "orr": 584,
+              "g": 2,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "SHURUP",
               "tier": 4,
-              "fit": 90.6,
+              "fit": 91.1,
               "res_g": 0.5,
               "kd": 1.64,
               "dmg_g": 409.0,
-              "orr": 530,
+              "orr": 614,
               "g": 2,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "LOST",
-              "tier": 4,
-              "fit": 90.2,
-              "res_g": 6.0,
-              "kd": 1.14,
-              "dmg_g": 231.0,
-              "orr": 533,
-              "g": 1,
               "pause": false,
               "bestInTier": false
             }
@@ -6674,12 +6615,12 @@
             "res_g": 0.585,
             "kd": 0.7,
             "dmg_g": 152.35,
-            "orr": 576.5
+            "orr": 611.0
           },
           "bestInTier": "daddy",
           "records": {
             "fit": 89.2,
-            "orr": 584,
+            "orr": 641,
             "kd": 0.83,
             "dmg_g": 189.0
           },
@@ -6691,7 +6632,7 @@
               "res_g": 0.6,
               "kd": 0.83,
               "dmg_g": 189.0,
-              "orr": 584,
+              "orr": 641,
               "g": 5,
               "pause": false,
               "bestInTier": true
@@ -6699,11 +6640,11 @@
             {
               "nick": "KTO--TO",
               "tier": 4,
-              "fit": 86.2,
+              "fit": 86.7,
               "res_g": 0.64,
               "kd": 0.56,
               "dmg_g": 99.6,
-              "orr": 568,
+              "orr": 610,
               "g": 14,
               "pause": false,
               "bestInTier": false
@@ -6711,11 +6652,11 @@
             {
               "nick": "tank2284",
               "tier": 4,
-              "fit": 81.3,
+              "fit": 83.1,
               "res_g": 1.5,
               "kd": 0.75,
               "dmg_g": 123.7,
-              "orr": 505,
+              "orr": 563,
               "g": 6,
               "pause": false,
               "bestInTier": false
@@ -6723,11 +6664,11 @@
             {
               "nick": "Trigger",
               "tier": 4,
-              "fit": 77.6,
+              "fit": 76.5,
               "res_g": 1.12,
               "kd": 0.22,
               "dmg_g": 71.2,
-              "orr": 568,
+              "orr": 585,
               "g": 17,
               "pause": false,
               "bestInTier": false
@@ -6741,19 +6682,19 @@
             "n": 2,
             "thin": false,
             "who": [
-              "ADUN",
-              "Varyag"
+              "Varyag",
+              "ADUN"
             ],
             "res_g": 2.785,
             "kd": 0.385,
             "dmg_g": 83.9,
-            "orr": 596.0
+            "orr": 626.5
           },
           "bestInTier": "Bahus",
           "records": {
             "fit": 91.8,
             "res_g": 4.57,
-            "orr": 579,
+            "orr": 635,
             "g": 14
           },
           "rows": [
@@ -6764,7 +6705,7 @@
               "res_g": 3.7,
               "kd": 0.55,
               "dmg_g": 78.9,
-              "orr": 579,
+              "orr": 610,
               "g": 10,
               "pause": false,
               "bestInTier": true
@@ -6772,11 +6713,11 @@
             {
               "nick": "firs",
               "tier": 4,
-              "fit": 86.9,
+              "fit": 87.4,
               "res_g": 4.57,
               "kd": 0.22,
               "dmg_g": 45.1,
-              "orr": 559,
+              "orr": 596,
               "g": 7,
               "pause": false,
               "bestInTier": false
@@ -6784,11 +6725,11 @@
             {
               "nick": "Animo",
               "tier": 4,
-              "fit": 57.6,
+              "fit": 59.2,
               "res_g": 1.0,
               "kd": 1.0,
               "dmg_g": 186.0,
-              "orr": 568,
+              "orr": 634,
               "g": 1,
               "pause": false,
               "bestInTier": false
@@ -6796,11 +6737,11 @@
             {
               "nick": "r4mp",
               "tier": 4,
-              "fit": 57.4,
+              "fit": 59.2,
               "res_g": 0.83,
               "kd": 1.3,
               "dmg_g": 207.7,
-              "orr": 565,
+              "orr": 635,
               "g": 6,
               "pause": false,
               "bestInTier": false
@@ -6808,11 +6749,11 @@
             {
               "nick": "CORWAX",
               "tier": 4,
-              "fit": 54.3,
+              "fit": 53.8,
               "res_g": 1.0,
               "kd": 2.0,
               "dmg_g": 163.0,
-              "orr": 512,
+              "orr": 530,
               "g": 1,
               "pause": false,
               "bestInTier": false
@@ -6820,11 +6761,11 @@
             {
               "nick": "ZLOBA1917",
               "tier": 4,
-              "fit": 49.8,
+              "fit": 50.5,
               "res_g": 0.29,
               "kd": 0.17,
               "dmg_g": 59.4,
-              "orr": 538,
+              "orr": 578,
               "g": 14,
               "pause": false,
               "bestInTier": false
@@ -6846,14 +6787,14 @@
             "res_g": 0.49,
             "kd": 0.585,
             "dmg_g": 97.85,
-            "orr": 538.5
+            "orr": 583.0
           },
           "bestInTier": "Oguzok",
           "records": {
             "fit": 96.7,
             "kd": 2.0,
             "dmg_g": 409.0,
-            "orr": 600
+            "orr": 664
           },
           "rows": [
             {
@@ -6863,7 +6804,7 @@
               "res_g": 0.5,
               "kd": 0.9,
               "dmg_g": 137.2,
-              "orr": 572,
+              "orr": 619,
               "g": 12,
               "pause": false,
               "bestInTier": true
@@ -6875,7 +6816,31 @@
               "res_g": 2.1,
               "kd": 0.69,
               "dmg_g": 123.9,
-              "orr": 551,
+              "orr": 610,
+              "g": 10,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Koperor",
+              "tier": 4,
+              "fit": 94.8,
+              "res_g": 0.36,
+              "kd": 0.85,
+              "dmg_g": 160.6,
+              "orr": 612,
+              "g": 11,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "ART",
+              "tier": 4,
+              "fit": 94.1,
+              "res_g": 0.4,
+              "kd": 0.73,
+              "dmg_g": 116.3,
+              "orr": 572,
               "g": 10,
               "pause": false,
               "bestInTier": false
@@ -6887,20 +6852,8 @@
               "res_g": 1.27,
               "kd": 0.54,
               "dmg_g": 111.7,
-              "orr": 580,
+              "orr": 624,
               "g": 11,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "ART",
-              "tier": 4,
-              "fit": 93.3,
-              "res_g": 0.4,
-              "kd": 0.73,
-              "dmg_g": 116.3,
-              "orr": 514,
-              "g": 10,
               "pause": false,
               "bestInTier": false
             },
@@ -6911,19 +6864,31 @@
               "res_g": 0.38,
               "kd": 0.72,
               "dmg_g": 150.2,
-              "orr": 542,
+              "orr": 602,
               "g": 8,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Jerom101",
+              "tier": 4,
+              "fit": 93.0,
+              "res_g": 3.33,
+              "kd": 0.76,
+              "dmg_g": 158.3,
+              "orr": 576,
+              "g": 6,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "Muhomor",
               "tier": 4,
-              "fit": 92.0,
+              "fit": 92.2,
               "res_g": 0.75,
               "kd": 1.12,
               "dmg_g": 145.2,
-              "orr": 534,
+              "orr": 592,
               "g": 4,
               "pause": false,
               "bestInTier": false
@@ -6935,31 +6900,31 @@
               "res_g": 2.0,
               "kd": 0.9,
               "dmg_g": 116.0,
-              "orr": 553,
+              "orr": 599,
               "g": 3,
               "pause": false,
               "bestInTier": false
             },
             {
-              "nick": "Jerom101",
+              "nick": "Bks",
               "tier": 4,
-              "fit": 91.2,
-              "res_g": 3.33,
-              "kd": 0.76,
-              "dmg_g": 158.3,
-              "orr": 501,
-              "g": 6,
+              "fit": 91.1,
+              "res_g": 10.0,
+              "kd": 1.17,
+              "dmg_g": 109.0,
+              "orr": 584,
+              "g": 2,
               "pause": false,
               "bestInTier": false
             },
             {
               "nick": "SHURUP",
               "tier": 4,
-              "fit": 90.6,
+              "fit": 91.1,
               "res_g": 0.5,
               "kd": 1.64,
               "dmg_g": 409.0,
-              "orr": 530,
+              "orr": 614,
               "g": 2,
               "pause": false,
               "bestInTier": false
@@ -6967,36 +6932,12 @@
             {
               "nick": "LOST",
               "tier": 4,
-              "fit": 90.2,
+              "fit": 90.6,
               "res_g": 6.0,
               "kd": 1.14,
               "dmg_g": 231.0,
-              "orr": 533,
+              "orr": 618,
               "g": 1,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "m3rz0st",
-              "tier": 4,
-              "fit": 89.7,
-              "res_g": 1.12,
-              "kd": 0.59,
-              "dmg_g": 79.4,
-              "orr": 600,
-              "g": 8,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Bks",
-              "tier": 4,
-              "fit": 89.2,
-              "res_g": 10.0,
-              "kd": 1.17,
-              "dmg_g": 109.0,
-              "orr": 504,
-              "g": 2,
               "pause": false,
               "bestInTier": false
             }
@@ -7018,7 +6959,7 @@
           "res_g": 0.5,
           "kd": 0.9,
           "dmg_g": 137.2,
-          "orr": 572
+          "orr": 619
         },
         {
           "nick": "Hazzi",
@@ -7032,21 +6973,7 @@
           "res_g": 2.1,
           "kd": 0.69,
           "dmg_g": 123.9,
-          "orr": 551
-        },
-        {
-          "nick": "Radislave",
-          "fromTier": 2,
-          "toTier": 1,
-          "role": "Medic",
-          "roleLabel": "Медик",
-          "fit": 95.2,
-          "band": "strong",
-          "g": 27,
-          "res_g": 6.56,
-          "kd": 0.34,
-          "dmg_g": 74.3,
-          "orr": 656
+          "orr": 610
         },
         {
           "nick": "Tankist",
@@ -7060,7 +6987,35 @@
           "res_g": 1.77,
           "kd": 1.56,
           "dmg_g": 410.8,
-          "orr": 670
+          "orr": 721
+        },
+        {
+          "nick": "Radislave",
+          "fromTier": 2,
+          "toTier": 1,
+          "role": "Medic",
+          "roleLabel": "Медик",
+          "fit": 94.9,
+          "band": "almost",
+          "g": 27,
+          "res_g": 6.56,
+          "kd": 0.34,
+          "dmg_g": 74.3,
+          "orr": 658
+        },
+        {
+          "nick": "Koperor",
+          "fromTier": 4,
+          "toTier": 3,
+          "role": "Rifle",
+          "roleLabel": "Стрелок",
+          "fit": 94.8,
+          "band": "almost",
+          "g": 11,
+          "res_g": 0.36,
+          "kd": 0.85,
+          "dmg_g": 160.6,
+          "orr": 612
         },
         {
           "nick": "Kroasawn",
@@ -7074,7 +7029,21 @@
           "res_g": 6.45,
           "kd": 0.56,
           "dmg_g": 125.3,
-          "orr": 647
+          "orr": 668
+        },
+        {
+          "nick": "ART",
+          "fromTier": 4,
+          "toTier": 3,
+          "role": "Rifle",
+          "roleLabel": "Стрелок",
+          "fit": 94.1,
+          "band": "almost",
+          "g": 10,
+          "res_g": 0.4,
+          "kd": 0.73,
+          "dmg_g": 116.3,
+          "orr": 572
         },
         {
           "nick": "uglyfromyoung",
@@ -7088,21 +7057,7 @@
           "res_g": 1.27,
           "kd": 0.54,
           "dmg_g": 111.7,
-          "orr": 580
-        },
-        {
-          "nick": "ART",
-          "fromTier": 4,
-          "toTier": 3,
-          "role": "Rifle",
-          "roleLabel": "Стрелок",
-          "fit": 93.3,
-          "band": "almost",
-          "g": 10,
-          "res_g": 0.4,
-          "kd": 0.73,
-          "dmg_g": 116.3,
-          "orr": 514
+          "orr": 624
         },
         {
           "nick": "NestorMahno",
@@ -7116,7 +7071,21 @@
           "res_g": 0.38,
           "kd": 0.72,
           "dmg_g": 150.2,
-          "orr": 542
+          "orr": 602
+        },
+        {
+          "nick": "Jerom101",
+          "fromTier": 4,
+          "toTier": 3,
+          "role": "Rifle",
+          "roleLabel": "Стрелок",
+          "fit": 93.0,
+          "band": "almost",
+          "g": 6,
+          "res_g": 3.33,
+          "kd": 0.76,
+          "dmg_g": 158.3,
+          "orr": 576
         },
         {
           "nick": "Muhomor",
@@ -7124,13 +7093,13 @@
           "toTier": 3,
           "role": "Rifle",
           "roleLabel": "Стрелок",
-          "fit": 92.0,
+          "fit": 92.2,
           "band": "almost",
           "g": 4,
           "res_g": 0.75,
           "kd": 1.12,
           "dmg_g": 145.2,
-          "orr": 534
+          "orr": 592
         },
         {
           "nick": "Bahus",
@@ -7144,7 +7113,7 @@
           "res_g": 3.7,
           "kd": 0.55,
           "dmg_g": 78.9,
-          "orr": 579
+          "orr": 610
         },
         {
           "nick": "Edge_CM",
@@ -7158,7 +7127,7 @@
           "res_g": 2.0,
           "kd": 0.9,
           "dmg_g": 116.0,
-          "orr": 553
+          "orr": 599
         },
         {
           "nick": "ZensU",
@@ -7166,27 +7135,27 @@
           "toTier": 1,
           "role": "Rifle",
           "roleLabel": "Стрелок",
-          "fit": 91.3,
+          "fit": 91.2,
           "band": "almost",
           "g": 18,
           "res_g": 0.83,
           "kd": 1.69,
           "dmg_g": 233.4,
-          "orr": 609
+          "orr": 656
         },
         {
-          "nick": "Jerom101",
+          "nick": "Bks",
           "fromTier": 4,
           "toTier": 3,
           "role": "Rifle",
           "roleLabel": "Стрелок",
-          "fit": 91.2,
+          "fit": 91.1,
           "band": "almost",
-          "g": 6,
-          "res_g": 3.33,
-          "kd": 0.76,
-          "dmg_g": 158.3,
-          "orr": 501
+          "g": 2,
+          "res_g": 10.0,
+          "kd": 1.17,
+          "dmg_g": 109.0,
+          "orr": 584
         },
         {
           "nick": "SHURUP",
@@ -7194,13 +7163,13 @@
           "toTier": 3,
           "role": "Rifle",
           "roleLabel": "Стрелок",
-          "fit": 90.6,
+          "fit": 91.1,
           "band": "almost",
           "g": 2,
           "res_g": 0.5,
           "kd": 1.64,
           "dmg_g": 409.0,
-          "orr": 530
+          "orr": 614
         },
         {
           "nick": "LOST",
@@ -7208,13 +7177,13 @@
           "toTier": 3,
           "role": "Rifle",
           "roleLabel": "Стрелок",
-          "fit": 90.2,
+          "fit": 90.6,
           "band": "almost",
           "g": 1,
           "res_g": 6.0,
           "kd": 1.14,
           "dmg_g": 231.0,
-          "orr": 533
+          "orr": 618
         }
       ],
       "demote": [
@@ -7224,12 +7193,12 @@
           "toTier": 4,
           "role": "Medic",
           "roleLabel": "Медик",
-          "fit": 67.0,
+          "fit": 67.1,
           "g": 8,
           "res_g": 1.25,
           "kd": 0.4,
           "dmg_g": 95.8,
-          "orr": 594
+          "orr": 639
         },
         {
           "nick": "JESTER",
@@ -7242,7 +7211,7 @@
           "res_g": 1.0,
           "kd": 1.16,
           "dmg_g": 167.6,
-          "orr": 544
+          "orr": 590
         }
       ],
       "warn": [
@@ -7252,12 +7221,12 @@
           "toTier": 3,
           "role": "Medic",
           "roleLabel": "Медик",
-          "fit": 75.8,
+          "fit": 76.0,
           "g": 30,
           "res_g": 3.37,
           "kd": 0.5,
           "dmg_g": 108.6,
-          "orr": 644
+          "orr": 664
         },
         {
           "nick": "Otto",
@@ -7265,12 +7234,12 @@
           "toTier": 3,
           "role": "SL",
           "roleLabel": "КО (SL)",
-          "fit": 82.0,
+          "fit": 81.9,
           "g": 8,
           "res_g": 0.38,
           "kd": 0.64,
           "dmg_g": 167.1,
-          "orr": 606
+          "orr": 641
         },
         {
           "nick": "AkiN",
@@ -7283,7 +7252,7 @@
           "res_g": 1.88,
           "kd": 0.89,
           "dmg_g": 146.3,
-          "orr": 684
+          "orr": 718
         },
         {
           "nick": "Treppen",
@@ -7296,7 +7265,7 @@
           "res_g": 0.25,
           "kd": 0.9,
           "dmg_g": 132.5,
-          "orr": 646
+          "orr": 674
         },
         {
           "nick": "Gadler",
@@ -7309,7 +7278,7 @@
           "res_g": 0.62,
           "kd": 1.07,
           "dmg_g": 336.2,
-          "orr": 563
+          "orr": 610
         },
         {
           "nick": "S.M.P",
@@ -7322,7 +7291,7 @@
           "res_g": 0.25,
           "kd": 0.63,
           "dmg_g": 290.9,
-          "orr": 629
+          "orr": 679
         }
       ]
     },
@@ -7335,38 +7304,31 @@
         "4": 60
       },
       "pauseCount": 13,
-      "medianFitOwn": 91.2,
-      "promoteCount": 15,
+      "medianFitOwn": 91.0,
+      "promoteCount": 17,
       "demoteCount": 2,
       "warnCount": 6,
       "roleGap": [
         {
           "role": "SL",
           "roleLabel": "КО (SL)",
-          "t1MedianFit": 88.5,
-          "bestT2FitT1": 80.4,
+          "t1MedianFit": 89.0,
+          "bestT2FitT1": 81.2,
           "bestT2": "akin0v"
         },
         {
           "role": "Medic",
           "roleLabel": "Медик",
-          "t1MedianFit": 95.1,
-          "bestT2FitT1": 95.2,
+          "t1MedianFit": 94.9,
+          "bestT2FitT1": 94.9,
           "bestT2": "Radislave"
         },
         {
           "role": "Rifle",
           "roleLabel": "Стрелок",
-          "t1MedianFit": 94.1,
-          "bestT2FitT1": 91.3,
+          "t1MedianFit": 94.3,
+          "bestT2FitT1": 91.2,
           "bestT2": "ZensU"
-        },
-        {
-          "role": "Tandem",
-          "roleLabel": "Тандем",
-          "t1MedianFit": 86.8,
-          "bestT2FitT1": 68.6,
-          "bestT2": "MrChaykaa"
         },
         {
           "role": "Crew",
@@ -7393,37 +7355,37 @@
           "nick": "iKEppA",
           "tier": 1,
           "roleLabel": "Стрелок",
-          "fit": 99.3
+          "fit": 99.7
         },
         {
           "nick": "Mukuru",
           "tier": 1,
           "roleLabel": "КО (SL)",
-          "fit": 96.7
+          "fit": 96.9
         },
         {
           "nick": "KillReal",
           "tier": 1,
           "roleLabel": "Медик",
-          "fit": 96.6
-        },
-        {
-          "nick": "Chidori",
-          "tier": 1,
-          "roleLabel": "CMD",
-          "fit": 95.4
-        },
-        {
-          "nick": "Radislave",
-          "tier": 2,
-          "roleLabel": "Медик",
-          "fit": 95.2
+          "fit": 96.2
         },
         {
           "nick": "Tankist",
           "tier": 2,
           "roleLabel": "Тех / водитель",
           "fit": 95.1
+        },
+        {
+          "nick": "Radislave",
+          "tier": 2,
+          "roleLabel": "Медик",
+          "fit": 94.9
+        },
+        {
+          "nick": "Chidori",
+          "tier": 1,
+          "roleLabel": "CMD",
+          "fit": 94.8
         },
         {
           "nick": "Kroasawn",
@@ -7435,7 +7397,7 @@
           "nick": "Blizzardrix",
           "tier": 1,
           "roleLabel": "Сапёр",
-          "fit": 93.6
+          "fit": 94.1
         }
       ]
     },
@@ -7450,7 +7412,7 @@
         "kd": 0.72,
         "dmg_g": 150.2,
         "kills_g": 4.12,
-        "orr": 542,
+        "orr": 602,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
@@ -7458,8 +7420,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 58.3,
-        "fitT2": 75.4,
+        "fitT1": 59.0,
+        "fitT2": 82.8,
         "fitT3": 93.3
       },
       {
@@ -7472,17 +7434,17 @@
         "kd": 0.12,
         "dmg_g": 59.0,
         "kills_g": 0.5,
-        "orr": 250,
+        "orr": 313,
         "pres": 0.05,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 41.3,
-        "fitT1": 25.2,
-        "fitT2": 29.9,
-        "fitT3": 41.3
+        "fitOwn": 43.4,
+        "fitT1": 27.0,
+        "fitT2": 34.2,
+        "fitT3": 43.4
       },
       {
         "nick": "Hazzi",
@@ -7494,7 +7456,7 @@
         "kd": 0.69,
         "dmg_g": 123.9,
         "kills_g": 3.3,
-        "orr": 551,
+        "orr": 610,
         "pres": 0.25,
         "pause": false,
         "crewShareMeets": 0,
@@ -7502,8 +7464,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 58.5,
-        "fitT2": 74.1,
+        "fitT1": 59.0,
+        "fitT2": 81.9,
         "fitT3": 95.6
       },
       {
@@ -7516,17 +7478,17 @@
         "kd": 0.4,
         "dmg_g": 95.8,
         "kills_g": 2.62,
-        "orr": 594,
+        "orr": 639,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 67.0,
-        "fitT1": 52.2,
-        "fitT2": 52.2,
-        "fitT3": 67.0
+        "fitOwn": 67.1,
+        "fitT1": 53.8,
+        "fitT2": 53.8,
+        "fitT3": 67.1
       },
       {
         "nick": "C2H5OH",
@@ -7547,7 +7509,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 27.6,
-        "fitT2": 40.6,
+        "fitT2": 46.3,
         "fitT3": 59.3
       },
       {
@@ -7560,7 +7522,7 @@
         "kd": 0.33,
         "dmg_g": 70.3,
         "kills_g": 1.78,
-        "orr": 506,
+        "orr": 536,
         "pres": 0.225,
         "pause": false,
         "crewShareMeets": 0,
@@ -7568,9 +7530,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 45.2,
-        "fitT2": 53.8,
-        "fitT3": 73.1
+        "fitT1": 44.7,
+        "fitT2": 57.0,
+        "fitT3": 72.5
       },
       {
         "nick": "Mahorka",
@@ -7582,7 +7544,7 @@
         "kd": 0.2,
         "dmg_g": 58.1,
         "kills_g": 1.27,
-        "orr": 557,
+        "orr": 586,
         "pres": 0.275,
         "pause": false,
         "crewShareMeets": 0,
@@ -7590,8 +7552,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 45.5,
-        "fitT2": 52.1,
+        "fitT1": 44.8,
+        "fitT2": 54.1,
         "fitT3": 66.2
       },
       {
@@ -7604,16 +7566,16 @@
         "kd": 0.5,
         "dmg_g": 108.6,
         "kills_g": 2.33,
-        "orr": 644,
+        "orr": 664,
         "pres": 0.75,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 75.8,
-        "fitT1": 74.4,
-        "fitT2": 75.8,
+        "fitOwn": 76.0,
+        "fitT1": 74.5,
+        "fitT2": 76.0,
         "fitT3": 97.5
       },
       {
@@ -7626,7 +7588,7 @@
         "kd": 0.73,
         "dmg_g": 116.3,
         "kills_g": 3.5,
-        "orr": 514,
+        "orr": 572,
         "pres": 0.25,
         "pause": false,
         "crewShareMeets": 0,
@@ -7634,9 +7596,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 55.3,
-        "fitT2": 71.0,
-        "fitT3": 93.3
+        "fitT1": 55.9,
+        "fitT2": 77.6,
+        "fitT3": 94.1
       },
       {
         "nick": "Radislave",
@@ -7648,16 +7610,16 @@
         "kd": 0.34,
         "dmg_g": 74.3,
         "kills_g": 1.3,
-        "orr": 656,
+        "orr": 658,
         "pres": 0.675,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 95.9,
-        "fitT1": 95.2,
-        "fitT2": 95.9,
+        "fitOwn": 95.6,
+        "fitT1": 94.9,
+        "fitT2": 95.6,
         "fitT3": 96.9
       },
       {
@@ -7670,7 +7632,7 @@
         "kd": 0.59,
         "dmg_g": 79.4,
         "kills_g": 2.12,
-        "orr": 600,
+        "orr": 651,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
@@ -7678,8 +7640,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 53.8,
-        "fitT2": 66.5,
+        "fitT1": 53.9,
+        "fitT2": 71.8,
         "fitT3": 89.7
       },
       {
@@ -7701,7 +7663,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 34.1,
-        "fitT2": 47.6,
+        "fitT2": 48.9,
         "fitT3": 61.1
       },
       {
@@ -7714,7 +7676,7 @@
         "kd": 0.9,
         "dmg_g": 116.0,
         "kills_g": 3.0,
-        "orr": 553,
+        "orr": 599,
         "pres": 0.075,
         "pause": false,
         "crewShareMeets": 0,
@@ -7723,7 +7685,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 57.1,
-        "fitT2": 75.2,
+        "fitT2": 83.1,
         "fitT3": 91.7
       },
       {
@@ -7736,7 +7698,7 @@
         "kd": 0.76,
         "dmg_g": 158.3,
         "kills_g": 4.17,
-        "orr": 501,
+        "orr": 576,
         "pres": 0.15,
         "pause": false,
         "crewShareMeets": 0,
@@ -7744,9 +7706,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 58.3,
-        "fitT2": 76.1,
-        "fitT3": 91.2
+        "fitT1": 59.7,
+        "fitT2": 84.5,
+        "fitT3": 93.0
       },
       {
         "nick": "Jimmy Neutron",
@@ -7758,7 +7720,7 @@
         "kd": 0.42,
         "dmg_g": 91.9,
         "kills_g": 2.35,
-        "orr": 556,
+        "orr": 591,
         "pres": 0.65,
         "pause": false,
         "crewShareMeets": 0,
@@ -7766,8 +7728,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": 90.0,
-        "fitT1": 55.9,
-        "fitT2": 66.6,
+        "fitT1": 55.4,
+        "fitT2": 69.4,
         "fitT3": 90.0
       },
       {
@@ -7789,7 +7751,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 32.8,
-        "fitT2": 49.6,
+        "fitT2": 58.1,
         "fitT3": 61.1
       },
       {
@@ -7802,7 +7764,7 @@
         "kd": 0.48,
         "dmg_g": 108.3,
         "kills_g": 2.63,
-        "orr": 613,
+        "orr": 638,
         "pres": 0.475,
         "pause": false,
         "crewShareMeets": 0,
@@ -7810,8 +7772,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
         "fitOwn": 85.8,
-        "fitT1": 77.0,
-        "fitT2": 82.0,
+        "fitT1": 76.5,
+        "fitT2": 81.7,
         "fitT3": 85.8
       },
       {
@@ -7833,7 +7795,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 17.4,
-        "fitT2": 23.7,
+        "fitT2": 27.4,
         "fitT3": 38.6
       },
       {
@@ -7855,7 +7817,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 25.6,
-        "fitT2": 34.4,
+        "fitT2": 39.3,
         "fitT3": 53.5
       },
       {
@@ -7868,16 +7830,16 @@
         "kd": 1.06,
         "dmg_g": 142.1,
         "kills_g": 4.34,
-        "orr": 632,
+        "orr": 668,
         "pres": 0.8,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 91.4,
-        "fitT1": 71.0,
-        "fitT2": 91.4,
+        "fitOwn": 95.3,
+        "fitT1": 70.3,
+        "fitT2": 95.3,
         "fitT3": 97.2
       },
       {
@@ -7890,7 +7852,7 @@
         "kd": 0.4,
         "dmg_g": 127.6,
         "kills_g": 2.8,
-        "orr": 0,
+        "orr": 334,
         "pres": 0.125,
         "pause": false,
         "crewShareMeets": 0,
@@ -7898,9 +7860,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 26.1,
-        "fitT2": 36.5,
-        "fitT3": 53.3
+        "fitT1": 40.4,
+        "fitT2": 57.7,
+        "fitT3": 70.5
       },
       {
         "nick": "Maga",
@@ -7912,7 +7874,7 @@
         "kd": 0.36,
         "dmg_g": 58.7,
         "kills_g": 1.5,
-        "orr": 535,
+        "orr": 589,
         "pres": 0.15,
         "pause": false,
         "crewShareMeets": 0,
@@ -7920,9 +7882,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 42.2,
-        "fitT2": 50.8,
-        "fitT3": 70.0
+        "fitT1": 42.7,
+        "fitT2": 53.8,
+        "fitT3": 70.2
       },
       {
         "nick": "COBRA",
@@ -7934,7 +7896,7 @@
         "kd": 0.43,
         "dmg_g": 197.8,
         "kills_g": 2.56,
-        "orr": 584,
+        "orr": 641,
         "pres": 0.4,
         "pause": false,
         "crewShareMeets": 0,
@@ -7943,7 +7905,7 @@
         "roleLabel": "Тандем",
         "fitOwn": null,
         "fitT1": 73.6,
-        "fitT2": 87.2,
+        "fitT2": null,
         "fitT3": null
       },
       {
@@ -7956,7 +7918,7 @@
         "kd": 0.22,
         "dmg_g": 71.2,
         "kills_g": 1.41,
-        "orr": 568,
+        "orr": 585,
         "pres": 0.425,
         "pause": false,
         "crewShareMeets": 0,
@@ -7964,9 +7926,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
         "fitOwn": null,
-        "fitT1": 70.8,
-        "fitT2": 71.1,
-        "fitT3": 77.6
+        "fitT1": 70.0,
+        "fitT2": 69.8,
+        "fitT3": 76.5
       },
       {
         "nick": "HSVarvar",
@@ -7978,7 +7940,7 @@
         "kd": 0.25,
         "dmg_g": 91.7,
         "kills_g": 2.0,
-        "orr": 0,
+        "orr": 252,
         "pres": 0.15,
         "pause": false,
         "crewShareMeets": 0,
@@ -7986,9 +7948,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 15.9,
-        "fitT2": 22.9,
-        "fitT3": 39.6
+        "fitT1": 26.7,
+        "fitT2": 38.5,
+        "fitT3": 52.5
       },
       {
         "nick": "freak",
@@ -8000,16 +7962,16 @@
         "kd": 0.91,
         "dmg_g": 148.0,
         "kills_g": 3.91,
-        "orr": 637,
+        "orr": 684,
         "pres": 0.575,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 91.0,
-        "fitT1": 72.5,
-        "fitT2": 91.0,
+        "fitOwn": 100.0,
+        "fitT1": 72.3,
+        "fitT2": 100.0,
         "fitT3": 100.0
       },
       {
@@ -8031,7 +7993,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 23.5,
-        "fitT2": 32.4,
+        "fitT2": 37.4,
         "fitT3": 51.8
       },
       {
@@ -8044,7 +8006,7 @@
         "kd": 0.17,
         "dmg_g": 59.4,
         "kills_g": 0.43,
-        "orr": 538,
+        "orr": 578,
         "pres": 0.35,
         "pause": false,
         "crewShareMeets": 0,
@@ -8052,9 +8014,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
         "fitOwn": null,
-        "fitT1": 44.5,
-        "fitT2": 43.3,
-        "fitT3": 49.8
+        "fitT1": 45.9,
+        "fitT2": 44.7,
+        "fitT3": 50.5
       },
       {
         "nick": "Tankist",
@@ -8066,7 +8028,7 @@
         "kd": 1.56,
         "dmg_g": 410.8,
         "kills_g": 6.05,
-        "orr": 670,
+        "orr": 721,
         "pres": 0.55,
         "pause": false,
         "crewShareMeets": 0,
@@ -8088,7 +8050,7 @@
         "kd": 0.54,
         "dmg_g": 111.7,
         "kills_g": 2.82,
-        "orr": 580,
+        "orr": 624,
         "pres": 0.275,
         "pause": false,
         "crewShareMeets": 0,
@@ -8096,8 +8058,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 56.9,
-        "fitT2": 70.2,
+        "fitT1": 56.7,
+        "fitT2": 76.1,
         "fitT3": 93.8
       },
       {
@@ -8110,7 +8072,7 @@
         "kd": 0.38,
         "dmg_g": 90.6,
         "kills_g": 2.0,
-        "orr": 566,
+        "orr": 620,
         "pres": 0.125,
         "pause": false,
         "crewShareMeets": 0,
@@ -8118,8 +8080,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 48.5,
-        "fitT2": 58.7,
+        "fitT1": 48.8,
+        "fitT2": 63.7,
         "fitT3": 80.4
       },
       {
@@ -8132,7 +8094,7 @@
         "kd": 1.3,
         "dmg_g": 207.7,
         "kills_g": 6.5,
-        "orr": 565,
+        "orr": 635,
         "pres": 0.15,
         "pause": false,
         "crewShareMeets": 0,
@@ -8140,9 +8102,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
         "fitOwn": null,
-        "fitT1": 46.8,
-        "fitT2": 47.2,
-        "fitT3": 57.4
+        "fitT1": 49.8,
+        "fitT2": 50.1,
+        "fitT3": 59.2
       },
       {
         "nick": "VITALYA",
@@ -8154,7 +8116,7 @@
         "kd": 0.22,
         "dmg_g": 103.0,
         "kills_g": 2.0,
-        "orr": 0,
+        "orr": 279,
         "pres": 0.05,
         "pause": false,
         "crewShareMeets": 0,
@@ -8162,9 +8124,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 18.8,
-        "fitT2": 25.9,
-        "fitT3": 42.4
+        "fitT1": 30.8,
+        "fitT2": 41.4,
+        "fitT3": 56.7
       },
       {
         "nick": "ADUN",
@@ -8176,17 +8138,17 @@
         "kd": 0.37,
         "dmg_g": 72.0,
         "kills_g": 1.79,
-        "orr": 598,
+        "orr": 614,
         "pres": 0.475,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 96.8,
-        "fitT1": 77.7,
+        "fitOwn": 96.1,
+        "fitT1": 77.8,
         "fitT2": 78.3,
-        "fitT3": 96.8
+        "fitT3": 96.1
       },
       {
         "nick": "KTO--TO",
@@ -8198,7 +8160,7 @@
         "kd": 0.56,
         "dmg_g": 99.6,
         "kills_g": 2.71,
-        "orr": 568,
+        "orr": 610,
         "pres": 0.35,
         "pause": false,
         "crewShareMeets": 0,
@@ -8206,9 +8168,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
         "fitOwn": null,
-        "fitT1": 74.5,
-        "fitT2": 78.0,
-        "fitT3": 86.2
+        "fitT1": 75.2,
+        "fitT2": 78.2,
+        "fitT3": 86.7
       },
       {
         "nick": "Mighty",
@@ -8220,17 +8182,17 @@
         "kd": 0.54,
         "dmg_g": 103.8,
         "kills_g": 2.44,
-        "orr": 521,
+        "orr": 575,
         "pres": 0.225,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 91.2,
-        "fitT1": 51.3,
-        "fitT2": 64.0,
-        "fitT3": 91.2
+        "fitOwn": 91.8,
+        "fitT1": 51.8,
+        "fitT2": 69.0,
+        "fitT3": 91.8
       },
       {
         "nick": "firs",
@@ -8242,7 +8204,7 @@
         "kd": 0.22,
         "dmg_g": 45.1,
         "kills_g": 0.86,
-        "orr": 559,
+        "orr": 596,
         "pres": 0.175,
         "pause": false,
         "crewShareMeets": 0,
@@ -8250,9 +8212,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
         "fitOwn": null,
-        "fitT1": 69.3,
-        "fitT2": 70.3,
-        "fitT3": 86.9
+        "fitT1": 70.6,
+        "fitT2": 71.5,
+        "fitT3": 87.4
       },
       {
         "nick": "_ByBaJleX_",
@@ -8273,7 +8235,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 15.4,
-        "fitT2": 21.7,
+        "fitT2": 24.9,
         "fitT3": 35.3
       },
       {
@@ -8286,7 +8248,7 @@
         "kd": 0.89,
         "dmg_g": 146.3,
         "kills_g": 3.27,
-        "orr": 684,
+        "orr": 718,
         "pres": 0.825,
         "pause": false,
         "crewShareMeets": 0,
@@ -8317,7 +8279,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 12.9,
-        "fitT2": 16.5,
+        "fitT2": 18.8,
         "fitT3": 25.4
       },
       {
@@ -8330,7 +8292,7 @@
         "kd": 0.35,
         "dmg_g": 103.3,
         "kills_g": 2.57,
-        "orr": 522,
+        "orr": 572,
         "pres": 0.175,
         "pause": false,
         "crewShareMeets": 0,
@@ -8338,9 +8300,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 45.9,
-        "fitT2": 56.2,
-        "fitT3": 78.9
+        "fitT1": 46.2,
+        "fitT2": 60.5,
+        "fitT3": 79.2
       },
       {
         "nick": "Trixx",
@@ -8352,16 +8314,16 @@
         "kd": 0.76,
         "dmg_g": 204.7,
         "kills_g": 3.5,
-        "orr": 606,
+        "orr": 649,
         "pres": 0.45,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 91.3,
-        "fitT1": 74.2,
-        "fitT2": 91.3,
+        "fitOwn": 92.8,
+        "fitT1": 73.9,
+        "fitT2": 92.8,
         "fitT3": 100.0
       },
       {
@@ -8383,7 +8345,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 28.5,
-        "fitT2": 42.3,
+        "fitT2": 49.6,
         "fitT3": 61.1
       },
       {
@@ -8396,17 +8358,17 @@
         "kd": 0.71,
         "dmg_g": 170.0,
         "kills_g": 5.0,
-        "orr": 233,
+        "orr": 337,
         "pres": 0.05,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 74.1,
-        "fitT1": 43.5,
-        "fitT2": 60.4,
-        "fitT3": 74.1
+        "fitOwn": 78.5,
+        "fitT1": 47.1,
+        "fitT2": 67.8,
+        "fitT3": 78.5
       },
       {
         "nick": "Sandro.86",
@@ -8418,7 +8380,7 @@
         "kd": 0.1,
         "dmg_g": 34.4,
         "kills_g": 0.57,
-        "orr": 526,
+        "orr": 540,
         "pres": 0.175,
         "pause": false,
         "crewShareMeets": 0,
@@ -8426,9 +8388,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 38.1,
-        "fitT2": 42.3,
-        "fitT3": 52.1
+        "fitT1": 36.8,
+        "fitT2": 42.5,
+        "fitT3": 50.6
       },
       {
         "nick": "SerChan1",
@@ -8449,7 +8411,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 8.5,
-        "fitT2": 12.9,
+        "fitT2": 15.5,
         "fitT3": 23.3
       },
       {
@@ -8462,17 +8424,17 @@
         "kd": 0.7,
         "dmg_g": 138.1,
         "kills_g": 3.75,
-        "orr": 415,
+        "orr": 472,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 85.1,
-        "fitT1": 49.8,
-        "fitT2": 65.8,
-        "fitT3": 85.1
+        "fitOwn": 86.3,
+        "fitT1": 50.8,
+        "fitT2": 73.7,
+        "fitT3": 86.3
       },
       {
         "nick": "Archi",
@@ -8493,30 +8455,30 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 17.8,
-        "fitT2": 24.5,
+        "fitT2": 28.4,
         "fitT3": 40.1
       },
       {
         "nick": "Koperor",
         "tier": 4,
-        "role": "Tandem",
+        "role": "Rifle",
         "g": 11,
         "meetings": 6,
         "res_g": 0.36,
         "kd": 0.85,
         "dmg_g": 160.6,
         "kills_g": 4.64,
-        "orr": 567,
+        "orr": 612,
         "pres": 0.275,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Тандем",
+        "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 70.5,
-        "fitT2": 89.4,
-        "fitT3": null
+        "fitT1": 63.9,
+        "fitT2": 89.0,
+        "fitT3": 94.8
       },
       {
         "nick": "tank2284",
@@ -8528,7 +8490,7 @@
         "kd": 0.75,
         "dmg_g": 123.7,
         "kills_g": 3.5,
-        "orr": 505,
+        "orr": 563,
         "pres": 0.15,
         "pause": false,
         "crewShareMeets": 0,
@@ -8536,9 +8498,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
         "fitOwn": null,
-        "fitT1": 70.0,
-        "fitT2": 76.9,
-        "fitT3": 81.3
+        "fitT1": 71.9,
+        "fitT2": 78.4,
+        "fitT3": 83.1
       },
       {
         "nick": "DarkVader",
@@ -8559,7 +8521,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 15.0,
-        "fitT2": 19.5,
+        "fitT2": 22.5,
         "fitT3": 31.0
       },
       {
@@ -8581,7 +8543,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 22.5,
-        "fitT2": 32.1,
+        "fitT2": 37.1,
         "fitT3": 53.0
       },
       {
@@ -8603,7 +8565,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 29.0,
-        "fitT2": 41.4,
+        "fitT2": 47.7,
         "fitT3": 64.4
       },
       {
@@ -8616,7 +8578,7 @@
         "kd": 1.12,
         "dmg_g": 145.2,
         "kills_g": 4.75,
-        "orr": 534,
+        "orr": 592,
         "pres": 0.1,
         "pause": false,
         "crewShareMeets": 0,
@@ -8624,9 +8586,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 62.9,
-        "fitT2": 83.3,
-        "fitT3": 92.0
+        "fitT1": 63.5,
+        "fitT2": 88.1,
+        "fitT3": 92.2
       },
       {
         "nick": "Oguzok",
@@ -8638,7 +8600,7 @@
         "kd": 0.9,
         "dmg_g": 137.2,
         "kills_g": 4.42,
-        "orr": 572,
+        "orr": 619,
         "pres": 0.3,
         "pause": false,
         "crewShareMeets": 0,
@@ -8646,8 +8608,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 64.6,
-        "fitT2": 83.5,
+        "fitT1": 64.5,
+        "fitT2": 90.6,
         "fitT3": 96.7
       },
       {
@@ -8660,7 +8622,7 @@
         "kd": 0.38,
         "dmg_g": 52.0,
         "kills_g": 1.5,
-        "orr": 0,
+        "orr": 207,
         "pres": 0.05,
         "pause": false,
         "crewShareMeets": 0,
@@ -8668,9 +8630,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 16.4,
-        "fitT2": 23.4,
-        "fitT3": 38.9
+        "fitT1": 25.3,
+        "fitT2": 34.8,
+        "fitT3": 49.5
       },
       {
         "nick": "Shrein",
@@ -8691,7 +8653,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 17.9,
-        "fitT2": 25.4,
+        "fitT2": 29.4,
         "fitT3": 42.2
       },
       {
@@ -8704,7 +8666,7 @@
         "kd": 0.71,
         "dmg_g": 189.3,
         "kills_g": 4.0,
-        "orr": 0,
+        "orr": 329,
         "pres": 0.15,
         "pause": false,
         "crewShareMeets": 0,
@@ -8712,9 +8674,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 37.2,
-        "fitT2": 53.4,
-        "fitT3": 63.3
+        "fitT1": 51.3,
+        "fitT2": 71.6,
+        "fitT3": 80.3
       },
       {
         "nick": "Ilyich",
@@ -8726,7 +8688,7 @@
         "kd": 0.11,
         "dmg_g": 101.0,
         "kills_g": 1.0,
-        "orr": 519,
+        "orr": 560,
         "pres": 0.025,
         "pause": false,
         "crewShareMeets": 0,
@@ -8735,8 +8697,8 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 40.9,
-        "fitT2": 48.0,
-        "fitT3": 65.1
+        "fitT2": 51.6,
+        "fitT3": 65.0
       },
       {
         "nick": "Bks",
@@ -8748,7 +8710,7 @@
         "kd": 1.17,
         "dmg_g": 109.0,
         "kills_g": 3.5,
-        "orr": 504,
+        "orr": 584,
         "pres": 0.05,
         "pause": false,
         "crewShareMeets": 0,
@@ -8756,9 +8718,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 57.7,
-        "fitT2": 75.8,
-        "fitT3": 89.2
+        "fitT1": 59.4,
+        "fitT2": 81.0,
+        "fitT3": 91.1
       },
       {
         "nick": "Tatarin",
@@ -8770,7 +8732,7 @@
         "kd": 2.0,
         "dmg_g": 229.8,
         "kills_g": 3.6,
-        "orr": 591,
+        "orr": 664,
         "pres": 0.125,
         "pause": false,
         "crewShareMeets": 0,
@@ -8778,8 +8740,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 82.1,
-        "fitT2": 86.8,
+        "fitT1": 83.1,
+        "fitT2": 87.8,
         "fitT3": 87.8
       },
       {
@@ -8792,7 +8754,7 @@
         "kd": 1.0,
         "dmg_g": 186.0,
         "kills_g": 6.0,
-        "orr": 568,
+        "orr": 634,
         "pres": 0.025,
         "pause": false,
         "crewShareMeets": 0,
@@ -8800,9 +8762,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
         "fitOwn": null,
-        "fitT1": 45.3,
-        "fitT2": 45.8,
-        "fitT3": 57.6
+        "fitT1": 48.1,
+        "fitT2": 48.5,
+        "fitT3": 59.2
       },
       {
         "nick": "LOST",
@@ -8814,7 +8776,7 @@
         "kd": 1.14,
         "dmg_g": 231.0,
         "kills_g": 8.0,
-        "orr": 533,
+        "orr": 618,
         "pres": 0.025,
         "pause": false,
         "crewShareMeets": 0,
@@ -8822,9 +8784,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 69.7,
-        "fitT2": 86.8,
-        "fitT3": 90.2
+        "fitT1": 71.5,
+        "fitT2": 88.6,
+        "fitT3": 90.6
       },
       {
         "nick": "rezZzister",
@@ -8845,7 +8807,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 9.4,
-        "fitT2": 13.7,
+        "fitT2": 16.7,
         "fitT3": 25.1
       },
       {
@@ -8867,7 +8829,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 41.1,
-        "fitT2": 60.6,
+        "fitT2": 59.1,
         "fitT3": 61.1
       },
       {
@@ -8880,7 +8842,7 @@
         "kd": 1.64,
         "dmg_g": 409.0,
         "kills_g": 11.5,
-        "orr": 530,
+        "orr": 614,
         "pres": 0.05,
         "pause": false,
         "crewShareMeets": 0,
@@ -8888,9 +8850,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 80.3,
-        "fitT2": 86.6,
-        "fitT3": 90.6
+        "fitT1": 82.0,
+        "fitT2": 86.9,
+        "fitT3": 91.1
       },
       {
         "nick": "Bahus",
@@ -8902,7 +8864,7 @@
         "kd": 0.55,
         "dmg_g": 78.9,
         "kills_g": 2.2,
-        "orr": 579,
+        "orr": 610,
         "pres": 0.25,
         "pause": false,
         "crewShareMeets": 0,
@@ -8910,8 +8872,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
         "fitOwn": null,
-        "fitT1": 68.6,
-        "fitT2": 68.8,
+        "fitT1": 69.4,
+        "fitT2": 69.7,
         "fitT3": 91.8
       },
       {
@@ -8924,7 +8886,7 @@
         "kd": 0.95,
         "dmg_g": 210.3,
         "kills_g": 5.21,
-        "orr": 637,
+        "orr": 678,
         "pres": 0.475,
         "pause": false,
         "crewShareMeets": 0,
@@ -8946,7 +8908,7 @@
         "kd": 0.63,
         "dmg_g": 290.9,
         "kills_g": 3.58,
-        "orr": 629,
+        "orr": 679,
         "pres": 0.3,
         "pause": false,
         "crewShareMeets": 0,
@@ -8955,7 +8917,7 @@
         "roleLabel": "Тандем",
         "fitOwn": 83.7,
         "fitT1": 83.7,
-        "fitT2": 90.6,
+        "fitT2": null,
         "fitT3": null
       },
       {
@@ -8968,17 +8930,17 @@
         "kd": 0.7,
         "dmg_g": 130.9,
         "kills_g": 4.0,
-        "orr": 432,
+        "orr": 509,
         "pres": 0.175,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 79.8,
-        "fitT1": 79.8,
-        "fitT2": 79.8,
-        "fitT3": 81.8
+        "fitOwn": 83.3,
+        "fitT1": 83.3,
+        "fitT2": 83.2,
+        "fitT3": 84.8
       },
       {
         "nick": "Blizzardrix",
@@ -8990,15 +8952,15 @@
         "kd": 0.95,
         "dmg_g": 295.2,
         "kills_g": 4.35,
-        "orr": 602,
+        "orr": 648,
         "pres": 0.425,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Сапёр",
-        "fitOwn": 93.6,
-        "fitT1": 93.6,
+        "fitOwn": 94.1,
+        "fitT1": 94.1,
         "fitT2": null,
         "fitT3": null
       },
@@ -9012,17 +8974,17 @@
         "kd": 0.58,
         "dmg_g": 151.8,
         "kills_g": 4.17,
-        "orr": 503,
+        "orr": 591,
         "pres": 0.15,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 55.0,
-        "fitT1": 55.0,
-        "fitT2": 70.2,
-        "fitT3": 91.1
+        "fitOwn": 57.0,
+        "fitT1": 57.0,
+        "fitT2": 79.2,
+        "fitT3": 93.1
       },
       {
         "nick": "lepurple",
@@ -9034,7 +8996,7 @@
         "kd": 0.63,
         "dmg_g": 82.4,
         "kills_g": 2.29,
-        "orr": 658,
+        "orr": 682,
         "pres": 0.525,
         "pause": false,
         "crewShareMeets": 0,
@@ -9056,15 +9018,15 @@
         "kd": 0.99,
         "dmg_g": 147.6,
         "kills_g": 4.57,
-        "orr": 638,
+        "orr": 662,
         "pres": 0.525,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "CMD",
-        "fitOwn": 95.4,
-        "fitT1": 95.4,
+        "fitOwn": 94.8,
+        "fitT1": 94.8,
         "fitT2": null,
         "fitT3": null
       },
@@ -9078,7 +9040,7 @@
         "kd": 3.14,
         "dmg_g": 320.6,
         "kills_g": 9.86,
-        "orr": 673,
+        "orr": 723,
         "pres": 0.525,
         "pause": false,
         "crewShareMeets": 0,
@@ -9087,7 +9049,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 100.0,
         "fitT1": 100.0,
-        "fitT2": 100.0,
+        "fitT2": 98.4,
         "fitT3": 100.0
       },
       {
@@ -9100,17 +9062,17 @@
         "kd": 2.0,
         "dmg_g": 216.8,
         "kills_g": 7.6,
-        "orr": 501,
+        "orr": 576,
         "pres": 0.125,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 86.0,
-        "fitT1": 80.3,
-        "fitT2": 86.0,
-        "fitT3": 89.8
+        "fitOwn": 86.3,
+        "fitT1": 81.8,
+        "fitT2": 86.3,
+        "fitT3": 91.5
       },
       {
         "nick": "KillReal",
@@ -9122,16 +9084,16 @@
         "kd": 0.27,
         "dmg_g": 72.8,
         "kills_g": 1.0,
-        "orr": 636,
+        "orr": 644,
         "pres": 0.525,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 96.6,
-        "fitT1": 96.6,
-        "fitT2": 95.3,
+        "fitOwn": 96.2,
+        "fitT1": 96.2,
+        "fitT2": 94.8,
         "fitT3": 96.8
       },
       {
@@ -9144,7 +9106,7 @@
         "kd": 0.76,
         "dmg_g": 152.0,
         "kills_g": 3.71,
-        "orr": 659,
+        "orr": 691,
         "pres": 0.525,
         "pause": false,
         "crewShareMeets": 0,
@@ -9166,15 +9128,15 @@
         "kd": 0.81,
         "dmg_g": 162.2,
         "kills_g": 4.8,
-        "orr": 611,
+        "orr": 661,
         "pres": 0.375,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
-        "fitOwn": 89.4,
-        "fitT1": 89.4,
+        "fitOwn": 90.4,
+        "fitT1": 90.4,
         "fitT2": 92.3,
         "fitT3": 97.5
       },
@@ -9188,7 +9150,7 @@
         "kd": 1.47,
         "dmg_g": 240.5,
         "kills_g": 5.89,
-        "orr": 659,
+        "orr": 704,
         "pres": 0.45,
         "pause": false,
         "crewShareMeets": 0,
@@ -9197,7 +9159,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 88.9,
         "fitT1": 88.9,
-        "fitT2": 98.5,
+        "fitT2": 97.3,
         "fitT3": 99.0
       },
       {
@@ -9210,16 +9172,16 @@
         "kd": 2.46,
         "dmg_g": 283.7,
         "kills_g": 9.21,
-        "orr": 635,
+        "orr": 697,
         "pres": 0.475,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 99.3,
-        "fitT1": 99.3,
-        "fitT2": 99.7,
+        "fitOwn": 99.7,
+        "fitT1": 99.7,
+        "fitT2": 98.2,
         "fitT3": 100.0
       },
       {
@@ -9232,39 +9194,39 @@
         "kd": 1.79,
         "dmg_g": 343.0,
         "kills_g": 6.25,
-        "orr": 460,
+        "orr": 531,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Тандем",
-        "fitOwn": 89.8,
-        "fitT1": 89.8,
-        "fitT2": 83.8,
+        "fitOwn": 90.8,
+        "fitT1": 90.8,
+        "fitT2": null,
         "fitT3": null
       },
       {
         "nick": "MrChaykaa",
         "tier": 2,
-        "role": "Tandem",
+        "role": "Rifle",
         "g": 18,
         "meetings": 9,
         "res_g": 0.94,
         "kd": 0.66,
         "dmg_g": 121.8,
         "kills_g": 3.06,
-        "orr": 645,
+        "orr": 679,
         "pres": 0.45,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Тандем",
-        "fitOwn": 93.0,
-        "fitT1": 68.6,
-        "fitT2": 93.0,
-        "fitT3": null
+        "roleLabel": "Стрелок",
+        "fitOwn": 87.3,
+        "fitT1": 65.8,
+        "fitT2": 87.3,
+        "fitT3": 100.0
       },
       {
         "nick": "Treppen",
@@ -9276,7 +9238,7 @@
         "kd": 0.9,
         "dmg_g": 132.5,
         "kills_g": 3.88,
-        "orr": 646,
+        "orr": 674,
         "pres": 0.4,
         "pause": false,
         "crewShareMeets": 0,
@@ -9298,17 +9260,17 @@
         "kd": 0.75,
         "dmg_g": 188.5,
         "kills_g": 3.0,
-        "orr": 266,
+        "orr": 355,
         "pres": 0.05,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 75.9,
-        "fitT1": 47.9,
-        "fitT2": 65.4,
-        "fitT3": 75.9
+        "fitOwn": 79.4,
+        "fitT1": 50.7,
+        "fitT2": 71.9,
+        "fitT3": 79.4
       },
       {
         "nick": "Zerox",
@@ -9320,17 +9282,17 @@
         "kd": 2.42,
         "dmg_g": 186.5,
         "kills_g": 7.25,
-        "orr": 491,
+        "orr": 579,
         "pres": 0.1,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 85.8,
-        "fitT1": 77.3,
-        "fitT2": 85.8,
-        "fitT3": 89.6
+        "fitOwn": 86.5,
+        "fitT1": 79.4,
+        "fitT2": 86.5,
+        "fitT3": 92.0
       },
       {
         "nick": "Mukuru",
@@ -9342,15 +9304,15 @@
         "kd": 2.17,
         "dmg_g": 227.7,
         "kills_g": 3.47,
-        "orr": 622,
+        "orr": 658,
         "pres": 0.375,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
-        "fitOwn": 96.7,
-        "fitT1": 96.7,
+        "fitOwn": 96.9,
+        "fitT1": 96.9,
         "fitT2": 92.9,
         "fitT3": 97.5
       },
@@ -9364,7 +9326,7 @@
         "kd": 1.16,
         "dmg_g": 167.6,
         "kills_g": 2.42,
-        "orr": 544,
+        "orr": 590,
         "pres": 0.3,
         "pause": false,
         "crewShareMeets": 0,
@@ -9373,30 +9335,30 @@
         "roleLabel": "Стрелок",
         "fitOwn": 70.6,
         "fitT1": 70.6,
-        "fitT2": 91.3,
+        "fitT2": 93.4,
         "fitT3": 96.7
       },
       {
         "nick": "Azure",
         "tier": 2,
-        "role": "Tandem",
+        "role": "Rifle",
         "g": 10,
         "meetings": 5,
         "res_g": 2.4,
         "kd": 0.77,
         "dmg_g": 146.3,
         "kills_g": 2.4,
-        "orr": 606,
+        "orr": 650,
         "pres": 0.25,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Тандем",
-        "fitOwn": 94.6,
-        "fitT1": 68.6,
-        "fitT2": 94.6,
-        "fitT3": null
+        "roleLabel": "Стрелок",
+        "fitOwn": 90.1,
+        "fitT1": 64.1,
+        "fitT2": 90.1,
+        "fitT3": 95.6
       },
       {
         "nick": "MuskeR",
@@ -9408,7 +9370,7 @@
         "kd": 1.25,
         "dmg_g": 107.0,
         "kills_g": 2.5,
-        "orr": 251,
+        "orr": 339,
         "pres": 0.05,
         "pause": false,
         "crewShareMeets": 0,
@@ -9416,9 +9378,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 46.6,
-        "fitT2": 62.5,
-        "fitT3": 75.1
+        "fitT1": 49.5,
+        "fitT2": 67.6,
+        "fitT3": 78.6
       },
       {
         "nick": "ZensU",
@@ -9430,16 +9392,16 @@
         "kd": 1.69,
         "dmg_g": 233.4,
         "kills_g": 3.67,
-        "orr": 609,
+        "orr": 656,
         "pres": 0.45,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 100.0,
-        "fitT1": 91.3,
-        "fitT2": 100.0,
+        "fitOwn": 99.7,
+        "fitT1": 91.2,
+        "fitT2": 99.7,
         "fitT3": 100.0
       },
       {
@@ -9452,7 +9414,7 @@
         "kd": 1.07,
         "dmg_g": 336.2,
         "kills_g": 5.39,
-        "orr": 563,
+        "orr": 610,
         "pres": 0.4,
         "pause": false,
         "crewShareMeets": 5,
@@ -9461,7 +9423,7 @@
         "roleLabel": "Тех / водитель",
         "fitOwn": 83.5,
         "fitT1": 83.5,
-        "fitT2": 78.9,
+        "fitT2": 79.0,
         "fitT3": null
       },
       {
@@ -9474,16 +9436,16 @@
         "kd": 1.71,
         "dmg_g": 599.0,
         "kills_g": 9.67,
-        "orr": 405,
+        "orr": 501,
         "pres": 0.15,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Тех / водитель",
-        "fitOwn": 88.4,
-        "fitT1": 88.4,
-        "fitT2": 78.8,
+        "fitOwn": 90.4,
+        "fitT1": 90.4,
+        "fitT2": 81.5,
         "fitT3": null
       },
       {
@@ -9496,7 +9458,7 @@
         "kd": 0.83,
         "dmg_g": 189.0,
         "kills_g": 5.0,
-        "orr": 584,
+        "orr": 641,
         "pres": 0.125,
         "pause": false,
         "crewShareMeets": 0,
@@ -9504,8 +9466,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
         "fitOwn": null,
-        "fitT1": 79.2,
-        "fitT2": 80.3,
+        "fitT1": 80.8,
+        "fitT2": 81.5,
         "fitT3": 89.2
       },
       {
@@ -9518,17 +9480,17 @@
         "kd": 0.92,
         "dmg_g": 196.4,
         "kills_g": 2.2,
-        "orr": 540,
+        "orr": 584,
         "pres": 0.125,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
-        "fitOwn": 86.6,
-        "fitT1": 79.2,
-        "fitT2": 78.2,
-        "fitT3": 86.6
+        "fitOwn": 87.4,
+        "fitT1": 80.2,
+        "fitT2": 78.7,
+        "fitT3": 87.4
       },
       {
         "nick": "Kroasawn",
@@ -9540,7 +9502,7 @@
         "kd": 0.56,
         "dmg_g": 125.3,
         "kills_g": 2.25,
-        "orr": 647,
+        "orr": 668,
         "pres": 0.5,
         "pause": false,
         "crewShareMeets": 0,
@@ -9562,17 +9524,17 @@
         "kd": 0.62,
         "dmg_g": 47.2,
         "kills_g": 1.25,
-        "orr": 511,
+        "orr": 564,
         "pres": 0.1,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 56.3,
-        "fitT1": 44.9,
-        "fitT2": 56.3,
-        "fitT3": 77.7
+        "fitOwn": 60.7,
+        "fitT1": 45.3,
+        "fitT2": 60.7,
+        "fitT3": 78.3
       },
       {
         "nick": "CAT",
@@ -9584,7 +9546,7 @@
         "kd": 1.61,
         "dmg_g": 186.1,
         "kills_g": 6.43,
-        "orr": 650,
+        "orr": 686,
         "pres": 0.35,
         "pause": false,
         "crewShareMeets": 0,
@@ -9606,17 +9568,17 @@
         "kd": 0.64,
         "dmg_g": 81.5,
         "kills_g": 1.75,
-        "orr": 404,
+        "orr": 474,
         "pres": 0.1,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 80.6,
-        "fitT1": 43.5,
-        "fitT2": 56.3,
-        "fitT3": 80.6
+        "fitOwn": 82.4,
+        "fitT1": 45.1,
+        "fitT2": 63.1,
+        "fitT3": 82.4
       },
       {
         "nick": "yanchik",
@@ -9628,16 +9590,16 @@
         "kd": 1.17,
         "dmg_g": 183.0,
         "kills_g": 4.31,
-        "orr": 610,
+        "orr": 662,
         "pres": 0.325,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 95.6,
+        "fitOwn": 94.5,
         "fitT1": 74.3,
-        "fitT2": 95.6,
+        "fitT2": 94.5,
         "fitT3": 96.1
       },
       {
@@ -9650,16 +9612,16 @@
         "kd": 0.64,
         "dmg_g": 167.1,
         "kills_g": 2.0,
-        "orr": 606,
+        "orr": 641,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
-        "fitOwn": 82.0,
-        "fitT1": 77.0,
-        "fitT2": 82.0,
+        "fitOwn": 81.9,
+        "fitT1": 77.2,
+        "fitT2": 81.9,
         "fitT3": 86.9
       },
       {
@@ -9672,16 +9634,16 @@
         "kd": 0.75,
         "dmg_g": 118.1,
         "kills_g": 3.67,
-        "orr": 600,
+        "orr": 645,
         "pres": 0.3,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
-        "fitOwn": 91.4,
-        "fitT1": 80.4,
-        "fitT2": 91.4,
+        "fitOwn": 91.6,
+        "fitT1": 81.2,
+        "fitT2": 91.6,
         "fitT3": 90.5
       },
       {
@@ -9694,7 +9656,7 @@
         "kd": 0.63,
         "dmg_g": 84.4,
         "kills_g": 2.38,
-        "orr": 574,
+        "orr": 628,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
@@ -9702,8 +9664,8 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": 91.0,
-        "fitT1": 53.7,
-        "fitT2": 67.0,
+        "fitT1": 54.0,
+        "fitT2": 72.9,
         "fitT3": 91.0
       },
       {
@@ -9716,16 +9678,16 @@
         "kd": 0.55,
         "dmg_g": 116.0,
         "kills_g": 2.67,
-        "orr": 589,
+        "orr": 639,
         "pres": 0.15,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "КО (SL)",
-        "fitOwn": 74.2,
-        "fitT1": 69.0,
-        "fitT2": 74.2,
+        "fitOwn": 74.9,
+        "fitT1": 70.1,
+        "fitT2": 74.9,
         "fitT3": 80.6
       },
       {
@@ -9738,17 +9700,17 @@
         "kd": 0.38,
         "dmg_g": 68.5,
         "kills_g": 1.5,
-        "orr": 408,
+        "orr": 472,
         "pres": 0.05,
         "pause": true,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
-        "fitOwn": 28.8,
-        "fitT1": 30.1,
-        "fitT2": 28.8,
-        "fitT3": 31.7
+        "fitOwn": 31.6,
+        "fitT1": 32.9,
+        "fitT2": 31.6,
+        "fitT3": 34.1
       },
       {
         "nick": "Nickname",
@@ -9769,7 +9731,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 29.4,
-        "fitT2": 47.5,
+        "fitT2": 55.8,
         "fitT3": 56.1
       },
       {
@@ -9782,15 +9744,15 @@
         "kd": 1.83,
         "dmg_g": 267.5,
         "kills_g": 8.25,
-        "orr": 604,
+        "orr": 677,
         "pres": 0.2,
         "pause": false,
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "ГП",
-        "fitOwn": 89.3,
-        "fitT1": 89.3,
+        "fitOwn": 90.2,
+        "fitT1": 90.2,
         "fitT2": null,
         "fitT3": null
       },
@@ -9813,7 +9775,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 11.0,
-        "fitT2": 13.6,
+        "fitT2": 15.2,
         "fitT3": 20.1
       },
       {
@@ -9835,7 +9797,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 12.1,
-        "fitT2": 17.6,
+        "fitT2": 21.3,
         "fitT3": 31.8
       },
       {
@@ -9857,7 +9819,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 13.0,
-        "fitT2": 17.5,
+        "fitT2": 18.5,
         "fitT3": 28.1
       },
       {
@@ -9870,7 +9832,7 @@
         "kd": 2.0,
         "dmg_g": 163.0,
         "kills_g": 6.0,
-        "orr": 512,
+        "orr": 530,
         "pres": 0.025,
         "pause": false,
         "crewShareMeets": 0,
@@ -9878,9 +9840,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Медик",
         "fitOwn": null,
-        "fitT1": 42.3,
-        "fitT2": 42.7,
-        "fitT3": 54.3
+        "fitT1": 42.6,
+        "fitT2": 43.0,
+        "fitT3": 53.8
       },
       {
         "nick": "KingOfLobs",
@@ -9892,7 +9854,7 @@
         "kd": 0.1,
         "dmg_g": 34.5,
         "kills_g": 0.5,
-        "orr": 0,
+        "orr": 278,
         "pres": 0.05,
         "pause": false,
         "crewShareMeets": 0,
@@ -9900,9 +9862,9 @@
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
         "fitOwn": null,
-        "fitT1": 10.9,
-        "fitT2": 13.7,
-        "fitT3": 20.1
+        "fitT1": 22.8,
+        "fitT2": 27.8,
+        "fitT3": 34.4
       }
     ]
   },
