@@ -25,9 +25,10 @@
   const TRAINING_INDEX_URL = "data/training-index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
+  const ORR_URL = "data/orr.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261001-gm-r1full";
+    new URLSearchParams(location.search).get("v") || "20261002-orr-cw";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -210,8 +211,9 @@
   let tierByNick = new Map();
   let displayNickByKey = new Map();
   let ratingRows = [];
-  let ratingSortKey = "rp";
+  let ratingSortKey = "orr";
   let ratingSortDir = "desc";
+  let orrByNick = new Map();
   let trainRatingRows = [];
   let trainRatingSortKey = "rp";
   let trainRatingSortDir = "desc";
@@ -1307,6 +1309,9 @@
     Promise.all([
       loadRoster(),
       loadRpLedger(),
+      fetch(dataUrl(ORR_URL))
+        .then((r) => (r.ok ? r.json() : null))
+        .catch(() => null),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -1315,7 +1320,17 @@
         )
       ),
     ])
-      .then(([, rpLedger, months]) => {
+      .then(([, rpLedger, orrJson, months]) => {
+        orrByNick = new Map();
+        const byNick = (orrJson && orrJson.byNick) || {};
+        Object.entries(byNick).forEach(([k, v]) => {
+          const key = String(k || "")
+            .trim()
+            .toLowerCase()
+            .replace(/\s+/g, "");
+          const n = Number(v);
+          if (key && Number.isFinite(n)) orrByNick.set(key, n);
+        });
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
@@ -1425,12 +1440,19 @@
             kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
             winPct,
           };
+          const nickKey =
+            resolveNickKey(p.nick) || String(p.nick).trim().toLowerCase().replace(/\s+/g, "");
+          const orr =
+            orrByNick.get(nickKey) ??
+            orrByNick.get(String(p.nick).trim().toLowerCase()) ??
+            null;
           const rpHit =
             rpMap.get(resolveNickKey(p.nick)) ||
             rpMap.get(String(p.nick).trim().toLowerCase());
           if (rpHit) {
             return {
               ...base,
+              orr,
               rp: rpHit.rp,
               pwr: rpHit.rp,
               pwrLabel: rpHit.rankLabel,
@@ -1440,6 +1462,7 @@
           }
           return {
             ...base,
+            orr,
             rp: null,
             pwr: null,
             pwrLabel: "—",
@@ -1451,7 +1474,7 @@
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) ||
+              (Number(b.orr) || -1e9) - (Number(a.orr) || -1e9) ||
               (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
               (Number(b.kills) || 0) - (Number(a.kills) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
@@ -1463,7 +1486,7 @@
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. RP — с тренировок.`
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — ORR.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
@@ -1510,9 +1533,16 @@
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
-      if (ratingSortKey === "pwrLabel" || ratingSortKey === "rank" || ratingSortKey === "pwr" || ratingSortKey === "rp") {
-        const av = a.rp == null ? -1e9 : Number(a.rp);
-        const bv = b.rp == null ? -1e9 : Number(b.rp);
+      if (
+        ratingSortKey === "orr" ||
+        ratingSortKey === "pwrLabel" ||
+        ratingSortKey === "rank" ||
+        ratingSortKey === "pwr" ||
+        ratingSortKey === "rp"
+      ) {
+        const field = ratingSortKey === "orr" ? "orr" : "rp";
+        const av = a[field] == null ? -1e9 : Number(a[field]);
+        const bv = b[field] == null ? -1e9 : Number(b[field]);
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
@@ -1526,7 +1556,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1534,8 +1564,7 @@
       .map(
         (p) => `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-rank"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></td>
-        <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
+        <td class="ctr col-orr"><strong>${p.orr != null ? p.orr : "—"}</strong></td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
