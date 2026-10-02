@@ -32,8 +32,8 @@
       "server": "ANY",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · vs clan 2–0 (Main 27.09 Chora) · NO SCOUT · same slot Main vs AVG AlBasrah"
+      "status": "cancel",
+      "note": "отмена · Squad 10.6 — мод SEC ещё не готов · same slot Main vs AVG AlBasrah"
     },
     {
       "id": "02-avg",
@@ -46,8 +46,8 @@
       "server": "ANY",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · vs clan Junior 0–2 (07.09 Harju+мерки) · NO SCOUT · same slot Junior vs SPH"
+      "status": "cancel",
+      "note": "отмена · Squad 10.6 — мод SEC ещё не готов · same slot Junior vs SPH"
     },
     {
       "id": "03-alpha",
