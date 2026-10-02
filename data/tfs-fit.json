@@ -14,6 +14,7 @@
     "Medic",
     "Rifle",
     "GP",
+    "LAT",
     "Tandem",
     "Crew",
     "Sap"
@@ -24,6 +25,7 @@
     "Medic": "Медик",
     "Rifle": "Стрелок",
     "GP": "ГП",
+    "LAT": "Лёгкая труба",
     "Tandem": "Тандем",
     "Crew": "Тех / водитель",
     "Sap": "Сапёр"
@@ -45,6 +47,12 @@
       "fit",
       "kd",
       "dmg_g",
+      "orr"
+    ],
+    "LAT": [
+      "fit",
+      "dmg_g",
+      "kd",
       "orr"
     ],
     "Tandem": [
@@ -111,6 +119,13 @@
       "res": 0.05,
       "kd": 0.3,
       "dmg": 0.25,
+      "orr": 0.3,
+      "pres": 0.1
+    },
+    "LAT": {
+      "res": 0.05,
+      "kd": 0.2,
+      "dmg": 0.35,
       "orr": 0.3,
       "pres": 0.1
     },
@@ -2539,7 +2554,7 @@
     {
       "nick": "Koperor",
       "tier": 4,
-      "role": "Rifle",
+      "role": "LAT",
       "orr": 612,
       "meets": {
         "11-dcai": {
@@ -3987,7 +4002,7 @@
     {
       "nick": "MrChaykaa",
       "tier": 2,
-      "role": "Rifle",
+      "role": "LAT",
       "orr": 679,
       "meets": {
         "15-dcai": {
@@ -4280,7 +4295,7 @@
     {
       "nick": "Azure",
       "tier": 2,
-      "role": "Rifle",
+      "role": "LAT",
       "orr": 650,
       "meets": {
         "15-dcai": {
@@ -5229,19 +5244,18 @@
           "orr": 664
         },
         "Rifle": {
-          "n": 7,
+          "n": 5,
           "thin": false,
           "who": [
             "freak",
-            "MrChaykaa",
             "Barsik",
             "yanchik",
             "ZensU",
-            "Azure"
+            "Trixx"
           ],
-          "res_g": 0.83,
-          "kd": 0.91,
-          "dmg_g": 148.0,
+          "res_g": 0.56,
+          "kd": 1.06,
+          "dmg_g": 183.0,
           "orr": 662
         },
         "Crew": {
@@ -5254,6 +5268,18 @@
           "kd": 1.56,
           "dmg_g": 410.8,
           "orr": 721
+        },
+        "LAT": {
+          "n": 2,
+          "thin": false,
+          "who": [
+            "MrChaykaa",
+            "Azure"
+          ],
+          "res_g": 1.67,
+          "kd": 0.7150000000000001,
+          "dmg_g": 134.05,
+          "orr": 664.5
         },
         "SL": {
           "n": 2,
@@ -6064,41 +6090,28 @@
           "role": "Rifle",
           "roleLabel": "Стрелок",
           "bench": {
-            "n": 7,
+            "n": 5,
             "thin": false,
             "who": [
               "freak",
-              "MrChaykaa",
               "Barsik",
               "yanchik",
               "ZensU",
-              "Azure"
+              "Trixx"
             ],
-            "res_g": 0.83,
-            "kd": 0.91,
-            "dmg_g": 148.0,
+            "res_g": 0.56,
+            "kd": 1.06,
+            "dmg_g": 183.0,
             "orr": 662
           },
-          "bestInTier": "freak",
+          "bestInTier": "ZensU",
           "records": {
-            "fit": 100.0,
+            "fit": 99.7,
             "kd": 2.42,
             "dmg_g": 409.0,
             "orr": 684
           },
           "rows": [
-            {
-              "nick": "freak",
-              "tier": 2,
-              "fit": 100.0,
-              "res_g": 2.65,
-              "kd": 0.91,
-              "dmg_g": 148.0,
-              "orr": 684,
-              "g": 23,
-              "pause": false,
-              "bestInTier": true
-            },
             {
               "nick": "ZensU",
               "tier": 2,
@@ -6109,24 +6122,12 @@
               "orr": 656,
               "g": 18,
               "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Barsik",
-              "tier": 2,
-              "fit": 95.3,
-              "res_g": 0.22,
-              "kd": 1.06,
-              "dmg_g": 142.1,
-              "orr": 668,
-              "g": 32,
-              "pause": false,
-              "bestInTier": false
+              "bestInTier": true
             },
             {
               "nick": "yanchik",
               "tier": 2,
-              "fit": 94.5,
+              "fit": 95.6,
               "res_g": 0.38,
               "kd": 1.17,
               "dmg_g": 183.0,
@@ -6136,50 +6137,38 @@
               "bestInTier": false
             },
             {
+              "nick": "Barsik",
+              "tier": 2,
+              "fit": 91.4,
+              "res_g": 0.22,
+              "kd": 1.06,
+              "dmg_g": 142.1,
+              "orr": 668,
+              "g": 32,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "freak",
+              "tier": 2,
+              "fit": 91.0,
+              "res_g": 2.65,
+              "kd": 0.91,
+              "dmg_g": 148.0,
+              "orr": 684,
+              "g": 23,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
               "nick": "Trixx",
               "tier": 2,
-              "fit": 92.8,
+              "fit": 90.9,
               "res_g": 0.56,
               "kd": 0.76,
               "dmg_g": 204.7,
               "orr": 649,
               "g": 18,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Oguzok",
-              "tier": 4,
-              "fit": 90.6,
-              "res_g": 0.5,
-              "kd": 0.9,
-              "dmg_g": 137.2,
-              "orr": 619,
-              "g": 12,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Azure",
-              "tier": 2,
-              "fit": 90.1,
-              "res_g": 2.4,
-              "kd": 0.77,
-              "dmg_g": 146.3,
-              "orr": 650,
-              "g": 10,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
-              "nick": "Koperor",
-              "tier": 4,
-              "fit": 89.0,
-              "res_g": 0.36,
-              "kd": 0.85,
-              "dmg_g": 160.6,
-              "orr": 612,
-              "g": 11,
               "pause": false,
               "bestInTier": false
             },
@@ -6196,15 +6185,27 @@
               "bestInTier": false
             },
             {
-              "nick": "Muhomor",
+              "nick": "SHURUP",
               "tier": 4,
-              "fit": 88.1,
-              "res_g": 0.75,
-              "kd": 1.12,
-              "dmg_g": 145.2,
-              "orr": 592,
-              "g": 4,
+              "fit": 88.4,
+              "res_g": 0.5,
+              "kd": 1.64,
+              "dmg_g": 409.0,
+              "orr": 614,
+              "g": 2,
               "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Zerox",
+              "tier": 2,
+              "fit": 87.9,
+              "res_g": 0.5,
+              "kd": 2.42,
+              "dmg_g": 186.5,
+              "orr": 579,
+              "g": 4,
+              "pause": true,
               "bestInTier": false
             },
             {
@@ -6220,14 +6221,99 @@
               "bestInTier": false
             },
             {
+              "nick": "_VaGNeR_",
+              "tier": 2,
+              "fit": 87.5,
+              "res_g": 0.4,
+              "kd": 2.0,
+              "dmg_g": 216.8,
+              "orr": 576,
+              "g": 5,
+              "pause": true,
+              "bestInTier": false
+            },
+            {
+              "nick": "Muhomor",
+              "tier": 4,
+              "fit": 83.9,
+              "res_g": 0.75,
+              "kd": 1.12,
+              "dmg_g": 145.2,
+              "orr": 592,
+              "g": 4,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Oguzok",
+              "tier": 4,
+              "fit": 83.4,
+              "res_g": 0.5,
+              "kd": 0.9,
+              "dmg_g": 137.2,
+              "orr": 619,
+              "g": 12,
+              "pause": false,
+              "bestInTier": false
+            }
+          ]
+        },
+        "LAT": {
+          "role": "LAT",
+          "roleLabel": "Лёгкая труба",
+          "bench": {
+            "n": 2,
+            "thin": false,
+            "who": [
+              "MrChaykaa",
+              "Azure"
+            ],
+            "res_g": 1.67,
+            "kd": 0.7150000000000001,
+            "dmg_g": 134.05,
+            "orr": 664.5
+          },
+          "bestInTier": "Azure",
+          "records": {
+            "fit": 94.9,
+            "dmg_g": 160.6,
+            "kd": 0.85,
+            "orr": 679
+          },
+          "rows": [
+            {
+              "nick": "Azure",
+              "tier": 2,
+              "fit": 94.9,
+              "res_g": 2.4,
+              "kd": 0.77,
+              "dmg_g": 146.3,
+              "orr": 650,
+              "g": 10,
+              "pause": false,
+              "bestInTier": true
+            },
+            {
               "nick": "MrChaykaa",
               "tier": 2,
-              "fit": 87.3,
+              "fit": 93.1,
               "res_g": 0.94,
               "kd": 0.66,
               "dmg_g": 121.8,
               "orr": 679,
               "g": 18,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "Koperor",
+              "tier": 4,
+              "fit": 89.8,
+              "res_g": 0.36,
+              "kd": 0.85,
+              "dmg_g": 160.6,
+              "orr": 612,
+              "g": 11,
               "pause": false,
               "bestInTier": false
             }
@@ -6479,18 +6565,6 @@
               "bestInTier": false
             },
             {
-              "nick": "Koperor",
-              "tier": 4,
-              "fit": 94.8,
-              "res_g": 0.36,
-              "kd": 0.85,
-              "dmg_g": 160.6,
-              "orr": 612,
-              "g": 11,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
               "nick": "ART",
               "tier": 4,
               "fit": 94.1,
@@ -6595,6 +6669,18 @@
               "dmg_g": 409.0,
               "orr": 614,
               "g": 2,
+              "pause": false,
+              "bestInTier": false
+            },
+            {
+              "nick": "T-800",
+              "tier": 3,
+              "fit": 91.0,
+              "res_g": 3.38,
+              "kd": 0.63,
+              "dmg_g": 84.4,
+              "orr": 628,
+              "g": 8,
               "pause": false,
               "bestInTier": false
             }
@@ -6822,18 +6908,6 @@
               "bestInTier": false
             },
             {
-              "nick": "Koperor",
-              "tier": 4,
-              "fit": 94.8,
-              "res_g": 0.36,
-              "kd": 0.85,
-              "dmg_g": 160.6,
-              "orr": 612,
-              "g": 11,
-              "pause": false,
-              "bestInTier": false
-            },
-            {
               "nick": "ART",
               "tier": 4,
               "fit": 94.1,
@@ -6940,6 +7014,18 @@
               "g": 1,
               "pause": false,
               "bestInTier": false
+            },
+            {
+              "nick": "m3rz0st",
+              "tier": 4,
+              "fit": 89.7,
+              "res_g": 1.12,
+              "kd": 0.59,
+              "dmg_g": 79.4,
+              "orr": 651,
+              "g": 8,
+              "pause": false,
+              "bestInTier": false
             }
           ]
         }
@@ -7002,20 +7088,6 @@
           "kd": 0.34,
           "dmg_g": 74.3,
           "orr": 658
-        },
-        {
-          "nick": "Koperor",
-          "fromTier": 4,
-          "toTier": 3,
-          "role": "Rifle",
-          "roleLabel": "Стрелок",
-          "fit": 94.8,
-          "band": "almost",
-          "g": 11,
-          "res_g": 0.36,
-          "kd": 0.85,
-          "dmg_g": 160.6,
-          "orr": 612
         },
         {
           "nick": "Kroasawn",
@@ -7305,7 +7377,7 @@
       },
       "pauseCount": 13,
       "medianFitOwn": 91.0,
-      "promoteCount": 17,
+      "promoteCount": 16,
       "demoteCount": 2,
       "warnCount": 6,
       "roleGap": [
@@ -7421,7 +7493,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 59.0,
-        "fitT2": 82.8,
+        "fitT2": 76.0,
         "fitT3": 93.3
       },
       {
@@ -7443,7 +7515,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 43.4,
         "fitT1": 27.0,
-        "fitT2": 34.2,
+        "fitT2": 31.8,
         "fitT3": 43.4
       },
       {
@@ -7465,7 +7537,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 59.0,
-        "fitT2": 81.9,
+        "fitT2": 74.7,
         "fitT3": 95.6
       },
       {
@@ -7509,7 +7581,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 27.6,
-        "fitT2": 46.3,
+        "fitT2": 40.6,
         "fitT3": 59.3
       },
       {
@@ -7531,7 +7603,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 44.7,
-        "fitT2": 57.0,
+        "fitT2": 53.2,
         "fitT3": 72.5
       },
       {
@@ -7553,7 +7625,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 44.8,
-        "fitT2": 54.1,
+        "fitT2": 51.3,
         "fitT3": 66.2
       },
       {
@@ -7597,7 +7669,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 55.9,
-        "fitT2": 77.6,
+        "fitT2": 71.6,
         "fitT3": 94.1
       },
       {
@@ -7641,7 +7713,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 53.9,
-        "fitT2": 71.8,
+        "fitT2": 66.5,
         "fitT3": 89.7
       },
       {
@@ -7663,7 +7735,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 34.1,
-        "fitT2": 48.9,
+        "fitT2": 47.6,
         "fitT3": 61.1
       },
       {
@@ -7685,7 +7757,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 57.1,
-        "fitT2": 83.1,
+        "fitT2": 75.1,
         "fitT3": 91.7
       },
       {
@@ -7707,7 +7779,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 59.7,
-        "fitT2": 84.5,
+        "fitT2": 77.6,
         "fitT3": 93.0
       },
       {
@@ -7729,7 +7801,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 90.0,
         "fitT1": 55.4,
-        "fitT2": 69.4,
+        "fitT2": 66.0,
         "fitT3": 90.0
       },
       {
@@ -7751,7 +7823,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 32.8,
-        "fitT2": 58.1,
+        "fitT2": 49.6,
         "fitT3": 61.1
       },
       {
@@ -7795,7 +7867,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 17.4,
-        "fitT2": 27.4,
+        "fitT2": 23.7,
         "fitT3": 38.6
       },
       {
@@ -7817,7 +7889,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 25.6,
-        "fitT2": 39.3,
+        "fitT2": 34.4,
         "fitT3": 53.5
       },
       {
@@ -7837,9 +7909,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 95.3,
+        "fitOwn": 91.4,
         "fitT1": 70.3,
-        "fitT2": 95.3,
+        "fitT2": 91.4,
         "fitT3": 97.2
       },
       {
@@ -7861,7 +7933,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 40.4,
-        "fitT2": 57.7,
+        "fitT2": 51.7,
         "fitT3": 70.5
       },
       {
@@ -7883,7 +7955,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 42.7,
-        "fitT2": 53.8,
+        "fitT2": 51.2,
         "fitT3": 70.2
       },
       {
@@ -7949,7 +8021,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 26.7,
-        "fitT2": 38.5,
+        "fitT2": 34.4,
         "fitT3": 52.5
       },
       {
@@ -7969,9 +8041,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 100.0,
+        "fitOwn": 91.0,
         "fitT1": 72.3,
-        "fitT2": 100.0,
+        "fitT2": 91.0,
         "fitT3": 100.0
       },
       {
@@ -7993,7 +8065,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 23.5,
-        "fitT2": 37.4,
+        "fitT2": 32.4,
         "fitT3": 51.8
       },
       {
@@ -8059,7 +8131,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 56.7,
-        "fitT2": 76.1,
+        "fitT2": 69.9,
         "fitT3": 93.8
       },
       {
@@ -8081,7 +8153,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 48.8,
-        "fitT2": 63.7,
+        "fitT2": 59.0,
         "fitT3": 80.4
       },
       {
@@ -8125,7 +8197,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 30.8,
-        "fitT2": 41.4,
+        "fitT2": 38.5,
         "fitT3": 56.7
       },
       {
@@ -8191,7 +8263,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 91.8,
         "fitT1": 51.8,
-        "fitT2": 69.0,
+        "fitT2": 64.4,
         "fitT3": 91.8
       },
       {
@@ -8235,7 +8307,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 15.4,
-        "fitT2": 24.9,
+        "fitT2": 21.7,
         "fitT3": 35.3
       },
       {
@@ -8279,7 +8351,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 12.9,
-        "fitT2": 18.8,
+        "fitT2": 16.5,
         "fitT3": 25.4
       },
       {
@@ -8301,7 +8373,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 46.2,
-        "fitT2": 60.5,
+        "fitT2": 56.4,
         "fitT3": 79.2
       },
       {
@@ -8321,9 +8393,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 92.8,
+        "fitOwn": 90.9,
         "fitT1": 73.9,
-        "fitT2": 92.8,
+        "fitT2": 90.9,
         "fitT3": 100.0
       },
       {
@@ -8345,7 +8417,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 28.5,
-        "fitT2": 49.6,
+        "fitT2": 42.3,
         "fitT3": 61.1
       },
       {
@@ -8367,7 +8439,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 78.5,
         "fitT1": 47.1,
-        "fitT2": 67.8,
+        "fitT2": 64.2,
         "fitT3": 78.5
       },
       {
@@ -8389,7 +8461,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 36.8,
-        "fitT2": 42.5,
+        "fitT2": 40.9,
         "fitT3": 50.6
       },
       {
@@ -8411,7 +8483,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 8.5,
-        "fitT2": 15.5,
+        "fitT2": 12.9,
         "fitT3": 23.3
       },
       {
@@ -8433,7 +8505,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 86.3,
         "fitT1": 50.8,
-        "fitT2": 73.7,
+        "fitT2": 66.7,
         "fitT3": 86.3
       },
       {
@@ -8455,13 +8527,13 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 17.8,
-        "fitT2": 28.4,
+        "fitT2": 24.5,
         "fitT3": 40.1
       },
       {
         "nick": "Koperor",
         "tier": 4,
-        "role": "Rifle",
+        "role": "LAT",
         "g": 11,
         "meetings": 6,
         "res_g": 0.36,
@@ -8474,11 +8546,11 @@
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Стрелок",
+        "roleLabel": "Лёгкая труба",
         "fitOwn": null,
-        "fitT1": 63.9,
-        "fitT2": 89.0,
-        "fitT3": 94.8
+        "fitT1": null,
+        "fitT2": 89.8,
+        "fitT3": null
       },
       {
         "nick": "tank2284",
@@ -8521,7 +8593,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 15.0,
-        "fitT2": 22.5,
+        "fitT2": 19.5,
         "fitT3": 31.0
       },
       {
@@ -8543,7 +8615,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 22.5,
-        "fitT2": 37.1,
+        "fitT2": 32.1,
         "fitT3": 53.0
       },
       {
@@ -8565,7 +8637,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 29.0,
-        "fitT2": 47.7,
+        "fitT2": 41.4,
         "fitT3": 64.4
       },
       {
@@ -8587,7 +8659,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 63.5,
-        "fitT2": 88.1,
+        "fitT2": 83.9,
         "fitT3": 92.2
       },
       {
@@ -8609,7 +8681,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 64.5,
-        "fitT2": 90.6,
+        "fitT2": 83.4,
         "fitT3": 96.7
       },
       {
@@ -8631,7 +8703,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 25.3,
-        "fitT2": 34.8,
+        "fitT2": 32.8,
         "fitT3": 49.5
       },
       {
@@ -8653,7 +8725,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 17.9,
-        "fitT2": 29.4,
+        "fitT2": 25.4,
         "fitT3": 42.2
       },
       {
@@ -8675,7 +8747,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 51.3,
-        "fitT2": 71.6,
+        "fitT2": 68.3,
         "fitT3": 80.3
       },
       {
@@ -8697,7 +8769,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 40.9,
-        "fitT2": 51.6,
+        "fitT2": 47.8,
         "fitT3": 65.0
       },
       {
@@ -8719,7 +8791,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 59.4,
-        "fitT2": 81.0,
+        "fitT2": 77.5,
         "fitT3": 91.1
       },
       {
@@ -8807,7 +8879,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 9.4,
-        "fitT2": 16.7,
+        "fitT2": 13.7,
         "fitT3": 25.1
       },
       {
@@ -8829,7 +8901,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 41.1,
-        "fitT2": 59.1,
+        "fitT2": 60.6,
         "fitT3": 61.1
       },
       {
@@ -8851,7 +8923,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 82.0,
-        "fitT2": 86.9,
+        "fitT2": 88.4,
         "fitT3": 91.1
       },
       {
@@ -8983,7 +9055,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 57.0,
         "fitT1": 57.0,
-        "fitT2": 79.2,
+        "fitT2": 72.3,
         "fitT3": 93.1
       },
       {
@@ -9049,7 +9121,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 100.0,
         "fitT1": 100.0,
-        "fitT2": 98.4,
+        "fitT2": 100.0,
         "fitT3": 100.0
       },
       {
@@ -9069,9 +9141,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 86.3,
+        "fitOwn": 87.5,
         "fitT1": 81.8,
-        "fitT2": 86.3,
+        "fitT2": 87.5,
         "fitT3": 91.5
       },
       {
@@ -9159,7 +9231,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 88.9,
         "fitT1": 88.9,
-        "fitT2": 97.3,
+        "fitT2": 98.5,
         "fitT3": 99.0
       },
       {
@@ -9181,7 +9253,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 99.7,
         "fitT1": 99.7,
-        "fitT2": 98.2,
+        "fitT2": 99.7,
         "fitT3": 100.0
       },
       {
@@ -9209,7 +9281,7 @@
       {
         "nick": "MrChaykaa",
         "tier": 2,
-        "role": "Rifle",
+        "role": "LAT",
         "g": 18,
         "meetings": 9,
         "res_g": 0.94,
@@ -9222,11 +9294,11 @@
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Стрелок",
-        "fitOwn": 87.3,
-        "fitT1": 65.8,
-        "fitT2": 87.3,
-        "fitT3": 100.0
+        "roleLabel": "Лёгкая труба",
+        "fitOwn": 93.1,
+        "fitT1": null,
+        "fitT2": 93.1,
+        "fitT3": null
       },
       {
         "nick": "Treppen",
@@ -9269,7 +9341,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 79.4,
         "fitT1": 50.7,
-        "fitT2": 71.9,
+        "fitT2": 68.4,
         "fitT3": 79.4
       },
       {
@@ -9289,9 +9361,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 86.5,
+        "fitOwn": 87.9,
         "fitT1": 79.4,
-        "fitT2": 86.5,
+        "fitT2": 87.9,
         "fitT3": 92.0
       },
       {
@@ -9335,13 +9407,13 @@
         "roleLabel": "Стрелок",
         "fitOwn": 70.6,
         "fitT1": 70.6,
-        "fitT2": 93.4,
+        "fitT2": 91.3,
         "fitT3": 96.7
       },
       {
         "nick": "Azure",
         "tier": 2,
-        "role": "Rifle",
+        "role": "LAT",
         "g": 10,
         "meetings": 5,
         "res_g": 2.4,
@@ -9354,11 +9426,11 @@
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Стрелок",
-        "fitOwn": 90.1,
-        "fitT1": 64.1,
-        "fitT2": 90.1,
-        "fitT3": 95.6
+        "roleLabel": "Лёгкая труба",
+        "fitOwn": 94.9,
+        "fitT1": null,
+        "fitT2": 94.9,
+        "fitT3": null
       },
       {
         "nick": "MuskeR",
@@ -9379,7 +9451,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 49.5,
-        "fitT2": 67.6,
+        "fitT2": 65.6,
         "fitT3": 78.6
       },
       {
@@ -9531,9 +9603,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 60.7,
+        "fitOwn": 56.8,
         "fitT1": 45.3,
-        "fitT2": 60.7,
+        "fitT2": 56.8,
         "fitT3": 78.3
       },
       {
@@ -9577,7 +9649,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 82.4,
         "fitT1": 45.1,
-        "fitT2": 63.1,
+        "fitT2": 57.9,
         "fitT3": 82.4
       },
       {
@@ -9597,9 +9669,9 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "Стрелок",
-        "fitOwn": 94.5,
+        "fitOwn": 95.6,
         "fitT1": 74.3,
-        "fitT2": 94.5,
+        "fitT2": 95.6,
         "fitT3": 96.1
       },
       {
@@ -9665,7 +9737,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": 91.0,
         "fitT1": 54.0,
-        "fitT2": 72.9,
+        "fitT2": 67.3,
         "fitT3": 91.0
       },
       {
@@ -9731,7 +9803,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 29.4,
-        "fitT2": 55.8,
+        "fitT2": 47.5,
         "fitT3": 56.1
       },
       {
@@ -9775,7 +9847,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 11.0,
-        "fitT2": 15.2,
+        "fitT2": 13.6,
         "fitT3": 20.1
       },
       {
@@ -9797,7 +9869,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 12.1,
-        "fitT2": 21.3,
+        "fitT2": 17.6,
         "fitT3": 31.8
       },
       {
@@ -9819,7 +9891,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 13.0,
-        "fitT2": 18.5,
+        "fitT2": 17.5,
         "fitT3": 28.1
       },
       {
@@ -9863,7 +9935,7 @@
         "roleLabel": "Стрелок",
         "fitOwn": null,
         "fitT1": 22.8,
-        "fitT2": 27.8,
+        "fitT2": 26.3,
         "fitT3": 34.4
       }
     ]
