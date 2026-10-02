@@ -28,7 +28,7 @@
   const ORR_URL = "data/orr.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261002-fallujah-m3";
+    new URLSearchParams(location.search).get("v") || "20261003-rp-tk-v3";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -1846,7 +1846,7 @@
         const scopeRu =
           scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}. RP: Die()/give-up.`
+          ? `Период: ${scopeRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}. RP: финал Die + штраф TK.`
           : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
         paintTrainingRatingTable();
       })
