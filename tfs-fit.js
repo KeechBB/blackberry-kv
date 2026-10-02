@@ -73,13 +73,37 @@
     const maxRounds = meets.reduce((s, m) => s + (m.rounds || 0), 0) || 1;
 
     const players = [];
+    const shareCfg = payload.crewShare || {};
+    const shareAlpha = Number(shareCfg.alpha) || 0;
+    const driverGunners = {};
+    for (const pair of shareCfg.pairs || []) {
+      const d = String(pair.driver || "")
+        .trim()
+        .toLowerCase();
+      const guns = (pair.gunners || [])
+        .map((g) => String(g || "").trim().toLowerCase())
+        .filter(Boolean);
+      if (d && guns.length) driverGunners[d] = guns;
+    }
+    const meetLookup = {};
+    for (const rp of payload.rawPlayers || []) {
+      const key = String(rp.nick || "")
+        .trim()
+        .toLowerCase();
+      meetLookup[key] = rp.meets || {};
+    }
+
     for (const rp of payload.rawPlayers || []) {
       let res = 0,
         kills = 0,
         deaths = 0,
         dmg = 0,
         g = 0,
-        used = 0;
+        used = 0,
+        shareMeets = 0;
+      const nickKey = String(rp.nick || "")
+        .trim()
+        .toLowerCase();
       for (const [mid, slot] of Object.entries(rp.meets || {})) {
         if (!sel.has(mid)) continue;
         used += 1;
@@ -88,6 +112,25 @@
         kills += slot.k || 0;
         deaths += slot.d || 0;
         dmg += slot.dmg || 0;
+
+        if (shareAlpha > 0 && driverGunners[nickKey]) {
+          let best = null;
+          let bestDmg = -1;
+          for (const gk of driverGunners[nickKey]) {
+            const gslot = (meetLookup[gk] || {})[mid];
+            if (!gslot) continue;
+            const gd = Number(gslot.dmg) || 0;
+            if (gd > bestDmg) {
+              bestDmg = gd;
+              best = gslot;
+            }
+          }
+          if (best) {
+            shareMeets += 1;
+            kills += shareAlpha * (Number(best.k) || 0);
+            dmg += shareAlpha * (Number(best.dmg) || 0);
+          }
+        }
       }
       if (g < 1) continue;
       const role = W[rp.role] ? rp.role : "Rifle";
@@ -104,6 +147,7 @@
         orr: rp.orr || 0,
         pres: g / maxRounds,
         pause: [1, 2, 3].includes(rp.tier) && g < th.minGamesActive,
+        crewShareMeets: shareMeets,
       });
     }
 
@@ -209,6 +253,7 @@
             g: r.g,
             pause: r.pause,
             bestInTier: r.nick === bestNick,
+            crewShareMeets: r.crewShareMeets || 0,
           })),
         };
       }
@@ -445,8 +490,12 @@
                     const pause = r.pause
                       ? ` <span class="tfs-pause">· пауза</span>`
                       : "";
+                    const share =
+                      r.crewShareMeets > 0
+                        ? ` <span class="tfs-share" title="Мех-шаринг: +35% kills/dmg напарника в ${r.crewShareMeets} встр.">· мех×${r.crewShareMeets}</span>`
+                        : "";
                     return `<tr class="${r.bestInTier ? "tfs-row-best" : ""}">
-                      <td>${esc(r.nick)}${pause}</td>
+                      <td>${esc(r.nick)}${pause}${share}</td>
                       <td class="ctr">T${r.tier}</td>
                       ${cell(r.fit.toFixed(1), isRec("fit", r.fit))}
                       ${cell(Number(r.res_g).toFixed(2), isRec("res_g", r.res_g))}
@@ -460,7 +509,11 @@
               </tbody>
             </table>
           </div>
-          <p class="tfs-foot">Жёлтый = лучший показатель в роли${role === "Medic" ? " (KD у медика не рекорд)" : ""}${block.bestInTier ? ` · лучший в тире: ${esc(block.bestInTier)}` : ""}</p>
+          <p class="tfs-foot">Жёлтый = лучший показатель в роли${role === "Medic" ? " (KD у медика не рекорд)" : ""}${
+            role === "Crew" && (Number((payload.crewShare || {}).alpha) || 0)
+              ? ` · мех-шаринг ${Math.round(Number(payload.crewShare.alpha) * 100)}% kills/dmg напарника водителю`
+              : ""
+          }${block.bestInTier ? ` · лучший в тире: ${esc(block.bestInTier)}` : ""}</p>
         </article>`);
     }
     $("tfs-boards").innerHTML =
@@ -621,7 +674,12 @@
     const ids = selectedMeetingIds();
     computed = recompute(ids);
     const note = $("tfs-note");
-    note.textContent = `КВ · ${computed.meetingCount} встреч · обновлено ${payload.updatedAt} · Fit к эталону тира (медиана роли). Повышение ≥90%, удержание ≥85%, demote <75%.`;
+    const aShare = Number((payload.crewShare || {}).alpha) || 0;
+    note.textContent = `КВ · ${computed.meetingCount} встреч · обновлено ${payload.updatedAt} · Fit к эталону тира (медиана роли). Повышение ≥90%, удержание ≥85%, demote <75%.${
+      aShare
+        ? ` Мех-шаринг ${Math.round(aShare * 100)}%: Gadler ← Tankist/Kuchenchips (если вместе на табло).`
+        : ""
+    }`;
     renderKpis();
     renderBoards();
     renderCandidates();
@@ -686,7 +744,7 @@
       return;
     }
     note.textContent = "Загружаем Тиры Fit…";
-    const ver = new URLSearchParams(location.search).get("v") || "20261002-tfs-fit2";
+    const ver = new URLSearchParams(location.search).get("v") || "20261002-crew-share";
     const href =
       fetchUrl ||
       TFS_URL + (TFS_URL.includes("?") ? "&" : "?") + "v=" + encodeURIComponent(ver);

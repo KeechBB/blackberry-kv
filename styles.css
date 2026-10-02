@@ -2028,6 +2028,11 @@ body.modal-open { overflow: hidden; }
   font-size: 0.78rem;
   font-weight: 500;
 }
+.tfs-share {
+  color: rgba(110, 231, 183, 0.85);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
 .tfs-band-strong {
   color: #6ee7b7;
   font-weight: 700;
