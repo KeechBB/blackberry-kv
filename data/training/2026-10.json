@@ -19,6 +19,23 @@
       "winner": "USA",
       "status": "done",
       "playersUrl": "data/training/players/02-gorodok.json"
+    },
+    {
+      "id": "02-mutaha",
+      "day": 2,
+      "timeMsk": "22:48",
+      "map": "Mutaha RAAS v1",
+      "mode": "RAAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "38:35",
+      "factionA": "PLA",
+      "ticketsA": 240,
+      "factionB": "USA",
+      "ticketsB": 0,
+      "winner": "PLA",
+      "status": "done",
+      "playersUrl": "data/training/players/02-mutaha.json"
     }
   ]
 }
