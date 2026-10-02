@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261002-crew-share" />
+  <link rel="stylesheet" href="styles.css?v=20261002-akin-gp" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -728,7 +728,7 @@
           <button type="button" class="tfs-chip" data-tfs-sec="analytics">Аналитика</button>
         </div>
 
-        <p class="note" id="tfs-note">Загружаем Тиры Fit…</p>
+        <p class="note" id="tfs-note" hidden>Загружаем Тиры Fit…</p>
         <div class="tfs-stat-grid tfs-stat-grid-kpis" id="tfs-kpis" hidden></div>
 
         <div id="tfs-sec-boards" class="tfs-sec">
@@ -738,7 +738,7 @@
             <button type="button" class="tfs-chip" data-tfs-tier="3">Тир 3</button>
             <button type="button" class="tfs-chip" data-tfs-tier="4">Тир 4</button>
           </div>
-          <p class="tfs-tier-lead" id="tfs-tier-lead"></p>
+          <p class="tfs-tier-lead" id="tfs-tier-lead" hidden></p>
           <div id="tfs-boards" class="tfs-boards"></div>
         </div>
 
@@ -747,7 +747,6 @@
             <section class="board tfs-card">
               <div class="board-head">
                 <h2>Кандидаты вверх</h2>
-                <p class="board-sub">Fit ≥ 95% сильный · 90–95% почти · только +1 тир</p>
               </div>
               <div class="table-scroll">
                 <table class="rating-table tfs-table" id="tfs-promote-table">
@@ -772,7 +771,6 @@
             <section class="board tfs-card">
               <div class="board-head">
                 <h2>Кандидаты вниз · форма</h2>
-                <p class="board-sub">Fit к своему тиру &lt; 75% · пауза (мало игр) не сюда</p>
               </div>
               <div class="table-scroll">
                 <table class="rating-table tfs-table" id="tfs-demote-table">
@@ -794,7 +792,6 @@
               </div>
               <div class="board-head tfs-warn-head">
                 <h2>Жёлтая зона (75–85%)</h2>
-                <p class="board-sub">Форма проседает — присмотр, ещё не demote</p>
               </div>
               <div class="table-scroll">
                 <table class="rating-table tfs-table" id="tfs-warn-table">
@@ -841,7 +838,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261002-crew-share"></script>
-  <script src="tfs-fit.js?v=20261002-crew-share"></script>
+  <script src="app.js?v=20261002-akin-gp"></script>
+  <script src="tfs-fit.js?v=20261002-akin-gp"></script>
 </body>
 </html>

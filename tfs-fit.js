@@ -445,10 +445,10 @@
     const tier = view.tier;
     const boards = computed.tierBoards[tier] || {};
     const lead = $("tfs-tier-lead");
-    lead.textContent =
-      tier === "4"
-        ? "Тир 4 · Fit считается к эталону Тир 3 (куда тянутся). Жёлтый — лучший показатель в роли; подсветка строки — лучший в своём тире."
-        : `Тир ${tier} · эталон = медиана текущих игроков тира по роли. Fit% — насколько дотягиваешь. Жёлтый = рекорд в таблице роли; золотая полоса слева — лучший игрок этого тира в роли.`;
+    if (lead) {
+      lead.hidden = true;
+      lead.textContent = "";
+    }
 
     const nickQ = view.nick.trim().toLowerCase();
     const parts = [];
@@ -462,14 +462,9 @@
       const rec = block.records || {};
       const isRec = (key, val) =>
         rec[key] != null && Math.abs(Number(rec[key]) - Number(val)) < 1e-9;
-      const b = block.bench;
-      const benchLine = b
-        ? `Эталон = медиана из ${b.n}: ${b.who.join(", ")} · res ${Number(b.res_g).toFixed(2)} · KD ${Number(b.kd).toFixed(2)} · dmg ${Math.round(b.dmg_g)} · ORR ${Math.round(b.orr)}${b.thin ? " · пул тонкий" : ""}`
-        : "Эталон пока неполный для этой роли";
       parts.push(`
         <article class="tfs-role-card" data-role="${esc(role)}">
           <h3>${esc(block.roleLabel)}</h3>
-          <p class="tfs-bench">${esc(benchLine)}</p>
           <div class="table-scroll">
             <table class="rating-table tfs-table">
               <thead>
@@ -492,7 +487,7 @@
                       : "";
                     const share =
                       r.crewShareMeets > 0
-                        ? ` <span class="tfs-share" title="Мех-шаринг: +35% kills/dmg напарника в ${r.crewShareMeets} встр.">· мех×${r.crewShareMeets}</span>`
+                        ? ` <span class="tfs-share" title="Мех-шаринг ×${r.crewShareMeets}">· мех×${r.crewShareMeets}</span>`
                         : "";
                     return `<tr class="${r.bestInTier ? "tfs-row-best" : ""}">
                       <td>${esc(r.nick)}${pause}${share}</td>
@@ -509,11 +504,6 @@
               </tbody>
             </table>
           </div>
-          <p class="tfs-foot">Жёлтый = лучший показатель в роли${role === "Medic" ? " (KD у медика не рекорд)" : ""}${
-            role === "Crew" && (Number((payload.crewShare || {}).alpha) || 0)
-              ? ` · мех-шаринг ${Math.round(Number(payload.crewShare.alpha) * 100)}% kills/dmg напарника водителю`
-              : ""
-          }${block.bestInTier ? ` · лучший в тире: ${esc(block.bestInTier)}` : ""}</p>
         </article>`);
     }
     $("tfs-boards").innerHTML =
@@ -619,7 +609,7 @@
 
     $("tfs-an-body").innerHTML = `
       <section class="board tfs-card">
-        <div class="board-head"><h2>Состав по тирам</h2><p class="board-sub">Игроки с КВ-статой в выбранном периоде</p></div>
+        <div class="board-head"><h2>Состав по тирам</h2></div>
         <div class="tfs-stat-grid tfs-stat-grid-4">
           ${[1, 2, 3, 4]
             .map(
@@ -630,7 +620,7 @@
         </div>
       </section>
       <section class="board tfs-card">
-        <div class="board-head"><h2>Переходы</h2><p class="board-sub">Сводка кандидатов</p></div>
+        <div class="board-head"><h2>Переходы</h2></div>
         <div class="tfs-stat-grid tfs-stat-grid-4">
           <div class="stat tfs-kpi"><span class="k">Вверх</span><span class="v tfs-band-strong">${esc(a.promoteCount)}</span></div>
           <div class="stat tfs-kpi"><span class="k">Вниз</span><span class="v">${esc(a.demoteCount)}</span></div>
@@ -639,7 +629,7 @@
         </div>
       </section>
       <section class="board tfs-card tfs-card-wide">
-        <div class="board-head"><h2>Разрыв T2 → T1 по ролям</h2><p class="board-sub">Лучший T2 по Fit к эталону T1</p></div>
+        <div class="board-head"><h2>Разрыв T2 → T1 по ролям</h2></div>
         <div class="table-scroll">
           <table class="rating-table tfs-table">
             <thead><tr><th>Роль</th><th class="ctr">Мед. Fit T1</th><th>Лучший T2</th><th class="ctr">Fit→T1</th></tr></thead>
@@ -648,7 +638,7 @@
         </div>
       </section>
       <section class="board tfs-card tfs-card-wide">
-        <div class="board-head"><h2>Топ Fit → Тир 1</h2><p class="board-sub">Ближе всех к эталону T1 (любой текущий тир)</p></div>
+        <div class="board-head"><h2>Топ Fit → Тир 1</h2></div>
         <div class="table-scroll">
           <table class="rating-table tfs-table">
             <thead><tr><th class="ctr">#</th><th>Ник</th><th class="ctr">Тир</th><th>Роль</th><th class="ctr">Fit%</th></tr></thead>
@@ -674,12 +664,10 @@
     const ids = selectedMeetingIds();
     computed = recompute(ids);
     const note = $("tfs-note");
-    const aShare = Number((payload.crewShare || {}).alpha) || 0;
-    note.textContent = `КВ · ${computed.meetingCount} встреч · обновлено ${payload.updatedAt} · Fit к эталону тира (медиана роли). Повышение ≥90%, удержание ≥85%, demote <75%.${
-      aShare
-        ? ` Мех-шаринг ${Math.round(aShare * 100)}%: Gadler ← Tankist/Kuchenchips (если вместе на табло).`
-        : ""
-    }`;
+    if (note) {
+      note.hidden = true;
+      note.textContent = "";
+    }
     renderKpis();
     renderBoards();
     renderCandidates();
@@ -738,13 +726,15 @@
 
   window.loadTfsFit = function loadTfsFit(fetchUrl) {
     const note = $("tfs-note");
-    if (!note) return;
     if (loaded && payload) {
       refresh();
       return;
     }
-    note.textContent = "Загружаем Тиры Fit…";
-    const ver = new URLSearchParams(location.search).get("v") || "20261002-crew-share";
+    if (note) {
+      note.hidden = false;
+      note.textContent = "Загружаем…";
+    }
+    const ver = new URLSearchParams(location.search).get("v") || "20261002-akin-gp";
     const href =
       fetchUrl ||
       TFS_URL + (TFS_URL.includes("?") ? "&" : "?") + "v=" + encodeURIComponent(ver);
@@ -769,7 +759,10 @@
         refresh();
       })
       .catch((err) => {
-        note.textContent = "Не удалось загрузить tfs-fit.json: " + (err && err.message);
+        if (note) {
+          note.hidden = false;
+          note.textContent = "Не удалось загрузить tfs-fit.json: " + (err && err.message);
+        }
       });
   };
 })();

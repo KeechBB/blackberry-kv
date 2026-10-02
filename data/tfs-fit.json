@@ -2151,7 +2151,7 @@
     {
       "nick": "AkiN",
       "tier": 1,
-      "role": "Medic",
+      "role": "GP",
       "orr": 684,
       "meets": {
         "07-avg": {
@@ -5113,6 +5113,18 @@
     "maxRounds": 40,
     "benches": {
       "1": {
+        "GP": {
+          "n": 2,
+          "thin": false,
+          "who": [
+            "AkiN",
+            "Pymba"
+          ],
+          "res_g": 1.13,
+          "kd": 1.36,
+          "dmg_g": 206.9,
+          "orr": 644.0
+        },
         "CMD": {
           "n": 2,
           "thin": false,
@@ -5200,17 +5212,6 @@
           "kd": 1.3900000000000001,
           "dmg_g": 467.6,
           "orr": 484.0
-        },
-        "GP": {
-          "n": 1,
-          "thin": true,
-          "who": [
-            "Pymba"
-          ],
-          "res_g": 0.38,
-          "kd": 1.83,
-          "dmg_g": 267.5,
-          "orr": 604
         }
       },
       "2": {
@@ -5476,8 +5477,8 @@
           "records": {
             "fit": 96.6,
             "res_g": 11.86,
-            "orr": 684,
-            "g": 33
+            "orr": 658,
+            "g": 27
           },
           "rows": [
             {
@@ -5538,18 +5539,6 @@
               "orr": 432,
               "g": 7,
               "pause": true,
-              "bestInTier": false
-            },
-            {
-              "nick": "AkiN",
-              "tier": 1,
-              "fit": 64.8,
-              "res_g": 1.88,
-              "kd": 0.89,
-              "dmg_g": 146.3,
-              "orr": 684,
-              "g": 33,
-              "pause": false,
               "bestInTier": false
             }
           ]
@@ -5693,28 +5682,29 @@
           "role": "GP",
           "roleLabel": "ГП",
           "bench": {
-            "n": 1,
-            "thin": true,
+            "n": 2,
+            "thin": false,
             "who": [
+              "AkiN",
               "Pymba"
             ],
-            "res_g": 0.38,
-            "kd": 1.83,
-            "dmg_g": 267.5,
-            "orr": 604
+            "res_g": 1.13,
+            "kd": 1.36,
+            "dmg_g": 206.9,
+            "orr": 644.0
           },
           "bestInTier": "Pymba",
           "records": {
-            "fit": 94.4,
+            "fit": 89.3,
             "kd": 1.83,
             "dmg_g": 267.5,
-            "orr": 604
+            "orr": 684
           },
           "rows": [
             {
               "nick": "Pymba",
               "tier": 1,
-              "fit": 94.4,
+              "fit": 89.3,
               "res_g": 0.38,
               "kd": 1.83,
               "dmg_g": 267.5,
@@ -5722,6 +5712,18 @@
               "g": 8,
               "pause": false,
               "bestInTier": true
+            },
+            {
+              "nick": "AkiN",
+              "tier": 1,
+              "fit": 82.3,
+              "res_g": 1.88,
+              "kd": 0.89,
+              "dmg_g": 146.3,
+              "orr": 684,
+              "g": 33,
+              "pause": false,
+              "bestInTier": false
             }
           ]
         },
@@ -7217,19 +7219,6 @@
       ],
       "demote": [
         {
-          "nick": "AkiN",
-          "fromTier": 1,
-          "toTier": 2,
-          "role": "Medic",
-          "roleLabel": "Медик",
-          "fit": 64.8,
-          "g": 33,
-          "res_g": 1.88,
-          "kd": 0.89,
-          "dmg_g": 146.3,
-          "orr": 684
-        },
-        {
           "nick": "Varyag",
           "fromTier": 3,
           "toTier": 4,
@@ -7284,6 +7273,19 @@
           "orr": 606
         },
         {
+          "nick": "AkiN",
+          "fromTier": 1,
+          "toTier": 2,
+          "role": "GP",
+          "roleLabel": "ГП",
+          "fit": 82.3,
+          "g": 33,
+          "res_g": 1.88,
+          "kd": 0.89,
+          "dmg_g": 146.3,
+          "orr": 684
+        },
+        {
           "nick": "Treppen",
           "fromTier": 1,
           "toTier": 2,
@@ -7333,10 +7335,10 @@
         "4": 60
       },
       "pauseCount": 13,
-      "medianFitOwn": 91.3,
+      "medianFitOwn": 91.2,
       "promoteCount": 15,
-      "demoteCount": 3,
-      "warnCount": 5,
+      "demoteCount": 2,
+      "warnCount": 6,
       "roleGap": [
         {
           "role": "SL",
@@ -7348,7 +7350,7 @@
         {
           "role": "Medic",
           "roleLabel": "Медик",
-          "t1MedianFit": 93.6,
+          "t1MedianFit": 95.1,
           "bestT2FitT1": 95.2,
           "bestT2": "Radislave"
         },
@@ -7430,10 +7432,10 @@
           "fit": 94.7
         },
         {
-          "nick": "Pymba",
+          "nick": "Blizzardrix",
           "tier": 1,
-          "roleLabel": "ГП",
-          "fit": 94.4
+          "roleLabel": "Сапёр",
+          "fit": 93.6
         }
       ]
     },
@@ -8277,7 +8279,7 @@
       {
         "nick": "AkiN",
         "tier": 1,
-        "role": "Medic",
+        "role": "GP",
         "g": 33,
         "meetings": 17,
         "res_g": 1.88,
@@ -8290,11 +8292,11 @@
         "crewShareMeets": 0,
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
-        "roleLabel": "Медик",
-        "fitOwn": 64.8,
-        "fitT1": 64.8,
-        "fitT2": 65.6,
-        "fitT3": 82.9
+        "roleLabel": "ГП",
+        "fitOwn": 82.3,
+        "fitT1": 82.3,
+        "fitT2": null,
+        "fitT3": null
       },
       {
         "nick": "saosk.beb",
@@ -9787,8 +9789,8 @@
         "crewShareK": 0.0,
         "crewShareDmg": 0.0,
         "roleLabel": "ГП",
-        "fitOwn": 94.4,
-        "fitT1": 94.4,
+        "fitOwn": 89.3,
+        "fitT1": 89.3,
         "fitT2": null,
         "fitT3": null
       },
