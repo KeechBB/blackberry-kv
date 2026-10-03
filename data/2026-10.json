@@ -106,6 +106,20 @@
       "note": "Main · SEC · vs clan 2–0 (26.09 Goose) · same slot Junior vs Fury v2"
     },
     {
+      "id": "06-fox",
+      "day": 6,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "FOX",
+      "map": "Hotdrop Narva",
+      "size": "20v20",
+      "server": "BB",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · Hotdrop Narva · BB server · NO SCOUT · NO MEETINGS · RED FOXES"
+    },
+    {
       "id": "07-dcai",
       "day": 7,
       "timeMsk": "20:00",
