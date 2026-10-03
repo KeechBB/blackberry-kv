@@ -1,0 +1,25 @@
+{
+  "note": "PublicMatch mirror for local ledger builds when DATABASE_URL has no PublicMatch. Keep in sync with /public history.",
+  "matches": [
+    {
+      "endedAt": "2026-10-03T10:19:00.000Z",
+      "mapName": "Manicouagan",
+      "layerName": "Manicouagan RAAS v2",
+      "score1": 0,
+      "score2": 27,
+      "winnerTeam": 2,
+      "winnerName": "United States Marine Corps",
+      "serverKey": "TPUB1"
+    },
+    {
+      "endedAt": "2026-10-03T11:05:00.000Z",
+      "mapName": "Mutaha",
+      "layerName": "Mutaha RAAS v1",
+      "score1": 72,
+      "score2": 0,
+      "winnerTeam": 1,
+      "winnerName": "United States Army",
+      "serverKey": "TPUB1"
+    }
+  ]
+}
