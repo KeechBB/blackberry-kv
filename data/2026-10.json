@@ -57,11 +57,13 @@
       "opp": "ALPHA",
       "map": "FCL BlackCoast",
       "size": "16v16",
-      "server": "#2 bbsquad.online | FCL ARENA",
+      "server": "#3 bbsquad.online | FCL ARENA",
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · vs clan 2–0 (26.09 Anvil) · NO SCOUT · same day Main vs IMP 21:00 отмена"
+      "r1": "112:0",
+      "note": "Junior · R1 112:0 (мы RGF) · ждём R2 · сумма пока 112:0 · #3 FCL ARENA",
+      "playersUrl": "data/players/03-alpha.json"
     },
     {
       "id": "03-imp",

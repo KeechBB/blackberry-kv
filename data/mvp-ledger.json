@@ -51,6 +51,32 @@
       }
     },
     {
+      "id": "03-alpha",
+      "day": 3,
+      "opp": "ALPHA",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Prolik"
+        ],
+        "killer": [
+          "Jimmy Neutron"
+        ],
+        "damage": [
+          "COBRA"
+        ],
+        "antiDeath": [
+          "Sandro.86"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "04-20royals",
       "day": 4,
       "opp": "20Royals",
@@ -917,13 +943,21 @@
     "COBRA": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 2,
+      "mvpDamage": 3,
       "antiDeath": 0,
       "awards": [
         {
           "matchId": "01-gm",
           "day": 1,
           "opp": "GM",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
@@ -1172,10 +1206,18 @@
     },
     "Jimmy Neutron": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "26-alpha",
           "day": 26,
@@ -1634,6 +1676,22 @@
         }
       ]
     },
+    "Prolik": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Pymba": {
       "mvpMedic": 0,
       "mvpKiller": 2,
@@ -1815,6 +1873,22 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Sandro.86": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },

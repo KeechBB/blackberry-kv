@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02",
+  "updatedAt": "2026-10-03",
   "holdDays": 2,
   "displayDays": 2,
   "watches": [
@@ -8,11 +8,11 @@
       "kind": "promote",
       "fromTier": 4,
       "toTier": 3,
-      "fit": 96.7,
+      "fit": 96.8,
       "band": "strong",
       "role": "Стрелок",
       "since": "2026-10-02",
-      "daysHeld": 0,
+      "daysHeld": 1,
       "ready": false
     },
     {
@@ -20,34 +20,22 @@
       "kind": "promote",
       "fromTier": 4,
       "toTier": 3,
-      "fit": 95.6,
+      "fit": 96.0,
       "band": "strong",
       "role": "Стрелок",
       "since": "2026-10-02",
-      "daysHeld": 0,
+      "daysHeld": 1,
       "ready": false
     },
     {
-      "nick": "Radislave",
+      "nick": "Kroasawn",
       "kind": "promote",
       "fromTier": 2,
       "toTier": 1,
-      "fit": 95.2,
+      "fit": 95.0,
       "band": "strong",
       "role": "Медик",
-      "since": "2026-10-02",
-      "daysHeld": 0,
-      "ready": false
-    },
-    {
-      "nick": "Tankist",
-      "kind": "promote",
-      "fromTier": 2,
-      "toTier": 1,
-      "fit": 95.1,
-      "band": "strong",
-      "role": "Тех / водитель",
-      "since": "2026-10-02",
+      "since": "2026-10-03",
       "daysHeld": 0,
       "ready": false
     },
@@ -60,7 +48,7 @@
       "band": "hard",
       "role": "Медик",
       "since": "2026-10-02",
-      "daysHeld": 0,
+      "daysHeld": 1,
       "ready": false
     },
     {
@@ -68,11 +56,11 @@
       "kind": "demote",
       "fromTier": 1,
       "toTier": 2,
-      "fit": 70.6,
+      "fit": 70.2,
       "band": "hard",
       "role": "Стрелок",
       "since": "2026-10-02",
-      "daysHeld": 0,
+      "daysHeld": 1,
       "ready": false
     }
   ],
