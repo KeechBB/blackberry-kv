@@ -1,0 +1,7393 @@
+{
+  "version": 3,
+  "updatedAt": "2026-10-03T21:50:29.506766+00:00",
+  "startRp": 1000.0,
+  "step": 150,
+  "radiant3Max": 4500,
+  "pMax": 754.7,
+  "matches": [
+    {
+      "id": "29-albasrah",
+      "map": "SEC 26 AlBasrah AAS v1",
+      "date": "2026-09-29",
+      "netByNick": {
+        "Animo": 261.78,
+        "Mirgorr": 219.12,
+        "Tatarin": 203.36,
+        "ADUN": 184.17,
+        "Diray": 182.23,
+        "Pymba": 180.33,
+        "COBRA": -179.85,
+        "Nestor Mahno": -163.23,
+        "Mukuru": 154.6,
+        "on_hik": 154.48,
+        "ZensU": 150.58,
+        "angel": 148.31,
+        "Tankist": 142.14,
+        "Azure": 139.77,
+        "Barsik": 134.92,
+        "Chidori": -134.37,
+        "ART": 133.66,
+        "RIMURU": -129.86,
+        "Edge_CM": 129.31,
+        "S.M.P": 122.49,
+        "firs": -117.52,
+        "p1XeL": 111.59,
+        "Buti": -104.5,
+        "LordWolf": -99.3,
+        "Freez": 96.81,
+        "freak": -95.79,
+        "KillReal": 94.4,
+        "SkiLLeX": -91.12,
+        "VET": 87.52,
+        "daddy": 77.91,
+        "Treppen": -76.74,
+        "r4mp": -72.14,
+        "Kroasawn": 69.03,
+        "Mahorka": -59.86,
+        "FLEX": 59.63,
+        "NABAT": 59.31,
+        "lepurple": 55.78,
+        "Keech": -54.48,
+        "AkiN": -48.73,
+        "Prolik": -47.18,
+        "CORWAX": 45.34,
+        "MrChaykaa": 44.54,
+        "Bahus": -39.06,
+        "Joplik": -36.7,
+        "Bayle The Dread": -35.94,
+        "m3rz0st": 35.92,
+        "yanchik": -35.61,
+        "Pugovka": -33.78,
+        "Chappi": 30.81,
+        "akin0v": 28.05,
+        "Otto": -24.26,
+        "NECO": 16.6,
+        "ZLOBA1917": -15.68,
+        "Oguzok": 15.41,
+        "Hazzi": -14.65,
+        "spartan": 10.37,
+        "KTO--TO": 9.91,
+        "Forks": 7.82,
+        "ЗА ВАРКУ": 0.0,
+        "3A BAPKA": 0.0,
+        "p1eXeL": 0.0
+      },
+      "giveUpKills": 304,
+      "teamkills": 6,
+      "revives": 139
+    },
+    {
+      "id": "29-albasrah-2",
+      "map": "SEC 26 AlBasrah AAS v1",
+      "date": "2026-09-29",
+      "netByNick": {
+        "yanchik": 328.12,
+        "Barsik": 311.88,
+        "RIMURU": 265.52,
+        "Mukuru": 261.92,
+        "Joplik": 221.86,
+        "Animo": 220.77,
+        "daddy": -193.08,
+        "VET": 173.85,
+        "Nestor Mahno": -169.24,
+        "p1XeL": 162.83,
+        "S.M.P": 148.1,
+        "akin0v": -142.49,
+        "Keech": -142.36,
+        "Treppen": -135.65,
+        "MrChaykaa": 132.67,
+        "Diray": 128.43,
+        "Prolik": 126.33,
+        "ZensU": 123.16,
+        "m3rz0st": 121.34,
+        "Mahorka": -111.1,
+        "COBRA": 111.08,
+        "LordWolf": -105.21,
+        "Mirgorr": 104.12,
+        "on_hik": 100.69,
+        "Tankist": -91.61,
+        "Pymba": -82.64,
+        "Chappi": -78.45,
+        "Freez": 77.85,
+        "Bahus": 74.75,
+        "FLEX": 64.85,
+        "Kroasawn": -62.26,
+        "CORWAX": 61.44,
+        "NECO": -59.93,
+        "Pugovka": -57.64,
+        "Chidori": -56.03,
+        "KillReal": -54.16,
+        "AkiN": 49.24,
+        "SkiLLeX": 48.94,
+        "Bayle The Dread": -48.5,
+        "Forks": -48.26,
+        "NABAT": 48.13,
+        "lepurple": -42.97,
+        "ART": 36.52,
+        "Edge_CM": 36.2,
+        "Buti": -33.94,
+        "ADUN": 32.32,
+        "angel": 31.49,
+        "Hazzi": 16.95,
+        "firs": -14.17,
+        "Azure": -4.92,
+        "ZLOBA1917": -4.92,
+        "Otto": 1.99,
+        "ЗА ВАРКУ": 0.0,
+        "3A BAPKA": 0.0,
+        "p1eXeL": 0.0
+      },
+      "giveUpKills": 313,
+      "teamkills": 7,
+      "revives": 141
+    },
+    {
+      "id": "30-mutaha",
+      "map": "Mutaha AAS v1",
+      "date": "2026-09-30",
+      "netByNick": {
+        "DirecTor": 319.29,
+        "Pymba": 287.27,
+        "Diray": 218.15,
+        "Tankist": 192.55,
+        "Wi-Fi": -176.88,
+        "Varyag": -173.5,
+        "Maga": 172.01,
+        "COBRA": -161.66,
+        "angel": 160.89,
+        "ZLOBA1917": 157.25,
+        "CAT": -117.55,
+        "Shrein": 110.78,
+        "vasserman": 108.32,
+        "Nickname": 107.07,
+        "KillReal": -105.58,
+        "MrChaykaa": -98.11,
+        "ART": 97.24,
+        "Chidori": -96.52,
+        "ZensU": 95.87,
+        "akin0v": 88.27,
+        "daddy": -86.75,
+        "Mighty": 86.28,
+        "Bahus": -79.42,
+        "Joplik": 77.35,
+        "Jacke_Anderson": 76.65,
+        "L0ST": 69.85,
+        "p1XeL": 69.37,
+        "ЗА ВАРКУ": 68.24,
+        "Jimmy Neutron": -67.54,
+        "Gadler": -67.52,
+        "LordWolf": -66.96,
+        "Radislave": 63.24,
+        "Mukuru": -63.14,
+        "S.M.P": 60.16,
+        "Frosty": 56.97,
+        "Barsik": -56.46,
+        "Trigger": -55.45,
+        "Hazzi": 54.89,
+        "KTO--TO": 53.47,
+        "Trixx": -49.94,
+        "tank2284": -49.37,
+        "Mahorka": -47.0,
+        "Oguzok": -45.5,
+        "Senti": -44.6,
+        "spartan": 43.96,
+        "uglyfromyoung": -38.21,
+        "HSVarvar": -36.93,
+        "VET": -35.66,
+        "_ByBaJIeX_": -35.54,
+        "Kroasawn": -34.69,
+        "Forks": -33.97,
+        "Treppen": 33.87,
+        "AkiN": 26.59,
+        "r4mp": -23.83,
+        "lepurple": -19.8,
+        "m3rz0st": 19.76,
+        "Koperor": -17.42,
+        "SkiLLeX": 15.93,
+        "hillfill": 14.72,
+        "ADUN": 11.56,
+        "freak": 10.83,
+        "Keech": 7.32,
+        "yanchik": 6.79,
+        "Otto": 4.84,
+        "Pugovka": -2.56,
+        "Azure": -1.22,
+        "_ByBaJleX_": 0.0,
+        "3A BAPKA": 0.0
+      },
+      "giveUpKills": 324,
+      "teamkills": 6,
+      "revives": 87
+    },
+    {
+      "id": "30-narva",
+      "map": "Narva AAS v2",
+      "date": "2026-09-30",
+      "netByNick": {
+        "Pymba": 313.83,
+        "Mukuru": 289.8,
+        "tank2284": 258.86,
+        "angel": 253.74,
+        "ZLOBA1917": 225.15,
+        "Nickname": 223.24,
+        "Frosty": 196.89,
+        "Joplik": 184.02,
+        "L0ST": 178.09,
+        "Koperor": 170.76,
+        "Radislave": 158.84,
+        "Wi-Fi": -152.48,
+        "Gadler": -141.67,
+        "Azure": 134.89,
+        "ART": -126.55,
+        "Kroasawn": 119.25,
+        "Hazzi": 118.59,
+        "daddy": 115.82,
+        "CAT": -109.78,
+        "Varyag": -107.52,
+        "AkiN": -103.04,
+        "ЗА ВАРКУ": 101.23,
+        "Mahorka": -94.96,
+        "Trigger": -94.2,
+        "Otto": -91.99,
+        "Shrein": 87.86,
+        "hillfill": -87.83,
+        "COBRA": -85.82,
+        "Maga": -81.7,
+        "Bahus": -81.08,
+        "Diray": 76.36,
+        "lepurple": 66.43,
+        "_ByBaJIeX_": -64.61,
+        "Jimmy Neutron": -60.42,
+        "vasserman": 60.21,
+        "LordWolf": -56.67,
+        "Senti": 56.08,
+        "Treppen": -55.68,
+        "Trixx": -54.45,
+        "Jacke_Anderson": -53.71,
+        "Oguzok": -48.07,
+        "Chidori": -45.47,
+        "Tankist": 44.96,
+        "Forks": 43.35,
+        "Barsik": -43.33,
+        "Pugovka": 33.38,
+        "m3rz0st": 29.16,
+        "Keech": 26.82,
+        "r4mp": 26.68,
+        "VET": -25.57,
+        "freak": -23.49,
+        "SkiLLeX": -17.62,
+        "HSVarvar": -15.99,
+        "ADUN": 14.75,
+        "akin0v": -11.86,
+        "uglyfromyoung": -5.96,
+        "yanchik": -5.19,
+        "spartan": 2.49,
+        "S.M.P": -2.25,
+        "MrChaykaa": 1.71,
+        "KillReal": 0.94,
+        "_ByBaJleX_": 0.0,
+        "3A BAPKA": 0.0
+      },
+      "giveUpKills": 255,
+      "teamkills": 4,
+      "revives": 115
+    },
+    {
+      "id": "02-gorodok",
+      "map": "Gorodok AAS v1",
+      "date": "2026-10-02",
+      "netByNick": {
+        "Gadler": 386.63,
+        "Keech": 349.63,
+        "hillfill": 202.79,
+        "Jim_Washington": 201.97,
+        "Diray": 189.9,
+        "Rindaye": 167.76,
+        "Ilyich": 166.89,
+        "Chidori": 162.91,
+        "Forks": -136.37,
+        "KillReal": 133.02,
+        "Chim_Chopa": -131.15,
+        "T-800": 129.73,
+        "CERBER": 127.77,
+        "VITALYA": 119.58,
+        "CORWAX": 112.86,
+        "Otto": -108.44,
+        "Gexord": 100.67,
+        "uglyfromyoung": 92.15,
+        "spartan": 90.95,
+        "Koperor": 89.27,
+        "_VaGNeR_": -88.28,
+        "AkiN": -80.91,
+        "JESTER": -80.49,
+        "Mighty": -79.03,
+        "qop": -76.37,
+        "KingOfLobs": -71.69,
+        "Blizzardrix": 69.05,
+        "Azure": 66.83,
+        "Trigger": -66.22,
+        "lepurple": 65.74,
+        "Oguzok": 64.94,
+        "KTO--TO": -62.24,
+        "Frosty": 62.06,
+        "SHURUP": -59.21,
+        "angel": -57.3,
+        "COBRA": -56.09,
+        "L0ST": 54.97,
+        "Treppen": -54.18,
+        "ZLOBA1917": 52.39,
+        "Moonky123": -49.78,
+        "yanchik": 49.2,
+        "Bugor": 48.56,
+        "Radislave": -44.71,
+        "ART": 44.59,
+        "Tankist": -42.44,
+        "RostislavKVL": 41.41,
+        "ADUN": -40.82,
+        "Pymba": -39.98,
+        "Tatarin": 39.84,
+        "NECO": 36.93,
+        "Maga": -35.23,
+        "Prolik": -33.46,
+        "freak": 31.63,
+        "Edge_CM": -29.18,
+        "default": 26.94,
+        "m3rz0st": 25.33,
+        "Bahus": -24.71,
+        "ALEKSGAR": -24.35,
+        "MrChaykaa": 23.98,
+        "Kroasawn": -22.92,
+        "Wi-Fi": 22.24,
+        "Foden": -22.15,
+        "CAT": 21.77,
+        "k1t": -20.6,
+        "iKEppA": 20.26,
+        "Sex": 18.45,
+        "Pugovka": 18.4,
+        "Mahorka": 17.41,
+        "Freez": 16.41,
+        "MusKeR": 11.16,
+        "Antoher152": -7.78,
+        "Muhomor": -4.82,
+        "r4mp": 1.54,
+        "tank2284": 0.0
+      },
+      "giveUpKills": 342,
+      "teamkills": 5,
+      "revives": 158
+    },
+    {
+      "id": "02-mutaha",
+      "map": "Mutaha RAAS v1",
+      "date": "2026-10-02",
+      "netByNick": {
+        "Keech": 327.26,
+        "KTO--TO": 305.19,
+        "r4mp": 230.08,
+        "T-800": 220.31,
+        "Forks": -186.0,
+        "Bugor": 170.64,
+        "MrChaykaa": -166.51,
+        "spartan": 151.82,
+        "Kroasawn": 145.3,
+        "default": -132.75,
+        "Pugovka": -127.64,
+        "Jim_Washington": 124.82,
+        "uglyfromyoung": 124.7,
+        "Muhomor": 124.67,
+        "MusKeR": 122.84,
+        "Pymba": -122.06,
+        "Koperor": 121.8,
+        "Azure": 121.45,
+        "NECO": -120.62,
+        "Chidori": 120.52,
+        "Otto": -119.1,
+        "Mighty": -118.6,
+        "freak": 112.7,
+        "Diray": 107.18,
+        "lepurple": 106.57,
+        "Trigger": -102.79,
+        "CERBER": 97.89,
+        "Foden": -95.51,
+        "iKEppA": -94.31,
+        "_VaGNeR_": 92.95,
+        "Wi-Fi": -82.9,
+        "Rindaye": -80.33,
+        "ART": -79.28,
+        "angel": 73.85,
+        "hillfill": -73.29,
+        "Treppen": -70.23,
+        "m3rz0st": 66.64,
+        "COBRA": 66.2,
+        "Blizzardrix": 64.67,
+        "Tankist": 61.39,
+        "ALEKSGAR": 59.61,
+        "Moonky123": -58.26,
+        "Gexord": 57.31,
+        "Maga": 56.44,
+        "k1t": -51.99,
+        "Bahus": 49.75,
+        "Gadler": 47.53,
+        "Steepich": -47.08,
+        "Ilyich": -46.97,
+        "Taipan": 46.52,
+        "SHURUP": 44.87,
+        "Tatarin": 36.81,
+        "ZLOBA1917": -36.6,
+        "Frosty": -33.43,
+        "KillReal": 31.07,
+        "HSVarvar": -30.58,
+        "tank2284": -27.68,
+        "Oguzok": -25.54,
+        "VITALYA": 25.1,
+        "Antoher152": -18.31,
+        "AkiN": -18.15,
+        "Sandro.86": -15.71,
+        "CORWAX": -15.17,
+        "Radislave": -15.06,
+        "CAT": 11.54,
+        "KingOfLobs": -10.03,
+        "JESTER": -7.1,
+        "Edge_CM": -6.31,
+        "Sex": -3.64,
+        "L0ST": -1.94,
+        "ADUN": -0.71,
+        "Mahorka": 0.14,
+        "ЗА ВАРКУ": 0.0
+      },
+      "giveUpKills": 280,
+      "teamkills": 9,
+      "revives": 130
+    },
+    {
+      "id": "02-fallujah",
+      "map": "Fallujah AAS v1",
+      "date": "2026-10-02",
+      "netByNick": {
+        "COBRA": 305.88,
+        "Sex": 272.82,
+        "AkiN": -259.62,
+        "Chidori": -238.85,
+        "KingOfLobs": 237.49,
+        "iKEppA": 209.99,
+        "Rindaye": 189.94,
+        "ADUN": 176.36,
+        "uglyfromyoung": 162.61,
+        "SHURUP": 156.76,
+        "lepurple": 137.66,
+        "KillReal": -134.12,
+        "angel": 132.99,
+        "MusKeR": 131.65,
+        "Forks": -125.66,
+        "Tankist": 123.75,
+        "VITALYA": 120.14,
+        "T-800": 108.37,
+        "Ilyich": 108.19,
+        "Maga": 106.53,
+        "Gexord": 102.49,
+        "hillfill": 96.48,
+        "r4mp": 96.44,
+        "JESTER": -91.75,
+        "MrChaykaa": -89.79,
+        "Muhomor": 85.09,
+        "Otto": -82.71,
+        "freak": 82.62,
+        "Keech": -73.25,
+        "Mighty": -72.24,
+        "Tatarin": 58.65,
+        "Sandro.86": -58.04,
+        "CAT": 57.39,
+        "CERBER": 57.25,
+        "spartan": -45.88,
+        "Azure": -39.39,
+        "Pugovka": -38.85,
+        "HSVarvar": 38.62,
+        "_VaGNeR_": -37.99,
+        "Oguzok": 37.4,
+        "ART": 36.29,
+        "KTO--TO": 35.98,
+        "default": 35.79,
+        "ZLOBA1917": -27.78,
+        "Radislave": -25.94,
+        "Treppen": -25.2,
+        "m3rz0st": 22.23,
+        "Taipan": 19.85,
+        "CORWAX": 14.55,
+        "Steepich": -12.95,
+        "Koperor": 9.58,
+        "Wi-Fi": -6.77,
+        "Edge_CM": 6.08,
+        "Bahus": -4.56,
+        "Frosty": 3.8,
+        "k1t": -0.8,
+        "ЗА ВАРКУ": 0.0
+      },
+      "giveUpKills": 276,
+      "teamkills": 10,
+      "revives": 165
+    },
+    {
+      "id": "03-kokan",
+      "map": "Kokan AAS v2",
+      "date": "2026-10-03",
+      "netByNick": {
+        "Tuxon": 510.45,
+        "xRandr": 456.87,
+        "angel": 383.26,
+        "ASCETICH": 307.35,
+        "Moonky123": 301.75,
+        "ATK.GIGN": 291.82,
+        "Sex": 263.16,
+        "Ilyich": 243.04,
+        "Goob": 199.95,
+        "iKEppA": 198.0,
+        "Otto": 190.74,
+        "yanchik": 184.04,
+        "Varyag": 178.63,
+        "DON ПАДЛО": -173.57,
+        "Grechnevy": 171.7,
+        "Mighty": 171.04,
+        "Doc": 164.44,
+        "KTO--TO": 156.21,
+        "KingOfLobs": 155.95,
+        "k1t": 153.99,
+        "KillReal": 149.42,
+        "ForNikIN": 148.87,
+        "S.M.P": -148.75,
+        "One Attack": -145.76,
+        "Muhomor": 140.04,
+        "Joplik": 135.95,
+        "COBRA": 133.33,
+        "Animo": 133.32,
+        "Bahus": 132.62,
+        "Lina Suetolog": -131.43,
+        "Sandro.86": 131.09,
+        "Bks": 125.24,
+        "ART": 122.02,
+        ".Ghoster": 120.15,
+        "Gadler": -119.18,
+        "Forks": 119.1,
+        "AkiN": -116.9,
+        "Anna_Cokolovaaa": -116.23,
+        "Mahorka": -112.22,
+        "Keech": -110.63,
+        "Nestor Mahno": -109.68,
+        "CAT": -108.41,
+        "default": -102.38,
+        "ZensU": 95.38,
+        "Diray": 94.36,
+        "spartan": -93.84,
+        "Pugovka": 92.61,
+        "m3rz0st": -88.62,
+        "Antoher152": -88.48,
+        "Crowle": 83.07,
+        "Oguzok": -78.7,
+        "Jacke_Anderson": 77.14,
+        "ZLOBA1917": -74.38,
+        "uglyfromyoung": -71.17,
+        "Trigger": -69.54,
+        "CERBER": -67.21,
+        "daddy": -66.43,
+        "firs": 65.64,
+        "Mukuru": -57.62,
+        "Barsik": -55.04,
+        "tank2284": -54.05,
+        "GAD": -47.7,
+        "Bayle The Dread": -42.94,
+        "CORWAX": 35.37,
+        "Rindaye": 35.29,
+        "ADUN": 28.99,
+        "Fluffy_Racc00n": 25.98,
+        "kitayskiy latyao": -25.12,
+        "MrChaykaa": -19.01,
+        "Treppen": -18.11,
+        "JESTER": 16.58,
+        "hillfill": -12.84,
+        "qop": 11.24,
+        "FLEX": 10.28,
+        "lorgon": 9.39,
+        "Buti": -8.58,
+        "T-800": 8.55,
+        "Taipan": 7.64,
+        "SHURUP": -6.65,
+        "Chim_Chopa": -5.63,
+        "VITALYA": 5.03,
+        "SkiLLeX": 3.76,
+        "Radislave": 2.55,
+        "lepurple": 2.09,
+        "Trixx": 0.48,
+        "RIMURU": 0.34,
+        "Tatarin": 0.0,
+        "Ghoster": 0.0,
+        "ForNikN": 0.0
+      },
+      "giveUpKills": 472,
+      "teamkills": 11,
+      "revives": 322
+    },
+    {
+      "id": "03-chora",
+      "map": "Chora AAS v3",
+      "date": "2026-10-03",
+      "netByNick": {
+        "iKEppA": 397.68,
+        "angel": 393.11,
+        "ADUN": 355.6,
+        "Jacke_Anderson": 341.28,
+        "ForNikIN": 334.36,
+        "tank2284": 247.36,
+        "ATK.GIGN": 216.04,
+        "CAT": -206.8,
+        "Moonky123": 204.95,
+        "ZensU": 204.67,
+        "KingOfLobs": 203.37,
+        "k1t": 179.15,
+        "Diray": 170.6,
+        "Tuxon": 166.12,
+        "T-800": 164.68,
+        "GAD": 161.03,
+        "firs": 157.95,
+        "Fluffy_Racc00n": 153.96,
+        "Joplik": 153.86,
+        "Keech": 143.62,
+        "Lina Suetolog": -143.43,
+        "Otto": -139.56,
+        "Forks": -134.49,
+        "DON ПАДЛО": -125.3,
+        "KTO--TO": 123.42,
+        "Bahus": 120.79,
+        "Mighty": 116.05,
+        "Anna_Cokolovaaa": 115.39,
+        "Varyag": 115.29,
+        "yanchik": -110.18,
+        "hillfill": 104.02,
+        "MrChaykaa": -101.13,
+        "RIMURU": 97.16,
+        "Chidori": 96.02,
+        "ZLOBA1917": -92.95,
+        "daddy": -86.11,
+        "m3rz0st": -85.83,
+        "Sandro.86": 85.31,
+        "CORWAX": -83.93,
+        "Gadler": -82.8,
+        "Tatarin": 77.89,
+        "Ilyich": -75.61,
+        "VITALYA": 74.24,
+        "Barsik": -70.66,
+        "uglyfromyoung": 68.13,
+        "Nestor Mahno": -62.87,
+        "Trixx": 61.95,
+        "ART": 61.56,
+        "Chim_Chopa": -60.94,
+        "KillReal": -59.83,
+        "Radislave": 56.51,
+        "SkiLLeX": -55.86,
+        "Doc": 53.4,
+        "JESTER": 53.37,
+        "Bks": 50.18,
+        "Buti": 50.14,
+        "COBRA": 49.8,
+        "SHURUP": -48.36,
+        "Koperor": 46.79,
+        "One Attack": -46.77,
+        "Treppen": -44.89,
+        "Antoher152": 44.37,
+        "qop": 43.88,
+        "Pugovka": 39.08,
+        "Muhomor": -38.48,
+        "lorgon": -37.77,
+        "FLEX": 36.75,
+        "kitayskiy latyao": -32.99,
+        "ASCETICH": -31.49,
+        "Animo": -29.53,
+        "Mukuru": -26.8,
+        "Taipan": -24.92,
+        "Oguzok": -24.26,
+        "lepurple": -22.66,
+        "Bayle The Dread": -19.9,
+        "S.M.P": -19.63,
+        "Mahorka": -13.87,
+        "Rindaye": 11.94,
+        "spartan": -10.45,
+        "AkiN": -6.56,
+        "Trigger": -6.29,
+        "Crowle": -5.07,
+        "Sex": 3.76,
+        "TTT": 0.0
+      },
+      "giveUpKills": 401,
+      "teamkills": 1,
+      "revives": 249
+    },
+    {
+      "id": "03-foolsroad",
+      "map": "Fool's Road RAAS v1",
+      "date": "2026-10-03",
+      "netByNick": {
+        "Anna_Cokolovaaa": 393.29,
+        "iKEppA": 340.91,
+        "ForNikIN": 330.47,
+        "Trigger": 321.29,
+        "Fluffy_Racc00n": 287.68,
+        "COBRA": 229.31,
+        "VITALYA": 223.71,
+        "GAD": 219.08,
+        "ZensU": 207.24,
+        "ASCETICH": 188.23,
+        "CORWAX": 183.43,
+        "k1t": 178.68,
+        "lepurple": 176.79,
+        "KTO--TO": -145.37,
+        "Gadler": 141.98,
+        "Pugovka": -141.79,
+        "Keech": -132.41,
+        "S.M.P": -127.96,
+        "tank2284": -119.98,
+        "Treppen": 119.17,
+        "Radislave": 106.15,
+        "hillfill": 103.62,
+        "RIMURU": -98.45,
+        "Muhomor": 98.03,
+        "angel": 97.07,
+        "Mukuru": -90.77,
+        "SkiLLeX": 85.96,
+        "Rindaye": 84.26,
+        "Koperor": 83.31,
+        "Chim_Chopa": -82.79,
+        "MrChaykaa": -72.65,
+        "Sandro.86": -70.44,
+        "Jacke_Anderson": 69.2,
+        "Bahus": 66.52,
+        "Tatarin": 60.89,
+        "Varyag": 54.55,
+        "ATK.GIGN": 53.95,
+        "Trixx": -47.13,
+        "SHURUP": 46.95,
+        "Bayle The Dread": -46.89,
+        "ADUN": 46.11,
+        "ART": -44.05,
+        "Chidori": 41.93,
+        "Animo": 39.33,
+        "Otto": 34.43,
+        "Buti": 32.96,
+        "Joplik": -32.43,
+        "kitayskiy latyao": -29.97,
+        "CAT": 29.77,
+        "uglyfromyoung": -29.09,
+        "Sex": -25.54,
+        "Mighty": -24.73,
+        "FLEX": -24.4,
+        "Taipan": 21.01,
+        "KingOfLobs": 18.09,
+        "Oguzok": -17.59,
+        "Hu": 13.59,
+        "JESTER": -9.26,
+        "Blizzardrix": -7.39,
+        "ZLOBA1917": -6.78,
+        "AkiN": 4.88
+      },
+      "giveUpKills": 406,
+      "teamkills": 9,
+      "revives": 246
+    }
+  ],
+  "players": {
+    "angel": {
+      "nick": "angel",
+      "rp": 2617.4,
+      "rankLabel": "DIAMOND III",
+      "rankKey": "diamond",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 148.31
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 31.49
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 160.89
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 253.74
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -57.3
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 73.85
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 132.99
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 383.26
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 393.11
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 97.07
+        }
+      ]
+    },
+    "diray": {
+      "nick": "Diray",
+      "rp": 2167.2,
+      "rankLabel": "PLATINUM III",
+      "rankKey": "platinum",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 182.23
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 128.43
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 218.15
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 76.36
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 189.9
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 107.18
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 94.36
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 170.6
+        }
+      ]
+    },
+    "ikeppa": {
+      "nick": "iKEppA",
+      "rp": 2072.5,
+      "rankLabel": "PLATINUM II",
+      "rankKey": "platinum",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 20.26
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -94.31
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 209.99
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 198.0
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 397.68
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 340.91
+        }
+      ]
+    },
+    "zensu": {
+      "nick": "ZensU",
+      "rp": 1876.9,
+      "rankLabel": "PLATINUM I",
+      "rankKey": "platinum",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 150.58
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 123.16
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 95.87
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 95.38
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 204.67
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 207.24
+        }
+      ]
+    },
+    "fornikin": {
+      "nick": "ForNikIN",
+      "rp": 1813.7,
+      "rankLabel": "PLATINUM I",
+      "rankKey": "platinum",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 148.87
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 334.36
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 330.47
+        }
+      ]
+    },
+    "adun": {
+      "nick": "ADUN",
+      "rp": 1808.3,
+      "rankLabel": "PLATINUM I",
+      "rankKey": "platinum",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 184.17
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 32.32
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 11.56
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 14.75
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -40.82
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -0.71
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 176.36
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 28.99
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 355.6
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 46.11
+        }
+      ]
+    },
+    "jopllik": {
+      "nick": "Joplik",
+      "rp": 1703.9,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -36.7
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 221.86
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 77.35
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 184.02
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 135.95
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 153.86
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -32.43
+        }
+      ]
+    },
+    "tuxon": {
+      "nick": "Tuxon",
+      "rp": 1676.6,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 510.45
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 166.12
+        }
+      ]
+    },
+    "t-800": {
+      "nick": "T-800",
+      "rp": 1631.6,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 129.73
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 220.31
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 108.37
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 8.55
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 164.68
+        }
+      ]
+    },
+    "animo": {
+      "nick": "Animo",
+      "rp": 1625.7,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 261.78
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 220.77
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 133.32
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -29.53
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 39.33
+        }
+      ]
+    },
+    "vitalya": {
+      "nick": "VITALYA",
+      "rp": 1567.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 119.58
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 25.1
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 120.14
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 5.03
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 74.24
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 223.71
+        }
+      ]
+    },
+    "atk.gign": {
+      "nick": "ATK.GIGN",
+      "rp": 1561.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 291.82
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 216.04
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 53.95
+        }
+      ]
+    },
+    "pymba": {
+      "nick": "Pymba",
+      "rp": 1536.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 180.33
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -82.64
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 287.27
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 313.83
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -39.98
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -122.06
+        }
+      ]
+    },
+    "kingoflobs": {
+      "nick": "KingOfLobs",
+      "rp": 1533.2,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -71.69
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -10.03
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 237.49
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 155.95
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 203.37
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 18.09
+        }
+      ]
+    },
+    "sex": {
+      "nick": "Sex",
+      "rp": 1529.0,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 18.45
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -3.64
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 272.82
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 263.16
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 3.76
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -25.54
+        }
+      ]
+    },
+    "lepurple": {
+      "nick": "lepurple",
+      "rp": 1525.6,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 55.78
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -42.97
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -19.8
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 66.43
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 65.74
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 106.57
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 137.66
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 2.09
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -22.66
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 176.79
+        }
+      ]
+    },
+    "jacke_anderson": {
+      "nick": "Jacke_Anderson",
+      "rp": 1510.6,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 76.65
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -53.71
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 77.14
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 341.28
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 69.2
+        }
+      ]
+    },
+    "koperor": {
+      "nick": "Koperor",
+      "rp": 1504.1,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -17.42
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 170.76
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 89.27
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 121.8
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 9.58
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 46.79
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 83.31
+        }
+      ]
+    },
+    "tatarin": {
+      "nick": "Tatarin",
+      "rp": 1477.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 203.36
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 39.84
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 36.81
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 58.65
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 0.0
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 77.89
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 60.89
+        }
+      ]
+    },
+    "kto--to": {
+      "nick": "KTO--TO",
+      "rp": 1476.6,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 9.91
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 53.47
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -62.24
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 305.19
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 35.98
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 156.21
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 123.42
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -145.37
+        }
+      ]
+    },
+    "mukuru": {
+      "nick": "Mukuru",
+      "rp": 1468.0,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 154.6
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 261.92
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -63.14
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 289.8
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -57.62
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -26.8
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -90.77
+        }
+      ]
+    },
+    "fluffy_racc00n": {
+      "nick": "Fluffy_Racc00n",
+      "rp": 1467.6,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 25.98
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 153.96
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 287.68
+        }
+      ]
+    },
+    "ascetich": {
+      "nick": "ASCETICH",
+      "rp": 1464.1,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 307.35
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -31.49
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 188.23
+        }
+      ]
+    },
+    "xrandr": {
+      "nick": "xRandr",
+      "rp": 1456.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 456.87
+        }
+      ]
+    },
+    "k1t": {
+      "nick": "k1t",
+      "rp": 1438.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -20.6
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -51.99
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -0.8
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 153.99
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 179.15
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 178.68
+        }
+      ]
+    },
+    "tankist": {
+      "nick": "Tankist",
+      "rp": 1430.7,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 142.14
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -91.61
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 192.55
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 44.96
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -42.44
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 61.39
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 123.75
+        }
+      ]
+    },
+    "azure": {
+      "nick": "Azure",
+      "rp": 1417.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 139.77
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -4.92
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -1.22
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 134.89
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 66.83
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 121.45
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -39.39
+        }
+      ]
+    },
+    "yanchik": {
+      "nick": "yanchik",
+      "rp": 1417.2,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -35.61
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 328.12
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 6.79
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -5.19
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 49.2
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 184.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -110.18
+        }
+      ]
+    },
+    "cobra": {
+      "nick": "COBRA",
+      "rp": 1412.2,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -179.85
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 111.08
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -161.66
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -85.82
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -56.09
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 66.2
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 305.88
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 133.33
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 49.8
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 229.31
+        }
+      ]
+    },
+    "rindaye": {
+      "nick": "Rindaye",
+      "rp": 1408.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 167.76
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -80.33
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 189.94
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 35.29
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 11.94
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 84.26
+        }
+      ]
+    },
+    "muhomor": {
+      "nick": "Muhomor",
+      "rp": 1404.5,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -4.82
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 124.67
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 85.09
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 140.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -38.48
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 98.03
+        }
+      ]
+    },
+    "moonky123": {
+      "nick": "Moonky123",
+      "rp": 1398.7,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -49.78
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -58.26
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 301.75
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 204.95
+        }
+      ]
+    },
+    "ilyich": {
+      "nick": "Ilyich",
+      "rp": 1395.5,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 166.89
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -46.97
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 108.19
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 243.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -75.61
+        }
+      ]
+    },
+    "anna_cokolovaaa": {
+      "nick": "Anna_Cokolovaaa",
+      "rp": 1392.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -116.23
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 115.39
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 393.29
+        }
+      ]
+    },
+    "corwax": {
+      "nick": "CORWAX",
+      "rp": 1353.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 45.34
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 61.44
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 112.86
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -15.17
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 14.55
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 35.37
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -83.93
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 183.43
+        }
+      ]
+    },
+    "hillfill": {
+      "nick": "hillfill",
+      "rp": 1347.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 14.72
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -87.83
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 202.79
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -73.29
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 96.48
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -12.84
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 104.02
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 103.62
+        }
+      ]
+    },
+    "p1xel": {
+      "nick": "p1XeL",
+      "rp": 1343.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 111.59
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 162.83
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 69.37
+        }
+      ]
+    },
+    "keech": {
+      "nick": "Keech",
+      "rp": 1341.5,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -54.48
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -142.36
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 7.32
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 26.82
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 349.63
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 327.26
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -73.25
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -110.63
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 143.62
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -132.41
+        }
+      ]
+    },
+    "gad": {
+      "nick": "GAD",
+      "rp": 1332.4,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -47.7
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 161.03
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 219.08
+        }
+      ]
+    },
+    "nickname": {
+      "nick": "Nickname",
+      "rp": 1330.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 107.07
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 223.24
+        }
+      ]
+    },
+    "jim_washington": {
+      "nick": "Jim_Washington",
+      "rp": 1326.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 201.97
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 124.82
+        }
+      ]
+    },
+    "mirgorr": {
+      "nick": "Mirgorr",
+      "rp": 1323.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 219.12
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 104.12
+        }
+      ]
+    },
+    "director": {
+      "nick": "DirecTor",
+      "rp": 1319.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 319.29
+        }
+      ]
+    },
+    "uglyfromyoung": {
+      "nick": "uglyfromyoung",
+      "rp": 1303.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -38.21
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -5.96
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 92.15
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 124.7
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 162.61
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -71.17
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 68.13
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -29.09
+        }
+      ]
+    },
+    "radislave": {
+      "nick": "Radislave",
+      "rp": 1301.6,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 63.24
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 158.84
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -44.71
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -15.06
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -25.94
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 2.55
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 56.51
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 106.15
+        }
+      ]
+    },
+    "lost": {
+      "nick": "L0ST",
+      "rp": 1301.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 69.85
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 178.09
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 54.97
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -1.94
+        }
+      ]
+    },
+    "frosty": {
+      "nick": "Frosty",
+      "rp": 1286.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 56.97
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 196.89
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 62.06
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -33.43
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 3.8
+        }
+      ]
+    },
+    "art": {
+      "nick": "ART",
+      "rp": 1282.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 133.66
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 36.52
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 97.24
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -126.55
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 44.59
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -79.28
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 36.29
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 122.02
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 61.56
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -44.05
+        }
+      ]
+    },
+    "musker": {
+      "nick": "MusKeR",
+      "rp": 1265.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 11.16
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 122.84
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 131.65
+        }
+      ]
+    },
+    "gexord": {
+      "nick": "Gexord",
+      "rp": 1260.5,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 100.67
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 57.31
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 102.49
+        }
+      ]
+    },
+    "r4mp": {
+      "nick": "r4mp",
+      "rp": 1258.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -72.14
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -23.83
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 26.68
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 1.54
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 230.08
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 96.44
+        }
+      ]
+    },
+    "on_hik": {
+      "nick": "on_hik",
+      "rp": 1255.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 154.48
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 100.69
+        }
+      ]
+    },
+    "tank2284": {
+      "nick": "tank2284",
+      "rp": 1255.1,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -49.37
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 258.86
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 0.0
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -27.68
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -54.05
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 247.36
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -119.98
+        }
+      ]
+    },
+    "barsik": {
+      "nick": "Barsik",
+      "rp": 1221.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 134.92
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 311.88
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -56.46
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -43.33
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -55.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -70.66
+        }
+      ]
+    },
+    "bugor": {
+      "nick": "Bugor",
+      "rp": 1219.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 48.56
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 170.64
+        }
+      ]
+    },
+    "maga": {
+      "nick": "Maga",
+      "rp": 1218.1,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 172.01
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -81.7
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -35.23
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 56.44
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 106.53
+        }
+      ]
+    },
+    "doc": {
+      "nick": "Doc",
+      "rp": 1217.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 164.44
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 53.4
+        }
+      ]
+    },
+    "cerber": {
+      "nick": "CERBER",
+      "rp": 1215.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 127.77
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 97.89
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 57.25
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -67.21
+        }
+      ]
+    },
+    "bahus": {
+      "nick": "Bahus",
+      "rp": 1215.6,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -39.06
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 74.75
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -79.42
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -81.08
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -24.71
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 49.75
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -4.56
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 132.62
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 120.79
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 66.52
+        }
+      ]
+    },
+    "kroasawn": {
+      "nick": "Kroasawn",
+      "rp": 1213.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 69.03
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -62.26
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -34.69
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 119.25
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -22.92
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 145.3
+        }
+      ]
+    },
+    "vet": {
+      "nick": "VET",
+      "rp": 1200.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 87.52
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 173.85
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -35.66
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -25.57
+        }
+      ]
+    },
+    "goob": {
+      "nick": "Goob",
+      "rp": 1200.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 199.95
+        }
+      ]
+    },
+    "shrein": {
+      "nick": "Shrein",
+      "rp": 1198.6,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 110.78
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 87.86
+        }
+      ]
+    },
+    "freez": {
+      "nick": "Freez",
+      "rp": 1191.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 96.81
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 77.85
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 16.41
+        }
+      ]
+    },
+    "hazzi": {
+      "nick": "Hazzi",
+      "rp": 1175.8,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -14.65
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 16.95
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 54.89
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 118.59
+        }
+      ]
+    },
+    "zloba1917": {
+      "nick": "ZLOBA1917",
+      "rp": 1175.7,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -15.68
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -4.92
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 157.25
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 225.15
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 52.39
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -36.6
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -27.78
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -74.38
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -92.95
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -6.78
+        }
+      ]
+    },
+    "bks": {
+      "nick": "Bks",
+      "rp": 1175.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 125.24
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 50.18
+        }
+      ]
+    },
+    "grechnevy": {
+      "nick": "Grechnevy",
+      "rp": 1171.7,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 171.7
+        }
+      ]
+    },
+    "заварку": {
+      "nick": "ЗА ВАРКУ",
+      "rp": 1169.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 0.0
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 0.0
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 68.24
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 101.23
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 0.0
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 0.0
+        }
+      ]
+    },
+    "vasserman": {
+      "nick": "vasserman",
+      "rp": 1168.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 108.32
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 60.21
+        }
+      ]
+    },
+    "gadler": {
+      "nick": "Gadler",
+      "rp": 1165.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -67.52
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -141.67
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 386.63
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 47.53
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -119.18
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -82.8
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 141.98
+        }
+      ]
+    },
+    "spartan": {
+      "nick": "spartan",
+      "rp": 1149.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 10.37
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 43.96
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 2.49
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 90.95
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 151.82
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -45.88
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -93.84
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -10.45
+        }
+      ]
+    },
+    "flex": {
+      "nick": "FLEX",
+      "rp": 1147.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 59.63
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 64.85
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 10.28
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 36.75
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -24.4
+        }
+      ]
+    },
+    "m3rz0st": {
+      "nick": "m3rz0st",
+      "rp": 1145.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 35.92
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 121.34
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 19.76
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 29.16
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 25.33
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 66.64
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 22.23
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -88.62
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -85.83
+        }
+      ]
+    },
+    "edge_cm": {
+      "nick": "Edge_CM",
+      "rp": 1136.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 129.31
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 36.2
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -29.18
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -6.31
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 6.08
+        }
+      ]
+    },
+    "rimuru": {
+      "nick": "RIMURU",
+      "rp": 1134.7,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -129.86
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 265.52
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 0.34
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 97.16
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -98.45
+        }
+      ]
+    },
+    "shurup": {
+      "nick": "SHURUP",
+      "rp": 1134.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -59.21
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 44.87
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 156.76
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -6.65
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -48.36
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 46.95
+        }
+      ]
+    },
+    "blizzardrix": {
+      "nick": "Blizzardrix",
+      "rp": 1126.3,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 69.05
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 64.67
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -7.39
+        }
+      ]
+    },
+    ".ghoster": {
+      "nick": ".Ghoster",
+      "rp": 1120.2,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 120.15
+        }
+      ]
+    },
+    "freak": {
+      "nick": "freak",
+      "rp": 1118.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -95.79
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 10.83
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -23.49
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 31.63
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 112.7
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 82.62
+        }
+      ]
+    },
+    "nabat": {
+      "nick": "NABAT",
+      "rp": 1107.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 59.31
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 48.13
+        }
+      ]
+    },
+    "firs": {
+      "nick": "firs",
+      "rp": 1091.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -117.52
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -14.17
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 65.64
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 157.95
+        }
+      ]
+    },
+    "mighty": {
+      "nick": "Mighty",
+      "rp": 1078.8,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 86.28
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -79.03
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -118.6
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -72.24
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 171.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 116.05
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -24.73
+        }
+      ]
+    },
+    "crowle": {
+      "nick": "Crowle",
+      "rp": 1078.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 83.07
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -5.07
+        }
+      ]
+    },
+    "sandro.86": {
+      "nick": "Sandro.86",
+      "rp": 1072.2,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -15.71
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -58.04
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 131.09
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 85.31
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -70.44
+        }
+      ]
+    },
+    "taipan": {
+      "nick": "Taipan",
+      "rp": 1070.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 46.52
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 19.85
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 7.64
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -24.92
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 21.01
+        }
+      ]
+    },
+    "varyag": {
+      "nick": "Varyag",
+      "rp": 1067.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -173.5
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -107.52
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 178.63
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 115.29
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 54.55
+        }
+      ]
+    },
+    "killreal": {
+      "nick": "KillReal",
+      "rp": 1055.2,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 94.4
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -54.16
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -105.58
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 0.94
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 133.02
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 31.07
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -134.12
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 149.42
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -59.83
+        }
+      ]
+    },
+    "prolik": {
+      "nick": "Prolik",
+      "rp": 1045.7,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -47.18
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 126.33
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -33.46
+        }
+      ]
+    },
+    "rostislavkvl": {
+      "nick": "RostislavKVL",
+      "rp": 1041.4,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 41.41
+        }
+      ]
+    },
+    "aleksgar": {
+      "nick": "ALEKSGAR",
+      "rp": 1035.3,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -24.35
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 59.61
+        }
+      ]
+    },
+    "s.m.p": {
+      "nick": "S.M.P",
+      "rp": 1032.2,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 122.49
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 148.1
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 60.16
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -2.25
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -148.75
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -19.63
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -127.96
+        }
+      ]
+    },
+    "hu": {
+      "nick": "Hu",
+      "rp": 1013.6,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 13.59
+        }
+      ]
+    },
+    "senti": {
+      "nick": "Senti",
+      "rp": 1011.5,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -44.6
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 56.08
+        }
+      ]
+    },
+    "3abapka": {
+      "nick": "3A BAPKA",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 0.0
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 0.0
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 0.0
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 0.0
+        }
+      ]
+    },
+    "p1exel": {
+      "nick": "p1eXeL",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 0.0
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 0.0
+        }
+      ]
+    },
+    "_bybajlex_": {
+      "nick": "_ByBaJleX_",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 0.0
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 0.0
+        }
+      ]
+    },
+    "ghoster": {
+      "nick": "Ghoster",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 0.0
+        }
+      ]
+    },
+    "fornikn": {
+      "nick": "ForNikN",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 0.0
+        }
+      ]
+    },
+    "ttt": {
+      "nick": "TTT",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 0.0
+        }
+      ]
+    },
+    "skillex": {
+      "nick": "SkiLLeX",
+      "rp": 990.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -91.12
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 48.94
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 15.93
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -17.62
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 3.76
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -55.86
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 85.96
+        }
+      ]
+    },
+    "qop": {
+      "nick": "qop",
+      "rp": 978.8,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -76.37
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 11.24
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 43.88
+        }
+      ]
+    },
+    "lorgon": {
+      "nick": "lorgon",
+      "rp": 971.6,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 9.39
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -37.77
+        }
+      ]
+    },
+    "_vagner_": {
+      "nick": "_VaGNeR_",
+      "rp": 966.7,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -88.28
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 92.95
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -37.99
+        }
+      ]
+    },
+    "akin0v": {
+      "nick": "akin0v",
+      "rp": 962.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 28.05
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -142.49
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 88.27
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -11.86
+        }
+      ]
+    },
+    "hsvarvar": {
+      "nick": "HSVarvar",
+      "rp": 955.1,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -36.93
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -15.99
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -30.58
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 38.62
+        }
+      ]
+    },
+    "chappi": {
+      "nick": "Chappi",
+      "rp": 952.4,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 30.81
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -78.45
+        }
+      ]
+    },
+    "steepich": {
+      "nick": "Steepich",
+      "rp": 940.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -47.08
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -12.95
+        }
+      ]
+    },
+    "buti": {
+      "nick": "Buti",
+      "rp": 936.1,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -104.5
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -33.94
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -8.58
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 50.14
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 32.96
+        }
+      ]
+    },
+    "antoher152": {
+      "nick": "Antoher152",
+      "rp": 929.8,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -7.78
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -18.31
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -88.48
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 44.37
+        }
+      ]
+    },
+    "trigger": {
+      "nick": "Trigger",
+      "rp": 926.8,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -55.45
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -94.2
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -66.22
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -102.79
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -69.54
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -6.29
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 321.29
+        }
+      ]
+    },
+    "kitayskiylatyao": {
+      "nick": "kitayskiy latyao",
+      "rp": 911.9,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -25.12
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -32.99
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -29.97
+        }
+      ]
+    },
+    "trixx": {
+      "nick": "Trixx",
+      "rp": 910.9,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -49.94
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -54.45
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 0.48
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 61.95
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -47.13
+        }
+      ]
+    },
+    "_bybajiex_": {
+      "nick": "_ByBaJIeX_",
+      "rp": 899.9,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -35.54
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -64.61
+        }
+      ]
+    },
+    "foden": {
+      "nick": "Foden",
+      "rp": 882.3,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -22.15
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -95.51
+        }
+      ]
+    },
+    "jester": {
+      "nick": "JESTER",
+      "rp": 881.4,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -80.49
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -7.1
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -91.75
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 16.58
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 53.37
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -9.26
+        }
+      ]
+    },
+    "oguzok": {
+      "nick": "Oguzok",
+      "rp": 878.1,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 15.41
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -45.5
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -48.07
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 64.94
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -25.54
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 37.4
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -78.7
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -24.26
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -17.59
+        }
+      ]
+    },
+    "neco": {
+      "nick": "NECO",
+      "rp": 873.0,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 16.6
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -59.93
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 36.93
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -120.62
+        }
+      ]
+    },
+    "jimmyneutron": {
+      "nick": "Jimmy Neutron",
+      "rp": 872.0,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -67.54
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -60.42
+        }
+      ]
+    },
+    "chidori": {
+      "nick": "Chidori",
+      "rp": 850.1,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -134.37
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -56.03
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -96.52
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -45.47
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 162.91
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 120.52
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -238.85
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 96.02
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 41.93
+        }
+      ]
+    },
+    "default": {
+      "nick": "default",
+      "rp": 827.6,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 26.94
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -132.75
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 35.79
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -102.38
+        }
+      ]
+    },
+    "oneattack": {
+      "nick": "One Attack",
+      "rp": 807.5,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -145.76
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -46.77
+        }
+      ]
+    },
+    "baylethedread": {
+      "nick": "Bayle The Dread",
+      "rp": 805.8,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -35.94
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -48.5
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -42.94
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -19.9
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -46.89
+        }
+      ]
+    },
+    "pugovka": {
+      "nick": "Pugovka",
+      "rp": 781.2,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -33.78
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -57.64
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -2.56
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 33.38
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 18.4
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -127.64
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -38.85
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 92.61
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 39.08
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -141.79
+        }
+      ]
+    },
+    "daddy": {
+      "nick": "daddy",
+      "rp": 761.4,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 77.91
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -193.08
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -86.75
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 115.82
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -66.43
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -86.11
+        }
+      ]
+    },
+    "linasuetolog": {
+      "nick": "Lina Suetolog",
+      "rp": 725.1,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -131.43
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -143.43
+        }
+      ]
+    },
+    "chim_chopa": {
+      "nick": "Chim_Chopa",
+      "rp": 719.5,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -131.15
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -5.63
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -60.94
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -82.79
+        }
+      ]
+    },
+    "donпадло": {
+      "nick": "DON ПАДЛО",
+      "rp": 701.1,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -173.57
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -125.3
+        }
+      ]
+    },
+    "treppen": {
+      "nick": "Treppen",
+      "rp": 672.4,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -76.74
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -135.65
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 33.87
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -55.68
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -54.18
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -70.23
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -25.2
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -18.11
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -44.89
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 119.17
+        }
+      ]
+    },
+    "lordwolf": {
+      "nick": "LordWolf",
+      "rp": 671.9,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -99.3
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -105.21
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -66.96
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -56.67
+        }
+      ]
+    },
+    "otto": {
+      "nick": "Otto",
+      "rp": 665.9,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -24.26
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 1.99
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 4.84
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -91.99
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -108.44
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -119.1
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -82.71
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 190.74
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -139.56
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 34.43
+        }
+      ]
+    },
+    "mrchaykaa": {
+      "nick": "MrChaykaa",
+      "rp": 655.7,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 44.54
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 132.67
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -98.11
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 1.71
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 23.98
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -166.51
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -89.79
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -19.01
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -101.13
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -72.65
+        }
+      ]
+    },
+    "wi-fi": {
+      "nick": "Wi-Fi",
+      "rp": 603.2,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -176.88
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -152.48
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 22.24
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -82.9
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -6.77
+        }
+      ]
+    },
+    "mahorka": {
+      "nick": "Mahorka",
+      "rp": 578.5,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -59.86
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -111.1
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -47.0
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -94.96
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 17.41
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 0.14
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -112.22
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -13.87
+        }
+      ]
+    },
+    "cat": {
+      "nick": "CAT",
+      "rp": 577.9,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -117.55
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -109.78
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 21.77
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 11.54
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 57.39
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -108.41
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -206.8
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 29.77
+        }
+      ]
+    },
+    "forks": {
+      "nick": "Forks",
+      "rp": 505.5,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 7.82
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -48.26
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -33.97
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 43.35
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -136.37
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -186.0
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -125.66
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 119.1
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -134.49
+        }
+      ]
+    },
+    "nestormahno": {
+      "nick": "Nestor Mahno",
+      "rp": 495.0,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -163.23
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -169.24
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -109.68
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -62.87
+        }
+      ]
+    },
+    "akin": {
+      "nick": "AkiN",
+      "rp": 446.8,
+      "rankLabel": "IRON III",
+      "rankKey": "iron",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -48.73
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 49.24
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 26.59
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -103.04
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -80.91
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -18.15
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -259.62
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -116.9
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -6.56
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 4.88
+        }
+      ]
+    }
+  },
+  "leaderboard": [
+    {
+      "nick": "angel",
+      "rp": 2617.4,
+      "rankLabel": "DIAMOND III",
+      "rankKey": "diamond",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Diray",
+      "rp": 2167.2,
+      "rankLabel": "PLATINUM III",
+      "rankKey": "platinum",
+      "predatorPlace": null
+    },
+    {
+      "nick": "iKEppA",
+      "rp": 2072.5,
+      "rankLabel": "PLATINUM II",
+      "rankKey": "platinum",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ZensU",
+      "rp": 1876.9,
+      "rankLabel": "PLATINUM I",
+      "rankKey": "platinum",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ForNikIN",
+      "rp": 1813.7,
+      "rankLabel": "PLATINUM I",
+      "rankKey": "platinum",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ADUN",
+      "rp": 1808.3,
+      "rankLabel": "PLATINUM I",
+      "rankKey": "platinum",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Joplik",
+      "rp": 1703.9,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Tuxon",
+      "rp": 1676.6,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "T-800",
+      "rp": 1631.6,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Animo",
+      "rp": 1625.7,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "VITALYA",
+      "rp": 1567.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ATK.GIGN",
+      "rp": 1561.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Pymba",
+      "rp": 1536.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "KingOfLobs",
+      "rp": 1533.2,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Sex",
+      "rp": 1529.0,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "lepurple",
+      "rp": 1525.6,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Jacke_Anderson",
+      "rp": 1510.6,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Koperor",
+      "rp": 1504.1,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Tatarin",
+      "rp": 1477.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "KTO--TO",
+      "rp": 1476.6,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Mukuru",
+      "rp": 1468.0,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Fluffy_Racc00n",
+      "rp": 1467.6,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ASCETICH",
+      "rp": 1464.1,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "xRandr",
+      "rp": 1456.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "k1t",
+      "rp": 1438.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Tankist",
+      "rp": 1430.7,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Azure",
+      "rp": 1417.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "yanchik",
+      "rp": 1417.2,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "COBRA",
+      "rp": 1412.2,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Rindaye",
+      "rp": 1408.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Muhomor",
+      "rp": 1404.5,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Moonky123",
+      "rp": 1398.7,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Ilyich",
+      "rp": 1395.5,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Anna_Cokolovaaa",
+      "rp": 1392.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "CORWAX",
+      "rp": 1353.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "hillfill",
+      "rp": 1347.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "p1XeL",
+      "rp": 1343.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Keech",
+      "rp": 1341.5,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "GAD",
+      "rp": 1332.4,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Nickname",
+      "rp": 1330.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Jim_Washington",
+      "rp": 1326.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Mirgorr",
+      "rp": 1323.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "DirecTor",
+      "rp": 1319.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "uglyfromyoung",
+      "rp": 1303.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Radislave",
+      "rp": 1301.6,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "L0ST",
+      "rp": 1301.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Frosty",
+      "rp": 1286.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ART",
+      "rp": 1282.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "MusKeR",
+      "rp": 1265.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Gexord",
+      "rp": 1260.5,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "r4mp",
+      "rp": 1258.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "on_hik",
+      "rp": 1255.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "tank2284",
+      "rp": 1255.1,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Barsik",
+      "rp": 1221.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Bugor",
+      "rp": 1219.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Maga",
+      "rp": 1218.1,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Doc",
+      "rp": 1217.8,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "CERBER",
+      "rp": 1215.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Bahus",
+      "rp": 1215.6,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Kroasawn",
+      "rp": 1213.7,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "VET",
+      "rp": 1200.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Goob",
+      "rp": 1200.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Shrein",
+      "rp": 1198.6,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Freez",
+      "rp": 1191.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Hazzi",
+      "rp": 1175.8,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ZLOBA1917",
+      "rp": 1175.7,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Bks",
+      "rp": 1175.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Grechnevy",
+      "rp": 1171.7,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ЗА ВАРКУ",
+      "rp": 1169.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "vasserman",
+      "rp": 1168.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Gadler",
+      "rp": 1165.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "spartan",
+      "rp": 1149.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "FLEX",
+      "rp": 1147.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "m3rz0st",
+      "rp": 1145.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Edge_CM",
+      "rp": 1136.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "RIMURU",
+      "rp": 1134.7,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "SHURUP",
+      "rp": 1134.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Blizzardrix",
+      "rp": 1126.3,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": ".Ghoster",
+      "rp": 1120.2,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "freak",
+      "rp": 1118.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "NABAT",
+      "rp": 1107.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "firs",
+      "rp": 1091.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Mighty",
+      "rp": 1078.8,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Crowle",
+      "rp": 1078.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Sandro.86",
+      "rp": 1072.2,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Taipan",
+      "rp": 1070.1,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Varyag",
+      "rp": 1067.4,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "KillReal",
+      "rp": 1055.2,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Prolik",
+      "rp": 1045.7,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "RostislavKVL",
+      "rp": 1041.4,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ALEKSGAR",
+      "rp": 1035.3,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "S.M.P",
+      "rp": 1032.2,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Hu",
+      "rp": 1013.6,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Senti",
+      "rp": 1011.5,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "3A BAPKA",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "p1eXeL",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "_ByBaJleX_",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Ghoster",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ForNikN",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "TTT",
+      "rp": 1000.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "SkiLLeX",
+      "rp": 990.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "qop",
+      "rp": 978.8,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "lorgon",
+      "rp": 971.6,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "_VaGNeR_",
+      "rp": 966.7,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "akin0v",
+      "rp": 962.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "HSVarvar",
+      "rp": 955.1,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Chappi",
+      "rp": 952.4,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Steepich",
+      "rp": 940.0,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Buti",
+      "rp": 936.1,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Antoher152",
+      "rp": 929.8,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Trigger",
+      "rp": 926.8,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "rp": 911.9,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Trixx",
+      "rp": 910.9,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "_ByBaJIeX_",
+      "rp": 899.9,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Foden",
+      "rp": 882.3,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "JESTER",
+      "rp": 881.4,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Oguzok",
+      "rp": 878.1,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "NECO",
+      "rp": 873.0,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "rp": 872.0,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Chidori",
+      "rp": 850.1,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "default",
+      "rp": 827.6,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "One Attack",
+      "rp": 807.5,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Bayle The Dread",
+      "rp": 805.8,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Pugovka",
+      "rp": 781.2,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "daddy",
+      "rp": 761.4,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Lina Suetolog",
+      "rp": 725.1,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Chim_Chopa",
+      "rp": 719.5,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "DON ПАДЛО",
+      "rp": 701.1,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Treppen",
+      "rp": 672.4,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "LordWolf",
+      "rp": 671.9,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Otto",
+      "rp": 665.9,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "MrChaykaa",
+      "rp": 655.7,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Wi-Fi",
+      "rp": 603.2,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Mahorka",
+      "rp": 578.5,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "CAT",
+      "rp": 577.9,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Forks",
+      "rp": 505.5,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Nestor Mahno",
+      "rp": 495.0,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "AkiN",
+      "rp": 446.8,
+      "rankLabel": "IRON III",
+      "rankKey": "iron",
+      "predatorPlace": null
+    }
+  ]
+}
