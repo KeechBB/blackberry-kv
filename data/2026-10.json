@@ -60,9 +60,11 @@
       "server": "#3 bbsquad.online | FCL ARENA",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "112:0",
-      "note": "Junior · R1 112:0 (мы RGF) · ждём R2 · сумма пока 112:0 · #3 FCL ARENA",
+      "r2": "104:0",
+      "note": "Junior · сумма 216:0 (112:0 · 104:0) · #3 FCL ARENA",
       "playersUrl": "data/players/03-alpha.json"
     },
     {

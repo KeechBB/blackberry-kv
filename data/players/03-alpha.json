@@ -1,7 +1,7 @@
 {
   "matchId": "03-alpha",
   "opp": "ALPHA",
-  "note": "Junior vs ALPHA, FCL BlackCoast AAS v1 16v16. R1 112:0 (мы RGF). Ждём R2. Сервер #3 bbsquad.online | FCL ARENA.",
+  "note": "FINAL 2–0. Сумма 216:0. R1 112:0 (мы RGF), R2 104:0 (мы USA). #3 bbsquad.online | FCL ARENA.",
   "r1": [
     {
       "nick": "KTO--TO",
@@ -132,7 +132,136 @@
       "dmg": 75
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 60
+    },
+    {
+      "nick": "Prolik",
+      "res": 8,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 13
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 45
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 11
+    },
+    {
+      "nick": "CERBER",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 65
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 138
+    },
+    {
+      "nick": "lepurple",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 76
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 265
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 209
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 92
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 35
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 98
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 250
+    },
+    {
+      "nick": "Hazzi",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 90
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 193
+    }
+  ],
   "oppR1": [
     {
       "nick": "angel",
@@ -263,6 +392,112 @@
       "dmg": 0
     }
   ],
+  "oppR2": [
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 116
+    },
+    {
+      "nick": "Konrad",
+      "res": 0,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 109
+    },
+    {
+      "nick": "Banka_RedBulla",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 51
+    },
+    {
+      "nick": "Ustinov",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 106
+    },
+    {
+      "nick": "Olivie",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 32
+    },
+    {
+      "nick": "кузнец / Kon",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 73
+    },
+    {
+      "nick": "Remus",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 9
+    },
+    {
+      "nick": "Trix",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 20
+    },
+    {
+      "nick": "Морда",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 26
+    },
+    {
+      "nick": "Dedad",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 63
+    },
+    {
+      "nick": "NOR86",
+      "res": 3,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 65
+    },
+    {
+      "nick": "Сися",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 129
+    },
+    {
+      "nick": "nelipa",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
   "details": {
     "r1": {
       "us": "RGF_FCL",
@@ -279,8 +514,30 @@
       "build": "0 / 0",
       "fobsCreated": "0 / 0"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "us": "USA_FCL",
+      "them": "RGF_FCL",
+      "tickets": "104:0",
+      "len": "13:55",
+      "start": 150,
+      "goals": "0 / 0",
+      "infantry": "-22 / -47",
+      "fob": "0 / 0",
+      "veh": "0 / -20",
+      "bleed": "-24 / -83",
+      "ammo": "0 / 0",
+      "build": "0 / 0",
+      "fobsCreated": "0 / 0"
+    },
+    "total": {
+      "tickets": "2–0 · сумма 216:0 (112:0 · 104:0)",
+      "len": "14:04 + 13:55",
+      "infantry": "-47 / -91",
+      "fob": "0 / 0",
+      "veh": "-10 / -30",
+      "bleed": "-27 / -179",
+      "fobsCreated": "0 / 0"
+    }
   },
   "mvp": {
     "r1": {
@@ -298,10 +555,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Prolik"
+      ],
+      "killer": [
+        "Jimmy Neutron"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "Sandro.86"
+      ]
     }
   }
 }

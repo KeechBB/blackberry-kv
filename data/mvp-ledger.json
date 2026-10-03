@@ -54,7 +54,7 @@
       "id": "03-alpha",
       "day": 3,
       "opp": "ALPHA",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Prolik"
@@ -70,10 +70,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Prolik"
+        ],
+        "killer": [
+          "Jimmy Neutron"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "Sandro.86"
+        ]
       }
     },
     {
@@ -1206,7 +1214,7 @@
     },
     "Jimmy Neutron": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
@@ -1215,6 +1223,14 @@
           "day": 3,
           "opp": "ALPHA",
           "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
         },
@@ -1677,7 +1693,7 @@
       ]
     },
     "Prolik": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -1687,6 +1703,14 @@
           "day": 3,
           "opp": "ALPHA",
           "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -1880,13 +1904,21 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "03-alpha",
           "day": 3,
           "opp": "ALPHA",
           "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -2063,9 +2095,17 @@
     "Trixx": {
       "mvpMedic": 0,
       "mvpKiller": 2,
-      "mvpDamage": 2,
+      "mvpDamage": 3,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "07-avg",
           "day": 7,

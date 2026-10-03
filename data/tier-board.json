@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T20:03:06",
+  "updatedAt": "2026-10-03T20:13:02",
   "source": "tier-autofit · Fit CW-only",
   "holdDays": 2,
   "displayDays": 2,
@@ -174,7 +174,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "strong",
-      "fit": 96.8,
+      "fit": 97.0,
       "role": "Стрелок",
       "since": "2026-10-02",
       "daysHeld": 1,
@@ -187,7 +187,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "strong",
-      "fit": 96.0,
+      "fit": 96.4,
       "role": "Стрелок",
       "since": "2026-10-02",
       "daysHeld": 1,
@@ -200,7 +200,7 @@
       "toTier": 1,
       "dir": "up",
       "band": "strong",
-      "fit": 95.0,
+      "fit": 95.9,
       "role": "Медик",
       "since": "2026-10-03",
       "daysHeld": 0,
@@ -213,7 +213,7 @@
       "toTier": 4,
       "dir": "down",
       "band": "hard",
-      "fit": 67.0,
+      "fit": 66.9,
       "role": "Медик",
       "since": "2026-10-02",
       "daysHeld": 1,
@@ -226,7 +226,7 @@
       "toTier": 2,
       "dir": "down",
       "band": "hard",
-      "fit": 70.2,
+      "fit": 70.0,
       "role": "Стрелок",
       "since": "2026-10-02",
       "daysHeld": 1,
@@ -234,23 +234,23 @@
       "note": "Форма ↓ · удержание 1/2д"
     },
     {
+      "nick": "Radislave",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "almost",
+      "fit": 94.6,
+      "role": "Медик",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
       "nick": "ART",
       "fromTier": 4,
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 94.6,
+      "fit": 94.5,
       "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "Tankist",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "almost",
-      "fit": 93.9,
-      "role": "Тех / водитель",
       "note": "Почти · Fit ≥90%"
     },
     {
@@ -259,18 +259,8 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 93.8,
+      "fit": 94.2,
       "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "Radislave",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "almost",
-      "fit": 93.7,
-      "role": "Медик",
       "note": "Почти · Fit ≥90%"
     },
     {
@@ -294,12 +284,22 @@
       "note": "Почти · Fit ≥90%"
     },
     {
+      "nick": "Tankist",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "almost",
+      "fit": 93.2,
+      "role": "Тех / водитель",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
       "nick": "Bahus",
       "fromTier": 4,
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 92.6,
+      "fit": 92.5,
       "role": "Медик",
       "note": "Почти · Fit ≥90%"
     },
@@ -309,7 +309,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 92.2,
+      "fit": 92.1,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -319,7 +319,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 92.1,
+      "fit": 92.0,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -339,7 +339,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 91.4,
+      "fit": 91.2,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -369,7 +369,7 @@
       "toTier": 1,
       "dir": "up",
       "band": "almost",
-      "fit": 91.1,
+      "fit": 90.9,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -394,22 +394,22 @@
       "note": "Жёлтая зона · Fit 75–85%"
     },
     {
-      "nick": "Otto",
-      "fromTier": 2,
-      "toTier": 3,
-      "dir": "down",
-      "band": "warn",
-      "fit": 81.6,
-      "role": "КО (SL)",
-      "note": "Жёлтая зона · Fit 75–85%"
-    },
-    {
       "nick": "Treppen",
       "fromTier": 1,
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 81.7,
+      "fit": 81.4,
+      "role": "КО (SL)",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Otto",
+      "fromTier": 2,
+      "toTier": 3,
+      "dir": "down",
+      "band": "warn",
+      "fit": 81.5,
       "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     },
@@ -429,7 +429,7 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 83.2,
+      "fit": 83.0,
       "role": "Тех / водитель",
       "note": "Жёлтая зона · Fit 75–85%"
     },
@@ -439,7 +439,7 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 83.5,
+      "fit": 83.4,
       "role": "Тандем",
       "note": "Жёлтая зона · Fit 75–85%"
     }
