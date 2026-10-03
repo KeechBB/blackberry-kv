@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-03T12:12:18.331694+00:00",
+  "updatedAt": "2026-10-03T12:29:40.975016+00:00",
   "startRp": 1000.0,
   "step": 150,
   "radiant3Max": 4500,
@@ -8,7 +8,7 @@
   "excludeSeed": true,
   "historyOnly": true,
   "epoch": "2026-10-03",
-  "formula": "delta=1+49*(Pv-Pk+Pmax-1)/(2*(Pmax-1)); Pk/Pv=current public RP; final Die(+Inactive): enemy zero-sum; TK both -delta; Revive medic +delta*0.6; Wound/nok=0 RP; only PublicMatch history since epoch",
+  "formula": "delta=1+49*(Pv-Pk+Pmax-1)/(2*(Pmax-1)); Pk/Pv=current public RP; final Die(+Inactive): enemy zero-sum; TK both -delta; Revive medic +delta*0.6; Wound/nok=0 RP; combat dmg=KillingDamage enemy Die/nok only (TK dmg excluded); only PublicMatch history since epoch",
   "reviveCoef": 0.6,
   "pMax": 1404.0,
   "matches": [
@@ -18552,7 +18552,7 @@
           "date": "2026-10-03",
           "net": 174.69,
           "won": true,
-          "dmg": 4500.0,
+          "dmg": 3900.0,
           "kills": [
             {
               "kind": "die",
@@ -18884,7 +18884,7 @@
           "date": "2026-10-03",
           "net": 205.14,
           "won": true,
-          "dmg": 5100.0,
+          "dmg": 4800.0,
           "kills": [
             {
               "kind": "die",
@@ -19297,7 +19297,7 @@
           "date": "2026-10-03",
           "net": 12.39,
           "won": false,
-          "dmg": 1800.0,
+          "dmg": 1500.0,
           "kills": [
             {
               "kind": "die",
@@ -20109,7 +20109,7 @@
           "date": "2026-10-03",
           "net": 96.7,
           "won": true,
-          "dmg": 3900.0,
+          "dmg": 3600.0,
           "kills": [
             {
               "kind": "die",
@@ -20465,7 +20465,7 @@
           "date": "2026-10-03",
           "net": 263.65,
           "won": true,
-          "dmg": 5596.0,
+          "dmg": 5296.0,
           "kills": [
             {
               "kind": "die",
@@ -21077,7 +21077,7 @@
           "date": "2026-10-03",
           "net": 190.91,
           "won": true,
-          "dmg": 4500.0,
+          "dmg": 4200.0,
           "kills": [
             {
               "kind": "die",
@@ -22411,7 +22411,7 @@
           "date": "2026-10-03",
           "net": 113.47,
           "won": false,
-          "dmg": 3300.0,
+          "dmg": 3000.0,
           "kills": [
             {
               "kind": "die",
@@ -23900,7 +23900,7 @@
           "date": "2026-10-03",
           "net": 112.83,
           "won": true,
-          "dmg": 2700.0,
+          "dmg": 2400.0,
           "kills": [
             {
               "kind": "die",
@@ -26454,7 +26454,7 @@
           "date": "2026-10-03",
           "net": 215.13,
           "won": true,
-          "dmg": 5772.0,
+          "dmg": 5472.0,
           "kills": [
             {
               "kind": "die",
@@ -27296,7 +27296,7 @@
           "date": "2026-10-03",
           "net": 142.57,
           "won": true,
-          "dmg": 3617.2,
+          "dmg": 3000.0,
           "kills": [
             {
               "kind": "die",
@@ -28663,7 +28663,7 @@
           "date": "2026-10-03",
           "net": 134.89,
           "won": true,
-          "dmg": 2700.0,
+          "dmg": 2400.0,
           "kills": [
             {
               "kind": "die",
@@ -33032,7 +33032,7 @@
           "date": "2026-10-03",
           "net": 23.48,
           "won": true,
-          "dmg": 2100.0,
+          "dmg": 1800.0,
           "kills": [
             {
               "kind": "die",
@@ -35441,7 +35441,7 @@
           "date": "2026-10-03",
           "net": 2.58,
           "won": false,
-          "dmg": 964.0,
+          "dmg": 664.0,
           "kills": [
             {
               "kind": "die",
@@ -35562,7 +35562,7 @@
           "date": "2026-10-03",
           "net": 114.43,
           "won": true,
-          "dmg": 3600.0,
+          "dmg": 3300.0,
           "kills": [
             {
               "kind": "die",
@@ -36026,7 +36026,7 @@
           "date": "2026-10-03",
           "net": 53.33,
           "won": true,
-          "dmg": 331.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -38739,7 +38739,7 @@
           "date": "2026-10-03",
           "net": 38.42,
           "won": true,
-          "dmg": 900.0,
+          "dmg": 600.0,
           "kills": [
             {
               "kind": "die",
@@ -39210,7 +39210,7 @@
           "date": "2026-10-03",
           "net": -44.46,
           "won": true,
-          "dmg": 1200.0,
+          "dmg": 900.0,
           "kills": [
             {
               "kind": "die",
@@ -40578,7 +40578,7 @@
           "date": "2026-10-03",
           "net": -27.54,
           "won": true,
-          "dmg": 1500.0,
+          "dmg": 1200.0,
           "kills": [
             {
               "kind": "die",
@@ -42363,7 +42363,7 @@
           "date": "2026-10-03",
           "net": 126.34,
           "won": true,
-          "dmg": 3900.0,
+          "dmg": 3300.0,
           "kills": [
             {
               "kind": "die",
@@ -42666,7 +42666,7 @@
           "date": "2026-10-03",
           "net": -36.49,
           "won": true,
-          "dmg": 1500.0,
+          "dmg": 1200.0,
           "kills": [
             {
               "kind": "die",
@@ -43781,7 +43781,7 @@
           "date": "2026-10-03",
           "net": 9.9,
           "won": false,
-          "dmg": 1705.2,
+          "dmg": 1405.2,
           "kills": [
             {
               "kind": "die",
@@ -46421,7 +46421,7 @@
           "date": "2026-10-03",
           "net": -0.84,
           "won": true,
-          "dmg": 600.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -46468,7 +46468,7 @@
           "date": "2026-10-03",
           "net": 26.84,
           "won": true,
-          "dmg": 1562.0,
+          "dmg": 1262.0,
           "kills": [
             {
               "kind": "die",
@@ -48497,7 +48497,7 @@
           "date": "2026-10-03",
           "net": -82.12,
           "won": true,
-          "dmg": 1500.0,
+          "dmg": 1200.0,
           "kills": [
             {
               "kind": "die",
@@ -48995,7 +48995,7 @@
           "date": "2026-10-03",
           "net": 16.19,
           "won": false,
-          "dmg": 1200.0,
+          "dmg": 900.0,
           "kills": [
             {
               "kind": "die",
@@ -49486,7 +49486,7 @@
           "date": "2026-10-03",
           "net": 11.58,
           "won": false,
-          "dmg": 900.0,
+          "dmg": 600.0,
           "kills": [
             {
               "kind": "die",
@@ -50731,7 +50731,7 @@
           "date": "2026-10-03",
           "net": 0.06,
           "won": false,
-          "dmg": 2100.0,
+          "dmg": 1800.0,
           "kills": [
             {
               "kind": "die",
@@ -53423,7 +53423,7 @@
           "date": "2026-10-03",
           "net": -49.55,
           "won": true,
-          "dmg": 1500.0,
+          "dmg": 1200.0,
           "kills": [
             {
               "kind": "die",
@@ -54558,7 +54558,7 @@
           "date": "2026-10-03",
           "net": 33.32,
           "won": true,
-          "dmg": 900.0,
+          "dmg": 600.0,
           "kills": [
             {
               "kind": "die",
@@ -55355,7 +55355,7 @@
           "date": "2026-10-03",
           "net": -49.67,
           "won": false,
-          "dmg": 300.0,
+          "dmg": 0.0,
           "kills": [],
           "deaths": [
             {
@@ -56454,7 +56454,7 @@
           "date": "2026-10-03",
           "net": -57.3,
           "won": true,
-          "dmg": 1562.0,
+          "dmg": 1500.0,
           "kills": [
             {
               "kind": "die",
@@ -56680,7 +56680,7 @@
           "date": "2026-10-03",
           "net": -60.35,
           "won": false,
-          "dmg": 486.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -57147,7 +57147,7 @@
           "date": "2026-10-03",
           "net": -51.89,
           "won": true,
-          "dmg": 300.0,
+          "dmg": 0.0,
           "kills": [],
           "deaths": [
             {
@@ -57934,7 +57934,7 @@
           "date": "2026-10-03",
           "net": -37.24,
           "won": true,
-          "dmg": 2100.0,
+          "dmg": 1800.0,
           "kills": [
             {
               "kind": "die",
@@ -60287,7 +60287,7 @@
           "date": "2026-10-03",
           "net": -86.08,
           "won": false,
-          "dmg": 300.0,
+          "dmg": 0.0,
           "kills": [],
           "deaths": [
             {
@@ -60367,7 +60367,7 @@
           "date": "2026-10-03",
           "net": -80.19,
           "won": false,
-          "dmg": 71.0,
+          "dmg": 0.0,
           "kills": [],
           "deaths": [
             {
@@ -60673,7 +60673,7 @@
           "date": "2026-10-03",
           "net": -69.1,
           "won": false,
-          "dmg": 600.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -62138,7 +62138,7 @@
           "date": "2026-10-03",
           "net": -131.1,
           "won": false,
-          "dmg": 600.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -62709,7 +62709,7 @@
           "date": "2026-10-03",
           "net": -121.47,
           "won": true,
-          "dmg": 900.0,
+          "dmg": 600.0,
           "kills": [
             {
               "kind": "die",
@@ -62934,7 +62934,7 @@
           "date": "2026-10-03",
           "net": -124.32,
           "won": false,
-          "dmg": 1200.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -63116,7 +63116,7 @@
           "date": "2026-10-03",
           "net": -66.68,
           "won": false,
-          "dmg": 900.0,
+          "dmg": 600.0,
           "kills": [
             {
               "kind": "die",
@@ -63486,7 +63486,7 @@
           "date": "2026-10-03",
           "net": -81.28,
           "won": false,
-          "dmg": 1386.0,
+          "dmg": 1086.0,
           "kills": [
             {
               "kind": "die",
@@ -64102,7 +64102,7 @@
           "date": "2026-10-03",
           "net": -50.58,
           "won": false,
-          "dmg": 349.4,
+          "dmg": 0.0,
           "kills": [],
           "deaths": [],
           "noks": [],
@@ -64358,7 +64358,7 @@
           "date": "2026-10-03",
           "net": -115.2,
           "won": false,
-          "dmg": 600.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -64461,7 +64461,7 @@
           "date": "2026-10-03",
           "net": -59.8,
           "won": false,
-          "dmg": 662.0,
+          "dmg": 600.0,
           "kills": [
             {
               "kind": "die",
@@ -65908,7 +65908,7 @@
           "date": "2026-10-03",
           "net": -62.3,
           "won": false,
-          "dmg": 600.0,
+          "dmg": 300.0,
           "kills": [
             {
               "kind": "die",
@@ -66141,7 +66141,7 @@
           "date": "2026-10-03",
           "net": -128.84,
           "won": false,
-          "dmg": 641.0,
+          "dmg": 341.0,
           "kills": [
             {
               "kind": "die",
@@ -67200,7 +67200,7 @@
           "date": "2026-10-03",
           "net": 160.04,
           "won": true,
-          "dmg": 3948.7,
+          "dmg": 3348.7,
           "kills": [
             {
               "kind": "die",
@@ -67512,7 +67512,7 @@
           "date": "2026-10-03",
           "net": -496.76,
           "won": true,
-          "dmg": 2441.0,
+          "dmg": 0.0,
           "kills": [],
           "deaths": [
             {

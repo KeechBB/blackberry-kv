@@ -188,6 +188,20 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · SEC · NO SCOUT · NO MEETINGS · лого соперника нет"
+    },
+    {
+      "id": "18-sph",
+      "day": 18,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "SPH",
+      "map": "SEC 26 Mutaha AAS v1",
+      "size": "26v26",
+      "server": "ANY",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · vs clan 2–0 (27.09 Chora) · Mutaha 26 · NO SCOUT"
     }
   ]
 }
