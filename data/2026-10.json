@@ -61,7 +61,7 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · vs clan 2–0 (26.09 Anvil) · NO SCOUT · same day Main vs IMP 21:00"
+      "note": "Junior · FCL · vs clan 2–0 (26.09 Anvil) · NO SCOUT · same day Main vs IMP 21:00 отмена"
     },
     {
       "id": "03-imp",
@@ -74,8 +74,8 @@
       "server": "ANY",
       "rules": "HOTDROP",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · HOTDROP · NO SCOUT · NO MEETINGS · same day Junior vs ALPHA 19:00"
+      "status": "cancel",
+      "note": "отмена · у IMP люди не собрались · Hotdrop Goose Bay 20v20 · same day Junior vs ALPHA 19:00"
     },
     {
       "id": "04-fury",
