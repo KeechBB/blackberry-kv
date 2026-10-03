@@ -87,6 +87,23 @@
       "winner": "RGF",
       "status": "done",
       "playersUrl": "data/training/players/03-chora.json"
+    },
+    {
+      "id": "03-foolsroad",
+      "day": 3,
+      "timeMsk": "23:33",
+      "map": "Fool's Road RAAS v1",
+      "mode": "RAAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "01:06:50",
+      "factionA": "IMF",
+      "ticketsA": 0,
+      "factionB": "PLA",
+      "ticketsB": 3,
+      "winner": "PLA",
+      "status": "done",
+      "playersUrl": "data/training/players/03-foolsroad.json"
     }
   ]
 }
