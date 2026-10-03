@@ -28,7 +28,7 @@
   const ORR_URL = "data/orr.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261003-kokan-tr1";
+    new URLSearchParams(location.search).get("v") || "20261003-no-compare";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -51,7 +51,6 @@
     "#94a3b8",
   ];
   const PROFILE_BASE = "https://bb-squad.ru/players";
-  const COMPARE_BASE = "https://bb-squad.ru/profile";
   const FACTION_FALLBACK = {
     WPMC: "ЧВК СТАРОЕ",
     TLF: "Турция",
@@ -532,22 +531,6 @@
     const href = profileHref(nick);
     if (!href) return escapeHtml(label);
     return `<a class="nick-profile-link" href="${escapeHtml(href)}" target="_top" rel="noopener">${escapeHtml(label)}</a>`;
-  }
-
-  function compareHref(nick) {
-    const clean = String(nick || "").trim();
-    if (!clean || clean === "—") return null;
-    return `${COMPARE_BASE}?compare=${encodeURIComponent(clean)}`;
-  }
-
-  function rankCompareHtml(nick) {
-    const href = compareHref(nick);
-    if (!href) return "";
-    const label = displayNick(nick) || nick;
-    return (
-      `<a class="rank-compare-btn" href="${escapeHtml(href)}" target="_top" rel="noopener" ` +
-      `title="Сравнить с ${escapeHtml(label)}">Сравнить</a>`
-    );
   }
 
   function inRating(nick) {
@@ -1947,7 +1930,7 @@
       .map(
         (p) => `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span>${rankCompareHtml(p.nick)}</div></td>
+        <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
         <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
