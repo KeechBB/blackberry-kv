@@ -1802,7 +1802,7 @@
           };
           bump(mvp.medic, "mvpMedic");
           bump(mvp.killer, "mvpKiller");
-          bump(mvp.damage, "mvpDamage");
+          // War-Score / боевой счёт — не считаем на тренировках (нет достоверного источника)
           bump(mvp.antiDeath, "antiDeath");
         });
 
@@ -1933,7 +1933,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1953,10 +1953,8 @@
         <td class="ctr">${p.kills}</td>
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
-        <td class="ctr">${p.dmg}</td>
         <td class="ctr col-mvp-medic">${Number(p.mvpMedic) || 0}</td>
         <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
-        <td class="ctr col-mvp-war">${Number(p.mvpDamage) || 0}</td>
         <td class="ctr col-mvp-anti">${Number(p.antiDeath) || 0}</td>
       </tr>`
       )
@@ -3852,7 +3850,7 @@
         };
         bumpMvp(mvp.medic, "mvpMedic");
         bumpMvp(mvp.killer, "mvpKiller");
-        bumpMvp(mvp.damage, "mvpDamage");
+        // без War-Score на тренировках
         bumpMvp(mvp.antiDeath, "antiDeath");
       }
       if (roster > 0) {
@@ -3887,7 +3885,6 @@
       ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
       ["Килы ∑", String(totalKills)],
       ["Смерти ∑", String(totalDeaths)],
-      ["Боевой ∑", String(totalDmg)],
     ]
       .map(
         ([k, v]) =>
@@ -4095,7 +4092,6 @@
       ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
       ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
       ["Килы ∑", String(totalKills)],
-      ["Боевой ∑", String(totalDmg)],
     ]
       .map(
         ([k, v]) =>
@@ -4110,7 +4106,6 @@
       .slice()
       .sort((a, b) => b.kd - a.kd || b.kills - a.kills)
       .slice(0, 12);
-    const topDmg = players.slice().sort((a, b) => b.dmg - a.dmg || b.kills - a.kills).slice(0, 12);
     const topWin = players
       .filter((p) => p.games >= 2)
       .slice()
@@ -4152,11 +4147,6 @@
         { label: "KD", cls: "ctr", key: "kd" },
         { label: "K/D", cls: "ctr", value: (r) => `${r.kills}/${r.deaths}` },
       ]),
-      taTopTable("Боевой счёт", topDmg, [
-        nickCol,
-        { label: "Счёт", cls: "ctr", key: "dmg" },
-        { label: "Килы", cls: "ctr", key: "kills" },
-      ]),
       taTopTable("% побед (мин. 2)", topWin, [
         nickCol,
         { label: "W%", cls: "ctr", value: (r) => (r.winPct != null ? r.winPct + "%" : "—") },
@@ -4194,7 +4184,6 @@
 
     const topMedic = players.slice().sort((a, b) => b.mvpMedic - a.mvpMedic || b.res - a.res).filter((p) => p.mvpMedic > 0).slice(0, 10);
     const topKiller = players.slice().sort((a, b) => b.mvpKiller - a.mvpKiller || b.kills - a.kills).filter((p) => p.mvpKiller > 0).slice(0, 10);
-    const topWar = players.slice().sort((a, b) => b.mvpDamage - a.mvpDamage || b.dmg - a.dmg).filter((p) => p.mvpDamage > 0).slice(0, 10);
     const topAnti = players.slice().sort((a, b) => b.antiDeath - a.antiDeath || b.deaths - a.deaths).filter((p) => p.antiDeath > 0).slice(0, 10);
 
     document.getElementById("train-an-mvp").innerHTML = [
@@ -4207,11 +4196,6 @@
         nickCol,
         { label: "MVP", cls: "ctr col-mvp-killer", key: "mvpKiller" },
         { label: "Килы", cls: "ctr", key: "kills" },
-      ]),
-      taTopTable("MVP War-Score", topWar, [
-        nickCol,
-        { label: "MVP", cls: "ctr col-mvp-war", key: "mvpDamage" },
-        { label: "Счёт", cls: "ctr", key: "dmg" },
       ]),
       taTopTable("Anti-MVP", topAnti, [
         nickCol,
@@ -4327,7 +4311,10 @@
               r2: [],
               details: data.details || null,
               mvpByRound: {
-                r1: pickMvps(all),
+                r1: (() => {
+                  const m = pickMvps(all);
+                  return { ...m, damage: [] };
+                })(),
                 r2: { medic: [], killer: [], damage: [], antiDeath: [] },
               },
               _training: true,
@@ -4364,7 +4351,7 @@
 
     modalBody.innerHTML =
       `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
-      `Ресы / ноки / килы / смерти / боевой счёт — со скринов табло.</p>`;
+      `Ресы / ноки / килы / смерти — со скринов табло / логов.</p>`;
   }
 
   function labelTrainTabs(m) {
@@ -4552,7 +4539,11 @@
     const counts = modalTab === "total" ? medalCountsForNick(nick) : roundMvpsForNick(nick);
     const parts = [];
     const kindClass = { medic: "medic", killer: "killer", damage: "war", antiDeath: "anti" };
-    ["medic", "killer", "damage", "antiDeath"].forEach((kind) => {
+    const kinds =
+      modalPlayers && modalPlayers._training
+        ? ["medic", "killer", "antiDeath"]
+        : ["medic", "killer", "damage", "antiDeath"];
+    kinds.forEach((kind) => {
       const n = counts[kind];
       if (!n) return;
       const cls = `mvp-badge ${kindClass[kind]}`;
@@ -4641,6 +4632,7 @@
     const sorted = sortRows(rows);
     const foot = totalsRow(sorted);
     const showPwrDelta = modalTab === "total" && !!(modalPlayers && modalPlayers._training);
+    const showDmg = !isTrain;
     const records = {
       res: maxOf(sorted, "res"),
       nok: maxOf(sorted, "nok"),
@@ -4663,7 +4655,7 @@
               ${th("kills", "Килы", "ctr")}
               ${th("deaths", "Смерти", "ctr")}
               ${th("kd", "KD", "ctr")}
-              ${th("dmg", "Боевой счёт", "ctr")}
+              ${showDmg ? th("dmg", "Боевой счёт", "ctr") : ""}
               ${showPwrDelta ? th("pwrDelta", "Δ RP", "ctr") : ""}
             </tr>
           </thead>
@@ -4680,7 +4672,7 @@
               ${cellRecord(p.kills, records.kills > 0 && p.kills === records.kills, false)}
               ${cellRecord(p.deaths, records.deaths > 0 && p.deaths === records.deaths, true)}
               ${cellRecord(formatKd(kd), records.kd > 0 && kd === records.kd, false)}
-              ${cellRecord(p.dmg, records.dmg > 0 && p.dmg === records.dmg, false)}
+              ${showDmg ? cellRecord(p.dmg, records.dmg > 0 && p.dmg === records.dmg, false) : ""}
               ${showPwrDelta ? `<td class="ctr ${pd.cls}">${pd.text}</td>` : ""}
             </tr>`;
               })
@@ -4695,7 +4687,7 @@
               <td class="ctr">${num(foot.kills)}</td>
               <td class="ctr">${num(foot.deaths)}</td>
               <td class="ctr">${formatKd(foot.deaths ? Math.round((foot.kills / foot.deaths) * 100) / 100 : foot.kills)}</td>
-              <td class="ctr">${num(foot.dmg)}</td>
+              ${showDmg ? `<td class="ctr">${num(foot.dmg)}</td>` : ""}
               ${showPwrDelta ? `<td class="ctr">—</td>` : ""}
             </tr>
           </tfoot>
