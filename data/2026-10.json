@@ -106,10 +106,12 @@
       "server": "20R",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
       "r1": "79:0",
       "playersUrl": "data/players/04-20r.json",
-      "note": "R1 79:0 ADF·WPMC · 41:55 · R2 pending · Main SEC · Fury Junior cancel same slot"
+      "note": "Main · сумма 79:56 (79:0 · 0:56) · раунды 1–1 · R1 ADF·WPMC 41:55 · R2 WPMC·ADF 31:04 · Chora AAS v2",
+      "meeting": "2–0",
+      "r2": "0:56"
     },
     {
       "id": "06-fox",

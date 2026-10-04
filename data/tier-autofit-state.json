@@ -8,11 +8,35 @@
       "kind": "promote",
       "fromTier": 2,
       "toTier": 1,
-      "fit": 96.5,
+      "fit": 96.0,
       "band": "strong",
       "role": "Медик",
       "since": "2026-10-03",
       "daysHeld": 1,
+      "ready": false
+    },
+    {
+      "nick": "Radislave",
+      "kind": "promote",
+      "fromTier": 2,
+      "toTier": 1,
+      "fit": 95.4,
+      "band": "strong",
+      "role": "Медик",
+      "since": "2026-10-04",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Runetik",
+      "kind": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "fit": 55.8,
+      "band": "hard",
+      "role": "Стрелок",
+      "since": "2026-10-04",
+      "daysHeld": 0,
       "ready": false
     }
   ],

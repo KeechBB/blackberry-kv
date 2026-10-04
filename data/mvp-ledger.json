@@ -88,7 +88,7 @@
       "id": "04-20r",
       "day": 4,
       "opp": "20Royals",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Radislave"
@@ -104,10 +104,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Mighty"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "iKEppA"
+        ],
+        "antiDeath": [
+          "Treppen"
+        ]
       }
     },
     {
@@ -1599,11 +1607,19 @@
       ]
     },
     "Mighty": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "07-avg",
           "day": 7,
@@ -2118,6 +2134,22 @@
         }
       ]
     },
+    "Treppen": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Trigger": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -2432,8 +2464,8 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 7,
-      "mvpDamage": 1,
+      "mvpKiller": 8,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
         {
@@ -2443,6 +2475,22 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "15-dcai",
