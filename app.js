@@ -1340,6 +1340,17 @@
           const n = Number(v);
           if (key && Number.isFinite(n)) orrByNick.set(key, n);
         });
+        // Legacy / rebuilds sometimes ship only `players` without `byNick`.
+        if (!orrByNick.size && orrJson && Array.isArray(orrJson.players)) {
+          orrJson.players.forEach((row) => {
+            const key = String(row && row.nick ? row.nick : "")
+              .trim()
+              .toLowerCase()
+              .replace(/\s+/g, "");
+            const n = Number(row && row.orr);
+            if (key && Number.isFinite(n)) orrByNick.set(key, n);
+          });
+        }
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
