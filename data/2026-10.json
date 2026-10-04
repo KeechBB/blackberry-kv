@@ -92,8 +92,8 @@
       "server": "Fury",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · NO SCOUT · NO MEETINGS · same slot Main vs 20R v1"
+      "status": "cancel",
+      "note": "отмена · Junior · SEC 26 Chora AAS v2 · same slot Main vs 20R v1"
     },
     {
       "id": "04-20r",
@@ -107,7 +107,7 @@
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · vs clan 2–0 (26.09 Goose) · same slot Junior vs Fury v2"
+      "note": "Main · SEC · vs clan 2–0 (26.09 Goose) · same slot Junior vs Fury v2 (Fury отмена)"
     },
     {
       "id": "06-fox",
