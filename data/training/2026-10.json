@@ -140,6 +140,25 @@
       "status": "done",
       "playersUrl": "data/training/players/04-kokan.json",
       "note": "RP pending — TR1 log SSH unreachable at intake"
+    },
+    {
+      "id": "04-harju",
+      "day": 4,
+      "timeMsk": "23:33",
+      "map": "Harju AAS v2",
+      "mode": "AAS",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "51:51",
+      "factionA": "USMC",
+      "ticketsA": 0,
+      "factionB": "RGF",
+      "ticketsB": 80,
+      "winner": "RGF",
+      "status": "done",
+      "playersUrl": "data/training/players/04-harju.json",
+      "source": "tr1-logs",
+      "note": "Авто из логов TR1"
     }
   ]
 }
