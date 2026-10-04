@@ -1,5 +1,21 @@
 [
   {
+    "id": "04-sumari",
+    "map": "Sumari Bala AAS v1",
+    "date": "2026-10-04",
+    "log": "SquadGame-2026.10.04-sumari-kokan.log",
+    "start": "2026-10-04T18:30:25+00:00",
+    "end": "2026-10-04T19:26:27+00:00"
+  },
+  {
+    "id": "04-kokan",
+    "map": "Kokan RAAS v1",
+    "date": "2026-10-04",
+    "log": "SquadGame-2026.10.04-sumari-kokan.log",
+    "start": "2026-10-04T19:31:11+00:00",
+    "end": "2026-10-04T20:24:14+00:00"
+  },
+  {
     "id": "04-harju",
     "map": "Harju AAS v2",
     "date": "2026-10-04",
