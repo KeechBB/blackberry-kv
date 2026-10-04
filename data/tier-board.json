@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-03T20:13:02",
+  "updatedAt": "2026-10-04T22:10:40",
   "source": "tier-autofit · Fit CW-only",
   "holdDays": 2,
   "displayDays": 2,
@@ -165,73 +165,48 @@
       "at": "2026-10-02",
       "fit": null,
       "note": "Активность / форма"
-    }
-  ],
-  "candidates": [
-    {
-      "nick": "Oguzok",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "strong",
-      "fit": 97.0,
-      "role": "Стрелок",
-      "since": "2026-10-02",
-      "daysHeld": 1,
-      "ready": false,
-      "note": "Сильный ↑ · удержание 1/2д"
     },
     {
       "nick": "Hazzi",
       "fromTier": 4,
       "toTier": 3,
       "dir": "up",
-      "band": "strong",
-      "fit": 96.4,
-      "role": "Стрелок",
-      "since": "2026-10-02",
-      "daysHeld": 1,
-      "ready": false,
-      "note": "Сильный ↑ · удержание 1/2д"
-    },
-    {
-      "nick": "Kroasawn",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "strong",
-      "fit": 95.9,
-      "role": "Медик",
-      "since": "2026-10-03",
-      "daysHeld": 0,
-      "ready": false,
-      "note": "Сильный ↑ · удержание 0/2д"
+      "at": "2026-10-04",
+      "fit": 96.2,
+      "note": "Авто Fit 96.2% · удержание 2д"
     },
     {
       "nick": "Varyag",
       "fromTier": 3,
       "toTier": 4,
       "dir": "down",
-      "band": "hard",
-      "fit": 66.9,
-      "role": "Медик",
-      "since": "2026-10-02",
-      "daysHeld": 1,
-      "ready": false,
-      "note": "Форма ↓ · удержание 1/2д"
+      "at": "2026-10-04",
+      "fit": 66.8,
+      "note": "Авто Fit 66.8% · удержание 2д"
     },
     {
       "nick": "JESTER",
       "fromTier": 1,
       "toTier": 2,
       "dir": "down",
-      "band": "hard",
-      "fit": 70.0,
-      "role": "Стрелок",
-      "since": "2026-10-02",
+      "at": "2026-10-04",
+      "fit": 68.1,
+      "note": "Авто Fit 68.1% · удержание 2д"
+    }
+  ],
+  "candidates": [
+    {
+      "nick": "Kroasawn",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "strong",
+      "fit": 96.5,
+      "role": "Медик",
+      "since": "2026-10-03",
       "daysHeld": 1,
       "ready": false,
-      "note": "Форма ↓ · удержание 1/2д"
+      "note": "Сильный ↑ · удержание 1/2д"
     },
     {
       "nick": "Radislave",
@@ -244,12 +219,12 @@
       "note": "Почти · Fit ≥90%"
     },
     {
-      "nick": "ART",
+      "nick": "Oguzok",
       "fromTier": 4,
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 94.5,
+      "fit": 94.3,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -259,17 +234,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 94.2,
-      "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "NestorMahno",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 93.3,
+      "fit": 94.1,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -279,7 +244,17 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 93.2,
+      "fit": 93.1,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "One Attack",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 93.1,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -289,28 +264,8 @@
       "toTier": 1,
       "dir": "up",
       "band": "almost",
-      "fit": 93.2,
+      "fit": 92.8,
       "role": "Тех / водитель",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "Bahus",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 92.5,
-      "role": "Медик",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "Muhomor",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 92.1,
-      "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
     {
@@ -319,7 +274,17 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 92.0,
+      "fit": 92.2,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "ART",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 92.1,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -334,32 +299,12 @@
       "note": "Почти · Fit ≥90%"
     },
     {
-      "nick": "One Attack",
+      "nick": "Nickname",
       "fromTier": 4,
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 91.2,
-      "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "Bks",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 91.1,
-      "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "SHURUP",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 91.1,
+      "fit": 91.6,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -369,7 +314,47 @@
       "toTier": 1,
       "dir": "up",
       "band": "almost",
+      "fit": 91.3,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Bahus",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.1,
+      "role": "Медик",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Bks",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.0,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "NestorMahno",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
       "fit": 90.9,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Muhomor",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 90.6,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -389,18 +374,8 @@
       "toTier": 3,
       "dir": "down",
       "band": "warn",
-      "fit": 76.0,
+      "fit": 75.6,
       "role": "Медик",
-      "note": "Жёлтая зона · Fit 75–85%"
-    },
-    {
-      "nick": "Treppen",
-      "fromTier": 1,
-      "toTier": 2,
-      "dir": "down",
-      "band": "warn",
-      "fit": 81.4,
-      "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     },
     {
@@ -409,7 +384,17 @@
       "toTier": 3,
       "dir": "down",
       "band": "warn",
-      "fit": 81.5,
+      "fit": 80.7,
+      "role": "КО (SL)",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Treppen",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 80.8,
       "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     },
@@ -419,7 +404,7 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 82.2,
+      "fit": 81.8,
       "role": "ГП",
       "note": "Жёлтая зона · Fit 75–85%"
     },
@@ -429,7 +414,7 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 83.0,
+      "fit": 82.4,
       "role": "Тех / водитель",
       "note": "Жёлтая зона · Fit 75–85%"
     },
@@ -439,10 +424,41 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 83.4,
+      "fit": 84.2,
       "role": "Тандем",
       "note": "Жёлтая зона · Fit 75–85%"
     }
   ],
-  "appliedNow": []
+  "appliedNow": [
+    {
+      "nick": "Hazzi",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "at": "2026-10-04",
+      "fit": 96.2,
+      "note": "Авто Fit 96.2% · удержание 2д",
+      "actor": "автофит"
+    },
+    {
+      "nick": "Varyag",
+      "fromTier": 3,
+      "toTier": 4,
+      "dir": "down",
+      "at": "2026-10-04",
+      "fit": 66.8,
+      "note": "Авто Fit 66.8% · удержание 2д",
+      "actor": "автофит"
+    },
+    {
+      "nick": "JESTER",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "at": "2026-10-04",
+      "fit": 68.1,
+      "note": "Авто Fit 68.1% · удержание 2д",
+      "actor": "автофит"
+    }
+  ]
 }

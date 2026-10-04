@@ -1,0 +1,468 @@
+{
+  "matchId": "04-20r",
+  "opp": "20Royals",
+  "note": "R1 79:0 (ADF vs WPMC) · Chora AAS v2 · 41:55 · R2 pending",
+  "r1": [
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 121
+    },
+    {
+      "nick": "Runetik",
+      "res": 4,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 75
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 9,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 63
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 176
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 336
+    },
+    {
+      "nick": "KillReal",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 45
+    },
+    {
+      "nick": "angel",
+      "res": 2,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 264
+    },
+    {
+      "nick": "Mighty",
+      "res": 12,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 49
+    },
+    {
+      "nick": "Antoher152",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 144
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 241
+    },
+    {
+      "nick": "daddy",
+      "res": 12,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 147
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 328
+    },
+    {
+      "nick": "Radislave",
+      "res": 18,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 62
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 347
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 130
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 94
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 198
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 5,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 123
+    },
+    {
+      "nick": "Nickname",
+      "res": 4,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 103
+    },
+    {
+      "nick": "Tankist",
+      "res": 5,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 158
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 253
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 438
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 15,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 288
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 377
+    },
+    {
+      "nick": "lepurple",
+      "res": 8,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 200
+    },
+    {
+      "nick": "COBRA",
+      "res": 2,
+      "nok": 11,
+      "kills": 11,
+      "deaths": 2,
+      "dmg": 261
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "20R Roze",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 44
+    },
+    {
+      "nick": "20R CatDuck",
+      "res": 0,
+      "nok": 20,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 655
+    },
+    {
+      "nick": "20R Spartacus xXx",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 199
+    },
+    {
+      "nick": "((DS)) Tuff",
+      "res": 10,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 89
+    },
+    {
+      "nick": "20R LAiM",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 299
+    },
+    {
+      "nick": "DaPieMaster",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 154
+    },
+    {
+      "nick": "20R Ant",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 284
+    },
+    {
+      "nick": "20R Legit1261",
+      "res": 2,
+      "nok": 18,
+      "kills": 11,
+      "deaths": 2,
+      "dmg": 321
+    },
+    {
+      "nick": "20R One Autumn Leaf",
+      "res": 3,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 199
+    },
+    {
+      "nick": "20R atn",
+      "res": 1,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 84
+    },
+    {
+      "nick": "RNL DaggerGun",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 80
+    },
+    {
+      "nick": "20R LockJaw",
+      "res": 9,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 95
+    },
+    {
+      "nick": "20R Ragefire",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 213
+    },
+    {
+      "nick": "Screen Pecker",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 260
+    },
+    {
+      "nick": "20R SQUEEZE MY LEMON",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 141
+    },
+    {
+      "nick": "1stMD Floeffel",
+      "res": 5,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 154
+    },
+    {
+      "nick": "Fob The Builder",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 173
+    },
+    {
+      "nick": "GYLFI_theKING",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 147
+    },
+    {
+      "nick": "SPH WW D4shu",
+      "res": 5,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 99
+    },
+    {
+      "nick": "20R HungryPapa",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 125
+    },
+    {
+      "nick": "RNL WW Twins N",
+      "res": 3,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 90
+    },
+    {
+      "nick": "20R IamRudyyy",
+      "res": 0,
+      "nok": 18,
+      "kills": 9,
+      "deaths": 4,
+      "dmg": 334
+    },
+    {
+      "nick": "a person",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 132
+    },
+    {
+      "nick": "20R jackstoner",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 128
+    },
+    {
+      "nick": "20R WW JCarril",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 63
+    },
+    {
+      "nick": "20R Prince Ali",
+      "res": 4,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 120
+    }
+  ],
+  "oppR2": [],
+  "details": {
+    "r1": {
+      "us": "ADF",
+      "them": "WPMC",
+      "tickets": "79:0",
+      "len": "41:55",
+      "start": 180,
+      "goals": "+20 / +10",
+      "infantry": "-108 / -130",
+      "fob": "0 / 0",
+      "veh": "-13 / -28",
+      "bleed": "0 / -32",
+      "ammo": "5500 / 5380",
+      "build": "3700 / 3600",
+      "fobsCreated": "1 / 1"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Radislave"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Blizzardrix"
+      ],
+      "antiDeath": [
+        "Blizzardrix"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

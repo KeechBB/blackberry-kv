@@ -85,6 +85,32 @@
       }
     },
     {
+      "id": "04-20r",
+      "day": 4,
+      "opp": "20Royals",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Blizzardrix"
+        ],
+        "antiDeath": [
+          "Blizzardrix"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "04-20royals",
       "day": 4,
       "opp": "20Royals",
@@ -903,9 +929,25 @@
     "Blizzardrix": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 2,
-      "antiDeath": 1,
+      "mvpDamage": 3,
+      "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "16-hell",
           "day": 16,
@@ -1749,11 +1791,19 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 8,
+      "mvpMedic": 9,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
       "awards": [
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "04-20royals",
           "day": 4,
@@ -2382,10 +2432,18 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 6,
+      "mvpKiller": 7,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "15-dcai",
           "day": 15,
