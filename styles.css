@@ -960,16 +960,16 @@ body.modal-open { overflow: hidden; }
   font-weight: 600;
   min-width: 4.2rem;
 }
-.rating-table .col-tp {
+.rating-table .col-tu {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
   min-width: 4.4rem;
 }
-.rating-table .col-tp.tp-plus {
+.rating-table .col-tu.tu-plus {
   color: #86efac;
 }
-.rating-table .col-tp.tp-minus {
+.rating-table .col-tu.tu-minus {
   color: #fca5a5;
 }
 .rating-table .pwr-band {

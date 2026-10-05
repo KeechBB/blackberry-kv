@@ -211,7 +211,7 @@
   let tierByNick = new Map();
   let displayNickByKey = new Map();
   let ratingRows = [];
-  let ratingSortKey = "tp";
+  let ratingSortKey = "tu";
   let ratingSortDir = "desc";
   let orrByNick = new Map();
   let trainRatingRows = [];
@@ -1457,9 +1457,9 @@
           const kills = Number(p.kills) || 0;
           const deaths = Number(p.deaths) || 0;
           const res = Number(p.res) || 0;
-          // ТП — средние тикеты команде за игру: килл +1, рес +1, смерть −1
+          // TU — Ticket Utility: средние тикеты команде за игру (килл +1, рес +1, смерть −1)
           const ticketNet = kills + res - deaths;
-          const tp =
+          const tu =
             games > 0 ? Math.round((100 * ticketNet) / games) / 100 : null;
           const base = {
             ...p,
@@ -1467,7 +1467,7 @@
             kd: deaths === 0 ? kills : Math.round((kills / deaths) * 100) / 100,
             winPct,
             ticketNet,
-            tp,
+            tu,
           };
           const nickKey =
             resolveNickKey(p.nick) || String(p.nick).trim().toLowerCase().replace(/\s+/g, "");
@@ -1503,7 +1503,7 @@
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.tp) || -1e9) - (Number(a.tp) || -1e9) ||
+              (Number(b.tu) || -1e9) - (Number(a.tu) || -1e9) ||
               (Number(b.ticketNet) || 0) - (Number(a.ticketNet) || 0) ||
               (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
@@ -1515,7 +1515,7 @@
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — ТП (тикеты за игру).`
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — TU.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
@@ -1563,15 +1563,13 @@
         return a.nick.localeCompare(b.nick, "ru");
       }
       if (
-        ratingSortKey === "orr" ||
-        ratingSortKey === "tp" ||
+        ratingSortKey === "tu" ||
         ratingSortKey === "pwrLabel" ||
         ratingSortKey === "rank" ||
         ratingSortKey === "pwr" ||
         ratingSortKey === "rp"
       ) {
-        const field =
-          ratingSortKey === "orr" ? "orr" : ratingSortKey === "tp" ? "tp" : "rp";
+        const field = ratingSortKey === "tu" ? "tu" : "rp";
         const av = a[field] == null ? -1e9 : Number(a[field]);
         const bv = b[field] == null ? -1e9 : Number(b[field]);
         if (av !== bv) return dir * (av - bv);
@@ -1587,31 +1585,30 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
     tbody.innerHTML = rows
       .map((p) => {
-        const tp = p.tp;
-        const tpCls =
-          tp == null
-            ? "ctr col-tp"
-            : tp > 0
-              ? "ctr col-tp tp-plus"
-              : tp < 0
-                ? "ctr col-tp tp-minus"
-                : "ctr col-tp";
-        const tpText =
-          tp == null ? "—" : (tp > 0 ? "+" : "") + String(tp);
-        const tpTitle =
+        const tu = p.tu;
+        const tuCls =
+          tu == null
+            ? "ctr col-tu"
+            : tu > 0
+              ? "ctr col-tu tu-plus"
+              : tu < 0
+                ? "ctr col-tu tu-minus"
+                : "ctr col-tu";
+        const tuText =
+          tu == null ? "—" : (tu > 0 ? "+" : "") + String(tu);
+        const tuTitle =
           p.ticketNet != null
             ? `Сумма тикетов: ${p.ticketNet > 0 ? "+" : ""}${p.ticketNet} за ${p.kv} кат.`
             : "";
         return `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="${tpCls}" title="${escapeHtml(tpTitle)}"><strong>${tpText}</strong></td>
-        <td class="ctr col-orr">${p.orr != null ? p.orr : "—"}</td>
+        <td class="${tuCls}" title="${escapeHtml(tuTitle)}"><strong>${tuText}</strong></td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
