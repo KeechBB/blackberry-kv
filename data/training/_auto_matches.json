@@ -38,5 +38,13 @@
     "log": "SquadGame-backup-2026.10.05-20.18.05.log",
     "start": "2026-10-05T19:13:40+00:00",
     "end": "2026-10-05T20:17:10+00:00"
+  },
+  {
+    "id": "05-cslmutaha",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-05",
+    "log": "SquadGame-2026.10.05-cslmutaha.log",
+    "start": "2026-10-05T20:28:47+00:00",
+    "end": "2026-10-05T20:59:12+00:00"
   }
 ]
