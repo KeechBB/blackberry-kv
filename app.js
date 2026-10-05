@@ -211,7 +211,7 @@
   let tierByNick = new Map();
   let displayNickByKey = new Map();
   let ratingRows = [];
-  let ratingSortKey = "orr";
+  let ratingSortKey = "tp";
   let ratingSortDir = "desc";
   let orrByNick = new Map();
   let trainRatingRows = [];
@@ -1454,11 +1454,20 @@
           const games = Number(p.kv) || 0;
           const winPct =
             games > 0 ? Math.round((1000 * (Number(p.wins) || 0)) / games) / 10 : null;
+          const kills = Number(p.kills) || 0;
+          const deaths = Number(p.deaths) || 0;
+          const res = Number(p.res) || 0;
+          // ТП — средние тикеты команде за игру: килл +1, рес +1, смерть −1
+          const ticketNet = kills + res - deaths;
+          const tp =
+            games > 0 ? Math.round((100 * ticketNet) / games) / 100 : null;
           const base = {
             ...p,
             games,
-            kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
+            kd: deaths === 0 ? kills : Math.round((kills / deaths) * 100) / 100,
             winPct,
+            ticketNet,
+            tp,
           };
           const nickKey =
             resolveNickKey(p.nick) || String(p.nick).trim().toLowerCase().replace(/\s+/g, "");
@@ -1494,9 +1503,9 @@
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.orr) || -1e9) - (Number(a.orr) || -1e9) ||
+              (Number(b.tp) || -1e9) - (Number(a.tp) || -1e9) ||
+              (Number(b.ticketNet) || 0) - (Number(a.ticketNet) || 0) ||
               (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
-              (Number(b.kills) || 0) - (Number(a.kills) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
           )
           .forEach((p, i) => {
@@ -1506,7 +1515,7 @@
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — ORR.`
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — ТП (тикеты за игру).`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
@@ -1555,12 +1564,14 @@
       }
       if (
         ratingSortKey === "orr" ||
+        ratingSortKey === "tp" ||
         ratingSortKey === "pwrLabel" ||
         ratingSortKey === "rank" ||
         ratingSortKey === "pwr" ||
         ratingSortKey === "rp"
       ) {
-        const field = ratingSortKey === "orr" ? "orr" : "rp";
+        const field =
+          ratingSortKey === "orr" ? "orr" : ratingSortKey === "tp" ? "tp" : "rp";
         const av = a[field] == null ? -1e9 : Number(a[field]);
         const bv = b[field] == null ? -1e9 : Number(b[field]);
         if (av !== bv) return dir * (av - bv);
@@ -1576,15 +1587,31 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="18" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
     tbody.innerHTML = rows
-      .map(
-        (p) => `<tr>
+      .map((p) => {
+        const tp = p.tp;
+        const tpCls =
+          tp == null
+            ? "ctr col-tp"
+            : tp > 0
+              ? "ctr col-tp tp-plus"
+              : tp < 0
+                ? "ctr col-tp tp-minus"
+                : "ctr col-tp";
+        const tpText =
+          tp == null ? "—" : (tp > 0 ? "+" : "") + String(tp);
+        const tpTitle =
+          p.ticketNet != null
+            ? `Сумма тикетов: ${p.ticketNet > 0 ? "+" : ""}${p.ticketNet} за ${p.kv} кат.`
+            : "";
+        return `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-orr"><strong>${p.orr != null ? p.orr : "—"}</strong></td>
+        <td class="${tpCls}" title="${escapeHtml(tpTitle)}"><strong>${tpText}</strong></td>
+        <td class="ctr col-orr">${p.orr != null ? p.orr : "—"}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
@@ -1600,8 +1627,8 @@
         <td class="ctr col-mvp-killer">${p.mvpKiller}</td>
         <td class="ctr col-mvp-war">${p.mvpDamage}</td>
         <td class="ctr col-mvp-anti">${p.antiDeath}</td>
-      </tr>`
-      )
+      </tr>`;
+      })
       .join("");
     refreshDualScrolls();
   }
