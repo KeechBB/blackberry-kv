@@ -27,7 +27,12 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261005-tu";
+    new URLSearchParams(location.search).get("v") || "20261005-place";
+
+  /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
+  function scoreOrFloor(v) {
+    return v == null || !Number.isFinite(Number(v)) ? -1e9 : Number(v);
+  }
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -98,6 +103,7 @@
   /** Respect Points ranks: step 150, Iron I → Radiant III, then Predator. */
   const TRAIN_RP = {
     startRp: 1000,
+    minRp: 1, // ниже 1 опуститься нельзя
     step: 150,
     radiant3Max: 4500,
     names: [
@@ -115,8 +121,14 @@
     roman: ["I", "II", "III"],
   };
 
+  function clampTrainRp(v) {
+    if (v == null || !Number.isFinite(Number(v))) return null;
+    return Math.max(TRAIN_RP.minRp, Number(v));
+  }
+
   function rpRankFromScore(rp) {
-    const rpI = Math.round(Number(rp) || 0);
+    const clamped = clampTrainRp(rp);
+    const rpI = Math.round(clamped == null ? 0 : clamped);
     if (rpI > TRAIN_RP.radiant3Max) {
       return { label: "PREDATOR", rankKey: "predator", predator: true };
     }
@@ -1449,8 +1461,8 @@
           if (rpHit) {
             return {
               ...base,
-              rp: rpHit.rp,
-              pwr: rpHit.rp,
+              rp: clampTrainRp(rpHit.rp),
+              pwr: clampTrainRp(rpHit.rp),
               pwrLabel: rpHit.rankLabel,
               rankKey: rpHit.rankKey,
               predatorPlace: rpHit.predatorPlace,
@@ -1469,7 +1481,7 @@
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.tu) || -1e9) - (Number(a.tu) || -1e9) ||
+              scoreOrFloor(b.tu) - scoreOrFloor(a.tu) ||
               (Number(b.ticketNet) || 0) - (Number(a.ticketNet) || 0) ||
               (Number(b.kv) || 0) - (Number(a.kv) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
@@ -1536,9 +1548,13 @@
         ratingSortKey === "rp"
       ) {
         const field = ratingSortKey === "tu" ? "tu" : "rp";
-        const av = a[field] == null ? -1e9 : Number(a[field]);
-        const bv = b[field] == null ? -1e9 : Number(b[field]);
-        if (av !== bv) return dir * (av - bv);
+        const d =
+          scoreOrFloor(a[field]) - scoreOrFloor(b[field]) ||
+          (field === "tu"
+            ? (Number(a.ticketNet) || 0) - (Number(b.ticketNet) || 0) ||
+              (Number(a.kv) || 0) - (Number(b.kv) || 0)
+            : (Number(a.games) || 0) - (Number(b.games) || 0));
+        if (d !== 0) return dir * d;
         return a.nick.localeCompare(b.nick, "ru");
       }
       const av = Number(a[ratingSortKey]) || 0;
@@ -1814,8 +1830,8 @@
           if (rpHit) {
             return {
               ...base,
-              rp: rpHit.rp,
-              pwr: rpHit.rp,
+              rp: clampTrainRp(rpHit.rp),
+              pwr: clampTrainRp(rpHit.rp),
               pwrLabel: rpHit.rankLabel,
               rankKey: rpHit.rankKey,
               predatorPlace: rpHit.predatorPlace,
@@ -1835,7 +1851,7 @@
           .slice()
           .sort(
             (a, b) =>
-              (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) ||
+              scoreOrFloor(b.rp) - scoreOrFloor(a.rp) ||
               (Number(b.games) || 0) - (Number(a.games) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
           )
@@ -1909,10 +1925,17 @@
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
-      if (trainRatingSortKey === "pwrLabel" || trainRatingSortKey === "rank" || trainRatingSortKey === "pwr" || trainRatingSortKey === "rp") {
-        const av = a.rp == null ? -1e9 : Number(a.rp);
-        const bv = b.rp == null ? -1e9 : Number(b.rp);
-        if (av !== bv) return dir * (av - bv);
+      if (
+        trainRatingSortKey === "pwrLabel" ||
+        trainRatingSortKey === "rank" ||
+        trainRatingSortKey === "pwr" ||
+        trainRatingSortKey === "rp"
+      ) {
+        /* Те же тайбрейки, что при выдаче «Место» (RP → каток → ник) */
+        const d =
+          scoreOrFloor(a.rp) - scoreOrFloor(b.rp) ||
+          (Number(a.games) || 0) - (Number(b.games) || 0);
+        if (d !== 0) return dir * d;
         return a.nick.localeCompare(b.nick, "ru");
       }
       const av = Number(a[trainRatingSortKey]) || 0;
@@ -4057,7 +4080,7 @@
       .slice()
       .sort(
         (a, b) =>
-          (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) ||
+          scoreOrFloor(b.rp) - scoreOrFloor(a.rp) ||
           b.games - a.games ||
           String(a.nick).localeCompare(String(b.nick), "ru")
       )
@@ -4103,7 +4126,10 @@
       .slice(0, 12);
     const topPwr = players
       .slice()
-      .sort((a, b) => (Number(b.rp) || -1e9) - (Number(a.rp) || -1e9) || b.games - a.games)
+      .sort(
+        (a, b) =>
+          scoreOrFloor(b.rp) - scoreOrFloor(a.rp) || b.games - a.games
+      )
       .slice(0, 12);
 
     const nickCol = {

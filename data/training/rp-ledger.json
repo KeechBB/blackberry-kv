@@ -280536,7 +280536,7 @@
     },
     "forks": {
       "nick": "Forks",
-      "rp": -38.2,
+      "rp": 1.0,
       "rankLabel": "IRON I",
       "rankKey": "iron",
       "roman": "I",
@@ -283320,7 +283320,7 @@
     },
     {
       "nick": "Forks",
-      "rp": -38.2,
+      "rp": 1.0,
       "rankLabel": "IRON I",
       "rankKey": "iron",
       "predatorPlace": null
