@@ -1,0 +1,590 @@
+{
+  "matchId": "05-albasrahraasv3",
+  "map": "Al Basrah RAAS v3",
+  "mode": "AAS",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "37:49",
+  "winner": "Canadian Armed Forces",
+  "sideA": {
+    "name": "People's Liberation Army",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "Canadian Armed Forces",
+    "tickets": 232
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "Mahorka",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 2839
+    },
+    {
+      "nick": "default",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 2111
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 5,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 2854
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1802
+    },
+    {
+      "nick": "Mighty",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1728
+    },
+    {
+      "nick": "Frosty",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1827
+    },
+    {
+      "nick": "FLEX",
+      "res": 2,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1735
+    },
+    {
+      "nick": "k1t",
+      "res": 8,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1758
+    },
+    {
+      "nick": "Skromnyi",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1660
+    },
+    {
+      "nick": "Bks",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1522
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1435
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1371
+    },
+    {
+      "nick": "Antoher152",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1222
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 1249
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1520
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1334
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 2,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 3057
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 874
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 1160
+    },
+    {
+      "nick": "Mukuru",
+      "res": 8,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 848
+    },
+    {
+      "nick": "Animo",
+      "res": 5,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 875
+    },
+    {
+      "nick": "CORWAX",
+      "res": 12,
+      "nok": 1,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 548
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 9,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 1074
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 1137
+    },
+    {
+      "nick": "p1XeL",
+      "res": 1,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 1021
+    },
+    {
+      "nick": "ADUN",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 465
+    },
+    {
+      "nick": "ART",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 698
+    },
+    {
+      "nick": "WoodMan",
+      "res": 3,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 734
+    },
+    {
+      "nick": "GAD",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 425
+    },
+    {
+      "nick": "Muhomor",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 362
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 7,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 930
+    },
+    {
+      "nick": "lorgon",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 62
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 52
+    },
+    {
+      "nick": "Bayle The Dread",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0
+    },
+    {
+      "nick": "Inrikus",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0
+    },
+    {
+      "nick": "Trigger",
+      "res": 11,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 0
+    },
+    {
+      "nick": "Tuxon",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 23,
+      "kills": 17,
+      "deaths": 0,
+      "dmg": 9102
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 4946
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 15,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 4758
+    },
+    {
+      "nick": "akin0v",
+      "res": 2,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 4633
+    },
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 3946
+    },
+    {
+      "nick": "angel",
+      "res": 2,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 3612
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 3318
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 2870
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 2600
+    },
+    {
+      "nick": "CAT",
+      "res": 2,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2526
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2521
+    },
+    {
+      "nick": "Rindaye",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 2375
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 1759
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 2231
+    },
+    {
+      "nick": "Inrikus",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1944
+    },
+    {
+      "nick": "JESTER",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1643
+    },
+    {
+      "nick": "lepurple",
+      "res": 5,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1526
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1448
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 11,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 2003
+    },
+    {
+      "nick": "Bahus",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1197
+    },
+    {
+      "nick": "vasserman",
+      "res": 4,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1484
+    },
+    {
+      "nick": "spartan",
+      "res": 6,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1359
+    },
+    {
+      "nick": "CERBER",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 1011
+    },
+    {
+      "nick": "Azure",
+      "res": 5,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 848
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 972
+    },
+    {
+      "nick": "Morty",
+      "res": 12,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 858
+    },
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 660
+    },
+    {
+      "nick": "Doc",
+      "res": 13,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 548
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 388
+    },
+    {
+      "nick": "ALEKSGAR",
+      "res": 9,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 62
+    },
+    {
+      "nick": "qop",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0
+    }
+  ]
+}
