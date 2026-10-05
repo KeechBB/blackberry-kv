@@ -215,6 +215,24 @@
       "status": "done",
       "playersUrl": "data/training/players/05-cslmutaha.json",
       "source": "tr1-logs-auto"
+    },
+    {
+      "id": "05-cslmutaha-2",
+      "day": 5,
+      "timeMsk": "23:59",
+      "map": "CSL Mutaha Skirmish v1",
+      "mode": "—",
+      "size": "—",
+      "server": "Blackberry | Training - Blackberries #1",
+      "duration": "29:16",
+      "factionA": "Russian Ground Forces",
+      "ticketsA": 0,
+      "factionB": "United States Army",
+      "ticketsB": 150,
+      "winner": "United States Army",
+      "status": "done",
+      "playersUrl": "data/training/players/05-cslmutaha-2.json",
+      "source": "tr1-logs-auto"
     }
   ]
 }

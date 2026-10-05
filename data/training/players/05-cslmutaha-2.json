@@ -1,0 +1,358 @@
+{
+  "matchId": "05-cslmutaha-2",
+  "map": "CSL Mutaha Skirmish v1",
+  "mode": "—",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "29:16",
+  "winner": "United States Army",
+  "sideA": {
+    "name": "Russian Ground Forces",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "United States Army",
+    "tickets": 150
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 24,
+      "kills": 15,
+      "deaths": 3,
+      "dmg": 7778
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 1,
+      "nok": 18,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 5320
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 4350
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 2190
+    },
+    {
+      "nick": "WoodMan",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 1983
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2215
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 11,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 2441
+    },
+    {
+      "nick": "Animo",
+      "res": 9,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1238
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 902
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1155
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1200
+    },
+    {
+      "nick": "k1t",
+      "res": 1,
+      "nok": 8,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 1352
+    },
+    {
+      "nick": "Bks",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 822
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 630
+    },
+    {
+      "nick": "ART",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 495
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 733
+    },
+    {
+      "nick": "ADUN",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 398
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 4,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 218
+    },
+    {
+      "nick": "GAD",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 165
+    },
+    {
+      "nick": "p1XeL",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 0
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 0
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Keech",
+      "res": 3,
+      "nok": 19,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 5492
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 12,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 4683
+    },
+    {
+      "nick": "angel",
+      "res": 1,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 4318
+    },
+    {
+      "nick": "Morty",
+      "res": 10,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 4119
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 3884
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 3017
+    },
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 2821
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 2575
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 1,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 2498
+    },
+    {
+      "nick": "S.M.P",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 2248
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 2035
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 8,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 1539
+    },
+    {
+      "nick": "Hazzi",
+      "res": 3,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1588
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1435
+    },
+    {
+      "nick": "vasserman",
+      "res": 10,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1435
+    },
+    {
+      "nick": "spartan",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1050
+    },
+    {
+      "nick": "JESTER",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1011
+    },
+    {
+      "nick": "Bahus",
+      "res": 10,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 724
+    },
+    {
+      "nick": "akin0v",
+      "res": 2,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 401
+    },
+    {
+      "nick": "Rindaye",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 339
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 62
+    }
+  ]
+}
