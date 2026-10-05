@@ -1,0 +1,1604 @@
+{
+  "updatedAt": "2026-10-05T08:21:28.911045+00:00",
+  "matchesWithStats": 22,
+  "command": {
+    "overallLead": "Keech",
+    "Main": {
+      "lead": "Keech",
+      "assistant": "Chidori"
+    },
+    "Junior": {
+      "lead": "Jimmy Neutron",
+      "assistant": "VET"
+    }
+  },
+  "note": "stack = где чаще играл; ничья → последний матч; лиды закреплены",
+  "main": [
+    {
+      "nick": "AkiN",
+      "main": 9,
+      "junior": 8,
+      "total": 17,
+      "stack": "Main"
+    },
+    {
+      "nick": "Radislave",
+      "main": 8,
+      "junior": 7,
+      "total": 15,
+      "stack": "Main"
+    },
+    {
+      "nick": "lepurple",
+      "main": 11,
+      "junior": 2,
+      "total": 13,
+      "stack": "Main"
+    },
+    {
+      "nick": "Chidori",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "stack": "Main"
+    },
+    {
+      "nick": "Diray",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "stack": "Main"
+    },
+    {
+      "nick": "KillReal",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "stack": "Main"
+    },
+    {
+      "nick": "iKEppA",
+      "main": 11,
+      "junior": 0,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "Keech",
+      "main": 10,
+      "junior": 1,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "Kroasawn",
+      "main": 9,
+      "junior": 2,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "LordWolf",
+      "main": 10,
+      "junior": 1,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "angel",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "Blizzardrix",
+      "main": 9,
+      "junior": 1,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "MrChaykaa",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "Treppen",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "ZensU",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "Gadler",
+      "main": 9,
+      "junior": 0,
+      "total": 9,
+      "stack": "Main"
+    },
+    {
+      "nick": "Mukuru",
+      "main": 9,
+      "junior": 0,
+      "total": 9,
+      "stack": "Main"
+    },
+    {
+      "nick": "S.M.P",
+      "main": 8,
+      "junior": 1,
+      "total": 9,
+      "stack": "Main"
+    },
+    {
+      "nick": "Summer",
+      "main": 7,
+      "junior": 1,
+      "total": 8,
+      "stack": "Main"
+    },
+    {
+      "nick": "yanchik",
+      "main": 8,
+      "junior": 0,
+      "total": 8,
+      "stack": "Main"
+    },
+    {
+      "nick": "CAT",
+      "main": 7,
+      "junior": 0,
+      "total": 7,
+      "stack": "Main"
+    },
+    {
+      "nick": "akin0v",
+      "main": 5,
+      "junior": 1,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "Azure",
+      "main": 6,
+      "junior": 0,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "Durik",
+      "main": 3,
+      "junior": 3,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "JESTER",
+      "main": 6,
+      "junior": 0,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "Runetik",
+      "main": 4,
+      "junior": 1,
+      "total": 5,
+      "stack": "Main"
+    },
+    {
+      "nick": "T-800",
+      "main": 3,
+      "junior": 2,
+      "total": 5,
+      "stack": "Main"
+    },
+    {
+      "nick": "daddy",
+      "main": 3,
+      "junior": 1,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Hikkomaru",
+      "main": 4,
+      "junior": 0,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Morty",
+      "main": 3,
+      "junior": 1,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Otto",
+      "main": 4,
+      "junior": 0,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Pymba",
+      "main": 4,
+      "junior": 0,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "_VaGNeR_",
+      "main": 2,
+      "junior": 1,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "FLEX",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "Kuchenchips",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "qop",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "Buti",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "Nickname",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "vasserman",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "Zerox",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "Antoher152",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "GAD",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "Jopllik",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "Lazy",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "MuskeR",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    }
+  ],
+  "junior": [
+    {
+      "nick": "Barsik",
+      "main": 7,
+      "junior": 9,
+      "total": 16,
+      "stack": "Junior"
+    },
+    {
+      "nick": "VET",
+      "main": 7,
+      "junior": 8,
+      "total": 15,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "main": 3,
+      "junior": 11,
+      "total": 14,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Tankist",
+      "main": 4,
+      "junior": 9,
+      "total": 13,
+      "stack": "Junior"
+    },
+    {
+      "nick": "freak",
+      "main": 6,
+      "junior": 6,
+      "total": 12,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Forks",
+      "main": 0,
+      "junior": 11,
+      "total": 11,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ADUN",
+      "main": 1,
+      "junior": 9,
+      "total": 10,
+      "stack": "Junior"
+    },
+    {
+      "nick": "COBRA",
+      "main": 2,
+      "junior": 8,
+      "total": 10,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Trixx",
+      "main": 2,
+      "junior": 8,
+      "total": 10,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Trigger",
+      "main": 0,
+      "junior": 9,
+      "total": 9,
+      "stack": "Junior"
+    },
+    {
+      "nick": "KTO--TO",
+      "main": 0,
+      "junior": 8,
+      "total": 8,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ZLOBA1917",
+      "main": 0,
+      "junior": 8,
+      "total": 8,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Hazzi",
+      "main": 0,
+      "junior": 7,
+      "total": 7,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Oguzok",
+      "main": 0,
+      "junior": 7,
+      "total": 7,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Koperor",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Mahorka",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Mighty",
+      "main": 1,
+      "junior": 5,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Prolik",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "uglyfromyoung",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ART",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Bahus",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "m3rz0st",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "MadMax",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Sandro.86",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "CERBER",
+      "main": 1,
+      "junior": 3,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "firs",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Nestor Mahno",
+      "main": 1,
+      "junior": 3,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "One Attack",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "spartan",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Varyag",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Zik",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "HSVarvar",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Jerom101",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Maga",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "r4mp",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Rindaye",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Senti",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "tank2284",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Tatarin",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Edge_CM",
+      "main": 0,
+      "junior": 2,
+      "total": 2,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Goob",
+      "main": 0,
+      "junior": 2,
+      "total": 2,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Muhomor",
+      "main": 0,
+      "junior": 2,
+      "total": 2,
+      "stack": "Junior"
+    },
+    {
+      "nick": "_ByBaJleX_",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "AMUR",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Animo",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Archi",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ATK.GIGN",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Bashik",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Bks",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "C2H5OH",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "CORWAX",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "DarkVader",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "DOSTAVKA",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ForNikIN",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "HunterN7",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Ilyich",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "KingOfLobs",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "lorgon",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "LOST",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Moonky123",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "on_hik",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "rezZzister",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "saosk.beb",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "SerChan1",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Shrein",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "SHURUP",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "VITALYA",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Водитель Газели",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    }
+  ],
+  "all": [
+    {
+      "nick": "Barsik",
+      "main": 7,
+      "junior": 9,
+      "total": 16,
+      "stack": "Junior"
+    },
+    {
+      "nick": "VET",
+      "main": 7,
+      "junior": 8,
+      "total": 15,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "main": 3,
+      "junior": 11,
+      "total": 14,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Tankist",
+      "main": 4,
+      "junior": 9,
+      "total": 13,
+      "stack": "Junior"
+    },
+    {
+      "nick": "freak",
+      "main": 6,
+      "junior": 6,
+      "total": 12,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Forks",
+      "main": 0,
+      "junior": 11,
+      "total": 11,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ADUN",
+      "main": 1,
+      "junior": 9,
+      "total": 10,
+      "stack": "Junior"
+    },
+    {
+      "nick": "COBRA",
+      "main": 2,
+      "junior": 8,
+      "total": 10,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Trixx",
+      "main": 2,
+      "junior": 8,
+      "total": 10,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Trigger",
+      "main": 0,
+      "junior": 9,
+      "total": 9,
+      "stack": "Junior"
+    },
+    {
+      "nick": "KTO--TO",
+      "main": 0,
+      "junior": 8,
+      "total": 8,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ZLOBA1917",
+      "main": 0,
+      "junior": 8,
+      "total": 8,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Hazzi",
+      "main": 0,
+      "junior": 7,
+      "total": 7,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Oguzok",
+      "main": 0,
+      "junior": 7,
+      "total": 7,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Koperor",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Mahorka",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Mighty",
+      "main": 1,
+      "junior": 5,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Prolik",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "uglyfromyoung",
+      "main": 0,
+      "junior": 6,
+      "total": 6,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ART",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Bahus",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "m3rz0st",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "MadMax",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Sandro.86",
+      "main": 0,
+      "junior": 5,
+      "total": 5,
+      "stack": "Junior"
+    },
+    {
+      "nick": "CERBER",
+      "main": 1,
+      "junior": 3,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "firs",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Nestor Mahno",
+      "main": 1,
+      "junior": 3,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "One Attack",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "spartan",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Varyag",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Zik",
+      "main": 0,
+      "junior": 4,
+      "total": 4,
+      "stack": "Junior"
+    },
+    {
+      "nick": "HSVarvar",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Jerom101",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Maga",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "r4mp",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Rindaye",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Senti",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "tank2284",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Tatarin",
+      "main": 0,
+      "junior": 3,
+      "total": 3,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Edge_CM",
+      "main": 0,
+      "junior": 2,
+      "total": 2,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Goob",
+      "main": 0,
+      "junior": 2,
+      "total": 2,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Muhomor",
+      "main": 0,
+      "junior": 2,
+      "total": 2,
+      "stack": "Junior"
+    },
+    {
+      "nick": "_ByBaJleX_",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "AMUR",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Animo",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Archi",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ATK.GIGN",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Bashik",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Bks",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "C2H5OH",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "CORWAX",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "DarkVader",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "DOSTAVKA",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "ForNikIN",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "HunterN7",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Ilyich",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "KingOfLobs",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "lorgon",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "LOST",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Moonky123",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "on_hik",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "rezZzister",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "saosk.beb",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "SerChan1",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Shrein",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "SHURUP",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "VITALYA",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "Водитель Газели",
+      "main": 0,
+      "junior": 1,
+      "total": 1,
+      "stack": "Junior"
+    },
+    {
+      "nick": "AkiN",
+      "main": 9,
+      "junior": 8,
+      "total": 17,
+      "stack": "Main"
+    },
+    {
+      "nick": "Radislave",
+      "main": 8,
+      "junior": 7,
+      "total": 15,
+      "stack": "Main"
+    },
+    {
+      "nick": "lepurple",
+      "main": 11,
+      "junior": 2,
+      "total": 13,
+      "stack": "Main"
+    },
+    {
+      "nick": "Chidori",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "stack": "Main"
+    },
+    {
+      "nick": "Diray",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "stack": "Main"
+    },
+    {
+      "nick": "KillReal",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "stack": "Main"
+    },
+    {
+      "nick": "iKEppA",
+      "main": 11,
+      "junior": 0,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "Keech",
+      "main": 10,
+      "junior": 1,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "Kroasawn",
+      "main": 9,
+      "junior": 2,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "LordWolf",
+      "main": 10,
+      "junior": 1,
+      "total": 11,
+      "stack": "Main"
+    },
+    {
+      "nick": "angel",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "Blizzardrix",
+      "main": 9,
+      "junior": 1,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "MrChaykaa",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "Treppen",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "ZensU",
+      "main": 10,
+      "junior": 0,
+      "total": 10,
+      "stack": "Main"
+    },
+    {
+      "nick": "Gadler",
+      "main": 9,
+      "junior": 0,
+      "total": 9,
+      "stack": "Main"
+    },
+    {
+      "nick": "Mukuru",
+      "main": 9,
+      "junior": 0,
+      "total": 9,
+      "stack": "Main"
+    },
+    {
+      "nick": "S.M.P",
+      "main": 8,
+      "junior": 1,
+      "total": 9,
+      "stack": "Main"
+    },
+    {
+      "nick": "Summer",
+      "main": 7,
+      "junior": 1,
+      "total": 8,
+      "stack": "Main"
+    },
+    {
+      "nick": "yanchik",
+      "main": 8,
+      "junior": 0,
+      "total": 8,
+      "stack": "Main"
+    },
+    {
+      "nick": "CAT",
+      "main": 7,
+      "junior": 0,
+      "total": 7,
+      "stack": "Main"
+    },
+    {
+      "nick": "akin0v",
+      "main": 5,
+      "junior": 1,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "Azure",
+      "main": 6,
+      "junior": 0,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "Durik",
+      "main": 3,
+      "junior": 3,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "JESTER",
+      "main": 6,
+      "junior": 0,
+      "total": 6,
+      "stack": "Main"
+    },
+    {
+      "nick": "Runetik",
+      "main": 4,
+      "junior": 1,
+      "total": 5,
+      "stack": "Main"
+    },
+    {
+      "nick": "T-800",
+      "main": 3,
+      "junior": 2,
+      "total": 5,
+      "stack": "Main"
+    },
+    {
+      "nick": "daddy",
+      "main": 3,
+      "junior": 1,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Hikkomaru",
+      "main": 4,
+      "junior": 0,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Morty",
+      "main": 3,
+      "junior": 1,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Otto",
+      "main": 4,
+      "junior": 0,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "Pymba",
+      "main": 4,
+      "junior": 0,
+      "total": 4,
+      "stack": "Main"
+    },
+    {
+      "nick": "_VaGNeR_",
+      "main": 2,
+      "junior": 1,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "FLEX",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "Kuchenchips",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "qop",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "stack": "Main"
+    },
+    {
+      "nick": "Buti",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "Nickname",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "vasserman",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "Zerox",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "stack": "Main"
+    },
+    {
+      "nick": "Antoher152",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "GAD",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "Jopllik",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "Lazy",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    },
+    {
+      "nick": "MuskeR",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "stack": "Main"
+    }
+  ]
+}
