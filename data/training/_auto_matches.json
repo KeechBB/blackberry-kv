@@ -24,71 +24,7 @@
     "end": "2026-10-04T21:25:08+00:00"
   },
   {
-    "id": "02-mutaharaasv1",
-    "map": "Mutaha RAAS v1",
-    "date": "2026-10-02",
-    "log": "SquadGame-backup-2026.10.03-03.00.36.log",
-    "start": "2026-10-02T19:48:25+00:00",
-    "end": "2026-10-02T20:27:00+00:00"
-  },
-  {
-    "id": "02-fallujahaasv1",
-    "map": "Fallujah AAS v1",
-    "date": "2026-10-02",
-    "log": "SquadGame-backup-2026.10.03-03.00.36.log",
-    "start": "2026-10-02T20:29:49+00:00",
-    "end": "2026-10-02T21:32:42+00:00"
-  },
-  {
-    "id": "03-kokanaasv2",
-    "map": "Kokan AAS v2",
-    "date": "2026-10-03",
-    "log": "SquadGame-2026.10.03-kokan.log",
-    "start": "2026-10-03T18:40:55+00:00",
-    "end": "2026-10-03T19:38:06+00:00"
-  },
-  {
-    "id": "03-choraaasv3",
-    "map": "Chora AAS v3",
-    "date": "2026-10-03",
-    "log": "SquadGame-2026.10.03-kokan.log",
-    "start": "2026-10-03T19:39:16+00:00",
-    "end": "2026-10-03T20:30:53+00:00"
-  },
-  {
-    "id": "03-foolsroadraasv1",
-    "map": "Fool's Road RAAS v1",
-    "date": "2026-10-03",
-    "log": "SquadGame-2026.10.03-foolsroad.log",
-    "start": "2026-10-03T20:33:21+00:00",
-    "end": "2026-10-03T21:40:11+00:00"
-  },
-  {
-    "id": "04-sumaribalaaasv1",
-    "map": "Sumari Bala AAS v1",
-    "date": "2026-10-04",
-    "log": "SquadGame-backup-2026.10.05-03.00.32.log",
-    "start": "2026-10-04T18:30:25+00:00",
-    "end": "2026-10-04T19:26:27+00:00"
-  },
-  {
-    "id": "04-kokanraasv1",
-    "map": "Kokan RAAS v1",
-    "date": "2026-10-04",
-    "log": "SquadGame-backup-2026.10.05-03.00.32.log",
-    "start": "2026-10-04T19:31:11+00:00",
-    "end": "2026-10-04T20:24:14+00:00"
-  },
-  {
-    "id": "04-harjuaasv2",
-    "map": "Harju AAS v2",
-    "date": "2026-10-04",
-    "log": "SquadGame-backup-2026.10.05-03.00.32.log",
-    "start": "2026-10-04T20:33:17+00:00",
-    "end": "2026-10-04T21:25:08+00:00"
-  },
-  {
-    "id": "05-albasrahraasv3",
+    "id": "05-albasrah",
     "map": "Al Basrah RAAS v3",
     "date": "2026-10-05",
     "log": "SquadGame.log",
