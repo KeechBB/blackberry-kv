@@ -958,13 +958,40 @@ body.modal-open { overflow: hidden; }
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
-  min-width: 4.4rem;
+  min-width: 6.4rem;
 }
 .rating-table .col-tu.tu-plus {
   color: #86efac;
 }
 .rating-table .col-tu.tu-minus {
   color: #fca5a5;
+}
+#cw-rating-table td {
+  font-weight: 600;
+}
+#cw-rating-table td.record {
+  color: #f5d76e !important;
+  font-weight: 800;
+}
+#cw-rating-table td.record.anti {
+  color: #f07178 !important;
+}
+#cw-rating-table tr.is-cal td {
+  background: rgba(14, 116, 144, 0.08);
+}
+.rating-table .tu-cal-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #e0f2fe;
+  background: linear-gradient(180deg, rgba(8, 47, 73, 0.2), rgba(14, 116, 144, 0.55));
+  border: 1px solid rgba(125, 211, 252, 0.7);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
 }
 .rating-table .pwr-band {
   font-weight: 500;

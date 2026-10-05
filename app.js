@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261005-place";
+    new URLSearchParams(location.search).get("v") || "20261005-cw-cal";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -1454,6 +1454,7 @@
             winPct,
             ticketNet,
             tu,
+            calibrating: games < 5,
           };
           const rpHit =
             rpMap.get(resolveNickKey(p.nick)) ||
@@ -1478,6 +1479,7 @@
           };
         });
         ratingRows
+          .filter((p) => !p.calibrating)
           .slice()
           .sort(
             (a, b) =>
@@ -1489,11 +1491,14 @@
           .forEach((p, i) => {
             p.place = i + 1;
           });
+        ratingRows.filter((p) => p.calibrating).forEach((p) => {
+          p.place = null;
+        });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — TU.`
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — TU. Меньше 5 каток — калибровка, внизу таблицы.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
@@ -1521,6 +1526,9 @@
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
     const dir = ratingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
+      const calA = a.calibrating ? 1 : 0;
+      const calB = b.calibrating ? 1 : 0;
+      if (calA !== calB) return calA - calB;
       if (ratingSortKey === "nick" || ratingSortKey === "clan") {
         return dir * String(a[ratingSortKey] || "").localeCompare(String(b[ratingSortKey] || ""), "ru");
       }
@@ -1571,41 +1579,78 @@
       refreshDualScrolls();
       return;
     }
+    const ranked = rows.filter((r) => !r.calibrating);
+    const maxOf = (pick) => {
+      let max = null;
+      ranked.forEach((r) => {
+        const v = pick(r);
+        if (v == null || !Number.isFinite(Number(v))) return;
+        const n = Number(v);
+        if (max == null || n > max) max = n;
+      });
+      return max;
+    };
+    const rec = (value, max, anti) => {
+      if (max == null || !Number.isFinite(Number(value))) return "";
+      if (Number(value) !== max) return "";
+      if (anti) return max > 0 ? " record anti" : "";
+      return max !== 0 ? " record" : "";
+    };
+    const maxTu = maxOf((r) => r.tu);
+    const maxKv = maxOf((r) => r.kv);
+    const maxWin = maxOf((r) => r.winPct);
+    const maxRes = maxOf((r) => r.res);
+    const maxNok = maxOf((r) => r.nok);
+    const maxKills = maxOf((r) => r.kills);
+    const maxDeaths = maxOf((r) => r.deaths);
+    const maxKd = maxOf((r) => r.kd);
+    const maxDmg = maxOf((r) => r.dmg);
+    const maxMedic = maxOf((r) => r.mvpMedic);
+    const maxKiller = maxOf((r) => r.mvpKiller);
+    const maxWar = maxOf((r) => r.mvpDamage);
+    const maxAnti = maxOf((r) => r.antiDeath);
     tbody.innerHTML = rows
       .map((p) => {
         const tu = p.tu;
         const tuCls =
-          tu == null
-            ? "ctr col-tu"
-            : tu > 0
-              ? "ctr col-tu tu-plus"
-              : tu < 0
-                ? "ctr col-tu tu-minus"
-                : "ctr col-tu";
-        const tuText =
-          tu == null ? "—" : (tu > 0 ? "+" : "") + String(tu);
-        const tuTitle =
-          p.ticketNet != null
+          p.calibrating
+            ? "ctr col-tu tu-cal"
+            : tu == null
+              ? "ctr col-tu"
+              : tu > 0
+                ? "ctr col-tu tu-plus"
+                : tu < 0
+                  ? "ctr col-tu tu-minus"
+                  : "ctr col-tu";
+        const tuText = p.calibrating
+          ? `<span class="tu-cal-label">калибровка</span>`
+          : tu == null
+            ? "—"
+            : (tu > 0 ? "+" : "") + String(tu);
+        const tuTitle = p.calibrating
+          ? "Меньше 5 каток КВ — калибровка"
+          : p.ticketNet != null
             ? `Сумма тикетов: ${p.ticketNet > 0 ? "+" : ""}${p.ticketNet} за ${p.kv} кат.`
             : "";
-        return `<tr>
+        const tuRec = p.calibrating ? "" : rec(tu, maxTu, false);
+        return `<tr class="${p.calibrating ? "is-cal" : ""}">
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="${tuCls}" title="${escapeHtml(tuTitle)}"><strong>${tuText}</strong></td>
+        <td class="${tuCls}${tuRec}" title="${escapeHtml(tuTitle)}">${p.calibrating ? tuText : `<strong>${tuText}</strong>`}</td>
         <td>${nickLinkHtml(p.nick)}</td>
         <td class="ctr">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
-        <td class="ctr">${p.kv}</td>
-        <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
-        <td class="ctr">${p.res}</td>
-        <td class="ctr">${p.nok}</td>
-        <td class="ctr">${p.kills}</td>
-        <td class="ctr">${p.deaths}</td>
-        <td class="ctr">${p.kd}</td>
-        <td class="ctr">${p.dmg}</td>
-        <td class="ctr col-mvp-medic">${p.mvpMedic}</td>
-        <td class="ctr col-mvp-killer">${p.mvpKiller}</td>
-        <td class="ctr col-mvp-war">${p.mvpDamage}</td>
-        <td class="ctr col-mvp-anti">${p.antiDeath}</td>
+        <td class="ctr${rec(p.kv, maxKv, false)}">${p.kv}</td>
+        <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
+        <td class="ctr${rec(p.res, maxRes, false)}">${p.res}</td>
+        <td class="ctr${rec(p.nok, maxNok, false)}">${p.nok}</td>
+        <td class="ctr${rec(p.kills, maxKills, false)}">${p.kills}</td>
+        <td class="ctr${rec(p.deaths, maxDeaths, true)}">${p.deaths}</td>
+        <td class="ctr${rec(p.kd, maxKd, false)}">${p.kd}</td>
+        <td class="ctr${rec(p.dmg, maxDmg, false)}">${p.dmg}</td>
+        <td class="ctr col-mvp-medic${rec(p.mvpMedic, maxMedic, false)}">${p.mvpMedic}</td>
+        <td class="ctr col-mvp-killer${rec(p.mvpKiller, maxKiller, false)}">${p.mvpKiller}</td>
+        <td class="ctr col-mvp-war${rec(p.mvpDamage, maxWar, false)}">${p.mvpDamage}</td>
+        <td class="ctr col-mvp-anti${rec(p.antiDeath, maxAnti, true)}">${p.antiDeath}</td>
       </tr>`;
       })
       .join("");
