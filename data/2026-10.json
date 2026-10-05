@@ -212,6 +212,20 @@
       "note": "Junior · SEC · NO SCOUT · NO MEETINGS · лого соперника нет"
     },
     {
+      "id": "13-hell",
+      "day": 13,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "HELL",
+      "map": "SEC 26 Sumari AAS v1",
+      "size": "26v26",
+      "server": "BB",
+      "rules": "SEC",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · SEC · Sumari 26 · BB server · NO SCOUT · NO MEETINGS · лого соперника нет"
+    },
+    {
       "id": "18-sph",
       "day": 18,
       "timeMsk": "20:00",
