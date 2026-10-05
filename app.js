@@ -25,10 +25,9 @@
   const TRAINING_INDEX_URL = "data/training-index.json";
   const LEDGER_URL = "data/mvp-ledger.json";
   const TIERS_URL = "data/tiers.json";
-  const ORR_URL = "data/orr.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261005-harju";
+    new URLSearchParams(location.search).get("v") || "20261005-tu";
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
@@ -213,7 +212,6 @@
   let ratingRows = [];
   let ratingSortKey = "tu";
   let ratingSortDir = "desc";
-  let orrByNick = new Map();
   let trainRatingRows = [];
   let trainRatingSortKey = "rp";
   let trainRatingSortDir = "desc";
@@ -1318,9 +1316,6 @@
     Promise.all([
       loadRoster(),
       loadRpLedger(),
-      fetch(dataUrl(ORR_URL))
-        .then((r) => (r.ok ? r.json() : null))
-        .catch(() => null),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -1329,28 +1324,7 @@
         )
       ),
     ])
-      .then(([, rpLedger, orrJson, months]) => {
-        orrByNick = new Map();
-        const byNick = (orrJson && orrJson.byNick) || {};
-        Object.entries(byNick).forEach(([k, v]) => {
-          const key = String(k || "")
-            .trim()
-            .toLowerCase()
-            .replace(/\s+/g, "");
-          const n = Number(v);
-          if (key && Number.isFinite(n)) orrByNick.set(key, n);
-        });
-        // Legacy / rebuilds sometimes ship only `players` without `byNick`.
-        if (!orrByNick.size && orrJson && Array.isArray(orrJson.players)) {
-          orrJson.players.forEach((row) => {
-            const key = String(row && row.nick ? row.nick : "")
-              .trim()
-              .toLowerCase()
-              .replace(/\s+/g, "");
-            const n = Number(row && row.orr);
-            if (key && Number.isFinite(n)) orrByNick.set(key, n);
-          });
-        }
+      .then(([, rpLedger, months]) => {
         const matchList = [];
         months.forEach(({ data }) => {
           (data.matches || []).forEach((m) => {
@@ -1469,19 +1443,12 @@
             ticketNet,
             tu,
           };
-          const nickKey =
-            resolveNickKey(p.nick) || String(p.nick).trim().toLowerCase().replace(/\s+/g, "");
-          const orr =
-            orrByNick.get(nickKey) ??
-            orrByNick.get(String(p.nick).trim().toLowerCase()) ??
-            null;
           const rpHit =
             rpMap.get(resolveNickKey(p.nick)) ||
             rpMap.get(String(p.nick).trim().toLowerCase());
           if (rpHit) {
             return {
               ...base,
-              orr,
               rp: rpHit.rp,
               pwr: rpHit.rp,
               pwrLabel: rpHit.rankLabel,
@@ -1491,7 +1458,6 @@
           }
           return {
             ...base,
-            orr,
             rp: null,
             pwr: null,
             pwrLabel: "—",

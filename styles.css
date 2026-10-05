@@ -954,12 +954,6 @@ body.modal-open { overflow: hidden; }
   font-variant-numeric: tabular-nums;
   font-weight: 600;
 }
-.rating-table .col-orr {
-  white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-  font-weight: 600;
-  min-width: 4.2rem;
-}
 .rating-table .col-tu {
   white-space: nowrap;
   font-variant-numeric: tabular-nums;
