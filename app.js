@@ -4068,8 +4068,8 @@
       if (rpHit) {
         return {
           ...base,
-          rp: rpHit.rp,
-          pwr: rpHit.rp,
+          rp: clampTrainRp(rpHit.rp),
+          pwr: clampTrainRp(rpHit.rp),
           pwrLabel: rpHit.rankLabel,
           rankKey: rpHit.rankKey,
         };
