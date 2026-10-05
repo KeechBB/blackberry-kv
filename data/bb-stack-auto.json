@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-05T08:51:31.129278+00:00",
+  "updatedAt": "2026-10-05T08:59:14.664036+00:00",
   "matchesWithStats": 22,
   "command": {
     "overallLead": "Keech",
@@ -222,6 +222,15 @@
       "stack": "Main"
     },
     {
+      "nick": "Durik",
+      "main": 3,
+      "junior": 3,
+      "total": 6,
+      "tier": 3,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
       "nick": "JESTER",
       "main": 6,
       "junior": 0,
@@ -236,6 +245,15 @@
       "junior": 1,
       "total": 5,
       "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "T-800",
+      "main": 3,
+      "junior": 2,
+      "total": 5,
+      "tier": 3,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -312,11 +330,38 @@
       "stack": "Main"
     },
     {
+      "nick": "qop",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "tier": 3,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
       "nick": "Buti",
       "main": 2,
       "junior": 0,
       "total": 2,
       "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Nickname",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "tier": 4,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "vasserman",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "tier": 3,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -330,11 +375,38 @@
       "stack": "Main"
     },
     {
+      "nick": "Antoher152",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "tier": 4,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
       "nick": "GAD",
       "main": 1,
       "junior": 0,
       "total": 1,
       "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Jopllik",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "tier": 4,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Lazy",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "tier": 3,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -476,15 +548,6 @@
       "stack": "Junior"
     },
     {
-      "nick": "Durik",
-      "main": 3,
-      "junior": 3,
-      "total": 6,
-      "tier": 3,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "Koperor",
       "main": 0,
       "junior": 6,
@@ -572,15 +635,6 @@
       "total": 5,
       "tier": 4,
       "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
-      "nick": "T-800",
-      "main": 3,
-      "junior": 2,
-      "total": 5,
-      "tier": 3,
-      "prefer": "Main",
       "stack": "Junior"
     },
     {
@@ -674,15 +728,6 @@
       "stack": "Junior"
     },
     {
-      "nick": "qop",
-      "main": 3,
-      "junior": 0,
-      "total": 3,
-      "tier": 3,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "r4mp",
       "main": 0,
       "junior": 3,
@@ -755,24 +800,6 @@
       "stack": "Junior"
     },
     {
-      "nick": "Nickname",
-      "main": 2,
-      "junior": 0,
-      "total": 2,
-      "tier": 4,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
-      "nick": "vasserman",
-      "main": 2,
-      "junior": 0,
-      "total": 2,
-      "tier": 3,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "_ByBaJleX_",
       "main": 0,
       "junior": 1,
@@ -797,15 +824,6 @@
       "total": 1,
       "tier": 4,
       "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
-      "nick": "Antoher152",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 4,
-      "prefer": "Main",
       "stack": "Junior"
     },
     {
@@ -908,30 +926,12 @@
       "stack": "Junior"
     },
     {
-      "nick": "Jopllik",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 4,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "KingOfLobs",
       "main": 0,
       "junior": 1,
       "total": 1,
       "tier": 4,
       "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
-      "nick": "Lazy",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 3,
-      "prefer": "Main",
       "stack": "Junior"
     },
     {
@@ -1162,15 +1162,6 @@
       "stack": "Junior"
     },
     {
-      "nick": "Durik",
-      "main": 3,
-      "junior": 3,
-      "total": 6,
-      "tier": 3,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "Koperor",
       "main": 0,
       "junior": 6,
@@ -1258,15 +1249,6 @@
       "total": 5,
       "tier": 4,
       "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
-      "nick": "T-800",
-      "main": 3,
-      "junior": 2,
-      "total": 5,
-      "tier": 3,
-      "prefer": "Main",
       "stack": "Junior"
     },
     {
@@ -1360,15 +1342,6 @@
       "stack": "Junior"
     },
     {
-      "nick": "qop",
-      "main": 3,
-      "junior": 0,
-      "total": 3,
-      "tier": 3,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "r4mp",
       "main": 0,
       "junior": 3,
@@ -1441,24 +1414,6 @@
       "stack": "Junior"
     },
     {
-      "nick": "Nickname",
-      "main": 2,
-      "junior": 0,
-      "total": 2,
-      "tier": 4,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
-      "nick": "vasserman",
-      "main": 2,
-      "junior": 0,
-      "total": 2,
-      "tier": 3,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "_ByBaJleX_",
       "main": 0,
       "junior": 1,
@@ -1483,15 +1438,6 @@
       "total": 1,
       "tier": 4,
       "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
-      "nick": "Antoher152",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 4,
-      "prefer": "Main",
       "stack": "Junior"
     },
     {
@@ -1594,30 +1540,12 @@
       "stack": "Junior"
     },
     {
-      "nick": "Jopllik",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 4,
-      "prefer": "Main",
-      "stack": "Junior"
-    },
-    {
       "nick": "KingOfLobs",
       "main": 0,
       "junior": 1,
       "total": 1,
       "tier": 4,
       "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
-      "nick": "Lazy",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 3,
-      "prefer": "Main",
       "stack": "Junior"
     },
     {
@@ -1927,6 +1855,15 @@
       "stack": "Main"
     },
     {
+      "nick": "Durik",
+      "main": 3,
+      "junior": 3,
+      "total": 6,
+      "tier": 3,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
       "nick": "JESTER",
       "main": 6,
       "junior": 0,
@@ -1941,6 +1878,15 @@
       "junior": 1,
       "total": 5,
       "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "T-800",
+      "main": 3,
+      "junior": 2,
+      "total": 5,
+      "tier": 3,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -2017,11 +1963,38 @@
       "stack": "Main"
     },
     {
+      "nick": "qop",
+      "main": 3,
+      "junior": 0,
+      "total": 3,
+      "tier": 3,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
       "nick": "Buti",
       "main": 2,
       "junior": 0,
       "total": 2,
       "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Nickname",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "tier": 4,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "vasserman",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "tier": 3,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -2035,11 +2008,38 @@
       "stack": "Main"
     },
     {
+      "nick": "Antoher152",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "tier": 4,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
       "nick": "GAD",
       "main": 1,
       "junior": 0,
       "total": 1,
       "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Jopllik",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "tier": 4,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Lazy",
+      "main": 1,
+      "junior": 0,
+      "total": 1,
+      "tier": 3,
       "prefer": "Main",
       "stack": "Main"
     },
