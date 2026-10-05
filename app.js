@@ -448,7 +448,39 @@
   }
 
   function factionShort(code) {
-    return code ? String(code).toUpperCase() : "—";
+    const s = code ? String(code).trim() : "";
+    if (!s) return "—";
+    const key = s.toLowerCase().replace(/[''′]/g, "'").replace(/\s+/g, " ");
+    const known = {
+      "people's liberation army": "PLA",
+      "peoples liberation army": "PLA",
+      "canadian armed forces": "CAF",
+      "british armed forces": "BAF",
+      "australian defence force": "ADF",
+      "australian defense force": "ADF",
+      "united states army": "USA",
+      "united states marine corps": "USMC",
+      "us marine corps": "USMC",
+      "russian ground forces": "RGF",
+      "russian airborne forces": "VDV",
+      "middle eastern alliance": "MEA",
+      "insurgent forces": "INS",
+      "irregular militia forces": "IMF",
+      "irregular militia": "IMF",
+      "western private military contractors": "WPMC",
+      "pla navy marine corps": "PLANMC",
+      "people's liberation army navy marine corps": "PLANMC",
+      "turkish land forces": "TLF",
+      "argentine army": "ARA",
+    };
+    if (known[key]) return known[key];
+    if (/^[A-Za-zА-Яа-яЁё0-9]{2,8}$/u.test(s) && !/\s/.test(s)) return s.toUpperCase();
+    const parts = s.split(/[\s\-_./]+/).filter(Boolean);
+    if (parts.length >= 2) {
+      const abbr = parts.map((w) => w[0] || "").join("").toUpperCase();
+      if (abbr.length >= 2 && abbr.length <= 8) return abbr;
+    }
+    return s.length > 10 ? s.slice(0, 8).toUpperCase() : s.toUpperCase();
   }
 
   const modal = document.getElementById("match-modal");
