@@ -212,8 +212,8 @@
       "note": "Junior · SEC · NO SCOUT · NO MEETINGS · лого соперника нет"
     },
     {
-      "id": "13-hell",
-      "day": 13,
+      "id": "15-hell",
+      "day": 15,
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "HELL",
@@ -223,7 +223,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · NO SCOUT · NO MEETINGS · лого соперника нет"
+      "note": "Junior · SEC · Sumari 26 · BB server · NO SCOUT · NO MEETINGS · лого соперника нет · перенос с 13.10"
     },
     {
       "id": "18-sph",
