@@ -1,7 +1,7 @@
 {
   "matchId": "06-fox",
   "opp": "FOX",
-  "note": "R1 80:0 · CSL Chora Skirmish v1 · RedFoxes Training Server · 42:54 · USA(BB) vs РФ(FOX) · R2 ещё нет",
+  "note": "FINAL 2–0 · сумма 116:0 (R1 80:0 + R2 36:0) · CSL Chora Skirmish v1 · RedFoxes Training Server · R1 USA(BB) 42:54 · R2 СВ РФ(BB) 45:24",
   "r1": [
     {
       "nick": "Keech",
@@ -164,7 +164,168 @@
       "dmg": 87
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 14,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 295
+    },
+    {
+      "nick": "iKEppA",
+      "res": 2,
+      "nok": 23,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 411
+    },
+    {
+      "nick": "AkiN",
+      "res": 2,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 276
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 189
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 93
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 268
+    },
+    {
+      "nick": "yanchik",
+      "res": 19,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 94
+    },
+    {
+      "nick": "Morty",
+      "res": 21,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 117
+    },
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 242
+    },
+    {
+      "nick": "Radislave",
+      "res": 12,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 97
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 6,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 128
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 210
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 458
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 108
+    },
+    {
+      "nick": "Diray",
+      "res": 5,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 258
+    },
+    {
+      "nick": "angel",
+      "res": 1,
+      "nok": 23,
+      "kills": 12,
+      "deaths": 9,
+      "dmg": 427
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 188
+    },
+    {
+      "nick": "Tankist",
+      "res": 2,
+      "nok": 19,
+      "kills": 12,
+      "deaths": 5,
+      "dmg": 694
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 2,
+      "nok": 10,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 345
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 87
+    }
+  ],
   "oppR1": [
     {
       "nick": "FOXr OverP0wer",
@@ -327,7 +488,160 @@
       "dmg": 276
     }
   ],
-  "oppR2": [],
+  "oppR2": [
+    {
+      "nick": "FOX | O'Connor",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 26
+    },
+    {
+      "nick": "FOXw | Zorba Jandarma",
+      "res": 7,
+      "nok": 8,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 166
+    },
+    {
+      "nick": "FOX | PitoSan",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 219
+    },
+    {
+      "nick": "FOX Bot",
+      "res": 0,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 7,
+      "dmg": 332
+    },
+    {
+      "nick": "FOX Imm",
+      "res": 0,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 477
+    },
+    {
+      "nick": "FOX | DenoPasha",
+      "res": 15,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 123
+    },
+    {
+      "nick": "AM FOX Filsinda",
+      "res": 1,
+      "nok": 19,
+      "kills": 14,
+      "deaths": 5,
+      "dmg": 521
+    },
+    {
+      "nick": "FOX | IamTheSuspect",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 125
+    },
+    {
+      "nick": "FOX | Hak00n",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 205
+    },
+    {
+      "nick": "FOXw | TsskTheBlisGod",
+      "res": 14,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 121
+    },
+    {
+      "nick": "FOX | zeno",
+      "res": 4,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 233
+    },
+    {
+      "nick": "FOXr overPOwer",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 188
+    },
+    {
+      "nick": "FOXw | b0vver",
+      "res": 5,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 160
+    },
+    {
+      "nick": "FOX lynX",
+      "res": 7,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 154
+    },
+    {
+      "nick": "FOX | Disastro",
+      "res": 0,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 407
+    },
+    {
+      "nick": "owL | Boru",
+      "res": 2,
+      "nok": 8,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 148
+    },
+    {
+      "nick": "owL | HellRaze",
+      "res": 2,
+      "nok": 17,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 365
+    },
+    {
+      "nick": "owL | Yoruk",
+      "res": 6,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 212
+    },
+    {
+      "nick": "FOX | VITAMIN D",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 603
+    }
+  ],
   "details": {
     "r1": {
       "tickets": "80:0",
@@ -341,8 +655,22 @@
       "build": "1900 / 2300",
       "fobsCreated": "1 / 1"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "tickets": "36:0",
+      "len": "45:24",
+      "goals": "+40 / +20",
+      "infantry": "126 / 111",
+      "fob": "0 / 20",
+      "veh": "28 / 36",
+      "bleed": "0 / 3",
+      "ammo": "4097 / 3550",
+      "build": "1900 / 2400",
+      "fobsCreated": "1 / 1"
+    },
+    "total": {
+      "tickets": "116:0",
+      "meeting": "2–0"
+    }
   },
   "mvp": {
     "r1": {
@@ -360,10 +688,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "angel"
+      ],
+      "damage": [
+        "Tankist"
+      ],
+      "antiDeath": [
+        "LordWolf"
+      ]
     }
   }
 }

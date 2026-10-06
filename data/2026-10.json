@@ -124,10 +124,12 @@
       "server": "BB",
       "rules": "CSL",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "80:0",
+      "r2": "36:0",
       "playersUrl": "data/players/06-fox.json",
-      "note": "Main · R1 80:0 (42:54) · R2 ещё нет · CSL Chora Skirmish · RedFoxes Training Server"
+      "note": "Main · сумма 116:0 (80:0 · 36:0) · CSL Chora Skirmish · RedFoxes · R1 USA 42:54 · R2 РФ 45:24"
     },
     {
       "id": "07-dcai",

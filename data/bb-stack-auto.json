@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-05T08:59:14.664036+00:00",
-  "matchesWithStats": 22,
+  "updatedAt": "2026-10-06T20:08:55.232005+00:00",
+  "matchesWithStats": 23,
   "command": {
     "overallLead": "Keech",
     "Main": {
@@ -16,19 +16,37 @@
   "main": [
     {
       "nick": "AkiN",
-      "main": 9,
+      "main": 10,
       "junior": 8,
-      "total": 17,
+      "total": 18,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
     },
     {
       "nick": "Radislave",
-      "main": 8,
+      "main": 9,
       "junior": 7,
-      "total": 15,
+      "total": 16,
       "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Chidori",
+      "main": 12,
+      "junior": 1,
+      "total": 13,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Diray",
+      "main": 12,
+      "junior": 1,
+      "total": 13,
+      "tier": 1,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -42,16 +60,16 @@
       "stack": "Main"
     },
     {
-      "nick": "Chidori",
-      "main": 11,
-      "junior": 1,
+      "nick": "iKEppA",
+      "main": 12,
+      "junior": 0,
       "total": 12,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
     },
     {
-      "nick": "Diray",
+      "nick": "Keech",
       "main": 11,
       "junior": 1,
       "total": 12,
@@ -69,7 +87,16 @@
       "stack": "Main"
     },
     {
-      "nick": "iKEppA",
+      "nick": "LordWolf",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "angel",
       "main": 11,
       "junior": 0,
       "total": 11,
@@ -78,7 +105,7 @@
       "stack": "Main"
     },
     {
-      "nick": "Keech",
+      "nick": "Blizzardrix",
       "main": 10,
       "junior": 1,
       "total": 11,
@@ -96,45 +123,36 @@
       "stack": "Main"
     },
     {
-      "nick": "LordWolf",
-      "main": 10,
-      "junior": 1,
-      "total": 11,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "angel",
-      "main": 10,
-      "junior": 0,
-      "total": 10,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "Blizzardrix",
-      "main": 9,
-      "junior": 1,
-      "total": 10,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
       "nick": "MrChaykaa",
-      "main": 10,
+      "main": 11,
       "junior": 0,
-      "total": 10,
+      "total": 11,
       "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     },
     {
       "nick": "Treppen",
+      "main": 11,
+      "junior": 0,
+      "total": 11,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Gadler",
       "main": 10,
       "junior": 0,
+      "total": 10,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "S.M.P",
+      "main": 9,
+      "junior": 1,
       "total": 10,
       "tier": 1,
       "prefer": "Main",
@@ -150,15 +168,6 @@
       "stack": "Main"
     },
     {
-      "nick": "Gadler",
-      "main": 9,
-      "junior": 0,
-      "total": 9,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
       "nick": "Mukuru",
       "main": 9,
       "junior": 0,
@@ -168,10 +177,19 @@
       "stack": "Main"
     },
     {
-      "nick": "S.M.P",
-      "main": 8,
-      "junior": 1,
+      "nick": "yanchik",
+      "main": 9,
+      "junior": 0,
       "total": 9,
+      "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "CAT",
+      "main": 8,
+      "junior": 0,
+      "total": 8,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
@@ -181,24 +199,6 @@
       "main": 7,
       "junior": 1,
       "total": 8,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "yanchik",
-      "main": 8,
-      "junior": 0,
-      "total": 8,
-      "tier": 2,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "CAT",
-      "main": 7,
-      "junior": 0,
-      "total": 7,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
@@ -240,11 +240,29 @@
       "stack": "Main"
     },
     {
-      "nick": "Runetik",
+      "nick": "Morty",
       "main": 4,
       "junior": 1,
       "total": 5,
       "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Otto",
+      "main": 5,
+      "junior": 0,
+      "total": 5,
+      "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Runetik",
+      "main": 4,
+      "junior": 1,
+      "total": 5,
+      "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -272,24 +290,6 @@
       "junior": 0,
       "total": 4,
       "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "Morty",
-      "main": 3,
-      "junior": 1,
-      "total": 4,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "Otto",
-      "main": 4,
-      "junior": 0,
-      "total": 4,
-      "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -340,6 +340,15 @@
     },
     {
       "nick": "Buti",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "MuskeR",
       "main": 2,
       "junior": 0,
       "total": 2,
@@ -409,15 +418,6 @@
       "tier": 3,
       "prefer": "Main",
       "stack": "Main"
-    },
-    {
-      "nick": "MuskeR",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 2,
-      "prefer": "Main",
-      "stack": "Main"
     }
   ],
   "junior": [
@@ -431,6 +431,15 @@
       "stack": "Junior"
     },
     {
+      "nick": "Jimmy Neutron",
+      "main": 4,
+      "junior": 11,
+      "total": 15,
+      "tier": 3,
+      "prefer": "Junior",
+      "stack": "Junior"
+    },
+    {
       "nick": "VET",
       "main": 7,
       "junior": 8,
@@ -440,19 +449,10 @@
       "stack": "Junior"
     },
     {
-      "nick": "Jimmy Neutron",
-      "main": 3,
-      "junior": 11,
-      "total": 14,
-      "tier": 3,
-      "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
       "nick": "Tankist",
-      "main": 4,
+      "main": 5,
       "junior": 9,
-      "total": 13,
+      "total": 14,
       "tier": 2,
       "prefer": "Junior",
       "stack": "Junior"
@@ -1045,6 +1045,15 @@
       "stack": "Junior"
     },
     {
+      "nick": "Jimmy Neutron",
+      "main": 4,
+      "junior": 11,
+      "total": 15,
+      "tier": 3,
+      "prefer": "Junior",
+      "stack": "Junior"
+    },
+    {
       "nick": "VET",
       "main": 7,
       "junior": 8,
@@ -1054,19 +1063,10 @@
       "stack": "Junior"
     },
     {
-      "nick": "Jimmy Neutron",
-      "main": 3,
-      "junior": 11,
-      "total": 14,
-      "tier": 3,
-      "prefer": "Junior",
-      "stack": "Junior"
-    },
-    {
       "nick": "Tankist",
-      "main": 4,
+      "main": 5,
       "junior": 9,
-      "total": 13,
+      "total": 14,
       "tier": 2,
       "prefer": "Junior",
       "stack": "Junior"
@@ -1649,19 +1649,37 @@
     },
     {
       "nick": "AkiN",
-      "main": 9,
+      "main": 10,
       "junior": 8,
-      "total": 17,
+      "total": 18,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
     },
     {
       "nick": "Radislave",
-      "main": 8,
+      "main": 9,
       "junior": 7,
-      "total": 15,
+      "total": 16,
       "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Chidori",
+      "main": 12,
+      "junior": 1,
+      "total": 13,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Diray",
+      "main": 12,
+      "junior": 1,
+      "total": 13,
+      "tier": 1,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -1675,16 +1693,16 @@
       "stack": "Main"
     },
     {
-      "nick": "Chidori",
-      "main": 11,
-      "junior": 1,
+      "nick": "iKEppA",
+      "main": 12,
+      "junior": 0,
       "total": 12,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
     },
     {
-      "nick": "Diray",
+      "nick": "Keech",
       "main": 11,
       "junior": 1,
       "total": 12,
@@ -1702,7 +1720,16 @@
       "stack": "Main"
     },
     {
-      "nick": "iKEppA",
+      "nick": "LordWolf",
+      "main": 11,
+      "junior": 1,
+      "total": 12,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "angel",
       "main": 11,
       "junior": 0,
       "total": 11,
@@ -1711,7 +1738,7 @@
       "stack": "Main"
     },
     {
-      "nick": "Keech",
+      "nick": "Blizzardrix",
       "main": 10,
       "junior": 1,
       "total": 11,
@@ -1729,45 +1756,36 @@
       "stack": "Main"
     },
     {
-      "nick": "LordWolf",
-      "main": 10,
-      "junior": 1,
-      "total": 11,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "angel",
-      "main": 10,
-      "junior": 0,
-      "total": 10,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "Blizzardrix",
-      "main": 9,
-      "junior": 1,
-      "total": 10,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
       "nick": "MrChaykaa",
-      "main": 10,
+      "main": 11,
       "junior": 0,
-      "total": 10,
+      "total": 11,
       "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     },
     {
       "nick": "Treppen",
+      "main": 11,
+      "junior": 0,
+      "total": 11,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Gadler",
       "main": 10,
       "junior": 0,
+      "total": 10,
+      "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "S.M.P",
+      "main": 9,
+      "junior": 1,
       "total": 10,
       "tier": 1,
       "prefer": "Main",
@@ -1783,15 +1801,6 @@
       "stack": "Main"
     },
     {
-      "nick": "Gadler",
-      "main": 9,
-      "junior": 0,
-      "total": 9,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
       "nick": "Mukuru",
       "main": 9,
       "junior": 0,
@@ -1801,10 +1810,19 @@
       "stack": "Main"
     },
     {
-      "nick": "S.M.P",
-      "main": 8,
-      "junior": 1,
+      "nick": "yanchik",
+      "main": 9,
+      "junior": 0,
       "total": 9,
+      "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "CAT",
+      "main": 8,
+      "junior": 0,
+      "total": 8,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
@@ -1814,24 +1832,6 @@
       "main": 7,
       "junior": 1,
       "total": 8,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "yanchik",
-      "main": 8,
-      "junior": 0,
-      "total": 8,
-      "tier": 2,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "CAT",
-      "main": 7,
-      "junior": 0,
-      "total": 7,
       "tier": 1,
       "prefer": "Main",
       "stack": "Main"
@@ -1873,11 +1873,29 @@
       "stack": "Main"
     },
     {
-      "nick": "Runetik",
+      "nick": "Morty",
       "main": 4,
       "junior": 1,
       "total": 5,
       "tier": 1,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Otto",
+      "main": 5,
+      "junior": 0,
+      "total": 5,
+      "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "Runetik",
+      "main": 4,
+      "junior": 1,
+      "total": 5,
+      "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -1905,24 +1923,6 @@
       "junior": 0,
       "total": 4,
       "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "Morty",
-      "main": 3,
-      "junior": 1,
-      "total": 4,
-      "tier": 1,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "Otto",
-      "main": 4,
-      "junior": 0,
-      "total": 4,
-      "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     },
@@ -1973,6 +1973,15 @@
     },
     {
       "nick": "Buti",
+      "main": 2,
+      "junior": 0,
+      "total": 2,
+      "tier": 2,
+      "prefer": "Main",
+      "stack": "Main"
+    },
+    {
+      "nick": "MuskeR",
       "main": 2,
       "junior": 0,
       "total": 2,
@@ -2040,15 +2049,6 @@
       "junior": 0,
       "total": 1,
       "tier": 3,
-      "prefer": "Main",
-      "stack": "Main"
-    },
-    {
-      "nick": "MuskeR",
-      "main": 1,
-      "junior": 0,
-      "total": 1,
-      "tier": 2,
       "prefer": "Main",
       "stack": "Main"
     }

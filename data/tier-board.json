@@ -1,171 +1,9 @@
 {
-  "updatedAt": "2026-10-04T23:11:43",
+  "updatedAt": "2026-10-06T23:08:55",
   "source": "tier-autofit · Fit CW-only",
   "holdDays": 2,
   "displayDays": 2,
   "transfers": [
-    {
-      "nick": "AkiN",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "KillReal",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Tankist",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "freak",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Radislave",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Kroasawn",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "VET",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "MrChaykaa",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Barsik",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Otto",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Azure",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "Trixx",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ"
-    },
-    {
-      "nick": "akin0v",
-      "fromTier": 4,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Из тир 4 / резерва"
-    },
-    {
-      "nick": "yanchik",
-      "fromTier": 4,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Из тир 4 / вне среза"
-    },
-    {
-      "nick": "Forks",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений"
-    },
-    {
-      "nick": "ADUN",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений"
-    },
-    {
-      "nick": "Varyag",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений"
-    },
-    {
-      "nick": "GAD",
-      "fromTier": 1,
-      "toTier": 2,
-      "dir": "down",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Активность / форма"
-    },
     {
       "nick": "Hazzi",
       "fromTier": 4,
@@ -192,56 +30,39 @@
       "at": "2026-10-04",
       "fit": 68.1,
       "note": "Авто Fit 68.1% · удержание 2д"
-    }
-  ],
-  "candidates": [
-    {
-      "nick": "Kroasawn",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "strong",
-      "fit": 96.0,
-      "role": "Медик",
-      "since": "2026-10-03",
-      "daysHeld": 1,
-      "ready": false,
-      "note": "Сильный ↑ · удержание 1/2д"
-    },
-    {
-      "nick": "Radislave",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "strong",
-      "fit": 95.4,
-      "role": "Медик",
-      "since": "2026-10-04",
-      "daysHeld": 0,
-      "ready": false,
-      "note": "Сильный ↑ · удержание 0/2д"
     },
     {
       "nick": "Runetik",
       "fromTier": 1,
       "toTier": 2,
       "dir": "down",
-      "band": "hard",
-      "fit": 55.8,
-      "role": "Стрелок",
-      "since": "2026-10-04",
+      "at": "2026-10-06",
+      "fit": 57.2,
+      "note": "Авто Fit 57.2% · удержание 2д"
+    }
+  ],
+  "candidates": [
+    {
+      "nick": "Radislave",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "strong",
+      "fit": 95.1,
+      "role": "Медик",
+      "since": "2026-10-06",
       "daysHeld": 0,
       "ready": false,
-      "note": "Форма ↓ · удержание 0/2д"
+      "note": "Сильный ↑ · удержание 0/2д"
     },
     {
-      "nick": "Oguzok",
-      "fromTier": 4,
-      "toTier": 3,
+      "nick": "Tankist",
+      "fromTier": 2,
+      "toTier": 1,
       "dir": "up",
       "band": "almost",
-      "fit": 93.2,
-      "role": "Стрелок",
+      "fit": 93.9,
+      "role": "Тех / водитель",
       "note": "Почти · Fit ≥90%"
     },
     {
@@ -250,7 +71,17 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 93.1,
+      "fit": 93.0,
+      "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Oguzok",
+      "fromTier": 4,
+      "toTier": 3,
+      "dir": "up",
+      "band": "almost",
+      "fit": 92.9,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -260,27 +91,7 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 92.7,
-      "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "Tankist",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "almost",
-      "fit": 92.4,
-      "role": "Тех / водитель",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "ZensU",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "band": "almost",
-      "fit": 92.1,
+      "fit": 91.8,
       "role": "Стрелок",
       "note": "Почти · Fit ≥90%"
     },
@@ -290,8 +101,18 @@
       "toTier": 3,
       "dir": "up",
       "band": "almost",
-      "fit": 91.5,
+      "fit": 91.4,
       "role": "Стрелок",
+      "note": "Почти · Fit ≥90%"
+    },
+    {
+      "nick": "Kroasawn",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "band": "almost",
+      "fit": 91.3,
+      "role": "Медик",
       "note": "Почти · Fit ≥90%"
     },
     {
@@ -315,26 +136,6 @@
       "note": "Почти · Fit ≥90%"
     },
     {
-      "nick": "daddy",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 90.1,
-      "role": "КО (SL)",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
-      "nick": "ART",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "band": "almost",
-      "fit": 90.0,
-      "role": "Стрелок",
-      "note": "Почти · Fit ≥90%"
-    },
-    {
       "nick": "VET",
       "fromTier": 2,
       "toTier": 3,
@@ -345,12 +146,42 @@
       "note": "Жёлтая зона · Fit 75–85%"
     },
     {
-      "nick": "Otto",
+      "nick": "Runetik",
       "fromTier": 2,
       "toTier": 3,
       "dir": "down",
       "band": "warn",
-      "fit": 81.4,
+      "fit": 77.3,
+      "role": "Стрелок",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Mighty",
+      "fromTier": 3,
+      "toTier": 4,
+      "dir": "down",
+      "band": "warn",
+      "fit": 81.8,
+      "role": "Стрелок",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "angel",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 82.0,
+      "role": "Стрелок",
+      "note": "Жёлтая зона · Fit 75–85%"
+    },
+    {
+      "nick": "Summer",
+      "fromTier": 1,
+      "toTier": 2,
+      "dir": "down",
+      "band": "warn",
+      "fit": 83.0,
       "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     },
@@ -360,28 +191,8 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 81.8,
+      "fit": 83.2,
       "role": "Тех / водитель",
-      "note": "Жёлтая зона · Fit 75–85%"
-    },
-    {
-      "nick": "Mighty",
-      "fromTier": 3,
-      "toTier": 4,
-      "dir": "down",
-      "band": "warn",
-      "fit": 82.0,
-      "role": "Стрелок",
-      "note": "Жёлтая зона · Fit 75–85%"
-    },
-    {
-      "nick": "Treppen",
-      "fromTier": 1,
-      "toTier": 2,
-      "dir": "down",
-      "band": "warn",
-      "fit": 82.1,
-      "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     },
     {
@@ -390,38 +201,28 @@
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 82.3,
+      "fit": 83.4,
       "role": "ГП",
       "note": "Жёлтая зона · Fit 75–85%"
     },
     {
-      "nick": "Summer",
-      "fromTier": 1,
-      "toTier": 2,
+      "nick": "Otto",
+      "fromTier": 2,
+      "toTier": 3,
       "dir": "down",
       "band": "warn",
-      "fit": 84.2,
+      "fit": 84.1,
       "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     },
     {
-      "nick": "S.M.P",
+      "nick": "Treppen",
       "fromTier": 1,
       "toTier": 2,
       "dir": "down",
       "band": "warn",
-      "fit": 84.4,
-      "role": "Тандем",
-      "note": "Жёлтая зона · Fit 75–85%"
-    },
-    {
-      "nick": "Durik",
-      "fromTier": 3,
-      "toTier": 4,
-      "dir": "down",
-      "band": "warn",
-      "fit": 84.5,
-      "role": "Стрелок",
+      "fit": 84.1,
+      "role": "КО (SL)",
       "note": "Жёлтая зона · Fit 75–85%"
     }
   ],

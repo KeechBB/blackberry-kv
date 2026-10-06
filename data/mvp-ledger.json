@@ -156,7 +156,7 @@
       "id": "06-fox",
       "day": 6,
       "opp": "FOX",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Radislave"
@@ -172,10 +172,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "angel"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "LordWolf"
+        ]
       }
     },
     {
@@ -1608,6 +1616,22 @@
         }
       ]
     },
+    "LordWolf": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Mahorka": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1665,11 +1689,19 @@
       ]
     },
     "Morty": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "18-ih",
           "day": 18,
@@ -2035,7 +2067,7 @@
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 3,
-      "mvpDamage": 12,
+      "mvpDamage": 13,
       "antiDeath": 1,
       "awards": [
         {
@@ -2051,6 +2083,14 @@
           "day": 6,
           "opp": "FOX",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         },
@@ -2402,10 +2442,18 @@
     },
     "angel": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "18-ih",
           "day": 18,
