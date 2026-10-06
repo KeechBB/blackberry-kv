@@ -153,6 +153,32 @@
       }
     },
     {
+      "id": "06-fox",
+      "day": 6,
+      "opp": "FOX",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Keech"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "07-avg",
       "day": 7,
       "opp": "AVG",
@@ -1314,8 +1340,16 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 2,
-      "antiDeath": 3,
+      "antiDeath": 4,
       "awards": [
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "13-two",
           "day": 13,
@@ -1807,7 +1841,7 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 9,
+      "mvpMedic": 10,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
@@ -1824,6 +1858,14 @@
           "matchId": "04-20royals",
           "day": 4,
           "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
@@ -1993,13 +2035,21 @@
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 3,
-      "mvpDamage": 11,
+      "mvpDamage": 12,
       "antiDeath": 1,
       "awards": [
         {
           "matchId": "04-20royals",
           "day": 4,
           "opp": "20Royals",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
@@ -2464,7 +2514,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 8,
+      "mvpKiller": 9,
       "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
@@ -2491,6 +2541,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "15-dcai",
