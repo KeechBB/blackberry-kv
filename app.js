@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261006-fox-r2";
+    new URLSearchParams(location.search).get("v") || "20261006-train-time";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -890,7 +890,7 @@
         if (trainSortKey === key) trainSortDir = trainSortDir === "asc" ? "desc" : "asc";
         else {
           trainSortKey = key;
-          trainSortDir = key === "date" || key === "ticketsA" || key === "ticketsB" ? "desc" : "asc";
+          trainSortDir = key === "date" || key === "time" || key === "ticketsA" || key === "ticketsB" ? "desc" : "asc";
         }
         paintTrainingTable();
       });
@@ -979,6 +979,8 @@
     switch (key) {
       case "date":
         return Number(m.day) || 0;
+      case "time":
+        return String(m.timeMsk || "");
       case "map":
         return String(m.map || "");
       case "mode":
@@ -1009,6 +1011,7 @@
           m.map,
           m.mode,
           m.server,
+          m.timeMsk,
           m.factionA,
           m.factionB,
           m.winner,
@@ -1055,7 +1058,7 @@
     paintTrainSortMarks();
     paintTrainStats(list);
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="9" class="empty-row">Нет тренировок по фильтру</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="10" class="empty-row">Нет тренировок по фильтру</td></tr>`;
       return;
     }
     tbody.innerHTML = list
@@ -1065,6 +1068,7 @@
         const win = factionShort(m.winner);
         return `<tr class="clickable" data-train-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${trainMonthKey}</td>
+          <td class="num">${escapeHtml(m.timeMsk || "—")}</td>
           <td>${escapeHtml(m.map || "—")}</td>
           <td>${escapeHtml(m.mode || "—")}</td>
           <td>${escapeHtml(m.server || "—")}</td>

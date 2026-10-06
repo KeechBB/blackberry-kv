@@ -1,0 +1,358 @@
+{
+  "matchId": "06-cslfallujah-2",
+  "map": "CSL Fallujah Skirmish v1",
+  "mode": "—",
+  "server": "Blackberry | Training - Blackberries #1",
+  "duration": "59:50",
+  "winner": "Russian Ground Forces",
+  "sideA": {
+    "name": "Russian Ground Forces",
+    "tickets": 31
+  },
+  "sideB": {
+    "name": "United States Army",
+    "tickets": 0
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "GAD",
+      "res": 0,
+      "nok": 37,
+      "kills": 28,
+      "deaths": 11,
+      "dmg": 12541
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 34,
+      "kills": 24,
+      "deaths": 18,
+      "dmg": 9592
+    },
+    {
+      "nick": "firs",
+      "res": 0,
+      "nok": 26,
+      "kills": 22,
+      "deaths": 12,
+      "dmg": 8447
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 30,
+      "kills": 21,
+      "deaths": 17,
+      "dmg": 9076
+    },
+    {
+      "nick": "Pugovka",
+      "res": 8,
+      "nok": 20,
+      "kills": 17,
+      "deaths": 15,
+      "dmg": 6368
+    },
+    {
+      "nick": "ATK.GIGN",
+      "res": 1,
+      "nok": 16,
+      "kills": 14,
+      "deaths": 10,
+      "dmg": 5294
+    },
+    {
+      "nick": "ART",
+      "res": 0,
+      "nok": 23,
+      "kills": 12,
+      "deaths": 12,
+      "dmg": 5830
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 13,
+      "dmg": 5018
+    },
+    {
+      "nick": "WoodMan",
+      "res": 19,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 12,
+      "dmg": 4478
+    },
+    {
+      "nick": "haq34",
+      "res": 11,
+      "nok": 18,
+      "kills": 10,
+      "deaths": 12,
+      "dmg": 4558
+    },
+    {
+      "nick": "ПАДЛО",
+      "res": 1,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 4547
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 16,
+      "kills": 10,
+      "deaths": 10,
+      "dmg": 4354
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 15,
+      "dmg": 3895
+    },
+    {
+      "nick": "Animo",
+      "res": 1,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 11,
+      "dmg": 3788
+    },
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 11,
+      "dmg": 3390
+    },
+    {
+      "nick": "default",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 2028
+    },
+    {
+      "nick": "Frosty",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2200
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 2,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 1938
+    },
+    {
+      "nick": "CORWAX",
+      "res": 15,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 14,
+      "dmg": 1275
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 4,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 12,
+      "dmg": 1028
+    },
+    {
+      "nick": "NECO",
+      "res": 7,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 133
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "spartan",
+      "res": 1,
+      "nok": 30,
+      "kills": 22,
+      "deaths": 15,
+      "dmg": 9670
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 4,
+      "nok": 25,
+      "kills": 20,
+      "deaths": 14,
+      "dmg": 8059
+    },
+    {
+      "nick": "Senti",
+      "res": 2,
+      "nok": 23,
+      "kills": 20,
+      "deaths": 11,
+      "dmg": 7877
+    },
+    {
+      "nick": "RostislavKVL",
+      "res": 1,
+      "nok": 25,
+      "kills": 19,
+      "deaths": 21,
+      "dmg": 8973
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 1,
+      "nok": 26,
+      "kills": 18,
+      "deaths": 12,
+      "dmg": 7361
+    },
+    {
+      "nick": "Bks",
+      "res": 5,
+      "nok": 23,
+      "kills": 18,
+      "deaths": 9,
+      "dmg": 7458
+    },
+    {
+      "nick": "Varyag",
+      "res": 3,
+      "nok": 18,
+      "kills": 15,
+      "deaths": 11,
+      "dmg": 6786
+    },
+    {
+      "nick": "k1t",
+      "res": 5,
+      "nok": 16,
+      "kills": 15,
+      "deaths": 13,
+      "dmg": 5797
+    },
+    {
+      "nick": "Oguzok",
+      "res": 2,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 13,
+      "dmg": 5402
+    },
+    {
+      "nick": "VET",
+      "res": 5,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 4260
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 8,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 12,
+      "dmg": 4289
+    },
+    {
+      "nick": "Bahus",
+      "res": 16,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 10,
+      "dmg": 3967
+    },
+    {
+      "nick": "Mahorka",
+      "res": 4,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 3672
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "res": 1,
+      "nok": 15,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 3904
+    },
+    {
+      "nick": "Bugor",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 12,
+      "dmg": 3152
+    },
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 16,
+      "dmg": 2865
+    },
+    {
+      "nick": "Trigger",
+      "res": 25,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 17,
+      "dmg": 2273
+    },
+    {
+      "nick": "ADUN",
+      "res": 10,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 2324
+    },
+    {
+      "nick": "Prolik",
+      "res": 12,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 13,
+      "dmg": 1458
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 1145
+    }
+  ]
+}
