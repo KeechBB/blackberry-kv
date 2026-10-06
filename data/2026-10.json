@@ -119,13 +119,13 @@
       "timeMsk": "21:00",
       "timeUtc": "18:00",
       "opp": "FOX",
-      "map": "Hotdrop Narva",
+      "map": "CSL Chora v1",
       "size": "20v20",
       "server": "BB",
-      "rules": "SEC",
+      "rules": "CSL",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · Hotdrop Narva · BB server · NO SCOUT · NO MEETINGS · RED FOXES"
+      "note": "Main · CSL · CSL_Chora_v1 · BB server · NO SCOUT · NO MEETINGS · RED FOXES"
     },
     {
       "id": "07-dcai",
