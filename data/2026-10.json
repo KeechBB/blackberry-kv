@@ -212,6 +212,20 @@
       "note": "Junior · SEC · Mutaha 26 · сервер .solid · лого solid.png"
     },
     {
+      "id": "11-fox",
+      "day": 11,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "FOX",
+      "map": "CSL Mutaha AAS V1",
+      "size": "20v20",
+      "server": "BB",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · NO SCOUT"
+    },
+    {
       "id": "13-hell",
       "day": 13,
       "timeMsk": "20:00",
