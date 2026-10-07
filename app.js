@@ -568,8 +568,17 @@
     return `${PROFILE_BASE}/${encodeURIComponent(clean)}`;
   }
 
+  /** Клик в профиль только у зарегистрированных на сайте (есть regNo). */
+  function isRegisteredNick(nick) {
+    const ro = rosterOf(nick);
+    return ro.regNo != null && Number.isFinite(Number(ro.regNo));
+  }
+
   function nickLinkHtml(nick) {
     const label = displayNick(nick) || nick || "—";
+    if (!isRegisteredNick(nick)) {
+      return `<span class="nick-plain" title="Нет аккаунта на сайте">${escapeHtml(label)}</span>`;
+    }
     const href = profileHref(nick);
     if (!href) return escapeHtml(label);
     return `<a class="nick-profile-link" href="${escapeHtml(href)}" target="_top" rel="noopener">${escapeHtml(label)}</a>`;
@@ -1391,15 +1400,20 @@
       .then(({ bundles, rpLedger }) => {
         const rpMap = rpLookupMap(rpLedger);
         const map = new Map();
-        const touch = (nick) => {
+        const touch = (nick, fallbackClan) => {
           if (!inRating(nick)) return null;
           const key = resolveNickKey(nick);
           if (!map.has(key)) {
             const ro = rosterOf(displayNick(nick));
+            const clanFromRoster = ro.clan && ro.clan !== "—" ? ro.clan : "";
+            const clan =
+              clanFromRoster ||
+              (fallbackClan && String(fallbackClan).trim()) ||
+              "—";
             map.set(key, {
               nick: displayNick(nick),
               tier: tierOf(nick),
-              clan: ro.clan,
+              clan,
               squad: ro.squad,
               regNo: ro.regNo,
               kv: 0,
@@ -1414,59 +1428,97 @@
               mvpDamage: 0,
               antiDeath: 0,
             });
+          } else if (fallbackClan) {
+            const row = map.get(key);
+            if (row && (!row.clan || row.clan === "—")) {
+              row.clan = String(fallbackClan).trim() || row.clan;
+            }
           }
           return map.get(key);
         };
 
-        bundles.forEach(({ match, players }) => {
-          if (!players) return;
-          const r1 = players.r1 || [];
-          const r2 = players.r2 || [];
-          const total = players.total || players.players || sumRounds(r1, r2);
-          const inMeeting = new Set();
-
-          total.forEach((p) => {
+        const addCombatLines = (lines, intoSet, fallbackClan) => {
+          (lines || []).forEach((p) => {
             if (!p || !p.nick || !inRating(p.nick)) return;
-            inMeeting.add(resolveNickKey(p.nick));
-            const row = touch(p.nick);
+            intoSet.add(resolveNickKey(p.nick));
+            const row = touch(p.nick, fallbackClan);
+            if (!row) return;
             row.res += Number(p.res) || 0;
             row.nok += Number(p.nok) || 0;
             row.kills += Number(p.kills) || 0;
             row.deaths += Number(p.deaths) || 0;
             row.dmg += Number(p.dmg) || 0;
           });
+        };
+
+        bundles.forEach(({ match, players }) => {
+          if (!players) return;
+          const r1 = players.r1 || [];
+          const r2 = players.r2 || [];
+          const oppR1 = players.oppR1 || [];
+          const oppR2 = players.oppR2 || [];
+          const bbTotal = players.total || players.players || sumRounds(r1, r2);
+          const oppTotal =
+            players.oppTotal ||
+            (oppR1.length || oppR2.length ? sumRounds(oppR1, oppR2) : []);
+          const bbInMeeting = new Set();
+          const oppInMeeting = new Set();
+          const oppTag = String(match.opp || "").trim();
+
+          addCombatLines(bbTotal, bbInMeeting, null);
           [...r1, ...r2].forEach((p) => {
-            if (p && p.nick && inRating(p.nick)) inMeeting.add(resolveNickKey(p.nick));
+            if (p && p.nick && inRating(p.nick))
+              bbInMeeting.add(resolveNickKey(p.nick));
           });
+          addCombatLines(oppTotal, oppInMeeting, oppTag);
+          [...oppR1, ...oppR2].forEach((p) => {
+            if (p && p.nick && inRating(p.nick)) {
+              oppInMeeting.add(resolveNickKey(p.nick));
+              touch(p.nick, oppTag);
+            }
+          });
+
           const status = String(match.status || "").toLowerCase();
-          const meetingWon = status === "win";
-          inMeeting.forEach((key) => {
+          const bbWon =
+            status === "win" ? true : status === "lose" ? false : null;
+          bbInMeeting.forEach((key) => {
             const row = map.get(key);
             if (!row) return;
             row.kv += 1;
-            if (meetingWon) row.wins += 1;
+            if (bbWon === true) row.wins += 1;
+          });
+          oppInMeeting.forEach((key) => {
+            // если ник сыграл и за BB в этой встрече — уже учтён как наш
+            if (bbInMeeting.has(key)) return;
+            const row = map.get(key);
+            if (!row) return;
+            row.kv += 1;
+            if (bbWon === false) row.wins += 1;
           });
 
           const mvp = players.mvp || {
             r1: pickMvps(enrichRows(r1)),
             r2: pickMvps(enrichRows(r2)),
+            oppR1: pickMvps(enrichRows(oppR1)),
+            oppR2: pickMvps(enrichRows(oppR2)),
           };
-          ["r1", "r2"].forEach((rk) => {
+          ["r1", "r2", "oppR1", "oppR2"].forEach((rk) => {
             const block = mvp[rk] || {};
+            const fb = rk.startsWith("opp") ? oppTag : null;
             (block.medic || []).forEach((n) => {
-              const row = touch(n);
+              const row = touch(n, fb);
               if (row) row.mvpMedic += 1;
             });
             (block.killer || []).forEach((n) => {
-              const row = touch(n);
+              const row = touch(n, fb);
               if (row) row.mvpKiller += 1;
             });
             (block.damage || []).forEach((n) => {
-              const row = touch(n);
+              const row = touch(n, fb);
               if (row) row.mvpDamage += 1;
             });
             (block.antiDeath || []).forEach((n) => {
-              const row = touch(n);
+              const row = touch(n, fb);
               if (row) row.antiDeath += 1;
             });
           });
@@ -4985,6 +5037,7 @@
     fetch(dataUrl(FACTIONS_URL))
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null),
+    loadRoster(),
   ])
     .then(([data, tiers, trainIdx, factions]) => {
       catalog = data.months || [];

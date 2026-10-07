@@ -1030,6 +1030,14 @@ body.modal-open { overflow: hidden; }
 .rating-table .nick-profile-link {
   display: inline;
 }
+.nick-plain {
+  color: inherit;
+  font-weight: 600;
+  cursor: default;
+}
+.rating-table .nick-plain {
+  display: inline;
+}
 .mvp-row {
   display: flex;
   flex-wrap: nowrap;
