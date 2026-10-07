@@ -139,11 +139,15 @@
       "opp": "DCAI",
       "map": "HotDrop Narva",
       "size": "20v20",
-      "server": "Dcai",
+      "server": "TR2",
       "rules": "HOTDROP",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · HOTDROP Narva · vs clan 2–0 (15.09 PAAS) · not 30.09 Mutaha · also 09.10 Narva/FCL"
+      "status": "lose",
+      "note": "Main · HOTDROP Narva · TR2 · сумма 0:75 (0:71 · 0:4) · авто обе команды",
+      "playersUrl": "data/players/07-dcai.json",
+      "r1": "0:71",
+      "r2": "0:4",
+      "meeting": "0–2"
     },
     {
       "id": "08-hq",
