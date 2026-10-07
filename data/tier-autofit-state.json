@@ -1,254 +1,31 @@
 {
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-07",
   "holdDays": 2,
   "displayDays": 2,
   "watches": [
-    {
-      "nick": "Kroasawn",
-      "kind": "promote",
-      "fromTier": 2,
-      "toTier": 1,
-      "fit": 96.0,
-      "band": "strong",
-      "role": "Медик",
-      "since": "2026-10-03",
-      "daysHeld": 1,
-      "ready": false
-    },
     {
       "nick": "Radislave",
       "kind": "promote",
       "fromTier": 2,
       "toTier": 1,
-      "fit": 95.4,
+      "fit": 97.8,
       "band": "strong",
       "role": "Медик",
-      "since": "2026-10-04",
-      "daysHeld": 0,
-      "ready": false
-    },
-    {
-      "nick": "Runetik",
-      "kind": "demote",
-      "fromTier": 1,
-      "toTier": 2,
-      "fit": 55.8,
-      "band": "hard",
-      "role": "Стрелок",
-      "since": "2026-10-04",
-      "daysHeld": 0,
+      "lever": "Урон/игра: 81% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-06",
+      "daysHeld": 1,
       "ready": false
     }
   ],
   "transfers": [
     {
-      "nick": "AkiN",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "KillReal",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Tankist",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "freak",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Radislave",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Kroasawn",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "VET",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "MrChaykaa",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Barsik",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Otto",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Azure",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "Trixx",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений ORR/КВ",
-      "actor": "система"
-    },
-    {
-      "nick": "akin0v",
-      "fromTier": 4,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Из тир 4 / резерва",
-      "actor": "система"
-    },
-    {
-      "nick": "yanchik",
-      "fromTier": 4,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Из тир 4 / вне среза",
-      "actor": "система"
-    },
-    {
-      "nick": "Forks",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений",
-      "actor": "система"
-    },
-    {
-      "nick": "ADUN",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений",
-      "actor": "система"
-    },
-    {
-      "nick": "Varyag",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Пакет повышений",
-      "actor": "система"
-    },
-    {
-      "nick": "GAD",
+      "nick": "Runetik",
       "fromTier": 1,
       "toTier": 2,
       "dir": "down",
-      "at": "2026-10-02",
-      "fit": null,
-      "note": "Активность / форма",
-      "actor": "система"
-    },
-    {
-      "nick": "Hazzi",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-10-04",
-      "fit": 96.2,
-      "note": "Авто Fit 96.2% · удержание 2д",
-      "actor": "автофит"
-    },
-    {
-      "nick": "Varyag",
-      "fromTier": 3,
-      "toTier": 4,
-      "dir": "down",
-      "at": "2026-10-04",
-      "fit": 66.8,
-      "note": "Авто Fit 66.8% · удержание 2д",
-      "actor": "автофит"
-    },
-    {
-      "nick": "JESTER",
-      "fromTier": 1,
-      "toTier": 2,
-      "dir": "down",
-      "at": "2026-10-04",
-      "fit": 68.1,
-      "note": "Авто Fit 68.1% · удержание 2д",
+      "at": "2026-10-06",
+      "fit": 57.2,
+      "note": "Авто Fit 57.2% · удержание 2д",
       "actor": "автофит"
     }
   ]

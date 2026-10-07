@@ -178,10 +178,31 @@
     }
 
     const benches = { 1: buildBench(1), 2: buildBench(2), 3: buildBench(3) };
+    const METRIC_RU = payload.metricLabels
+      ? Object.fromEntries(
+          Object.entries(payload.metricLabels).map(([k, title]) => [
+            k,
+            [title, ""],
+          ])
+        )
+      : {
+          res: ["Ресы/игра", "чаще поднимай союзников"],
+          kd: ["KD", "больше фрагов / меньше смертей"],
+          dmg: ["Урон/игра", "больше урона"],
+          orr: ["ORR", "польза в КВ"],
+          pres: ["Активность", "заходи в КВ"],
+        };
+    const METRIC_HOW = {
+      res: "чаще поднимай союзников",
+      kd: "больше фрагов / меньше смертей",
+      dmg: "больше урона по пехоте и технике",
+      orr: "польза в КВ-составах",
+      pres: "заходи стабильно в клановые войны",
+    };
 
-    function fitTo(p, bench, role) {
+    function fitDetail(p, bench, role) {
       const b = bench[role];
-      const w = W[role];
+      let w = W[role] ? { ...W[role] } : null;
       if (!b || !w) return null;
       const f = (val, tgt) => (!tgt ? 0 : Math.min(100, (100 * val) / tgt));
       const comps = {
@@ -191,15 +212,80 @@
         orr: f(p.orr, b.orr || 1),
         pres: f(p.pres, 0.45),
       };
-      if (role === "Medic") comps.kd = Math.min(comps.kd, 50);
-      return Math.round(Object.keys(w).reduce((s, k) => s + w[k] * comps[k], 0) * 10) / 10;
+      if (role === "Medic") {
+        comps.kd = Math.min(comps.kd, 50);
+        w.kd = 0;
+      }
+      const wsum = Object.values(w).reduce((s, x) => s + x, 0) || 1;
+      Object.keys(w).forEach((k) => {
+        w[k] = w[k] / wsum;
+      });
+      const fit =
+        Math.round(
+          Object.keys(w).reduce((s, k) => s + w[k] * comps[k], 0) * 10
+        ) / 10;
+      const gaps = [];
+      for (const [k, wt] of Object.entries(w)) {
+        if (wt < 0.04) continue;
+        const short = Math.max(0, 100 - comps[k]);
+        if (short < 8) continue;
+        gaps.push({ score: wt * short, k, comp: comps[k], wt });
+      }
+      gaps.sort((a, b) => b.score - a.score);
+      const tips = gaps.slice(0, 2).map((g) => {
+        const title = (METRIC_RU[g.k] && METRIC_RU[g.k][0]) || g.k;
+        const how = METRIC_HOW[g.k] || "";
+        return {
+          metric: g.k,
+          title,
+          how,
+          you: Math.round(g.comp),
+          weightPct: Math.round(g.wt * 100),
+          text: `${title}: ${Math.round(g.comp)}% от эталона — ${how}`,
+        };
+      });
+      if (!tips.length) {
+        tips.push({
+          metric: "pres",
+          title: "Активность",
+          how: "заходи в КВ",
+          you: Math.round(comps.pres),
+          weightPct: Math.round((w.pres || 0) * 100),
+          text:
+            fit >= 95
+              ? "Ты выше эталона — держи объём КВ и роль."
+              : "Нет явного провала — копи объём КВ на своей роли.",
+        });
+      }
+      return { fit, comps, tips, lever: tips[0] ? tips[0].text : "" };
+    }
+
+    function fitTo(p, bench, role) {
+      const d = fitDetail(p, bench, role);
+      return d ? d.fit : null;
     }
 
     for (const p of players) {
-      p.fitOwn = benches[p.tier] ? fitTo(p, benches[p.tier], p.role) : null;
+      let own =
+        p.tier <= 3 && benches[p.tier]
+          ? fitDetail(p, benches[p.tier], p.role)
+          : null;
+      if (p.tier === 4) own = fitDetail(p, benches[3] || {}, p.role);
+      p.fitOwn = own ? own.fit : null;
+      p.compsOwn = own ? own.comps : null;
+      p.tips = own ? own.tips : [];
+      p.lever = own ? own.lever : "";
       p.fitT1 = fitTo(p, benches[1], p.role);
       p.fitT2 = fitTo(p, benches[2], p.role);
       p.fitT3 = fitTo(p, benches[3], p.role);
+      const upTier = p.tier >= 4 ? 3 : p.tier === 3 ? 2 : p.tier === 2 ? 1 : null;
+      if (upTier) {
+        const up = fitDetail(p, benches[upTier] || {}, p.role);
+        if (up) {
+          p.tipsUp = up.tips;
+          p.leverUp = up.lever;
+        }
+      }
     }
 
     const tierBoards = {};
@@ -254,6 +340,8 @@
             pause: r.pause,
             bestInTier: r.nick === bestNick,
             crewShareMeets: r.crewShareMeets || 0,
+            lever: r.lever || "",
+            tips: (r.tips || []).slice(0, 2),
           })),
         };
       }
@@ -275,7 +363,7 @@
         target = 1;
       } else continue;
       if (fit == null || fit < th.promoteAlmost) continue;
-      if (p.g < th.minGamesActive && p.tier !== 4) continue;
+      if (p.g < th.minGamesActive) continue;
       promote.push({
         nick: p.nick,
         fromTier: p.tier,
@@ -289,6 +377,8 @@
         kd: p.kd,
         dmg_g: p.dmg_g,
         orr: p.orr,
+        lever: p.leverUp || p.lever || "",
+        tips: p.tipsUp || p.tips || [],
       });
     }
     promote.sort((a, b) => b.fit - a.fit || a.fromTier - b.fromTier);
@@ -297,6 +387,8 @@
     const warn = [];
     for (const p of players) {
       if (![1, 2, 3].includes(p.tier) || p.pause || p.fitOwn == null) continue;
+      const benchRole = (benches[p.tier] || {})[p.role] || {};
+      if (benchRole.thin && p.fitOwn >= th.warn - 5) continue;
       const row = {
         nick: p.nick,
         fromTier: p.tier,
@@ -309,6 +401,8 @@
         kd: p.kd,
         dmg_g: p.dmg_g,
         orr: p.orr,
+        lever: p.lever || "",
+        tips: p.tips || [],
       };
       if (p.fitOwn < th.warn) demote.push(row);
       else if (p.fitOwn < th.hold) warn.push(row);
@@ -472,6 +566,7 @@
                   <th class="sortable" data-tfs-board="${esc(role)}" data-tfsort="nick">Ник</th>
                   <th class="ctr sortable" data-tfs-board="${esc(role)}" data-tfsort="tier">Тир</th>
                   <th class="ctr sortable" data-tfs-board="${esc(role)}" data-tfsort="fit">Fit%</th>
+                  <th data-tfs-board="${esc(role)}">Как стать лучше</th>
                   <th class="ctr sortable" data-tfs-board="${esc(role)}" data-tfsort="res_g">res/g</th>
                   <th class="ctr sortable" data-tfs-board="${esc(role)}" data-tfsort="kd">KD</th>
                   <th class="ctr sortable" data-tfs-board="${esc(role)}" data-tfsort="dmg_g">dmg/g</th>
@@ -489,10 +584,14 @@
                       r.crewShareMeets > 0
                         ? ` <span class="tfs-share" title="Мех-шаринг ×${r.crewShareMeets}">· мех×${r.crewShareMeets}</span>`
                         : "";
+                    const lever = r.lever
+                      ? `<td class="tfs-lever">${esc(r.lever)}</td>`
+                      : `<td class="muted">—</td>`;
                     return `<tr class="${r.bestInTier ? "tfs-row-best" : ""}">
                       <td>${esc(r.nick)}${pause}${share}</td>
                       <td class="ctr">T${r.tier}</td>
                       ${cell(r.fit.toFixed(1), isRec("fit", r.fit))}
+                      ${lever}
                       ${cell(Number(r.res_g).toFixed(2), isRec("res_g", r.res_g))}
                       ${cell(Number(r.kd).toFixed(2), isRec("kd", r.kd))}
                       ${cell(Math.round(r.dmg_g), isRec("dmg_g", r.dmg_g))}
@@ -550,6 +649,10 @@
               if (c === "fit") v = Number(v).toFixed(1);
               if (c === "res_g" || c === "kd") v = Number(v).toFixed(2);
               if (c === "dmg_g") v = Math.round(v);
+              if (c === "lever") {
+                cls = "tfs-lever";
+                v = v || "—";
+              }
               return `<td class="${cls}">${esc(v)}</td>`;
             })
             .join("") +
@@ -563,21 +666,46 @@
     renderCandTable(
       "tfs-promote-rows",
       computed.candidates.promote,
-      ["nick", "fromTier", "toTier", "roleLabel", "fit", "band", "g", "kd", "dmg_g", "orr"],
+      ["nick", "fromTier", "toTier", "roleLabel", "fit", "band", "lever", "g", "kd", "orr"],
       "promote"
     );
     renderCandTable(
       "tfs-demote-rows",
       computed.candidates.demote,
-      ["nick", "fromTier", "toTier", "roleLabel", "fit", "g", "res_g", "kd", "orr"],
+      ["nick", "fromTier", "toTier", "roleLabel", "fit", "lever", "g", "orr"],
       "demote"
     );
     renderCandTable(
       "tfs-warn-rows",
       computed.candidates.warn,
-      ["nick", "fromTier", "roleLabel", "fit", "g", "orr"],
+      ["nick", "fromTier", "roleLabel", "fit", "lever", "g"],
       "warn"
     );
+  }
+
+  function renderGuide() {
+    const el = $("tfs-guide");
+    if (!el) return;
+    const g = payload.guide;
+    if (!g) {
+      el.innerHTML = `<p><strong>FIT</strong> — % от эталона тира по роли (только КВ). Рядом с ником — что качать.</p>`;
+      return;
+    }
+    const bands = (g.bands || [])
+      .map(
+        (b) =>
+          `<li><strong>${esc(b.label)}</strong> — ${esc(b.rule)}</li>`
+      )
+      .join("");
+    const steps = (g.steps || [])
+      .slice(0, 5)
+      .map((s) => `<li>${esc(s)}</li>`)
+      .join("");
+    el.innerHTML = `
+      <p class="tfs-guide-title"><strong>${esc(g.title || "Как работает Fit")}</strong></p>
+      <ol class="tfs-guide-steps">${steps}</ol>
+      <ul class="tfs-guide-bands">${bands}</ul>
+      <p class="tfs-guide-auto muted">${esc(g.autonomy || "")}</p>`;
   }
 
   function renderAnalytics() {
@@ -668,6 +796,7 @@
       note.hidden = true;
       note.textContent = "";
     }
+    renderGuide();
     renderKpis();
     renderBoards();
     renderCandidates();
