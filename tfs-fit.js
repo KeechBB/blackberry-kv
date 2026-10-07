@@ -178,6 +178,14 @@
     }
 
     const benches = { 1: buildBench(1), 2: buildBench(2), 3: buildBench(3) };
+    function benchFor(tier, role) {
+      for (const t of [tier, tier - 1, tier + 1, 2, 1, 3]) {
+        if (t < 1 || t > 3) continue;
+        const b = benches[t] && benches[t][role];
+        if (b) return b;
+      }
+      return null;
+    }
     const METRIC_RU = payload.metricLabels
       ? Object.fromEntries(
           Object.entries(payload.metricLabels).map(([k, title]) => [
@@ -200,8 +208,8 @@
       pres: "заходи стабильно в клановые войны",
     };
 
-    function fitDetail(p, bench, role) {
-      const b = bench[role];
+    function fitDetail(p, roleBench, role) {
+      const b = roleBench;
       let w = W[role] ? { ...W[role] } : null;
       if (!b || !w) return null;
       const f = (val, tgt) => (!tgt ? 0 : Math.min(100, (100 * val) / tgt));
@@ -260,27 +268,24 @@
       return { fit, comps, tips, lever: tips[0] ? tips[0].text : "" };
     }
 
-    function fitTo(p, bench, role) {
-      const d = fitDetail(p, bench, role);
+    function fitTo(p, tier, role) {
+      const d = fitDetail(p, benchFor(tier, role), role);
       return d ? d.fit : null;
     }
 
     for (const p of players) {
-      let own =
-        p.tier <= 3 && benches[p.tier]
-          ? fitDetail(p, benches[p.tier], p.role)
-          : null;
-      if (p.tier === 4) own = fitDetail(p, benches[3] || {}, p.role);
+      const ownTier = p.tier === 4 ? 3 : p.tier;
+      const own = fitDetail(p, benchFor(ownTier, p.role), p.role);
       p.fitOwn = own ? own.fit : null;
       p.compsOwn = own ? own.comps : null;
       p.tips = own ? own.tips : [];
       p.lever = own ? own.lever : "";
-      p.fitT1 = fitTo(p, benches[1], p.role);
-      p.fitT2 = fitTo(p, benches[2], p.role);
-      p.fitT3 = fitTo(p, benches[3], p.role);
+      p.fitT1 = fitTo(p, 1, p.role);
+      p.fitT2 = fitTo(p, 2, p.role);
+      p.fitT3 = fitTo(p, 3, p.role);
       const upTier = p.tier >= 4 ? 3 : p.tier === 3 ? 2 : p.tier === 2 ? 1 : null;
       if (upTier) {
-        const up = fitDetail(p, benches[upTier] || {}, p.role);
+        const up = fitDetail(p, benchFor(upTier, p.role), p.role);
         if (up) {
           p.tipsUp = up.tips;
           p.leverUp = up.lever;
