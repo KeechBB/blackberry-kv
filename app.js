@@ -1524,7 +1524,7 @@
           });
         });
 
-        ratingRows = Array.from(map.values()).map((p) => {
+        const allRatingRows = Array.from(map.values()).map((p) => {
           const games = Number(p.kv) || 0;
           const winPct =
             games > 0 ? Math.round((1000 * (Number(p.wins) || 0)) / games) / 10 : null;
@@ -1566,6 +1566,10 @@
             predatorPlace: null,
           };
         });
+        // В таблице рейтинга — только зареганные (есть regNo). Остальные остаются в табло/pending.
+        ratingRows = allRatingRows.filter(
+          (p) => p.regNo != null && Number.isFinite(Number(p.regNo))
+        );
         ratingRows
           .filter((p) => !p.calibrating)
           .slice()
@@ -1585,8 +1589,9 @@
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("rating-scope").value;
         const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+        const orphanN = allRatingRows.length - ratingRows.length;
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. Ников: ${ratingRows.length}. Сортировка по умолчанию — TU. Меньше 5 каток — калибровка, внизу таблицы.`
+          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. В рейтинге только зареганные: ${ratingRows.length}${orphanN > 0 ? ` (ещё ${orphanN} с табло ждут регистрацию)` : ""}. Сортировка по умолчанию — TU. Меньше 5 каток — калибровка, внизу таблицы.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
         paintRatingTable();
       })
