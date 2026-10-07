@@ -688,11 +688,84 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .num { text-align: right; font-variant-numeric: tabular-nums; }
 .ctr { text-align: center; }
 
-tr.win td:first-child { box-shadow: inset 3px 0 0 var(--win); }
-tr.lose td:first-child { box-shadow: inset 3px 0 0 var(--lose); }
-tr.draw td:first-child { box-shadow: inset 3px 0 0 var(--draw); }
-tr.upcoming td:first-child { box-shadow: inset 3px 0 0 var(--soon); }
-tr.cancel td:first-child { box-shadow: inset 3px 0 0 var(--muted); }
+/* Результат матча: перелив от левого края до ~середины колонки «Клан» */
+.matches-table tbody tr.win td:nth-child(1),
+.matches-table tbody tr.lose td:nth-child(1),
+.matches-table tbody tr.draw td:nth-child(1),
+.matches-table tbody tr.upcoming td:nth-child(1),
+.matches-table tbody tr.cancel td:nth-child(1) {
+  box-shadow: none;
+  position: relative;
+  overflow: visible;
+}
+.matches-table tbody tr.win td:nth-child(1)::before,
+.matches-table tbody tr.lose td:nth-child(1)::before,
+.matches-table tbody tr.draw td:nth-child(1)::before,
+.matches-table tbody tr.upcoming td:nth-child(1)::before,
+.matches-table tbody tr.cancel td:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* дата + время + ~½ колонки «Клан» */
+  width: calc(100% + 9.5rem);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 0;
+}
+.matches-table tbody tr.win td:nth-child(1)::before {
+  background: linear-gradient(
+    90deg,
+    rgba(52, 211, 153, 0.38) 0%,
+    rgba(52, 211, 153, 0.18) 42%,
+    rgba(52, 211, 153, 0.06) 72%,
+    transparent 100%
+  );
+}
+.matches-table tbody tr.lose td:nth-child(1)::before {
+  background: linear-gradient(
+    90deg,
+    rgba(248, 113, 113, 0.38) 0%,
+    rgba(248, 113, 113, 0.18) 42%,
+    rgba(248, 113, 113, 0.06) 72%,
+    transparent 100%
+  );
+}
+.matches-table tbody tr.draw td:nth-child(1)::before {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 191, 36, 0.34) 0%,
+    rgba(251, 191, 36, 0.16) 42%,
+    rgba(251, 191, 36, 0.05) 72%,
+    transparent 100%
+  );
+}
+.matches-table tbody tr.upcoming td:nth-child(1)::before {
+  background: linear-gradient(
+    90deg,
+    rgba(125, 211, 252, 0.28) 0%,
+    rgba(125, 211, 252, 0.12) 42%,
+    rgba(125, 211, 252, 0.04) 72%,
+    transparent 100%
+  );
+}
+.matches-table tbody tr.cancel td:nth-child(1)::before {
+  background: linear-gradient(
+    90deg,
+    rgba(155, 147, 176, 0.28) 0%,
+    rgba(155, 147, 176, 0.12) 42%,
+    rgba(155, 147, 176, 0.04) 72%,
+    transparent 100%
+  );
+}
+.matches-table tbody tr.win td:nth-child(1),
+.matches-table tbody tr.lose td:nth-child(1),
+.matches-table tbody tr.draw td:nth-child(1),
+.matches-table tbody tr.upcoming td:nth-child(1),
+.matches-table tbody tr.cancel td:nth-child(1) {
+  z-index: 1;
+}
 
 .status {
   display: inline-flex;
