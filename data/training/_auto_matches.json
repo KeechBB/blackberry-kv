@@ -80,5 +80,13 @@
     "log": "SquadGame-2026.10.06-06-cslfallujah-2.log",
     "start": "2026-10-06T18:58:44+00:00",
     "end": "2026-10-06T19:58:34+00:00"
+  },
+  {
+    "id": "06-cslmutaha",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-06",
+    "log": "SquadGame-2026.10.06-06-cslmutaha.log",
+    "start": "2026-10-06T20:23:35+00:00",
+    "end": "2026-10-06T20:58:51+00:00"
   }
 ]

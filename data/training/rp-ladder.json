@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updatedAt": "2026-10-06T20:23:07.610938+00:00",
+  "updatedAt": "2026-10-07T13:34:56.710537+00:00",
   "startRp": 1000.0,
   "step": 150,
   "radiant3Max": 4500,
@@ -1413,15 +1413,75 @@
       "giveUpKills": 476,
       "teamkills": 4,
       "revives": 183
+    },
+    {
+      "id": "06-cslmutaha",
+      "map": "CSL Mutaha Skirmish v1",
+      "date": "2026-10-06",
+      "netByNick": {
+        "GAD": 447.8,
+        "NECO": 342.6,
+        "CORWAX": 257.41,
+        "MrChaykaa": 221.56,
+        "Frosty": 193.39,
+        "Tankist": -170.29,
+        "kitayskiy latyao": 157.64,
+        "Keech": -153.02,
+        "Trigger": -128.4,
+        "spartan": -116.23,
+        "angel": -115.67,
+        "_VaGNeR_": 111.2,
+        "Muhomor": 107.59,
+        "uglyfromyoung": 94.02,
+        "Treppen": 91.68,
+        "KTO--TO": 88.15,
+        "RostislavKVL": -87.27,
+        "Otto": 87.17,
+        "ZLOBA1917": -86.3,
+        "ПАДЛО": -86.03,
+        "Varyag": 85.23,
+        "ART": 79.41,
+        "Sandro.86": -79.37,
+        "WoodMan": 78.07,
+        "Jimmy Neutron": -75.33,
+        "Inrikus": 68.69,
+        "m3rz0st": -68.18,
+        "SkiLLeX": 63.65,
+        "Gadler": -57.44,
+        "CAT": 50.73,
+        "VET": -46.9,
+        "haq34": 45.11,
+        "S.M.P": -41.13,
+        "Animo": 28.21,
+        "ЗА ВАРКУ": -27.28,
+        "Chidori": 26.72,
+        "COBRA": 26.29,
+        "LordWolf": 24.02,
+        "Mukuru": 23.99,
+        "ADUN": 23.86,
+        "k1t": -16.37,
+        "AkiN": 15.93,
+        "Koperor": -13.43,
+        "Mahorka": 11.58,
+        "Senti": -10.15,
+        "ATK.GIGN": -9.52,
+        "Bahus": -8.95,
+        "Shrein": -5.23,
+        "Nestor Mahno": 4.21,
+        "HSVarvar": 1.33
+      },
+      "giveUpKills": 235,
+      "teamkills": 3,
+      "revives": 125
     }
   ],
   "players": {
     "angel": {
       "nick": "angel",
-      "rp": 2710.4,
-      "rankLabel": "LEGEND I",
-      "rankKey": "legend",
-      "roman": "I",
+      "rp": 2594.7,
+      "rankLabel": "DIAMOND III",
+      "rankKey": "diamond",
+      "roman": "III",
       "predator": false,
       "predatorPlace": null,
       "matches": [
@@ -1520,6 +1580,12 @@
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
           "net": -5.14
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -115.67
         }
       ]
     },
@@ -1588,6 +1654,77 @@
         }
       ]
     },
+    "gad": {
+      "nick": "GAD",
+      "rp": 2290.4,
+      "rankLabel": "DIAMOND I",
+      "rankKey": "diamond",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -53.15
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 131.69
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 181.51
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -64.22
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 509.74
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 76.57
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -159.45
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -71.63
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 291.57
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 447.8
+        }
+      ]
+    },
     "ikeppa": {
       "nick": "iKEppA",
       "rp": 2274.4,
@@ -1653,12 +1790,12 @@
         }
       ]
     },
-    "keech": {
-      "nick": "Keech",
-      "rp": 2198.3,
-      "rankLabel": "PLATINUM III",
+    "mukuru": {
+      "nick": "Mukuru",
+      "rp": 2095.4,
+      "rankLabel": "PLATINUM II",
       "rankKey": "platinum",
-      "roman": "III",
+      "roman": "II",
       "predator": false,
       "predatorPlace": null,
       "matches": [
@@ -1666,97 +1803,85 @@
           "id": "29-albasrah",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": -43.74
+          "net": 172.04
         },
         {
           "id": "29-albasrah-2",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": -152.37
+          "net": 283.37
         },
         {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": 4.48
+          "net": -26.75
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": 21.07
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 364.62
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 376.84
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -43.72
+          "net": 372.47
         },
         {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": -80.47
+          "net": -39.65
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": 144.55
+          "net": 11.86
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": -127.13
+          "net": -9.13
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": 180.44
+          "net": 105.27
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": -50.46
+          "net": 38.46
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": 113.06
+          "net": 14.02
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": 22.4
+          "net": -6.97
         },
         {
           "id": "05-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": 289.58
+          "net": -53.19
         },
         {
           "id": "05-cslmutaha-2",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": 179.13
+          "net": 209.56
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 23.99
         }
       ]
     },
@@ -1943,9 +2068,9 @@
         }
       ]
     },
-    "mukuru": {
-      "nick": "Mukuru",
-      "rp": 2071.4,
+    "keech": {
+      "nick": "Keech",
+      "rp": 2045.3,
       "rankLabel": "PLATINUM II",
       "rankKey": "platinum",
       "roman": "II",
@@ -1956,79 +2081,103 @@
           "id": "29-albasrah",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": 172.04
+          "net": -43.74
         },
         {
           "id": "29-albasrah-2",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": 283.37
+          "net": -152.37
         },
         {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": -26.75
+          "net": 4.48
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": 372.47
+          "net": 21.07
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 364.62
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 376.84
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -43.72
         },
         {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": -39.65
+          "net": -80.47
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": 11.86
+          "net": 144.55
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": -9.13
+          "net": -127.13
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": 105.27
+          "net": 180.44
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": 38.46
+          "net": -50.46
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": 14.02
+          "net": 113.06
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": -6.97
+          "net": 22.4
         },
         {
           "id": "05-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": -53.19
+          "net": 289.58
         },
         {
           "id": "05-cslmutaha-2",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": 209.56
+          "net": 179.13
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -153.02
         }
       ]
     },
@@ -2274,74 +2423,9 @@
         }
       ]
     },
-    "gad": {
-      "nick": "GAD",
-      "rp": 1842.6,
-      "rankLabel": "PLATINUM I",
-      "rankKey": "platinum",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -53.15
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 131.69
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 181.51
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -64.22
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 509.74
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 76.57
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -159.45
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -71.63
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 291.57
-        }
-      ]
-    },
     "adun": {
       "nick": "ADUN",
-      "rp": 1822.8,
+      "rp": 1846.7,
       "rankLabel": "PLATINUM I",
       "rankKey": "platinum",
       "roman": "I",
@@ -2461,6 +2545,12 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": -80.18
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 23.86
         }
       ]
     },
@@ -2671,9 +2761,9 @@
         }
       ]
     },
-    "tankist": {
-      "nick": "Tankist",
-      "rp": 1793.1,
+    "kto--to": {
+      "nick": "KTO--TO",
+      "rp": 1797.8,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "roman": "III",
@@ -2684,49 +2774,103 @@
           "id": "29-albasrah",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": 210.48
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -83.44
+          "net": 5.49
         },
         {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": 249.59
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": 107.37
+          "net": 55.83
         },
         {
           "id": "02-gorodok",
           "map": "Gorodok AAS v1",
           "date": "2026-10-02",
-          "net": -30.72
+          "net": -59.82
         },
         {
           "id": "02-mutaha",
           "map": "Mutaha RAAS v1",
           "date": "2026-10-02",
-          "net": 86.42
+          "net": 311.08
         },
         {
           "id": "02-fallujah",
           "map": "Fallujah AAS v1",
           "date": "2026-10-02",
-          "net": 140.86
+          "net": 40.09
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 118.81
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 113.98
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -154.7
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 146.74
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": 112.52
+          "net": 207.49
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -110.21
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -107.87
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 135.2
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 47.33
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -21.19
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -18.5
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 88.15
         }
       ]
     },
@@ -2774,154 +2918,6 @@
           "map": "Mutaha RAAS v1",
           "date": "2026-10-02",
           "net": -88.06
-        }
-      ]
-    },
-    "k1t": {
-      "nick": "k1t",
-      "rp": 1768.5,
-      "rankLabel": "GOLD III",
-      "rankKey": "gold",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -29.49
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -59.52
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -14.48
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 145.59
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 133.82
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 166.39
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 162.84
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 3.52
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 189.01
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 35.47
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 371.01
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -113.27
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -114.5
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -24.09
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -83.76
-        }
-      ]
-    },
-    "падло": {
-      "nick": "ПАДЛО",
-      "rp": 1766.2,
-      "rankLabel": "GOLD III",
-      "rankKey": "gold",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -31.97
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 59.14
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 463.07
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 430.58
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -14.12
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -140.51
         }
       ]
     },
@@ -3067,6 +3063,220 @@
         }
       ]
     },
+    "k1t": {
+      "nick": "k1t",
+      "rp": 1752.1,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -29.49
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -59.52
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -14.48
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 145.59
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 133.82
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 166.39
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 162.84
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 3.52
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 189.01
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 35.47
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 371.01
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -113.27
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -114.5
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -24.09
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -83.76
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -16.37
+        }
+      ]
+    },
+    "corwax": {
+      "nick": "CORWAX",
+      "rp": 1740.9,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 13.79
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 38.24
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 112.54
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -11.79
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 14.81
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 17.91
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -78.34
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 177.64
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 49.35
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 27.7
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -15.03
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 153.12
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 217.19
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -75.39
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -158.22
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 257.41
+        }
+      ]
+    },
     "fornikin": {
       "nick": "ForNikIN",
       "rp": 1740.6,
@@ -3096,116 +3306,9 @@
         }
       ]
     },
-    "kto--to": {
-      "nick": "KTO--TO",
-      "rp": 1709.7,
-      "rankLabel": "GOLD III",
-      "rankKey": "gold",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 5.49
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 55.83
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -59.82
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 311.08
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 40.09
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 118.81
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 113.98
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": -154.7
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 146.74
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 207.49
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -110.21
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -107.87
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 135.2
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 47.33
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -21.19
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -18.5
-        }
-      ]
-    },
     "animo": {
       "nick": "Animo",
-      "rp": 1675.7,
+      "rp": 1703.9,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "roman": "III",
@@ -3295,12 +3398,136 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": -170.94
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 28.21
+        }
+      ]
+    },
+    "woodman": {
+      "nick": "WoodMan",
+      "rp": 1703.8,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 88.43
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 142.48
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -34.77
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 103.55
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -96.17
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 105.42
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 119.66
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 197.11
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 78.07
+        }
+      ]
+    },
+    "падло": {
+      "nick": "ПАДЛО",
+      "rp": 1680.2,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -31.97
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 59.14
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 463.07
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 430.58
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -14.12
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -140.51
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -86.03
         }
       ]
     },
     "koperor": {
       "nick": "Koperor",
-      "rp": 1671.4,
+      "rp": 1658.0,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "roman": "III",
@@ -3360,6 +3587,12 @@
           "map": "Harju AAS v2",
           "date": "2026-10-04",
           "net": -55.17
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -13.43
         }
       ]
     },
@@ -3446,65 +3679,6 @@
         }
       ]
     },
-    "woodman": {
-      "nick": "WoodMan",
-      "rp": 1625.7,
-      "rankLabel": "GOLD II",
-      "rankKey": "gold",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 88.43
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 142.48
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -34.77
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 103.55
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -96.17
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 105.42
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 119.66
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 197.11
-        }
-      ]
-    },
     "kroasawn": {
       "nick": "Kroasawn",
       "rp": 1624.5,
@@ -3573,6 +3747,71 @@
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
           "net": 140.65
+        }
+      ]
+    },
+    "tankist": {
+      "nick": "Tankist",
+      "rp": 1622.8,
+      "rankLabel": "GOLD II",
+      "rankKey": "gold",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 210.48
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -83.44
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 249.59
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 107.37
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -30.72
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 86.42
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 140.86
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 112.52
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -170.29
         }
       ]
     },
@@ -3655,7 +3894,7 @@
     },
     "nestormahno": {
       "nick": "Nestor Mahno",
-      "rp": 1573.4,
+      "rp": 1577.6,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "roman": "II",
@@ -3715,6 +3954,12 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": 13.77
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 4.21
         }
       ]
     },
@@ -3741,9 +3986,9 @@
         }
       ]
     },
-    "senti": {
-      "nick": "Senti",
-      "rp": 1563.4,
+    "cobra": {
+      "nick": "COBRA",
+      "rp": 1566.0,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "roman": "II",
@@ -3751,46 +3996,112 @@
       "predatorPlace": null,
       "matches": [
         {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -188.68
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 83.03
+        },
+        {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": -49.45
+          "net": -173.9
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": 31.56
+          "net": -88.12
         },
         {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 260.56
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -62.62
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 67.93
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 332.28
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 158.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 27.24
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 253.96
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": -108.75
+          "net": 25.0
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": 73.91
+          "net": 77.33
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 94.52
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -68.15
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -86.17
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 136.57
         },
         {
           "id": "06-cslfallujah",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": 150.17
+          "net": -48.53
         },
         {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-06",
-          "net": 205.36
+          "net": 26.29
         }
       ]
     },
@@ -3924,9 +4235,9 @@
         }
       ]
     },
-    "atk.gign": {
-      "nick": "ATK.GIGN",
-      "rp": 1557.3,
+    "senti": {
+      "nick": "Senti",
+      "rp": 1553.2,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "roman": "II",
@@ -3934,28 +4245,52 @@
       "predatorPlace": null,
       "matches": [
         {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 262.34
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -49.45
         },
         {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 192.44
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 31.56
         },
         {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 39.28
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 260.56
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -108.75
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 73.91
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 150.17
         },
         {
           "id": "06-cslfallujah-2",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": 63.25
+          "net": 205.36
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -10.15
         }
       ]
     },
@@ -4048,9 +4383,9 @@
         }
       ]
     },
-    "cobra": {
-      "nick": "COBRA",
-      "rp": 1539.7,
+    "atk.gign": {
+      "nick": "ATK.GIGN",
+      "rp": 1547.8,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "roman": "II",
@@ -4058,106 +4393,34 @@
       "predatorPlace": null,
       "matches": [
         {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -188.68
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 83.03
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -173.9
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -88.12
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -62.62
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 67.93
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 332.28
-        },
-        {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": 158.04
+          "net": 262.34
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": 27.24
+          "net": 192.44
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": 253.96
+          "net": 39.28
         },
         {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 25.0
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 77.33
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 94.52
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -68.15
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -86.17
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 136.57
-        },
-        {
-          "id": "06-cslfallujah",
+          "id": "06-cslfallujah-2",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": -48.53
+          "net": 63.25
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -9.52
         }
       ]
     },
@@ -4380,9 +4643,9 @@
         }
       ]
     },
-    "m3rz0st": {
-      "nick": "m3rz0st",
-      "rp": 1518.1,
+    "muhomor": {
+      "nick": "Muhomor",
+      "rp": 1503.6,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "roman": "II",
@@ -4390,290 +4653,58 @@
       "predatorPlace": null,
       "matches": [
         {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 25.1
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 94.89
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 6.18
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": 21.71
-        },
-        {
           "id": "02-gorodok",
           "map": "Gorodok AAS v1",
           "date": "2026-10-02",
-          "net": 17.09
+          "net": -4.9
         },
         {
           "id": "02-mutaha",
           "map": "Mutaha RAAS v1",
           "date": "2026-10-02",
-          "net": 52.8
+          "net": 125.97
         },
         {
           "id": "02-fallujah",
           "map": "Fallujah AAS v1",
           "date": "2026-10-02",
-          "net": 40.18
+          "net": 59.64
         },
         {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": -96.51
+          "net": 156.65
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": -95.08
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 119.77
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 47.63
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 329.4
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -122.81
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 80.8
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 7.48
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -120.6
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 126.7
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -16.58
-        }
-      ]
-    },
-    "s.m.p": {
-      "nick": "S.M.P",
-      "rp": 1487.4,
-      "rankLabel": "GOLD I",
-      "rankKey": "gold",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 173.97
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 190.16
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 91.34
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": 12.32
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -111.39
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -7.95
+          "net": -34.69
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": -86.04
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -104.15
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 128.5
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 143.72
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 56.94
-        }
-      ]
-    },
-    "corwax": {
-      "nick": "CORWAX",
-      "rp": 1483.5,
-      "rankLabel": "GOLD I",
-      "rankKey": "gold",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 13.79
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 38.24
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 112.54
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -11.79
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 14.81
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 17.91
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -78.34
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 177.64
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 49.35
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 27.7
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -15.03
+          "net": 121.31
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": 153.12
+          "net": -75.5
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": 217.19
+          "net": 47.5
         },
         {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-06",
-          "net": -75.39
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -158.22
+          "net": 107.59
         }
       ]
     },
@@ -4860,9 +4891,217 @@
         }
       ]
     },
+    "m3rz0st": {
+      "nick": "m3rz0st",
+      "rp": 1449.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 25.1
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 94.89
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 6.18
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 21.71
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 17.09
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 52.8
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 40.18
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -96.51
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -95.08
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 119.77
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 47.63
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 329.4
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -122.81
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 80.8
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 7.48
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -120.6
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 126.7
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -16.58
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -68.18
+        }
+      ]
+    },
+    "s.m.p": {
+      "nick": "S.M.P",
+      "rp": 1446.3,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 173.97
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 190.16
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 91.34
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 12.32
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -111.39
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -7.95
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -86.04
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -104.15
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 128.5
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 143.72
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 56.94
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -41.13
+        }
+      ]
+    },
     "bahus": {
       "nick": "Bahus",
-      "rp": 1450.2,
+      "rp": 1441.2,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "roman": "I",
@@ -4982,6 +5221,12 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": 224.25
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -8.95
         }
       ]
     },
@@ -5014,9 +5259,26 @@
         }
       ]
     },
+    "xrandr": {
+      "nick": "xRandr",
+      "rp": 1426.2,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 426.24
+        }
+      ]
+    },
     "shrein": {
       "nick": "Shrein",
-      "rp": 1427.2,
+      "rp": 1422.0,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "roman": "I",
@@ -5052,136 +5314,12 @@
           "map": "Harju AAS v2",
           "date": "2026-10-04",
           "net": -14.88
-        }
-      ]
-    },
-    "xrandr": {
-      "nick": "xRandr",
-      "rp": 1426.2,
-      "rankLabel": "GOLD I",
-      "rankKey": "gold",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 426.24
-        }
-      ]
-    },
-    "spartan": {
-      "nick": "spartan",
-      "rp": 1418.4,
-      "rankLabel": "GOLD I",
-      "rankKey": "gold",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -10.16
         },
         {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 34.07
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -7.92
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 85.83
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 142.08
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -45.51
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -109.51
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -21.33
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 11.4
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 117.43
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -76.11
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 99.47
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 109.15
-        },
-        {
-          "id": "05-cslmutaha",
+          "id": "06-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 73.27
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 22.65
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": -71.22
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 64.8
+          "net": -5.23
         }
       ]
     },
@@ -5220,9 +5358,9 @@
         }
       ]
     },
-    "muhomor": {
-      "nick": "Muhomor",
-      "rp": 1396.0,
+    "mrchaykaa": {
+      "nick": "MrChaykaa",
+      "rp": 1404.5,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "roman": "I",
@@ -5230,52 +5368,195 @@
       "predatorPlace": null,
       "matches": [
         {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 44.66
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 144.41
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -93.78
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 7.87
+        },
+        {
           "id": "02-gorodok",
           "map": "Gorodok AAS v1",
           "date": "2026-10-02",
-          "net": -4.9
+          "net": 21.2
         },
         {
           "id": "02-mutaha",
           "map": "Mutaha RAAS v1",
           "date": "2026-10-02",
-          "net": 125.97
+          "net": -163.7
         },
         {
           "id": "02-fallujah",
           "map": "Fallujah AAS v1",
           "date": "2026-10-02",
-          "net": 59.64
+          "net": -89.59
         },
         {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": 156.65
+          "net": -1.13
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": -34.69
+          "net": -163.31
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": 121.31
+          "net": -59.03
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 59.93
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 2.7
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": -75.5
+          "net": 19.95
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": 47.5
+          "net": 142.47
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 27.47
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 282.73
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 221.56
+        }
+      ]
+    },
+    "frosty": {
+      "nick": "Frosty",
+      "rp": 1391.4,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 25.16
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 192.9
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 64.62
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -28.83
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 1.94
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 87.6
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -7.91
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -103.66
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -102.56
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -130.11
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 101.12
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 97.69
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 193.39
         }
       ]
     },
@@ -5376,6 +5657,101 @@
           "map": "Chora AAS v3",
           "date": "2026-10-03",
           "net": 199.94
+        }
+      ]
+    },
+    "chidori": {
+      "nick": "Chidori",
+      "rp": 1355.8,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -98.08
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -10.18
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -85.52
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -34.5
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 220.92
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 160.65
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -231.46
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 115.35
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 86.09
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 5.99
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 7.2
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 95.81
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 96.86
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 26.72
         }
       ]
     },
@@ -5484,95 +5860,6 @@
         }
       ]
     },
-    "chidori": {
-      "nick": "Chidori",
-      "rp": 1329.1,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -98.08
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -10.18
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -85.52
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -34.5
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 220.92
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 160.65
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -231.46
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 115.35
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 86.09
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 5.99
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 7.2
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 95.81
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 96.86
-        }
-      ]
-    },
     "aleksgar": {
       "nick": "ALEKSGAR",
       "rp": 1321.4,
@@ -5626,6 +5913,125 @@
         }
       ]
     },
+    "spartan": {
+      "nick": "spartan",
+      "rp": 1302.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -10.16
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 34.07
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -7.92
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 85.83
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 142.08
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -45.51
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -109.51
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -21.33
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 11.4
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 117.43
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -76.11
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 99.47
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 109.15
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 73.27
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 22.65
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -71.22
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 64.8
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -116.23
+        }
+      ]
+    },
     "director": {
       "nick": "DirecTor",
       "rp": 1300.0,
@@ -5640,6 +6046,95 @@
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
           "net": 299.96
+        }
+      ]
+    },
+    "skillex": {
+      "nick": "SkiLLeX",
+      "rp": 1297.1,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -148.91
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -15.61
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -39.0
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -30.59
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -32.95
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -67.98
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 69.15
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 273.33
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 86.6
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 235.12
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -89.52
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -6.17
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 63.65
         }
       ]
     },
@@ -5878,767 +6373,131 @@
         }
       ]
     },
-    "mirgorr": {
-      "nick": "Mirgorr",
-      "rp": 1240.9,
+    "uglyfromyoung": {
+      "nick": "uglyfromyoung",
+      "rp": 1246.9,
       "rankLabel": "SILVER III",
       "rankKey": "silver",
       "roman": "III",
       "predator": false,
       "predatorPlace": null,
       "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 178.52
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 62.38
-        }
-      ]
-    },
-    "skillex": {
-      "nick": "SkiLLeX",
-      "rp": 1233.5,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -148.91
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -15.61
-        },
         {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": -39.0
+          "net": -52.53
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": -30.59
+          "net": -20.86
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 100.52
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 120.18
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 171.48
         },
         {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": -32.95
+          "net": -100.23
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": -67.98
+          "net": 37.63
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": 69.15
+          "net": -35.99
         },
         {
           "id": "04-sumari",
           "map": "Sumari Bala AAS v1",
           "date": "2026-10-04",
-          "net": 273.33
+          "net": -84.26
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": 86.6
+          "net": -38.4
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": 235.12
+          "net": -28.9
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 58.25
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 32.58
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 9.49
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 130.45
         },
         {
           "id": "06-cslfallujah",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": -89.52
+          "net": -58.77
         },
         {
           "id": "06-cslfallujah-2",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": -6.17
-        }
-      ]
-    },
-    "hillfill": {
-      "nick": "hillfill",
-      "rp": 1224.0,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -3.81
+          "net": -87.75
         },
         {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -70.54
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 191.12
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -75.71
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 92.93
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -24.58
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 87.59
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 82.58
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -144.52
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 60.31
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 28.65
-        }
-      ]
-    },
-    "gexord": {
-      "nick": "Gexord",
-      "rp": 1219.2,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 87.09
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 46.05
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 86.02
-        }
-      ]
-    },
-    "vet": {
-      "nick": "VET",
-      "rp": 1216.8,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 87.1
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 169.8
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -38.2
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -36.94
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -118.6
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -78.71
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 16.56
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -109.57
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 126.33
-        },
-        {
-          "id": "05-cslmutaha",
+          "id": "06-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 100.92
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -81.29
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": 179.35
-        }
-      ]
-    },
-    "zloba1917": {
-      "nick": "ZLOBA1917",
-      "rp": 1212.6,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -30.91
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 11.68
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 154.56
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": 250.72
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 53.18
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 11.6
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -53.24
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -57.42
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -84.01
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": -8.91
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 109.53
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 131.19
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -136.35
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -144.69
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -37.55
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 226.73
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -183.56
-        }
-      ]
-    },
-    "nightmare-": {
-      "nick": "nightmare-",
-      "rp": 1203.6,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 235.77
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -32.15
-        }
-      ]
-    },
-    "flex": {
-      "nick": "FLEX",
-      "rp": 1201.2,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "roman": "III",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 61.31
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 62.66
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 25.34
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 43.52
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": -16.03
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 84.12
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -59.74
-        }
-      ]
-    },
-    "runetik": {
-      "nick": "Runetik",
-      "rp": 1198.7,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 128.19
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 70.55
-        }
-      ]
-    },
-    "frosty": {
-      "nick": "Frosty",
-      "rp": 1198.0,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 25.16
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": 192.9
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 64.62
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -28.83
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 1.94
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 87.6
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -7.91
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -103.66
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -102.56
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -130.11
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 101.12
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 97.69
-        }
-      ]
-    },
-    "mrchaykaa": {
-      "nick": "MrChaykaa",
-      "rp": 1182.9,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 44.66
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 144.41
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -93.78
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": 7.87
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 21.2
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -163.7
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -89.59
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -1.13
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -163.31
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": -59.03
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 59.93
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 2.7
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 19.95
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 142.47
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 27.47
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 282.73
-        }
-      ]
-    },
-    "goob": {
-      "nick": "Goob",
-      "rp": 1177.0,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 176.98
-        }
-      ]
-    },
-    "rostislavkvl": {
-      "nick": "RostislavKVL",
-      "rp": 1168.3,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 34.93
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -2.12
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 20.99
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 151.0
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -36.54
+          "net": 94.02
         }
       ]
     },
     "art": {
       "nick": "ART",
-      "rp": 1164.6,
-      "rankLabel": "SILVER II",
+      "rp": 1244.0,
+      "rankLabel": "SILVER III",
       "rankKey": "silver",
-      "roman": "II",
+      "roman": "III",
       "predator": false,
       "predatorPlace": null,
       "matches": [
@@ -6755,32 +6614,251 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": -46.93
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 79.41
         }
       ]
     },
-    "grechnevy": {
-      "nick": "Grechnevy",
-      "rp": 1162.8,
-      "rankLabel": "SILVER II",
+    "mirgorr": {
+      "nick": "Mirgorr",
+      "rp": 1240.9,
+      "rankLabel": "SILVER III",
       "rankKey": "silver",
-      "roman": "II",
+      "roman": "III",
       "predator": false,
       "predatorPlace": null,
       "matches": [
         {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 178.52
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 62.38
+        }
+      ]
+    },
+    "hillfill": {
+      "nick": "hillfill",
+      "rp": 1224.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -3.81
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -70.54
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 191.12
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -75.71
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 92.93
+        },
+        {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": 162.81
+          "net": -24.58
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 87.59
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 82.58
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": -144.52
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 60.31
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 28.65
+        }
+      ]
+    },
+    "varyag": {
+      "nick": "Varyag",
+      "rp": 1219.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -181.69
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -117.71
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 196.74
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 130.54
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 37.92
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 69.77
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -155.85
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 1.9
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -44.16
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -2.92
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -63.13
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 38.0
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 55.0
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 169.71
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 85.23
+        }
+      ]
+    },
+    "gexord": {
+      "nick": "Gexord",
+      "rp": 1219.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 87.09
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 46.05
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": 86.02
         }
       ]
     },
     "cat": {
       "nick": "CAT",
-      "rp": 1159.6,
-      "rankLabel": "SILVER II",
+      "rp": 1210.3,
+      "rankLabel": "SILVER III",
       "rankKey": "silver",
-      "roman": "II",
+      "roman": "III",
       "predator": false,
       "predatorPlace": null,
       "matches": [
@@ -6855,12 +6933,94 @@
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
           "net": 14.67
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 50.73
         }
       ]
     },
-    "uglyfromyoung": {
-      "nick": "uglyfromyoung",
-      "rp": 1152.9,
+    "nightmare-": {
+      "nick": "nightmare-",
+      "rp": 1203.6,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 235.77
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -32.15
+        }
+      ]
+    },
+    "flex": {
+      "nick": "FLEX",
+      "rp": 1201.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 61.31
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 62.66
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 25.34
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 43.52
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -16.03
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 84.12
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -59.74
+        }
+      ]
+    },
+    "runetik": {
+      "nick": "Runetik",
+      "rp": 1198.7,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "roman": "II",
@@ -6868,106 +7028,299 @@
       "predatorPlace": null,
       "matches": [
         {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -52.53
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -20.86
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 100.52
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 120.18
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": 171.48
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -100.23
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 37.63
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": -35.99
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -84.26
-        },
-        {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": -38.4
+          "net": 128.19
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": -28.9
+          "net": 70.55
+        }
+      ]
+    },
+    "_vagner_": {
+      "nick": "_VaGNeR_",
+      "rp": 1191.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -107.86
         },
         {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 58.25
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 82.8
         },
         {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 32.58
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 9.49
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 130.45
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -56.65
         },
         {
           "id": "06-cslfallujah",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": -58.77
+          "net": -28.88
         },
         {
           "id": "06-cslfallujah-2",
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": -87.75
+          "net": 191.29
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 111.2
+        }
+      ]
+    },
+    "goob": {
+      "nick": "Goob",
+      "rp": 1177.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 176.98
+        }
+      ]
+    },
+    "treppen": {
+      "nick": "Treppen",
+      "rp": 1175.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -74.76
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -142.1
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 43.97
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -40.05
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -50.33
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -64.22
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -21.31
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -4.86
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -16.98
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 138.81
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 67.54
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 0.31
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -68.11
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 200.67
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 152.92
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -37.28
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 91.68
+        }
+      ]
+    },
+    "vet": {
+      "nick": "VET",
+      "rp": 1169.9,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 87.1
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 169.8
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -38.2
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -36.94
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": -118.6
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -78.71
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 16.56
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -109.57
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 126.33
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 100.92
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -81.29
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 179.35
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -46.9
+        }
+      ]
+    },
+    "grechnevy": {
+      "nick": "Grechnevy",
+      "rp": 1162.8,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 162.81
         }
       ]
     },
@@ -7015,6 +7368,65 @@
           "map": "Harju AAS v2",
           "date": "2026-10-04",
           "net": -52.92
+        }
+      ]
+    },
+    "kitayskiylatyao": {
+      "nick": "kitayskiy latyao",
+      "rp": 1143.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -37.81
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 15.97
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 54.07
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 45.24
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -17.23
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -59.8
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -15.04
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 157.64
         }
       ]
     },
@@ -7123,9 +7535,9 @@
         }
       ]
     },
-    "varyag": {
-      "nick": "Varyag",
-      "rp": 1134.1,
+    "innikus": {
+      "nick": "Inrikus",
+      "rp": 1136.2,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "roman": "II",
@@ -7133,88 +7545,34 @@
       "predatorPlace": null,
       "matches": [
         {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -181.69
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -117.71
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 196.74
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 130.54
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 37.92
-        },
-        {
           "id": "04-sumari",
           "map": "Sumari Bala AAS v1",
           "date": "2026-10-04",
-          "net": 69.77
+          "net": 166.02
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": -155.85
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 1.9
+          "net": -1.8
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": -44.16
+          "net": -10.52
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": -2.92
+          "net": -86.25
         },
         {
-          "id": "05-cslmutaha",
+          "id": "06-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -63.13
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 38.0
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
-          "net": 55.0
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 169.71
+          "net": 68.69
         }
       ]
     },
@@ -7348,6 +7706,125 @@
         }
       ]
     },
+    "zloba1917": {
+      "nick": "ZLOBA1917",
+      "rp": 1126.3,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -30.91
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 11.68
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 154.56
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": 250.72
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 53.18
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 11.6
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -53.24
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -57.42
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -84.01
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -8.91
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 109.53
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 131.19
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -136.35
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -144.69
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -37.55
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 226.73
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -183.56
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -86.3
+        }
+      ]
+    },
     "barsik": {
       "nick": "Barsik",
       "rp": 1125.5,
@@ -7407,49 +7884,9 @@
         }
       ]
     },
-    "kuchenchips": {
-      "nick": "Kuchenchips",
-      "rp": 1100.3,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -129.64
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 229.98
-        }
-      ]
-    },
-    ".ghoster": {
-      "nick": ".Ghoster",
-      "rp": 1096.6,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 96.57
-        }
-      ]
-    },
     "lordwolf": {
       "nick": "LordWolf",
-      "rp": 1088.2,
+      "rp": 1112.2,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "roman": "II",
@@ -7503,12 +7940,105 @@
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
           "net": -79.21
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 24.02
         }
       ]
     },
-    "treppen": {
-      "nick": "Treppen",
-      "rp": 1084.2,
+    "kuchenchips": {
+      "nick": "Kuchenchips",
+      "rp": 1100.3,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -129.64
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 229.98
+        }
+      ]
+    },
+    ".ghoster": {
+      "nick": ".Ghoster",
+      "rp": 1096.6,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 96.57
+        }
+      ]
+    },
+    "rostislavkvl": {
+      "nick": "RostislavKVL",
+      "rp": 1081.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 34.93
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -2.12
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 20.99
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 151.0
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -36.54
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -87.27
+        }
+      ]
+    },
+    "akin": {
+      "nick": "AkiN",
+      "rp": 1078.9,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "roman": "II",
@@ -7519,138 +8049,109 @@
           "id": "29-albasrah",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": -74.76
+          "net": -44.13
         },
         {
           "id": "29-albasrah-2",
           "map": "SEC 26 AlBasrah AAS v1",
           "date": "2026-09-29",
-          "net": -142.1
+          "net": 90.84
         },
         {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": 43.97
+          "net": 59.29
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": -40.05
+          "net": -95.51
         },
         {
           "id": "02-gorodok",
           "map": "Gorodok AAS v1",
           "date": "2026-10-02",
-          "net": -50.33
+          "net": -43.46
         },
         {
           "id": "02-mutaha",
           "map": "Mutaha RAAS v1",
           "date": "2026-10-02",
-          "net": -64.22
+          "net": 25.21
         },
         {
           "id": "02-fallujah",
           "map": "Fallujah AAS v1",
           "date": "2026-10-02",
-          "net": -21.31
+          "net": -219.2
         },
         {
           "id": "03-kokan",
           "map": "Kokan AAS v2",
           "date": "2026-10-03",
-          "net": -4.86
+          "net": -57.8
         },
         {
           "id": "03-chora",
           "map": "Chora AAS v3",
           "date": "2026-10-03",
-          "net": -16.98
+          "net": 23.92
         },
         {
           "id": "03-foolsroad",
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
-          "net": 138.81
+          "net": 64.21
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": -124.38
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": 67.54
+          "net": -71.84
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": 0.31
+          "net": 110.37
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": -68.11
+          "net": -41.51
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": 200.67
+          "net": 76.1
         },
         {
           "id": "05-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": 152.92
+          "net": -7.59
         },
         {
           "id": "05-cslmutaha-2",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": -37.28
-        }
-      ]
-    },
-    "_vagner_": {
-      "nick": "_VaGNeR_",
-      "rp": 1080.7,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -107.86
+          "net": 318.53
         },
         {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 82.8
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -56.65
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-06",
-          "net": -28.88
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 191.29
+          "net": 15.93
         }
       ]
     },
@@ -7796,41 +8297,6 @@
         }
       ]
     },
-    "innikus": {
-      "nick": "Inrikus",
-      "rp": 1067.5,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 166.02
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -1.8
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -10.52
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -86.25
-        }
-      ]
-    },
     "oguzok": {
       "nick": "Oguzok",
       "rp": 1065.9,
@@ -7932,119 +8398,6 @@
         }
       ]
     },
-    "akin": {
-      "nick": "AkiN",
-      "rp": 1063.0,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -44.13
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 90.84
-        },
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": 59.29
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -95.51
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -43.46
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 25.21
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -219.2
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -57.8
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 23.92
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 64.21
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -124.38
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -71.84
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 110.37
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -41.51
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 76.1
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -7.59
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": 318.53
-        }
-      ]
-    },
     "crowle": {
       "nick": "Crowle",
       "rp": 1062.7,
@@ -8065,6 +8418,53 @@
           "map": "Chora AAS v3",
           "date": "2026-10-03",
           "net": 0.68
+        }
+      ]
+    },
+    "haq34": {
+      "nick": "haq34",
+      "rp": 1060.6,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": -109.21
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -29.15
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 35.99
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -116.43
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 234.3
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 45.11
         }
       ]
     },
@@ -8214,47 +8614,6 @@
         }
       ]
     },
-    "haq34": {
-      "nick": "haq34",
-      "rp": 1015.5,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -109.21
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -29.15
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 35.99
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -116.43
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 234.3
-        }
-      ]
-    },
     "buti": {
       "nick": "Buti",
       "rp": 1015.2,
@@ -8293,6 +8652,71 @@
           "map": "Fool's Road RAAS v1",
           "date": "2026-10-03",
           "net": 66.79
+        }
+      ]
+    },
+    "neco": {
+      "nick": "NECO",
+      "rp": 1007.4,
+      "rankLabel": "SILVER I",
+      "rankKey": "silver",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 15.56
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -133.58
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 27.27
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -134.61
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 13.93
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -84.16
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": -45.49
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 5.85
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 342.6
         }
       ]
     },
@@ -8510,101 +8934,6 @@
         }
       ]
     },
-    "trigger": {
-      "nick": "Trigger",
-      "rp": 998.0,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -74.69
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -96.3
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -63.06
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -107.55
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -126.65
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -37.64
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 303.17
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -56.63
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -71.24
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 5.13
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": 41.05
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": 47.13
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 46.89
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 188.43
-        }
-      ]
-    },
     "ilyich": {
       "nick": "Ilyich",
       "rp": 994.5,
@@ -8747,59 +9076,6 @@
         }
       ]
     },
-    "kitayskiylatyao": {
-      "nick": "kitayskiy latyao",
-      "rp": 985.4,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -37.81
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 15.97
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 54.07
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 45.24
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -17.23
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -59.8
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -15.04
-        }
-      ]
-    },
     "chappi": {
       "nick": "Chappi",
       "rp": 964.3,
@@ -8929,83 +9205,6 @@
         }
       ]
     },
-    "gadler": {
-      "nick": "Gadler",
-      "rp": 910.5,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "roman": "I",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "30-mutaha",
-          "map": "Mutaha AAS v1",
-          "date": "2026-09-30",
-          "net": -53.02
-        },
-        {
-          "id": "30-narva",
-          "map": "Narva AAS v2",
-          "date": "2026-09-30",
-          "net": -131.64
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 453.48
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": 67.07
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -104.11
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -68.67
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 178.8
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -155.04
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -89.3
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -63.48
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -123.56
-        }
-      ]
-    },
     "prolik": {
       "nick": "Prolik",
       "rp": 909.8,
@@ -9131,6 +9330,107 @@
           "map": "Narva AAS v2",
           "date": "2026-09-30",
           "net": -74.74
+        }
+      ]
+    },
+    "trigger": {
+      "nick": "Trigger",
+      "rp": 869.6,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": -74.69
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -96.3
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -63.06
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -107.55
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -126.65
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -37.64
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 303.17
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": -56.63
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -71.24
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 5.13
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": 41.05
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 47.13
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 46.89
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": 188.43
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -128.4
         }
       ]
     },
@@ -9282,9 +9582,9 @@
         }
       ]
     },
-    "jimmyneutron": {
-      "nick": "Jimmy Neutron",
-      "rp": 814.7,
+    "gadler": {
+      "nick": "Gadler",
+      "rp": 853.1,
       "rankLabel": "BRONZE III",
       "rankKey": "bronze",
       "roman": "III",
@@ -9295,55 +9595,186 @@
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": 119.13
+          "net": -53.02
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": 6.87
+          "net": -131.64
         },
         {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 137.44
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": 453.48
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": 67.07
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -104.11
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -68.67
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 178.8
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": -125.08
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 100.98
+          "net": -155.04
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": -121.99
+          "net": -89.3
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": -92.53
+          "net": -63.48
         },
         {
           "id": "05-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": -127.82
+          "net": -123.56
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -57.44
+        }
+      ]
+    },
+    "otto": {
+      "nick": "Otto",
+      "rp": 842.0,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "roman": "III",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "29-albasrah",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": -2.52
+        },
+        {
+          "id": "29-albasrah-2",
+          "map": "SEC 26 AlBasrah AAS v1",
+          "date": "2026-09-29",
+          "net": 9.74
+        },
+        {
+          "id": "30-mutaha",
+          "map": "Mutaha AAS v1",
+          "date": "2026-09-30",
+          "net": 9.68
+        },
+        {
+          "id": "30-narva",
+          "map": "Narva AAS v2",
+          "date": "2026-09-30",
+          "net": -82.02
+        },
+        {
+          "id": "02-gorodok",
+          "map": "Gorodok AAS v1",
+          "date": "2026-10-02",
+          "net": -100.46
+        },
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -140.88
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -74.92
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 159.94
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -138.5
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": 21.37
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": -68.77
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 173.27
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -106.41
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": 55.41
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": 33.9
         },
         {
           "id": "05-cslmutaha-2",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": -82.26
+          "net": 5.96
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 87.17
         }
       ]
     },
@@ -9482,116 +9913,103 @@
         }
       ]
     },
-    "otto": {
-      "nick": "Otto",
-      "rp": 754.8,
-      "rankLabel": "BRONZE III",
+    "jimmyneutron": {
+      "nick": "Jimmy Neutron",
+      "rp": 739.4,
+      "rankLabel": "BRONZE II",
       "rankKey": "bronze",
-      "roman": "III",
+      "roman": "II",
       "predator": false,
       "predatorPlace": null,
       "matches": [
         {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -2.52
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 9.74
-        },
-        {
           "id": "30-mutaha",
           "map": "Mutaha AAS v1",
           "date": "2026-09-30",
-          "net": 9.68
+          "net": 119.13
         },
         {
           "id": "30-narva",
           "map": "Narva AAS v2",
           "date": "2026-09-30",
-          "net": -82.02
+          "net": 6.87
         },
         {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": -100.46
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -140.88
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -74.92
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 159.94
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -138.5
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": 21.37
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": 137.44
         },
         {
           "id": "04-kokan",
           "map": "Kokan RAAS v1",
           "date": "2026-10-04",
-          "net": -68.77
+          "net": -125.08
         },
         {
           "id": "04-harju",
           "map": "Harju AAS v2",
           "date": "2026-10-04",
-          "net": 173.27
+          "net": 100.98
         },
         {
           "id": "05-albasrah",
           "map": "Al Basrah RAAS v3",
           "date": "2026-10-05",
-          "net": -106.41
+          "net": -121.99
         },
         {
           "id": "05-blackcoast",
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
-          "net": 55.41
+          "net": -92.53
         },
         {
           "id": "05-cslmutaha",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": 33.9
+          "net": -127.82
         },
         {
           "id": "05-cslmutaha-2",
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
-          "net": 5.96
+          "net": -82.26
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -75.33
+        }
+      ]
+    },
+    "linasuetolog": {
+      "nick": "Lina Suetolog",
+      "rp": 717.3,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "roman": "II",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": -167.04
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": -115.68
         }
       ]
     },
     "заварку": {
       "nick": "ЗА ВАРКУ",
-      "rp": 734.6,
+      "rp": 707.3,
       "rankLabel": "BRONZE II",
       "rankKey": "bronze",
       "roman": "II",
@@ -9663,29 +10081,12 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": 142.59
-        }
-      ]
-    },
-    "linasuetolog": {
-      "nick": "Lina Suetolog",
-      "rp": 717.3,
-      "rankLabel": "BRONZE II",
-      "rankKey": "bronze",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": -167.04
         },
         {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": -115.68
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -27.28
         }
       ]
     },
@@ -9801,65 +10202,6 @@
         }
       ]
     },
-    "neco": {
-      "nick": "NECO",
-      "rp": 664.8,
-      "rankLabel": "BRONZE II",
-      "rankKey": "bronze",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "29-albasrah",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": 15.56
-        },
-        {
-          "id": "29-albasrah-2",
-          "map": "SEC 26 AlBasrah AAS v1",
-          "date": "2026-09-29",
-          "net": -133.58
-        },
-        {
-          "id": "02-gorodok",
-          "map": "Gorodok AAS v1",
-          "date": "2026-10-02",
-          "net": 27.27
-        },
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -134.61
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": 13.93
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": -84.16
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": -45.49
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": 5.85
-        }
-      ]
-    },
     "lorgon": {
       "nick": "lorgon",
       "rp": 662.8,
@@ -9892,101 +10234,6 @@
           "map": "Black Coast AAS v2",
           "date": "2026-10-05",
           "net": -127.21
-        }
-      ]
-    },
-    "sandro.86": {
-      "nick": "Sandro.86",
-      "rp": 657.1,
-      "rankLabel": "BRONZE II",
-      "rankKey": "bronze",
-      "roman": "II",
-      "predator": false,
-      "predatorPlace": null,
-      "matches": [
-        {
-          "id": "02-mutaha",
-          "map": "Mutaha RAAS v1",
-          "date": "2026-10-02",
-          "net": -19.25
-        },
-        {
-          "id": "02-fallujah",
-          "map": "Fallujah AAS v1",
-          "date": "2026-10-02",
-          "net": -67.28
-        },
-        {
-          "id": "03-kokan",
-          "map": "Kokan AAS v2",
-          "date": "2026-10-03",
-          "net": 120.6
-        },
-        {
-          "id": "03-chora",
-          "map": "Chora AAS v3",
-          "date": "2026-10-03",
-          "net": 55.54
-        },
-        {
-          "id": "03-foolsroad",
-          "map": "Fool's Road RAAS v1",
-          "date": "2026-10-03",
-          "net": -78.97
-        },
-        {
-          "id": "04-sumari",
-          "map": "Sumari Bala AAS v1",
-          "date": "2026-10-04",
-          "net": -61.52
-        },
-        {
-          "id": "04-kokan",
-          "map": "Kokan RAAS v1",
-          "date": "2026-10-04",
-          "net": 7.64
-        },
-        {
-          "id": "04-harju",
-          "map": "Harju AAS v2",
-          "date": "2026-10-04",
-          "net": 209.88
-        },
-        {
-          "id": "05-albasrah",
-          "map": "Al Basrah RAAS v3",
-          "date": "2026-10-05",
-          "net": -66.21
-        },
-        {
-          "id": "05-blackcoast",
-          "map": "Black Coast AAS v2",
-          "date": "2026-10-05",
-          "net": -51.12
-        },
-        {
-          "id": "05-cslmutaha",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -33.46
-        },
-        {
-          "id": "05-cslmutaha-2",
-          "map": "CSL Mutaha Skirmish v1",
-          "date": "2026-10-05",
-          "net": -123.44
-        },
-        {
-          "id": "06-cslfallujah",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -114.17
-        },
-        {
-          "id": "06-cslfallujah-2",
-          "map": "CSL Fallujah Skirmish v1",
-          "date": "2026-10-06",
-          "net": -121.14
         }
       ]
     },
@@ -10039,10 +10286,10 @@
     },
     "mahorka": {
       "nick": "Mahorka",
-      "rp": 591.8,
-      "rankLabel": "BRONZE I",
+      "rp": 603.4,
+      "rankLabel": "BRONZE II",
       "rankKey": "bronze",
-      "roman": "I",
+      "roman": "II",
       "predator": false,
       "predatorPlace": null,
       "matches": [
@@ -10141,12 +10388,119 @@
           "map": "CSL Fallujah Skirmish v1",
           "date": "2026-10-06",
           "net": 234.61
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 11.58
+        }
+      ]
+    },
+    "sandro.86": {
+      "nick": "Sandro.86",
+      "rp": 577.7,
+      "rankLabel": "BRONZE I",
+      "rankKey": "bronze",
+      "roman": "I",
+      "predator": false,
+      "predatorPlace": null,
+      "matches": [
+        {
+          "id": "02-mutaha",
+          "map": "Mutaha RAAS v1",
+          "date": "2026-10-02",
+          "net": -19.25
+        },
+        {
+          "id": "02-fallujah",
+          "map": "Fallujah AAS v1",
+          "date": "2026-10-02",
+          "net": -67.28
+        },
+        {
+          "id": "03-kokan",
+          "map": "Kokan AAS v2",
+          "date": "2026-10-03",
+          "net": 120.6
+        },
+        {
+          "id": "03-chora",
+          "map": "Chora AAS v3",
+          "date": "2026-10-03",
+          "net": 55.54
+        },
+        {
+          "id": "03-foolsroad",
+          "map": "Fool's Road RAAS v1",
+          "date": "2026-10-03",
+          "net": -78.97
+        },
+        {
+          "id": "04-sumari",
+          "map": "Sumari Bala AAS v1",
+          "date": "2026-10-04",
+          "net": -61.52
+        },
+        {
+          "id": "04-kokan",
+          "map": "Kokan RAAS v1",
+          "date": "2026-10-04",
+          "net": 7.64
+        },
+        {
+          "id": "04-harju",
+          "map": "Harju AAS v2",
+          "date": "2026-10-04",
+          "net": 209.88
+        },
+        {
+          "id": "05-albasrah",
+          "map": "Al Basrah RAAS v3",
+          "date": "2026-10-05",
+          "net": -66.21
+        },
+        {
+          "id": "05-blackcoast",
+          "map": "Black Coast AAS v2",
+          "date": "2026-10-05",
+          "net": -51.12
+        },
+        {
+          "id": "05-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -33.46
+        },
+        {
+          "id": "05-cslmutaha-2",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-05",
+          "net": -123.44
+        },
+        {
+          "id": "06-cslfallujah",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -114.17
+        },
+        {
+          "id": "06-cslfallujah-2",
+          "map": "CSL Fallujah Skirmish v1",
+          "date": "2026-10-06",
+          "net": -121.14
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": -79.37
         }
       ]
     },
     "hsvarvar": {
       "nick": "HSVarvar",
-      "rp": 571.2,
+      "rp": 572.5,
       "rankLabel": "BRONZE I",
       "rankKey": "bronze",
       "roman": "I",
@@ -10218,6 +10572,12 @@
           "map": "CSL Mutaha Skirmish v1",
           "date": "2026-10-05",
           "net": -43.58
+        },
+        {
+          "id": "06-cslmutaha",
+          "map": "CSL Mutaha Skirmish v1",
+          "date": "2026-10-06",
+          "net": 1.33
         }
       ]
     },
@@ -10367,15 +10727,22 @@
   "leaderboard": [
     {
       "nick": "angel",
-      "rp": 2710.4,
-      "rankLabel": "LEGEND I",
-      "rankKey": "legend",
+      "rp": 2594.7,
+      "rankLabel": "DIAMOND III",
+      "rankKey": "diamond",
       "predatorPlace": null
     },
     {
       "nick": "Diray",
       "rp": 2543.3,
       "rankLabel": "DIAMOND II",
+      "rankKey": "diamond",
+      "predatorPlace": null
+    },
+    {
+      "nick": "GAD",
+      "rp": 2290.4,
+      "rankLabel": "DIAMOND I",
       "rankKey": "diamond",
       "predatorPlace": null
     },
@@ -10387,9 +10754,9 @@
       "predatorPlace": null
     },
     {
-      "nick": "Keech",
-      "rp": 2198.3,
-      "rankLabel": "PLATINUM III",
+      "nick": "Mukuru",
+      "rp": 2095.4,
+      "rankLabel": "PLATINUM II",
       "rankKey": "platinum",
       "predatorPlace": null
     },
@@ -10415,8 +10782,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "Mukuru",
-      "rp": 2071.4,
+      "nick": "Keech",
+      "rp": 2045.3,
       "rankLabel": "PLATINUM II",
       "rankKey": "platinum",
       "predatorPlace": null
@@ -10450,15 +10817,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "GAD",
-      "rp": 1842.6,
-      "rankLabel": "PLATINUM I",
-      "rankKey": "platinum",
-      "predatorPlace": null
-    },
-    {
       "nick": "ADUN",
-      "rp": 1822.8,
+      "rp": 1846.7,
       "rankLabel": "PLATINUM I",
       "rankKey": "platinum",
       "predatorPlace": null
@@ -10485,8 +10845,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "Tankist",
-      "rp": 1793.1,
+      "nick": "KTO--TO",
+      "rp": 1797.8,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10494,20 +10854,6 @@
     {
       "nick": "Pymba",
       "rp": 1775.8,
-      "rankLabel": "GOLD III",
-      "rankKey": "gold",
-      "predatorPlace": null
-    },
-    {
-      "nick": "k1t",
-      "rp": 1768.5,
-      "rankLabel": "GOLD III",
-      "rankKey": "gold",
-      "predatorPlace": null
-    },
-    {
-      "nick": "ПАДЛО",
-      "rp": 1766.2,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10527,6 +10873,20 @@
       "predatorPlace": null
     },
     {
+      "nick": "k1t",
+      "rp": 1752.1,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "CORWAX",
+      "rp": 1740.9,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
       "nick": "ForNikIN",
       "rp": 1740.6,
       "rankLabel": "GOLD III",
@@ -10534,22 +10894,29 @@
       "predatorPlace": null
     },
     {
-      "nick": "KTO--TO",
-      "rp": 1709.7,
+      "nick": "Animo",
+      "rp": 1703.9,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "predatorPlace": null
     },
     {
-      "nick": "Animo",
-      "rp": 1675.7,
+      "nick": "WoodMan",
+      "rp": 1703.8,
+      "rankLabel": "GOLD III",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ПАДЛО",
+      "rp": 1680.2,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "predatorPlace": null
     },
     {
       "nick": "Koperor",
-      "rp": 1671.4,
+      "rp": 1658.0,
       "rankLabel": "GOLD III",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10562,15 +10929,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "WoodMan",
-      "rp": 1625.7,
+      "nick": "Kroasawn",
+      "rp": 1624.5,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "predatorPlace": null
     },
     {
-      "nick": "Kroasawn",
-      "rp": 1624.5,
+      "nick": "Tankist",
+      "rp": 1622.8,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10584,7 +10951,7 @@
     },
     {
       "nick": "Nestor Mahno",
-      "rp": 1573.4,
+      "rp": 1577.6,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10597,8 +10964,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "Senti",
-      "rp": 1563.4,
+      "nick": "COBRA",
+      "rp": 1566.0,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10618,8 +10985,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "ATK.GIGN",
-      "rp": 1557.3,
+      "nick": "Senti",
+      "rp": 1553.2,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10632,8 +10999,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "COBRA",
-      "rp": 1539.7,
+      "nick": "ATK.GIGN",
+      "rp": 1547.8,
       "rankLabel": "GOLD II",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10660,23 +11027,9 @@
       "predatorPlace": null
     },
     {
-      "nick": "m3rz0st",
-      "rp": 1518.1,
+      "nick": "Muhomor",
+      "rp": 1503.6,
       "rankLabel": "GOLD II",
-      "rankKey": "gold",
-      "predatorPlace": null
-    },
-    {
-      "nick": "S.M.P",
-      "rp": 1487.4,
-      "rankLabel": "GOLD I",
-      "rankKey": "gold",
-      "predatorPlace": null
-    },
-    {
-      "nick": "CORWAX",
-      "rp": 1483.5,
-      "rankLabel": "GOLD I",
       "rankKey": "gold",
       "predatorPlace": null
     },
@@ -10702,8 +11055,22 @@
       "predatorPlace": null
     },
     {
+      "nick": "m3rz0st",
+      "rp": 1449.9,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "S.M.P",
+      "rp": 1446.3,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
       "nick": "Bahus",
-      "rp": 1450.2,
+      "rp": 1441.2,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10716,13 +11083,6 @@
       "predatorPlace": null
     },
     {
-      "nick": "Shrein",
-      "rp": 1427.2,
-      "rankLabel": "GOLD I",
-      "rankKey": "gold",
-      "predatorPlace": null
-    },
-    {
       "nick": "xRandr",
       "rp": 1426.2,
       "rankLabel": "GOLD I",
@@ -10730,8 +11090,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "spartan",
-      "rp": 1418.4,
+      "nick": "Shrein",
+      "rp": 1422.0,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10744,8 +11104,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "Muhomor",
-      "rp": 1396.0,
+      "nick": "MrChaykaa",
+      "rp": 1404.5,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Frosty",
+      "rp": 1391.4,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10760,6 +11127,13 @@
     {
       "nick": "Moonky123",
       "rp": 1373.7,
+      "rankLabel": "GOLD I",
+      "rankKey": "gold",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Chidori",
+      "rp": 1355.8,
       "rankLabel": "GOLD I",
       "rankKey": "gold",
       "predatorPlace": null
@@ -10786,13 +11160,6 @@
       "predatorPlace": null
     },
     {
-      "nick": "Chidori",
-      "rp": 1329.1,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
       "nick": "ALEKSGAR",
       "rp": 1321.4,
       "rankLabel": "SILVER III",
@@ -10800,8 +11167,22 @@
       "predatorPlace": null
     },
     {
+      "nick": "spartan",
+      "rp": 1302.2,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
       "nick": "DirecTor",
       "rp": 1300.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "SkiLLeX",
+      "rp": 1297.1,
       "rankLabel": "SILVER III",
       "rankKey": "silver",
       "predatorPlace": null
@@ -10842,15 +11223,22 @@
       "predatorPlace": null
     },
     {
-      "nick": "Mirgorr",
-      "rp": 1240.9,
+      "nick": "uglyfromyoung",
+      "rp": 1246.9,
       "rankLabel": "SILVER III",
       "rankKey": "silver",
       "predatorPlace": null
     },
     {
-      "nick": "SkiLLeX",
-      "rp": 1233.5,
+      "nick": "ART",
+      "rp": 1244.0,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Mirgorr",
+      "rp": 1240.9,
       "rankLabel": "SILVER III",
       "rankKey": "silver",
       "predatorPlace": null
@@ -10863,6 +11251,13 @@
       "predatorPlace": null
     },
     {
+      "nick": "Varyag",
+      "rp": 1219.3,
+      "rankLabel": "SILVER III",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
       "nick": "Gexord",
       "rp": 1219.2,
       "rankLabel": "SILVER III",
@@ -10870,15 +11265,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "VET",
-      "rp": 1216.8,
-      "rankLabel": "SILVER III",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
-      "nick": "ZLOBA1917",
-      "rp": 1212.6,
+      "nick": "CAT",
+      "rp": 1210.3,
       "rankLabel": "SILVER III",
       "rankKey": "silver",
       "predatorPlace": null
@@ -10905,15 +11293,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "Frosty",
-      "rp": 1198.0,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
-      "nick": "MrChaykaa",
-      "rp": 1182.9,
+      "nick": "_VaGNeR_",
+      "rp": 1191.9,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -10926,15 +11307,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "RostislavKVL",
-      "rp": 1168.3,
+      "nick": "Treppen",
+      "rp": 1175.9,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
     },
     {
-      "nick": "ART",
-      "rp": 1164.6,
+      "nick": "VET",
+      "rp": 1169.9,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -10947,22 +11328,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "CAT",
-      "rp": 1159.6,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
-      "nick": "uglyfromyoung",
-      "rp": 1152.9,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
       "nick": "Freez",
       "rp": 1149.0,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "rp": 1143.0,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -10989,8 +11363,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "Varyag",
-      "rp": 1134.1,
+      "nick": "Inrikus",
+      "rp": 1136.2,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11010,8 +11384,22 @@
       "predatorPlace": null
     },
     {
+      "nick": "ZLOBA1917",
+      "rp": 1126.3,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
       "nick": "Barsik",
       "rp": 1125.5,
+      "rankLabel": "SILVER II",
+      "rankKey": "silver",
+      "predatorPlace": null
+    },
+    {
+      "nick": "LordWolf",
+      "rp": 1112.2,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11031,22 +11419,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "LordWolf",
-      "rp": 1088.2,
+      "nick": "RostislavKVL",
+      "rp": 1081.0,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
     },
     {
-      "nick": "Treppen",
-      "rp": 1084.2,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
-      "nick": "_VaGNeR_",
-      "rp": 1080.7,
+      "nick": "AkiN",
+      "rp": 1078.9,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11066,13 +11447,6 @@
       "predatorPlace": null
     },
     {
-      "nick": "Inrikus",
-      "rp": 1067.5,
-      "rankLabel": "SILVER II",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
       "nick": "Oguzok",
       "rp": 1065.9,
       "rankLabel": "SILVER II",
@@ -11080,15 +11454,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "AkiN",
-      "rp": 1063.0,
+      "nick": "Crowle",
+      "rp": 1062.7,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
     },
     {
-      "nick": "Crowle",
-      "rp": 1062.7,
+      "nick": "haq34",
+      "rp": 1060.6,
       "rankLabel": "SILVER II",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11122,15 +11496,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "haq34",
-      "rp": 1015.5,
+      "nick": "Buti",
+      "rp": 1015.2,
       "rankLabel": "SILVER I",
       "rankKey": "silver",
       "predatorPlace": null
     },
     {
-      "nick": "Buti",
-      "rp": 1015.2,
+      "nick": "NECO",
+      "rp": 1007.4,
       "rankLabel": "SILVER I",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11192,13 +11566,6 @@
       "predatorPlace": null
     },
     {
-      "nick": "Trigger",
-      "rp": 998.0,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
       "nick": "Ilyich",
       "rp": 994.5,
       "rankLabel": "SILVER I",
@@ -11208,13 +11575,6 @@
     {
       "nick": "KillReal",
       "rp": 992.6,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
-      "nick": "kitayskiy latyao",
-      "rp": 985.4,
       "rankLabel": "SILVER I",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11236,13 +11596,6 @@
     {
       "nick": "p1XeL",
       "rp": 919.7,
-      "rankLabel": "SILVER I",
-      "rankKey": "silver",
-      "predatorPlace": null
-    },
-    {
-      "nick": "Gadler",
-      "rp": 910.5,
       "rankLabel": "SILVER I",
       "rankKey": "silver",
       "predatorPlace": null
@@ -11276,6 +11629,13 @@
       "predatorPlace": null
     },
     {
+      "nick": "Trigger",
+      "rp": 869.6,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
       "nick": "Pugovka",
       "rp": 865.3,
       "rankLabel": "BRONZE III",
@@ -11290,8 +11650,15 @@
       "predatorPlace": null
     },
     {
-      "nick": "Jimmy Neutron",
-      "rp": 814.7,
+      "nick": "Gadler",
+      "rp": 853.1,
+      "rankLabel": "BRONZE III",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Otto",
+      "rp": 842.0,
       "rankLabel": "BRONZE III",
       "rankKey": "bronze",
       "predatorPlace": null
@@ -11318,15 +11685,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "Otto",
-      "rp": 754.8,
-      "rankLabel": "BRONZE III",
-      "rankKey": "bronze",
-      "predatorPlace": null
-    },
-    {
-      "nick": "ЗА ВАРКУ",
-      "rp": 734.6,
+      "nick": "Jimmy Neutron",
+      "rp": 739.4,
       "rankLabel": "BRONZE II",
       "rankKey": "bronze",
       "predatorPlace": null
@@ -11334,6 +11694,13 @@
     {
       "nick": "Lina Suetolog",
       "rp": 717.3,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "ЗА ВАРКУ",
+      "rp": 707.3,
       "rankLabel": "BRONZE II",
       "rankKey": "bronze",
       "predatorPlace": null
@@ -11353,22 +11720,8 @@
       "predatorPlace": null
     },
     {
-      "nick": "NECO",
-      "rp": 664.8,
-      "rankLabel": "BRONZE II",
-      "rankKey": "bronze",
-      "predatorPlace": null
-    },
-    {
       "nick": "lorgon",
       "rp": 662.8,
-      "rankLabel": "BRONZE II",
-      "rankKey": "bronze",
-      "predatorPlace": null
-    },
-    {
-      "nick": "Sandro.86",
-      "rp": 657.1,
       "rankLabel": "BRONZE II",
       "rankKey": "bronze",
       "predatorPlace": null
@@ -11382,14 +11735,21 @@
     },
     {
       "nick": "Mahorka",
-      "rp": 591.8,
+      "rp": 603.4,
+      "rankLabel": "BRONZE II",
+      "rankKey": "bronze",
+      "predatorPlace": null
+    },
+    {
+      "nick": "Sandro.86",
+      "rp": 577.7,
       "rankLabel": "BRONZE I",
       "rankKey": "bronze",
       "predatorPlace": null
     },
     {
       "nick": "HSVarvar",
-      "rp": 571.2,
+      "rp": 572.5,
       "rankLabel": "BRONZE I",
       "rankKey": "bronze",
       "predatorPlace": null
