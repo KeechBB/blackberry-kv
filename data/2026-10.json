@@ -160,10 +160,12 @@
       "server": "HQ",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "lose",
       "r1": "28:0",
-      "note": "Main · R1 28:0 Pyrrhic · IMF(BB) vs BAF(HQ) · Mutaha PAAS · 48:34 · ждём R2 · vs clan 0–2 (24.09 Narva 36)",
-      "playersUrl": "data/players/08-hq.json"
+      "note": "Main · сумма 28:136 (28:0 · 0:136) · раунды 1–1 · R1 Pyrrhic IMF 48:34 · R2 Decisive defeat BAF 34:43 · Mutaha PAAS · vs clan 0–2 (24.09+08.10)",
+      "playersUrl": "data/players/08-hq.json",
+      "r2": "0:136",
+      "meeting": "0–2"
     },
     {
       "id": "09-alpha",

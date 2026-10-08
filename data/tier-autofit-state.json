@@ -1,19 +1,71 @@
 {
-  "updatedAt": "2026-10-07",
+  "updatedAt": "2026-10-08",
   "holdDays": 2,
   "displayDays": 2,
   "watches": [
     {
-      "nick": "Radislave",
+      "nick": "Kroasawn",
       "kind": "promote",
       "fromTier": 2,
       "toTier": 1,
-      "fit": 97.8,
+      "fit": 97.6,
       "band": "strong",
       "role": "Медик",
-      "lever": "Урон/игра: 81% от эталона роли — больше урона по пехоте и технике",
-      "since": "2026-10-06",
-      "daysHeld": 1,
+      "lever": "Ты выше эталона — держи объём КВ и роль.",
+      "since": "2026-10-08",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "MrChaykaa",
+      "kind": "promote",
+      "fromTier": 2,
+      "toTier": 1,
+      "fit": 96.9,
+      "band": "strong",
+      "role": "Лёгкая труба",
+      "lever": "Ресы/игра: 38% от эталона роли — чаще поднимай союзников",
+      "since": "2026-10-08",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Azure",
+      "kind": "promote",
+      "fromTier": 2,
+      "toTier": 1,
+      "fit": 95.6,
+      "band": "strong",
+      "role": "Лёгкая труба",
+      "lever": "Активность: 62% от эталона роли — заходи стабильно в клановые войны",
+      "since": "2026-10-08",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Runetik",
+      "kind": "demote",
+      "fromTier": 2,
+      "toTier": 3,
+      "fit": 72.9,
+      "band": "hard",
+      "role": "Стрелок",
+      "lever": "KD: 64% от эталона роли — больше фрагов / меньше смертей",
+      "since": "2026-10-08",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Summer",
+      "kind": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "fit": 74.7,
+      "band": "hard",
+      "role": "КО (SL)",
+      "lever": "Урон/игра: 51% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-08",
+      "daysHeld": 0,
       "ready": false
     }
   ],
@@ -27,6 +79,17 @@
       "fit": 57.2,
       "note": "Авто Fit 57.2% · удержание 2д",
       "actor": "автофит"
+    },
+    {
+      "nick": "Radislave",
+      "fromTier": 2,
+      "toTier": 1,
+      "dir": "up",
+      "at": "2026-10-08",
+      "fit": 96.3,
+      "note": "Авто Fit 96.3% · удержание 2д",
+      "actor": "автофит",
+      "lever": "Урон/игра: 38% от эталона роли — больше урона по пехоте и технике"
     }
   ]
 }

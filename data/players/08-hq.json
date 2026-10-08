@@ -1,7 +1,7 @@
 {
   "matchId": "08-hq",
   "opp": "HQ",
-  "note": "R1 28:0 · Pyrrhic · IMF(BB) vs BAF(HQ) · SEC 26 Mutaha PAAS v1 · 48:34 · HQ server · Main · camera Shrein skipped · oppR1 partial (digitized rows)",
+  "note": "R1 28:0 Pyrrhic IMF(BB)·BAF(HQ) 48:34 · R2 0:136 Decisive BAF(BB)·IMF(HQ) 34:43 · Mutaha PAAS · сумма 28:136 · meeting 0–2 · camera Shrein skipped · oppR2 named rows",
   "r1": [
     {
       "nick": "Chidori",
@@ -318,10 +318,422 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "AkiN"
+      ],
+      "damage": [
+        "Gadler"
+      ],
+      "antiDeath": [
+        "akin0v"
+      ]
     }
-  }
+  },
+  "r2": [
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 48
+    },
+    {
+      "nick": "FLEX",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 190
+    },
+    {
+      "nick": "Azure",
+      "res": 12,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 132
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 122
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 250
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 7,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 93
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 114
+    },
+    {
+      "nick": "CERBER",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 140
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 85
+    },
+    {
+      "nick": "Chidori",
+      "res": 2,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 166
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 159
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 54
+    },
+    {
+      "nick": "Morty",
+      "res": 12,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 149
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 83
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 97
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 51
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 125
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 73
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 331
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 162
+    },
+    {
+      "nick": "lepurple",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 76
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 198
+    },
+    {
+      "nick": "KillReal",
+      "res": 12,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 31
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 224
+    },
+    {
+      "nick": "akin0v",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 122
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 8,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 147
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "HQ★ matsui",
+      "res": 5,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 101
+    },
+    {
+      "nick": "HQ★ Teros",
+      "res": 0,
+      "nok": 20,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 419
+    },
+    {
+      "nick": "HQ★ knyaz",
+      "res": 0,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 1,
+      "dmg": 410
+    },
+    {
+      "nick": "HQ★ Khalil",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 209
+    },
+    {
+      "nick": "HQ★ Xoni_i",
+      "res": 7,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 61
+    },
+    {
+      "nick": "HQ★ Weidu",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 188
+    },
+    {
+      "nick": "HQ★ 244",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 29
+    },
+    {
+      "nick": "HQ★ Lifetime",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 49
+    },
+    {
+      "nick": "HQ★ ZUTOMAYO",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 216
+    },
+    {
+      "nick": "HQ★ Source",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 133
+    },
+    {
+      "nick": "HQ★ xSideDeadx",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 45
+    },
+    {
+      "nick": "HQ★ globality",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 200
+    },
+    {
+      "nick": "HQ★ bl1kkyyn",
+      "res": 5,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 214
+    },
+    {
+      "nick": "HQ★ JP",
+      "res": 1,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 421
+    },
+    {
+      "nick": "HQ★ 伊特西伊",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 96
+    },
+    {
+      "nick": "HQ★ OGshifty",
+      "res": 0,
+      "nok": 8,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 167
+    },
+    {
+      "nick": "HQ★ Kidsm",
+      "res": 1,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 384
+    },
+    {
+      "nick": "HQ★ andreyka",
+      "res": 5,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 82
+    },
+    {
+      "nick": "HQ★ eLEGIJA",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 84
+    },
+    {
+      "nick": "HQ★ Alfred/2",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 45
+    },
+    {
+      "nick": "HQ★ absolute",
+      "res": 0,
+      "nok": 14,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 328
+    },
+    {
+      "nick": "HQ★ NCsaitama",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 192
+    },
+    {
+      "nick": "HQ★ PantherRay",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 159
+    },
+    {
+      "nick": "HQ★ spiffy",
+      "res": 0,
+      "nok": 35,
+      "kills": 27,
+      "deaths": 0,
+      "dmg": 1308
+    }
+  ]
 }

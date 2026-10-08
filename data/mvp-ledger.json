@@ -258,7 +258,7 @@
       "id": "08-hq",
       "day": 8,
       "opp": "HQ",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "Azure"
@@ -274,10 +274,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "AkiN"
+        ],
+        "damage": [
+          "Gadler"
+        ],
+        "antiDeath": [
+          "akin0v"
+        ]
       }
     },
     {
@@ -934,10 +942,18 @@
     },
     "AkiN": {
       "mvpMedic": 1,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "25-h1gh",
           "day": 25,
@@ -1327,7 +1343,7 @@
     "Gadler": {
       "mvpMedic": 1,
       "mvpKiller": 1,
-      "mvpDamage": 4,
+      "mvpDamage": 5,
       "antiDeath": 2,
       "awards": [
         {
@@ -1335,6 +1351,14 @@
           "day": 8,
           "opp": "HQ",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         },
@@ -1829,7 +1853,7 @@
       ]
     },
     "Morty": {
-      "mvpMedic": 3,
+      "mvpMedic": 4,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -1838,6 +1862,14 @@
           "matchId": "06-fox",
           "day": 6,
           "opp": "FOX",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -2552,7 +2584,7 @@
       "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "07-dcai",
@@ -2561,6 +2593,14 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "27-sph",
