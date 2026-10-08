@@ -155,13 +155,15 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "HQ",
-      "map": "SEC 26 Mutaha AAS v1",
+      "map": "SEC 26 Mutaha PAAS v1",
       "size": "26v26",
       "server": "HQ",
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · vs clan 0–2 (24.09 Narva 36) · Mutaha 26 · NO SCOUT"
+      "r1": "28:0",
+      "note": "Main · R1 28:0 Pyrrhic · IMF(BB) vs BAF(HQ) · Mutaha PAAS · 48:34 · ждём R2 · vs clan 0–2 (24.09 Narva 36)",
+      "playersUrl": "data/players/08-hq.json"
     },
     {
       "id": "09-alpha",

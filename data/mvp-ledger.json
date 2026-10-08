@@ -221,6 +221,66 @@
       }
     },
     {
+      "id": "07-dcai",
+      "day": 7,
+      "opp": "DCAI",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "akin0v"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "iKEppA"
+        ],
+        "antiDeath": [
+          "Chidori"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "CAT"
+        ],
+        "damage": [
+          "CAT"
+        ],
+        "antiDeath": [
+          "Chidori"
+        ]
+      }
+    },
+    {
+      "id": "08-hq",
+      "day": 8,
+      "opp": "HQ",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Azure"
+        ],
+        "killer": [
+          "freak"
+        ],
+        "damage": [
+          "Gadler"
+        ],
+        "antiDeath": [
+          "FLEX"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "11-dcai",
       "day": 11,
       "opp": "DCAI",
@@ -904,6 +964,22 @@
         }
       ]
     },
+    "Azure": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Bahus": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -1018,10 +1094,26 @@
     },
     "CAT": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "30-dcai",
           "day": 30,
@@ -1068,8 +1160,24 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 3,
       "awards": [
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "17-44th",
           "day": 17,
@@ -1176,6 +1284,22 @@
         }
       ]
     },
+    "FLEX": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Forks": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1203,9 +1327,17 @@
     "Gadler": {
       "mvpMedic": 1,
       "mvpKiller": 1,
-      "mvpDamage": 3,
+      "mvpDamage": 4,
       "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "18-ih",
           "day": 18,
@@ -1481,11 +1613,19 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 8,
+      "mvpMedic": 9,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "16-hell",
           "day": 16,
@@ -2409,11 +2549,19 @@
       ]
     },
     "akin0v": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "27-sph",
           "day": 27,
@@ -2514,7 +2662,7 @@
     },
     "freak": {
       "mvpMedic": 3,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
@@ -2533,6 +2681,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "17-44th",
@@ -2562,8 +2718,8 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 9,
-      "mvpDamage": 2,
+      "mvpKiller": 10,
+      "mvpDamage": 3,
       "antiDeath": 0,
       "awards": [
         {
@@ -2597,6 +2753,22 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "15-dcai",

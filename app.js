@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const STATUS_RU = {
     win: "победа",
     lose: "поражение",
@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261008-nklv-11";
+    new URLSearchParams(location.search).get("v") || "20261008-hq-r1";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
