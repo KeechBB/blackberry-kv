@@ -206,8 +206,8 @@
       "server": "BB",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · FALCONS · Mutaha 20 · BB server · NO SCOUT · NO MEETINGS · same day Main vs AVG 21:30"
+      "status": "cancel",
+      "note": "отмена · Main · SEC · FALCONS · Mutaha 20 · same day Main vs AVG 21:30"
     },
     {
       "id": "10-avg",
@@ -221,7 +221,7 @@
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · AlBasrah AAS 26 · BB server · same day Main vs FAL 20:00 · перенос с отмены 02.10 · vs clan Junior 0–2 (07.09 Harju)"
+      "note": "Main · SEC · AlBasrah AAS 26 · BB server · same day Main vs FAL 20:00 отмена · перенос с отмены 02.10 · vs clan Junior 0–2 (07.09 Harju)"
     },
     {
       "id": "11-nklv",
