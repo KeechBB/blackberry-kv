@@ -206,6 +206,20 @@
       "note": "Main · SEC · FALCONS · Mutaha 20 · BB server · NO SCOUT · NO MEETINGS"
     },
     {
+      "id": "11-nklv",
+      "day": 11,
+      "timeMsk": "19:00",
+      "timeUtc": "16:00",
+      "opp": "NKLV",
+      "map": "FCL Narva Small v1",
+      "size": "8v8",
+      "server": "FCL ARENA #2",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 · same day Junior vs .solid 21:00 · Main vs FOX 21:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "11-solid",
       "day": 11,
       "timeMsk": "21:00",
@@ -217,7 +231,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Mutaha 26 · сервер .solid · лого solid.png"
+      "note": "Junior · SEC · Mutaha 26 · сервер .solid · same day Junior vs NKLV 19:00 · лого solid.png"
     },
     {
       "id": "11-fox",
@@ -231,7 +245,7 @@
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · NO SCOUT"
+      "note": "Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · same day Junior vs NKLV 19:00 · NO SCOUT"
     },
     {
       "id": "13-hell",
