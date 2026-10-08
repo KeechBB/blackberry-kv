@@ -22,5 +22,6 @@
 | 11 | [11-solid](11-solid/match.md) | .solid | **Junior**, SEC 26 Mutaha, **26v26**, **21:00** МСК (18:00 UTC), сервер .solid, [analytics.md](11-solid/analytics.md) |
 | 11 | [11-FOX](11-FOX/match.md) | FOX | **мейн-стак**, CSL Mutaha AAS V1, **20v20**, **21:00** МСК (18:00 UTC), сервер BB, SEC, [analytics.md](11-FOX/analytics.md) |
 | 13 | [13-HELL](13-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 1-я vs HELL в окт., [analytics.md](13-HELL/analytics.md) |
+| 14 | [14-OMEN](14-OMEN/match.md) | OMEN | **мейн-стак**, HotDrop Narva (`HD_Narva_20x20`), **20v20**, **21:00** МСК (18:00 UTC), сервер OMEN, [analytics.md](14-OMEN/analytics.md) |
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 2-я vs HELL в окт., [analytics.md](15-HELL/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер ANY, [analytics.md](18-SPH/analytics.md) |

@@ -280,6 +280,20 @@
       "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · NO SCOUT · NO MEETINGS"
     },
     {
+      "id": "14-omen",
+      "day": 14,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "OMEN",
+      "map": "HotDrop Narva",
+      "size": "20v20",
+      "server": "OMEN",
+      "rules": "HOTDROP",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · заявка OMEN vs BB · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "15-hell",
       "day": 15,
       "timeMsk": "20:00",
