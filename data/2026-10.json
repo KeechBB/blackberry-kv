@@ -170,8 +170,8 @@
     {
       "id": "09-alpha",
       "day": 9,
-      "timeMsk": "19:00",
-      "timeUtc": "16:00",
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
       "opp": "ALPHA",
       "map": "FCL Mutaha",
       "size": "16v16",
@@ -179,7 +179,7 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · Mutaha 16 · same day Main vs DCAI 20:00 · vs clan 2–0 (26.09+03.10)"
+      "note": "Junior · FCL · Mutaha 16 · перенос с 19:00 → 20:00 · same time Main vs DCAI 20:00 · vs clan 2–0 (26.09+03.10)"
     },
     {
       "id": "09-dcai",
@@ -193,7 +193,7 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · HOTDROP Narva (was Goose Bay) · vs clan 2–0 (15.09+30.09) · not 07.10 Narva/Dcai · FCL ARENA #2 · same day Junior vs ALPHA 19:00"
+      "note": "Main · HOTDROP Narva (was Goose Bay) · vs clan 2–0 (15.09+30.09) · not 07.10 Narva/Dcai · FCL ARENA #2 · same time Junior vs ALPHA 20:00 (перенос с 19:00)"
     },
     {
       "id": "10-fal",
