@@ -266,6 +266,20 @@
       "note": "Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · same day Junior vs NKLV 19:00 · NO SCOUT"
     },
     {
+      "id": "13-ra",
+      "day": 13,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "RA",
+      "map": "FCL",
+      "size": "8v8",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "13-hell",
       "day": 13,
       "timeMsk": "20:00",
@@ -277,7 +291,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · NO SCOUT · NO MEETINGS"
+      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same day Junior vs RA 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "14-omen",
@@ -294,6 +308,20 @@
       "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · заявка OMEN vs BB · NO SCOUT · NO MEETINGS"
     },
     {
+      "id": "15-ra",
+      "day": 15,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "RA",
+      "map": "FCL",
+      "size": "8v8",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "15-hell",
       "day": 15,
       "timeMsk": "20:00",
@@ -305,7 +333,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 2-я встреча (после 13.10) · NO SCOUT · NO MEETINGS"
+      "note": "Junior · SEC · Sumari 26 · BB server · 2-я встреча (после 13.10) · same day Junior vs RA 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "18-sph",
