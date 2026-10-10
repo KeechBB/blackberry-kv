@@ -3,65 +3,73 @@
     "id": "04-sumari",
     "map": "Sumari Bala AAS v1",
     "date": "2026-10-04",
-    "log": "SquadGame-2026.10.04-sumari-kokan.log",
+    "log": "TR1-2026.10.04-04-sumari.log",
     "start": "2026-10-04T18:30:25+00:00",
-    "end": "2026-10-04T19:26:27+00:00"
+    "end": "2026-10-04T19:26:27+00:00",
+    "logPinned": true
   },
   {
     "id": "04-kokan",
     "map": "Kokan RAAS v1",
     "date": "2026-10-04",
-    "log": "SquadGame-2026.10.04-sumari-kokan.log",
+    "log": "TR1-2026.10.04-04-kokan.log",
     "start": "2026-10-04T19:31:11+00:00",
-    "end": "2026-10-04T20:24:14+00:00"
+    "end": "2026-10-04T20:24:14+00:00",
+    "logPinned": true
   },
   {
     "id": "04-harju",
     "map": "Harju AAS v2",
     "date": "2026-10-04",
-    "log": "SquadGame-2026.10.04-harju.log",
+    "log": "TR1-2026.10.04-04-harju.log",
     "start": "2026-10-04T20:33:17+00:00",
-    "end": "2026-10-04T21:25:08+00:00"
+    "end": "2026-10-04T21:25:08+00:00",
+    "logPinned": true
   },
   {
     "id": "05-albasrah",
     "map": "Al Basrah RAAS v3",
     "date": "2026-10-05",
-    "log": "SquadGame-backup-2026.10.05-20.18.05.log",
+    "log": "TR1-2026.10.05-05-albasrah.log",
     "start": "2026-10-05T18:35:08+00:00",
-    "end": "2026-10-05T19:12:57+00:00"
+    "end": "2026-10-05T19:12:57+00:00",
+    "logPinned": true
   },
   {
     "id": "05-blackcoast",
     "map": "Black Coast AAS v2",
     "date": "2026-10-05",
-    "log": "SquadGame-backup-2026.10.05-20.18.05.log",
+    "log": "TR1-2026.10.05-05-blackcoast.log",
     "start": "2026-10-05T19:13:40+00:00",
-    "end": "2026-10-05T20:17:10+00:00"
+    "end": "2026-10-05T20:17:10+00:00",
+    "logPinned": true
   },
   {
     "id": "05-cslmutaha",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-05",
-    "log": "SquadGame-2026.10.05-cslmutaha.log",
+    "log": "TR1-2026.10.05-05-cslmutaha.log",
     "start": "2026-10-05T20:28:47+00:00",
-    "end": "2026-10-05T20:59:12+00:00"
+    "end": "2026-10-05T20:59:12+00:00",
+    "logPinned": true
   },
   {
     "id": "05-cslmutaha-2",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-05",
-    "log": "SquadGame-2026.10.05-05-cslmutaha-2.log",
+    "log": "TR1-2026.10.05-05-cslmutaha-2.log",
     "start": "2026-10-05T20:59:54+00:00",
-    "end": "2026-10-05T21:29:10+00:00"
+    "end": "2026-10-05T21:29:10+00:00",
+    "logPinned": true
   },
   {
     "id": "06-cslfallujah",
     "map": "CSL Fallujah Skirmish v1",
     "date": "2026-10-06",
-    "log": "SquadGame-2026.10.06-06-cslfallujah.log",
+    "log": "TR1-2026.10.06-06-cslfallujah.log",
     "start": "2026-10-06T18:41:27+00:00",
-    "end": "2026-10-06T18:58:03+00:00"
+    "end": "2026-10-06T18:58:03+00:00",
+    "logPinned": true
   },
   {
     "id": "06-yehorivka-skip",
@@ -77,48 +85,134 @@
     "id": "06-cslfallujah-2",
     "map": "CSL Fallujah Skirmish v1",
     "date": "2026-10-06",
-    "log": "SquadGame-2026.10.06-06-cslfallujah-2.log",
+    "log": "TR1-2026.10.06-06-cslfallujah-2.log",
     "start": "2026-10-06T18:58:44+00:00",
-    "end": "2026-10-06T19:58:34+00:00"
+    "end": "2026-10-06T19:58:34+00:00",
+    "logPinned": true
   },
   {
     "id": "06-cslmutaha",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-06",
-    "log": "SquadGame-2026.10.06-06-cslmutaha.log",
+    "log": "TR1-2026.10.06-06-cslmutaha.log",
     "start": "2026-10-06T20:23:35+00:00",
-    "end": "2026-10-06T20:58:51+00:00"
+    "end": "2026-10-06T20:58:51+00:00",
+    "logPinned": true
   },
   {
     "id": "07-cslmutaha",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-07",
-    "log": "TR1-SquadGame.log",
+    "log": "TR1-2026.10.07-07-cslmutaha.log",
     "start": "2026-10-07T19:22:14+00:00",
-    "end": "2026-10-07T19:49:49+00:00"
+    "end": "2026-10-07T19:49:49+00:00",
+    "logPinned": true
   },
   {
     "id": "07-cslmutaha-2",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-07",
-    "log": "TR1-SquadGame.log",
+    "log": "TR1-2026.10.07-07-cslmutaha-2.log",
     "start": "2026-10-07T19:50:31+00:00",
-    "end": "2026-10-07T20:25:14+00:00"
+    "end": "2026-10-07T20:25:14+00:00",
+    "logPinned": true
   },
   {
     "id": "07-cslmutaha-3",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-07",
-    "log": "TR1-SquadGame.log",
+    "log": "TR1-2026.10.07-07-cslmutaha-3.log",
     "start": "2026-10-07T20:25:53+00:00",
-    "end": "2026-10-07T20:37:04+00:00"
+    "end": "2026-10-07T20:37:04+00:00",
+    "logPinned": true
   },
   {
     "id": "07-cslmutaha-4",
     "map": "CSL Mutaha Skirmish v1",
     "date": "2026-10-07",
-    "log": "TR1-SquadGame.log",
+    "log": "TR1-2026.10.07-07-cslmutaha-4.log",
     "start": "2026-10-07T20:37:27+00:00",
-    "end": "2026-10-07T21:15:00+00:00"
+    "end": "2026-10-07T21:15:00+00:00",
+    "logPinned": true
+  },
+  {
+    "id": "08-cslmutaha-9",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-08",
+    "log": "TR1-2026.10.08-08-cslmutaha-9.log",
+    "start": "2026-10-08T19:23:43+00:00",
+    "end": "2026-10-08T19:39:30+00:00",
+    "logPinned": true,
+    "serverKey": "TR1"
+  },
+  {
+    "id": "08-cslmutaha-10",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-08",
+    "log": "TR1-2026.10.08-08-cslmutaha-10.log",
+    "start": "2026-10-08T19:40:15+00:00",
+    "end": "2026-10-08T20:13:34+00:00",
+    "logPinned": true,
+    "serverKey": "TR1"
+  },
+  {
+    "id": "08-cslmutaha-11",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-08",
+    "log": "TR1-2026.10.08-08-cslmutaha-11.log",
+    "start": "2026-10-08T20:18:56+00:00",
+    "end": "2026-10-08T20:59:39+00:00",
+    "logPinned": true,
+    "serverKey": "TR1"
+  },
+  {
+    "id": "08-cslmutaha-12",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-08",
+    "log": "TR1-2026.10.08-08-cslmutaha-12.log",
+    "start": "2026-10-08T21:00:02+00:00",
+    "end": "2026-10-08T21:27:20+00:00",
+    "logPinned": true,
+    "serverKey": "TR1"
+  },
+  {
+    "id": "09-cslmutaha-3",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-09",
+    "log": "TR1-2026.10.09-09-cslmutaha-3.log",
+    "start": "2026-10-09T20:19:12+00:00",
+    "end": "2026-10-09T20:56:27+00:00",
+    "logPinned": true,
+    "serverKey": "TR1"
+  },
+  {
+    "id": "10-cslmutaha",
+    "map": "CSL Mutaha Skirmish v1",
+    "date": "2026-10-10",
+    "log": "TR1-2026.10.10-10-cslmutaha.log",
+    "start": "2026-10-10T18:43:39+00:00",
+    "end": "2026-10-10T19:45:39+00:00",
+    "logPinned": true,
+    "serverKey": "TR1"
+  },
+  {
+    "id": "cw-skip-10-avg-184127",
+    "map": "SEC 26 AlBasras AAS v1",
+    "date": "2026-10-10",
+    "log": "SquadGame.log",
+    "start": "2026-10-10T18:41:27+00:00",
+    "end": "2026-10-10T19:12:34+00:00",
+    "skip": true,
+    "note": "КВ-слот 10-avg vs AVG — не тренировка (source=tr-train-skip-cw)"
+  },
+  {
+    "id": "cw-skip-10-avg-191345",
+    "map": "SEC 26 AlBasras AAS v1",
+    "date": "2026-10-10",
+    "log": "SquadGame.log",
+    "start": "2026-10-10T19:13:45+00:00",
+    "end": "2026-10-10T19:41:34+00:00",
+    "skip": true,
+    "note": "КВ-слот 10-avg vs AVG — не тренировка (source=tr-train-skip-cw)"
   }
 ]
