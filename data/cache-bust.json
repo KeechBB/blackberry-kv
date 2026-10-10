@@ -1,5 +1,5 @@
 {
-  "bust": "20261010-1944",
-  "updatedAt": "2026-10-10T19:44:34.001561+00:00",
-  "note": "Пишет sync_train / collector — Next /tm /cw читают live без redeploy"
+  "bust": "20261010-2250",
+  "updatedAt": "2026-10-10T19:50:04.619110+00:00",
+  "note": "modal tabs fix data-tab-id"
 }

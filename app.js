@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261010-1944";
+    new URLSearchParams(location.search).get("v") || "20261010-2250";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -4388,16 +4388,29 @@
 
 
   /* ——— match modal (player stats) ——— */
+  function tabById(id) {
+    return modalTabs.querySelector(`[data-tab-id="${id}"]`);
+  }
+
   function closeModal() {
     modal.hidden = true;
     document.body.classList.remove("modal-open");
     modalMatch = null;
     modalPlayers = null;
     resetModalTabAttrs();
-    modalTabs.querySelector('[data-tab="total"]').textContent = "Итого";
-    const tabs = modalTabs.querySelectorAll(".tab");
-    if (tabs[1]) tabs[1].textContent = "Раунд 1";
-    if (tabs[2]) tabs[2].textContent = "Раунд 2";
+    const totalBtn = tabById("total");
+    const r1Btn = tabById("r1");
+    const r2Btn = tabById("r2");
+    const bbTotalBtn = tabById("bbTotal");
+    if (totalBtn) totalBtn.textContent = "Итого";
+    if (bbTotalBtn) {
+      bbTotalBtn.textContent = "BB · Итого";
+      bbTotalBtn.hidden = true;
+    }
+    if (r1Btn) r1Btn.textContent = "Раунд 1";
+    if (r2Btn) r2Btn.textContent = "Раунд 2";
+    const oppWrap = document.getElementById("modal-tabs-opp");
+    if (oppWrap) oppWrap.hidden = true;
   }
 
   function openMatch(m) {
@@ -4508,7 +4521,6 @@
               _oppTag: String(m.opp || data.opp || "OPP").trim() || "OPP",
             };
             labelTabs(m);
-            resetModalTabAttrs();
           }
           paintPlayers();
         })
@@ -4529,22 +4541,31 @@
   function labelTrainTabs(m) {
     const a = factionShort(m.factionA);
     const b = factionShort(m.factionB);
-    modalTabs.querySelector('[data-tab="total"]').textContent = "Все";
-    modalTabs.querySelector('[data-tab="r1"]').textContent =
-      `${a} · ${m.ticketsA ?? "—"}`;
-    modalTabs.querySelector('[data-tab="r2"]').textContent =
-      `${b} · ${m.ticketsB ?? "—"}`;
-    modalTabs.querySelector('[data-tab="r1"]').dataset.tab = "teamA";
-    modalTabs.querySelector('[data-tab="r2"]').dataset.tab = "teamB";
+    // Restore stable ids first — never rely on button order (bbTotal sits at index 1).
+    resetModalTabAttrs();
+    const totalBtn = tabById("total");
+    const r1Btn = tabById("r1");
+    const r2Btn = tabById("r2");
+    const bbTotalBtn = tabById("bbTotal");
+    if (totalBtn) totalBtn.textContent = "Все";
+    if (bbTotalBtn) bbTotalBtn.hidden = true;
+    if (r1Btn) {
+      r1Btn.textContent = `${a} · ${m.ticketsA ?? "—"}`;
+      r1Btn.dataset.tab = "teamA";
+    }
+    if (r2Btn) {
+      r2Btn.textContent = `${b} · ${m.ticketsB ?? "—"}`;
+      r2Btn.dataset.tab = "teamB";
+    }
     const oppWrap = document.getElementById("modal-tabs-opp");
     if (oppWrap) oppWrap.hidden = true;
   }
 
   function resetModalTabAttrs() {
-    const t1 = modalTabs.querySelectorAll(".tab")[1];
-    const t2 = modalTabs.querySelectorAll(".tab")[2];
-    if (t1) t1.dataset.tab = "r1";
-    if (t2) t2.dataset.tab = "r2";
+    // data-tab-id is immutable; data-tab is the live key (teamA/teamB for training).
+    modalTabs.querySelectorAll("[data-tab-id]").forEach((btn) => {
+      btn.dataset.tab = btn.dataset.tabId;
+    });
   }
 
   function enrichRows(rows) {
@@ -4588,14 +4609,16 @@
   }
 
   function labelTabs(m) {
+    // Always restore data-tab from data-tab-id before labeling (fixes train→CW bleed).
+    resetModalTabAttrs();
     const hasOpp = !!(modalPlayers && modalPlayers._hasOpp);
     const opp = (modalPlayers && modalPlayers._oppTag) || m.opp || "OPP";
     const r1Label = m.r1 && m.r1 !== "—" ? `Раунд 1 · ${m.r1}` : "Раунд 1";
     const r2Label = m.r2 && m.r2 !== "—" ? `Раунд 2 · ${m.r2}` : "Раунд 2";
-    const totalBtn = modalTabs.querySelector('[data-tab="total"]');
-    const bbTotalBtn = modalTabs.querySelector('[data-tab="bbTotal"]');
-    const r1Btn = modalTabs.querySelector('[data-tab="r1"]');
-    const r2Btn = modalTabs.querySelector('[data-tab="r2"]');
+    const totalBtn = tabById("total");
+    const bbTotalBtn = tabById("bbTotal");
+    const r1Btn = tabById("r1");
+    const r2Btn = tabById("r2");
     // Итого = все; отдельные вкладки BB и соперник
     if (totalBtn)
       totalBtn.textContent = hasOpp ? "Итого · все" : "Итого";
@@ -4603,20 +4626,33 @@
       bbTotalBtn.hidden = !hasOpp;
       bbTotalBtn.textContent = "BB · Итого";
     }
-    if (r1Btn) r1Btn.textContent = hasOpp ? `BB · ${r1Label}` : r1Label;
-    if (r2Btn) r2Btn.textContent = hasOpp ? `BB · ${r2Label}` : r2Label;
+    if (r1Btn) {
+      r1Btn.hidden = !(m.r1 && m.r1 !== "—") && !(modalPlayers && modalPlayers.r1 && modalPlayers.r1.length);
+      r1Btn.textContent = hasOpp ? `BB · ${r1Label}` : r1Label;
+    }
+    if (r2Btn) {
+      r2Btn.hidden = !(m.r2 && m.r2 !== "—") && !(modalPlayers && modalPlayers.r2 && modalPlayers.r2.length);
+      r2Btn.textContent = hasOpp ? `BB · ${r2Label}` : r2Label;
+    }
+    // Prefer showing round tabs when player rows exist even if calendar score missing
+    if (r1Btn && modalPlayers && modalPlayers.r1 && modalPlayers.r1.length) r1Btn.hidden = false;
+    if (r2Btn && modalPlayers && modalPlayers.r2 && modalPlayers.r2.length) r2Btn.hidden = false;
     const oppWrap = document.getElementById("modal-tabs-opp");
     if (oppWrap) {
       oppWrap.hidden = !hasOpp;
       if (hasOpp) {
-        const ot = oppWrap.querySelector('[data-tab="oppTotal"]');
-        const o1 = oppWrap.querySelector('[data-tab="oppR1"]');
-        const o2 = oppWrap.querySelector('[data-tab="oppR2"]');
+        const ot = tabById("oppTotal");
+        const o1 = tabById("oppR1");
+        const o2 = tabById("oppR2");
         if (ot) ot.textContent = `${opp} · Итого`;
-        if (o1)
+        if (o1) {
+          o1.hidden = !(modalPlayers.oppR1 && modalPlayers.oppR1.length);
           o1.textContent = `${opp} · Раунд 1 · ${flipTickets(m.r1)}`;
-        if (o2)
+        }
+        if (o2) {
+          o2.hidden = !(modalPlayers.oppR2 && modalPlayers.oppR2.length);
           o2.textContent = `${opp} · Раунд 2 · ${flipTickets(m.r2)}`;
+        }
       }
     }
   }
