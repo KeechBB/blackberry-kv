@@ -1,0 +1,198 @@
+{
+  "matchId": "10-avg",
+  "opp": "AVG",
+  "note": "Авто из логов TR · Blackberry | Training - Blackberries #2 · R1 192:179 · R2 идёт · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "Blackberry | Training - Blackberries #2",
+  "map": "SEC 26 AlBasras AAS v1",
+  "r1": [
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 1035
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 362
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 990
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 274
+    },
+    {
+      "nick": "Mukuru",
+      "res": 4,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 413
+    },
+    {
+      "nick": "Morty",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 153
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Radislave",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "That's the one",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 600
+    },
+    {
+      "nick": "CryHavoc",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 372
+    },
+    {
+      "nick": "Ishack",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 186
+    },
+    {
+      "nick": "ДЖЕП УШЕЛ ДЖЕТ",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 100
+    },
+    {
+      "nick": "ARBUZIKGG",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 30
+    },
+    {
+      "nick": "lil chankeee",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 71
+    },
+    {
+      "nick": "n1:)",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Uncle Bobr",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Жирный",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Татарин",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "↯DCAI↯ Wkaf (Dolap)",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
+  "oppR2": []
+}

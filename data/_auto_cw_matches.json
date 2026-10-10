@@ -1,0 +1,46 @@
+[
+  {
+    "id": "07-dcai",
+    "opp": "DCAI",
+    "map": "HotDrop Narva",
+    "server": "Blackberry | Training - Blackberries #2",
+    "start": "2026-10-07T17:00:00+00:00",
+    "rounds": 2,
+    "sum": "0:75",
+    "status": "lose",
+    "source": "tr-cw-auto"
+  },
+  {
+    "id": "09-alpha",
+    "opp": "ALPHA",
+    "map": "FCL Mutaha",
+    "server": "Blackberry | Training - Blackberries #1",
+    "start": "2026-10-09T17:00:00+00:00",
+    "rounds": 2,
+    "sum": "147:0",
+    "status": "win",
+    "source": "tr-cw-auto"
+  },
+  {
+    "id": "09-dcai",
+    "opp": "DCAI",
+    "map": "HotDrop Narva",
+    "server": "Blackberry | Training - Blackberries #2",
+    "start": "2026-10-09T17:00:00+00:00",
+    "rounds": 2,
+    "sum": "0:189",
+    "status": "lose",
+    "source": "tr-cw-auto"
+  },
+  {
+    "id": "10-avg",
+    "opp": "AVG",
+    "map": "SEC 26 AlBasras AAS v1",
+    "server": "Blackberry | Training - Blackberries #2",
+    "start": "2026-10-10T18:30:00+00:00",
+    "rounds": 1,
+    "sum": "R1 192:179",
+    "status": "upcoming",
+    "source": "tr-cw-auto"
+  }
+]

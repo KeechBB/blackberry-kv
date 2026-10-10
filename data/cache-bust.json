@@ -1,1 +1,5 @@
-{"v": "20261009-omen-1410"}
+{
+  "bust": "20261010-1849",
+  "updatedAt": "2026-10-10T18:49:24.353870+00:00",
+  "note": "Пишет sync_train / collector — Next /tm /cw читают live без redeploy"
+}

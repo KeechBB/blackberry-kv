@@ -8,7 +8,7 @@
 - **18:30 UTC** / **21:30 МСК**
 - **26v26**
 - Карта: **SEC 26 AlBasrah AAS v1** (`SEC_26_AlBasrah_AAS_v1`)
-- Сервер: **BlackBerry** (BB)
+- Сервер: **TR2** (Blackberry Training · Blackberries #2) — автозалив обеих команд из логов
 - Правила: **SEC**
 - Состав: **мейн-стак**
 

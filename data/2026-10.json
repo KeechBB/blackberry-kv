@@ -178,8 +178,12 @@
       "server": "TR1",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · Mutaha 16 · TR1 · перенос с 19:00 → 20:00 · same time Main vs DCAI 20:00 TR2 · vs clan 2–0 (26.09+03.10)"
+      "status": "win",
+      "note": "Junior · FCL · FCL Mutaha · TR1 · сумма 147:0 (50:0 · 97:0) · авто обе команды",
+      "playersUrl": "data/players/09-alpha.json",
+      "r1": "50:0",
+      "r2": "97:0",
+      "meeting": "2–0"
     },
     {
       "id": "09-dcai",
@@ -192,8 +196,12 @@
       "server": "TR2",
       "rules": "HOTDROP",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · HOTDROP Narva (was Goose Bay) · TR2 · vs clan 2–0 (15.09+30.09) · not 07.10 Narva/Dcai · same time Junior vs ALPHA 20:00 TR1 (перенос с 19:00)"
+      "status": "lose",
+      "note": "Main · HOTDROP · HotDrop Narva · TR2 · сумма 0:189 (0:118 · 0:71) · авто обе команды",
+      "playersUrl": "data/players/09-dcai.json",
+      "r1": "0:118",
+      "r2": "0:71",
+      "meeting": "0–2"
     },
     {
       "id": "10-fal",
@@ -217,11 +225,13 @@
       "opp": "AVG",
       "map": "SEC 26 AlBasrah AAS v1",
       "size": "26v26",
-      "server": "BB",
+      "server": "TR2",
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · AlBasrah AAS 26 · BB server · same day Main vs FAL 20:00 отмена · перенос с отмены 02.10 · vs clan Junior 0–2 (07.09 Harju)"
+      "note": "Main · SEC · SEC 26 AlBasras AAS v1 · TR2 · R1 192:179 · R2 идёт · авто обе команды",
+      "playersUrl": "data/players/10-avg.json",
+      "r1": "192:179"
     },
     {
       "id": "11-nklv",
