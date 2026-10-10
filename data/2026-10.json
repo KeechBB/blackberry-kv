@@ -228,10 +228,12 @@
       "server": "TR2",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · SEC 26 AlBasras AAS v1 · TR2 · R1 192:179 · R2 идёт · авто обе команды",
+      "status": "win",
+      "note": "Main · SEC · SEC 26 AlBasras AAS v1 · TR2 · сумма 275:0 (155:0 · 120:0) · авто обе команды",
       "playersUrl": "data/players/10-avg.json",
-      "r1": "192:179"
+      "r1": "155:0",
+      "r2": "120:0",
+      "meeting": "2–0"
     },
     {
       "id": "11-nklv",
@@ -245,7 +247,7 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 · same day Junior vs .solid 21:00 · Main vs FOX 21:00 · NO SCOUT · NO MEETINGS"
+      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 (=TR2) · same day Junior vs .solid 21:00 · Main vs FOX 21:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "11-solid",

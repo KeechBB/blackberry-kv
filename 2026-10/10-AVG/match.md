@@ -1,17 +1,16 @@
 # 2026-10-10 — AVG vs BlackBerry Main
 
-Ещё не сыграно. Заявка **08.10.2026**. Играет **мейн-стак** (Team: BB main).
+Сыграно. **мейн-стак**. Сервер: **TR2 = FCL ARENA #2**. Автозалив обеих команд из логов.
 
-Тот же день **20:00** — Main vs [FAL](../10-FAL/match.md) (Mutaha 20). Не склеивать.  
-Не склеивать с **отменой 02.10** vs AVG (тот же AlBasrah AAS 26) и с **07.09** vs AVG (Junior + мерки, Harju, **0–2**).
+Не склеивать с **отменой 02.10** vs AVG и с **07.09** vs AVG (Junior + мерки, Harju, **0–2**).
 
 - **18:30 UTC** / **21:30 МСК**
 - **26v26**
-- Карта: **SEC 26 AlBasrah AAS v1** (`SEC_26_AlBasrah_AAS_v1`)
-- Сервер: **TR2** (Blackberry Training · Blackberries #2) — автозалив обеих команд из логов
+- Карта: **SEC 26 AlBasrah AAS v1** (в логе слой `SEC 26 AlBasras AAS v1`)
+- Сервер: **TR2 / FCL ARENA #2**
 - Правила: **SEC**
 - Состав: **мейн-стак**
-
-Силу сверх фактов не выдумывать. Лого: `brand/logos/avg.png` + `blackberry.png`.
+- Результат встречи: **2–0** по сумме тикетов **275:0** (R1 **155:0** · R2 **120:0**)
+- Стата: `data/players/10-avg.json`
 
 Заметки: [analytics.md](analytics.md).

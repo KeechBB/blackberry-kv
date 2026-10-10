@@ -1,7 +1,7 @@
 {
   "matchId": "10-avg",
   "opp": "AVG",
-  "note": "Авто из логов TR · Blackberry | Training - Blackberries #2 · R1 192:179 · R2 идёт · source=tr-cw-auto",
+  "note": "Авто из логов TR · Blackberry | Training - Blackberries #2 · сумма 275:0 · source=tr-cw-auto",
   "source": "tr-cw-auto",
   "server": "Blackberry | Training - Blackberries #2",
   "map": "SEC 26 AlBasras AAS v1",
@@ -9,180 +9,629 @@
     {
       "nick": "Kuchenchips",
       "res": 0,
-      "nok": 3,
-      "kills": 1,
-      "deaths": 0,
-      "dmg": 1035
+      "nok": 20,
+      "kills": 14,
+      "deaths": 2,
+      "dmg": 6971
     },
     {
-      "nick": "Jimmy Neutron",
+      "nick": "Chidori",
       "res": 0,
-      "nok": 1,
-      "kills": 1,
+      "nok": 19,
+      "kills": 13,
       "deaths": 0,
-      "dmg": 362
-    },
-    {
-      "nick": "ZensU",
-      "res": 0,
-      "nok": 1,
-      "kills": 1,
-      "deaths": 1,
-      "dmg": 990
-    },
-    {
-      "nick": "CAT",
-      "res": 0,
-      "nok": 3,
-      "kills": 0,
-      "deaths": 1,
-      "dmg": 274
-    },
-    {
-      "nick": "Mukuru",
-      "res": 4,
-      "nok": 3,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 413
-    },
-    {
-      "nick": "Morty",
-      "res": 2,
-      "nok": 1,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 153
-    },
-    {
-      "nick": "_VaGNeR_",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 0
+      "dmg": 5243
     },
     {
       "nick": "Blizzardrix",
       "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 1,
-      "dmg": 0
+      "nok": 14,
+      "kills": 9,
+      "deaths": 4,
+      "dmg": 3688
     },
     {
-      "nick": "COBRA",
+      "nick": "FLEX",
       "res": 0,
-      "nok": 0,
-      "kills": 0,
+      "nok": 9,
+      "kills": 9,
       "deaths": 0,
-      "dmg": 0
+      "dmg": 3886
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 4077
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 3324
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 2675
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 3333
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 3797
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2355
+    },
+    {
+      "nick": "Azure",
+      "res": 9,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 2104
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 1822
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 1869
+    },
+    {
+      "nick": "lepurple",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 2220
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1469
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1215
     },
     {
       "nick": "Pymba",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 1,
-      "dmg": 0
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1511
     },
     {
       "nick": "Radislave",
+      "res": 9,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1326
+    },
+    {
+      "nick": "Morty",
+      "res": 12,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 801
+    },
+    {
+      "nick": "COBRA",
       "res": 1,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 1348
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 1026
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 406
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 350
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 12,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 371
+    },
+    {
+      "nick": "KillReal",
+      "res": 5,
       "nok": 0,
       "kills": 0,
       "deaths": 0,
       "dmg": 0
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 15,
+      "kills": 13,
+      "deaths": 4,
+      "dmg": 5620
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 11,
+      "kills": 11,
+      "deaths": 2,
+      "dmg": 4296
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 4011
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 3801
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 3405
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 3160
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 2498
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 3085
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 3092
+    },
+    {
+      "nick": "Tankist",
+      "res": 2,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 3104
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 2283
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 3476
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2489
+    },
+    {
+      "nick": "Pymba",
+      "res": 2,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 2316
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 2150
+    },
+    {
+      "nick": "lepurple",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 1922
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 9,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1539
+    },
+    {
+      "nick": "Morty",
+      "res": 9,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1213
+    },
+    {
+      "nick": "Radislave",
+      "res": 7,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1148
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1092
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 2115
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 1294
+    },
+    {
+      "nick": "Azure",
+      "res": 7,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 816
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 504
+    },
+    {
+      "nick": "'С4' Ishack",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "KillReal",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
   "oppR1": [
+    {
+      "nick": "коллектор",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 3707
+    },
+    {
+      "nick": "Dobermann",
+      "res": 1,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 3493
+    },
+    {
+      "nick": "100% талант",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 3340
+    },
+    {
+      "nick": "kosta",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2035
+    },
+    {
+      "nick": "ДЖЕП УШЕЛ ДЖЕТ",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1865
+    },
+    {
+      "nick": "n1:)",
+      "res": 3,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1685
+    },
+    {
+      "nick": "Татарин",
+      "res": 0,
+      "nok": 10,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 3400
+    },
     {
       "nick": "That's the one",
       "res": 0,
-      "nok": 2,
-      "kills": 1,
-      "deaths": 2,
-      "dmg": 600
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1272
+    },
+    {
+      "nick": "Bergman",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1311
     },
     {
       "nick": "CryHavoc",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1210
+    },
+    {
+      "nick": "GamEOveR",
+      "res": 5,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 1220
+    },
+    {
+      "nick": "ARBUZIKGG",
+      "res": 7,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 1034
+    },
+    {
+      "nick": "Uncle Bobr",
       "res": 0,
-      "nok": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 887
+    },
+    {
+      "nick": "терпение",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 763
+    },
+    {
+      "nick": "J0STEF",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 701
+    },
+    {
+      "nick": "Saitsway",
+      "res": 2,
+      "nok": 6,
       "kills": 1,
-      "deaths": 0,
-      "dmg": 372
+      "deaths": 8,
+      "dmg": 910
+    },
+    {
+      "nick": "lil chankeee",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 982
+    },
+    {
+      "nick": "Serj",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 595
+    },
+    {
+      "nick": "@BLACKLEAVES33",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 512
     },
     {
       "nick": "Ishack",
       "res": 0,
       "nok": 2,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 186
-    },
-    {
-      "nick": "ДЖЕП УШЕЛ ДЖЕТ",
-      "res": 0,
-      "nok": 2,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 100
-    },
-    {
-      "nick": "ARBUZIKGG",
-      "res": 1,
-      "nok": 1,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 30
-    },
-    {
-      "nick": "lil chankeee",
-      "res": 0,
-      "nok": 1,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 71
-    },
-    {
-      "nick": "n1:)",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 0
-    },
-    {
-      "nick": "Theoldmix",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 1,
-      "dmg": 0
-    },
-    {
-      "nick": "Uncle Bobr",
-      "res": 0,
-      "nok": 0,
-      "kills": 0,
-      "deaths": 0,
-      "dmg": 0
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 387
     },
     {
       "nick": "Жирный",
       "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 615
+    },
+    {
+      "nick": "KoMpoT",
+      "res": 4,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 186
+    },
+    {
+      "nick": "Saportic♥",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 186
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 186
+    },
+    {
+      "nick": "'C4' ДЖЕП УШЕЛ ДЖЕТ",
+      "res": 2,
       "nok": 0,
       "kills": 0,
-      "deaths": 1,
+      "deaths": 0,
       "dmg": 0
     },
     {
-      "nick": "Татарин",
+      "nick": "'С4' Ishack",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "пакость",
       "res": 0,
       "nok": 0,
       "kills": 0,
-      "deaths": 1,
+      "deaths": 3,
       "dmg": 0
     },
     {
@@ -190,9 +639,218 @@
       "res": 0,
       "nok": 0,
       "kills": 0,
-      "deaths": 0,
+      "deaths": 5,
       "dmg": 0
     }
   ],
-  "oppR2": []
+  "oppR2": [
+    {
+      "nick": "Ishack",
+      "res": 0,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 4714
+    },
+    {
+      "nick": "lil chankeee",
+      "res": 0,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 5529
+    },
+    {
+      "nick": "@BLACKLEAVES33",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 3027
+    },
+    {
+      "nick": "коллектор",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 2338
+    },
+    {
+      "nick": "Dobermann",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 2103
+    },
+    {
+      "nick": "Saitsway",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 2180
+    },
+    {
+      "nick": "That's the one",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 1725
+    },
+    {
+      "nick": "100% талант",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1301
+    },
+    {
+      "nick": "Татарин",
+      "res": 2,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 2318
+    },
+    {
+      "nick": "kosta",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1846
+    },
+    {
+      "nick": "Uncle Bobr",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 2040
+    },
+    {
+      "nick": "J0STEF",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 1432
+    },
+    {
+      "nick": "ДЖЕП УШЕЛ ДЖЕТ",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 850
+    },
+    {
+      "nick": "ARBUZIKGG",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1068
+    },
+    {
+      "nick": "Bergman",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1210
+    },
+    {
+      "nick": "n1:)",
+      "res": 7,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 935
+    },
+    {
+      "nick": "GamEOveR",
+      "res": 4,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1002
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 715
+    },
+    {
+      "nick": "Жирный",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 681
+    },
+    {
+      "nick": "CryHavoc",
+      "res": 0,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 1035
+    },
+    {
+      "nick": "Saportic♥",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 620
+    },
+    {
+      "nick": "терпение",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 501
+    },
+    {
+      "nick": "Serj",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 550
+    },
+    {
+      "nick": "пакость",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 344
+    },
+    {
+      "nick": "KoMpoT",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0
+    },
+    {
+      "nick": "↯DCAI↯ Wkaf (Dolap)",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0
+    }
+  ]
 }
