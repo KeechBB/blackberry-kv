@@ -1,5 +1,5 @@
 {
-  "bust": "20261010-2000",
-  "updatedAt": "2026-10-10T20:00:57.552593+00:00",
+  "bust": "20261010-2035",
+  "updatedAt": "2026-10-10T20:35:28.550546+00:00",
   "note": "Пишет sync_train / collector — Next /tm /cw читают live без redeploy"
 }
