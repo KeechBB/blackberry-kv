@@ -984,12 +984,23 @@
     `;
   }
 
+  /** 00:00–00:29 МСК = хвост вечерней тренировки (после 23:59), не утро. */
+  function trainEveningMinutes(timeMsk) {
+    const t = String(timeMsk || "").trim();
+    const m = /^(\d{1,2}):(\d{2})/.exec(t);
+    if (!m) return -1;
+    const h = Number(m[1]);
+    const mi = Number(m[2]);
+    if (h === 0 && mi <= 29) return 24 * 60 + mi;
+    return h * 60 + mi;
+  }
+
   function trainSortValue(m, key) {
     switch (key) {
       case "date":
         return Number(m.day) || 0;
       case "time":
-        return String(m.timeMsk || "");
+        return trainEveningMinutes(m.timeMsk);
       case "map":
         return String(m.map || "");
       case "mode":
@@ -1042,7 +1053,9 @@
         const cmp = String(av).localeCompare(String(bv), "ru", { sensitivity: "base" });
         if (cmp) return dir * cmp;
       }
-      return (Number(a.day) || 0) - (Number(b.day) || 0);
+      const dayCmp = (Number(a.day) || 0) - (Number(b.day) || 0);
+      if (dayCmp) return dir * dayCmp;
+      return dir * (trainEveningMinutes(a.timeMsk) - trainEveningMinutes(b.timeMsk));
     });
     return list;
   }
@@ -1163,7 +1176,12 @@
       case "time": {
         const t = String(m.timeMsk || "");
         const parts = t.split(":");
-        if (parts.length >= 2) return Number(parts[0]) * 60 + Number(parts[1]);
+        if (parts.length >= 2) {
+          const h = Number(parts[0]);
+          const mi = Number(parts[1]);
+          if (h === 0 && mi <= 29) return 24 * 60 + mi;
+          return h * 60 + mi;
+        }
         return t;
       }
       case "clan":
@@ -1215,13 +1233,20 @@
         return dir * (Number(av) - Number(bv));
       }
       if (matchSortKey === "date" || matchSortKey === "time") {
-        return (
-          dir *
-          String(a.timeMsk || "").localeCompare(String(b.timeMsk || ""), "ru")
-        );
+        const am = matchSortValue(a, "time");
+        const bm = matchSortValue(b, "time");
+        if (typeof am === "number" && typeof bm === "number" && am !== bm) {
+          return dir * (am - bm);
+        }
+        return dir * String(a.timeMsk || "").localeCompare(String(b.timeMsk || ""), "ru");
       }
       const dayCmp = (Number(b.day) || 0) - (Number(a.day) || 0);
       if (dayCmp) return dayCmp;
+      const am = matchSortValue(a, "time");
+      const bm = matchSortValue(b, "time");
+      if (typeof am === "number" && typeof bm === "number" && am !== bm) {
+        return bm - am;
+      }
       return String(b.timeMsk || "").localeCompare(String(a.timeMsk || ""), "ru");
     });
   }
