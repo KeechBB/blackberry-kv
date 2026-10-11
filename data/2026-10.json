@@ -306,6 +306,20 @@
       "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same day Junior vs RA 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
+      "id": "14-fal",
+      "day": 14,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "FAL",
+      "map": "SEC 26 Mutaha AAS v1",
+      "size": "20v20",
+      "server": "BB",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · Mutaha 20 · BB · после отмены 10.10 · same day Main vs OMEN 21:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "14-omen",
       "day": 14,
       "timeMsk": "21:00",
@@ -317,7 +331,7 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · заявка OMEN vs BB · NO SCOUT · NO MEETINGS"
+      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · заявка OMEN vs BB · same day Main vs FAL 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "15-ra",
