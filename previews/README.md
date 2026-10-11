@@ -1,0 +1,46 @@
+# Реестр превью КВ
+
+Картинки **до** катки. Итоги — другой файл: [`../results/README.md`](../results/README.md). Карточка дня: `YYYY-MM/DD-Соперник/match.md`.
+
+Имя файла: `YYYY-MM-DD-<клан>-<карта>.png`. Капитан спросил «превью / анонсы» — отдавать **отсюда**, не из assets Cursor.
+
+Одобренные копии для истории: [`history/`](history/) (не забракованные капитаном).
+
+| Дата | Картинка | Заявка | Карта | Сервер | Комментарий |
+|---|---|---|---|---|---|
+| 13.09.2026 21:00 МСК | [2026-09-13-20r-chora-aas.png](2026-09-13-20r-chora-aas.png) | 20Royals vs **BlackBerry** (серия Junior, мейн запрещён) | CHORA AAS 26 | 20R | WIN 30%. Last: HELL 2:0. Vs clan: 0:2 (04.09). Лого 20R есть. |
+| 13.09.2026 23:00 МСК | [2026-09-13-two-chora-tc.png](2026-09-13-two-chora-tc.png) | TWO vs **BB Junior** | CHORA TC 36 | TWO | WIN 15%. Last: 20R 0:2. Сыграно 0–2. |
+| 15.09.2026 20:00 МСК | [2026-09-15-dcai-mutaha-paas.png](2026-09-15-dcai-mutaha-paas.png) | DCAI vs **BB** (мейн-стак) | MUTAHA PAAS 26 | Dcai | Junior заморозка. WIN 75%. Last: TWO 0:2. Vs clan: 0:2 Junior 11.09. |
+| 16.09.2026 | [2026-09-16-hell-goose-bay.png](2026-09-16-hell-goose-bay.png) | HELL vs **BB** (мейн-стак) | GOOSE BAY AAS 26 | HELL | Сыграно 2:0. FINAL в results. |
+| 2026-09 сводка | [2026-09-stats-overview.png](2026-09-stats-overview.png) | — | — | — | Стата КВ сентября: winrate, доли по ростеру/картам/соперникам. |
+| 17.09.2026 21:00 МСК | [2026-09-17-44th-kohat.png](2026-09-17-44th-kohat.png) | 44th vs **BB** (мейн-стак) | CHORA AAS v2 26 | 44th | **0–2** по сумме **3:38**. FINAL в results. Превью-фон ещё kohat. |
+| 18.09.2026 21:00 МСК | [2026-09-18-ih-mutaha-paas.png](2026-09-18-ih-mutaha-paas.png) | IH (**Iron Horde**) vs **BB** (мейн-стак) | MUTAHA PAAS 26 | any | Полоса справа. NO SCOUT. NO MEETINGS. Лого `ih.jpg`. Last chip: HELL 2:0. |
+| 22.09.2026 20:00 МСК | [2026-09-22-gm-goose-bay.png](2026-09-22-gm-goose-bay.png) | GM vs **BB** (мейн-стак) | GOOSE BAY AAS 26 | GM | Last chip: **IH 2:0** (18.09 из таблицы Матчи). WIN 70%. NO MEETINGS vs GM. |
+| 24.09.2026 20:00 МСК | [2026-09-24-hq-narva.png](2026-09-24-hq-narva.png) | HQ vs **BB** (мейн-стак) | **SEC 36 Narva AAS v4** · 36v36 | HQ | Шапка 3 строки. Слой уточнён 24.09. NO SCOUT. NO MEETINGS. Лого `hq.png`. |
+| 25.09.2026 20:00 МСК | [2026-09-25-h1gh-narva-aas.png](2026-09-25-h1gh-narva-aas.png) | H1gh vs **BB** (мейн-стак) | sec_26_Narva_AAS_v1 · 26v26 | any | Пересобрано 25.09: лого `h1gh.jpg`, Last **HQ 0:2**. NO SCOUT. NO MEETINGS. |
+| 26.09.2026 19:30 МСК | [2026-09-26-alpha-anvil.png](2026-09-26-alpha-anvil.png) | ALPHA vs **BB Junior** | FCL Anvil · **16v16** | BB | Сыграно **2–0** · сумма **97:42**. FINAL в results. |
+| 26.09.2026 21:00 МСК | [2026-09-26-20r-goose-bay.png](2026-09-26-20r-goose-bay.png) | 20Royals vs **BB** (мейн-стак) | GOOSE BAY AAS 26 | 20R | Сыграно **2–0** · сумма **96:0**. FINAL в results. |
+| 27.09.2026 20:00 МСК | [2026-09-27-sph-chora-aas.png](2026-09-27-sph-chora-aas.png) | SPH vs **BB** (мейн-стак) | CHORA AAS v2 26 | any | Эталон правой полосы. NO SCOUT. NO MEETINGS. |
+| 29.09.2026 20:30 МСК | [2026-09-29-h1gh-chora-aas.png](2026-09-29-h1gh-chora-aas.png) | H1gh vs **BB** (мейн-стак) | SEC 26 Chora AAS v1 · 26v26 | any | Вторая vs H1gh (25.09 Narva). **20:30**. NO SCOUT. Лого нет — текст. |
+| 29.09.2026 21:00 МСК | [2026-09-29-44th-mutaha-aas.png](2026-09-29-44th-mutaha-aas.png) | **BB Junior** vs 44th | SEC 26 Mutaha AAS v1 · **26v26** | **44th** | **TUE 29.09 · 21:00 МСК** (18:00 UTC). Junior. Mutaha AAS V1 фон. Last IH 2:0. Vs clan **1:1** (17.09 мейн). NO SCOUT. Лого junior + `44th.jpg`. Пересобрано 21.09. |
+| 30.09.2026 20:00 МСК | [2026-09-30-dcai-mutaha-aas.png](2026-09-30-dcai-mutaha-aas.png) | DCAI vs **BB** (мейн-стак) | SEC 26 Mutaha AAS v1 · 26v26 | Dcai | **WED 30.09 · 20:00**. Last **GM 2:0** (22.09). NO SCOUT. Vs clan **2:0 (15.09)** мейн (не Junior 11.09). Mutaha AAS фон. Лого `dcai.jpg`. |
+| 30.09.2026 21:00 МСК | [2026-09-30-ih-goose-hotdrop.png](2026-09-30-ih-goose-hotdrop.png) | IH vs **BB Junior** | Hotdrop Goose Bay · **20v20** | ANY | **WED 30.09 · 21:00**. HOTDROP. Last Junior **TWO 0:2**. NO SCOUT. Vs clan **2:0 (18.09 Main)**. Лого junior + `ih.jpg`. |
+| 01.10.2026 20:00 МСК | [2026-10-01-gm-chora-aas.png](2026-10-01-gm-chora-aas.png) | **BB Junior** vs GM | SEC 26 Chora AAS v2 · **26v26** | GM | **0–2** · сумма **0:251** (R1 0:115 · R2 0:136). |
+| 02.10.2026 20:00 МСК | [2026-10-02-sph-chora-aas.png](2026-10-02-sph-chora-aas.png) | SPH vs **BB Junior** | SEC 26 Chora AAS v2 · **26v26** | ANY | **Вертикальный канон.** Кадр `maps/SEC-26-Chora-AAS-v2.jpg`. 20:00 · 02.10. Last3 Junior: ALPHA 2:0 / TWO 0:2 / 20R 0:2. |
+| 02.10.2026 20:00 МСК | [2026-10-02-avg-albasrah-aas.png](2026-10-02-avg-albasrah-aas.png) | **BB** vs AVG | SEC 26 AlBasrah AAS v1 · **26v26** | ANY | **Мейн.** Кадр `maps/SEC-26-AlBasrah-AAS-v1.jpg`. 20:00 · 02.10. Last3 Main: SPH 2:0 / 20R 2:0 / H1gh 0:2. Лого `avg.png`. Тот же слот, что Junior vs SPH. |
+| 03.10.2026 19:00 МСК | [2026-10-03-alpha-blackcoast.png](2026-10-03-alpha-blackcoast.png) | **BB Junior** vs ALPHA | FCL BlackCoast · **16v16** | BB FCL ARENA | **SAT 03.10 · 19:00**. FCL. Last3 Junior: ALPHA 2:0 / TWO 0:2 / 20R 0:2. Vs clan **2:0 (26.09 Anvil)**. Лого junior-тег + `alpha.png`. |
+| 03.10.2026 21:00 МСК | [2026-10-03-imp-goose-hotdrop.png](2026-10-03-imp-goose-hotdrop.png) | IMP vs **BB** (мейн-стак) | Hotdrop Goose Bay · **20v20** | ANY | **ОТМЕНА** · у IMP люди не собрались. Был SAT 03.10 · 21:00 HOTDROP. Лого `imp.png`. |
+| 04.10.2026 21:00 МСК | [2026-10-04-fury-chora-aas.png](2026-10-04-fury-chora-aas.png) | **Fury** vs **BB Junior** | SEC 26 Chora AAS v2 · **26v26** | Fury | **SUN 04.10 · 21:00** (18:00 UTC). Junior. SEC. NO SCOUT. NO MEETINGS. Last3 Junior: 44th 0:2 / ALPHA 2:0 / TWO 0:2. Лого `fury.png`. |
+| 04.10.2026 21:00 МСК | [2026-10-04-20r-chora-aas.png](2026-10-04-20r-chora-aas.png) | **20Royals** vs **BB** (мейн) | SEC 26 Chora AAS v1 · **26v26** | 20R | **SUN 04.10 · 21:00** (18:00 UTC). Main. SEC. Vs clan **2:0 (26.09 Goose)**. Last3 Main: SPH 2:0 / 20R 2:0 / H1gh 0:2. Лого `20royals.png`. Тот же слот, что Junior vs Fury v2. |
+| 06.10.2026 21:00 МСК | [2026-10-06-fox-narva-hotdrop.png](2026-10-06-fox-narva-hotdrop.png) | **FOX** vs **BB** (мейн) | **CSL Chora v1** (`CSL_Chora_v1`) · **20v20** | BB | **TUE 06.10 · 21:00** (18:00 UTC). Main. CSL. Карта сменена с Hotdrop Narva. NO SCOUT. NO MEETINGS. Last3 Main: DCAI 2:0 / SPH 2:0 / 20R 2:0. Лого `fox.png`. |
+| 07.10.2026 20:00 МСК | [2026-10-07-dcai-narva-hotdrop.png](2026-10-07-dcai-narva-hotdrop.png) | DCAI vs **BB** (мейн-стак) | HotDrop Narva · **20v20** | Dcai | **WED 07.10 · 20:00** (17:00 UTC). HOTDROP. Last **SPH 2:0**. NO SCOUT. Vs clan **2:0 (15.09)**. Лого `dcai.jpg`. |
+| 08.10.2026 20:00 МСК | [2026-10-08-hq-mutaha-aas.png](2026-10-08-hq-mutaha-aas.png) | **HQ** vs **BB** (мейн) | SEC 26 Mutaha AAS v1 · **26v26** | HQ | **WED 08.10 · 20:00** (17:00 UTC). Main. SEC. Vs clan **0:2 (24.09 Narva 36)**. Last3 Main: DCAI 2:0 / SPH 2:0 / 20R 2:0. Лого `hq.png`. |
+| 10.10.2026 20:00 МСК | [2026-10-10-fal-mutaha-aas.png](2026-10-10-fal-mutaha-aas.png) | **FAL** vs **BB** (мейн) | SEC 26 Mutaha AAS v1 · **20v20** | BB | **FRI 10.10 · 20:00** (17:00 UTC). Main. SEC. FALCONS. NO SCOUT. NO MEETINGS. Last3 Main: DCAI 2:0 / SPH 2:0 / 20R 2:0. Лого `fal.png`. |
+| 11.10.2026 21:00 МСК | [2026-10-11-solid-mutaha-aas.png](2026-10-11-solid-mutaha-aas.png) | **.solid** vs **BB Junior** | SEC 26 Mutaha AAS v1 · **26v26** | .solid | **SUN 11.10 · 21:00** (18:00 UTC). Junior. SEC. NO SCOUT. NO MEETINGS. Last3 Junior: ALPHA 2:0 / GM 0:2 / 44th 0:2. Лого `solid.png`. |
+| 11.10.2026 21:00 МСК | [2026-10-11-fox-mutaha-csl.png](2026-10-11-fox-mutaha-csl.png) | **FOX** vs **BB** (мейн) · **ОТМЕНА** | **CSL Mutaha AAS V1** · **20v20** | BB | **SUN 11.10 · 21:00** — встреча отменена. |
+| 13.10.2026 20:00 МСК | [2026-10-13-hell-sumari-aas.png](2026-10-13-hell-sumari-aas.png) | **BB Junior** vs HELL | SEC 26 Sumari AAS v1 · **26v26** | BB | **MON 13.10 · 20:00** (17:00 UTC). Junior. SEC. **1-я** встреча vs HELL в окт. Last3 Junior: ALPHA 2:0 / GM 0:2 / 44th 0:2. Лого `hell.jpg`. |
+| 14.10.2026 20:00 МСК | [2026-10-14-fal-mutaha-aas.png](2026-10-14-fal-mutaha-aas.png) | **FAL** vs **BB** (мейн) | **CSL Mutaha AAS V1** · **20v20** | BB | **TUE 14.10 · 20:00** (17:00 UTC). Main. SEC. Карта сменена с SEC 26 Mutaha (11.10). После отмены 10.10. NO SCOUT. NO MEETINGS. Same day Main vs OMEN 21:00. Лого `fal.png`. |
+| 15.10.2026 20:00 МСК | [2026-10-15-hell-sumari-aas.png](2026-10-15-hell-sumari-aas.png) | **BB Junior** vs HELL | SEC 26 Sumari AAS v1 · **26v26** | BB | **WED 15.10 · 20:00** (17:00 UTC). Junior. SEC. **2-я** встреча vs HELL в окт. (после 13.10). Last3 Junior: ALPHA 2:0 / GM 0:2 / 44th 0:2. Лого `hell.jpg`. |
+| 18.10.2026 20:00 МСК | [2026-10-18-sph-mutaha-aas.png](2026-10-18-sph-mutaha-aas.png) | SPH vs **BB** (мейн) | SEC 26 Mutaha AAS v1 · **26v26** | ANY | **SUN 18.10 · 20:00** (17:00 UTC). Main. SEC. Vs clan **2:0 (27.09 Chora)**. Last3 Main: DCAI 2:0 / SPH 2:0 / 20R 2:0. Лого `sph.png`. |
+
+Новое превью: файл сюда + строка в таблицу + ссылка в `match.md`. Внизу (через `polosa.py`): **bb-squad.ru · вся статистика клана по КВ**. Правую полосу PLAYED/NEXT **не делать**.

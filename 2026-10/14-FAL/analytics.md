@@ -1,3 +1,3 @@
-# Заметки — 14.10 Main vs FAL, SEC 26 Mutaha AAS v1 (ещё не сыграно)
+# Заметки — 14.10 Main vs FAL, CSL Mutaha AAS V1 (ещё не сыграно)
 
-Слот 20:00 МСК · 20v20 · BB · SEC. После отмены 10.10. Силу сверх фактов не выдумывать.
+Карта обновлена 11.10: было SEC 26 Mutaha AAS v1 → **CSL Mutaha AAS V1** (заявка «CSL Mutaha v1»). SEC · 20v20 · BB · 20:00 МСК.

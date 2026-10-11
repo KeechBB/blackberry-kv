@@ -4,6 +4,8 @@
 
 Встреч с **OMEN** в архиве нет — **NO SCOUT** / **NO MEETINGS**.
 
+Тот же день **20:00** — Main vs [FAL](../14-FAL/match.md) (CSL Mutaha AAS V1 · SEC 20). Не склеивать.
+
 - **18:00 UTC** / **21:00 МСК**
 - **20v20**
 - Карта: **HotDrop Narva** (`HD_Narva_20x20`)
