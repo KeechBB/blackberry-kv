@@ -14,15 +14,17 @@
 | 06 | [06-FOX](06-FOX/match.md) | FOX | **мейн-стак**, CSL Chora Skirmish v1, **20v20** · **FINAL 2–0** сумма **116:0** (80:0 · 36:0) · [players](../public/data/players/06-fox.json) · [analytics.md](06-FOX/analytics.md) |
 | 07 | [07-DCAI](07-DCAI/match.md) | DCAI | **мейн-стак**, HotDrop Narva, **20v20**, **20:00** МСК (17:00 UTC), сервер Dcai, [analytics.md](07-DCAI/analytics.md) |
 | 08 | [08-HQ](08-HQ/match.md) | HQ | **мейн-стак**, **0–2** · сумма **28:136** (28:0 · 0:136) · Mutaha **PAAS** · [players](../public/data/players/08-hq.json) · [analytics.md](08-HQ/analytics.md) |
-| 09 | [09-ALPHA](09-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **19:00** МСК (16:00 UTC), сервер FCL ARENA, [analytics.md](09-ALPHA/analytics.md) |
-| 09 | [09-DCAI](09-DCAI/match.md) | DCAI | **мейн-стак**, HotDrop Narva, **20v20**, **20:00** МСК (17:00 UTC), сервер FCL ARENA #2, [analytics.md](09-DCAI/analytics.md) |
-| 10 | [10-FAL](10-FAL/match.md) | FAL | **мейн-стак**, SEC 26 Mutaha AAS v1, **20v20**, **20:00** МСК (17:00 UTC), сервер BB · same day AVG 21:30, [analytics.md](10-FAL/analytics.md) |
+| 09 | [09-ALPHA](09-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC) · перенос с 19:00, сервер **TR1**, [analytics.md](09-ALPHA/analytics.md) |
+| 09 | [09-DCAI](09-DCAI/match.md) | DCAI | **мейн-стак**, HotDrop Narva, **20v20**, **20:00** МСК (17:00 UTC), сервер **TR2**, [analytics.md](09-DCAI/analytics.md) |
+| 10 | [10-FAL](10-FAL/match.md) | FAL | **отмена** · мейн-стак, SEC 26 Mutaha AAS v1, **20v20**, **20:00** МСК, [analytics.md](10-FAL/analytics.md) |
 | 10 | [10-AVG](10-AVG/match.md) | AVG | **мейн-стак**, SEC 26 AlBasrah AAS v1, **26v26**, **21:30** МСК (18:30 UTC), сервер BB · перенос с отмены 02.10, [analytics.md](10-AVG/analytics.md) |
-| 11 | [11-NKLV](11-NKLV/match.md) | NKLV | **Junior**, FCL Narva Small v1, **8v8**, **19:00** МСК (16:00 UTC), сервер FCL ARENA #2, [analytics.md](11-NKLV/analytics.md) |
+| 11 | [11-NKLV](11-NKLV/match.md) | NKLV | **Junior**, **2–0** · сумма **137:0** (R1 91:0 · R2 46:0) · FCL Narva Small · FCL ARENA #2 · стата полная · [analytics.md](11-NKLV/analytics.md) |
 | 11 | [11-solid](11-solid/match.md) | .solid | **Junior**, SEC 26 Mutaha, **26v26**, **21:00** МСК (18:00 UTC), сервер .solid, [analytics.md](11-solid/analytics.md) |
 | 11 | [11-FOX](11-FOX/match.md) | FOX | **отмена** · мейн-стак, CSL Mutaha AAS V1, **20v20**, **21:00** МСК, [analytics.md](11-FOX/analytics.md) |
+| 13 | [13-RA](13-RA/match.md) | RA | **Junior**, FCL, **8v8**, **20:00** МСК (17:00 UTC), заявка RA, [analytics.md](13-RA/analytics.md) |
 | 13 | [13-HELL](13-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 1-я vs HELL в окт., [analytics.md](13-HELL/analytics.md) |
 | 14 | [14-FAL](14-FAL/match.md) | FAL | **мейн-стак**, SEC 26 Mutaha AAS v1, **20v20**, **20:00** МСК (17:00 UTC), сервер BB · после отмены 10.10, [analytics.md](14-FAL/analytics.md) |
 | 14 | [14-OMEN](14-OMEN/match.md) | OMEN | **мейн-стак**, HotDrop Narva (`HD_Narva_20x20`), **20v20**, **21:00** МСК (18:00 UTC), сервер OMEN, [analytics.md](14-OMEN/analytics.md) |
+| 15 | [15-RA](15-RA/match.md) | RA | **Junior**, FCL, **8v8**, **20:00** МСК (17:00 UTC), заявка RA, [analytics.md](15-RA/analytics.md) |
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 2-я vs HELL в окт., [analytics.md](15-HELL/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер ANY, [analytics.md](18-SPH/analytics.md) |

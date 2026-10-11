@@ -246,8 +246,12 @@
       "server": "FCL ARENA #2",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 (=TR2) · same day Junior vs .solid 21:00 · Main vs FOX 21:00 отмена · NO SCOUT · NO MEETINGS"
+      "status": "win",
+      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 (TR2) · сумма 137:0 (91:0 · 46:0) · авто обе команды",
+      "playersUrl": "data/players/11-nklv.json",
+      "r1": "91:0",
+      "r2": "46:0",
+      "meeting": "2–0"
     },
     {
       "id": "11-solid",

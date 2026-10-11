@@ -1,0 +1,272 @@
+{
+  "matchId": "11-nklv",
+  "opp": "NKLV",
+  "note": "Авто из логов TR · Blackberry | Training - Blackberries #1 · сумма 137:0 · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "Blackberry | Training - Blackberries #1",
+  "map": "FCL Narva",
+  "r1": [
+    {
+      "nick": "Nestor Mahno",
+      "res": 1,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 0,
+      "dmg": 3550
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 3695
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 2250
+    },
+    {
+      "nick": "Mighty",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 2159
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1714
+    },
+    {
+      "nick": "ADUN",
+      "res": 2,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1187
+    },
+    {
+      "nick": "Varyag",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 672
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 62
+    }
+  ],
+  "r2": [
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 3273
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 3325
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 3000
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2612
+    },
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 1795
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1493
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 2,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1538
+    },
+    {
+      "nick": "ADUN",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 840
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "SpokSL",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1440
+    },
+    {
+      "nick": "Кент肯特",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1134
+    },
+    {
+      "nick": "Gruze",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 1035
+    },
+    {
+      "nick": "Hampton",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 360
+    },
+    {
+      "nick": "Eastt",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 38
+    },
+    {
+      "nick": "Antohka220",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0
+    },
+    {
+      "nick": "Bear",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0
+    },
+    {
+      "nick": "KRIPerOK",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "SpokSL",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 3253
+    },
+    {
+      "nick": "Antohka220",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 2771
+    },
+    {
+      "nick": "Gruze",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1888
+    },
+    {
+      "nick": "Кент肯特",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 1953
+    },
+    {
+      "nick": "Hampton",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 786
+    },
+    {
+      "nick": "Bear",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 735
+    },
+    {
+      "nick": "Eastt",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 741
+    },
+    {
+      "nick": "KRIPerOK",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 0
+    }
+  ]
+}

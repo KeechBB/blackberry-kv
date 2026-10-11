@@ -42,5 +42,15 @@
     "sum": "275:0",
     "status": "win",
     "source": "tr-cw-auto"
+  },
+  {
+    "id": "11-nklv",
+    "opp": "NKLV",
+    "map": "FCL Narva",
+    "server": "FCL ARENA #2 (TR2)",
+    "rounds": 2,
+    "sum": "137:0",
+    "status": "win",
+    "source": "tr-cw-auto"
   }
 ]
