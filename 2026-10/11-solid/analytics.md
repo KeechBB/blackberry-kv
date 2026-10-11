@@ -2,13 +2,16 @@
 
 ## R1 (0:86 · Decisive Defeat · 34:47)
 
-- Мы **BAF (БВС)**, они **Irregular Militia (НО)**.
-- Слой: **SEC 26 Mutaha PAAS v1**, сервер `.solid Combat Zone`, 27v27.
-- Тикеты: старт 180/180 → финиш **0:86**. У них bleed 15, 1 FOB у нас потерян, техника БВС сильно отъела тикеты.
-- Best Squad / Medic / Logistics на их стороне (Отряд 3 · gawronUSB · .dilos -Sm0ke.).
-- Камера: **[CAM] Shrein** и **.solid OleX** — в стату не вносили.
-- oppR1: нижние ряды их Отряд 6 на скрине обрезаны — в JSON только видимые.
+- Мы **BAF**, они **Militia**. Сервер `.solid Combat Zone`.
+- Камера: Shrein / OleX — пропуск.
+
+## R2 (0:173 · Major Defeat · 24:32)
+
+- Мы **Militia (НО)**, они **BAF**. Ещё жёстче по тикетам.
+- Best Squad на нашей стороне (Отряд 7), Best Medic/Logistics — у них (.Otter / .im KLAP-kyern).
+- Камера: **[CAM] Shrein** и **.solid OleX** — пропуск.
+- oppR2: в Отряде 7 (QWEQWE…) на скрине виден только FeniX | PabloLuke — остальные их слоты в кадр не попали.
 
 ## Встреча
 
-Сумма пока **0:86**. Ждём R2.
+Сумма **0:259** → **проигрыш 0–2**.

@@ -6,7 +6,7 @@
 
 - **18:00 UTC** / **21:00 МСК**
 - **26v26**
-- Карта: **SEC 26 Mutaha PAAS v1** (на катке PAAS)
+- Карта: **SEC 26 Mutaha PAAS v1**
 - Сервер: **.solid** `.solid Combat Zone`
 - Правила: **SEC**
 - Состав: **Junior**
@@ -16,10 +16,10 @@
 | Раунд | Счёт | Длина | Фракции |
 |---|---|---|---|
 | **R1** | **0:86** | 34:47 | мы **BAF** · они **Militia** · *Decisive Defeat* |
-| **R2** | — | — | ждём |
+| **R2** | **0:173** | 24:32 | мы **Militia** · они **BAF** · *Major Defeat* |
 
-**Встреча открыта** — сумма тикетов пока **0:86**. Серию закрываем после R2 (канон суммы).
+**Встреча: 0–2** (сумма тикетов **0:259**). Оба раунда 0 — серию забрали они по сумме.
 
 Стата: [players/11-solid.json](../../public/data/players/11-solid.json).  
-Скрины: [screens/r1/](screens/r1/).  
+Скрины: [screens/r1/](screens/r1/) · [screens/r2/](screens/r2/).  
 Лого: `brand/logos/solid.png` + junior. Заметки: [analytics.md](analytics.md).

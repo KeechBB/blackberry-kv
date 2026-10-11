@@ -264,10 +264,12 @@
       "server": ".solid",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · R1 0:86 Decisive · Mutaha PAAS 34:47 · BAF vs Militia · сервер .solid · сумма пока 0:86 · ждём R2 · лого solid.png",
+      "status": "lose",
+      "note": "Junior · сумма 0:259 (0:86 · 0:173) · раунды 0–2 · R1 Decisive BAF 34:47 · R2 Major Defeat Militia 24:32 · Mutaha PAAS · сервер .solid · лого solid.png",
       "r1": "0:86",
-      "playersUrl": "data/players/11-solid.json"
+      "playersUrl": "data/players/11-solid.json",
+      "r2": "0:173",
+      "meeting": "0–2"
     },
     {
       "id": "11-fox",

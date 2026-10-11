@@ -2,7 +2,21 @@
   "updatedAt": "2026-10-11",
   "holdDays": 2,
   "displayDays": 2,
-  "watches": [],
+  "watches": [
+    {
+      "nick": "ADUN",
+      "kind": "promote",
+      "fromTier": 3,
+      "toTier": 2,
+      "fit": 99.1,
+      "band": "strong",
+      "role": "Медик",
+      "lever": "Активность: 91% от эталона роли — заходи стабильно в клановые войны",
+      "since": "2026-10-11",
+      "daysHeld": 0,
+      "ready": false
+    }
+  ],
   "transfers": [
     {
       "nick": "Kroasawn",
