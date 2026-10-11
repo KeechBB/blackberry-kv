@@ -1,0 +1,439 @@
+{
+  "matchId": "11-solid",
+  "opp": ".solid",
+  "note": "R1 0:86 Decisive Defeat BAF(BB Junior)·Militia(.solid) 34:47 · SEC 26 Mutaha PAAS v1 · server .solid Combat Zone · camera Shrein + .solid OleX skipped · oppR1 named rows · ждём R2",
+  "r1": [
+    {
+      "nick": "Mighty",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 97
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 229
+    },
+    {
+      "nick": "ADUN",
+      "res": 8,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 74
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 97
+    },
+    {
+      "nick": "Bks",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 170
+    },
+    {
+      "nick": "Hazzi",
+      "res": 10,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 154
+    },
+    {
+      "nick": "Sex",
+      "res": 1,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 112
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 96
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 50
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 2,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 106
+    },
+    {
+      "nick": "k1t",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 75
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 83
+    },
+    {
+      "nick": "Tankist",
+      "res": 1,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 216
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 16
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 118
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 275
+    },
+    {
+      "nick": "Varyag",
+      "res": 6,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 44
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 149
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 255
+    },
+    {
+      "nick": "Goob",
+      "res": 4,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 156
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 70
+    },
+    {
+      "nick": "Oguzok",
+      "res": 2,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 142
+    },
+    {
+      "nick": "Forks",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 91
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 68
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 286
+    },
+    {
+      "nick": "T-800",
+      "res": 6,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 55
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": ".solid Bandit",
+      "res": 2,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 101
+    },
+    {
+      "nick": ".thick WildKiwi",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 250
+    },
+    {
+      "nick": "marthew",
+      "res": 0,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 269
+    },
+    {
+      "nick": "丂ㄖㄥ丨ᗪ BigNose",
+      "res": 0,
+      "nok": 12,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 186
+    },
+    {
+      "nick": ".solid Hagrid",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 296
+    },
+    {
+      "nick": ".Otter",
+      "res": 5,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 164
+    },
+    {
+      "nick": ".solid Highys",
+      "res": 7,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 84
+    },
+    {
+      "nick": ".solid EZmil",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 194
+    },
+    {
+      "nick": ".solid matkn39",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 115
+    },
+    {
+      "nick": ".driver mashed",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 502
+    },
+    {
+      "nick": ".solid Der Inder",
+      "res": 0,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 0,
+      "dmg": 1355
+    },
+    {
+      "nick": "FeniX | PabloLuke",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 77
+    },
+    {
+      "nick": ".solid? Guvi",
+      "res": 0,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 204
+    },
+    {
+      "nick": ".solid Primaris",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 3,
+      "dmg": 316
+    },
+    {
+      "nick": "4.5x0 Dark_Apple1",
+      "res": 7,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 127
+    },
+    {
+      "nick": ".SOLID? Migatka",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 162
+    },
+    {
+      "nick": ".solid kataarp",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 1
+    },
+    {
+      "nick": ".solid Kosma",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 186
+    },
+    {
+      "nick": "* KlaMa *",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 76
+    },
+    {
+      "nick": "gawronUSB",
+      "res": 12,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 115
+    },
+    {
+      "nick": ".solid hulahus",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 554
+    },
+    {
+      "nick": ".dilos -Sm0ke.",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 587
+    },
+    {
+      "nick": ".im KLAP-kyern",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 184
+    },
+    {
+      "nick": ".solid xSunTop",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 523
+    },
+    {
+      "nick": ".solid Skov",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 94
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Hazzi"
+      ],
+      "killer": [
+        "AkiN"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "COBRA"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

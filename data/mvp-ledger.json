@@ -289,6 +289,40 @@
       }
     },
     {
+      "id": "10-avg",
+      "day": 10,
+      "opp": "AVG",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "Kuchenchips"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "_VaGNeR_"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "LordWolf"
+        ],
+        "damage": [
+          "LordWolf"
+        ],
+        "antiDeath": [
+          "Kuchenchips"
+        ]
+      }
+    },
+    {
       "id": "11-dcai",
       "day": 11,
       "opp": "DCAI",
@@ -320,6 +354,66 @@
         "antiDeath": [
           "Trigger"
         ]
+      }
+    },
+    {
+      "id": "11-nklv",
+      "day": 11,
+      "opp": "NKLV",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "ADUN"
+        ],
+        "killer": [
+          "Nestor Mahno"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "VET"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "SkiLLeX"
+        ],
+        "killer": [
+          "VET"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "Mighty"
+        ]
+      }
+    },
+    {
+      "id": "11-solid",
+      "day": 11,
+      "opp": ".solid",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Hazzi"
+        ],
+        "killer": [
+          "AkiN"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "COBRA"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
       }
     },
     {
@@ -869,7 +963,7 @@
   ],
   "players": {
     "ADUN": {
-      "mvpMedic": 4,
+      "mvpMedic": 5,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -879,6 +973,14 @@
           "day": 11,
           "opp": "DCAI",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         },
@@ -942,7 +1044,7 @@
     },
     "AkiN": {
       "mvpMedic": 1,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
@@ -951,6 +1053,14 @@
           "day": 8,
           "opp": "HQ",
           "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "11-solid",
+          "day": 11,
+          "opp": ".solid",
+          "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
         },
@@ -1144,7 +1254,7 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 3,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "01-gm",
@@ -1169,6 +1279,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-solid",
+          "day": 11,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -1436,6 +1554,22 @@
         }
       ]
     },
+    "Hazzi": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "11-solid",
+          "day": 11,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "JESTER": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1637,7 +1771,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 9,
+      "mvpMedic": 10,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 0,
@@ -1646,6 +1780,14 @@
           "matchId": "07-dcai",
           "day": 7,
           "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -1726,10 +1868,34 @@
     },
     "Kuchenchips": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
-      "mvpDamage": 4,
-      "antiDeath": 0,
+      "mvpKiller": 3,
+      "mvpDamage": 5,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "15-dcai",
           "day": 15,
@@ -1782,8 +1948,8 @@
     },
     "LordWolf": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
         {
@@ -1793,6 +1959,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -1832,7 +2014,7 @@
       "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "04-20r",
@@ -1849,11 +2031,19 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
     "Morty": {
-      "mvpMedic": 4,
+      "mvpMedic": 5,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -1871,6 +2061,14 @@
           "day": 8,
           "opp": "HQ",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         },
@@ -1958,10 +2156,18 @@
     },
     "Nestor Mahno": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "13-two",
           "day": 13,
@@ -2236,6 +2442,22 @@
         }
       ]
     },
+    "SkiLLeX": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Tankist": {
       "mvpMedic": 0,
       "mvpKiller": 3,
@@ -2439,7 +2661,7 @@
     "Trixx": {
       "mvpMedic": 0,
       "mvpKiller": 2,
-      "mvpDamage": 3,
+      "mvpDamage": 6,
       "antiDeath": 0,
       "awards": [
         {
@@ -2467,6 +2689,30 @@
           "label": "MVP War-Score"
         },
         {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-solid",
+          "day": 11,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
           "matchId": "12-hell",
           "day": 12,
           "opp": "HELL",
@@ -2486,10 +2732,26 @@
     },
     "VET": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "11-nklv",
+          "day": 11,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "30-ih",
           "day": 30,
@@ -2568,8 +2830,16 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "24-hq",
           "day": 24,

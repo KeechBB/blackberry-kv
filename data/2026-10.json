@@ -259,13 +259,15 @@
       "timeMsk": "21:00",
       "timeUtc": "18:00",
       "opp": ".solid",
-      "map": "SEC 26 Mutaha AAS v1",
+      "map": "SEC 26 Mutaha PAAS v1",
       "size": "26v26",
       "server": ".solid",
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Mutaha 26 · сервер .solid · same day Junior vs NKLV 19:00 · лого solid.png"
+      "note": "Junior · R1 0:86 Decisive · Mutaha PAAS 34:47 · BAF vs Militia · сервер .solid · сумма пока 0:86 · ждём R2 · лого solid.png",
+      "r1": "0:86",
+      "playersUrl": "data/players/11-solid.json"
     },
     {
       "id": "11-fox",
