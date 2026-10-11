@@ -20,7 +20,7 @@
 | 10 | [10-AVG](10-AVG/match.md) | AVG | **мейн-стак**, SEC 26 AlBasrah AAS v1, **26v26**, **21:30** МСК (18:30 UTC), сервер BB · перенос с отмены 02.10, [analytics.md](10-AVG/analytics.md) |
 | 11 | [11-NKLV](11-NKLV/match.md) | NKLV | **Junior**, FCL Narva Small v1, **8v8**, **19:00** МСК (16:00 UTC), сервер FCL ARENA #2, [analytics.md](11-NKLV/analytics.md) |
 | 11 | [11-solid](11-solid/match.md) | .solid | **Junior**, SEC 26 Mutaha, **26v26**, **21:00** МСК (18:00 UTC), сервер .solid, [analytics.md](11-solid/analytics.md) |
-| 11 | [11-FOX](11-FOX/match.md) | FOX | **мейн-стак**, CSL Mutaha AAS V1, **20v20**, **21:00** МСК (18:00 UTC), сервер BB, SEC, [analytics.md](11-FOX/analytics.md) |
+| 11 | [11-FOX](11-FOX/match.md) | FOX | **отмена** · мейн-стак, CSL Mutaha AAS V1, **20v20**, **21:00** МСК, [analytics.md](11-FOX/analytics.md) |
 | 13 | [13-HELL](13-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 1-я vs HELL в окт., [analytics.md](13-HELL/analytics.md) |
 | 14 | [14-OMEN](14-OMEN/match.md) | OMEN | **мейн-стак**, HotDrop Narva (`HD_Narva_20x20`), **20v20**, **21:00** МСК (18:00 UTC), сервер OMEN, [analytics.md](14-OMEN/analytics.md) |
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 2-я vs HELL в окт., [analytics.md](15-HELL/analytics.md) |
