@@ -247,7 +247,7 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 (=TR2) · same day Junior vs .solid 21:00 · Main vs FOX 21:00 · NO SCOUT · NO MEETINGS"
+      "note": "Junior · FCL · Narva Small 8v8 · FCL ARENA #2 (=TR2) · same day Junior vs .solid 21:00 · Main vs FOX 21:00 отмена · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "11-solid",
@@ -274,8 +274,8 @@
       "server": "BB",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · same day Junior vs NKLV 19:00 · NO SCOUT"
+      "status": "cancel",
+      "note": "отмена · Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · same day Junior vs NKLV 19:00 / .solid 21:00"
     },
     {
       "id": "13-ra",
