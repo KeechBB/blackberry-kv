@@ -286,6 +286,51 @@
       "note": "отмена · Main · SEC · CSL Mutaha AAS V1 · 20v20 · BB · 2-я vs FOX в окт. (06.10 Chora) · same day Junior vs NKLV 19:00 / .solid 21:00"
     },
     {
+      "id": "13-nklv-fal",
+      "day": 13,
+      "timeMsk": "19:00",
+      "timeUtc": "16:00",
+      "clan": "NKLV",
+      "opp": "FAL",
+      "map": "FCL Narva Small v1",
+      "size": "10v10",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "—",
+      "status": "upcoming",
+      "note": "чужой КВ · NKLV vs FAL · FCL Narva Small v1 · 10v10 · 19:00 · серия 3 карты same day (19:00/19:30/20:00) · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "13-nklv-fal-2",
+      "day": 13,
+      "timeMsk": "19:30",
+      "timeUtc": "16:30",
+      "clan": "NKLV",
+      "opp": "FAL",
+      "map": "FCL Mutaha Small v2",
+      "size": "10v10",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "—",
+      "status": "upcoming",
+      "note": "чужой КВ · NKLV vs FAL · FCL Mutaha Small v2 · 10v10 · 19:30 · 2/3 same day · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "13-nklv-fal-3",
+      "day": 13,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "clan": "NKLV",
+      "opp": "FAL",
+      "map": "FCL GooseBay Small v1",
+      "size": "10v10",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "—",
+      "status": "upcoming",
+      "note": "чужой КВ · NKLV vs FAL · FCL GooseBay Small v1 · 10v10 · 20:00 · 3/3 same day · same slot Junior vs HELL · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "13-ra",
       "day": 13,
       "timeMsk": "20:00",
@@ -311,7 +356,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same slot RA FCL 8v8 — отмена · NO SCOUT · NO MEETINGS"
+      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same day NKLV vs FAL 19:00/19:30/20:00 · RA FCL — отмена · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "14-fal",
