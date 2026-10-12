@@ -1385,12 +1385,21 @@ body.modal-open { overflow: hidden; }
   text-align: center;
 }
 .rating-table th.col-nick,
-.rating-table td.col-nick {
-  text-align: left;
+.rating-table td.col-nick,
+#cw-rating-table th.col-nick,
+#cw-rating-table td.col-nick,
+#train-rating-table th.col-nick,
+#train-rating-table td.col-nick {
+  text-align: left !important;
 }
 .rating-table td.col-nick .nick-profile-link,
-.rating-table td.col-nick .nick-plain {
-  text-align: left;
+.rating-table td.col-nick .nick-plain,
+#cw-rating-table td.col-nick .nick-profile-link,
+#cw-rating-table td.col-nick .nick-plain,
+#train-rating-table td.col-nick .nick-profile-link,
+#train-rating-table td.col-nick .nick-plain {
+  text-align: left !important;
+  display: inline;
 }
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
@@ -1405,10 +1414,12 @@ body.modal-open { overflow: hidden; }
   padding-top: 12px;
   padding-bottom: 12px;
 }
+/* Тег/тир по центру — не трогаем .col-nick (ник слева). */
 .rating-table th[data-rsort="clan"],
 .rating-table th[data-rsort="squad"],
-.rating-table td:nth-child(3),
-.rating-table td:nth-child(4) {
+.rating-table th[data-trsort="clan"],
+.rating-table td.col-tag,
+.rating-table td.tier {
   text-align: center;
 }
 .rating-table th.col-mvp-anti,
