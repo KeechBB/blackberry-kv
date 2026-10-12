@@ -1384,6 +1384,14 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.02em;
   text-align: center;
 }
+.rating-table th.col-nick,
+.rating-table td.col-nick {
+  text-align: left;
+}
+.rating-table td.col-nick .nick-profile-link,
+.rating-table td.col-nick .nick-plain {
+  text-align: left;
+}
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
 .rating-table th.col-mvp-war,

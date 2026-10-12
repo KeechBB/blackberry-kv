@@ -1363,8 +1363,12 @@
 
   function rosterOf(nick) {
     const info = rosterByNick[nickKey(nick)] || null;
+    // В рейтингах показываем только ТЕГ клана, не полное имя.
+    const tag = String(info?.tag || "").trim();
     return {
-      clan: info?.clan || "—",
+      clan: tag || "—",
+      clanName: info?.clan || "—",
+      tag: tag || "—",
       squad: info?.squad || "—",
       regNo: info?.regNo != null ? Number(info.regNo) : null,
     };
@@ -1754,8 +1758,8 @@
         return `<tr class="${p.calibrating ? "is-cal" : ""}">
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="${tuCls}${tuRec}" title="${escapeHtml(tuTitle)}">${p.calibrating ? tuText : `<strong>${tuText}</strong>`}</td>
-        <td>${nickLinkHtml(p.nick)}</td>
-        <td class="ctr">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
+        <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr${rec(p.kv, maxKv, false)}">${p.kv}</td>
         <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
@@ -2119,8 +2123,8 @@
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
         <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
-        <td>${nickLinkHtml(p.nick)}</td>
-        <td class="ctr">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
+        <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
