@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261011-solid-r2";
+    new URLSearchParams(location.search).get("v") || "20261012-nklv-rpss";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -1185,7 +1185,7 @@
         return t;
       }
       case "clan":
-        return m.clan || "BlackBerry";
+        return hostClanName(m);
       case "opp":
         return m.opp || "";
       case "map":
@@ -1216,7 +1216,7 @@
     let list = matches;
     if (q) {
       list = list.filter((m) => {
-        const clanName = String(m.clan || "BlackBerry").toLowerCase();
+        const clanName = hostClanName(m).toLowerCase();
         const opp = String(m.opp || "").toLowerCase();
         return clanName.includes(q) || opp.includes(q);
       });
@@ -1287,8 +1287,20 @@
     return st === "win" || st === "lose" || st === "draw";
   }
 
+  /** Хост слота — BlackBerry, если clan пустой / BB / BlackBerry. Чужие КВ пишут clan=NKLV и т.п. */
+  function isBbHostMatch(m) {
+    const c = String((m && m.clan) || "").trim();
+    if (!c) return true;
+    return /^(bb|blackberry)$/i.test(c);
+  }
+
+  function hostClanName(m) {
+    return isBbHostMatch(m) ? "BlackBerry" : String(m.clan || "").trim() || "—";
+  }
+
   function paintStats(list) {
-    const played = list.filter((m) => isPlayedStatus(m.status));
+    const bb = list.filter(isBbHostMatch);
+    const played = bb.filter((m) => isPlayedStatus(m.status));
     const upcoming = list.filter((m) => m.status === "upcoming");
     const wins = played.filter((m) => m.status === "win").length;
     const draws = played.filter((m) => m.status === "draw").length;
@@ -1296,10 +1308,10 @@
     const wr = played.length ? Math.round((100 * wins) / played.length) : 0;
     document.getElementById("stats").innerHTML = [
       ["Всего", list.length, ""],
-      ["Сыграно", played.length, ""],
+      ["Сыграно BB", played.length, ""],
       ["Впереди", upcoming.length, ""],
       ["W–D–L", `${wins}–${draws}–${losses}`, ""],
-      ["Winrate", `${wr}%`, "winrate"],
+      ["Winrate BB", `${wr}%`, "winrate"],
     ]
       .map(([k, v, cls]) => `<div class="stat ${cls}"><span class="k">${k}</span><span class="v">${v}</span></div>`)
       .join("");
@@ -1317,7 +1329,7 @@
     tbody.innerHTML = list
       .map((m) => {
         const st = m.status || "upcoming";
-        const clanName = m.clan || "BlackBerry";
+        const clanName = hostClanName(m);
         return `<tr class="${st} clickable" data-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${monthKey}</td>
           <td class="num">${m.timeMsk || "—"}</td>
@@ -2264,6 +2276,8 @@
           if (!bundle || !bundle.data) return;
           (bundle.data.matches || []).forEach((m) => {
             if (m.status === "upcoming") return;
+            // Аналитика КВ на github.io — только матчи BlackBerry.
+            if (!isBbHostMatch(m)) return;
             if (
               stackFilter !== "all" &&
               String(m.stack || "").toLowerCase() !== stackFilter.toLowerCase()
