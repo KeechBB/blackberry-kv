@@ -27,4 +27,5 @@
 | 14 | [14-OMEN](14-OMEN/match.md) | OMEN | **мейн-стак**, HotDrop Narva (`HD_Narva_20x20`), **20v20**, **21:00** МСК (18:00 UTC), сервер OMEN, [analytics.md](14-OMEN/analytics.md) |
 | 15 | [15-RA](15-RA/match.md) | RA | **отмена** · Junior, FCL, **8v8**, **20:00** МСК, [analytics.md](15-RA/analytics.md) |
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 2-я vs HELL в окт., [analytics.md](15-HELL/analytics.md) |
+| 17 | [17-NKLV-RPSS](17-NKLV-RPSS/match.md) | NKLV vs RPSS | **чужой КВ**, FCL Narva Small v1, **12v12**, **17:00** МСК (14:00 UTC), SEC, [analytics.md](17-NKLV-RPSS/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер ANY, [analytics.md](18-SPH/analytics.md) |

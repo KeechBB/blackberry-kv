@@ -1,7 +1,7 @@
 {
   "month": "2026-10",
-  "title": "BlackBerry КВ — октябрь 2026",
-  "note": "Тикеты — наши:их. Победа встречи = большая сумма тикетов за два раунда (ничьих нет). Winrate = победы / сыгранные. Клик по строке — стата игроков (когда внесена со скринов).",
+  "title": "КВ — октябрь 2026",
+  "note": "Тикеты — сторона A (клан) : сторона B (соперник). Победа = большая сумма тикетов за два раунда (ничьих нет). Winrate сверху — только матчи BlackBerry. Чужие КВ (NKLV/RPSS и др.) тоже в календаре. Клик по строке — стата игроков.",
   "matches": [
     {
       "id": "01-gm",
@@ -368,6 +368,21 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · SEC · Sumari 26 · BB server · 2-я встреча (после 13.10) · same slot RA FCL 8v8 — отмена · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "17-nklv-rpss",
+      "day": 17,
+      "timeMsk": "17:00",
+      "timeUtc": "14:00",
+      "clan": "NKLV",
+      "opp": "RPSS",
+      "map": "FCL Narva Small v1",
+      "size": "12v12",
+      "server": "после матчмейкинга",
+      "rules": "SEC",
+      "stack": "—",
+      "status": "upcoming",
+      "note": "чужой КВ · NKLV vs RPSS · FCL Narva Small v1 · 12v12 · SEC · 17:00 МСК · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "18-sph",
