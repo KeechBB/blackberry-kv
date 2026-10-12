@@ -296,8 +296,8 @@
       "server": "после матчмейкинга",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
+      "status": "cancel",
+      "note": "отмена · Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "13-hell",
@@ -311,7 +311,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same day Junior vs RA 20:00 · NO SCOUT · NO MEETINGS"
+      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same slot RA FCL 8v8 — отмена · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "14-fal",
@@ -352,8 +352,8 @@
       "server": "после матчмейкинга",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
+      "status": "cancel",
+      "note": "отмена · Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "15-hell",
@@ -367,7 +367,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 2-я встреча (после 13.10) · same day Junior vs RA 20:00 · NO SCOUT · NO MEETINGS"
+      "note": "Junior · SEC · Sumari 26 · BB server · 2-я встреча (после 13.10) · same slot RA FCL 8v8 — отмена · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "18-sph",
