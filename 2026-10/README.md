@@ -21,9 +21,9 @@
 | 11 | [11-NKLV](11-NKLV/match.md) | NKLV | **Junior**, **2–0** · сумма **137:0** (R1 91:0 · R2 46:0) · FCL Narva Small · FCL ARENA #2 · стата полная · [analytics.md](11-NKLV/analytics.md) |
 | 11 | [11-solid](11-solid/match.md) | .solid | **Junior**, Mutaha PAAS · **0–2** сумма **0:259** (0:86 · 0:173) · [analytics.md](11-solid/analytics.md) |
 | 11 | [11-FOX](11-FOX/match.md) | FOX | **отмена** · мейн-стак, CSL Mutaha AAS V1, **20v20**, **21:00** МСК, [analytics.md](11-FOX/analytics.md) |
-| 13 | [13-NKLV-FAL](13-NKLV-FAL/match.md) | NKLV vs FAL | **чужой КВ**, FCL Narva Small v1, **10v10**, **19:00** МСК, [analytics.md](13-NKLV-FAL/analytics.md) |
-| 13 | [13-NKLV-FAL-2](13-NKLV-FAL-2/match.md) | NKLV vs FAL | **чужой КВ**, FCL Mutaha Small v2, **10v10**, **19:30** МСК, [analytics.md](13-NKLV-FAL-2/analytics.md) |
-| 13 | [13-NKLV-FAL-3](13-NKLV-FAL-3/match.md) | NKLV vs FAL | **чужой КВ**, FCL GooseBay Small v1, **10v10**, **20:00** МСК, [analytics.md](13-NKLV-FAL-3/analytics.md) |
+| 13 | [13-NKLV-FAL](13-NKLV-FAL/match.md) | NKLV vs FAL | **чужой КВ** · **0–2** · сумма **0:66** (0:24 · 0:42) · FCL Narva Small v1, **10v10**, **19:00** МСК · CITADEL, [analytics.md](13-NKLV-FAL/analytics.md) |
+| 13 | [13-NKLV-FAL-2](13-NKLV-FAL-2/match.md) | NKLV vs FAL | **чужой КВ** · **2–0** · сумма **32:9** (11:7 · 21:2) · FCL Mutaha Small v2, **10v10**, **19:30** МСК · CITADEL, [analytics.md](13-NKLV-FAL-2/analytics.md) |
+| 13 | [13-NKLV-FAL-3](13-NKLV-FAL-3/match.md) | NKLV vs FAL | **отмена** · чужой КВ, FCL GooseBay Small v1, **10v10**, **20:00** МСК, [analytics.md](13-NKLV-FAL-3/analytics.md) |
 | 13 | [13-RA](13-RA/match.md) | RA | **отмена** · Junior, FCL, **8v8**, **20:00** МСК, [analytics.md](13-RA/analytics.md) |
 | 13 | [13-HELL](13-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 1-я vs HELL в окт., [analytics.md](13-HELL/analytics.md) |
 | 14 | [14-FAL](14-FAL/match.md) | FAL | **мейн-стак**, CSL Mutaha AAS V1, **20v20**, **20:00** МСК (17:00 UTC), сервер BB · после отмены 10.10 · карта сменена с SEC 26, [analytics.md](14-FAL/analytics.md) |
@@ -31,4 +31,5 @@
 | 15 | [15-RA](15-RA/match.md) | RA | **отмена** · Junior, FCL, **8v8**, **20:00** МСК, [analytics.md](15-RA/analytics.md) |
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 2-я vs HELL в окт., [analytics.md](15-HELL/analytics.md) |
 | 17 | [17-NKLV-RPSS](17-NKLV-RPSS/match.md) | NKLV vs RPSS | **чужой КВ**, FCL Narva Small v1, **12v12**, **17:00** МСК (14:00 UTC), SEC, [analytics.md](17-NKLV-RPSS/analytics.md) |
+| 17 | [17-NS](17-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер FCL ARENA 2, [analytics.md](17-NS/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер ANY, [analytics.md](18-SPH/analytics.md) |

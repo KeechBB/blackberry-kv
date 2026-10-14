@@ -294,11 +294,15 @@
       "opp": "FAL",
       "map": "FCL Narva Small v1",
       "size": "10v10",
-      "server": "после матчмейкинга",
+      "server": "CITADEL Training",
       "rules": "FCL",
       "stack": "—",
-      "status": "upcoming",
-      "note": "чужой КВ · NKLV vs FAL · FCL Narva Small v1 · 10v10 · 19:00 · серия 3 карты same day (19:00/19:30/20:00) · NO SCOUT · NO MEETINGS"
+      "status": "lose",
+      "note": "чужой КВ · NKLV vs FAL · FCL Narva Small v1 · 10v10 · сумма 0:66 (0:24 · 0:42) · CITADEL · FAL 2–0 · NO SCOUT · NO MEETINGS",
+      "r1": "0:24",
+      "meeting": "0–2",
+      "playersUrl": "data/players/13-nklv-fal.json",
+      "r2": "0:42"
     },
     {
       "id": "13-nklv-fal-2",
@@ -309,11 +313,15 @@
       "opp": "FAL",
       "map": "FCL Mutaha Small v2",
       "size": "10v10",
-      "server": "после матчмейкинга",
+      "server": "CITADEL Training",
       "rules": "FCL",
       "stack": "—",
-      "status": "upcoming",
-      "note": "чужой КВ · NKLV vs FAL · FCL Mutaha Small v2 · 10v10 · 19:30 · 2/3 same day · NO SCOUT · NO MEETINGS"
+      "status": "win",
+      "note": "чужой КВ · NKLV vs FAL · FCL Mutaha Small v2 · 10v10 · сумма 32:9 (11:7 · 21:2) · CITADEL · NKLV 2–0 · NO SCOUT · NO MEETINGS",
+      "r1": "11:7",
+      "meeting": "2–0",
+      "playersUrl": "data/players/13-nklv-fal-2.json",
+      "r2": "21:2"
     },
     {
       "id": "13-nklv-fal-3",
@@ -327,8 +335,8 @@
       "server": "после матчмейкинга",
       "rules": "FCL",
       "stack": "—",
-      "status": "upcoming",
-      "note": "чужой КВ · NKLV vs FAL · FCL GooseBay Small v1 · 10v10 · 20:00 · 3/3 same day · same slot Junior vs HELL · NO SCOUT · NO MEETINGS"
+      "status": "cancel",
+      "note": "отмена · чужой КВ · NKLV vs FAL · FCL GooseBay Small v1 · 10v10 · 20:00 · 3/3 same day · same slot Junior vs HELL · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "13-ra",
@@ -352,11 +360,15 @@
       "opp": "HELL",
       "map": "SEC 26 Sumari AAS v1",
       "size": "26v26",
-      "server": "BB",
+      "server": "TR2",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 1-я встреча в октябре · same day NKLV vs FAL 19:00/19:30/20:00 · RA FCL — отмена · NO SCOUT · NO MEETINGS"
+      "status": "win",
+      "note": "Junior · SEC · SEC 26 Sumari AAS v1 · TR2 · сумма 226:0 (116:0 · 110:0) · авто обе команды",
+      "playersUrl": "data/players/13-hell.json",
+      "r1": "116:0",
+      "r2": "110:0",
+      "meeting": "2–0"
     },
     {
       "id": "14-fal",
@@ -428,6 +440,20 @@
       "stack": "—",
       "status": "upcoming",
       "note": "чужой КВ · NKLV vs RPSS · FCL Narva Small v1 · 12v12 · SEC · 17:00 МСК · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "17-ns",
+      "day": 17,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "NS",
+      "map": "CSL Mutaha Skirmish v2",
+      "size": "20v20",
+      "server": "FCL ARENA 2",
+      "rules": "CSL",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · NO SCOUT · NO MEETINGS · same day чужой NKLV vs RPSS 17:00"
     },
     {
       "id": "18-sph",
