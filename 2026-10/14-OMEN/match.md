@@ -1,6 +1,6 @@
 # 2026-10-14 — OMEN vs BlackBerry Main
 
-**Раунд 1 сыгран.** Встреча открыта — ждём R2. Играет **мейн-стак**.
+**FINAL 2–0** · сумма тикетов **224 : 0**. Играет **мейн-стак**.
 
 Сервер чужой (**Team OMEN Server**) — заливка со скринов, не TR-авто.
 
@@ -17,11 +17,12 @@
 
 - **108 : 0** · **37:43** · мы **USA**, они **IMF** · Decisive Victory
 - Awards: Top Squad **Squad 1** · Supply **Mukuru** · Medic **Morty**
-- Стата: [players/14-omen.json](../../data/players/14-omen.json)
 - Послематчевая: [../../previews/2026-10-14-omen-r1-expectations.png](../../previews/2026-10-14-omen-r1-expectations.png)
 
 ## Раунд 2
 
-Ещё не залит.
+- **116 : 0** · **37:58** · мы **IMF**, они **USA** · Decisive Victory
+- Awards: Top Squad **Squad 4** · Supply **_VaGNeR_** · Medic **KillReal**
+- Послематчевая: [../../previews/2026-10-14-omen-r2-expectations.png](../../previews/2026-10-14-omen-r2-expectations.png)
 
-Лого: `brand/logos/omen.png` + `blackberry.png`. Заметки: [analytics.md](analytics.md).
+Стата: [players/14-omen.json](../../data/players/14-omen.json). Заметки: [analytics.md](analytics.md).

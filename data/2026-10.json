@@ -399,10 +399,12 @@
       "server": "OMEN",
       "rules": "HOTDROP",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "108:0",
+      "r2": "116:0",
       "playersUrl": "data/players/14-omen.json",
-      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · R1 108:0 (37:43 USA) · R2 ждём · same day Main vs FAL 20:00 · NO SCOUT · NO MEETINGS"
+      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · сумма 224:0 (108:0 · 116:0) · R1 USA / R2 IMF · same day Main vs FAL 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "15-ra",

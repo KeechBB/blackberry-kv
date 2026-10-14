@@ -666,7 +666,7 @@
       "id": "14-omen",
       "day": 14,
       "opp": "OMEN",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Morty"
@@ -682,10 +682,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "KillReal"
+        ],
+        "killer": [
+          "Keech"
+        ],
+        "damage": [
+          "Keech"
+        ],
+        "antiDeath": [
+          "Summer"
+        ]
       }
     },
     {
@@ -1966,8 +1974,8 @@
     },
     "Keech": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 3,
+      "mvpKiller": 2,
+      "mvpDamage": 4,
       "antiDeath": 4,
       "awards": [
         {
@@ -2011,6 +2019,22 @@
           "label": "MVP War-Score"
         },
         {
+          "matchId": "14-omen",
+          "day": 14,
+          "opp": "OMEN",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "14-omen",
+          "day": 14,
+          "opp": "OMEN",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
           "matchId": "15-dcai",
           "day": 15,
           "opp": "DCAI",
@@ -2037,7 +2061,7 @@
       ]
     },
     "KillReal": {
-      "mvpMedic": 5,
+      "mvpMedic": 6,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -2046,6 +2070,14 @@
           "matchId": "14-fal",
           "day": 14,
           "opp": "FAL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "14-omen",
+          "day": 14,
+          "opp": "OMEN",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -2903,6 +2935,22 @@
           "day": 13,
           "opp": "FAL",
           "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Summer": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "14-omen",
+          "day": 14,
+          "opp": "OMEN",
+          "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }

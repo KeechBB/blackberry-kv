@@ -1,13 +1,13 @@
 # Заметки — 14.10 Main vs OMEN, HotDrop Narva
 
-## R1 — 108:0 (37:43)
+**FINAL 2–0** · сумма **224:0** (108:0 + 116:0).
 
-Чужой сервер OMEN. Мы USA, они IMF. Dominant ticket wipe.
+## R1 — 108:0 (37:43) · USA
 
-MVP Killer / War-Score: **bambozy** (22 кил / 28 нок). Medic на табло: **Morty** (22 рес). Anti: **Blizzardrix** (9 смертей).
+MVP Killer / War-Score: **bambozy**. Medic: **Morty**. Anti: **Blizzardrix**.
 
-Камера ★CAM★ slith. (нули + 500) — не вносилась.
+## R2 — 116:0 (37:58) · IMF
 
-## R2
+MVP Killer / War-Score: **Keech** (18 кил). Medic: **KillReal** (12 рес). Anti: **CAT** (10 смертей).
 
-Ждём скрины.
+Камера ★CAM★ slith. оба раунда — не вносилась.
