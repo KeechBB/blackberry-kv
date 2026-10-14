@@ -1,0 +1,367 @@
+{
+  "matchId": "14-omen",
+  "opp": "OMEN",
+  "note": "R1 со скринов · Team OMEN Server · HotDrop Narva · USA 108:0 IMF · 37:43 · R2 ждём · source=screens",
+  "source": "screens",
+  "server": "Team OMEN Server",
+  "map": "HotDrop Narva",
+  "r1": [
+    {
+      "nick": "bambozy",
+      "res": 3,
+      "nok": 28,
+      "kills": 22,
+      "deaths": 7,
+      "dmg": 329
+    },
+    {
+      "nick": "ZensU",
+      "res": 2,
+      "nok": 23,
+      "kills": 16,
+      "deaths": 6,
+      "dmg": 257
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 21,
+      "kills": 18,
+      "deaths": 8,
+      "dmg": 278
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 20,
+      "kills": 16,
+      "deaths": 8,
+      "dmg": 279
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 2,
+      "dmg": 242
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 17,
+      "kills": 14,
+      "deaths": 5,
+      "dmg": 216
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 147
+    },
+    {
+      "nick": "freak",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 137
+    },
+    {
+      "nick": "AkiN",
+      "res": 6,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 141
+    },
+    {
+      "nick": "Summer",
+      "res": 9,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 109
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 94
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 5,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 132
+    },
+    {
+      "nick": "Mukuru",
+      "res": 3,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 95
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 149
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 95
+    },
+    {
+      "nick": "LordWolf",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 96
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 13,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 55
+    },
+    {
+      "nick": "Radislave",
+      "res": 10,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 56
+    },
+    {
+      "nick": "KillReal",
+      "res": 9,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 57
+    },
+    {
+      "nick": "Morty",
+      "res": 22,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 34
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "OMEN | alex1715",
+      "res": 2,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 8,
+      "dmg": 230
+    },
+    {
+      "nick": "поХуй 22ROMEO",
+      "res": 0,
+      "nok": 18,
+      "kills": 11,
+      "deaths": 15,
+      "dmg": 225
+    },
+    {
+      "nick": "[Skira] Moz3j",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 8,
+      "dmg": 168
+    },
+    {
+      "nick": "OMEN | guy",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 134
+    },
+    {
+      "nick": "OMEN | Stryx",
+      "res": 0,
+      "nok": 18,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 143
+    },
+    {
+      "nick": "★RNL★ Harfenadam",
+      "res": 0,
+      "nok": 15,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 127
+    },
+    {
+      "nick": "OMEN ZeroC",
+      "res": 0,
+      "nok": 17,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 116
+    },
+    {
+      "nick": "OMEN | DAMOX",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 159
+    },
+    {
+      "nick": "OMEN | Philip Bain",
+      "res": 7,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 105
+    },
+    {
+      "nick": "OMEN | HejHej",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 13,
+      "dmg": 116
+    },
+    {
+      "nick": "OMEN | I like cacao",
+      "res": 3,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 119
+    },
+    {
+      "nick": "RNL Luisaceo",
+      "res": 0,
+      "nok": 16,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 117
+    },
+    {
+      "nick": "[Skira] Eevee",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 10,
+      "dmg": 105
+    },
+    {
+      "nick": "[Skira] Dartious",
+      "res": 6,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 85
+    },
+    {
+      "nick": "OMEN EurobeatPope",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 151
+    },
+    {
+      "nick": "OMEN | Astr0",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 67
+    },
+    {
+      "nick": "OMEN | Wedge Antilles",
+      "res": 1,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 86
+    },
+    {
+      "nick": "OMEN | P1rate999",
+      "res": 6,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 41
+    },
+    {
+      "nick": "[LUM] Hidden",
+      "res": 6,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 55
+    },
+    {
+      "nick": "[ODL] Blind Owl",
+      "res": 1,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 12,
+      "dmg": 55
+    }
+  ],
+  "oppR2": [],
+  "details": {
+    "r1": {
+      "tickets": "108:0",
+      "len": "37:43",
+      "factionUs": "USA",
+      "factionThem": "IMF",
+      "result": "Decisive Victory"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "Blizzardrix"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

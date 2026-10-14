@@ -400,7 +400,9 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · заявка OMEN vs BB · same day Main vs FAL 20:00 · NO SCOUT · NO MEETINGS"
+      "r1": "108:0",
+      "playersUrl": "data/players/14-omen.json",
+      "note": "Main · HOTDROP · HD_Narva_20x20 · сервер OMEN · R1 108:0 (37:43 USA) · R2 ждём · same day Main vs FAL 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "15-ra",

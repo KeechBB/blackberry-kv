@@ -1,6 +1,13 @@
-# OMEN vs BB Main — 14.10.2026
+# Заметки — 14.10 Main vs OMEN, HotDrop Narva
 
-Ещё не сыграно.
+## R1 — 108:0 (37:43)
 
-- Слот **21:00 МСК** / **18:00 UTC**, сервер **OMEN**, слой **HD_Narva_20x20** (HotDrop) 20v20.
-- Первая встреча мейна с OMEN в архиве.
+Чужой сервер OMEN. Мы USA, они IMF. Dominant ticket wipe.
+
+MVP Killer / War-Score: **bambozy** (22 кил / 28 нок). Medic на табло: **Morty** (22 рес). Anti: **Blizzardrix** (9 смертей).
+
+Камера ★CAM★ slith. (нули + 500) — не вносилась.
+
+## R2
+
+Ждём скрины.
