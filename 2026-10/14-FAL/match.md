@@ -1,20 +1,14 @@
-# 2026-10-14 — FAL vs BlackBerry Main
+# 2026-10-14 — FAL vs BlackBerry Main — **2–0** · сумма 498:103
 
-Ещё не сыграно. Заявка **11.10.2026** (**FAL vs BB main**). Играет **мейн-стак**.
-
-Перенос/новая игра после **отмены** [10-FAL](../10-FAL/match.md) (Mutaha 20, 10.10). Встреч с **FAL** / **FALCONS** в архиве результатов нет — **NO SCOUT** / **NO MEETINGS**.
-
-**11.10:** карту сменили с SEC 26 Mutaha AAS v1 → **CSL Mutaha AAS V1** (в заявке «CSL Mutaha v1»).
-
-Тот же день **21:00** — Main vs [OMEN](../14-OMEN/match.md) (HotDrop Narva). Не склеивать.
+Сыграно. **мейн-стак**. Авто из логов TR1 (обе команды).
 
 - **17:00 UTC** / **20:00 МСК**
 - **20v20**
-- Карта: **CSL Mutaha AAS V1**
-- Сервер: **BB**
-- Правила: **SEC**
-- Состав: **мейн-стак**
+- Карта: **CSL Mutaha Skirmish v1** (в заявке была CSL Mutaha AAS V1)
+- Сервер: **TR1** (Blackberry Training #1)
+- Правила: **SEC / CSL**
+- R1 **261:0** · R2 **237:103** · сумма **498:103** · встреча **2–0**
+
+Стата: [players](../../public/data/players/14-fal.json). Заметки: [analytics.md](analytics.md).
 
 Лого: `brand/logos/fal.png` + `blackberry.png`.
-
-Превью: [../../previews/2026-10-14-fal-mutaha-aas.png](../../previews/2026-10-14-fal-mutaha-aas.png). Заметки: [analytics.md](analytics.md).

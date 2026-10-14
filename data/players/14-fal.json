@@ -1,0 +1,640 @@
+{
+  "matchId": "14-fal",
+  "opp": "FAL",
+  "note": "Авто из логов TR · Blackberry | Training - Blackberries #1 · сумма 498:103 · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "Blackberry | Training - Blackberries #1",
+  "map": "CSL Mutaha Skirmish v1",
+  "r1": [
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 2774
+    },
+    {
+      "nick": "Pymba",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2138
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 1534
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 1577
+    },
+    {
+      "nick": "bambozy",
+      "res": 1,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1864
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1706
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 1264
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 812
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 825
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 857
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 794
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 601
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 362
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 339
+    },
+    {
+      "nick": "Morty",
+      "res": 7,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 413
+    },
+    {
+      "nick": "KillReal",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "lepurple",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Radislave",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    }
+  ],
+  "r2": [
+    {
+      "nick": "Kuchenchips",
+      "res": 2,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 1,
+      "dmg": 4833
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 3,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 3348
+    },
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1868
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 2,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1122
+    },
+    {
+      "nick": "Blizzardrix",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 458
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 960
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 801
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 660
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 550
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 300
+    },
+    {
+      "nick": "Radislave",
+      "res": 3,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 90
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 180
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 60
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 180
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "KillReal",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "lepurple",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "Morty",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "Ermak",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 1010
+    },
+    {
+      "nick": "w1ndow",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 620
+    },
+    {
+      "nick": "KnockStock",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 360
+    },
+    {
+      "nick": "RUSLAN4IK",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 326
+    },
+    {
+      "nick": "Skverniy",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 360
+    },
+    {
+      "nick": "Tennessee",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 325
+    },
+    {
+      "nick": "Whitesnake",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 480
+    },
+    {
+      "nick": "$ATANA",
+      "res": 0,
+      "nok": 6,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 190
+    },
+    {
+      "nick": "Andrim",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0
+    },
+    {
+      "nick": "KaBZoN",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 60
+    },
+    {
+      "nick": "Lane",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 60
+    },
+    {
+      "nick": "Дайте мне глазики",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 60
+    },
+    {
+      "nick": "Зелёный Рыцарь",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 37
+    },
+    {
+      "nick": "Рассвет",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 60
+    },
+    {
+      "nick": "Рождён ГрИбоМ",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 180
+    },
+    {
+      "nick": "СИЛА",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 60
+    },
+    {
+      "nick": "DedSmex",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0
+    },
+    {
+      "nick": "Rasco_Banelli (Twitch)",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Лупдіду😤",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "✿ LINKY ✿",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "KnockStock",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 2342
+    },
+    {
+      "nick": "Lane",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 879
+    },
+    {
+      "nick": "Whitesnake",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 1034
+    },
+    {
+      "nick": "Skverniy",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 701
+    },
+    {
+      "nick": "Ermak",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 486
+    },
+    {
+      "nick": "$ATANA",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 372
+    },
+    {
+      "nick": "RUSLAN4IK",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 236
+    },
+    {
+      "nick": "w1ndow",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 372
+    },
+    {
+      "nick": "Дайте мне глазики",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 248
+    },
+    {
+      "nick": "DedSmex",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 31
+    },
+    {
+      "nick": "СИЛА",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 186
+    },
+    {
+      "nick": "Andrim",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0
+    },
+    {
+      "nick": "KaBZoN",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0
+    },
+    {
+      "nick": "Rasco_Banelli (Twitch)",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Tennessee",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Зелёный Рыцарь",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0
+    },
+    {
+      "nick": "Лупдіду😤",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Рассвет",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    },
+    {
+      "nick": "Рождён ГрИбоМ",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0
+    },
+    {
+      "nick": "✿ LINKY ✿",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0
+    }
+  ]
+}
