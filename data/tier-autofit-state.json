@@ -1,66 +1,72 @@
 {
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-15",
   "holdDays": 2,
   "displayDays": 2,
   "watches": [
     {
-      "nick": "ADUN",
-      "kind": "promote",
-      "fromTier": 3,
+      "nick": "S.M.P",
+      "kind": "demote",
+      "fromTier": 1,
       "toTier": 2,
-      "fit": 99.1,
-      "band": "strong",
-      "role": "Медик",
-      "lever": "Активность: 91% от эталона роли — заходи стабильно в клановые войны",
-      "since": "2026-10-11",
+      "fit": 72.3,
+      "band": "hard",
+      "role": "Тандем",
+      "lever": "Урон/игра: 63% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-15",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Summer",
+      "kind": "demote",
+      "fromTier": 2,
+      "toTier": 3,
+      "fit": 74.1,
+      "band": "hard",
+      "role": "КО (SL)",
+      "lever": "Урон/игра: 36% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-15",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Treppen",
+      "kind": "demote",
+      "fromTier": 1,
+      "toTier": 2,
+      "fit": 74.8,
+      "band": "hard",
+      "role": "КО (SL)",
+      "lever": "Урон/игра: 21% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-15",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Otto",
+      "kind": "demote",
+      "fromTier": 2,
+      "toTier": 3,
+      "fit": 74.9,
+      "band": "hard",
+      "role": "КО (SL)",
+      "lever": "Урон/игра: 48% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-15",
       "daysHeld": 0,
       "ready": false
     }
   ],
   "transfers": [
     {
-      "nick": "Kroasawn",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "at": "2026-10-11",
-      "fit": 100.0,
-      "note": "Авто Fit 100.0% · удержание 3д",
-      "actor": "автофит",
-      "lever": "Ты выше эталона — держи объём КВ и роль."
-    },
-    {
-      "nick": "MrChaykaa",
-      "fromTier": 2,
-      "toTier": 1,
-      "dir": "up",
-      "at": "2026-10-11",
-      "fit": 96.2,
-      "note": "Авто Fit 96.2% · удержание 3д",
-      "actor": "автофит",
-      "lever": "Ресы/игра: 31% от эталона роли — чаще поднимай союзников"
-    },
-    {
-      "nick": "Runetik",
-      "fromTier": 2,
-      "toTier": 3,
-      "dir": "down",
-      "at": "2026-10-11",
-      "fit": 62.0,
-      "note": "Авто Fit 62.0% · удержание 3д",
-      "actor": "автофит",
-      "lever": "Урон/игра: 30% от эталона роли — больше урона по пехоте и технике"
-    },
-    {
-      "nick": "Summer",
-      "fromTier": 1,
+      "nick": "ADUN",
+      "fromTier": 3,
       "toTier": 2,
-      "dir": "down",
-      "at": "2026-10-11",
-      "fit": 71.2,
-      "note": "Авто Fit 71.2% · удержание 3д",
+      "dir": "up",
+      "at": "2026-10-15",
+      "fit": 98.6,
+      "note": "Авто Fit 98.6% · удержание 4д",
       "actor": "автофит",
-      "lever": "Урон/игра: 38% от эталона роли — больше урона по пехоте и технике"
+      "lever": "Активность: 86% от эталона роли — заходи стабильно в клановые войны"
     }
   ]
 }
