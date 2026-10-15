@@ -731,6 +731,40 @@
       }
     },
     {
+      "id": "15-hell",
+      "day": 15,
+      "opp": "HELL",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Oguzok"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "ZLOBA1917"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "firs"
+        ],
+        "killer": [
+          "r4mp"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "Trixx"
+        ]
+      }
+    },
+    {
       "id": "16-hell",
       "day": 16,
       "opp": "HELL",
@@ -972,7 +1006,7 @@
       "id": "26-alpha",
       "day": 26,
       "opp": "ALPHA",
-      "meeting": "2–0",
+      "meeting": null,
       "r1": {
         "medic": [
           "Radislave"
@@ -2597,11 +2631,19 @@
       ]
     },
     "Oguzok": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "29-44th",
           "day": 29,
@@ -3184,7 +3226,7 @@
       "mvpMedic": 0,
       "mvpKiller": 2,
       "mvpDamage": 6,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "03-alpha",
@@ -3243,6 +3285,14 @@
           "label": "MVP War-Score"
         },
         {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
           "matchId": "30-ih",
           "day": 30,
           "opp": "IH",
@@ -3294,6 +3344,22 @@
           "matchId": "04-20royals",
           "day": 4,
           "opp": "20Royals",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "ZLOBA1917": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -3454,8 +3520,8 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 3,
-      "mvpDamage": 3,
+      "mvpKiller": 4,
+      "mvpDamage": 5,
       "antiDeath": 0,
       "awards": [
         {
@@ -3503,6 +3569,30 @@
           "day": 14,
           "opp": "OMEN",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -3525,7 +3615,7 @@
       ]
     },
     "firs": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -3543,6 +3633,14 @@
           "day": 13,
           "opp": "20Royals",
           "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -3750,7 +3848,7 @@
     },
     "r4mp": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
+      "mvpKiller": 3,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
@@ -3767,6 +3865,14 @@
           "day": 11,
           "opp": "DCAI",
           "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
         }

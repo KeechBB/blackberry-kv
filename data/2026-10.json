@@ -428,11 +428,15 @@
       "opp": "HELL",
       "map": "SEC 26 Sumari AAS v1",
       "size": "26v26",
-      "server": "BB",
+      "server": "TR2",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · Sumari 26 · BB server · 2-я встреча (после 13.10) · same slot RA FCL 8v8 — отмена · NO SCOUT · NO MEETINGS"
+      "status": "win",
+      "note": "Junior · SEC · SEC 26 Sumari AAS v1 · TR2 · сумма 142:0 (58:0 · 84:0) · авто обе команды",
+      "playersUrl": "data/players/15-hell.json",
+      "r1": "58:0",
+      "r2": "84:0",
+      "meeting": "2–0"
     },
     {
       "id": "15-ih",
@@ -446,7 +450,9 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · HOTDROP · HD_Narva_20x20 · ANY · Iron Horde · vs clan 2–0 (18.09 Main) · same day Junior vs HELL 20:00 · NO SCOUT"
+      "note": "Main · HOTDROP · HotDrop Narva · TR1 · R1 61:0 · R2 идёт · авто обе команды",
+      "playersUrl": "data/players/15-ih.json",
+      "r1": "61:0"
     },
     {
       "id": "17-nklv-rpss",

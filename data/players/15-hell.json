@@ -1,0 +1,862 @@
+{
+  "matchId": "15-hell",
+  "opp": "HELL",
+  "note": "Авто из логов TR · FCL ARENA #2 (TR2 / Blackberries #2) · сумма 142:0 · source=tr-cw-auto · rebuild",
+  "source": "tr-cw-auto",
+  "server": "FCL ARENA #2 (TR2 / Blackberries #2)",
+  "map": "SEC 26 Sumari AAS v1",
+  "r1": [
+    {
+      "nick": "bambozy",
+      "res": 2,
+      "nok": 18,
+      "kills": 16,
+      "deaths": 6,
+      "dmg": 6430
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 4893
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 4495
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 3808
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 3153
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 3104
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 3220
+    },
+    {
+      "nick": "CERBER",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 2627
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 3425
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 2235
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 2100
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 1658
+    },
+    {
+      "nick": "COBRA",
+      "res": 2,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 1810
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 1980
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 2,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1710
+    },
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 2100
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 2,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1820
+    },
+    {
+      "nick": "Oguzok",
+      "res": 12,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1314
+    },
+    {
+      "nick": "Trigger",
+      "res": 4,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1264
+    },
+    {
+      "nick": "Radislave",
+      "res": 11,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1334
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 856
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 840
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 7,
+      "nok": 1,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 401
+    },
+    {
+      "nick": "One Attack",
+      "res": 2,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 518
+    },
+    {
+      "nick": "firs",
+      "res": 11,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 362
+    },
+    {
+      "nick": "ADUN",
+      "res": 7,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 62
+    }
+  ],
+  "r2": [
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 13,
+      "kills": 13,
+      "deaths": 2,
+      "dmg": 5646
+    },
+    {
+      "nick": "bambozy",
+      "res": 1,
+      "nok": 18,
+      "kills": 10,
+      "deaths": 9,
+      "dmg": 5649
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 4378
+    },
+    {
+      "nick": "Hazzi",
+      "res": 2,
+      "nok": 16,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 5105
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 3571
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 3253
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2358
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 3455
+    },
+    {
+      "nick": "Frosty",
+      "res": 9,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 1919
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 2139
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 3,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 2216
+    },
+    {
+      "nick": "firs",
+      "res": 15,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1255
+    },
+    {
+      "nick": "Oguzok",
+      "res": 3,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1560
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1339
+    },
+    {
+      "nick": "Maga",
+      "res": 2,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 1475
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1427
+    },
+    {
+      "nick": "CERBER",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 1085
+    },
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 1331
+    },
+    {
+      "nick": "ADUN",
+      "res": 11,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 1142
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 856
+    },
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 915
+    },
+    {
+      "nick": "Radislave",
+      "res": 3,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 289
+    },
+    {
+      "nick": "Trigger",
+      "res": 8,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 300
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 7,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 120
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 120
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 120
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "andreyka",
+      "res": 0,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 5070
+    },
+    {
+      "nick": "белоснежка",
+      "res": 1,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 6,
+      "dmg": 5120
+    },
+    {
+      "nick": "Grimm2074",
+      "res": 4,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 2,
+      "dmg": 4927
+    },
+    {
+      "nick": "SanRayz",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 10,
+      "dmg": 4679
+    },
+    {
+      "nick": "PLiNe",
+      "res": 1,
+      "nok": 8,
+      "kills": 10,
+      "deaths": 6,
+      "dmg": 5889
+    },
+    {
+      "nick": "Holiken",
+      "res": 1,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 3228
+    },
+    {
+      "nick": "CALM",
+      "res": 0,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 3980
+    },
+    {
+      "nick": "диба",
+      "res": 0,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 3979
+    },
+    {
+      "nick": "Tornado001",
+      "res": 1,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 3775
+    },
+    {
+      "nick": "qeer",
+      "res": 2,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 3194
+    },
+    {
+      "nick": "Delta877",
+      "res": 2,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 2648
+    },
+    {
+      "nick": "KiRa",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 4473
+    },
+    {
+      "nick": "Morietsu",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 3215
+    },
+    {
+      "nick": "FINCH",
+      "res": 2,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 3259
+    },
+    {
+      "nick": "jitakuzu <3 峠 魂",
+      "res": 1,
+      "nok": 11,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 2987
+    },
+    {
+      "nick": "15cm",
+      "res": 3,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1638
+    },
+    {
+      "nick": "Douma",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1092
+    },
+    {
+      "nick": "Mishudsa",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1274
+    },
+    {
+      "nick": "Liros",
+      "res": 2,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 1194
+    },
+    {
+      "nick": "pavuk228",
+      "res": 2,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1080
+    },
+    {
+      "nick": "DICH_Coocomrad",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 814
+    },
+    {
+      "nick": "Heroin",
+      "res": 6,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 1089
+    },
+    {
+      "nick": "Grinch",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 820
+    },
+    {
+      "nick": "Kiber Flower Ⓚ.Ⓕ.",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 715
+    },
+    {
+      "nick": "Regulator",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 512
+    },
+    {
+      "nick": "MishaDiadler",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 75
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "qeer",
+      "res": 0,
+      "nok": 16,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 6199
+    },
+    {
+      "nick": "SanRayz",
+      "res": 3,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 2476
+    },
+    {
+      "nick": "PLiNe",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 4689
+    },
+    {
+      "nick": "andreyka",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 2736
+    },
+    {
+      "nick": "CALM",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 1912
+    },
+    {
+      "nick": "Morietsu",
+      "res": 5,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 2931
+    },
+    {
+      "nick": "Holiken",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 2460
+    },
+    {
+      "nick": "15cm",
+      "res": 0,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1868
+    },
+    {
+      "nick": "белоснежка",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1783
+    },
+    {
+      "nick": "Heroin",
+      "res": 6,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1650
+    },
+    {
+      "nick": "pavuk228",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1961
+    },
+    {
+      "nick": "FINCH",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1820
+    },
+    {
+      "nick": "Delta877",
+      "res": 1,
+      "nok": 2,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 2102
+    },
+    {
+      "nick": "диба",
+      "res": 4,
+      "nok": 11,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 2055
+    },
+    {
+      "nick": "Douma",
+      "res": 4,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1272
+    },
+    {
+      "nick": "Liros",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1644
+    },
+    {
+      "nick": "Grinch",
+      "res": 2,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1531
+    },
+    {
+      "nick": "KiRa",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1432
+    },
+    {
+      "nick": "Tornado001",
+      "res": 1,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 1321
+    },
+    {
+      "nick": "Grimm2074",
+      "res": 6,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 1003
+    },
+    {
+      "nick": "Mishudsa",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 1034
+    },
+    {
+      "nick": "MishaDiadler",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 672
+    },
+    {
+      "nick": "DICH_Coocomrad",
+      "res": 4,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 705
+    },
+    {
+      "nick": "Regulator",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 600
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Oguzok"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "ZLOBA1917"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "firs"
+      ],
+      "killer": [
+        "r4mp"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "Trixx"
+      ]
+    }
+  }
+}
