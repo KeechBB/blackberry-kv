@@ -1,0 +1,910 @@
+{
+  "matchId": "15-ih",
+  "opp": "IH",
+  "note": "Авто из логов TR · Blackberry | Training - Blackberries #1 · сумма 92:0 · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "Blackberry | Training - Blackberries #1",
+  "map": "HotDrop Narva",
+  "r1": [
+    {
+      "nick": "S.M.P",
+      "res": 3,
+      "nok": 21,
+      "kills": 19,
+      "deaths": 3,
+      "dmg": 9853
+    },
+    {
+      "nick": "Diray",
+      "res": 3,
+      "nok": 25,
+      "kills": 18,
+      "deaths": 6,
+      "dmg": 8049
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 18,
+      "kills": 15,
+      "deaths": 11,
+      "dmg": 5979
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 25,
+      "kills": 14,
+      "deaths": 1,
+      "dmg": 6487
+    },
+    {
+      "nick": "Mukuru",
+      "res": 4,
+      "nok": 21,
+      "kills": 14,
+      "deaths": 1,
+      "dmg": 7735
+    },
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 14,
+      "dmg": 5111
+    },
+    {
+      "nick": "Chidori",
+      "res": 2,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 11,
+      "dmg": 6082
+    },
+    {
+      "nick": "lepurple",
+      "res": 14,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 3700
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 16,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 5226
+    },
+    {
+      "nick": "CAT",
+      "res": 3,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 12,
+      "dmg": 3465
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 10,
+      "dmg": 3398
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 1,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 11,
+      "dmg": 4242
+    },
+    {
+      "nick": "KillReal",
+      "res": 6,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 2684
+    },
+    {
+      "nick": "Morty",
+      "res": 11,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 2790
+    },
+    {
+      "nick": "yanchik",
+      "res": 14,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 2598
+    },
+    {
+      "nick": "Gadler",
+      "res": 1,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 18,
+      "dmg": 2096
+    },
+    {
+      "nick": "vasserman",
+      "res": 15,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 12,
+      "dmg": 1718
+    },
+    {
+      "nick": "Azure",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1186
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 11,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 632
+    },
+    {
+      "nick": "Tankist",
+      "res": 25,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Anıl",
+      "res": 9,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Cpt. Jazzy",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Dyruss",
+      "res": 13,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  FLeX",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Leviathan",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Servantborn",
+      "res": 14,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Xell",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ guduf",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ Powertach",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜʜʜʜʜʜ gLow",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
+  "r2": [
+    {
+      "nick": "Diray",
+      "res": 2,
+      "nok": 29,
+      "kills": 21,
+      "deaths": 8,
+      "dmg": 9769
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 25,
+      "kills": 20,
+      "deaths": 15,
+      "dmg": 7688
+    },
+    {
+      "nick": "Gadler",
+      "res": 5,
+      "nok": 23,
+      "kills": 18,
+      "deaths": 13,
+      "dmg": 7476
+    },
+    {
+      "nick": "CAT",
+      "res": 2,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 13,
+      "dmg": 5281
+    },
+    {
+      "nick": "Morty",
+      "res": 3,
+      "nok": 13,
+      "kills": 12,
+      "deaths": 5,
+      "dmg": 5648
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 12,
+      "dmg": 4408
+    },
+    {
+      "nick": "yanchik",
+      "res": 6,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 4318
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 21,
+      "dmg": 3879
+    },
+    {
+      "nick": "Azure",
+      "res": 1,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 4165
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 1,
+      "dmg": 3582
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 2957
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 3145
+    },
+    {
+      "nick": "vasserman",
+      "res": 20,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 2403
+    },
+    {
+      "nick": "S.M.P",
+      "res": 4,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 2482
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 13,
+      "dmg": 2795
+    },
+    {
+      "nick": "KillReal",
+      "res": 11,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 1999
+    },
+    {
+      "nick": "Mukuru",
+      "res": 4,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1678
+    },
+    {
+      "nick": "Tankist",
+      "res": 15,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1024
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 11,
+      "nok": 2,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 716
+    },
+    {
+      "nick": "lepurple",
+      "res": 9,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 12,
+      "dmg": 455
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "stafa",
+      "res": 0,
+      "nok": 19,
+      "kills": 17,
+      "deaths": 4,
+      "dmg": 6333
+    },
+    {
+      "nick": "VermithraxTR",
+      "res": 0,
+      "nok": 27,
+      "kills": 12,
+      "deaths": 9,
+      "dmg": 6847
+    },
+    {
+      "nick": "marthew",
+      "res": 0,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 15,
+      "dmg": 5241
+    },
+    {
+      "nick": "Xell",
+      "res": 0,
+      "nok": 20,
+      "kills": 11,
+      "deaths": 7,
+      "dmg": 5152
+    },
+    {
+      "nick": "barut",
+      "res": 0,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 9,
+      "dmg": 4111
+    },
+    {
+      "nick": "AmanTanrısı",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 4160
+    },
+    {
+      "nick": "gLow",
+      "res": 0,
+      "nok": 18,
+      "kills": 9,
+      "deaths": 10,
+      "dmg": 4264
+    },
+    {
+      "nick": "Eren Jaeger",
+      "res": 0,
+      "nok": 17,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 4351
+    },
+    {
+      "nick": "Anıl",
+      "res": 0,
+      "nok": 15,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 3875
+    },
+    {
+      "nick": "Cpt. Jazzy",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 3240
+    },
+    {
+      "nick": "Techies_m",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 12,
+      "dmg": 3093
+    },
+    {
+      "nick": "Batuhan",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 12,
+      "dmg": 3044
+    },
+    {
+      "nick": "FLeX",
+      "res": 0,
+      "nok": 14,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 3406
+    },
+    {
+      "nick": "guduf",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 2994
+    },
+    {
+      "nick": "Leviathan",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 11,
+      "dmg": 2927
+    },
+    {
+      "nick": "Servantborn",
+      "res": 0,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 2812
+    },
+    {
+      "nick": "Powertach",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 13,
+      "dmg": 1900
+    },
+    {
+      "nick": "YÖRÜKOĞLU",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 1836
+    },
+    {
+      "nick": "Dyruss",
+      "res": 0,
+      "nok": 10,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 1556
+    },
+    {
+      "nick": "toriN",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ıh  barut",
+      "res": 8,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "VermithraxTR",
+      "res": 0,
+      "nok": 22,
+      "kills": 17,
+      "deaths": 13,
+      "dmg": 7058
+    },
+    {
+      "nick": "gLow",
+      "res": 0,
+      "nok": 21,
+      "kills": 16,
+      "deaths": 12,
+      "dmg": 5766
+    },
+    {
+      "nick": "Dyruss",
+      "res": 0,
+      "nok": 20,
+      "kills": 15,
+      "deaths": 10,
+      "dmg": 7180
+    },
+    {
+      "nick": "FLeX",
+      "res": 0,
+      "nok": 22,
+      "kills": 13,
+      "deaths": 11,
+      "dmg": 6463
+    },
+    {
+      "nick": "marthew",
+      "res": 0,
+      "nok": 21,
+      "kills": 12,
+      "deaths": 11,
+      "dmg": 5764
+    },
+    {
+      "nick": "Eren Jaeger",
+      "res": 0,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 2,
+      "dmg": 5603
+    },
+    {
+      "nick": "guduf",
+      "res": 0,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 10,
+      "dmg": 4235
+    },
+    {
+      "nick": "Xell",
+      "res": 0,
+      "nok": 18,
+      "kills": 10,
+      "deaths": 9,
+      "dmg": 4708
+    },
+    {
+      "nick": "Leviathan",
+      "res": 0,
+      "nok": 16,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 4635
+    },
+    {
+      "nick": "Servantborn",
+      "res": 0,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 8,
+      "dmg": 4368
+    },
+    {
+      "nick": "Akd",
+      "res": 0,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 4519
+    },
+    {
+      "nick": "barut",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 16,
+      "dmg": 3832
+    },
+    {
+      "nick": "Techies_m",
+      "res": 0,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 2810
+    },
+    {
+      "nick": "AmanTanrısı",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 2676
+    },
+    {
+      "nick": "Anıl",
+      "res": 0,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 2918
+    },
+    {
+      "nick": "stafa",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 12,
+      "dmg": 2017
+    },
+    {
+      "nick": "Batuhan",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 12,
+      "dmg": 2194
+    },
+    {
+      "nick": "YÖRÜKOĞLU",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 10,
+      "dmg": 2105
+    },
+    {
+      "nick": "Cpt. Jazzy",
+      "res": 0,
+      "nok": 10,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 2540
+    },
+    {
+      "nick": "Powertach",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 1100
+    },
+    {
+      "nick": "ıh barut",
+      "res": 9,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Cpt. Jazzy",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  FLeX",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Servantborn",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ  Techies_m",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ AmanTanrısı",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ Anıl",
+      "res": 8,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ Dyruss",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ guduf",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ Leviathan",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ Powertach",
+      "res": 9,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ stafa",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ VermithraxTR",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ Xell",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜ YÖRÜKOĞLU",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ɪʜʜʜʜʜʜ gLow",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "ΛKЯEP ♚ Akd",
+      "res": 6,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Tankist"
+      ],
+      "killer": [
+        "S.M.P"
+      ],
+      "damage": [
+        "S.M.P"
+      ],
+      "antiDeath": [
+        "Gadler"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "vasserman"
+      ],
+      "killer": [
+        "Diray"
+      ],
+      "damage": [
+        "Diray"
+      ],
+      "antiDeath": [
+        "LordWolf"
+      ]
+    }
+  }
+}

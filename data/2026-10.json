@@ -446,13 +446,15 @@
       "opp": "IH",
       "map": "HotDrop Narva",
       "size": "20v20",
-      "server": "ANY",
+      "server": "TR1",
       "rules": "HOTDROP",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · HOTDROP · HotDrop Narva · TR1 · R1 61:0 · R2 идёт · авто обе команды",
+      "status": "win",
+      "note": "Main · HOTDROP · HotDrop Narva · TR1 · сумма 92:0 (61:0 · 31:0) · авто обе команды · трень вечером на TR2",
       "playersUrl": "data/players/15-ih.json",
-      "r1": "61:0"
+      "r1": "61:0",
+      "r2": "31:0",
+      "meeting": "2–0"
     },
     {
       "id": "17-nklv-rpss",

@@ -1,4 +1,4 @@
-# КВ октябрь 2026
+﻿# КВ октябрь 2026
 
 Превью: [../previews/README.md](../previews/README.md). Итоги: [../results/README.md](../results/README.md).
 
