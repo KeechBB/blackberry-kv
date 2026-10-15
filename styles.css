@@ -1501,19 +1501,174 @@ body.modal-open { overflow: hidden; }
   .crest { width: 96px; }
 }
 
-/* ——— training analytics ——— */
+/* ——— training / CW analytics (compact) ——— */
 .ta-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
+  gap: 12px;
   margin-top: 8px;
+  align-items: stretch;
+}
+.ta-grid-dense {
+  gap: 10px;
 }
 .ta-card {
   margin: 0;
-  padding: 18px 18px 14px;
+  padding: 12px 14px 10px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.ta-card > .board-head {
+  margin-bottom: 6px;
+}
+.ta-card > .board-head h2 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+.ta-card > .board-head .board-sub {
+  margin: 2px 0 0;
+  font-size: 0.72rem;
 }
 .ta-card-wide {
   grid-column: 1 / -1;
+}
+.ta-kpis {
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.ta-kpis .stat {
+  padding: 8px 10px;
+}
+.ta-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  min-width: 0;
+}
+.ta-board-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+.ta-sort-hint {
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+.ta-table-compact {
+  max-height: 280px;
+  overflow: auto;
+}
+.ta-table-compact .ta-table th,
+.ta-table-compact .ta-table td {
+  padding: 5px 8px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+.ta-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  text-align: right;
+}
+.ta-th-sort {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+.ta-th-sort:hover {
+  color: #fde68a;
+}
+.ta-th-sort.is-sorted::after {
+  content: " ▾";
+  font-size: 0.65em;
+  color: #fbbf24;
+}
+.ta-th-sort.is-asc::after {
+  content: " ▴";
+}
+.ta-dense {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.ta-dense-row {
+  display: grid;
+  grid-template-columns: 1.1em minmax(0, 1fr) minmax(48px, 28%) max-content;
+  gap: 6px;
+  align-items: center;
+  font-size: 0.78rem;
+  line-height: 1.25;
+  padding: 2px 4px;
+  border-radius: 6px;
+  min-width: 0;
+}
+.ta-dense-rank {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.ta-dense-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+.ta-dense-track {
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(167, 139, 250, 0.12);
+  overflow: hidden;
+  min-width: 0;
+}
+.ta-dense-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+}
+.ta-dense-val {
+  font-variant-numeric: tabular-nums;
+  color: #e9d5ff;
+  white-space: nowrap;
+  text-align: right;
+}
+.ta-dense-val em {
+  font-style: normal;
+  color: var(--muted);
+  font-weight: 500;
+  margin-left: 2px;
+}
+.ta-dense-more {
+  margin: 4px 0 0;
+  font-size: 0.72rem;
+}
+.ta-facts-dense {
+  gap: 4px !important;
+}
+.ta-facts-dense li {
+  padding: 4px 6px !important;
+  border-radius: 6px;
+  gap: 8px;
+}
+.ta-hot,
+.ta-hot-row {
+  background: rgba(251, 191, 36, 0.1);
+}
+.ta-hot .ta-dense-label,
+.ta-hot .ta-dense-val,
+.ta-hot strong,
+.ta-hot-cell {
+  color: #fbbf24 !important;
+}
+.ta-hot .ta-dense-track > span {
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+}
+.ta-hot-row td {
+  background: rgba(251, 191, 36, 0.08);
 }
 
 /* ——— hitmap tiers (TM) ——— */
@@ -2093,6 +2248,11 @@ body.modal-open { overflow: hidden; }
 @media (max-width: 900px) {
   .ta-grid { grid-template-columns: 1fr; }
   .ta-card-wide { grid-column: auto; }
+  .ta-split { grid-template-columns: 1fr; }
+  .ta-dense-row {
+    grid-template-columns: 1.1em minmax(0, 1fr) max-content;
+  }
+  .ta-dense-track { display: none; }
   .ta-tops {
     grid-template-columns: 1fr;
   }

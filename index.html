@@ -205,31 +205,47 @@
         </div>
 
         <p class="note" id="cw-an-note">Считаем аналитику КВ…</p>
-        <div class="hero-stats hero-stats-inline" id="cw-an-kpis"></div>
+        <div class="hero-stats hero-stats-inline ta-kpis" id="cw-an-kpis"></div>
 
-        <div class="ta-grid" id="cw-an-body" hidden>
+        <div class="ta-grid ta-grid-dense" id="cw-an-body" hidden>
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Результаты · серии</h2>
-              <p class="board-sub">Победы / ничьи / поражения · по составу</p>
+              <h2>Результаты</h2>
+              <p class="board-sub">W–D–L · по составу</p>
             </div>
             <div id="cw-an-results"></div>
           </section>
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Карты</h2>
-              <p class="board-sub">Семейства и точные слои · winrate</p>
+              <h2>Акценты</h2>
+              <p class="board-sub">Лучшее / худшее / выбросы</p>
+            </div>
+            <div id="cw-an-highlights"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Карты · топ‑5</h2>
+              <p class="board-sub">Семейства и слои · winrate</p>
             </div>
             <div id="cw-an-maps"></div>
           </section>
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Соперники</h2>
-              <p class="board-sub">Встречи · счёт серии · % побед</p>
+              <h2>Формат · серверы</h2>
+              <p class="board-sub">Топ по частоте</p>
             </div>
-            <div class="table-scroll">
+            <div id="cw-an-formats"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Соперники</h2>
+              <p class="board-sub">Встречи · % побед</p>
+            </div>
+            <div class="table-scroll ta-table-compact">
               <table class="rating-table ta-table">
                 <thead>
                   <tr>
@@ -239,7 +255,6 @@
                     <th class="ctr">D</th>
                     <th class="ctr">L</th>
                     <th class="ctr">%</th>
-                    <th>Составы</th>
                   </tr>
                 </thead>
                 <tbody id="cw-an-opps"></tbody>
@@ -249,93 +264,41 @@
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Формат · серверы</h2>
-              <p class="board-sub">26v26 / 36v36 · домашний / чужой сервер</p>
+              <h2>Темп · тиры</h2>
+              <p class="board-sub">Δ тикетов · микс на катку</p>
             </div>
-            <div id="cw-an-formats"></div>
-          </section>
-
-          <section class="board ta-card">
-            <div class="board-head">
-              <h2>Тикеты · темп</h2>
-              <p class="board-sub">Остатки R1/R2 · длительность · пехота/техника из Details</p>
+            <div class="ta-split" id="cw-an-pace-tiers">
+              <div id="cw-an-pace"></div>
+              <div id="cw-an-tiers"></div>
             </div>
-            <div id="cw-an-pace"></div>
-          </section>
-
-          <section class="board ta-card">
-            <div class="board-head">
-              <h2>Тиры на поле</h2>
-              <p class="board-sub">Уникальные игроки · средний микс на катку</p>
-            </div>
-            <div id="cw-an-tiers"></div>
           </section>
 
           <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>Состав по каткам</h2>
-              <p class="board-sub">Сколько тир 1/2/3/вне · явка · счёт · карта</p>
+            <div class="board-head ta-board-head-row">
+              <div>
+                <h2>Состав по каткам</h2>
+                <p class="board-sub">Тиры · явка · счёт · карта — клик по заголовку сортирует</p>
+              </div>
+              <label class="ta-sort-hint muted">Сортировка по столбцам</label>
             </div>
-            <div class="table-scroll">
-              <table class="rating-table ta-table">
+            <div class="table-scroll ta-table-compact">
+              <table class="rating-table ta-table ta-sortable" id="cw-an-rosters-table" data-sort-key="date" data-sort-dir="desc">
                 <thead>
                   <tr>
-                    <th>Дата</th>
-                    <th>Соперник</th>
-                    <th>Карта</th>
-                    <th class="ctr">Стек</th>
-                    <th class="ctr">Счёт</th>
-                    <th class="ctr">Явка</th>
-                    <th class="ctr">T1</th>
-                    <th class="ctr">T2</th>
-                    <th class="ctr">T3</th>
-                    <th class="ctr">Проч.</th>
-                    <th class="ctr">%T1</th>
+                    <th class="ta-th-sort" data-sort="date">Дата</th>
+                    <th class="ta-th-sort" data-sort="opp">Соперник</th>
+                    <th class="ta-th-sort" data-sort="map">Карта</th>
+                    <th class="ctr ta-th-sort" data-sort="stack">Стек</th>
+                    <th class="ctr ta-th-sort" data-sort="score">Счёт</th>
+                    <th class="ctr ta-th-sort" data-sort="roster">Явка</th>
+                    <th class="ctr ta-th-sort" data-sort="t1">T1</th>
+                    <th class="ctr ta-th-sort" data-sort="t2">T2</th>
+                    <th class="ctr ta-th-sort" data-sort="t3">T3</th>
+                    <th class="ctr ta-th-sort" data-sort="t4">Проч.</th>
+                    <th class="ctr ta-th-sort" data-sort="t1pct">%T1</th>
                   </tr>
                 </thead>
                 <tbody id="cw-an-rosters"></tbody>
-              </table>
-            </div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>Топы игроков</h2>
-              <p class="board-sub">По участию, килам, KD, боевому счёту</p>
-            </div>
-            <div class="ta-tops" id="cw-an-tops"></div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>MVP медали</h2>
-              <p class="board-sub">Medic / Killer / War-Score / Anti-MVP за период</p>
-            </div>
-            <div class="ta-tops" id="cw-an-mvp"></div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>Лог каток</h2>
-              <p class="board-sub">Все сыгранные встречи периода с тикетами и деталями</p>
-            </div>
-            <div class="table-scroll">
-              <table class="rating-table ta-table">
-                <thead>
-                  <tr>
-                    <th>Дата</th>
-                    <th>Opp</th>
-                    <th>Карта</th>
-                    <th class="ctr">Стек</th>
-                    <th class="ctr">Счёт</th>
-                    <th class="ctr">R1</th>
-                    <th class="ctr">R2</th>
-                    <th class="ctr">Длит.</th>
-                    <th class="ctr">Явка</th>
-                    <th>Фракции</th>
-                  </tr>
-                </thead>
-                <tbody id="cw-an-matches"></tbody>
               </table>
             </div>
           </section>
@@ -496,39 +459,47 @@
 
         <p class="note" id="train-an-note">Считаем аналитику тренировок…</p>
 
-        <div class="hero-stats hero-stats-inline" id="train-an-kpis"></div>
+        <div class="hero-stats hero-stats-inline ta-kpis" id="train-an-kpis"></div>
 
-        <div class="ta-grid" id="train-an-body" hidden>
+        <div class="ta-grid ta-grid-dense" id="train-an-body" hidden>
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Где играли · карты</h2>
-              <p class="board-sub">Частота слоёв и семейств карт</p>
+              <h2>Карты · топ‑5</h2>
+              <p class="board-sub">Семейства и слои</p>
             </div>
             <div id="train-an-maps"></div>
           </section>
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Что играли · режимы</h2>
-              <p class="board-sub">OSI / AAS и серверы</p>
+              <h2>Режимы · серверы</h2>
+              <p class="board-sub">Топ по частоте</p>
             </div>
             <div id="train-an-modes"></div>
           </section>
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>На чём · фракции</h2>
-              <p class="board-sub">Сколько раз выходили · победы · % побед</p>
+              <h2>Акценты</h2>
+              <p class="board-sub">Выбросы периода</p>
             </div>
-            <div class="table-scroll">
+            <div id="train-an-highlights"></div>
+          </section>
+
+          <section class="board ta-card">
+            <div class="board-head">
+              <h2>Фракции</h2>
+              <p class="board-sub">Катки · % побед</p>
+            </div>
+            <div class="table-scroll ta-table-compact">
               <table class="rating-table ta-table">
                 <thead>
                   <tr>
                     <th>Фракция</th>
                     <th class="ctr">Каток</th>
-                    <th class="ctr">Побед</th>
-                    <th class="ctr">% побед</th>
-                    <th class="ctr">Ср. тикеты</th>
+                    <th class="ctr">W</th>
+                    <th class="ctr">%</th>
+                    <th class="ctr">Ср.тик</th>
                   </tr>
                 </thead>
                 <tbody id="train-an-factions"></tbody>
@@ -538,95 +509,29 @@
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Как долго · темп</h2>
-              <p class="board-sub">Длительность раундов и разрыв по тикетам</p>
+              <h2>Темп</h2>
+              <p class="board-sub">Длительность · разрывы</p>
             </div>
             <div id="train-an-pace"></div>
           </section>
 
           <section class="board ta-card">
             <div class="board-head">
-              <h2>Сколько играло</h2>
-              <p class="board-sub">Состав на катку · уникальные ники · по дням</p>
+              <h2>Явка · тиры</h2>
+              <p class="board-sub">Состав и микс рангов</p>
             </div>
-            <div id="train-an-attendance"></div>
-          </section>
-
-          <section class="board ta-card">
-            <div class="board-head">
-              <h2>Тиры на поле</h2>
-              <p class="board-sub">Состав по рангам (уникальные игроки периода)</p>
-            </div>
-            <div id="train-an-tiers"></div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>Календарь тренировок</h2>
-              <p class="board-sub">Дни · число каток · явка</p>
-            </div>
-            <div class="table-scroll">
-              <table class="rating-table ta-table">
-                <thead>
-                  <tr>
-                    <th>День</th>
-                    <th class="ctr">Каток</th>
-                    <th>Карты</th>
-                    <th class="ctr">Явка (уник.)</th>
-                    <th class="ctr">Ср. состав</th>
-                    <th class="ctr">Ср. длит.</th>
-                  </tr>
-                </thead>
-                <tbody id="train-an-calendar"></tbody>
-              </table>
+            <div class="ta-split">
+              <div id="train-an-attendance"></div>
+              <div id="train-an-tiers"></div>
             </div>
           </section>
 
           <section class="board ta-card ta-card-wide">
             <div class="board-head">
-              <h2>Топ игроков периода</h2>
-              <p class="board-sub">RP / Rank, катки, килы, KD и % побед</p>
+              <h2>Ранги RP · кратко</h2>
+              <p class="board-sub">Ступени периода (без длинных списков)</p>
             </div>
-            <div class="ta-tops" id="train-an-tops"></div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>Распределение рангов RP</h2>
-              <p class="board-sub">Сколько игроков в каждой ступени (Iron → Radiant → Predator) за период · наведи на сектор</p>
-            </div>
-            <div class="ta-rank-split" id="train-an-pwr-ranks"></div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>MVP тренировок</h2>
-              <p class="board-sub">Medic / Killer / Anti-MVP (без War-Score)</p>
-            </div>
-            <div class="ta-tops" id="train-an-mvp"></div>
-          </section>
-
-          <section class="board ta-card ta-card-wide">
-            <div class="board-head">
-              <h2>Все матчи периода</h2>
-              <p class="board-sub">Краткая лента для сверки</p>
-            </div>
-            <div class="table-scroll">
-              <table class="matches-table ta-table">
-                <thead>
-                  <tr>
-                    <th>Дата</th>
-                    <th>Карта</th>
-                    <th>Режим</th>
-                    <th class="ctr">Длит.</th>
-                    <th class="ctr">Состав</th>
-                    <th>Счёт</th>
-                    <th>Победитель</th>
-                  </tr>
-                </thead>
-                <tbody id="train-an-matches"></tbody>
-              </table>
-            </div>
+            <div id="train-an-pwr-ranks"></div>
           </section>
         </div>
       </div>
