@@ -34,3 +34,4 @@
 | 17 | [17-NS](17-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер FCL ARENA 2, [analytics.md](17-NS/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер ANY, [analytics.md](18-SPH/analytics.md) |
 | 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я Mutaha vs ALPHA (после 09.10), [analytics.md](25-ALPHA/analytics.md) |
+| 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |

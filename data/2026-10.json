@@ -504,6 +504,20 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:00 · 2-я Mutaha vs ALPHA (после 09.10 2–0) · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "26-alpha",
+      "day": 26,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "ALPHA",
+      "map": "FCL BlackCoast",
+      "size": "16v16",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL BlackCoast · 16v16 · 20:00 · 2-я BlackCoast vs ALPHA (после 03.10 2–0) · same weekend 25.10 Mutaha · NO SCOUT · NO MEETINGS"
     }
   ]
 }
