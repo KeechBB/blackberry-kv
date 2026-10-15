@@ -490,6 +490,20 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · SEC · vs clan 2–0 (27.09 Chora) · Mutaha 26 · NO SCOUT"
+    },
+    {
+      "id": "25-alpha",
+      "day": 25,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "ALPHA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:00 · 2-я Mutaha vs ALPHA (после 09.10 2–0) · NO SCOUT · NO MEETINGS"
     }
   ]
 }
