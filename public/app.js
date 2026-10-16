@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261015-omen-final";
+    new URLSearchParams(location.search).get("v") || "20261016-gm-narva";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -73,12 +73,32 @@
     AFU: "ВСУ",
     HOAK: "ХАОКИ",
   };
-  const isEmbed =
-    new URLSearchParams(location.search).has("embed") || window.self !== window.top;
+  const _qs = new URLSearchParams(location.search);
+  const isEmbed = _qs.has("embed") || window.self !== window.top;
+  /** В iframe «Матчи» — без дубля кнопки Тиры Fit (она в большой вкладке платформы). */
+  const hideTiersTab = _qs.has("hideTiers");
+  /** В iframe большой «Тиры FIT» — только панель tfs-fit, без остального TM chrome. */
+  const tfsEmbed = _qs.has("tfsEmbed");
   if (isEmbed) {
     document.documentElement.classList.add("embed");
-    if (!location.hash || location.hash === "#" || location.hash === "#/") {
+    if (
+      !tfsEmbed &&
+      (!location.hash || location.hash === "#" || location.hash === "#/")
+    ) {
       history.replaceState(null, "", `${location.pathname}${location.search}#/cw`);
+    }
+  }
+  if (hideTiersTab) {
+    document.documentElement.classList.add("hide-tm-tiers");
+  }
+  if (tfsEmbed) {
+    document.documentElement.classList.add("tfs-embed");
+    if (!location.hash.includes("/tiers")) {
+      history.replaceState(
+        null,
+        "",
+        `${location.pathname}${location.search}#/tm/tiers`
+      );
     }
   }
 
@@ -748,17 +768,28 @@
   });
   document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
-      showTmPanel(btn.dataset.tm);
+      const tm = btn.dataset.tm;
+      if (hideTiersTab && tm === "tiers") {
+        history.replaceState(null, "", "#/tm");
+        showTmPanel("matches");
+        return;
+      }
+      if (tfsEmbed) {
+        showTmPanel("tiers");
+        history.replaceState(null, "", "#/tm/tiers");
+        return;
+      }
+      showTmPanel(tm);
       history.replaceState(
         null,
         "",
-        btn.dataset.tm === "rating"
+        tm === "rating"
           ? "#/tm/rating"
-          : btn.dataset.tm === "analytics"
+          : tm === "analytics"
             ? "#/tm/analytics"
-            : btn.dataset.tm === "hits"
+            : tm === "hits"
               ? "#/tm/hits"
-              : btn.dataset.tm === "tiers"
+              : tm === "tiers"
                 ? "#/tm/tiers"
                 : "#/tm"
       );
@@ -767,6 +798,11 @@
 
   function applyHash() {
     const h = location.hash || "#/";
+    if (tfsEmbed || h.includes("/tiers")) {
+      showView("tm");
+      showTmPanel("tiers");
+      return;
+    }
     if (h.startsWith("#/cw/training") || h === "#/cw/training") {
       history.replaceState(null, "", "#/tm");
       showView("tm");
@@ -775,8 +811,9 @@
     }
     if (h.startsWith("#/tm")) {
       showView("tm");
+      const wantTiers = h.includes("/tiers") && !hideTiersTab;
       showTmPanel(
-        h.includes("/tiers")
+        wantTiers
           ? "tiers"
           : h.includes("/hits")
             ? "hits"

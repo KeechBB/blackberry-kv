@@ -526,6 +526,20 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · FCL · FCL BlackCoast · 16v16 · 20:00 · 2-я BlackCoast vs ALPHA (после 03.10 2–0) · same weekend 25.10 Mutaha · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "26-gm",
+      "day": 26,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "GM",
+      "map": "HotDrop Narva",
+      "size": "20v20",
+      "server": "BB",
+      "rules": "HOTDROP",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · HOTDROP · HD_Narva · 20v20 · 21:00 · сервер BB · vs clan Main 2–0 (22.09 Goose) · same day Junior vs ALPHA 20:00 · NO SCOUT · NO MEETINGS"
     }
   ]
 }
