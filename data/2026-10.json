@@ -472,20 +472,6 @@
       "note": "чужой КВ · NKLV vs RPSS · FCL Narva Small v1 · 12v12 · SEC · 17:00 МСК · NO SCOUT · NO MEETINGS"
     },
     {
-      "id": "17-ns",
-      "day": 17,
-      "timeMsk": "21:00",
-      "timeUtc": "18:00",
-      "opp": "NS",
-      "map": "CSL Mutaha Skirmish v2",
-      "size": "20v20",
-      "server": "FCL ARENA 2",
-      "rules": "CSL",
-      "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · NO SCOUT · NO MEETINGS · same day чужой NKLV vs RPSS 17:00"
-    },
-    {
       "id": "18-sph",
       "day": 18,
       "timeMsk": "20:00",
@@ -540,6 +526,20 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · HOTDROP · HD_Narva · 20v20 · 21:00 · сервер BB · vs clan Main 2–0 (22.09 Goose) · same day Junior vs ALPHA 20:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "31-ns",
+      "day": 31,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "NS",
+      "map": "CSL Mutaha Skirmish v2",
+      "size": "20v20",
+      "server": "FCL ARENA 2",
+      "rules": "CSL",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · перенос с 17.10 (не отмена) · NO SCOUT · NO MEETINGS"
     }
   ]
 }
