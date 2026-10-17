@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
@@ -137,7 +137,7 @@
           <aside class="metrics-glossary" aria-label="Термины рейтинга">
             <p><strong>TU</strong> — Ticket Utility: (киллы + ресы − смерти) ÷ катки. Килл забирает тикет у врага, рес сохраняет свой, смерть отдаёт. Может быть минус.</p>
             <p><strong>Калибровка</strong> — меньше 5 каток КВ. Эти игроки внизу таблицы, вместо TU написано «калибровка».</p>
-            <p>Лучшая цифра в столбце — жёлтым. Больше всего смертей и Anti-MVP — красным.</p>
+            <p>Лучшая цифра в столбце — жёлтым. <strong>Уничтожено ТЕХ</strong> и MVP Armor — только из логов TR (со скринов не считаем).</p>
             <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
             <p><strong>FIT</strong> — насколько подходишь тиру по КВ (окно «Тиры» / вкладка Тиры Fit).</p>
           </aside>
@@ -161,11 +161,10 @@
                   <th class="ctr sortable" data-rsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-rsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-rsort="kd" data-label="KD">KD</th>
-                  <th class="ctr sortable" data-rsort="dmg" data-label="Боевой счёт">Боевой счёт</th>
+                  <th class="ctr sortable col-veh" data-rsort="vehicleKills" data-label="Уничтожено ТЕХ" title="Уничтоженная техника с 17.10.2026 01:00 МСК — только из логов TR, не со скринов">Уничтожено ТЕХ</th>
                   <th class="ctr sortable col-mvp-medic" data-rsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
                   <th class="ctr sortable col-mvp-killer" data-rsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
-                  <th class="ctr sortable col-mvp-war" data-rsort="mvpDamage" data-label="MVP War-Score">MVP War-Score</th>
-                  <th class="ctr sortable col-mvp-anti" data-rsort="antiDeath" data-label="Anti-MVP" title="Anti-MVP Death">Anti-MVP</th>
+                  <th class="ctr sortable col-mvp-armor" data-rsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники (логи)">MVP Armor</th>
                 </tr>
               </thead>
               <tbody id="rating-rows"></tbody>
@@ -412,7 +411,7 @@
               <thead>
                 <tr>
                   <th class="ctr" data-label="Место" title="Место в общем рейтинге по RP (не меняется от поиска)">Место</th>
-                  <th class="ctr sortable col-rank" data-trsort="rp" data-label="Rank" title="Ранг по RP: Iron I→Radiant III (шаг 150), затем Predator">Rank</th>
+                  <th class="ctr sortable col-rank" data-trsort="rp" data-label="Rank" title="Ранг по RP: Iron I→Eclipse III (шаг 150), затем Predator 4951+">Rank</th>
                   <th class="ctr sortable col-pwr" data-trsort="rp" data-label="RP" title="RP — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой">RP</th>
                   <th class="sortable" data-trsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
@@ -424,9 +423,10 @@
                   <th class="ctr sortable" data-trsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-trsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-trsort="kd" data-label="KD">KD</th>
+                  <th class="ctr sortable col-veh" data-trsort="vehicleKills" data-label="Уничтожено ТЕХ" title="Уничтоженная техника с 17.10.2026 01:00 МСК">Уничтожено ТЕХ</th>
                   <th class="ctr sortable col-mvp-medic" data-trsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
                   <th class="ctr sortable col-mvp-killer" data-trsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
-                  <th class="ctr sortable col-mvp-anti" data-trsort="antiDeath" data-label="Anti-MVP" title="Anti-MVP Death">Anti-MVP</th>
+                  <th class="ctr sortable col-mvp-armor" data-trsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники">MVP Armor</th>
                 </tr>
               </thead>
               <tbody id="train-rating-rows"></tbody>
@@ -766,7 +766,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261007-opp-all"></script>
+  <script src="app.js?v=20261017-cw-veh"></script>
   <script src="tfs-fit.js?v=20261007-fit-roles"></script>
 </body>
 </html>

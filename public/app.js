@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261016-ns-31";
+    new URLSearchParams(location.search).get("v") || "20261017-cw-veh";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -111,21 +111,21 @@
     medic: "assets/mvp/medic.svg",
     killer: "assets/mvp/killer.svg",
     damage: "assets/mvp/damage.svg",
-    antiDeath: "assets/mvp/anti-death.svg",
+    armor: "assets/mvp/anti-death.svg",
   };
   const MVP_LABEL = {
     medic: "MVP Medic",
     killer: "MVP Killer",
     damage: "MVP War-Score",
-    antiDeath: "Anti-MVP Death",
+    armor: "MVP Armor",
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
-  /** Respect Points ranks: step 150, Iron I → Radiant III, then Predator. */
+  /** Respect Points ranks: step 150, Iron I → Eclipse III, then Predator 4951+. */
   const TRAIN_RP = {
     startRp: 1000,
     minRp: 1, // ниже 1 опуститься нельзя
     step: 150,
-    radiant3Max: 4500,
+    radiant3Max: 4950, // legacy key = ceiling before Predator (Eclipse III)
     names: [
       ["Iron", "iron"],
       ["Bronze", "bronze"],
@@ -137,6 +137,7 @@
       ["Immortal", "immortal"],
       ["Master", "master"],
       ["Radiant", "radiant"],
+      ["Eclipse", "eclipse"],
     ],
     roman: ["I", "II", "III"],
   };
@@ -152,7 +153,11 @@
     if (rpI > TRAIN_RP.radiant3Max) {
       return { label: "PREDATOR", rankKey: "predator", predator: true };
     }
-    const idx = rpI < 1 ? 0 : Math.min(29, Math.floor((rpI - 1) / TRAIN_RP.step));
+    const namedLevels = TRAIN_RP.names.length * 3;
+    const idx =
+      rpI < 1
+        ? 0
+        : Math.min(namedLevels - 1, Math.floor((rpI - 1) / TRAIN_RP.step));
     const [name, key] = TRAIN_RP.names[Math.floor(idx / 3)];
     return {
       label: `${name.toUpperCase()} ${TRAIN_RP.roman[idx % 3]}`,
@@ -178,6 +183,10 @@
     if (!ledger?.players) return map;
     Object.values(ledger.players).forEach((p) => {
       if (!p || !p.nick) return;
+      let vehicleKills = 0;
+      (p.matches || []).forEach((m) => {
+        vehicleKills += Math.max(0, Math.floor(Number(m.vehicleKills) || 0));
+      });
       const entry = {
         rp: Math.round(Number(p.rp) || 0),
         rankLabel: p.predatorPlace
@@ -185,6 +194,7 @@
           : p.rankLabel,
         rankKey: p.rankKey || "iron",
         predatorPlace: p.predatorPlace ?? null,
+        vehicleKills,
       };
       map.set(String(p.nick).trim().toLowerCase(), entry);
       map.set(resolveNickKey(p.nick), entry);
@@ -1500,11 +1510,11 @@
               nok: 0,
               kills: 0,
               deaths: 0,
-              dmg: 0,
               mvpMedic: 0,
               mvpKiller: 0,
-              mvpDamage: 0,
-              antiDeath: 0,
+              mvpArmor: 0,
+              // только из логов (поле vehicleKills); p.veh со скрина — тикеты сторон, не ТЕХ
+              vehicleKills: 0,
             });
           } else if (fallbackClan) {
             const row = map.get(key);
@@ -1525,7 +1535,9 @@
             row.nok += Number(p.nok) || 0;
             row.kills += Number(p.kills) || 0;
             row.deaths += Number(p.deaths) || 0;
-            row.dmg += Number(p.dmg) || 0;
+            row.vehicleKills =
+              (Number(row.vehicleKills) || 0) +
+              Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
           });
         };
 
@@ -1591,13 +1603,10 @@
               const row = touch(n, fb);
               if (row) row.mvpKiller += 1;
             });
-            (block.damage || []).forEach((n) => {
+            // War-Score / боевой счёт в рейтинге КВ не считаем
+            (block.armor || []).forEach((n) => {
               const row = touch(n, fb);
-              if (row) row.mvpDamage += 1;
-            });
-            (block.antiDeath || []).forEach((n) => {
-              const row = touch(n, fb);
-              if (row) row.antiDeath += 1;
+              if (row) row.mvpArmor += 1;
             });
           });
         });
@@ -1746,7 +1755,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="17" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
       refreshDualScrolls();
       return;
     }
@@ -1775,11 +1784,10 @@
     const maxKills = maxOf((r) => r.kills);
     const maxDeaths = maxOf((r) => r.deaths);
     const maxKd = maxOf((r) => r.kd);
-    const maxDmg = maxOf((r) => r.dmg);
     const maxMedic = maxOf((r) => r.mvpMedic);
     const maxKiller = maxOf((r) => r.mvpKiller);
-    const maxWar = maxOf((r) => r.mvpDamage);
-    const maxAnti = maxOf((r) => r.antiDeath);
+    const maxArmor = maxOf((r) => r.mvpArmor);
+    const maxVeh = maxOf((r) => r.vehicleKills);
     tbody.innerHTML = rows
       .map((p) => {
         const tu = p.tu;
@@ -1807,8 +1815,8 @@
         return `<tr class="${p.calibrating ? "is-cal" : ""}">
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="${tuCls}${tuRec}" title="${escapeHtml(tuTitle)}">${p.calibrating ? tuText : `<strong>${tuText}</strong>`}</td>
-        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
+        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr${rec(p.kv, maxKv, false)}">${p.kv}</td>
         <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
@@ -1817,11 +1825,10 @@
         <td class="ctr${rec(p.kills, maxKills, false)}">${p.kills}</td>
         <td class="ctr${rec(p.deaths, maxDeaths, true)}">${p.deaths}</td>
         <td class="ctr${rec(p.kd, maxKd, false)}">${p.kd}</td>
-        <td class="ctr${rec(p.dmg, maxDmg, false)}">${p.dmg}</td>
+        <td class="ctr col-veh${rec(p.vehicleKills, maxVeh, false)}">${p.vehicleKills || 0}</td>
         <td class="ctr col-mvp-medic${rec(p.mvpMedic, maxMedic, false)}">${p.mvpMedic}</td>
         <td class="ctr col-mvp-killer${rec(p.mvpKiller, maxKiller, false)}">${p.mvpKiller}</td>
-        <td class="ctr col-mvp-war${rec(p.mvpDamage, maxWar, false)}">${p.mvpDamage}</td>
-        <td class="ctr col-mvp-anti${rec(p.antiDeath, maxAnti, true)}">${p.antiDeath}</td>
+        <td class="ctr col-mvp-armor${rec(p.mvpArmor, maxArmor, false)}">${p.mvpArmor || 0}</td>
       </tr>`;
       })
       .join("");
@@ -1978,7 +1985,8 @@
               mvpMedic: 0,
               mvpKiller: 0,
               mvpDamage: 0,
-              antiDeath: 0,
+              mvpArmor: 0,
+              vehicleKills: 0,
             });
           }
           return map.get(key);
@@ -1999,6 +2007,9 @@
             row.nok += Number(p.nok) || 0;
             row.kills += Number(p.kills) || 0;
             row.deaths += Number(p.deaths) || 0;
+            row.vehicleKills =
+              (Number(row.vehicleKills) || 0) +
+              Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
             row.dmg += Number(p.dmg) || 0;
             const key = resolveNickKey(p.nick);
             if (seen.has(key)) return;
@@ -2024,8 +2035,8 @@
           };
           bump(mvp.medic, "mvpMedic");
           bump(mvp.killer, "mvpKiller");
-          // War-Score / боевой счёт — не считаем на тренировках (нет достоверного источника)
-          bump(mvp.antiDeath, "antiDeath");
+          // War-Score / боевой счёт — не считаем; Armor только по vehicleKills из логов
+          bump(mvp.armor, "mvpArmor");
         });
 
         trainRatingRows = Array.from(map.values()).map((p) => {
@@ -2036,7 +2047,8 @@
             mvpMedic: Number(p.mvpMedic) || 0,
             mvpKiller: Number(p.mvpKiller) || 0,
             mvpDamage: Number(p.mvpDamage) || 0,
-            antiDeath: Number(p.antiDeath) || 0,
+            mvpArmor: Number(p.mvpArmor) || 0,
+            vehicleKills: Math.max(0, Math.floor(Number(p.vehicleKills) || 0)),
             kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
             winPct,
           };
@@ -2046,6 +2058,10 @@
           if (rpHit) {
             return {
               ...base,
+              vehicleKills: Math.max(
+                Number(base.vehicleKills) || 0,
+                Number(rpHit.vehicleKills) || 0
+              ),
               rp: clampTrainRp(rpHit.rp),
               pwr: clampTrainRp(rpHit.rp),
               pwrLabel: rpHit.rankLabel,
@@ -2182,9 +2198,10 @@
         <td class="ctr">${p.kills}</td>
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
+        <td class="ctr col-veh">${Number(p.vehicleKills) || 0}</td>
         <td class="ctr col-mvp-medic">${Number(p.mvpMedic) || 0}</td>
         <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
-        <td class="ctr col-mvp-anti">${Number(p.antiDeath) || 0}</td>
+        <td class="ctr col-mvp-armor">${Number(p.mvpArmor) || 0}</td>
       </tr>`
       )
       .join("");
@@ -2431,7 +2448,8 @@
           mvpMedic: 0,
           mvpKiller: 0,
           mvpDamage: 0,
-          antiDeath: 0,
+          mvpArmor: 0,
+              vehicleKills: 0,
         });
       }
       return playerMap.get(key);
@@ -2531,6 +2549,9 @@
         row.nok += Number(p.nok) || 0;
         row.kills += Number(p.kills) || 0;
         row.deaths += Number(p.deaths) || 0;
+        row.vehicleKills =
+          (Number(row.vehicleKills) || 0) +
+          Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
         row.dmg += Number(p.dmg) || 0;
         totalRes += Number(p.res) || 0;
         totalNok += Number(p.nok) || 0;
@@ -2557,13 +2578,10 @@
           const row = touchPlayer(n);
           if (row) row.mvpKiller += 1;
         });
-        (block.damage || []).forEach((n) => {
+        // War-Score в аналитике КВ не копим
+        (block.armor || []).forEach((n) => {
           const row = touchPlayer(n);
-          if (row) row.mvpDamage += 1;
-        });
-        (block.antiDeath || []).forEach((n) => {
-          const row = touchPlayer(n);
-          if (row) row.antiDeath += 1;
+          if (row) row.mvpArmor += 1;
         });
       });
 
@@ -4010,7 +4028,8 @@
           mvpMedic: 0,
           mvpKiller: 0,
           mvpDamage: 0,
-          antiDeath: 0,
+          mvpArmor: 0,
+              vehicleKills: 0,
         });
       }
       return playerMap.get(key);
@@ -4122,8 +4141,8 @@
         };
         bumpMvp(mvp.medic, "mvpMedic");
         bumpMvp(mvp.killer, "mvpKiller");
-        // без War-Score на тренировках
-        bumpMvp(mvp.antiDeath, "antiDeath");
+        // без War-Score на тренировках; Armor только по vehicleKills
+        bumpMvp(mvp.armor, "mvpArmor");
       }
       if (roster > 0) {
         rosters.push(roster);
@@ -4526,7 +4545,7 @@
                   const m = pickMvps(all);
                   return { ...m, damage: [] };
                 })(),
-                r2: { medic: [], killer: [], damage: [], antiDeath: [] },
+                r2: { medic: [], killer: [], damage: [], armor: [] },
               },
               _training: true,
               _factionA: m.factionA || data.sideA?.name || "A",
@@ -4623,6 +4642,7 @@
         kills,
         deaths,
         dmg: Number(p.dmg) || 0,
+        vehicleKills: Math.max(0, Math.floor(Number(p.vehicleKills) || 0)),
         kd: deaths === 0 ? kills : Math.round((kills / deaths) * 100) / 100,
       };
     });
@@ -4632,12 +4652,23 @@
     const map = new Map();
     const add = (row) => {
       if (!row || !row.nick) return;
-      const cur = map.get(row.nick) || { nick: row.nick, res: 0, nok: 0, kills: 0, deaths: 0, dmg: 0 };
+      const cur = map.get(row.nick) || {
+        nick: row.nick,
+        res: 0,
+        nok: 0,
+        kills: 0,
+        deaths: 0,
+        dmg: 0,
+        vehicleKills: 0,
+      };
       cur.res += Number(row.res) || 0;
       cur.nok += Number(row.nok) || 0;
       cur.kills += Number(row.kills) || 0;
       cur.deaths += Number(row.deaths) || 0;
       cur.dmg += Number(row.dmg) || 0;
+      cur.vehicleKills =
+        (Number(cur.vehicleKills) || 0) +
+        Math.max(0, Math.floor(Number(row.vehicleKills) || 0));
       map.set(row.nick, cur);
     };
     (r1 || []).forEach(add);
@@ -4712,11 +4743,17 @@
   }
 
   function pickMvps(rows) {
-    if (!rows || !rows.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
+    if (!rows || !rows.length) return { medic: [], killer: [], damage: [], armor: [] };
     const pool = rows.filter(
-      (p) => (Number(p.res) || 0) + (Number(p.nok) || 0) + (Number(p.kills) || 0) + (Number(p.deaths) || 0) > 0
+      (p) =>
+        (Number(p.res) || 0) +
+          (Number(p.nok) || 0) +
+          (Number(p.kills) || 0) +
+          (Number(p.deaths) || 0) +
+          Math.max(0, Math.floor(Number(p.vehicleKills) || 0)) >
+        0
     );
-    if (!pool.length) return { medic: [], killer: [], damage: [], antiDeath: [] };
+    if (!pool.length) return { medic: [], killer: [], damage: [], armor: [] };
     function nickCmp(a, b) {
       return String(a.nick || "").localeCompare(String(b.nick || ""), "ru", { sensitivity: "base" });
     }
@@ -4762,17 +4799,21 @@
       });
       return tied[0].nick;
     }
-    function pickAnti() {
-      const top = maxOf(pool, "deaths");
+    function vehOf(p) {
+      // только vehicleKills из логов; p.veh со скрина — тикеты сторон («2:1»), не ТЕХ
+      return Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
+    }
+    function pickArmor() {
+      const top = Math.max(0, ...pool.map((p) => vehOf(p)));
       if (top <= 0) return null;
-      const tied = pool.filter((p) => (Number(p.deaths) || 0) === top);
+      const tied = pool.filter((p) => vehOf(p) === top);
       tied.sort((a, b) => {
-        const ak = kdOf(a);
-        const bk = kdOf(b);
-        if (ak !== bk) return ak - bk;
-        const ad = Number(a.dmg) || 0;
-        const bd = Number(b.dmg) || 0;
-        if (ad !== bd) return ad - bd;
+        const ak = Number(a.kills) || 0;
+        const bk = Number(b.kills) || 0;
+        if (ak !== bk) return bk - ak;
+        const ad = kdOf(a);
+        const bd = kdOf(b);
+        if (ad !== bd) return bd - ad;
         return nickCmp(a, b);
       });
       return tied[0].nick;
@@ -4781,12 +4822,12 @@
       medic: [pickMedic()].filter(Boolean),
       killer: [pickKiller()].filter(Boolean),
       damage: [pickDamage()].filter(Boolean),
-      antiDeath: [pickAnti()].filter(Boolean),
+      armor: [pickArmor()].filter(Boolean),
     };
   }
 
   function medalCountsForNick(nick) {
-    const counts = { medic: 0, killer: 0, damage: 0, antiDeath: 0 };
+    const counts = { medic: 0, killer: 0, damage: 0, armor: 0 };
     const by = modalPlayers.mvpByRound || {};
     let keys = ["r1", "r2"];
     if (modalPlayers && modalPlayers._training) keys = ["r1"];
@@ -4807,12 +4848,12 @@
   function roundMvpsForNick(nick) {
     if (modalPlayers && modalPlayers._training) {
       const m = (modalPlayers.mvpByRound || {}).r1;
-      if (!m) return { medic: 0, killer: 0, damage: 0, antiDeath: 0 };
+      if (!m) return { medic: 0, killer: 0, damage: 0, armor: 0 };
       return {
         medic: (m.medic || []).includes(nick) ? 1 : 0,
         killer: (m.killer || []).includes(nick) ? 1 : 0,
         damage: (m.damage || []).includes(nick) ? 1 : 0,
-        antiDeath: (m.antiDeath || []).includes(nick) ? 1 : 0,
+        armor: (m.armor || []).includes(nick) ? 1 : 0,
       };
     }
     let key = "r2";
@@ -4821,12 +4862,12 @@
     else if (modalTab === "oppR2") key = "oppR2";
     else if (modalTab === "oppTotal") key = "oppR1";
     const m = (modalPlayers.mvpByRound || {})[key];
-    if (!m) return { medic: 0, killer: 0, damage: 0, antiDeath: 0 };
+    if (!m) return { medic: 0, killer: 0, damage: 0, armor: 0 };
     return {
       medic: (m.medic || []).includes(nick) ? 1 : 0,
       killer: (m.killer || []).includes(nick) ? 1 : 0,
       damage: (m.damage || []).includes(nick) ? 1 : 0,
-      antiDeath: (m.antiDeath || []).includes(nick) ? 1 : 0,
+      armor: (m.armor || []).includes(nick) ? 1 : 0,
     };
   }
 
@@ -4838,11 +4879,11 @@
         ? medalCountsForNick(nick)
         : roundMvpsForNick(nick);
     const parts = [];
-    const kindClass = { medic: "medic", killer: "killer", damage: "war", antiDeath: "anti" };
+    const kindClass = { medic: "medic", killer: "killer", damage: "war", armor: "armor" };
     const kinds =
       modalPlayers && modalPlayers._training
-        ? ["medic", "killer", "antiDeath"]
-        : ["medic", "killer", "damage", "antiDeath"];
+        ? ["medic", "killer", "armor"]
+        : ["medic", "killer", "damage", "armor"];
     kinds.forEach((kind) => {
       const n = counts[kind];
       if (!n) return;
