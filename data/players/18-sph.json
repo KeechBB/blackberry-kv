@@ -1,7 +1,7 @@
 {
   "matchId": "18-sph",
   "opp": "SPH",
-  "note": "Авто из логов TR · FCL ARENA #2 (TR2) · R1 83:0 · R2 идёт · source=tr-cw-auto",
+  "note": "Авто из логов TR · FCL ARENA #2 (TR2) · сумма 279:0 · source=tr-cw-auto",
   "source": "tr-cw-auto",
   "server": "FCL ARENA #2 (TR2)",
   "map": "SEC 26 Mutaha PAAS v1",
@@ -241,7 +241,242 @@
       "vehicleKills": 0
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 3960,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 3388,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 3214,
+      "vehicleKills": 4
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 2000,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2341,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 1550,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1140,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1390,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1210,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 1178,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1503,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "lepurple",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 843,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 810,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Azure",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 710,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 2,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 863,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Frosty",
+      "res": 1,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 565,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 698,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 540,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 540,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "vasserman",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 410,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 657,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 355,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Varyag",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 355,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 420,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Maga",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 124,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
   "oppR1": [
     {
       "nick": "DarK_REAL",
@@ -478,5 +713,240 @@
       "vehicleKills": 0
     }
   ],
-  "oppR2": []
+  "oppR2": [
+    {
+      "nick": "Tito",
+      "res": 2,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 3299,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DAMOX",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1677,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "DarK_REAL",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1506,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Luisaceo",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1408,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Alferez Pardeiro",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 744,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Cinnamonlrv",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1048,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Juan",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 744,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "✚ ⋮ jESúS",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 872,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Draco",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 856,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Jox",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 728,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Twins N",
+      "res": 3,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 856,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "JCarril",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 684,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "nsserrano",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 556,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ROJA",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 684,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Alcatraz",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 340,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Shadow✓•°",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 492,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "veberthe",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 492,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "JAZZART",
+      "res": 0,
+      "nok": 0,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 192,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "JDriver",
+      "res": 0,
+      "nok": 0,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 1330,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "LoOoL77",
+      "res": 0,
+      "nok": 7,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 904,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "nico88",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 192,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "juniurfaccsa",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KTetoID",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "TioMarco",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Tuchi",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "wolfjc101",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ]
 }

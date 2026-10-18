@@ -482,10 +482,12 @@
       "server": "ANY",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · SEC 26 Mutaha PAAS v1 · TR2 · R1 83:0 · R2 идёт · авто обе команды",
+      "status": "win",
+      "note": "Main · SEC · SEC 26 Mutaha PAAS v1 · TR2 · сумма 279:0 (83:0 · 196:0) · авто обе команды",
       "playersUrl": "data/players/18-sph.json",
-      "r1": "83:0"
+      "r1": "83:0",
+      "r2": "196:0",
+      "meeting": "2–0"
     },
     {
       "id": "19-ih",
