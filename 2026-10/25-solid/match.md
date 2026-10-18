@@ -7,9 +7,9 @@
 
 - **18:00 UTC** / **21:00 МСК**
 - **26v26**
-- Карта: **SEC** (слой уточняется)
+- Карта: **SEC 26 Mutaha AAS v1**
 - Сервер: **ANY**
 - Правила: **SEC**
 - Состав: **мейн-стак**
 
-Превью: [../../previews/2026-10-25-solid-sec.png](../../previews/2026-10-25-solid-sec.png).
+Превью: [../../previews/2026-10-25-solid-mutaha-aas.png](../../previews/2026-10-25-solid-mutaha-aas.png).

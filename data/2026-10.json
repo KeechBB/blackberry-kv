@@ -533,13 +533,13 @@
       "timeMsk": "21:00",
       "timeUtc": "18:00",
       "opp": ".solid",
-      "map": "SEC",
+      "map": "SEC 26 Mutaha AAS v1",
       "size": "26v26",
       "server": "ANY",
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · слой уточняется · 26v26 · 21:00 · сервер ANY · первая Main vs .solid (Junior 0–2 11.10 Mutaha) · same day Junior vs ALPHA 20:00 · NO SCOUT"
+      "note": "Main · SEC · SEC 26 Mutaha AAS v1 · 26v26 · 21:00 · сервер ANY · первая Main vs .solid (Junior 0–2 11.10 Mutaha PAAS) · same day Junior vs ALPHA 20:00 · NO SCOUT"
     },
     {
       "id": "26-alpha",
