@@ -1,4 +1,4 @@
-﻿# КВ октябрь 2026
+# КВ октябрь 2026
 
 Превью: [../previews/README.md](../previews/README.md). Итоги: [../results/README.md](../results/README.md).
 
@@ -27,12 +27,16 @@
 | 13 | [13-RA](13-RA/match.md) | RA | **отмена** · Junior, FCL, **8v8**, **20:00** МСК, [analytics.md](13-RA/analytics.md) |
 | 13 | [13-HELL](13-HELL/match.md) | HELL | **Junior**, SEC 26 Sumari AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер BB · 1-я vs HELL в окт., [analytics.md](13-HELL/analytics.md) |
 | 14 | [14-FAL](14-FAL/match.md) | FAL | **мейн-стак**, CSL Mutaha AAS V1, **20v20**, **20:00** МСК (17:00 UTC), сервер BB · после отмены 10.10 · карта сменена с SEC 26, [analytics.md](14-FAL/analytics.md) |
-| 14 | [14-OMEN](14-OMEN/match.md) | OMEN | **мейн-стак**, HotDrop Narva (`HD_Narva_20x20`), **20v20**, **21:00** МСК (18:00 UTC), сервер OMEN, [analytics.md](14-OMEN/analytics.md) |
+| 14 | [14-OMEN](14-OMEN/match.md) | OMEN | **мейн-стак**, HotDrop Narva · **FINAL 2–0** сумма **224:0** (108:0 · 116:0) · **20v20**, **21:00** МСК · сервер OMEN · [players](../public/data/players/14-omen.json) · [analytics.md](14-OMEN/analytics.md) |
 | 15 | [15-RA](15-RA/match.md) | RA | **отмена** · Junior, FCL, **8v8**, **20:00** МСК, [analytics.md](15-RA/analytics.md) |
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, **2–0** · сумма **142:0** (58:0 · 84:0) · SEC 26 Sumari AAS v1 · TR2 · стата полная · [analytics.md](15-HELL/analytics.md) |
+| 15 | [15-IH](15-IH/match.md) | IH / Iron Horde | **мейн-стак**, **2–0** · сумма **92:0** (61:0 · 31:0) · HotDrop Narva · TR1 · стата полная · [analytics.md](15-IH/analytics.md) |
 | 17 | [17-NKLV-RPSS](17-NKLV-RPSS/match.md) | NKLV vs RPSS | **чужой КВ**, FCL Narva Small v1, **12v12**, **17:00** МСК (14:00 UTC), SEC, [analytics.md](17-NKLV-RPSS/analytics.md) |
-| 17 | [17-NS](17-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер FCL ARENA 2, [analytics.md](17-NS/analytics.md) |
+| 17 | [17-NS](17-NS/match.md) | NS / North Star | **перенос → 31.10** (не отмена) |
+| 31 | [31-NS](31-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер FCL ARENA 2 · перенос с 17.10, [analytics.md](31-NS/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер ANY, [analytics.md](18-SPH/analytics.md) |
 | 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, Hotdrop Skorpo, **20v20**, **21:00** МСК (18:00 UTC), сервер ANY, HOTDROP, [analytics.md](19-IH/analytics.md) |
+| 22 | [22-RNL](22-RNL/match.md) | RNL | **мейн-стак**, SEC 26 Chora AAS v2, **26v26**, **21:00** МСК (18:00 UTC), сервер **RNL EU**, SEC, [analytics.md](22-RNL/analytics.md) |
 | 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я Mutaha vs ALPHA (после 09.10), [analytics.md](25-ALPHA/analytics.md) |
 | 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |
+| 26 | [26-GM](26-GM/match.md) | GM | **мейн-стак**, HotDrop Narva (`HD_Narva`), **20v20**, **21:00** МСК (18:00 UTC), сервер **BB**, HD · same day Junior vs ALPHA 20:00, [analytics.md](26-GM/analytics.md) |

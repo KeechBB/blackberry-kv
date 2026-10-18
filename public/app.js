@@ -27,7 +27,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261017-cw-veh";
+    new URLSearchParams(location.search).get("v") || "20261018-rnl-chora";
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -1343,6 +1343,21 @@
 
   function hostClanName(m) {
     return isBbHostMatch(m) ? "BlackBerry" : String(m.clan || "").trim() || "—";
+  }
+
+  /**
+   * Тег хоста вкладок — только из данных этой катки (календарь дня / players.json).
+   * Пустой clan в календаре = наш слот BB (канон). Иначе любой тег: NKLV, FAL, …
+   */
+  function hostClanTag(m, playersDoc) {
+    const fromPlayers = String(
+      (playersDoc && (playersDoc.clan || playersDoc.host || playersDoc._hostTag)) ||
+        ""
+    ).trim();
+    const fromMatch = String((m && m.clan) || "").trim();
+    const raw = fromPlayers || fromMatch;
+    if (!raw || /^(bb|blackberry)$/i.test(raw)) return "BB";
+    return raw;
   }
 
   function paintStats(list) {
@@ -4581,7 +4596,10 @@
                 oppR2: (data.mvp && data.mvp.oppR2) || pickMvps(oppR2),
               },
               _hasOpp: hasOpp,
-              _oppTag: String(m.opp || data.opp || "OPP").trim() || "OPP",
+              // Хост/соперник — из данных матча дня (календарь + players), не хардкод BB
+              _hostTag: hostClanTag(m, data),
+              _oppTag:
+                String(data.opp || m.opp || "OPP").trim() || "OPP",
             };
             labelTabs(m);
           }
@@ -4688,26 +4706,28 @@
     resetModalTabAttrs();
     const hasOpp = !!(modalPlayers && modalPlayers._hasOpp);
     const opp = (modalPlayers && modalPlayers._oppTag) || m.opp || "OPP";
+    const our =
+      (modalPlayers && modalPlayers._hostTag) || hostClanTag(m, null);
     const r1Label = m.r1 && m.r1 !== "—" ? `Раунд 1 · ${m.r1}` : "Раунд 1";
     const r2Label = m.r2 && m.r2 !== "—" ? `Раунд 2 · ${m.r2}` : "Раунд 2";
     const totalBtn = tabById("total");
     const bbTotalBtn = tabById("bbTotal");
     const r1Btn = tabById("r1");
     const r2Btn = tabById("r2");
-    // Итого = все; отдельные вкладки BB и соперник
+    // Итого = все; отдельные вкладки хост (BB/NKLV…) и соперник
     if (totalBtn)
       totalBtn.textContent = hasOpp ? "Итого · все" : "Итого";
     if (bbTotalBtn) {
       bbTotalBtn.hidden = !hasOpp;
-      bbTotalBtn.textContent = "BB · Итого";
+      bbTotalBtn.textContent = `${our} · Итого`;
     }
     if (r1Btn) {
       r1Btn.hidden = !(m.r1 && m.r1 !== "—") && !(modalPlayers && modalPlayers.r1 && modalPlayers.r1.length);
-      r1Btn.textContent = hasOpp ? `BB · ${r1Label}` : r1Label;
+      r1Btn.textContent = hasOpp ? `${our} · ${r1Label}` : r1Label;
     }
     if (r2Btn) {
       r2Btn.hidden = !(m.r2 && m.r2 !== "—") && !(modalPlayers && modalPlayers.r2 && modalPlayers.r2.length);
-      r2Btn.textContent = hasOpp ? `BB · ${r2Label}` : r2Label;
+      r2Btn.textContent = hasOpp ? `${our} · ${r2Label}` : r2Label;
     }
     // Prefer showing round tabs when player rows exist even if calendar score missing
     if (r1Btn && modalPlayers && modalPlayers.r1 && modalPlayers.r1.length) r1Btn.hidden = false;

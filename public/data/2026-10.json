@@ -500,6 +500,20 @@
       "note": "Junior · HOTDROP · Hotdrop Skorpo · 20v20 · 21:00 · сервер ANY · vs clan Junior 0–2 (30.09 Sanxian) · NO SCOUT"
     },
     {
+      "id": "22-rnl",
+      "day": 22,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "RNL",
+      "map": "SEC 26 Chora AAS v2",
+      "size": "26v26",
+      "server": "RNL EU",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · SEC 26 Chora AAS v2 · 26v26 · 21:00 · сервер RNL EU · первая vs RNL · NO SCOUT · NO MORTARS"
+    },
+    {
       "id": "25-alpha",
       "day": 25,
       "timeMsk": "20:00",
