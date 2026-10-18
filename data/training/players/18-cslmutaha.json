@@ -1,0 +1,583 @@
+{
+  "matchId": "18-cslmutaha",
+  "map": "CSL Mutaha Skirmish v1",
+  "mode": "Skirmish",
+  "server": "BlackBerry 1 (TR1)",
+  "serverKey": "TR1",
+  "duration": "40:50",
+  "winner": "Armed Forces of Ukraine",
+  "sideA": {
+    "name": "Canadian Armed Forces",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "Armed Forces of Ukraine",
+    "tickets": 42
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "bambozy",
+      "res": 2,
+      "nok": 29,
+      "kills": 26,
+      "deaths": 6,
+      "dmg": 10922,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Zerox",
+      "res": 0,
+      "nok": 22,
+      "kills": 13,
+      "deaths": 8,
+      "dmg": 6263,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 15,
+      "kills": 12,
+      "deaths": 8,
+      "dmg": 5104,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 13,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 6055,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 16,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 4617,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 3426,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Inrikus",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 3431,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 11,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 2860,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 2984,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 3494,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "nightmare-",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 10,
+      "dmg": 2368,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 2078,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "-Prostak-",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 2492,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "qop",
+      "res": 3,
+      "nok": 4,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 1558,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 18,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1797,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "COBRA",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1883,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "_ByBaJIeX_",
+      "res": 0,
+      "nok": 3,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 1449,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "vasserman",
+      "res": 0,
+      "nok": 3,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 1096,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1622,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "RostislavKVL",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1747,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 1707,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Varyag",
+      "res": 15,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 913,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 10,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 972,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "mactraher XIII",
+      "res": 2,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 858,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Prolik",
+      "res": 8,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 463,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 548,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 362,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Foden",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 326,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 362,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 362,
+      "team": "Canadian Armed Forces",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 33,
+      "kills": 21,
+      "deaths": 7,
+      "dmg": 9525,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Morty",
+      "res": 11,
+      "nok": 16,
+      "kills": 15,
+      "deaths": 8,
+      "dmg": 5797,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Nickname",
+      "res": 1,
+      "nok": 25,
+      "kills": 14,
+      "deaths": 10,
+      "dmg": 6152,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 0,
+      "nok": 19,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 5116,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "haq34",
+      "res": 0,
+      "nok": 19,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 4778,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 4460,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 11,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 7765,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 16,
+      "kills": 10,
+      "deaths": 9,
+      "dmg": 4051,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 5324,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "KillReal",
+      "res": 4,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 2920,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Taipan",
+      "res": 2,
+      "nok": 15,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 3358,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 14,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 3413,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Muhomor",
+      "res": 6,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 3420,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "DirecTor",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 3328,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 2361,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 12,
+      "dmg": 1712,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1466,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "lepurple",
+      "res": 10,
+      "nok": 11,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 2328,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Rindaye",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1380,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Bahus",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1180,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 9,
+      "dmg": 1238,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 900,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 6,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1041,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "ADUN",
+      "res": 4,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 338,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 9,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 360,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Steepich",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    }
+  ]
+}

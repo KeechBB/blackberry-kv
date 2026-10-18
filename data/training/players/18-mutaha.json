@@ -1,0 +1,683 @@
+{
+  "matchId": "18-mutaha",
+  "map": "Mutaha RAAS v1",
+  "mode": "RAAS",
+  "server": "BlackBerry 1 (TR1)",
+  "serverKey": "TR1",
+  "duration": "49:29",
+  "winner": "Armed Forces of Ukraine",
+  "sideA": {
+    "name": "Armed Forces of Ukraine",
+    "tickets": 165
+  },
+  "sideB": {
+    "name": "People's Liberation Army",
+    "tickets": 0
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "RostislavKVL",
+      "res": 0,
+      "nok": 27,
+      "kills": 17,
+      "deaths": 3,
+      "dmg": 7282,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "vasserman",
+      "res": 0,
+      "nok": 15,
+      "kills": 12,
+      "deaths": 7,
+      "dmg": 5428,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 3202,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Inrikus",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 3609,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Tatarin",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 2896,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "nightmare-",
+      "res": 3,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 3075,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 2,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 2640,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 2757,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "tank2284",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 2965,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "-Prostak-",
+      "res": 13,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 2700,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2813,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Varyag",
+      "res": 5,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2138,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "qop",
+      "res": 1,
+      "nok": 11,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 2005,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "mactraher XIII",
+      "res": 2,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1960,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 3656,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1443,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Koperor",
+      "res": 10,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1980,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "_ByBaJIeX_",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1658,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Zerox",
+      "res": 1,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 2084,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "COBRA",
+      "res": 2,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 2800,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1280,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 1312,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 998,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1236,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 856,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "bambozy",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 840,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "WoodMan",
+      "res": 9,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 988,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 576,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 10,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 638,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Foden",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 8,
+      "dmg": 540,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 9,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 480,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 425,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Ilyich",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 293,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    },
+    {
+      "nick": "Prolik",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 0,
+      "team": "Armed Forces of Ukraine",
+      "won": true
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 23,
+      "kills": 16,
+      "deaths": 5,
+      "dmg": 6750,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 4992,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 2,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 4580,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 4269,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 3687,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Tuxon",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 5893,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "_VaGNeR_",
+      "res": 1,
+      "nok": 15,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 3508,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "DirecTor",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 3131,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 2603,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Morty",
+      "res": 6,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 2947,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 2854,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 2430,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "lepurple",
+      "res": 8,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2867,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Azure",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 2274,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "res": 9,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1697,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 1676,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Hazzi",
+      "res": 1,
+      "nok": 11,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 2554,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Steepich",
+      "res": 1,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1948,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "haq34",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1334,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "KillReal",
+      "res": 3,
+      "nok": 2,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 883,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Muhomor",
+      "res": 1,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 1231,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "ADUN",
+      "res": 15,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 763,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 910,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 0,
+      "nok": 1,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 578,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "lobotomy",
+      "res": 5,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 424,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Taipan",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 424,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "MAMBA",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 486,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Rindaye",
+      "res": 0,
+      "nok": 9,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 837,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 480,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Bayle The Dread",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 52,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "team": "People's Liberation Army",
+      "won": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "team": "People's Liberation Army",
+      "won": false
+    }
+  ]
+}
