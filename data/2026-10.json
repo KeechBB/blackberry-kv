@@ -516,6 +516,21 @@
       "note": "Main · SEC · SEC 26 Chora AAS v2 · 26v26 · 21:00 · сервер RNL EU · первая vs RNL · NO SCOUT · NO MORTARS"
     },
     {
+      "id": "25-nklv-huh",
+      "day": 25,
+      "timeMsk": "16:00",
+      "timeUtc": "13:00",
+      "clan": "NKLV",
+      "opp": "ХУХ",
+      "map": "FCL Narva Small v1",
+      "size": "12v12",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "—",
+      "status": "upcoming",
+      "note": "чужой КВ · NKLV vs ХУХ · FCL Narva Small v1 · 12v12 · FCL · 16:00 МСК · same day Junior vs ALPHA 20:00 / Main vs .solid 21:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
       "id": "25-alpha",
       "day": 25,
       "timeMsk": "20:00",
