@@ -527,6 +527,74 @@
       }
     },
     {
+      "id": "13-nklv-fal-2",
+      "day": 13,
+      "opp": "FAL",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Джигурда"
+        ],
+        "killer": [
+          "SpokSL"
+        ],
+        "damage": [
+          "Eastt"
+        ],
+        "antiDeath": [
+          "SpokSL"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Bear"
+        ],
+        "killer": [
+          "Gruze"
+        ],
+        "damage": [
+          "Карась"
+        ],
+        "antiDeath": [
+          "Hampton"
+        ]
+      }
+    },
+    {
+      "id": "13-nklv-fal",
+      "day": 13,
+      "opp": "FAL",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "Hampton"
+        ],
+        "killer": [
+          "KIM"
+        ],
+        "damage": [
+          "KIM"
+        ],
+        "antiDeath": [
+          "SEX"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Hampton"
+        ],
+        "killer": [
+          "SEX"
+        ],
+        "damage": [
+          "SEX"
+        ],
+        "antiDeath": [
+          "Отчимус Прайм"
+        ]
+      }
+    },
+    {
       "id": "13-two",
       "day": 13,
       "opp": "TWO",
@@ -829,6 +897,74 @@
         ],
         "antiDeath": [
           "angel"
+        ]
+      }
+    },
+    {
+      "id": "18-sph",
+      "day": 18,
+      "opp": "SPH",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Varyag"
+        ],
+        "killer": [
+          "Hikkomaru"
+        ],
+        "damage": [
+          "Hikkomaru"
+        ],
+        "antiDeath": [
+          "Frosty"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Varyag"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "iKEppA"
+        ],
+        "antiDeath": [
+          "Keech"
+        ]
+      }
+    },
+    {
+      "id": "19-ih",
+      "day": 19,
+      "opp": "IH",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "ZLOBA1917"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "AkiN"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "ZLOBA1917"
+        ],
+        "killer": [
+          "Otto"
+        ],
+        "damage": [
+          "Otto"
+        ],
+        "antiDeath": [
+          "Forks"
         ]
       }
     },
@@ -1232,7 +1368,7 @@
       "mvpMedic": 1,
       "mvpKiller": 2,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "08-hq",
@@ -1249,6 +1385,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "25-h1gh",
@@ -1337,6 +1481,22 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        }
+      ]
+    },
+    "Bear": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -1644,6 +1804,22 @@
         }
       ]
     },
+    "Eastt": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "FLEX": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1664,7 +1840,7 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 1,
-      "antiDeath": 3,
+      "antiDeath": 4,
       "awards": [
         {
           "matchId": "01-gm",
@@ -1695,6 +1871,30 @@
           "day": 13,
           "opp": "HELL",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Frosty": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -1788,6 +1988,22 @@
         }
       ]
     },
+    "Gruze": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "HSVarvar": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -1804,6 +2020,38 @@
         }
       ]
     },
+    "Hampton": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Hazzi": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -1817,6 +2065,30 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Hikkomaru": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -1876,6 +2148,30 @@
         }
       ]
     },
+    "KIM": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "KTO--TO": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -1896,7 +2192,7 @@
       "mvpMedic": 0,
       "mvpKiller": 2,
       "mvpDamage": 4,
-      "antiDeath": 4,
+      "antiDeath": 5,
       "awards": [
         {
           "matchId": "06-fox",
@@ -1961,6 +2257,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "25-h1gh",
@@ -2548,6 +2852,30 @@
         }
       ]
     },
+    "Otto": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Prolik": {
       "mvpMedic": 2,
       "mvpKiller": 0,
@@ -2772,6 +3100,38 @@
         }
       ]
     },
+    "SEX": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "SHURUP": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -2833,6 +3193,30 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "SpokSL": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -3212,8 +3596,32 @@
         }
       ]
     },
+    "Varyag": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "ZLOBA1917": {
-      "mvpMedic": 0,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -3225,6 +3633,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -3382,8 +3806,8 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 4,
-      "mvpDamage": 5,
+      "mvpKiller": 5,
+      "mvpDamage": 6,
       "antiDeath": 0,
       "awards": [
         {
@@ -3455,6 +3879,22 @@
           "day": 15,
           "opp": "HELL",
           "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -3574,8 +4014,8 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 10,
-      "mvpDamage": 3,
+      "mvpKiller": 11,
+      "mvpDamage": 4,
       "antiDeath": 0,
       "awards": [
         {
@@ -3641,6 +4081,22 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "22-gm",
@@ -3825,6 +4281,54 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Джигурда": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "Карась": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal-2",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Отчимус Прайм": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     }

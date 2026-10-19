@@ -500,11 +500,12 @@
       "server": "Iron Horde Clan Server",
       "rules": "HOTDROP",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "lose",
       "playersUrl": "data/players/19-ih.json",
       "r1": "0:62",
-      "meeting": "открыта",
-      "note": "Junior · HOTDROP · HotDrop Skorpo · Iron Horde · R1 0:62 · 42:25 · БВС 0 / ЗЧВК 62 · встреча открыта, ждём R2 · 19 ников с табло, один сверху обрезан"
+      "meeting": "0–2",
+      "note": "Junior · HOTDROP · HotDrop Skorpo · Iron Horde · сумма 0:253 (0:62 · 0:191) · 42:25 / 28:43 · встреча 0–2",
+      "r2": "0:191"
     },
     {
       "id": "21-ra",

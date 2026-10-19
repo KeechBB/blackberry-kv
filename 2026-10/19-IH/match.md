@@ -1,17 +1,22 @@
-# 2026-10-19 — IH vs BlackBerry Junior
+# 19.10.2026 · BB Junior vs IH · HotDrop Skorpo
 
-Ещё не сыграно. Заявка **17.10.2026**. Играет **Junior** (в заявке IH vs BB, состав Junior).
+Сервер: Iron Horde Clan Server. Стек Junior. 20v20 HOTDROP.
 
-Не склеивать с **15.10** Main vs IH (HotDrop Narva, **2–0**) и с **18.09** Main vs IH (Mutaha PAAS, **2–0**). У Junior с IH уже есть **30.09** HotDrop Sanxian, **0–2**.
+## Раунд 1
 
-- **18:00 UTC** / **21:00 МСК**
-- **20v20**
-- Карта: **Hotdrop Skorpo**
-- Сервер: **ANY**
-- Правила: **HOTDROP**
-- Состав: **Junior**
+- Тикеты наши:их = **0:62** (БВС 0, ЗЧВК 62)
+- Длительность 42:25
+- На кадрах 19 ников из 20
 
-Скаута Hotdrop Skorpo vs IH нет. Силу сверх факта 30.09 не выдумывать.  
-Лого: `brand/logos/ih.jpg` + `blackberry.png`.
+## Раунд 2
 
-Превью: [../../previews/2026-10-19-ih-skorpo-hotdrop.png](../../previews/2026-10-19-ih-skorpo-hotdrop.png). Заметки: [analytics.md](analytics.md).
+- Тикеты наши:их = **0:191** (ЗЧВК 0, БВС 191)
+- Длительность 28:43
+- Тяжёлое поражение, победитель БВС
+- На кадрах 18 ников из 20. Шапка отряда 2 и NOCTURNE не сходится с видимыми строками — два ника не выдумывал
+
+## Встреча
+
+Сумма тикетов **0:253** (0:62 + 0:191). Победитель IH. Счёт встречи **0–2**.
+
+MVP R2: Medic ZLOBA1917 (11 ресов), Killer и War-Score Otto (5 кил / 92 боевых), Anti-MVP Death Forks (13 смертей).

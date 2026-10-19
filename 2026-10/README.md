@@ -35,7 +35,7 @@
 | 17 | [17-NS](17-NS/match.md) | NS / North Star | **перенос → 31.10** (не отмена) |
 | 31 | [31-NS](31-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер FCL ARENA 2 · перенос с 17.10, [analytics.md](31-NS/analytics.md) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, **2–0** · сумма **279:0** (R1 83:0 · R2 196:0) · SEC 26 Mutaha PAAS v1 · FCL ARENA #2 (TR2) · авто обе команды, [analytics.md](18-SPH/analytics.md) |
-| 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, Hotdrop Skorpo, **20v20**, **21:00** МСК (18:00 UTC), сервер ANY, HOTDROP, [analytics.md](19-IH/analytics.md) |
+| 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, **0–2** · сумма **0:253** (0:62 · 0:191) · HotDrop Skorpo · Iron Horde, [analytics.md](19-IH/analytics.md) |
 | 21 | [21-RA](21-RA/match.md) | RA | **Junior**, HotDrop Narva, **16v16**, **20:00** МСК (17:00 UTC), сервер **BB**, HOTDROP, [analytics.md](21-RA/analytics.md) |
 | 22 | [22-RNL](22-RNL/match.md) | RNL | **мейн-стак**, SEC 26 Chora AAS v2, **26v26**, **21:00** МСК (18:00 UTC), сервер **RNL EU**, SEC, [analytics.md](22-RNL/analytics.md) |
 | 23 | [23-20R](23-20R/match.md) | 20Royals | **Junior**, SEC 26 GooseBay AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер **20R**, SEC, [analytics.md](23-20R/analytics.md) |
