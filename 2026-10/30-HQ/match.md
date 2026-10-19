@@ -9,7 +9,7 @@
 - Правила: **SEC**
 - Состав: **Main**
 
-Ранее Main vs HQ 08.10 Mutaha PAAS — **0–2** (сумма 28:136).
+Ранее Main vs HQ 08.10 Mutaha PAAS — **0–2** (сумма 28:136). В ту же неделю ещё слот **28.10**.
 
 Лого: `brand/logos/hq.png`, BB: `brand/logos/blackberry.png`.
 

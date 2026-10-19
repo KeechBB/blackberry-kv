@@ -621,6 +621,20 @@
       "note": "Main · HOTDROP · HD_Narva · 20v20 · 21:00 · сервер BB · vs clan Main 2–0 (22.09 Goose) · same day Junior vs ALPHA 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
+      "id": "28-hq",
+      "day": 28,
+      "timeMsk": "22:00",
+      "timeUtc": "19:00",
+      "opp": "HQ",
+      "map": "TBA",
+      "size": "26v26",
+      "server": "HQ",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · карта TBA · 26v26 · 22:00 · сервер HQ · 2-я vs HQ в окт. (08.10 Mutaha PAAS 0–2) · same week 30.10 · заявка 20.10"
+    },
+    {
       "id": "30-hq",
       "day": 30,
       "timeMsk": "22:00",
@@ -632,7 +646,7 @@
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · карта TBA · 26v26 · 22:00 · сервер HQ · 2-я vs HQ в окт. (08.10 Mutaha PAAS 0–2) · заявка 20.10"
+      "note": "Main · SEC · карта TBA · 26v26 · 22:00 · сервер HQ · 3-я vs HQ в окт. (08.10 0–2 · 28.10 TBA) · same week 28.10 · заявка 20.10"
     },
     {
       "id": "31-ns",
