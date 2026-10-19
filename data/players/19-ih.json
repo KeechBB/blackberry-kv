@@ -1,0 +1,44 @@
+{
+  "matchId": "19-ih",
+  "opp": "IH",
+  "note": "Junior · R1 скрины · HotDrop Skorpo · Iron Horde Clan Server · 0:62 · 42:25 · БВС vs ЗЧВК · на табло 19 из 20, верхний ник обрезан",
+  "source": "screens",
+  "server": "Iron Horde Clan Server",
+  "map": "HotDrop Skorpo",
+  "r1": [
+    { "nick": "ZLOBA1917", "res": 16, "nok": 5, "kills": 5, "deaths": 5, "dmg": 88, "vehicleKills": 0 },
+    { "nick": "Otto", "res": 0, "nok": 5, "kills": 4, "deaths": 5, "dmg": 97, "vehicleKills": 0 },
+    { "nick": "Forks", "res": 0, "nok": 8, "kills": 5, "deaths": 4, "dmg": 114, "vehicleKills": 0 },
+    { "nick": "HSVarvar", "res": 1, "nok": 4, "kills": 2, "deaths": 4, "dmg": 52, "vehicleKills": 0 },
+    { "nick": "AkiN", "res": 1, "nok": 10, "kills": 9, "deaths": 14, "dmg": 161, "vehicleKills": 0 },
+    { "nick": "CORWAX", "res": 13, "nok": 8, "kills": 2, "deaths": 9, "dmg": 91, "vehicleKills": 0 },
+    { "nick": "freak", "res": 2, "nok": 12, "kills": 9, "deaths": 9, "dmg": 181, "vehicleKills": 0 },
+    { "nick": "Frosty", "res": 7, "nok": 16, "kills": 10, "deaths": 10, "dmg": 183, "vehicleKills": 0 },
+    { "nick": "bambozy", "res": 2, "nok": 25, "kills": 21, "deaths": 13, "dmg": 334, "vehicleKills": 0 },
+    { "nick": "Barsik", "res": 0, "nok": 11, "kills": 9, "deaths": 12, "dmg": 166, "vehicleKills": 0 },
+    { "nick": "Maga", "res": 10, "nok": 8, "kills": 2, "deaths": 11, "dmg": 80, "vehicleKills": 0 },
+    { "nick": "COBRA", "res": 1, "nok": 9, "kills": 6, "deaths": 9, "dmg": 145, "vehicleKills": 1 },
+    { "nick": "Radislave", "res": 6, "nok": 3, "kills": 2, "deaths": 11, "dmg": 77, "vehicleKills": 0 },
+    { "nick": "uglyfromyoung", "res": 3, "nok": 10, "kills": 9, "deaths": 11, "dmg": 157, "vehicleKills": 0 },
+    { "nick": "Oguzok", "res": 2, "nok": 8, "kills": 6, "deaths": 10, "dmg": 106, "vehicleKills": 0 },
+    { "nick": "Edge_CM", "res": 7, "nok": 8, "kills": 6, "deaths": 8, "dmg": 136, "vehicleKills": 0 },
+    { "nick": "VET", "res": 1, "nok": 10, "kills": 8, "deaths": 10, "dmg": 137, "vehicleKills": 0 },
+    { "nick": "Trixx", "res": 0, "nok": 15, "kills": 12, "deaths": 6, "dmg": 188, "vehicleKills": 0 },
+    { "nick": "r4mp", "res": 8, "nok": 15, "kills": 12, "deaths": 6, "dmg": 181, "vehicleKills": 0 }
+  ],
+  "r2": [],
+  "details": {
+    "r1": { "tickets": "0:62", "len": "42:25" },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": ["ZLOBA1917"],
+      "killer": ["bambozy"],
+      "damage": ["bambozy"],
+      "antiDeath": ["AkiN"]
+    },
+    "r2": { "medic": [], "killer": [], "damage": [], "antiDeath": [] }
+  }
+}

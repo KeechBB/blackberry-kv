@@ -497,11 +497,28 @@
       "opp": "IH",
       "map": "Hotdrop Skorpo",
       "size": "20v20",
-      "server": "ANY",
+      "server": "Iron Horde Clan Server",
       "rules": "HOTDROP",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · HOTDROP · Hotdrop Skorpo · 20v20 · 21:00 · сервер ANY · vs clan Junior 0–2 (30.09 Sanxian) · NO SCOUT"
+      "playersUrl": "data/players/19-ih.json",
+      "r1": "0:62",
+      "meeting": "открыта",
+      "note": "Junior · HOTDROP · HotDrop Skorpo · Iron Horde · R1 0:62 · 42:25 · БВС 0 / ЗЧВК 62 · встреча открыта, ждём R2 · 19 ников с табло, один сверху обрезан"
+    },
+    {
+      "id": "21-ra",
+      "day": 21,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "RA",
+      "map": "HotDrop Narva",
+      "size": "16v16",
+      "server": "BB",
+      "rules": "HOTDROP",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · HOTDROP · HotDrop Narva · 16v16 · 20:00 · сервер BB · заявка 19.10"
     },
     {
       "id": "22-rnl",
@@ -516,6 +533,20 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · SEC · SEC 26 Chora AAS v2 · 26v26 · 21:00 · сервер RNL EU · первая vs RNL · NO SCOUT · NO MORTARS"
+    },
+    {
+      "id": "23-20r",
+      "day": 23,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "20Royals",
+      "map": "SEC 26 GooseBay AAS v1",
+      "size": "26v26",
+      "server": "20R",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · SEC 26 GooseBay AAS v1 · 26v26 · 21:00 · сервер 20R · vs clan Main 2–0 (04.10 Chora) / 2–0 (26.09 Goose) · NO SCOUT"
     },
     {
       "id": "25-nklv-huh",
