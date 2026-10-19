@@ -1,4 +1,4 @@
-# 2026-10-28 — HQ vs BlackBerry Main
+# 2026-10-30 — HQ vs BlackBerry Main
 
 Ещё не сыграно. Заявка **20.10.2026** (**HQ vs BB**). Играет **Main**.
 
