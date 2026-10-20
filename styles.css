@@ -1280,6 +1280,44 @@ body.modal-open { overflow: hidden; }
     opacity: 1;
   }
 }
+.nick-patch-mark[data-patch-id^="creator-m4a1-"] {
+  width: 132px;
+}
+.nick-patch-mark[data-patch-id^="creator-m4a1-"] .nick-patch-mark-art {
+  transform: none;
+  filter:
+    drop-shadow(0 0 3px rgba(255, 238, 170, 0.92))
+    drop-shadow(0 0 9px rgba(235, 165, 32, 0.78));
+  animation: creator-m4a1-patch-glow 3.4s ease-in-out infinite;
+}
+.nick-patch-mark[data-patch-id^="creator-m4a1-"]:hover .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id^="creator-m4a1-"]:focus-visible .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id^="creator-m4a1-"].is-active .nick-patch-mark-art {
+  animation: none;
+  transform: scale(1.1);
+  filter:
+    drop-shadow(0 0 6px rgba(255, 249, 215, 1))
+    drop-shadow(0 0 14px rgba(245, 197, 72, 1))
+    drop-shadow(0 0 22px rgba(184, 112, 8, 0.78))
+    brightness(1.32)
+    saturate(1.12);
+  opacity: 1;
+}
+@keyframes creator-m4a1-patch-glow {
+  0%,
+  100% {
+    filter:
+      drop-shadow(0 0 3px rgba(255, 238, 170, 0.78))
+      drop-shadow(0 0 8px rgba(205, 132, 16, 0.62));
+    opacity: 0.9;
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 6px rgba(255, 250, 219, 1))
+      drop-shadow(0 0 14px rgba(245, 190, 56, 0.94));
+    opacity: 1;
+  }
+}
 .nick-patch-tip {
   position: fixed;
   z-index: 5000;
