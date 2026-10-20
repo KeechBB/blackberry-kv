@@ -1318,6 +1318,44 @@ body.modal-open { overflow: hidden; }
     opacity: 1;
   }
 }
+.nick-patch-mark[data-patch-id="public-100-vehicles-t62"] {
+  width: 132px;
+}
+.nick-patch-mark[data-patch-id="public-100-vehicles-t62"] .nick-patch-mark-art {
+  transform: none;
+  filter:
+    drop-shadow(0 0 3px rgba(244, 226, 158, 0.86))
+    drop-shadow(0 0 9px rgba(156, 132, 67, 0.76));
+  animation: public-vehicle-hunter-patch-glow 3.8s ease-in-out infinite;
+}
+.nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:hover .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:focus-visible .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="public-100-vehicles-t62"].is-active .nick-patch-mark-art {
+  animation: none;
+  transform: scale(1.1);
+  filter:
+    drop-shadow(0 0 6px rgba(255, 247, 211, 1))
+    drop-shadow(0 0 14px rgba(211, 181, 89, 0.98))
+    drop-shadow(0 0 22px rgba(93, 111, 60, 0.76))
+    brightness(1.28)
+    saturate(1.12);
+  opacity: 1;
+}
+@keyframes public-vehicle-hunter-patch-glow {
+  0%,
+  100% {
+    filter:
+      drop-shadow(0 0 3px rgba(237, 219, 153, 0.74))
+      drop-shadow(0 0 8px rgba(117, 105, 60, 0.62));
+    opacity: 0.9;
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 6px rgba(255, 244, 200, 0.98))
+      drop-shadow(0 0 14px rgba(184, 154, 73, 0.94));
+    opacity: 1;
+  }
+}
 .nick-patch-tip {
   position: fixed;
   z-index: 5000;
