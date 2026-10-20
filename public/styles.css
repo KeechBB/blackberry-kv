@@ -1319,8 +1319,8 @@ body.modal-open { overflow: hidden; }
   }
 }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"] {
-  width: 170px;
-  height: 48px;
+  width: 150px;
+  height: 36px;
   position: relative;
   isolation: isolate;
   overflow: visible;
@@ -1329,7 +1329,7 @@ body.modal-open { overflow: hidden; }
   content: "";
   position: absolute;
   z-index: 0;
-  inset: 8px 10px 6px;
+  inset: 5px 8px 4px;
   border-radius: 50%;
   background: linear-gradient(
     90deg,
@@ -1352,6 +1352,7 @@ body.modal-open { overflow: hidden; }
   filter: none;
   animation: none;
   image-rendering: auto;
+  background-size: 100% 100%;
 }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:hover .nick-patch-mark-art,
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:focus-visible .nick-patch-mark-art,
@@ -1366,7 +1367,7 @@ body.modal-open { overflow: hidden; }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"].is-active::before {
   animation: none;
   opacity: 0.92;
-  transform: scale(1.06);
+  transform: scale(1.04);
   filter: blur(5px);
   background: radial-gradient(
     ellipse,
