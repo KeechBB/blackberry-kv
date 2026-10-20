@@ -1319,7 +1319,8 @@ body.modal-open { overflow: hidden; }
   }
 }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"] {
-  width: 132px;
+  width: 170px;
+  height: 48px;
   position: relative;
   isolation: isolate;
   overflow: visible;
@@ -1328,73 +1329,59 @@ body.modal-open { overflow: hidden; }
   content: "";
   position: absolute;
   z-index: 0;
-  inset: 5px 8px 4px;
+  inset: 8px 10px 6px;
   border-radius: 50%;
-  background: radial-gradient(
-    ellipse,
-    rgba(75, 187, 255, 0.2) 0%,
-    rgba(151, 62, 255, 0.16) 48%,
-    transparent 74%
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(157, 62, 255, 0.16) 30%,
+    rgba(59, 190, 255, 0.2) 54%,
+    rgba(178, 68, 255, 0.14) 72%,
+    transparent 100%
   );
-  filter: blur(5px);
-  opacity: 0.58;
-  transform: scale(0.96);
+  background-size: 200% 100%;
+  filter: blur(4px);
+  opacity: 0.56;
+  animation: neon-harvest-aura-shimmer 7s ease-in-out infinite;
   transition: opacity 0.18s ease, transform 0.18s ease, filter 0.18s ease;
 }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"] .nick-patch-mark-art {
   position: relative;
   z-index: 1;
   transform: none;
-  filter:
-    drop-shadow(0 0 2px rgba(169, 83, 255, 0.55))
-    drop-shadow(0 0 5px rgba(67, 184, 255, 0.32))
-    brightness(1.04)
-    saturate(1.06);
-  animation: neon-harvest-patch-shimmer 5.6s ease-in-out infinite;
+  filter: none;
+  animation: none;
+  image-rendering: auto;
 }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:hover .nick-patch-mark-art,
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:focus-visible .nick-patch-mark-art,
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"].is-active .nick-patch-mark-art {
   animation: none;
-  transform: scale(1.08);
-  filter:
-    drop-shadow(0 0 4px rgba(171, 86, 255, 0.95))
-    drop-shadow(0 0 10px rgba(65, 199, 255, 0.84))
-    drop-shadow(0 0 16px rgba(210, 76, 255, 0.52))
-    brightness(1.2)
-    saturate(1.18);
+  transform: none;
+  filter: none;
   opacity: 1;
 }
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:hover::before,
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"]:focus-visible::before,
 .nick-patch-mark[data-patch-id="public-100-vehicles-t62"].is-active::before {
-  opacity: 0.96;
-  transform: scale(1.1);
-  filter: blur(6px);
+  animation: none;
+  opacity: 0.92;
+  transform: scale(1.06);
+  filter: blur(5px);
   background: radial-gradient(
     ellipse,
-    rgba(64, 199, 255, 0.4) 0%,
-    rgba(171, 60, 255, 0.32) 50%,
-    transparent 76%
+    rgba(64, 199, 255, 0.38) 0%,
+    rgba(171, 60, 255, 0.3) 52%,
+    transparent 78%
   );
 }
-@keyframes neon-harvest-patch-shimmer {
+@keyframes neon-harvest-aura-shimmer {
   0%,
   100% {
-    filter:
-      drop-shadow(0 0 2px rgba(169, 83, 255, 0.55))
-      drop-shadow(0 0 5px rgba(67, 184, 255, 0.32))
-      brightness(1.04)
-      saturate(1.06);
-    opacity: 1;
+    background-position: 0% 50%;
   }
   50% {
-    filter:
-      drop-shadow(0 0 2px rgba(104, 204, 255, 0.52))
-      drop-shadow(0 0 5px rgba(184, 72, 255, 0.38))
-      brightness(1.08)
-      saturate(1.1);
-    opacity: 1;
+    background-position: 100% 50%;
   }
 }
 .nick-patch-tip {
