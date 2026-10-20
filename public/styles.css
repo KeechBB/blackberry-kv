@@ -1280,19 +1280,19 @@ body.modal-open { overflow: hidden; }
     opacity: 1;
   }
 }
-.nick-patch-mark[data-patch-id^="creator-m4a1-"] {
+.nick-patch-mark[data-patch-id="bp-l15-keech"] {
   width: 132px;
 }
-.nick-patch-mark[data-patch-id^="creator-m4a1-"] .nick-patch-mark-art {
+.nick-patch-mark[data-patch-id="bp-l15-keech"] .nick-patch-mark-art {
   transform: none;
   filter:
     drop-shadow(0 0 3px rgba(255, 238, 170, 0.92))
     drop-shadow(0 0 9px rgba(235, 165, 32, 0.78));
-  animation: creator-m4a1-patch-glow 3.4s ease-in-out infinite;
+  animation: bp-l15-gold-standard-patch-glow 3.4s ease-in-out infinite;
 }
-.nick-patch-mark[data-patch-id^="creator-m4a1-"]:hover .nick-patch-mark-art,
-.nick-patch-mark[data-patch-id^="creator-m4a1-"]:focus-visible .nick-patch-mark-art,
-.nick-patch-mark[data-patch-id^="creator-m4a1-"].is-active .nick-patch-mark-art {
+.nick-patch-mark[data-patch-id="bp-l15-keech"]:hover .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="bp-l15-keech"]:focus-visible .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="bp-l15-keech"].is-active .nick-patch-mark-art {
   animation: none;
   transform: scale(1.1);
   filter:
@@ -1303,7 +1303,7 @@ body.modal-open { overflow: hidden; }
     saturate(1.12);
   opacity: 1;
 }
-@keyframes creator-m4a1-patch-glow {
+@keyframes bp-l15-gold-standard-patch-glow {
   0%,
   100% {
     filter:
