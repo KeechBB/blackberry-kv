@@ -145,6 +145,29 @@ body.layout-cw .wrap {
 html.embed .topnav {
   display: none;
 }
+/* Высоту задаёт родитель (KvAutoHeightFrame) — без внутреннего скролла.
+   Фон только у карточки родителя (как public-rating-page) — иначе двойной cover даёт швы. */
+html.embed,
+html.embed body {
+  height: auto;
+  min-height: 100%;
+  overflow: visible;
+  background: transparent !important;
+  background-image: none !important;
+  /* иначе браузер рисует непрозрачный тёмный canvas поверх фона родителя */
+  color-scheme: normal;
+}
+html.embed.hide-tm-tiers,
+html.embed.hide-tm-tiers body,
+html.embed.tfs-embed,
+html.embed.tfs-embed body {
+  background: transparent !important;
+  background-image: none !important;
+  color-scheme: normal;
+}
+html.embed .atmosphere {
+  display: none;
+}
 .btn-auth {
   display: inline-flex;
   align-items: center;
@@ -310,41 +333,50 @@ html.embed .topnav {
 .filters {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   gap: 12px;
   margin-bottom: 14px;
 }
 .filter {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 6px;
   min-width: 120px;
 }
 .filter span {
+  display: block;
+  min-height: 1.1em;
   color: var(--muted);
   font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-family: var(--font-display);
+  line-height: 1.1;
 }
 .filter select,
 .filter input {
+  box-sizing: border-box;
+  height: 42px;
   border: 1px solid rgba(167, 139, 250, 0.28);
   border-radius: 12px;
   background: #14111f;
   color: var(--ink);
-  padding: 10px 12px;
+  padding: 0 12px;
   font: inherit;
+  line-height: 42px;
   color-scheme: dark;
 }
 .filter select {
   appearance: none;
   background-image: linear-gradient(45deg, transparent 50%, #c4b5fd 50%),
     linear-gradient(135deg, #c4b5fd 50%, transparent 50%);
-  background-position: calc(100% - 18px) calc(50% - 3px), calc(100% - 12px) calc(50% - 3px);
+  background-position: calc(100% - 18px) 50%, calc(100% - 12px) 50%;
   background-size: 6px 6px, 6px 6px;
   background-repeat: no-repeat;
   background-color: #14111f;
   padding-right: 34px;
+  line-height: normal;
 }
 .filter select:hover,
 .filter select:focus,
@@ -589,8 +621,9 @@ td.tfs-lever {
 }
 
 .table-scroll {
-  overflow: auto;
-  max-height: min(70vh, 820px);
+  overflow-x: auto;
+  overflow-y: visible;
+  max-height: none;
   border: 1px solid var(--line);
   border-radius: 18px;
   background: var(--panel);
@@ -598,6 +631,48 @@ td.tfs-lever {
   box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.03) inset,
     0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.kv-pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  margin: 10px 0;
+}
+.kv-pager[hidden] {
+  display: none !important;
+}
+.kv-pager-meta {
+  font-size: 0.9rem;
+}
+.kv-pager-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.kv-page-btn {
+  appearance: none;
+  min-width: 2.1rem;
+  height: 2.1rem;
+  padding: 0 8px;
+  border-radius: 8px;
+  border: 1px solid rgba(167, 139, 250, 0.28);
+  background: rgba(12, 10, 22, 0.55);
+  color: rgba(239, 232, 255, 0.85);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.kv-page-btn:hover {
+  border-color: rgba(167, 139, 250, 0.55);
+  background: rgba(167, 139, 250, 0.14);
+}
+.kv-page-btn.is-active {
+  border-color: rgba(167, 139, 250, 0.7);
+  background: rgba(167, 139, 250, 0.32);
+  color: #fff;
 }
 
 .table-scroll thead th {
@@ -1038,6 +1113,209 @@ body.modal-open { overflow: hidden; }
 .rating-table .nick-plain {
   display: inline;
 }
+/* BP L10 · Aurum Clean — один стиль во всех рейтингах */
+.nick-profile-link.is-metallic-gold,
+.nick-plain.is-metallic-gold {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  border-bottom: 0;
+  background:
+    linear-gradient(
+      180deg,
+      #fff8d6 0%,
+      #f9d86e 32%,
+      #ad6b08 57%,
+      #f0b936 78%,
+      #fff0ae 100%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.22px rgba(117, 65, 4, 0.9);
+  font-family: Oxanium, Manrope, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.018em;
+  line-height: 1.05;
+  text-transform: none;
+  transition: filter 0.16s ease;
+}
+.nick-profile-link.is-metallic-gold::after,
+.nick-plain.is-metallic-gold::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: transparent;
+  background:
+    linear-gradient(
+      105deg,
+      transparent 22%,
+      rgba(255, 255, 238, 0.18) 39%,
+      rgba(255, 255, 250, 0.92) 48%,
+      rgba(255, 223, 126, 0.22) 57%,
+      transparent 72%
+    );
+  background-position: 145% 0;
+  background-size: 240% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  animation: aurum-clean-nick-shine 5.2s ease-in-out infinite;
+}
+.nick-profile-link.is-metallic-gold:hover,
+.nick-profile-link.is-metallic-gold:focus-visible {
+  color: transparent;
+  border-bottom: 0;
+  filter: brightness(1.15) saturate(1.08);
+}
+@keyframes aurum-clean-nick-shine {
+  0%,
+  58%,
+  100% {
+    background-position: 145% 0;
+  }
+  76% {
+    background-position: -45% 0;
+  }
+}
+/* Нашивки — как в рейтинге паблика (размер / glow / hover) */
+.nick-patch-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 118px;
+  height: 36px;
+  margin-left: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  vertical-align: middle;
+  cursor: help;
+  transition: transform 0.15s ease;
+}
+.nick-patch-mark-art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(-1);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter:
+    drop-shadow(0 0 3px rgba(255, 215, 88, 0.88))
+    drop-shadow(0 0 8px rgba(255, 139, 20, 0.48));
+  opacity: 0.92;
+  animation: bp-nick-patch-glow 3.6s ease-in-out infinite;
+  transition: filter 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+}
+.nick-patch-mark:hover,
+.nick-patch-mark:focus-visible,
+.nick-patch-mark.is-active {
+  outline: none;
+  transform: translateY(-2px);
+}
+.nick-patch-mark:hover .nick-patch-mark-art,
+.nick-patch-mark:focus-visible .nick-patch-mark-art,
+.nick-patch-mark.is-active .nick-patch-mark-art {
+  animation: none;
+  transform: scaleX(-1) scale(1.08);
+  filter:
+    drop-shadow(0 0 8px rgba(245, 215, 110, 0.95))
+    drop-shadow(0 0 16px rgba(167, 139, 250, 0.75))
+    brightness(1.28);
+  opacity: 1;
+}
+@keyframes bp-nick-patch-glow {
+  0%,
+  100% {
+    filter:
+      drop-shadow(0 0 3px rgba(255, 215, 88, 0.82))
+      drop-shadow(0 0 8px rgba(255, 139, 20, 0.42));
+    opacity: 0.88;
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 5px rgba(255, 237, 157, 1))
+      drop-shadow(0 0 13px rgba(255, 159, 28, 0.72));
+    opacity: 1;
+  }
+}
+.nick-patch-mark[data-patch-id="creator-orange-phantom"] {
+  width: 132px;
+}
+.nick-patch-mark[data-patch-id="creator-orange-phantom"] .nick-patch-mark-art {
+  transform: none;
+  filter:
+    drop-shadow(0 0 3px rgba(255, 255, 255, 0.82))
+    drop-shadow(0 0 8px rgba(255, 106, 0, 0.72));
+  animation: orange-phantom-patch-glow 3.2s ease-in-out infinite;
+}
+.nick-patch-mark[data-patch-id="creator-orange-phantom"]:hover .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="creator-orange-phantom"]:focus-visible .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="creator-orange-phantom"].is-active .nick-patch-mark-art {
+  transform: scale(1.1);
+  filter:
+    drop-shadow(0 0 7px rgba(255, 255, 255, 1))
+    drop-shadow(0 0 14px rgba(255, 112, 0, 1))
+    drop-shadow(0 0 22px rgba(255, 53, 0, 0.72))
+    brightness(1.3)
+    saturate(1.16);
+}
+@keyframes orange-phantom-patch-glow {
+  0%,
+  100% {
+    filter:
+      drop-shadow(0 0 3px rgba(255, 255, 255, 0.72))
+      drop-shadow(0 0 7px rgba(255, 106, 0, 0.58));
+    opacity: 0.9;
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 6px rgba(255, 255, 255, 0.96))
+      drop-shadow(0 0 13px rgba(255, 106, 0, 0.92));
+    opacity: 1;
+  }
+}
+.nick-patch-tip {
+  position: fixed;
+  z-index: 5000;
+  transform: translate(-50%, calc(-100% - 12px));
+  max-width: min(360px, calc(100vw - 24px));
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(245, 215, 110, 0.9);
+  background: rgba(22, 16, 8, 0.96);
+  color: #f8e7b0;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  pointer-events: none;
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.nick-patch-tip[hidden] {
+  display: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nick-profile-link.is-metallic-gold::after,
+  .nick-plain.is-metallic-gold::after {
+    animation: none;
+  }
+  .nick-patch-mark-art {
+    animation: none;
+  }
+  .nick-patch-mark:hover,
+  .nick-patch-mark:focus-visible,
+  .nick-patch-mark.is-active {
+    transform: none;
+  }
+}
 .mvp-row {
   display: flex;
   flex-wrap: nowrap;
@@ -1210,6 +1488,136 @@ body.modal-open { overflow: hidden; }
   background: rgba(120, 70, 200, 0.3);
   border-color: rgba(170, 120, 255, 0.55);
 }
+.rank-eclipse {
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  color: #e8f0ff;
+  background:
+    radial-gradient(
+      circle at 50% 42%,
+      #05060a 0%,
+      #070810 34%,
+      #0c1018 48%,
+      rgba(120, 150, 190, 0.22) 62%,
+      rgba(180, 210, 255, 0.28) 72%,
+      #0a0c12 88%,
+      #040508 100%
+    );
+  border-color: rgba(170, 200, 240, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.7) inset,
+    0 0 0 1px rgba(200, 220, 255, 0.12),
+    0 0 18px rgba(100, 140, 200, 0.28),
+    0 0 4px rgba(220, 235, 255, 0.2);
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.75),
+    0 0 10px rgba(160, 190, 255, 0.58);
+  animation: eclipse-corona 4.8s ease-in-out infinite;
+}
+.rank-eclipse::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 1px;
+  border-radius: 2px;
+  background:
+    repeating-linear-gradient(
+      103deg,
+      transparent 0 10px,
+      rgba(235, 246, 255, 0.06) 11px 12px,
+      rgba(255, 255, 255, 0.42) 13px,
+      transparent 15px 27px
+    ),
+    repeating-linear-gradient(
+      77deg,
+      transparent 0 14px,
+      rgba(174, 215, 255, 0.08) 15px 16px,
+      rgba(245, 251, 255, 0.34) 17px,
+      transparent 19px 33px
+    );
+  background-position: -70px 0, 70px 0;
+  mix-blend-mode: screen;
+  opacity: 0.72;
+  animation: eclipse-stripes 9s linear infinite;
+}
+.rank-eclipse::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: -6px;
+  z-index: 2;
+  border-radius: 7px;
+  background:
+    linear-gradient(112deg, transparent 0 28%, #f4fbff 29% 31%, transparent 32% 100%)
+      2px 0 / 58% 2px no-repeat,
+    linear-gradient(68deg, transparent 0 42%, #a8d8ff 43% 46%, transparent 47% 100%)
+      100% 100% / 62% 2px no-repeat,
+    linear-gradient(24deg, transparent 0 38%, #eaf7ff 39% 42%, transparent 43% 100%)
+      0 100% / 2px 72% no-repeat,
+    linear-gradient(156deg, transparent 0 35%, #8ac8ff 36% 40%, transparent 41% 100%)
+      100% 0 / 2px 68% no-repeat;
+  filter:
+    drop-shadow(0 0 2px #fff)
+    drop-shadow(0 0 5px rgba(110, 190, 255, 0.95))
+    drop-shadow(0 0 10px rgba(90, 130, 255, 0.75));
+  opacity: 0;
+  animation: eclipse-lightning 5.6s steps(1, end) infinite;
+}
+@keyframes eclipse-stripes {
+  from {
+    background-position: -70px 0, 70px 0;
+  }
+  to {
+    background-position: 90px 0, -90px 0;
+  }
+}
+@keyframes eclipse-corona {
+  0%,
+  72%,
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(0, 0, 0, 0.7) inset,
+      0 0 0 1px rgba(200, 220, 255, 0.12),
+      0 0 18px rgba(100, 140, 200, 0.28),
+      0 0 4px rgba(220, 235, 255, 0.2);
+  }
+  76%,
+  82% {
+    box-shadow:
+      0 0 0 1px rgba(210, 232, 255, 0.28) inset,
+      0 0 5px rgba(245, 252, 255, 0.95),
+      0 0 18px rgba(106, 183, 255, 0.88),
+      0 0 31px rgba(95, 105, 255, 0.62);
+  }
+}
+@keyframes eclipse-lightning {
+  0%,
+  69%,
+  74%,
+  78%,
+  83%,
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-1px, 0);
+  }
+  72% {
+    opacity: 0.35;
+    transform: translate(1px, -1px) scaleX(1.02);
+  }
+  76% {
+    opacity: 0.95;
+    transform: translate(0, 1px) scaleY(1.04);
+  }
+  80% {
+    opacity: 0.55;
+    transform: translate(-1px, 0);
+  }
+}
 .rank-radiant {
   color: #fff4a8;
   background: linear-gradient(135deg, rgba(255, 200, 40, 0.35), rgba(255, 100, 80, 0.25));
@@ -1217,17 +1625,104 @@ body.modal-open { overflow: hidden; }
   text-shadow: 0 0 8px rgba(255, 210, 60, 0.45);
 }
 .rank-predator {
-  color: #ffd4a8;
-  background: linear-gradient(135deg, rgba(180, 40, 20, 0.45), rgba(80, 10, 10, 0.4));
-  border-color: rgba(255, 120, 60, 0.7);
-  text-shadow: 0 0 10px rgba(255, 80, 40, 0.5);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: #fff2c2;
+  background:
+    radial-gradient(circle at 50% 130%, rgba(255, 190, 42, 0.9), transparent 52%),
+    linear-gradient(135deg, #260208 0%, #921e10 48%, #28030a 100%);
+  border-color: rgba(255, 190, 62, 0.95);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 238, 174, 0.14),
+    inset 0 -8px 18px rgba(80, 0, 0, 0.45),
+    0 0 7px rgba(255, 75, 28, 0.72),
+    0 0 18px rgba(255, 153, 35, 0.42);
+  text-shadow:
+    0 0 4px rgba(255, 255, 255, 0.7),
+    0 0 9px rgba(255, 184, 58, 0.95),
+    0 0 16px rgba(255, 54, 20, 0.8);
+  animation: predator-aura 2.4s ease-in-out infinite;
+}
+.rank-predator::before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: -70% -35%;
+  z-index: -1;
+  background: linear-gradient(
+    108deg,
+    transparent 38%,
+    rgba(255, 246, 194, 0.88) 49%,
+    rgba(255, 171, 48, 0.45) 53%,
+    transparent 64%
+  );
+  transform: translateX(-65%) rotate(7deg);
+  animation: predator-sweep 3.2s ease-in-out infinite;
+}
+.rank-predator::after {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  inset: 2px;
+  z-index: -1;
+  border-radius: 2px;
+  border: 1px solid rgba(255, 224, 126, 0.22);
 }
 .rank-predator small {
   display: inline-block;
   margin-top: 1px;
-  font-size: 0.72em;
-  letter-spacing: 0.06em;
-  opacity: 0.9;
+  color: #ffe88f;
+  font-size: 0.76em;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  opacity: 1;
+  text-shadow:
+    0 0 5px rgba(255, 237, 161, 0.95),
+    0 0 10px rgba(255, 96, 24, 0.9);
+}
+@keyframes predator-aura {
+  0%,
+  100% {
+    filter: saturate(1) brightness(1);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 238, 174, 0.14),
+      inset 0 -8px 18px rgba(80, 0, 0, 0.45),
+      0 0 7px rgba(255, 75, 28, 0.72),
+      0 0 18px rgba(255, 153, 35, 0.42);
+  }
+  50% {
+    filter: saturate(1.18) brightness(1.12);
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 245, 196, 0.25),
+      inset 0 -8px 20px rgba(110, 4, 0, 0.52),
+      0 0 10px rgba(255, 82, 24, 0.95),
+      0 0 28px rgba(255, 173, 45, 0.68);
+  }
+}
+@keyframes predator-sweep {
+  0%,
+  28% {
+    transform: translateX(-68%) rotate(7deg);
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  64%,
+  100% {
+    transform: translateX(72%) rotate(7deg);
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rank-eclipse,
+  .rank-eclipse::before,
+  .rank-eclipse::after,
+  .rank-predator,
+  .rank-predator::before {
+    animation: none;
+  }
 }
 
 /* PWR rank ladder — rating header scale */
@@ -1387,40 +1882,85 @@ body.modal-open { overflow: hidden; }
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
 .rating-table th.col-mvp-war,
-.rating-table th.col-mvp-anti {
+.rating-table th.col-mvp-anti,
+.rating-table th.col-mvp-armor {
   white-space: normal;
   line-height: 1.2;
-  min-width: 5.2rem;
-  max-width: 7rem;
+  min-width: 4.4rem;
+  max-width: 5.6rem;
+  width: 5rem;
   text-align: center;
   vertical-align: middle;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 10px 6px;
+  font-size: 0.7rem;
 }
 .rating-table th[data-rsort="clan"],
 .rating-table th[data-rsort="squad"],
-.rating-table td:nth-child(3),
-.rating-table td:nth-child(4) {
+.rating-table td:nth-child(3):not(.col-nick),
+.rating-table td:nth-child(4):not(.col-nick) {
   text-align: center;
+}
+/* Ник слева + ширина под нашивку (как в рейтинге паблика) */
+.rating-table th.col-nick,
+.rating-table td.col-nick {
+  text-align: left !important;
+  vertical-align: middle;
+  min-width: 13.5rem;
+  width: 14.5rem;
+  max-width: 16rem;
+  white-space: nowrap;
+  overflow: visible;
+}
+.rating-table td.col-nick .nick-with-patch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+  max-width: 100%;
+}
+.rating-table td.col-nick .nick-profile-link,
+.rating-table td.col-nick .nick-plain {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rating-table td.col-nick .nick-patch-mark {
+  flex: 0 0 auto;
+  margin-left: 0;
 }
 .rating-table th.col-mvp-anti,
 .rating-table td.col-mvp-anti {
-  min-width: 4.8rem;
-  padding-left: 8px;
-  padding-right: 10px;
+  min-width: 4.4rem;
+  max-width: 5.6rem;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
 .rating-table th.col-mvp-war,
-.rating-table th.col-mvp-anti {
+.rating-table th.col-mvp-anti,
+.rating-table th.col-mvp-armor {
   font-weight: 700;
 }
 .rating-table td.col-mvp-medic,
 .rating-table td.col-mvp-killer,
 .rating-table td.col-mvp-war,
-.rating-table td.col-mvp-anti {
+.rating-table td.col-mvp-anti,
+.rating-table td.col-mvp-armor {
   font-weight: 700;
   font-variant-numeric: tabular-nums;
+  min-width: 4.4rem;
+  max-width: 5.6rem;
+  width: 5rem;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.nick-with-patch {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
 }
 .rating-table td.tier {
   font-weight: 600;

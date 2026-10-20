@@ -27,7 +27,60 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261018-rnl-chora";
+    new URLSearchParams(location.search).get("v") || "20261020-nick-style-l10";
+
+  /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
+  const PAGE_CW_MATCHES = 15;
+  const PAGE_CW_RATING = 50;
+  const PAGE_TM_MATCHES = 20;
+  const PAGE_TM_RATING = 50;
+  let pageCwMatches = 1;
+  let pageCwRating = 1;
+  let pageTmMatches = 1;
+  let pageTmRating = 1;
+
+  function pageSlice(list, page, size) {
+    const total = list.length;
+    const pageCount = Math.max(1, Math.ceil(total / size) || 1);
+    const safe = Math.min(Math.max(1, page), pageCount);
+    const start = (safe - 1) * size;
+    return {
+      page: safe,
+      pageCount,
+      total,
+      rows: list.slice(start, start + size),
+    };
+  }
+
+  function fillPager(hostId, page, pageCount, total, size, onPick) {
+    const host = document.getElementById(hostId);
+    if (!host) return;
+    if (!total || pageCount <= 1) {
+      host.innerHTML = "";
+      host.hidden = true;
+      return;
+    }
+    host.hidden = false;
+    const from = (page - 1) * size + 1;
+    const to = Math.min(page * size, total);
+    const btns = Array.from({ length: pageCount }, (_, i) => i + 1)
+      .map(
+        (n) =>
+          `<button type="button" class="kv-page-btn${n === page ? " is-active" : ""}" data-page="${n}">${n}</button>`
+      )
+      .join("");
+    host.innerHTML = `<span class="muted kv-pager-meta">${from}–${to} из ${total}</span><div class="kv-pager-btns">${btns}</div>`;
+    host.querySelectorAll("[data-page]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        onPick(Number(btn.dataset.page));
+        try {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        } catch (_) {
+          /* ignore */
+        }
+      });
+    });
+  }
 
   /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
   function scoreOrFloor(v) {
@@ -100,6 +153,71 @@
         `${location.pathname}${location.search}#/tm/tiers`
       );
     }
+  }
+
+  /** Родителю платформы: высота контента → один скролл страницы, без скролла iframe. */
+  let _embedHeightSent = 0;
+  function embedContentHeight() {
+    const y = window.scrollY || window.pageYOffset || 0;
+    let bottom = 0;
+    for (const id of ["view-tm", "view-cw", "view-home"]) {
+      const el = document.getElementById(id);
+      if (!el || el.hidden) continue;
+      if (getComputedStyle(el).display === "none") continue;
+      const r = el.getBoundingClientRect();
+      bottom = Math.max(bottom, r.bottom + y);
+    }
+    const doc = document.documentElement;
+    const body = document.body;
+    return Math.ceil(
+      Math.max(
+        bottom + 24,
+        doc?.scrollHeight || 0,
+        doc?.offsetHeight || 0,
+        body?.scrollHeight || 0,
+        body?.offsetHeight || 0,
+        480
+      )
+    );
+  }
+  function notifyEmbedHeight() {
+    if (!isEmbed || window.self === window.top) return;
+    try {
+      const h = embedContentHeight();
+      if (Math.abs(h - _embedHeightSent) < 2) return;
+      _embedHeightSent = h;
+      window.parent.postMessage({ type: "bb-kv-embed-height", height: h }, "*");
+    } catch (_) {
+      /* ignore */
+    }
+  }
+  if (isEmbed) {
+    const scheduleNotify = () => {
+      try {
+        requestAnimationFrame(() => notifyEmbedHeight());
+      } catch (_) {
+        notifyEmbedHeight();
+      }
+    };
+    window.addEventListener("load", scheduleNotify);
+    window.addEventListener("resize", scheduleNotify);
+    window.addEventListener("hashchange", scheduleNotify);
+    if (typeof MutationObserver !== "undefined") {
+      const mo = new MutationObserver(scheduleNotify);
+      const startMo = () => {
+        if (document.body) {
+          mo.observe(document.body, {
+            childList: true,
+            subtree: true,
+            attributes: true,
+          });
+        }
+      };
+      if (document.body) startMo();
+      else document.addEventListener("DOMContentLoaded", startMo);
+    }
+    setInterval(notifyEmbedHeight, 800);
+    scheduleNotify();
   }
 
   function dataUrl(url) {
@@ -604,15 +722,168 @@
     return ro.regNo != null && Number.isFinite(Number(ro.regNo));
   }
 
+  let nickPatchesByKey = new Map();
+  function loadNickPatches() {
+    return fetch(dataUrl("data/nick-patches.json"))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        const map = new Map();
+        const rows = (data && data.rows) || [];
+        rows.forEach((row) => {
+          if (!row || (!row.url && !row.styleId)) return;
+          const entry = {
+            url: String(row.url || ""),
+            patchId: String(row.patchId || ""),
+            styleId: String(row.styleId || ""),
+            tip:
+              String(row.tip || "") ||
+              "Награда за достижение 15го уровня Battle Pass Тестовый сезон",
+          };
+          if (row.nick) {
+            map.set(nickKey(row.nick), entry);
+            map.set(String(row.nick).trim().toLowerCase(), entry);
+          }
+          if (row.steamId) map.set(String(row.steamId), entry);
+        });
+        nickPatchesByKey = map;
+        return map;
+      })
+      .catch(() => nickPatchesByKey);
+  }
+
+  function resolvePatchUrl(url) {
+    const u = String(url || "").trim();
+    if (!u) return "";
+    if (/^https?:\/\//i.test(u)) return u;
+    // iframe /kv-static → корень сайта (public/bp-assets)
+    try {
+      return new URL(u, "https://bb-squad.ru").href;
+    } catch {
+      return u;
+    }
+  }
+
+  function nickPatchHtml(nick) {
+    const p = nickPatchesByKey.get(nickKey(nick));
+    if (!p || !p.url) return "";
+    const tip = escapeHtml(p.tip || "");
+    const url = escapeHtml(resolvePatchUrl(p.url));
+    const patchId = escapeHtml(String(p.patchId || ""));
+    return `<button type="button" class="nick-patch-mark" data-patch-id="${patchId}" aria-label="${tip}"><span class="nick-patch-mark-art" style="background-image:url('${url}')" aria-hidden="true"></span></button>`;
+  }
+
   function nickLinkHtml(nick) {
     const label = displayNick(nick) || nick || "—";
+    const patch = nickPatchHtml(nick);
+    const customization = nickPatchesByKey.get(nickKey(nick));
+    const hasAurumClean =
+      String(customization?.styleId || "") === "bp-l10-aurum-clean";
+    const styleClass = hasAurumClean ? " is-metallic-gold" : "";
+    const styleData = hasAurumClean
+      ? ` data-text="${escapeHtml(label)}" data-nick-style="bp-l10-aurum-clean"`
+      : "";
+    let core;
     if (!isRegisteredNick(nick)) {
-      return `<span class="nick-plain" title="Нет аккаунта на сайте">${escapeHtml(label)}</span>`;
+      core = `<span class="nick-plain${styleClass}" title="Нет аккаунта на сайте"${styleData}>${escapeHtml(label)}</span>`;
+    } else {
+      const href = profileHref(nick);
+      core = href
+        ? `<a class="nick-profile-link${styleClass}" href="${escapeHtml(href)}" target="_top" rel="noopener"${styleData}>${escapeHtml(label)}</a>`
+        : escapeHtml(label);
     }
-    const href = profileHref(nick);
-    if (!href) return escapeHtml(label);
-    return `<a class="nick-profile-link" href="${escapeHtml(href)}" target="_top" rel="noopener">${escapeHtml(label)}</a>`;
+    return `<span class="nick-with-patch">${core}${patch}</span>`;
   }
+
+  /** Ховер-тултип нашивки — как в рейтинге паблика */
+  function ensureNickPatchTip() {
+    let el = document.getElementById("nick-patch-tip");
+    if (!el) {
+      el = document.createElement("div");
+      el.id = "nick-patch-tip";
+      el.className = "nick-patch-tip";
+      el.hidden = true;
+      el.setAttribute("role", "tooltip");
+      document.body.appendChild(el);
+    }
+    return el;
+  }
+
+  function showNickPatchTip(btn) {
+    if (!btn) return;
+    const tip = ensureNickPatchTip();
+    tip.textContent = btn.getAttribute("aria-label") || "";
+    const r = btn.getBoundingClientRect();
+    tip.style.left = `${r.left + r.width / 2}px`;
+    tip.style.top = `${r.top}px`;
+    tip.hidden = false;
+    btn.classList.add("is-active");
+  }
+
+  function hideNickPatchTip(btn) {
+    const tip = document.getElementById("nick-patch-tip");
+    if (tip) tip.hidden = true;
+    if (btn) btn.classList.remove("is-active");
+    else {
+      document
+        .querySelectorAll(".nick-patch-mark.is-active")
+        .forEach((b) => b.classList.remove("is-active"));
+    }
+  }
+
+  document.addEventListener(
+    "pointerover",
+    (e) => {
+      const btn = e.target && e.target.closest && e.target.closest(".nick-patch-mark");
+      if (!btn) return;
+      const from =
+        e.relatedTarget &&
+        e.relatedTarget.closest &&
+        e.relatedTarget.closest(".nick-patch-mark");
+      if (from === btn) return;
+      showNickPatchTip(btn);
+    },
+    true
+  );
+  document.addEventListener(
+    "pointerout",
+    (e) => {
+      const btn = e.target && e.target.closest && e.target.closest(".nick-patch-mark");
+      if (!btn) return;
+      const to =
+        e.relatedTarget &&
+        e.relatedTarget.closest &&
+        e.relatedTarget.closest(".nick-patch-mark");
+      if (to === btn) return;
+      hideNickPatchTip(btn);
+    },
+    true
+  );
+  document.addEventListener(
+    "focusin",
+    (e) => {
+      const btn = e.target && e.target.closest && e.target.closest(".nick-patch-mark");
+      if (btn) showNickPatchTip(btn);
+    },
+    true
+  );
+  document.addEventListener(
+    "focusout",
+    (e) => {
+      const btn = e.target && e.target.closest && e.target.closest(".nick-patch-mark");
+      if (btn) hideNickPatchTip(btn);
+    },
+    true
+  );
+  document.addEventListener(
+    "click",
+    (e) => {
+      const btn = e.target && e.target.closest && e.target.closest(".nick-patch-mark");
+      if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+    },
+    true
+  );
 
   function inRating(nick) {
     return Boolean(nick) && !RATING_EXCLUDE.has(nickKey(nick));
@@ -880,7 +1151,10 @@
       loadSelectedMonth();
       paintMonthChips();
     });
-    document.getElementById("filter-clan").addEventListener("input", paintMatchesTable);
+    document.getElementById("filter-clan").addEventListener("input", () => {
+      pageCwMatches = 1;
+      paintMatchesTable();
+    });
 
     const scopeEl = document.getElementById("rating-scope");
     const yearWrap = document.getElementById("rating-year-wrap");
@@ -900,7 +1174,10 @@
       loadRating();
     });
     document.getElementById("rating-month").addEventListener("change", loadRating);
-    document.getElementById("rating-nick").addEventListener("input", paintRatingTable);
+    document.getElementById("rating-nick").addEventListener("input", () => {
+      pageCwRating = 1;
+      paintRatingTable();
+    });
 
     if (years.length) {
       yearSel.value = String(years[0]);
@@ -939,7 +1216,12 @@
       loadSelectedTrainingMonth();
     });
     const qEl = document.getElementById("train-filter-q");
-    if (qEl) qEl.addEventListener("input", paintTrainingTable);
+    if (qEl) {
+      qEl.addEventListener("input", () => {
+        pageTmMatches = 1;
+        paintTrainingTable();
+      });
+    }
     document.querySelectorAll("#train-matches-table th.sortable").forEach((th) => {
       th.addEventListener("click", () => {
         const key = th.dataset.tsort;
@@ -988,6 +1270,7 @@
     const monthSel = document.getElementById("train-filter-month");
     const note = document.getElementById("train-note");
     const title = document.getElementById("train-title");
+    pageTmMatches = 1;
     if (!monthSel || !trainingCatalog.length) {
       if (note) note.textContent = "Нет каталога тренировок";
       trainMatches = [];
@@ -1128,9 +1411,33 @@
     paintTrainStats(list);
     if (!list.length) {
       tbody.innerHTML = `<tr><td colspan="10" class="empty-row">Нет тренировок по фильтру</td></tr>`;
+      fillPager("tm-matches-pager-top", 1, 1, 0, PAGE_TM_MATCHES, () => {});
+      fillPager("tm-matches-pager-bot", 1, 1, 0, PAGE_TM_MATCHES, () => {});
       return;
     }
-    tbody.innerHTML = list
+    const slice = pageSlice(list, pageTmMatches, PAGE_TM_MATCHES);
+    pageTmMatches = slice.page;
+    const paintPage = (p) => {
+      pageTmMatches = p;
+      paintTrainingTable();
+    };
+    fillPager(
+      "tm-matches-pager-top",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_TM_MATCHES,
+      paintPage
+    );
+    fillPager(
+      "tm-matches-pager-bot",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_TM_MATCHES,
+      paintPage
+    );
+    tbody.innerHTML = slice.rows
       .map((m) => {
         const fa = factionShort(m.factionA);
         const fb = factionShort(m.factionB);
@@ -1160,6 +1467,11 @@
         }
       });
     });
+    try {
+      requestAnimationFrame(() => notifyEmbedHeight());
+    } catch (_) {
+      notifyEmbedHeight();
+    }
   }
 
   function selectedRatingMetas() {
@@ -1196,6 +1508,7 @@
     const id = document.getElementById("filter-month").value;
     const meta = catalog.find((m) => m.id === id);
     if (!meta) return;
+    pageCwMatches = 1;
     currentMonthMeta = meta;
     monthKey = pad(meta.month);
     fetch(dataUrl(meta.url))
@@ -1386,9 +1699,33 @@
     const tbody = document.getElementById("rows");
     if (!list.length) {
       tbody.innerHTML = `<tr><td colspan="12" class="empty-row">Нет матчей по фильтру</td></tr>`;
+      fillPager("cw-matches-pager-top", 1, 1, 0, PAGE_CW_MATCHES, () => {});
+      fillPager("cw-matches-pager-bot", 1, 1, 0, PAGE_CW_MATCHES, () => {});
       return;
     }
-    tbody.innerHTML = list
+    const slice = pageSlice(list, pageCwMatches, PAGE_CW_MATCHES);
+    pageCwMatches = slice.page;
+    const paintPage = (p) => {
+      pageCwMatches = p;
+      paintMatchesTable();
+    };
+    fillPager(
+      "cw-matches-pager-top",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_CW_MATCHES,
+      paintPage
+    );
+    fillPager(
+      "cw-matches-pager-bot",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_CW_MATCHES,
+      paintPage
+    );
+    tbody.innerHTML = slice.rows
       .map((m) => {
         const st = m.status || "upcoming";
         const clanName = hostClanName(m);
@@ -1464,6 +1801,7 @@
 
   function loadRating() {
     const note = document.getElementById("rating-note");
+    pageCwRating = 1;
     note.textContent = "Считаем рейтинг…";
     const metas = selectedRatingMetas();
     if (!metas.length) {
@@ -1771,6 +2109,8 @@
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
       tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
+      fillPager("cw-rating-pager-top", 1, 1, 0, PAGE_CW_RATING, () => {});
+      fillPager("cw-rating-pager-bot", 1, 1, 0, PAGE_CW_RATING, () => {});
       refreshDualScrolls();
       return;
     }
@@ -1803,7 +2143,29 @@
     const maxKiller = maxOf((r) => r.mvpKiller);
     const maxArmor = maxOf((r) => r.mvpArmor);
     const maxVeh = maxOf((r) => r.vehicleKills);
-    tbody.innerHTML = rows
+    const slice = pageSlice(rows, pageCwRating, PAGE_CW_RATING);
+    pageCwRating = slice.page;
+    const paintPage = (p) => {
+      pageCwRating = p;
+      paintRatingTable();
+    };
+    fillPager(
+      "cw-rating-pager-top",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_CW_RATING,
+      paintPage
+    );
+    fillPager(
+      "cw-rating-pager-bot",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_CW_RATING,
+      paintPage
+    );
+    tbody.innerHTML = slice.rows
       .map((p) => {
         const tu = p.tu;
         const tuCls =
@@ -1900,7 +2262,12 @@
     });
     monthSel.addEventListener("change", loadTrainingRating);
     const nickEl = document.getElementById("train-rating-nick");
-    if (nickEl) nickEl.addEventListener("input", paintTrainingRatingTable);
+    if (nickEl) {
+      nickEl.addEventListener("input", () => {
+        pageTmRating = 1;
+        paintTrainingRatingTable();
+      });
+    }
     document.querySelectorAll("#train-rating-table th.sortable").forEach((th) => {
       th.addEventListener("click", () => {
         const key = th.dataset.trsort;
@@ -1938,6 +2305,7 @@
   function loadTrainingRating() {
     const note = document.getElementById("train-rating-note");
     if (!note) return;
+    pageTmRating = 1;
     note.textContent = "Считаем рейтинг тренировок…";
     const metas = selectedTrainingRatingMetas();
     if (!metas.length) {
@@ -2194,17 +2562,41 @@
     paintTrainingRatingSortMarks();
     if (!rows.length) {
       tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
+      fillPager("tm-rating-pager-top", 1, 1, 0, PAGE_TM_RATING, () => {});
+      fillPager("tm-rating-pager-bot", 1, 1, 0, PAGE_TM_RATING, () => {});
       refreshDualScrolls();
       return;
     }
-    tbody.innerHTML = rows
+    const slice = pageSlice(rows, pageTmRating, PAGE_TM_RATING);
+    pageTmRating = slice.page;
+    const paintPage = (p) => {
+      pageTmRating = p;
+      paintTrainingRatingTable();
+    };
+    fillPager(
+      "tm-rating-pager-top",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_TM_RATING,
+      paintPage
+    );
+    fillPager(
+      "tm-rating-pager-bot",
+      slice.page,
+      slice.pageCount,
+      slice.total,
+      PAGE_TM_RATING,
+      paintPage
+    );
+    tbody.innerHTML = slice.rows
       .map(
         (p) => `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
         <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
-        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
+        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
@@ -4482,7 +4874,7 @@
     const bbTotalBtn = tabById("bbTotal");
     if (totalBtn) totalBtn.textContent = "Итого";
     if (bbTotalBtn) {
-      bbTotalBtn.textContent = "BB · Итого";
+      bbTotalBtn.textContent = "BB · Итого"; // reset; labelTabs sets host tag
       bbTotalBtn.hidden = true;
     }
     if (r1Btn) r1Btn.textContent = "Раунд 1";
@@ -5184,6 +5576,7 @@
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null),
     loadRoster(),
+    loadNickPatches(),
   ])
     .then(([data, tiers, trainIdx, factions]) => {
       catalog = data.months || [];

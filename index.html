@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261005-cw-cal" />
+  <link rel="stylesheet" href="styles.css?v=20261020-nick-style-l10" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -81,6 +81,7 @@
             <h2>Матчи</h2>
             <p class="board-sub">Тикеты — наши : их · клик по строке — стата игроков</p>
           </div>
+          <div class="kv-pager" id="cw-matches-pager-top" hidden></div>
           <div class="table-scroll">
             <table class="matches-table">
               <thead>
@@ -102,6 +103,7 @@
               <tbody id="rows"></tbody>
             </table>
           </div>
+          <div class="kv-pager" id="cw-matches-pager-bot" hidden></div>
           <p class="note" id="note"></p>
         </section>
       </div>
@@ -141,6 +143,7 @@
             <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
             <p><strong>FIT</strong> — насколько подходишь тиру по КВ (окно «Тиры» / вкладка Тиры Fit).</p>
           </aside>
+          <div class="kv-pager" id="cw-rating-pager-top" hidden></div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
               <div class="table-scroll-spacer"></div>
@@ -171,6 +174,7 @@
             </table>
             </div>
           </div>
+          <div class="kv-pager" id="cw-rating-pager-bot" hidden></div>
           <p class="note" id="rating-note"></p>
         </section>
       </div>
@@ -345,6 +349,7 @@
             <h2>Матчи</h2>
             <p class="board-sub">Обе стороны BB · фракции + тикеты · клик — стата игроков</p>
           </div>
+          <div class="kv-pager" id="tm-matches-pager-top" hidden></div>
           <div class="table-scroll">
             <table class="matches-table" id="train-matches-table">
               <thead>
@@ -364,6 +369,7 @@
               <tbody id="train-rows"></tbody>
             </table>
           </div>
+          <div class="kv-pager" id="tm-matches-pager-bot" hidden></div>
           <p class="note" id="train-note"></p>
         </section>
       </div>
@@ -402,6 +408,7 @@
             <p><strong>PWR</strong> — скрытый рейтинг силы со всех матчей на сайте (вес «кто сильнее» в RP).</p>
             <p><strong>FIT</strong> — насколько подходишь тиру по КВ (вкладка Тиры Fit / окно на главной).</p>
           </aside>
+          <div class="kv-pager" id="tm-rating-pager-top" hidden></div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">
               <div class="table-scroll-spacer"></div>
@@ -433,6 +440,7 @@
             </table>
             </div>
           </div>
+          <div class="kv-pager" id="tm-rating-pager-bot" hidden></div>
           <p class="note" id="train-rating-note"></p>
         </section>
       </div>
@@ -766,7 +774,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261017-cw-veh"></script>
+  <script src="app.js?v=20261020-nick-style-l10"></script>
   <script src="tfs-fit.js?v=20261007-fit-roles"></script>
 </body>
 </html>
