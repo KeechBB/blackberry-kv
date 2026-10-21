@@ -465,11 +465,15 @@
       "opp": "RPSS",
       "map": "FCL Narva Small v1",
       "size": "12v12",
-      "server": "после матчмейкинга",
+      "server": "FCL ARENA #3 (TR3)",
       "rules": "SEC",
       "stack": "—",
-      "status": "upcoming",
-      "note": "чужой КВ · NKLV vs RPSS · FCL Narva Small v1 · 12v12 · SEC · 17:00 МСК · NO SCOUT · NO MEETINGS"
+      "status": "lose",
+      "note": "чужой КВ · NKLV vs RPSS · FCL Narva Small v1 · 12v12 · SEC · сумма 31:84 (0:84 · 31:0) · FCL ARENA #3 (TR3) · авто TR · RPSS 2–0",
+      "playersUrl": "data/players/17-nklv-rpss.json",
+      "r1": "0:84",
+      "r2": "31:0",
+      "meeting": "0–2"
     },
     {
       "id": "18-sph",
@@ -515,11 +519,15 @@
       "opp": "RA",
       "map": "HotDrop Narva",
       "size": "16v16",
-      "server": "BB",
+      "server": "FCL ARENA #2 (TR2)",
       "rules": "HOTDROP",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · HOTDROP · HotDrop Narva · 16v16 · 20:00 · сервер BB · заявка 19.10"
+      "status": "win",
+      "note": "Junior · HOTDROP · HotDrop Narva · FCL ARENA #2 (TR2) · сумма 232:0 (123:0 · 109:0) · авто обе команды",
+      "meeting": "2–0",
+      "playersUrl": "data/players/21-ra.json",
+      "r1": "123:0",
+      "r2": "109:0"
     },
     {
       "id": "22-rnl",
@@ -532,8 +540,8 @@
       "server": "RNL EU",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · SEC 26 Chora AAS v2 · 26v26 · 21:00 · сервер RNL EU · первая vs RNL · NO SCOUT · NO MORTARS"
+      "status": "cancel",
+      "note": "отмена · Main · SEC · SEC 26 Chora AAS v2 · 26v26 · 21:00 · сервер RNL EU · NO SCOUT · NO MORTARS"
     },
     {
       "id": "23-20r",
