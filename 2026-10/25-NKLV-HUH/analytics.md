@@ -1,10 +1,10 @@
-# Заметки — 25.10 NKLV vs ХУХ, FCL Narva Small v1 · 12v12 (ещё не сыграно)
+# Заметки — 25.10 NKLV vs ХУХ, FCL BlackCoast Small v1 · 12v12 (ещё не сыграно)
 
 Чужой КВ в календаре BB-платформы. Состав BB не участвует.
 
 ## Факты
 
-- **16:00 МСК** (13:00 UTC), формат **12v12**, карта **FCL Narva Small v1**, правила **FCL**.
+- **16:00 МСК** (13:00 UTC), формат **12v12**, карта **FCL BlackCoast Small v1** (была Narva Small; в посте тег XYX), правила **FCL**.
 - В архиве КВ встреч NKLV–ХУХ нет — **NO SCOUT** / **NO MEETINGS**.
 - Same day: Junior vs ALPHA 20:00 · Main vs .solid 21:00.
 - Тикеты в JSON: сторона A (**NKLV**) : сторона B (**ХУХ**).

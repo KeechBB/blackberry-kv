@@ -37,10 +37,11 @@
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, **2–0** · сумма **279:0** (R1 83:0 · R2 196:0) · SEC 26 Mutaha PAAS v1 · FCL ARENA #2 (TR2) · авто обе команды, [analytics.md](18-SPH/analytics.md) |
 | 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, **0–2** · сумма **0:253** (0:62 · 0:191) · HotDrop Skorpo · Iron Horde, [analytics.md](19-IH/analytics.md) |
 | 21 | [21-RA](21-RA/match.md) | RA | **Junior**, HotDrop Narva, **16v16**, **20:00** МСК (17:00 UTC), сервер **BB**, HOTDROP, [analytics.md](21-RA/analytics.md) |
+| 22 | [22-NKLV](22-NKLV/match.md) | NKLV vs NKLV | **чужая тренировка**, FCL BlackCoast Small v1, **8v8**, **18:00** МСК (15:00 UTC), FCL, [analytics.md](22-NKLV/analytics.md) |
 | 22 | [22-RNL](22-RNL/match.md) | RNL | **мейн-стак**, SEC 26 Chora AAS v2, **26v26**, **21:00** МСК (18:00 UTC), сервер **RNL EU**, SEC, [analytics.md](22-RNL/analytics.md) |
 | 23 | [23-AVG](23-AVG/match.md) | AVG | **Junior**, CSL Narva v1, **20v20**, **20:00** МСК (17:00 UTC), сервер **AVG**, CSL · vs clan Main 2–0 (10.10) · same day Main vs 20Royals 21:00, [analytics.md](23-AVG/analytics.md) |
 | 23 | [23-20R](23-20R/match.md) | 20Royals | **мейн-стак**, SEC 26 GooseBay AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер **20R**, SEC · same day AVG 20:00, [analytics.md](23-20R/analytics.md) |
-| 25 | [25-NKLV-HUH](25-NKLV-HUH/match.md) | NKLV vs ХУХ | **чужой КВ**, FCL Narva Small v1, **12v12**, **16:00** МСК (13:00 UTC), FCL, [analytics.md](25-NKLV-HUH/analytics.md) |
+| 25 | [25-NKLV-HUH](25-NKLV-HUH/match.md) | NKLV vs ХУХ | **чужой КВ**, FCL BlackCoast Small v1, **12v12**, **16:00** МСК (13:00 UTC), FCL · карта с Narva, тег в посте XYX, [analytics.md](25-NKLV-HUH/analytics.md) |
 | 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я Mutaha vs ALPHA (после 09.10), [analytics.md](25-ALPHA/analytics.md) |
 | 25 | [25-solid](25-solid/match.md) | .solid | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер ANY · первая Main vs .solid (Junior 0–2 11.10 PAAS), [analytics.md](25-solid/analytics.md) |
 | 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |

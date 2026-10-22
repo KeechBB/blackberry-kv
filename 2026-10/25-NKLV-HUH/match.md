@@ -4,7 +4,7 @@
 
 - **13:00 UTC** / **16:00 МСК**
 - **12v12**
-- Карта: **FCL Narva Small v1** (`FCL_Narva_Smallv1`)
+- Карта: **FCL BlackCoast Small v1** (`FCL_BlackCoast_Small_v1`) — смена с Narva Small, пост 22.10 (тег **XYX** = **ХУХ**)
 - Сервер: после матчмейкинга
 - Правила: **FCL**
 - Стороны: **NKLV** vs **ХУХ**
