@@ -544,21 +544,6 @@
       "note": "отмена · Main · SEC · SEC 26 Chora AAS v2 · 26v26 · 21:00 · сервер RNL EU · NO SCOUT · NO MORTARS"
     },
     {
-      "id": "22-nklv",
-      "day": 22,
-      "timeMsk": "18:00",
-      "timeUtc": "15:00",
-      "clan": "NKLV",
-      "opp": "NKLV",
-      "map": "FCL BlackCoast Small v1",
-      "size": "8v8",
-      "server": "не указан",
-      "rules": "FCL",
-      "stack": "—",
-      "status": "upcoming",
-      "note": "чужая тренировка · NKLV vs NKLV · FCL_BlackCoast_Small_v1 · 8v8 · FCL · 18:00 МСК · сервер не указан · NO SCOUT · NO MEETINGS"
-    },
-    {
       "id": "23-avg",
       "day": 23,
       "timeMsk": "20:00",
