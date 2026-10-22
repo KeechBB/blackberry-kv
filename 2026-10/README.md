@@ -32,8 +32,8 @@
 | 15 | [15-HELL](15-HELL/match.md) | HELL | **Junior**, **2–0** · сумма **142:0** (58:0 · 84:0) · SEC 26 Sumari AAS v1 · TR2 · стата полная · [analytics.md](15-HELL/analytics.md) |
 | 15 | [15-IH](15-IH/match.md) | IH / Iron Horde | **мейн-стак**, **2–0** · сумма **92:0** (61:0 · 31:0) · HotDrop Narva · TR1 · стата полная · [analytics.md](15-IH/analytics.md) |
 | 17 | [17-NKLV-RPSS](17-NKLV-RPSS/match.md) | NKLV vs RPSS | **чужой КВ**, FCL Narva Small v1, **12v12**, **17:00** МСК (14:00 UTC), SEC, [analytics.md](17-NKLV-RPSS/analytics.md) |
-| 17 | [17-NS](17-NS/match.md) | NS / North Star | **перенос → 31.10** (не отмена) |
-| 31 | [31-NS](31-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер FCL ARENA 2 · перенос с 17.10, [analytics.md](31-NS/analytics.md) |
+| 17 | [17-NS](17-NS/match.md) | NS / North Star | **перенос → 01.11** (через 31.10, не отмена) |
+| 31 | [31-NS](31-NS/match.md) | NS / North Star | **перенос → 01.11** (не отмена) |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, **2–0** · сумма **279:0** (R1 83:0 · R2 196:0) · SEC 26 Mutaha PAAS v1 · FCL ARENA #2 (TR2) · авто обе команды, [analytics.md](18-SPH/analytics.md) |
 | 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, **0–2** · сумма **0:253** (0:62 · 0:191) · HotDrop Skorpo · Iron Horde, [analytics.md](19-IH/analytics.md) |
 | 21 | [21-RA](21-RA/match.md) | RA | **Junior**, HotDrop Narva, **16v16**, **20:00** МСК (17:00 UTC), сервер **BB**, HOTDROP, [analytics.md](21-RA/analytics.md) |

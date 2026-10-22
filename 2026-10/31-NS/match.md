@@ -1,12 +1,7 @@
-# 2026-10-31 — NS (North Star) vs BlackBerry Main
+# 2026-10-31 — NS (North Star) vs BlackBerry Main → **перенесено**
 
-Ещё не сыграно. Заявка **14.10.2026**, **перенос с 17.10 → 31.10** (не отмена). Играет **мейн-стак**.
+Слот **не отменён**. Встреча перенесена на **01.11** · 21:00 МСК (18:00 UTC) · CSL Mutaha Skirmish v2 · 20v20 · FCL ARENA 2 · Main.
 
-- **18:00 UTC** / **21:00 МСК**
-- **20v20**
-- Карта: **CSL Mutaha Skirmish v2** (`CSL_MutahaSkirmishv2`)
-- Сервер: **FCL ARENA 2**
-- Правила: **CSL**
-- Состав: **мейн-стак**
+Заявка **14.10.2026**, цепочка **17.10 → 31.10 → 01.11**.
 
-Превью: [../../previews/2026-10-31-ns-mutaha-skirmish.png](../../previews/2026-10-31-ns-mutaha-skirmish.png).
+Превью новой даты: [../../previews/2026-11-01-ns-mutaha-skirmish.png](../../previews/2026-11-01-ns-mutaha-skirmish.png).
