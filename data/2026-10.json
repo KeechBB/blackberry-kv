@@ -554,10 +554,12 @@
       "server": "AVG",
       "rules": "CSL",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "win",
       "playersUrl": "data/players/23-avg.json",
       "r1": "80:0",
-      "note": "Junior · R1 80:0 · CSL Narva Skirmish v1 · 38:52 · USA · встреча открыта, ждём R2 · сервер AVG · vs clan Main 2–0 (10.10 AlBasrah) · same day Main vs 20Royals 21:00"
+      "r2": "0:49",
+      "meeting": "2–0",
+      "note": "Junior · сумма 80:49 (80:0 · 0:49) · раунды 1–1 · встреча 2–0 · CSL Narva Skirmish v1 · 38:52 / 44:05 · сервер AVG · same day Main vs 20Royals 21:00"
     },
     {
       "id": "23-20r",

@@ -2,7 +2,7 @@
   "matchId": "23-avg",
   "opp": "AVG",
   "stack": "Junior",
-  "note": "Скрины AVG Training Server · CSL Narva Skirmish v1 · R1 80:0 · 38:52 · USA · встреча открыта, ждём R2",
+  "note": "Скрины AVG Training Server · CSL Narva Skirmish v1 · сумма 80:49 (80:0 · 0:49) · раунды 1–1 · встреча 2–0",
   "source": "screens",
   "server": "AVG Training Server",
   "map": "CSL Narva Skirmish v1",
@@ -188,7 +188,188 @@
       "vehicleKills": 0
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "AkiN",
+      "res": 1,
+      "nok": 16,
+      "kills": 15,
+      "deaths": 6,
+      "dmg": 355,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 111,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 225,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Varyag",
+      "res": 6,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 199,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bambozy",
+      "res": 3,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 9,
+      "dmg": 350,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 13,
+      "dmg": 320,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 2,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 101,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "freak",
+      "res": 7,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 225,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CERBER",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 14,
+      "dmg": 177,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bks",
+      "res": 3,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 143,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Hazzi",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 8,
+      "dmg": 301,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Inrikus",
+      "res": 4,
+      "nok": 19,
+      "kills": 16,
+      "deaths": 10,
+      "dmg": 485,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 11,
+      "kills": 11,
+      "deaths": 14,
+      "dmg": 294,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 12,
+      "dmg": 169,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 12,
+      "dmg": 600,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 11,
+      "dmg": 126,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "tank2284",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 133,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 228,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 15,
+      "kills": 14,
+      "deaths": 6,
+      "dmg": 358,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Oguzok",
+      "res": 5,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 108,
+      "vehicleKills": 0
+    }
+  ],
   "oppR1": [
     {
       "nick": "Dobrynin",
@@ -371,11 +552,173 @@
       "vehicleKills": 0
     }
   ],
-  "oppR2": [],
+  "oppR2": [
+    {
+      "nick": "Saitar",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 12,
+      "dmg": 295,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Serj",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 159,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HeartOfMiT",
+      "res": 2,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 213,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Мармышка",
+      "res": 0,
+      "nok": 23,
+      "kills": 20,
+      "deaths": 2,
+      "dmg": 557,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "rafyrit",
+      "res": 2,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 282,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "пакость",
+      "res": 2,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 8,
+      "dmg": 282,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Dobrynin",
+      "res": 0,
+      "nok": 22,
+      "kills": 17,
+      "deaths": 9,
+      "dmg": 546,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Антон Чагур",
+      "res": 0,
+      "nok": 25,
+      "kills": 21,
+      "deaths": 5,
+      "dmg": 556,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "REBUS",
+      "res": 3,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 12,
+      "dmg": 284,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KoMpoT",
+      "res": 3,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 193,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CryHavoc",
+      "res": 1,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 4,
+      "dmg": 506,
+      "vehicleKills": 3
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 7,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 254,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Yanun",
+      "res": 2,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 213,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "15cm",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 65,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "герпис",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 187,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "ZeroTwo",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 88,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Татария",
+      "res": 0,
+      "nok": 22,
+      "kills": 16,
+      "deaths": 4,
+      "dmg": 996,
+      "vehicleKills": 5
+    }
+  ],
   "details": {
     "r1": {
       "tickets": "80:0",
       "len": "38:52"
+    },
+    "r2": {
+      "tickets": "0:49",
+      "len": "44:05"
+    },
+    "total": {
+      "tickets": "80:49",
+      "meeting": "2–0"
     }
   },
   "mvp": {
@@ -394,10 +737,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "freak"
+      ],
+      "killer": [
+        "Inrikus"
+      ],
+      "damage": [
+        "COBRA"
+      ],
+      "antiDeath": [
+        "CERBER"
+      ]
     }
   }
 }

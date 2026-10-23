@@ -39,7 +39,7 @@
 | 21 | [21-RA](21-RA/match.md) | RA | **Junior**, HotDrop Narva, **16v16**, **20:00** МСК (17:00 UTC), сервер **BB**, HOTDROP, [analytics.md](21-RA/analytics.md) |
 | 22 | [22-NKLV](22-NKLV/match.md) | NKLV vs NKLV | **чужая тренировка**, FCL BlackCoast Small v1, **8v8**, **18:00** МСК (15:00 UTC), FCL, [analytics.md](22-NKLV/analytics.md) |
 | 22 | [22-RNL](22-RNL/match.md) | RNL | **мейн-стак**, SEC 26 Chora AAS v2, **26v26**, **21:00** МСК (18:00 UTC), сервер **RNL EU**, SEC, [analytics.md](22-RNL/analytics.md) |
-| 23 | [23-AVG](23-AVG/match.md) | AVG | **Junior**, **R1 80:0** · встреча открыта, ждём R2 · CSL Narva Skirmish v1 · 38:52 · сервер AVG · [players](../data/players/23-avg.json) · [analytics.md](23-AVG/analytics.md) |
+| 23 | [23-AVG](23-AVG/match.md) | AVG | **Junior**, **2–0** · сумма **80:49** (80:0 · 0:49) · раунды 1–1 · CSL Narva Skirmish v1 · [players](../data/players/23-avg.json) · [analytics.md](23-AVG/analytics.md) |
 | 23 | [23-20R](23-20R/match.md) | 20Royals | **мейн-стак**, SEC 26 GooseBay AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер **20R**, SEC · same day AVG 20:00, [analytics.md](23-20R/analytics.md) |
 | 25 | [25-NKLV-HUH](25-NKLV-HUH/match.md) | NKLV vs ХУХ | **чужой КВ**, FCL BlackCoast Small v1, **12v12**, **16:00** МСК (13:00 UTC), FCL · карта с Narva, тег в посте XYX, [analytics.md](25-NKLV-HUH/analytics.md) |
 | 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я Mutaha vs ALPHA (после 09.10), [analytics.md](25-ALPHA/analytics.md) |

@@ -1092,7 +1092,7 @@
       "id": "23-avg",
       "day": 23,
       "opp": "AVG",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Bks"
@@ -1108,10 +1108,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "freak"
+        ],
+        "killer": [
+          "Inrikus"
+        ],
+        "damage": [
+          "COBRA"
+        ],
+        "antiDeath": [
+          "CERBER"
+        ]
       }
     },
     {
@@ -1748,10 +1756,26 @@
         }
       ]
     },
+    "CERBER": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "23-avg",
+          "day": 23,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "COBRA": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 4,
+      "mvpDamage": 5,
       "antiDeath": 1,
       "awards": [
         {
@@ -1799,6 +1823,14 @@
           "day": 23,
           "opp": "AVG",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "23-avg",
+          "day": 23,
+          "opp": "AVG",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -2233,6 +2265,22 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "Inrikus": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "23-avg",
+          "day": 23,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -4189,7 +4237,7 @@
       ]
     },
     "freak": {
-      "mvpMedic": 5,
+      "mvpMedic": 6,
       "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -4239,6 +4287,14 @@
           "day": 21,
           "opp": "RA",
           "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "23-avg",
+          "day": 23,
+          "opp": "AVG",
+          "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
         },
