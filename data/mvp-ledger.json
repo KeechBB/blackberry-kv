@@ -1092,12 +1092,20 @@
       "id": "23-20r",
       "day": 23,
       "opp": "20Royals",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "ZLOBA1917"
+        ],
+        "killer": [
+          "Kuchenchips"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "Diray"
+        ]
       },
       "r2": {
         "medic": [
@@ -1922,7 +1930,7 @@
       "mvpMedic": 0,
       "mvpKiller": 5,
       "mvpDamage": 1,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "15-ih",
@@ -1971,6 +1979,14 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -2704,8 +2720,8 @@
     },
     "Kuchenchips": {
       "mvpMedic": 0,
-      "mvpKiller": 4,
-      "mvpDamage": 6,
+      "mvpKiller": 5,
+      "mvpDamage": 7,
       "antiDeath": 1,
       "awards": [
         {
@@ -2776,6 +2792,22 @@
           "matchId": "16-hell",
           "day": 16,
           "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
@@ -3927,7 +3959,7 @@
       ]
     },
     "ZLOBA1917": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -3953,6 +3985,14 @@
           "day": 19,
           "opp": "IH",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }

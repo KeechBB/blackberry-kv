@@ -1,8 +1,219 @@
 {
   "matchId": "23-20r",
   "opp": "20Royals",
-  "note": "R2 58:0 · 38:32 · CAF (мы) · SEC 26 GooseBay AAS v1 · R1 ещё не внесён · встреча открыта",
-  "r1": [],
+  "note": "R1 0:36 · 50:02 · VDV (мы) · R2 58:0 · 38:32 · CAF (мы) · сумма 58:36 · раунды 1–1 · встреча 2–0 · SEC 26 GooseBay AAS v1",
+  "r1": [
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 17,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 362
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 5,
+      "dmg": 663
+    },
+    {
+      "nick": "lepurple",
+      "res": 11,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 32
+    },
+    {
+      "nick": "ZensU",
+      "res": 2,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 219
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 85
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 26,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 88
+    },
+    {
+      "nick": "Morty",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 169
+    },
+    {
+      "nick": "firs",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 165
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 412,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 68
+    },
+    {
+      "nick": "Animo",
+      "res": 17,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 19
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 207
+    },
+    {
+      "nick": "section",
+      "res": 5,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 29
+    },
+    {
+      "nick": "Summer",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 200
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 19,
+      "kills": 12,
+      "deaths": 12,
+      "dmg": 416
+    },
+    {
+      "nick": "KillReal",
+      "res": 13,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 110
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 205
+    },
+    {
+      "nick": "vasserman",
+      "res": 17,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 170
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 117
+    },
+    {
+      "nick": "Shrein",
+      "res": 11,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 59
+    },
+    {
+      "nick": "Goob",
+      "res": 2,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 105
+    },
+    {
+      "nick": "p1XeL",
+      "res": 3,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 120
+    },
+    {
+      "nick": "KingOfLobs",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 116
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 42
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 61
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 25,
+      "kills": 18,
+      "deaths": 8,
+      "dmg": 1058,
+      "vehicleKills": 4
+    }
+  ],
   "r2": [
     {
       "nick": "bambozy",
@@ -217,7 +428,218 @@
       "vehicleKills": 4
     }
   ],
-  "oppR1": [],
+  "oppR1": [
+    {
+      "nick": "Pr0digy",
+      "res": 0,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 8,
+      "dmg": 322
+    },
+    {
+      "nick": "Skill",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 169
+    },
+    {
+      "nick": "67 Elite Force Chlupat",
+      "res": 1,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 254
+    },
+    {
+      "nick": "URU_Trooper",
+      "res": 7,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 107
+    },
+    {
+      "nick": "Thot Patrol",
+      "res": 2,
+      "nok": 20,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 362
+    },
+    {
+      "nick": "SlickNick4700",
+      "res": 8,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 235
+    },
+    {
+      "nick": "Sauce",
+      "res": 0,
+      "nok": 28,
+      "kills": 18,
+      "deaths": 4,
+      "dmg": 542
+    },
+    {
+      "nick": "n*>w<*n a person",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 135
+    },
+    {
+      "nick": "MR CRASH MASTER",
+      "res": 1,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 368,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Caraxes",
+      "res": 1,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 172
+    },
+    {
+      "nick": "WW JCamil",
+      "res": 1,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 195
+    },
+    {
+      "nick": "Prince Ali",
+      "res": 5,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 122
+    },
+    {
+      "nick": "harry A",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 21
+    },
+    {
+      "nick": "Teodor",
+      "res": 1,
+      "nok": 16,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 514
+    },
+    {
+      "nick": "Fob The Builder",
+      "res": 0,
+      "nok": 17,
+      "kills": 9,
+      "deaths": 1,
+      "dmg": 351
+    },
+    {
+      "nick": "Fede",
+      "res": 0,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 216
+    },
+    {
+      "nick": "Legit1261",
+      "res": 0,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 373,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Gold",
+      "res": 7,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 238
+    },
+    {
+      "nick": "Screen Pecker",
+      "res": 2,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 276
+    },
+    {
+      "nick": "DaPieMaster",
+      "res": 1,
+      "nok": 17,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 350
+    },
+    {
+      "nick": "Spartacus xXx",
+      "res": 1,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 7,
+      "dmg": 222
+    },
+    {
+      "nick": "Kray",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 213
+    },
+    {
+      "nick": "Axe",
+      "res": 1,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 249
+    },
+    {
+      "nick": "Cpt Shitters",
+      "res": 1,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 155
+    },
+    {
+      "nick": "Empiiyom",
+      "res": 2,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 146
+    },
+    {
+      "nick": "jackstoner",
+      "res": 6,
+      "nok": 12,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 243
+    }
+  ],
   "oppR2": [
     {
       "nick": "n*>w<*n a person",
@@ -435,14 +857,31 @@
       "tickets": "58:0",
       "len": "38:32",
       "faction": "CAF"
+    },
+    "r1": {
+      "tickets": "0:36",
+      "len": "50:02",
+      "faction": "VDV"
+    },
+    "total": {
+      "tickets": "58:36",
+      "meeting": "2–0"
     }
   },
   "mvp": {
     "r1": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "ZLOBA1917"
+      ],
+      "killer": [
+        "Kuchenchips"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "Diray"
+      ]
     },
     "r2": {
       "medic": [

@@ -572,10 +572,12 @@
       "server": "20R",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
       "playersUrl": "data/players/23-20r.json",
+      "r1": "0:36",
       "r2": "58:0",
-      "note": "Main · R2 58:0 · R1 ещё не внесён · встреча открыта · SEC 26 GooseBay AAS v1 · 38:32 · CAF · сервер 20R · vs clan Main 2–0 (04.10 Chora) / 2–0 (26.09 Goose) · same day Junior vs AVG 20:00 · NO SCOUT"
+      "meeting": "2–0",
+      "note": "Main · сумма 58:36 (0:36 · 58:0) · раунды 1–1 · встреча 2–0 · SEC 26 GooseBay AAS v1 · 50:02 / 38:32 · R1 VDV / R2 CAF · сервер 20R · vs clan Main 2–0 (04.10 Chora) / 2–0 (26.09 Goose) · same day Junior vs AVG 20:00 · NO SCOUT"
     },
     {
       "id": "25-nklv-huh",
