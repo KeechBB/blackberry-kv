@@ -549,13 +549,15 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "AVG",
-      "map": "CSL Narva v1",
+      "map": "CSL Narva Skirmish v1",
       "size": "20v20",
       "server": "AVG",
       "rules": "CSL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · CSL · CSL Narva v1 · 20v20 · 20:00 · сервер AVG · vs clan Main 2–0 (10.10 AlBasrah) · same day Main vs 20Royals 21:00 · NO SCOUT · NO MEETINGS"
+      "playersUrl": "data/players/23-avg.json",
+      "r1": "80:0",
+      "note": "Junior · R1 80:0 · CSL Narva Skirmish v1 · 38:52 · USA · встреча открыта, ждём R2 · сервер AVG · vs clan Main 2–0 (10.10 AlBasrah) · same day Main vs 20Royals 21:00"
     },
     {
       "id": "23-20r",

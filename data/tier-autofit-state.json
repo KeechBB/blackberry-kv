@@ -1,72 +1,34 @@
 {
-  "updatedAt": "2026-10-15",
+  "updatedAt": "2026-10-23",
   "holdDays": 2,
   "displayDays": 2,
   "watches": [
     {
-      "nick": "S.M.P",
-      "kind": "demote",
-      "fromTier": 1,
-      "toTier": 2,
-      "fit": 73.7,
-      "band": "hard",
-      "role": "Тандем",
-      "lever": "Урон/игра: 63% от эталона роли — больше урона по пехоте и технике",
-      "since": "2026-10-15",
-      "daysHeld": 0,
-      "ready": false
-    },
-    {
-      "nick": "Summer",
-      "kind": "demote",
-      "fromTier": 2,
+      "nick": "Oguzok",
+      "kind": "promote",
+      "fromTier": 4,
       "toTier": 3,
-      "fit": 74.1,
-      "band": "hard",
-      "role": "КО (SL)",
-      "lever": "Урон/игра: 35% от эталона роли — больше урона по пехоте и технике",
-      "since": "2026-10-15",
+      "fit": 95.1,
+      "band": "strong",
+      "role": "Стрелок",
+      "lever": "Активность: 69% от эталона роли — заходи стабильно в клановые войны",
+      "since": "2026-10-23",
       "daysHeld": 0,
       "ready": false
     },
     {
-      "nick": "Otto",
+      "nick": "Runetik",
       "kind": "demote",
-      "fromTier": 2,
-      "toTier": 3,
-      "fit": 74.8,
+      "fromTier": 3,
+      "toTier": 4,
+      "fit": 73.1,
       "band": "hard",
-      "role": "КО (SL)",
-      "lever": "Урон/игра: 48% от эталона роли — больше урона по пехоте и технике",
-      "since": "2026-10-15",
-      "daysHeld": 0,
-      "ready": false
-    },
-    {
-      "nick": "Treppen",
-      "kind": "demote",
-      "fromTier": 1,
-      "toTier": 2,
-      "fit": 74.8,
-      "band": "hard",
-      "role": "КО (SL)",
-      "lever": "Урон/игра: 22% от эталона роли — больше урона по пехоте и технике",
-      "since": "2026-10-15",
+      "role": "Стрелок",
+      "lever": "Урон/игра: 31% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-10-23",
       "daysHeld": 0,
       "ready": false
     }
   ],
-  "transfers": [
-    {
-      "nick": "ADUN",
-      "fromTier": 3,
-      "toTier": 2,
-      "dir": "up",
-      "at": "2026-10-15",
-      "fit": 98.6,
-      "note": "Авто Fit 98.6% · удержание 4д",
-      "actor": "автофит",
-      "lever": "Активность: 86% от эталона роли — заходи стабильно в клановые войны"
-    }
-  ]
+  "transfers": []
 }

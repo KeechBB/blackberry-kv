@@ -1,16 +1,17 @@
 # 2026-10-23 — AVG vs BlackBerry Junior
 
-Ещё не сыграно. Заявка **22.10.2026** (**BB Junior vs AVG**). Играет **Junior**.
+**Раунд 1 сыгран.** Встреча открыта — ждём раунд 2. Итог серии по сумме тикетов обоих раундов.
 
 - **17:00 UTC** / **20:00 МСК**
-- **20v20**
-- Карта: **CSL Narva v1** (`CSL_Narva_V1`)
-- Сервер: **AVG**
+- **20v20** · **Junior**
+- Карта: **CSL Narva Skirmish v1**
+- Сервер: **AVG Training Server**
 - Правила: **CSL**
-- Состав: **Junior**
+- **R1: 80:0** (наши:их) · 38:52 · фракция США · незначительная победа
+- R2: ещё нет
 
-В тот же день **21:00** — Main vs [20Royals](../23-20R/match.md) (GooseBay). Не склеивать.
+В тот же день **21:00** — Main vs [20Royals](../23-20R/match.md). Не склеивать.
 
 Vs clan (Main): **2–0** (10.10 AlBasrah). Лого: `brand/logos/avg.png`, BB Junior: `brand/logos/blackberry-junior.png`.
 
-Заметки: [analytics.md](analytics.md).
+Стата: [players](../../data/players/23-avg.json). Заметки: [analytics.md](analytics.md).

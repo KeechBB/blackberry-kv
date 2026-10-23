@@ -1,5 +1,9 @@
 # 2026-10-23 — Junior vs AVG · заметки
 
-Заявка: CSL Narva v1 · 20v20 · 20:00 МСК (17:00 UTC) · сервер **AVG** · правила CSL.
+**R1 80:0** · CSL Narva Skirmish v1 · 38:52 · USA · сервер AVG Training Server.
 
-Счёт и стата — после катки.
+Встреча открыта, ждём R2. Серию не закрываем.
+
+MVP R1: Medic **Bks** (9 рес) · Killer **bambozy** (20) · War-Score **COBRA** (864) · Anti **VET** (13 смертей).
+
+Скрины: `screens/r1/`.
