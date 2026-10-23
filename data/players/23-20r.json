@@ -1,8 +1,9 @@
 {
   "matchId": "23-20r",
   "opp": "20Royals",
-  "note": "R1 58:0 · 38:32 · CAF (мы) · SEC 26 GooseBay AAS v1 · встреча открыта, ждём R2",
-  "r1": [
+  "note": "R2 58:0 · 38:32 · CAF (мы) · SEC 26 GooseBay AAS v1 · R1 ещё не внесён · встреча открыта",
+  "r1": [],
+  "r2": [
     {
       "nick": "bambozy",
       "res": 2,
@@ -216,8 +217,8 @@
       "vehicleKills": 4
     }
   ],
-  "r2": [],
-  "oppR1": [
+  "oppR1": [],
+  "oppR2": [
     {
       "nick": "n*>w<*n a person",
       "res": 0,
@@ -429,9 +430,8 @@
       "vehicleKills": 5
     }
   ],
-  "oppR2": [],
   "details": {
-    "r1": {
+    "r2": {
       "tickets": "58:0",
       "len": "38:32",
       "faction": "CAF"
@@ -439,6 +439,12 @@
   },
   "mvp": {
     "r1": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    },
+    "r2": {
       "medic": [
         "lepurple"
       ],
@@ -451,12 +457,6 @@
       "antiDeath": [
         "Pymba"
       ]
-    },
-    "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
     }
   }
 }

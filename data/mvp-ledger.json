@@ -1094,6 +1094,12 @@
       "opp": "20Royals",
       "meeting": null,
       "r1": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      },
+      "r2": {
         "medic": [
           "lepurple"
         ],
@@ -1106,12 +1112,6 @@
         "antiDeath": [
           "Pymba"
         ]
-      },
-      "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
       }
     },
     {
@@ -1896,7 +1896,7 @@
           "matchId": "23-20r",
           "day": 23,
           "opp": "20Royals",
-          "round": "r1",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -3160,7 +3160,7 @@
           "matchId": "23-20r",
           "day": 23,
           "opp": "20Royals",
-          "round": "r1",
+          "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         },
@@ -4224,7 +4224,7 @@
           "matchId": "23-20r",
           "day": 23,
           "opp": "20Royals",
-          "round": "r1",
+          "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
         },
@@ -4520,7 +4520,7 @@
           "matchId": "23-20r",
           "day": 23,
           "opp": "20Royals",
-          "round": "r1",
+          "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
         }
