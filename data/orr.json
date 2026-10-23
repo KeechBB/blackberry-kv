@@ -28,7 +28,7 @@
     "yanchik": 611,
     "zensu": 593,
     "kto--to": 643,
-    "shrein": 512,
+    "shrein": 510,
     "sandro.86": 423,
     "cerber": 519,
     "azure": 607,
@@ -45,8 +45,8 @@
     "eternal tilt": 551,
     "varyag": 609,
     "radislave": 579,
-    "nestormahno": 562,
-    "animo": 618,
+    "nestormahno": 563,
+    "animo": 617,
     "koperor": 609,
     "jerom101": 499,
     "rostislavkvl": 548,
@@ -102,7 +102,7 @@
     "qop": 572,
     "taipan": 522,
     "rindaye": 564,
-    "goob": 446,
+    "goob": 444,
     "xrandr": 358,
     "shurup": 572,
     "grechnevy": 514,
@@ -128,7 +128,7 @@
     "steepich": 500,
     "moonky123": 460,
     "cobra": 615,
-    "pymba": 610,
+    "pymba": 609,
     "runetik": 530,
     "bugor": 541,
     "bashik": 379,
@@ -154,8 +154,8 @@
     "kingoflobs": 577,
     "major": 424,
     "_bybajlex_": 408,
-    "vasserman": 595,
-    "p1xel": 484,
+    "vasserman": 596,
+    "p1xel": 500,
     "nabat": 383,
     "p1exel": 379,
     "mirgorr": 443,
@@ -175,13 +175,13 @@
     "падло": 481,
     "haq34": 505,
     "inrikus": 568,
-    "morty": 580,
+    "morty": 581,
     "durik": 475,
-    "kuchenchips": 554,
+    "kuchenchips": 555,
     "водитель газели": 499,
     "рапира": 410,
     "gorbatiy": 494,
-    "bambozy": 575,
+    "bambozy": 576,
     "duda282": 149,
     "men": 321,
     "-prostak-": 454,
@@ -250,7 +250,7 @@
       "nick": "Chidori",
       "orr": 669,
       "combat": 64.8,
-      "cw_g": 39,
+      "cw_g": 40,
       "train_g": 54
     },
     {
@@ -263,8 +263,8 @@
     {
       "nick": "Keech",
       "orr": 647,
-      "combat": 67.9,
-      "cw_g": 37,
+      "combat": 67.8,
+      "cw_g": 38,
       "train_g": 51
     },
     {
@@ -319,22 +319,22 @@
     {
       "nick": "FLEX",
       "orr": 634,
-      "combat": 64.7,
-      "cw_g": 14,
+      "combat": 64.5,
+      "cw_g": 15,
       "train_g": 28
     },
     {
       "nick": "Treppen",
       "orr": 633,
-      "combat": 61.9,
-      "cw_g": 26,
+      "combat": 61.8,
+      "cw_g": 27,
       "train_g": 49
     },
     {
       "nick": "lepurple",
       "orr": 630,
-      "combat": 65.5,
-      "cw_g": 39,
+      "combat": 65.4,
+      "cw_g": 40,
       "train_g": 47
     },
     {
@@ -347,8 +347,8 @@
     {
       "nick": "Diray",
       "orr": 625,
-      "combat": 72.7,
-      "cw_g": 37,
+      "combat": 72.8,
+      "cw_g": 38,
       "train_g": 38
     },
     {
@@ -376,7 +376,7 @@
       "nick": "MrChaykaa",
       "orr": 619,
       "combat": 63.9,
-      "cw_g": 30,
+      "cw_g": 31,
       "train_g": 42
     },
     {
@@ -388,9 +388,9 @@
     },
     {
       "nick": "Animo",
-      "orr": 618,
-      "combat": 64.2,
-      "cw_g": 1,
+      "orr": 617,
+      "combat": 63.8,
+      "cw_g": 2,
       "train_g": 42
     },
     {
@@ -418,22 +418,15 @@
       "nick": "Gadler",
       "orr": 612,
       "combat": 61.3,
-      "cw_g": 27,
+      "cw_g": 28,
       "train_g": 35
     },
     {
       "nick": "yanchik",
       "orr": 611,
-      "combat": 66.9,
-      "cw_g": 23,
+      "combat": 66.6,
+      "cw_g": 24,
       "train_g": 27
-    },
-    {
-      "nick": "Pymba",
-      "orr": 610,
-      "combat": 71.3,
-      "cw_g": 14,
-      "train_g": 24
     },
     {
       "nick": "Koperor",
@@ -441,6 +434,13 @@
       "combat": 62.2,
       "cw_g": 12,
       "train_g": 47
+    },
+    {
+      "nick": "Pymba",
+      "orr": 609,
+      "combat": 71.2,
+      "cw_g": 15,
+      "train_g": 24
     },
     {
       "nick": "Varyag",
@@ -460,7 +460,7 @@
       "nick": "LordWolf",
       "orr": 608,
       "combat": 64.2,
-      "cw_g": 37,
+      "cw_g": 38,
       "train_g": 49
     },
     {
@@ -474,14 +474,14 @@
       "nick": "freak",
       "orr": 604,
       "combat": 68.5,
-      "cw_g": 36,
+      "cw_g": 37,
       "train_g": 33
     },
     {
       "nick": "iKEppA",
       "orr": 601,
-      "combat": 72.6,
-      "cw_g": 34,
+      "combat": 72.5,
+      "cw_g": 35,
       "train_g": 24
     },
     {
@@ -499,18 +499,18 @@
       "train_g": 35
     },
     {
+      "nick": "vasserman",
+      "orr": 596,
+      "combat": 65.4,
+      "cw_g": 11,
+      "train_g": 25
+    },
+    {
       "nick": "CORWAX",
       "orr": 595,
       "combat": 56.3,
       "cw_g": 3,
       "train_g": 50
-    },
-    {
-      "nick": "vasserman",
-      "orr": 595,
-      "combat": 65.4,
-      "cw_g": 10,
-      "train_g": 25
     },
     {
       "nick": "on_hik",
@@ -522,8 +522,8 @@
     {
       "nick": "ZensU",
       "orr": 593,
-      "combat": 68.0,
-      "cw_g": 36,
+      "combat": 67.9,
+      "cw_g": 37,
       "train_g": 31
     },
     {
@@ -590,18 +590,18 @@
       "train_g": 24
     },
     {
+      "nick": "Morty",
+      "orr": 581,
+      "combat": 72.7,
+      "cw_g": 21,
+      "train_g": 11
+    },
+    {
       "nick": "Jopl1k",
       "orr": 580,
       "combat": 57.0,
       "cw_g": 2,
       "train_g": 37
-    },
-    {
-      "nick": "Morty",
-      "orr": 580,
-      "combat": 72.8,
-      "cw_g": 20,
-      "train_g": 11
     },
     {
       "nick": "uglyfromyoung",
@@ -646,6 +646,13 @@
       "train_g": 12
     },
     {
+      "nick": "bambozy",
+      "orr": 576,
+      "combat": 75.4,
+      "cw_g": 16,
+      "train_g": 9
+    },
+    {
       "nick": "GAD",
       "orr": 576,
       "combat": 67.6,
@@ -653,17 +660,10 @@
       "train_g": 16
     },
     {
-      "nick": "bambozy",
-      "orr": 575,
-      "combat": 75.4,
-      "cw_g": 15,
-      "train_g": 9
-    },
-    {
       "nick": "KillReal",
       "orr": 575,
       "combat": 52.8,
-      "cw_g": 33,
+      "cw_g": 34,
       "train_g": 29
     },
     {
@@ -690,8 +690,8 @@
     {
       "nick": "shurup",
       "orr": 572,
-      "combat": 67.6,
-      "cw_g": 2,
+      "combat": 67.4,
+      "cw_g": 3,
       "train_g": 23
     },
     {
@@ -759,9 +759,9 @@
     },
     {
       "nick": "Nestor Mahno",
-      "orr": 562,
-      "combat": 64.7,
-      "cw_g": 10,
+      "orr": 563,
+      "combat": 64.8,
+      "cw_g": 11,
       "train_g": 24
     },
     {
@@ -788,8 +788,8 @@
     {
       "nick": "Summer",
       "orr": 560,
-      "combat": 65.0,
-      "cw_g": 22,
+      "combat": 64.9,
+      "cw_g": 23,
       "train_g": 14
     },
     {
@@ -808,9 +808,9 @@
     },
     {
       "nick": "Kuchenchips",
-      "orr": 554,
-      "combat": 71.0,
-      "cw_g": 12,
+      "orr": 555,
+      "combat": 70.8,
+      "cw_g": 13,
       "train_g": 6
     },
     {
@@ -1024,13 +1024,6 @@
       "train_g": 22
     },
     {
-      "nick": "Shrein",
-      "orr": 512,
-      "combat": 55.6,
-      "cw_g": 1,
-      "train_g": 19
-    },
-    {
       "nick": "VITALYA",
       "orr": 512,
       "combat": 50.3,
@@ -1043,6 +1036,13 @@
       "combat": 60.8,
       "cw_g": 0,
       "train_g": 16
+    },
+    {
+      "nick": "Shrein",
+      "orr": 510,
+      "combat": 55.0,
+      "cw_g": 2,
+      "train_g": 19
     },
     {
       "nick": "haq34",
@@ -1071,6 +1071,13 @@
       "combat": 65.3,
       "cw_g": 4,
       "train_g": 13
+    },
+    {
+      "nick": "p1XeL",
+      "orr": 500,
+      "combat": 51.2,
+      "cw_g": 1,
+      "train_g": 10
     },
     {
       "nick": "Steepich",
@@ -1118,13 +1125,6 @@
       "nick": "kitayskiy latyao",
       "orr": 485,
       "combat": 63.9,
-      "cw_g": 0,
-      "train_g": 10
-    },
-    {
-      "nick": "p1XeL",
-      "orr": 484,
-      "combat": 50.7,
       "cw_g": 0,
       "train_g": 10
     },
@@ -1228,9 +1228,9 @@
     },
     {
       "nick": "Goob",
-      "orr": 446,
-      "combat": 53.2,
-      "cw_g": 6,
+      "orr": 444,
+      "combat": 51.7,
+      "cw_g": 7,
       "train_g": 3
     },
     {

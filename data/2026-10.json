@@ -573,7 +573,9 @@
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · SEC 26 GooseBay AAS v1 · 26v26 · 21:00 · сервер 20R · vs clan Main 2–0 (04.10 Chora) / 2–0 (26.09 Goose) · same day Junior vs AVG 20:00 · NO SCOUT"
+      "playersUrl": "data/players/23-20r.json",
+      "r1": "58:0",
+      "note": "Main · R1 58:0 · SEC 26 GooseBay AAS v1 · 38:32 · CAF · встреча открыта, ждём R2 · сервер 20R · vs clan Main 2–0 (04.10 Chora) / 2–0 (26.09 Goose) · same day Junior vs AVG 20:00 · NO SCOUT"
     },
     {
       "id": "25-nklv-huh",

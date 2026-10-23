@@ -1089,6 +1089,32 @@
       }
     },
     {
+      "id": "23-20r",
+      "day": 23,
+      "opp": "20Royals",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "lepurple"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "Chidori"
+        ],
+        "antiDeath": [
+          "Pymba"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "23-avg",
       "day": 23,
       "opp": "AVG",
@@ -1839,7 +1865,7 @@
     "Chidori": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 3,
       "awards": [
         {
@@ -1865,6 +1891,14 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -3112,12 +3146,20 @@
       "mvpMedic": 0,
       "mvpKiller": 2,
       "mvpDamage": 1,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "14-fal",
           "day": 14,
           "opp": "FAL",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -4070,7 +4112,7 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 7,
+      "mvpKiller": 8,
       "mvpDamage": 7,
       "antiDeath": 0,
       "awards": [
@@ -4177,6 +4219,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "23-avg",
@@ -4445,7 +4495,7 @@
       ]
     },
     "lepurple": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -4462,6 +4512,14 @@
           "matchId": "22-gm",
           "day": 22,
           "opp": "GM",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
