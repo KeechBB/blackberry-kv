@@ -165,6 +165,10 @@ html.embed.tfs-embed body {
   background-image: none !important;
   color-scheme: normal;
 }
+/* /tm?hideTiers=1 — без дубля «Тиры Fit» в subnav (большая вкладка FIT снаружи) */
+html.hide-tm-tiers .subnav-btn[data-tm="tiers"] {
+  display: none !important;
+}
 html.embed .atmosphere {
   display: none;
 }
@@ -860,6 +864,7 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .dot.draw { background: var(--draw); color: var(--draw); }
 .dot.upcoming { background: var(--soon); color: var(--soon); }
 .dot.cancel { background: var(--muted); color: var(--muted); }
+.dot.move { background: var(--muted); color: var(--muted); }
 
 .note {
   margin: 18px 4px 0;
@@ -880,6 +885,13 @@ body.modal-open { overflow: hidden; }
   padding: 20px;
 }
 .modal[hidden] { display: none; }
+
+/* .modal-tabs { display:flex } иначе перебивает HTML [hidden] — OPP-вкладки
+   торчали на тренировках (Все / RGF / USA + лишние OPP · …). */
+.modal-tabs[hidden],
+.modal-tabs-opp[hidden] {
+  display: none !important;
+}
 
 .modal-backdrop {
   position: absolute;
@@ -1181,6 +1193,78 @@ body.modal-open { overflow: hidden; }
   76% {
     background-position: -45% 0;
   }
+}
+/* Halloween S2 · Фиолетовая готика */
+.nick-profile-link.is-halloween-gothic,
+.nick-plain.is-halloween-gothic {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  border-bottom: 0;
+  background:
+    linear-gradient(
+      180deg,
+      #f3e8ff 0%,
+      #c084fc 30%,
+      #7c3aed 56%,
+      #3b0764 82%,
+      #8b5cf6 100%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.3px rgba(24, 4, 48, 0.95);
+  font-family: Oxanium, Manrope, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.018em;
+  line-height: 1.05;
+  text-transform: none;
+  filter:
+    drop-shadow(0 0 5px rgba(132, 255, 54, 0.5))
+    drop-shadow(0 2px 9px rgba(88, 28, 220, 0.6));
+  transition: filter 0.16s ease;
+}
+.nick-profile-link.is-halloween-gothic::after,
+.nick-plain.is-halloween-gothic::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  color: transparent;
+  background:
+    linear-gradient(
+      105deg,
+      transparent 22%,
+      rgba(216, 255, 196, 0.16) 39%,
+      rgba(240, 255, 235, 0.85) 48%,
+      rgba(168, 85, 247, 0.22) 57%,
+      transparent 72%
+    );
+  background-position: 145% 0;
+  background-size: 240% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: inherit;
+  letter-spacing: inherit;
+  animation: aurum-clean-nick-shine 6.4s ease-in-out infinite;
+}
+.nick-profile-link.is-halloween-gothic:hover,
+.nick-profile-link.is-halloween-gothic:focus-visible {
+  color: transparent;
+  border-bottom: 0;
+  filter:
+    drop-shadow(0 0 8px rgba(132, 255, 54, 0.75))
+    drop-shadow(0 2px 11px rgba(109, 40, 217, 0.75))
+    brightness(1.14);
+}
+.rating-table td.col-nick .nick-profile-link.is-metallic-gold,
+.rating-table td.col-nick .nick-plain.is-metallic-gold,
+.rating-table td.col-nick .nick-profile-link.is-halloween-gothic,
+.rating-table td.col-nick .nick-plain.is-halloween-gothic {
+  overflow: visible;
+  text-overflow: clip;
 }
 /* Нашивки — как в рейтинге паблика (размер / glow / hover) */
 .nick-patch-mark {

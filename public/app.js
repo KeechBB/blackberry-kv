@@ -5,6 +5,7 @@
     draw: "ничья",
     upcoming: "скоро",
     cancel: "отмена",
+    move: "перенос",
   };
   const MONTH_RU = [
     "",
@@ -27,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261020-nick-style-l10";
+    new URLSearchParams(location.search).get("v") || "20261023-20r-closed";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -772,15 +773,21 @@
     return `<button type="button" class="nick-patch-mark" data-patch-id="${patchId}" aria-label="${tip}"><span class="nick-patch-mark-art" style="background-image:url('${url}')" aria-hidden="true"></span></button>`;
   }
 
+  /** styleId из nick-patches.json → CSS-класс (как profileNickStyles на платформе). */
+  const NICK_STYLE_CLASS = {
+    "bp-l10-aurum-clean": "is-metallic-gold",
+    "hw2-violet-gothic": "is-halloween-gothic",
+  };
+
   function nickLinkHtml(nick) {
     const label = displayNick(nick) || nick || "—";
     const patch = nickPatchHtml(nick);
     const customization = nickPatchesByKey.get(nickKey(nick));
-    const hasAurumClean =
-      String(customization?.styleId || "") === "bp-l10-aurum-clean";
-    const styleClass = hasAurumClean ? " is-metallic-gold" : "";
-    const styleData = hasAurumClean
-      ? ` data-text="${escapeHtml(label)}" data-nick-style="bp-l10-aurum-clean"`
+    const styleId = String(customization?.styleId || "").trim();
+    const styleCls = NICK_STYLE_CLASS[styleId] || "";
+    const styleClass = styleCls ? ` ${styleCls}` : "";
+    const styleData = styleCls
+      ? ` data-text="${escapeHtml(label)}" data-nick-style="${escapeHtml(styleId)}"`
       : "";
     let core;
     if (!isRegisteredNick(nick)) {
