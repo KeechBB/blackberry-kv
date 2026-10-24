@@ -1216,7 +1216,7 @@ body.modal-open { overflow: hidden; }
   -webkit-text-stroke: 1px rgba(12, 2, 28, 0.92);
   paint-order: stroke fill;
   font-family: Oxanium, Manrope, sans-serif;
-  font-size: 1rem;
+  font-size: 1.12rem;
   font-weight: 800;
   letter-spacing: 0.018em;
   line-height: 1.05;
@@ -2422,7 +2422,7 @@ body.modal-open { overflow: hidden; }
 }
 .hitmap-tier-head h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.12rem;
 }
 .hitmap-tier-head .muted {
   margin: 4px 0 0;
