@@ -309,6 +309,9 @@
       let vehNok = 0;
       let vehKills = 0;
       let vehDeaths = 0;
+      let vehDriver = 0;
+      let vehGunner = 0;
+      const nickLc = String(p.nick).trim().toLowerCase();
       (p.matches || []).forEach((m) => {
         vehicleKills += Math.max(0, Math.floor(Number(m.vehicleKills) || 0));
         const nv = Number(m.netVehicle);
@@ -318,20 +321,42 @@
           if (asVictim) return e.victimTrack === "vehicle" ? "vehicle" : "infantry";
           return e.track === "vehicle" ? "vehicle" : "infantry";
         };
+        const countCrewRole = (e, asVictim) => {
+          if (!e) return;
+          if (asVictim) {
+            if (trackOf(e, true) !== "vehicle") return;
+            if (String(e.victim || "").trim().toLowerCase() !== nickLc) return;
+            const role = e.victimCrewRole || e.crewRole;
+            if (role === "driver") vehDriver += 1;
+            else if (role === "gunner") vehGunner += 1;
+            return;
+          }
+          if (trackOf(e, false) !== "vehicle") return;
+          if (String(e.killer || "").trim().toLowerCase() !== nickLc) return;
+          const role = e.crewRole;
+          if (role === "driver") vehDriver += 1;
+          else if (role === "gunner") vehGunner += 1;
+        };
         (m.kills || []).forEach((e) => {
           if (trackOf(e, false) !== "vehicle") return;
           if (e.kind === "vehicle_kill" || e.kind === "die" || (e.kind === "driver_share" && e.reason !== "nok"))
             vehKills += 1;
+          countCrewRole(e, false);
         });
         (m.noks || []).forEach((e) => {
           if (trackOf(e, false) === "vehicle") vehNok += 1;
+          countCrewRole(e, false);
         });
         (m.revives || []).forEach((e) => {
           if (trackOf(e, false) === "vehicle") vehRes += 1;
+          countCrewRole(e, false);
         });
         (m.deaths || []).forEach((e) => {
           if (trackOf(e, true) === "vehicle") vehDeaths += 1;
+          countCrewRole(e, true);
         });
+        (m.teamkills || []).forEach((e) => countCrewRole(e, false));
+        (m.gotNoks || []).forEach((e) => countCrewRole(e, true));
       });
       const useVeh = mode === "vehicle";
       const rpRaw = useVeh
@@ -348,6 +373,27 @@
       const rankKey = useVeh
         ? p.rankKeyVehicle || p.rankKey
         : p.rankKeyInfantry || p.rankKey;
+      const crewTotal = vehDriver + vehGunner;
+      let crewRole = null;
+      let crewRoleLabel = "—";
+      let crewRoleScore = 0;
+      if (crewTotal > 0) {
+        if (vehDriver === vehGunner) {
+          crewRole = "split";
+          crewRoleLabel = "50/50";
+          crewRoleScore = 0.5;
+        } else if (vehDriver > vehGunner) {
+          crewRole = "driver";
+          const pct = Math.round((vehDriver / crewTotal) * 100);
+          crewRoleLabel = pct >= 70 ? "Водитель" : `Водитель ${pct}%`;
+          crewRoleScore = vehDriver / crewTotal;
+        } else {
+          crewRole = "gunner";
+          const pct = Math.round((vehGunner / crewTotal) * 100);
+          crewRoleLabel = pct >= 70 ? "Стрелок" : `Стрелок ${pct}%`;
+          crewRoleScore = vehGunner / crewTotal;
+        }
+      }
       const entry = {
         rp: Math.round(Number(rpRaw) || 0),
         rankLabel: pred ? `PREDATOR #${pred}` : rankLabel,
@@ -360,6 +406,11 @@
         vehNok,
         vehKills,
         vehDeaths,
+        vehDriver,
+        vehGunner,
+        crewRole,
+        crewRoleLabel,
+        crewRoleScore,
       };
       map.set(String(p.nick).trim().toLowerCase(), entry);
       map.set(resolveNickKey(p.nick), entry);
@@ -2464,6 +2515,11 @@
             row.kills = hit.vehKills || 0;
             row.deaths = hit.vehDeaths || 0;
             row.vehicleKills = hit.vehicleKills || 0;
+            row.crewRole = hit.crewRole || null;
+            row.crewRoleLabel = hit.crewRoleLabel || "—";
+            row.crewRoleScore = Number(hit.crewRoleScore) || 0;
+            row.vehDriver = hit.vehDriver || 0;
+            row.vehGunner = hit.vehGunner || 0;
           });
         } else {
           bundles.forEach(({ match, players }) => {
@@ -2595,9 +2651,22 @@
     });
   }
 
+  function syncTrainRatingResHeader() {
+    const th = document.querySelector('#train-rating-table th[data-trsort="res"]');
+    if (!th) return;
+    const veh = trainRatingTrack === "vehicle";
+    th.dataset.label = veh ? "Роль" : "Ресы";
+    th.title = veh
+      ? "Чаще в слоте: водитель (мехвод) или стрелок (F2/наводчик) на тяжёлой технике"
+      : "Ресы — поднятия союзников";
+    th.textContent = veh ? "Роль" : "Ресы";
+  }
+
   function paintTrainingRatingTable() {
     const tbody = document.getElementById("train-rating-rows");
     if (!tbody) return;
+    syncTrainRatingResHeader();
+    const vehTrack = trainRatingTrack === "vehicle";
     const q = (document.getElementById("train-rating-nick")?.value || "")
       .trim()
       .toLowerCase();
@@ -2631,6 +2700,15 @@
         const bv = b.winPct == null ? -1 : Number(b.winPct);
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
+      }
+      if (trainRatingSortKey === "res" && vehTrack) {
+        const av = Number(a.crewRoleScore) || 0;
+        const bv = Number(b.crewRoleScore) || 0;
+        if (av !== bv) return dir * (av - bv);
+        return String(a.crewRoleLabel || "").localeCompare(
+          String(b.crewRoleLabel || ""),
+          "ru"
+        );
       }
       if (
         trainRatingSortKey === "pwrLabel" ||
@@ -2682,8 +2760,13 @@
       paintPage
     );
     tbody.innerHTML = slice.rows
-      .map(
-        (p) => `<tr>
+      .map((p) => {
+        const roleCell = vehTrack
+          ? `<td class="ctr col-crew-role" title="${escapeHtml(
+              `водитель ${Number(p.vehDriver) || 0} · стрелок ${Number(p.vehGunner) || 0}`
+            )}">${escapeHtml(p.crewRoleLabel || "—")}</td>`
+          : `<td class="ctr">${p.res}</td>`;
+        return `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
         <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
@@ -2692,7 +2775,7 @@
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
-        <td class="ctr">${p.res}</td>
+        ${roleCell}
         <td class="ctr">${p.nok}</td>
         <td class="ctr">${p.kills}</td>
         <td class="ctr">${p.deaths}</td>
@@ -2701,8 +2784,8 @@
         <td class="ctr col-mvp-medic">${Number(p.mvpMedic) || 0}</td>
         <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
         <td class="ctr col-mvp-armor">${Number(p.mvpArmor) || 0}</td>
-      </tr>`
-      )
+      </tr>`;
+      })
       .join("");
     refreshDualScrolls();
   }
