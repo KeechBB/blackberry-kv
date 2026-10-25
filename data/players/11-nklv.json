@@ -268,5 +268,35 @@
       "deaths": 6,
       "dmg": 0
     }
-  ]
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "ADUN"
+      ],
+      "killer": [
+        "Nestor Mahno"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "VET"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "SkiLLeX"
+      ],
+      "killer": [
+        "VET"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "Mighty"
+      ]
+    }
+  }
 }

@@ -579,5 +579,35 @@
       "dmg": 1373,
       "vehicleKills": 0
     }
-  ]
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "freak"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "T-800"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "ADUN"
+      ],
+      "killer": [
+        "Trixx"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "AkiN"
+      ]
+    }
+  }
 }

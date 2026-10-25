@@ -684,5 +684,35 @@
       "deaths": 0,
       "dmg": 0
     }
-  ]
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "akin0v"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "iKEppA"
+      ],
+      "antiDeath": [
+        "Chidori"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "CAT"
+      ],
+      "damage": [
+        "CAT"
+      ],
+      "antiDeath": [
+        "Chidori"
+      ]
+    }
+  }
 }

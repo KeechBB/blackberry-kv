@@ -636,5 +636,35 @@
       "deaths": 1,
       "dmg": 0
     }
-  ]
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "Keech"
+      ],
+      "damage": [
+        "Keech"
+      ],
+      "antiDeath": [
+        "Pymba"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "KillReal"
+      ],
+      "killer": [
+        "Kuchenchips"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "CAT"
+      ]
+    }
+  }
 }

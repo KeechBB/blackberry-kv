@@ -852,5 +852,35 @@
       "deaths": 3,
       "dmg": 0
     }
-  ]
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "Kuchenchips"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "_VaGNeR_"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "LordWolf"
+      ],
+      "damage": [
+        "LordWolf"
+      ],
+      "antiDeath": [
+        "Kuchenchips"
+      ]
+    }
+  }
 }

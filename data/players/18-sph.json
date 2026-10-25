@@ -948,5 +948,35 @@
       "dmg": 0,
       "vehicleKills": 0
     }
-  ]
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Varyag"
+      ],
+      "killer": [
+        "Hikkomaru"
+      ],
+      "damage": [
+        "Hikkomaru"
+      ],
+      "antiDeath": [
+        "Frosty"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Varyag"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "iKEppA"
+      ],
+      "antiDeath": [
+        "Keech"
+      ]
+    }
+  }
 }

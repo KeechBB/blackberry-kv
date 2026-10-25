@@ -1225,6 +1225,32 @@
       }
     },
     {
+      "id": "25-nklv-huh",
+      "day": 25,
+      "opp": "ХУХ",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Башмак в клетке"
+        ],
+        "killer": [
+          "SpokSL"
+        ],
+        "damage": [
+          "SpokSL"
+        ],
+        "antiDeath": [
+          "Sceef the Maid"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "26-20r",
       "day": 26,
       "opp": "20Royals",
@@ -3462,6 +3488,22 @@
         }
       ]
     },
+    "Sceef the Maid": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Seledka": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -3504,8 +3546,8 @@
     },
     "SpokSL": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
+      "mvpKiller": 2,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
         {
@@ -3523,6 +3565,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -4681,6 +4739,22 @@
           "day": 15,
           "opp": "IH",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "Башмак в клетке": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }

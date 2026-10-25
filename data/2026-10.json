@@ -588,11 +588,13 @@
       "opp": "ХУХ",
       "map": "FCL BlackCoast Small v1",
       "size": "12v12",
-      "server": "после матчмейкинга",
+      "server": "NKLV #1",
       "rules": "FCL",
       "stack": "—",
       "status": "upcoming",
-      "note": "чужой КВ · 1-я встреча NKLV vs ХУХ (в посте XYX) · FCL_BlackCoast_Small_v1 · 2 раунда · 12v12 · FCL · 16:00 МСК · 2-я встреча — Narva Small · same day Junior vs ALPHA 20:00 / Main vs .solid 21:00 · NO SCOUT · NO MEETINGS"
+      "playersUrl": "data/players/25-nklv-huh.json",
+      "r1": "0:26",
+      "note": "чужой КВ · 1-я встреча NKLV vs ХУХ (в посте XYX) · R1 0:26 · XYX взял раунд · R2 ждём · встреча не закрыта · FCL_BlackCoast_Small_v1 · 12v12 · сервер [RU][NKLV] Сибирский Анклав #1 · Батя cam skip · 2-я встреча — Narva Small"
     },
     {
       "id": "25-nklv-huh-narva",
