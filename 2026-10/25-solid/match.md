@@ -7,7 +7,7 @@
 
 - **18:00 UTC** / **21:00 МСК**
 - **26v26**
-- Карта: **SEC 26 Mutaha PAAS v1** (на сервере слой PAAS; в заявке AAS)
+- Карта: **SEC 26 Mutaha PAAS v1**
 - Сервер: **.solid** `.solid Combat Zone`
 - Правила: **SEC**
 - Состав: **мейн-стак**
@@ -17,11 +17,11 @@
 | Раунд | Счёт | Длина | Фракции |
 |---|---|---|---|
 | **R1** | **0:44** | 30:29 | мы **BAF** · они **Militia** · *Minor Defeat* |
-| **R2** | — | — | ждём |
+| **R2** | **0:105** | 30:33 | мы **Militia** · они **BAF** · *Decisive Defeat* |
 
-**Встреча открыта** — победитель по сумме тикетов после R2 (ничьих нет).
+**Встреча 0–2** · сумма тикетов **0:149** (0:44 · 0:105). Ничьих нет.
 
 Стата: [players/25-solid.json](../../public/data/players/25-solid.json).  
-Скрины: [screens/r1/](screens/r1/).  
+Скрины: [screens/r1/](screens/r1/) · [screens/r2/](screens/r2/).  
 Лого: `brand/logos/solid.png`. BB: `brand/logos/blackberry.png`.  
 Заметки: [analytics.md](analytics.md).

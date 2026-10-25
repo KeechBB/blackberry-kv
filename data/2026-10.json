@@ -642,10 +642,12 @@
       "server": ".solid",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "lose",
       "r1": "0:44",
       "playersUrl": "data/players/25-solid.json",
-      "note": "Main · R1 0:44 Minor Defeat BAF·Militia 30:29 · Mutaha PAAS · сервер .solid · ждём R2 · сумма пока 0:44 · same day Junior vs ALPHA 20:00"
+      "note": "Main · 0–2 сумма 0:149 (0:44 · 0:105) · Mutaha PAAS · R1 BAF·Militia · R2 Militia·BAF · сервер .solid",
+      "meeting": "0-2",
+      "r2": "0:105"
     },
     {
       "id": "26-alpha",

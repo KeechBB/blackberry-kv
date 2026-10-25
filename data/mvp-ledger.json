@@ -1294,7 +1294,7 @@
       "id": "25-solid",
       "day": 25,
       "opp": ".solid",
-      "meeting": null,
+      "meeting": "0-2",
       "r1": {
         "medic": [
           "vasserman"
@@ -1310,10 +1310,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "Diray"
+        ],
+        "antiDeath": [
+          "Pymba"
+        ]
       }
     },
     {
@@ -2028,8 +2036,8 @@
     },
     "Diray": {
       "mvpMedic": 0,
-      "mvpKiller": 5,
-      "mvpDamage": 1,
+      "mvpKiller": 6,
+      "mvpDamage": 2,
       "antiDeath": 1,
       "awards": [
         {
@@ -2087,6 +2095,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -3083,7 +3107,7 @@
       ]
     },
     "Morty": {
-      "mvpMedic": 7,
+      "mvpMedic": 8,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -3141,6 +3165,14 @@
           "day": 24,
           "opp": "HQ",
           "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -3310,7 +3342,7 @@
       "mvpMedic": 0,
       "mvpKiller": 2,
       "mvpDamage": 1,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "14-fal",
@@ -3343,6 +3375,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "26-20r",
