@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261025-cw-month-now2";
+    new URLSearchParams(location.search).get("v") || "20261025-cw-month-now3";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1353,9 +1353,20 @@
 
     const syncMatchMonths = () => {
       const y = Number(yearSel.value);
-      const months = catalog.filter((m) => m.year === y).sort((a, b) => b.month - a.month);
+      const now = mskNowYm();
+      const months = catalog
+        .filter((m) => Number(m.year) === y)
+        .sort((a, b) => Number(a.month) - Number(b.month));
+      const pick =
+        pickDefaultMonthMeta(months, now.year, now.month) ||
+        months[months.length - 1] ||
+        null;
+      const pickId = pick?.id || "";
       document.getElementById("filter-month").innerHTML = months
-        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .map(
+          (m) =>
+            `<option value="${m.id}"${m.id === pickId ? " selected" : ""}>${MONTH_RU[m.month] || m.month}</option>`
+        )
         .join("");
     };
     const syncRatingMonths = () => {
