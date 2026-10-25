@@ -2170,15 +2170,22 @@ body.modal-open { overflow: hidden; }
   font-size: 0.55rem;
   opacity: 0.8;
 }
+#train-rating-table.rating-table tbody tr {
+  height: 2.55rem;
+}
 #train-rating-table.rating-table td {
   padding: 6px 3px !important;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
+  line-height: 1.2;
   white-space: nowrap;
+  height: 2.55rem;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 #train-rating-table.rating-table td.col-nick {
   padding-left: 6px !important;
   padding-right: 4px !important;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
 }
 #train-rating-table .rank-cell {
   display: flex;
