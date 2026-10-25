@@ -1191,6 +1191,40 @@
       }
     },
     {
+      "id": "25-alpha",
+      "day": 25,
+      "opp": "ALPHA",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Inrikus"
+        ],
+        "killer": [
+          "KTO--TO"
+        ],
+        "damage": [
+          "KTO--TO"
+        ],
+        "antiDeath": [
+          "HunterN7"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Inrikus"
+        ],
+        "killer": [
+          "COBRA"
+        ],
+        "damage": [
+          "COBRA"
+        ],
+        "antiDeath": [
+          "AkiN"
+        ]
+      }
+    },
+    {
       "id": "25-h1gh",
       "day": 25,
       "opp": "H1gh",
@@ -1630,7 +1664,7 @@
       "mvpMedic": 1,
       "mvpKiller": 2,
       "mvpDamage": 0,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "08-hq",
@@ -1660,6 +1694,14 @@
           "matchId": "21-ra",
           "day": 21,
           "opp": "RA",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -1916,8 +1958,8 @@
     },
     "COBRA": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 5,
+      "mvpKiller": 2,
+      "mvpDamage": 6,
       "antiDeath": 1,
       "awards": [
         {
@@ -1972,6 +2014,22 @@
           "matchId": "23-avg",
           "day": 23,
           "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
@@ -2458,8 +2516,24 @@
         }
       ]
     },
-    "Inrikus": {
+    "HunterN7": {
       "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Inrikus": {
+      "mvpMedic": 2,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -2471,6 +2545,22 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -2556,10 +2646,26 @@
     },
     "KTO--TO": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
+      "mvpKiller": 2,
+      "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "26-alpha",
           "day": 26,

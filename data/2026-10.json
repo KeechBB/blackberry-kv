@@ -625,11 +625,15 @@
       "opp": "ALPHA",
       "map": "FCL Mutaha",
       "size": "16v16",
-      "server": "после матчмейкинга",
+      "server": "FCL ARENA #2 (TR2)",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:00 · 2-я Mutaha vs ALPHA (после 09.10 2–0) · same day Main vs .solid 21:00 · NO SCOUT · NO MEETINGS"
+      "status": "win",
+      "note": "Junior · FCL · FCL Mutaha · TR2 · сумма 100:37 (5:37 · 95:0) · раунды 1–1 · встреча по сумме тикетов 2–0 · авто+fix R2 flip",
+      "meeting": "2–0",
+      "r1": "5:37",
+      "r2": "95:0",
+      "playersUrl": "data/players/25-alpha.json"
     },
     {
       "id": "25-solid",
