@@ -139,7 +139,7 @@
           <aside class="metrics-glossary" aria-label="Термины рейтинга">
             <p><strong>TU</strong> — Ticket Utility: (киллы + ресы − смерти) ÷ катки. Килл забирает тикет у врага, рес сохраняет свой, смерть отдаёт. Может быть минус.</p>
             <p><strong>Калибровка</strong> — меньше 5 каток КВ. Эти игроки внизу таблицы, вместо TU написано «калибровка».</p>
-            <p>Лучшая цифра в столбце — жёлтым. <strong>Уничтожено ТЕХ</strong> и MVP Armor — только из логов TR (со скринов не считаем).</p>
+            <p>Лучшая цифра в столбце — жёлтым. <strong>Уничт. техники</strong> и MVP Armor — только из логов TR (со скринов не считаем).</p>
             <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
             <p><strong>FIT</strong> — насколько подходишь тиру по КВ (окно «Тиры» / вкладка Тиры Fit).</p>
           </aside>
@@ -164,7 +164,7 @@
                   <th class="ctr sortable" data-rsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-rsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-rsort="kd" data-label="KD">KD</th>
-                  <th class="ctr sortable col-veh" data-rsort="vehicleKills" data-label="Уничтожено ТЕХ" title="Уничтоженная техника с 17.10.2026 01:00 МСК — только из логов TR, не со скринов">Уничтожено ТЕХ</th>
+                  <th class="ctr sortable col-veh" data-rsort="vehicleKills" data-label="Уничт." data-th2="техники" title="Уничтоженная техника с 17.10.2026 01:00 МСК — только из логов TR, не со скринов">Уничт.<br>техники</th>
                   <th class="ctr sortable col-mvp-medic" data-rsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
                   <th class="ctr sortable col-mvp-killer" data-rsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
                   <th class="ctr sortable col-mvp-armor" data-rsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники (логи)">MVP Armor</th>
@@ -423,22 +423,22 @@
                   <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
                   <th class="ctr sortable" data-trsort="tier" data-label="Тир">Тир</th>
                   <th class="ctr sortable" data-trsort="games" data-label="Каток">Каток</th>
-                  <th class="ctr sortable" data-trsort="winPct" data-label="% побед" title="% побед на тренировках">% побед</th>
+                  <th class="ctr sortable" data-trsort="winPct" data-label="%" data-th2="побед" title="% побед на тренировках">%<br>побед</th>
                   <th class="ctr sortable" data-trsort="res" data-label="Ресы">Ресы</th>
                   <th class="ctr sortable" data-trsort="nok" data-label="Ноки">Ноки</th>
                   <th class="ctr sortable" data-trsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-trsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-trsort="kd" data-label="KD">KD</th>
-                  <th class="ctr sortable col-veh" data-trsort="vehicleKills" data-label="Уничтожено ТЕХ" title="Уничтоженная техника с 17.10.2026 01:00 МСК">Уничтожено ТЕХ</th>
-                  <th class="ctr sortable col-mvp-medic train-inf-only" data-trsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
-                  <th class="ctr sortable col-mvp-killer train-inf-only" data-trsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
-                  <th class="ctr sortable col-mvp-armor train-inf-only" data-trsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники">MVP Armor</th>
-                  <th class="ctr sortable col-veh-dmg-to train-veh-only" hidden data-trsort="dmgToVeh" data-label="Урон по ТЕХ" title="Суммарный урон по технике (ванильный лог)">Урон↓ТЕХ</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTurret" data-label="Башня %" title="Доля урона по башне">Бшн%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zHull" data-label="Корпус %" title="Доля урона по корпусу">Корп%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zEngine" data-label="Двигатель %" title="Доля урона по двигателю">Двг%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zWheel" data-label="Колёса %" title="Доля урона по колёсам">Кол%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTrack" data-label="Гусеницы %" title="Доля урона по гусеницам">Гус%</th>
+                  <th class="ctr sortable col-veh" data-trsort="vehicleKills" data-label="Уничт." data-th2="техники" title="Уничтоженная техника с 17.10.2026 01:00 МСК">Уничт.<br>техники</th>
+                  <th class="ctr sortable col-mvp-medic train-inf-only" data-trsort="mvpMedic" data-label="MVP" data-th2="Medic">MVP<br>Medic</th>
+                  <th class="ctr sortable col-mvp-killer train-inf-only" data-trsort="mvpKiller" data-label="MVP" data-th2="Killer">MVP<br>Killer</th>
+                  <th class="ctr sortable col-mvp-armor train-inf-only" data-trsort="mvpArmor" data-label="MVP" data-th2="Armor" title="MVP за уничтожение техники">MVP<br>Armor</th>
+                  <th class="ctr sortable col-veh-dmg-to train-veh-only" hidden data-trsort="dmgToVeh" data-label="Урон" data-th2="↓ТЕХ" title="Суммарный урон по технике (ванильный лог)">Урон<br>↓ТЕХ</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTurret" data-label="Бшн" data-th2="%" title="Доля урона по башне">Бшн<br>%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zHull" data-label="Корп" data-th2="%" title="Доля урона по корпусу">Корп<br>%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zEngine" data-label="Двг" data-th2="%" title="Доля урона по двигателю">Двг<br>%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zWheel" data-label="Кол" data-th2="%" title="Доля урона по колёсам">Кол<br>%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTrack" data-label="Гус" data-th2="%" title="Доля урона по гусеницам">Гус<br>%</th>
                   <th class="ctr sortable train-veh-only" hidden data-trsort="noPen" data-label="Непробития" title="Попадания по технике с 0 урона (шт.)">Непроб.</th>
                 </tr>
               </thead>

@@ -2110,6 +2110,45 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.02em;
   text-align: center;
 }
+/* Рейтинг тренировок: шапка в 2 этажа — уже колонки (бить th,td {nowrap}) */
+#train-rating-table.rating-table thead th {
+  white-space: normal !important;
+  line-height: 1.12;
+  vertical-align: middle;
+  padding: 8px 3px;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  max-width: 3.2rem;
+  min-width: 2.2rem;
+  min-height: 2.6em;
+}
+#train-rating-table.rating-table thead th[data-trsort="nick"],
+#train-rating-table.rating-table thead th[data-label="Ник"] {
+  white-space: nowrap !important;
+  max-width: none;
+  min-width: 10rem;
+  font-size: 0.78rem;
+  min-height: 0;
+}
+#train-rating-table.rating-table thead th.col-veh {
+  max-width: 4rem;
+  min-width: 3.2rem;
+}
+#train-rating-table.rating-table thead th .sort-ind {
+  display: inline-block;
+  margin-left: 1px;
+}
+.rating-table th.col-veh {
+  white-space: normal;
+  line-height: 1.15;
+  min-width: 3.6rem;
+  max-width: 4.4rem;
+  width: 4rem;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 4px;
+  font-size: 0.7rem;
+}
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,
 .rating-table th.col-mvp-war,

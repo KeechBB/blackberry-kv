@@ -2201,6 +2201,19 @@
       });
   }
 
+  /** Двухэтажные заголовки: data-th2="вторая строка" или перенос по пробелу в label */
+  function thTwoFloorHtml(base, th) {
+    const line2 = (th?.dataset?.th2 || "").trim();
+    if (line2) {
+      return `${escapeHtml(base)}<br>${escapeHtml(line2)}`;
+    }
+    const m = String(base || "").match(/^(\S[\s\S]*?)\s+(\S[\s\S]*)$/);
+    if (m && /[а-яА-Яa-zA-Z%]/.test(m[1]) && m[1].length + m[2].length >= 6) {
+      return `${escapeHtml(m[1])}<br>${escapeHtml(m[2])}`;
+    }
+    return escapeHtml(base);
+  }
+
   function paintRatingSortMarks() {
     document.querySelectorAll("#cw-rating-table th.sortable").forEach((th) => {
       const key = th.dataset.rsort;
@@ -2210,7 +2223,11 @@
       const arrow = active ? (ratingSortDir === "asc" ? "▲" : "▼") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (ratingSortDir === "asc" ? "ascending" : "descending") : "none");
-      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+      const labelHtml =
+        key === "vehicleKills" || th.classList.contains("col-veh")
+          ? thTwoFloorHtml(base, th)
+          : escapeHtml(base);
+      th.innerHTML = `${labelHtml}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
     });
   }
 
@@ -2567,14 +2584,21 @@
             row.kills = hit.vehKills || 0;
             row.deaths = hit.vehDeaths || 0;
             row.vehicleKills = hit.vehicleKills || 0;
-            row.crewRole = hit.crewRole || null;
-            row.crewRoleLabel = hit.crewRoleLabel || "—";
-            row.crewRoleScore = Number(hit.crewRoleScore) || 0;
             row.vehDriver = hit.vehDriver || 0;
             row.vehGunner = hit.vehGunner || 0;
             row._vehMatchIds = hit.vehMatchIds || new Set();
             const vh = vehicleHitOf(vehHits, p.nick);
             const zp = vh?.zonePct || {};
+            /* Роль = доля времени в слоте мехвод/наводчик (не события; секунды в UI не пишем) */
+            if (vh && (vh.crewRole || Number(vh.seatDriverSec) > 0 || Number(vh.seatGunnerSec) > 0)) {
+              row.crewRole = vh.crewRole || null;
+              row.crewRoleLabel = vh.crewRoleLabel || "—";
+              row.crewRoleScore = Number(vh.crewRoleScore) || 0;
+            } else {
+              row.crewRole = hit.crewRole || null;
+              row.crewRoleLabel = hit.crewRoleLabel || "—";
+              row.crewRoleScore = Number(hit.crewRoleScore) || 0;
+            }
             row.dmgToVeh = Number(vh?.dmgToVeh) || 0;
             row.dmgFromVeh = Number(vh?.dmgFromVeh) || 0;
             row.noPen = Number(vh?.noPen) || 0;
@@ -2734,7 +2758,7 @@
         "aria-sort",
         active ? (trainRatingSortDir === "asc" ? "ascending" : "descending") : "none"
       );
-      th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+      th.innerHTML = `${thTwoFloorHtml(base, th)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
     });
   }
 
@@ -2744,7 +2768,7 @@
     if (thRes) {
       thRes.dataset.label = veh ? "Роль" : "Ресы";
       thRes.title = veh
-        ? "Чаще в слоте: водитель (мехвод) или стрелок (F2/наводчик) на тяжёлой технике"
+        ? "По времени в слоте тяжёлой: водитель (мехвод) или стрелок (F2/наводчик)"
         : "Ресы — поднятия союзников";
       thRes.textContent = veh ? "Роль" : "Ресы";
     }
