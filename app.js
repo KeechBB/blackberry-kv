@@ -2201,17 +2201,20 @@
       });
   }
 
-  /** Двухэтажные заголовки: data-th2="вторая строка" или перенос по пробелу в label */
+  /** Двухэтажный заголовок: data-th2="низ" + data-label="верх" */
   function thTwoFloorHtml(base, th) {
     const line2 = (th?.dataset?.th2 || "").trim();
-    if (line2) {
-      return `${escapeHtml(base)}<br>${escapeHtml(line2)}`;
+    let a = String(base || "").trim();
+    let b = line2;
+    if (!b) {
+      const m = a.match(/^(\S[\s\S]*?)\s+(\S[\s\S]*)$/);
+      if (m) {
+        a = m[1];
+        b = m[2];
+      }
     }
-    const m = String(base || "").match(/^(\S[\s\S]*?)\s+(\S[\s\S]*)$/);
-    if (m && /[а-яА-Яa-zA-Z%]/.test(m[1]) && m[1].length + m[2].length >= 6) {
-      return `${escapeHtml(m[1])}<br>${escapeHtml(m[2])}`;
-    }
-    return escapeHtml(base);
+    if (!b) return escapeHtml(a);
+    return `<span class="th-2f"><span class="th-2f-a">${escapeHtml(a)}</span><span class="th-2f-b">${escapeHtml(b)}</span></span>`;
   }
 
   function paintRatingSortMarks() {
@@ -2223,10 +2226,9 @@
       const arrow = active ? (ratingSortDir === "asc" ? "▲" : "▼") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (ratingSortDir === "asc" ? "ascending" : "descending") : "none");
-      const labelHtml =
-        key === "vehicleKills" || th.classList.contains("col-veh")
-          ? thTwoFloorHtml(base, th)
-          : escapeHtml(base);
+      const labelHtml = th.dataset.th2 || key === "vehicleKills" || th.classList.contains("col-veh")
+        ? thTwoFloorHtml(base, th)
+        : escapeHtml(base);
       th.innerHTML = `${labelHtml}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
     });
   }

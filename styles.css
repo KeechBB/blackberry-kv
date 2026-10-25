@@ -2110,44 +2110,68 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.02em;
   text-align: center;
 }
-/* Рейтинг тренировок: шапка в 2 этажа — уже колонки (бить th,td {nowrap}) */
+/* Двухэтажный заголовок колонки */
+.th-2f {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  line-height: 1.05;
+  vertical-align: middle;
+}
+.th-2f-a,
+.th-2f-b {
+  display: block;
+  white-space: nowrap;
+}
+/* Рейтинг тренировок: плотная шапка + узкие колонки */
 #train-rating-table.rating-table thead th {
   white-space: normal !important;
-  line-height: 1.12;
+  line-height: 1.05;
   vertical-align: middle;
-  padding: 8px 3px;
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  max-width: 3.2rem;
-  min-width: 2.2rem;
-  min-height: 2.6em;
+  padding: 6px 2px;
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+  max-width: 2.8rem;
+  min-width: 1.9rem;
 }
 #train-rating-table.rating-table thead th[data-trsort="nick"],
 #train-rating-table.rating-table thead th[data-label="Ник"] {
   white-space: nowrap !important;
   max-width: none;
-  min-width: 10rem;
-  font-size: 0.78rem;
-  min-height: 0;
+  min-width: 9rem;
+  font-size: 0.72rem;
 }
-#train-rating-table.rating-table thead th.col-veh {
-  max-width: 4rem;
-  min-width: 3.2rem;
+#train-rating-table.rating-table thead th.col-veh,
+#train-rating-table.rating-table thead th.col-veh-dmg-to {
+  max-width: 3.2rem;
+  min-width: 2.6rem;
 }
 #train-rating-table.rating-table thead th .sort-ind {
-  display: inline-block;
-  margin-left: 1px;
+  display: block;
+  margin: 0 auto;
+  line-height: 1;
+  opacity: 0.85;
+}
+#train-rating-table.rating-table td {
+  padding: 8px 4px;
+  font-size: 0.84rem;
+}
+#train-rating-table.rating-table td.col-nick {
+  padding-left: 8px;
+  padding-right: 6px;
 }
 .rating-table th.col-veh {
-  white-space: normal;
-  line-height: 1.15;
-  min-width: 3.6rem;
-  max-width: 4.4rem;
-  width: 4rem;
+  white-space: normal !important;
+  line-height: 1.05;
+  min-width: 2.8rem;
+  max-width: 3.4rem;
+  width: 3rem;
   text-align: center;
   vertical-align: middle;
-  padding: 8px 4px;
-  font-size: 0.7rem;
+  padding: 6px 2px;
+  font-size: 0.62rem;
 }
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,

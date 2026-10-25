@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261025-1839-veh-hit" />
+  <link rel="stylesheet" href="styles.css?v=20261025-1905-th2f" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -139,7 +139,7 @@
           <aside class="metrics-glossary" aria-label="Термины рейтинга">
             <p><strong>TU</strong> — Ticket Utility: (киллы + ресы − смерти) ÷ катки. Килл забирает тикет у врага, рес сохраняет свой, смерть отдаёт. Может быть минус.</p>
             <p><strong>Калибровка</strong> — меньше 5 каток КВ. Эти игроки внизу таблицы, вместо TU написано «калибровка».</p>
-            <p>Лучшая цифра в столбце — жёлтым. <strong>Уничт. техники</strong> и MVP Armor — только из логов TR (со скринов не считаем).</p>
+            <p>Лучшая цифра в столбце — жёлтым. <strong>Уничт. Тех</strong> и MVP Armor — только из логов TR (со скринов не считаем).</p>
             <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
             <p><strong>FIT</strong> — насколько подходишь тиру по КВ (окно «Тиры» / вкладка Тиры Fit).</p>
           </aside>
@@ -164,7 +164,7 @@
                   <th class="ctr sortable" data-rsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-rsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-rsort="kd" data-label="KD">KD</th>
-                  <th class="ctr sortable col-veh" data-rsort="vehicleKills" data-label="Уничт." data-th2="техники" title="Уничтоженная техника с 17.10.2026 01:00 МСК — только из логов TR, не со скринов">Уничт.<br>техники</th>
+                  <th class="ctr sortable col-veh" data-rsort="vehicleKills" data-label="Уничт." data-th2="Тех" title="Уничтоженная техника с 17.10.2026 01:00 МСК — только из логов TR, не со скринов"><span class="th-2f"><span class="th-2f-a">Уничт.</span><span class="th-2f-b">Тех</span></span></th>
                   <th class="ctr sortable col-mvp-medic" data-rsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
                   <th class="ctr sortable col-mvp-killer" data-rsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
                   <th class="ctr sortable col-mvp-armor" data-rsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники (логи)">MVP Armor</th>
@@ -423,22 +423,22 @@
                   <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
                   <th class="ctr sortable" data-trsort="tier" data-label="Тир">Тир</th>
                   <th class="ctr sortable" data-trsort="games" data-label="Каток">Каток</th>
-                  <th class="ctr sortable" data-trsort="winPct" data-label="%" data-th2="побед" title="% побед на тренировках">%<br>побед</th>
+                  <th class="ctr sortable" data-trsort="winPct" data-label="%" data-th2="побед" title="% побед на тренировках"><span class="th-2f"><span class="th-2f-a">%</span><span class="th-2f-b">побед</span></span></th>
                   <th class="ctr sortable" data-trsort="res" data-label="Ресы">Ресы</th>
                   <th class="ctr sortable" data-trsort="nok" data-label="Ноки">Ноки</th>
                   <th class="ctr sortable" data-trsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-trsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-trsort="kd" data-label="KD">KD</th>
-                  <th class="ctr sortable col-veh" data-trsort="vehicleKills" data-label="Уничт." data-th2="техники" title="Уничтоженная техника с 17.10.2026 01:00 МСК">Уничт.<br>техники</th>
-                  <th class="ctr sortable col-mvp-medic train-inf-only" data-trsort="mvpMedic" data-label="MVP" data-th2="Medic">MVP<br>Medic</th>
-                  <th class="ctr sortable col-mvp-killer train-inf-only" data-trsort="mvpKiller" data-label="MVP" data-th2="Killer">MVP<br>Killer</th>
-                  <th class="ctr sortable col-mvp-armor train-inf-only" data-trsort="mvpArmor" data-label="MVP" data-th2="Armor" title="MVP за уничтожение техники">MVP<br>Armor</th>
-                  <th class="ctr sortable col-veh-dmg-to train-veh-only" hidden data-trsort="dmgToVeh" data-label="Урон" data-th2="↓ТЕХ" title="Суммарный урон по технике (ванильный лог)">Урон<br>↓ТЕХ</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTurret" data-label="Бшн" data-th2="%" title="Доля урона по башне">Бшн<br>%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zHull" data-label="Корп" data-th2="%" title="Доля урона по корпусу">Корп<br>%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zEngine" data-label="Двг" data-th2="%" title="Доля урона по двигателю">Двг<br>%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zWheel" data-label="Кол" data-th2="%" title="Доля урона по колёсам">Кол<br>%</th>
-                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTrack" data-label="Гус" data-th2="%" title="Доля урона по гусеницам">Гус<br>%</th>
+                  <th class="ctr sortable col-veh" data-trsort="vehicleKills" data-label="Уничт." data-th2="Тех" title="Уничтоженная техника с 17.10.2026 01:00 МСК"><span class="th-2f"><span class="th-2f-a">Уничт.</span><span class="th-2f-b">Тех</span></span></th>
+                  <th class="ctr sortable col-mvp-medic train-inf-only" data-trsort="mvpMedic" data-label="MVP" data-th2="Medic"><span class="th-2f"><span class="th-2f-a">MVP</span><span class="th-2f-b">Medic</span></span></th>
+                  <th class="ctr sortable col-mvp-killer train-inf-only" data-trsort="mvpKiller" data-label="MVP" data-th2="Killer"><span class="th-2f"><span class="th-2f-a">MVP</span><span class="th-2f-b">Killer</span></span></th>
+                  <th class="ctr sortable col-mvp-armor train-inf-only" data-trsort="mvpArmor" data-label="MVP" data-th2="Armor" title="MVP за уничтожение техники"><span class="th-2f"><span class="th-2f-a">MVP</span><span class="th-2f-b">Armor</span></span></th>
+                  <th class="ctr sortable col-veh-dmg-to train-veh-only" hidden data-trsort="dmgToVeh" data-label="Урон" data-th2="↓Тех" title="Суммарный урон по технике (ванильный лог)"><span class="th-2f"><span class="th-2f-a">Урон</span><span class="th-2f-b">↓Тех</span></span></th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTurret" data-label="Бшн" data-th2="%" title="Доля урона по башне"><span class="th-2f"><span class="th-2f-a">Бшн</span><span class="th-2f-b">%</span></span></th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zHull" data-label="Корп" data-th2="%" title="Доля урона по корпусу"><span class="th-2f"><span class="th-2f-a">Корп</span><span class="th-2f-b">%</span></span></th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zEngine" data-label="Двг" data-th2="%" title="Доля урона по двигателю"><span class="th-2f"><span class="th-2f-a">Двг</span><span class="th-2f-b">%</span></span></th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zWheel" data-label="Кол" data-th2="%" title="Доля урона по колёсам"><span class="th-2f"><span class="th-2f-a">Кол</span><span class="th-2f-b">%</span></span></th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTrack" data-label="Гус" data-th2="%" title="Доля урона по гусеницам"><span class="th-2f"><span class="th-2f-a">Гус</span><span class="th-2f-b">%</span></span></th>
                   <th class="ctr sortable train-veh-only" hidden data-trsort="noPen" data-label="Непробития" title="Попадания по технике с 0 урона (шт.)">Непроб.</th>
                 </tr>
               </thead>
@@ -780,7 +780,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261025-1850-no-from"></script>
+  <script src="app.js?v=20261025-1905-th2f"></script>
   <script src="tfs-fit.js?v=20261007-fit-roles"></script>
 </body>
 </html>
