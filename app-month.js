@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261026-status-tag";
+    new URLSearchParams(location.search).get("v") || "20261026-winner-only";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -3061,21 +3061,20 @@
     return (m && m.meeting) || "—";
   }
 
-  /** Статус + тег победителя встречи: победа [BB] / поражение [ALPHA]. */
+  /** Статус: всегда «победа [тег победителя]»; без слова «поражение». */
   function statusWithWinnerTag(m) {
     const st = (m && m.status) || "upcoming";
-    const base = STATUS_RU[st] || st;
-    if (st === "win") {
-      const tag = hostClanTag(m);
-      return `${base} [${tag}]`;
+    if (st === "win" || st === "lose") {
+      let tag;
+      if (st === "win") {
+        tag = hostClanTag(m);
+      } else {
+        tag = String((m && m.opp) || "").trim().replace(/^\[|\]$/g, "");
+      }
+      if (!tag || tag === "—") return "победа";
+      return `победа [${tag}]`;
     }
-    if (st === "lose") {
-      let opp = String((m && m.opp) || "").trim();
-      if (!opp || opp === "—") return base;
-      opp = opp.replace(/^\[|\]$/g, "");
-      return `${base} [${opp}]`;
-    }
-    return base;
+    return STATUS_RU[st] || st;
   }
 
   function cwPlayerList(players) {
