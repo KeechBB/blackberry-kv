@@ -1,26 +1,26 @@
 (function () {
   const STATUS_RU = {
-    win: "победа",
-    lose: "поражение",
-    draw: "ничья",
-    upcoming: "скоро",
-    cancel: "отмена",
-    move: "перенос",
+    win: "РїРѕР±РµРґР°",
+    lose: "РїРѕСЂР°Р¶РµРЅРёРµ",
+    draw: "РЅРёС‡СЊСЏ",
+    upcoming: "СЃРєРѕСЂРѕ",
+    cancel: "РѕС‚РјРµРЅР°",
+    move: "РїРµСЂРµРЅРѕСЃ",
   };
   const MONTH_RU = [
     "",
-    "Январь",
-    "Февраль",
-    "Март",
-    "Апрель",
-    "Май",
-    "Июнь",
-    "Июль",
-    "Август",
-    "Сентябрь",
-    "Октябрь",
-    "Ноябрь",
-    "Декабрь",
+    "РЇРЅРІР°СЂСЊ",
+    "Р¤РµРІСЂР°Р»СЊ",
+    "РњР°СЂС‚",
+    "РђРїСЂРµР»СЊ",
+    "РњР°Р№",
+    "РСЋРЅСЊ",
+    "РСЋР»СЊ",
+    "РђРІРіСѓСЃС‚",
+    "РЎРµРЅС‚СЏР±СЂСЊ",
+    "РћРєС‚СЏР±СЂСЊ",
+    "РќРѕСЏР±СЂСЊ",
+    "Р”РµРєР°Р±СЂСЊ",
   ];
   const INDEX_URL = "data/index.json";
   const TRAINING_INDEX_URL = "data/training-index.json";
@@ -30,7 +30,7 @@
   const DATA_VER =
     new URLSearchParams(location.search).get("v") || "20261025-cw-month-now3";
 
-  /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
+  /** РџР°РіРёРЅР°С†РёСЏ С‚Р°Р±Р»РёС† (РѕРґРёРЅ СЃРєСЂРѕР»Р» СЃС‚СЂР°РЅРёС†С‹, Р±РµР· max-height Сѓ .table-scroll). */
   const PAGE_CW_MATCHES = 15;
   const PAGE_CW_RATING = 50;
   const PAGE_TM_MATCHES = 20;
@@ -70,7 +70,7 @@
           `<button type="button" class="kv-page-btn${n === page ? " is-active" : ""}" data-page="${n}">${n}</button>`
       )
       .join("");
-    host.innerHTML = `<span class="muted kv-pager-meta">${from}–${to} из ${total}</span><div class="kv-pager-btns">${btns}</div>`;
+    host.innerHTML = `<span class="muted kv-pager-meta">${from}вЂ“${to} РёР· ${total}</span><div class="kv-pager-btns">${btns}</div>`;
     host.querySelectorAll("[data-page]").forEach((btn) => {
       btn.addEventListener("click", () => {
         onPick(Number(btn.dataset.page));
@@ -83,7 +83,7 @@
     });
   }
 
-  /** RP/TU: null отдельно от 0 (Number(x)||-1e9 схлопывал ноль с «нет рейтинга»). */
+  /** RP/TU: null РѕС‚РґРµР»СЊРЅРѕ РѕС‚ 0 (Number(x)||-1e9 СЃС…Р»РѕРїС‹РІР°Р» РЅРѕР»СЊ СЃ В«РЅРµС‚ СЂРµР№С‚РёРЅРіР°В»). */
   function scoreOrFloor(v) {
     return v == null || !Number.isFinite(Number(v)) ? -1e9 : Number(v);
   }
@@ -110,28 +110,28 @@
   ];
   const PROFILE_BASE = "https://bb-squad.ru/players";
   const FACTION_FALLBACK = {
-    WPMC: "ЧВК СТАРОЕ",
-    TLF: "Турция",
-    USMC: "Морская Пехота",
-    GFI: "Иран",
-    USA: "Америка",
-    RGF: "Россия",
-    CRF: "Новая канада",
-    VDV: "ВДВ",
-    CAF: "Канада",
-    MEI: "Талибы",
-    BAF: "Англия",
-    IMF: "Сербы",
-    ADF: "Австралия",
-    PLA: "Китай",
-    AFU: "ВСУ",
-    HOAK: "ХАОКИ",
+    WPMC: "Р§Р’Рљ РЎРўРђР РћР•",
+    TLF: "РўСѓСЂС†РёСЏ",
+    USMC: "РњРѕСЂСЃРєР°СЏ РџРµС…РѕС‚Р°",
+    GFI: "РСЂР°РЅ",
+    USA: "РђРјРµСЂРёРєР°",
+    RGF: "Р РѕСЃСЃРёСЏ",
+    CRF: "РќРѕРІР°СЏ РєР°РЅР°РґР°",
+    VDV: "Р’Р”Р’",
+    CAF: "РљР°РЅР°РґР°",
+    MEI: "РўР°Р»РёР±С‹",
+    BAF: "РђРЅРіР»РёСЏ",
+    IMF: "РЎРµСЂР±С‹",
+    ADF: "РђРІСЃС‚СЂР°Р»РёСЏ",
+    PLA: "РљРёС‚Р°Р№",
+    AFU: "Р’РЎРЈ",
+    HOAK: "РҐРђРћРљР",
   };
   const _qs = new URLSearchParams(location.search);
   const isEmbed = _qs.has("embed") || window.self !== window.top;
-  /** В iframe «Матчи» — без дубля кнопки Тиры Fit (она в большой вкладке платформы). */
+  /** Р’ iframe В«РњР°С‚С‡РёВ» вЂ” Р±РµР· РґСѓР±Р»СЏ РєРЅРѕРїРєРё РўРёСЂС‹ Fit (РѕРЅР° РІ Р±РѕР»СЊС€РѕР№ РІРєР»Р°РґРєРµ РїР»Р°С‚С„РѕСЂРјС‹). */
   const hideTiersTab = _qs.has("hideTiers");
-  /** В iframe большой «Тиры FIT» — только панель tfs-fit, без остального TM chrome. */
+  /** Р’ iframe Р±РѕР»СЊС€РѕР№ В«РўРёСЂС‹ FITВ» вЂ” С‚РѕР»СЊРєРѕ РїР°РЅРµР»СЊ tfs-fit, Р±РµР· РѕСЃС‚Р°Р»СЊРЅРѕРіРѕ TM chrome. */
   const tfsEmbed = _qs.has("tfsEmbed");
   if (isEmbed) {
     document.documentElement.classList.add("embed");
@@ -156,7 +156,7 @@
     }
   }
 
-  /** Родителю платформы: высота контента > один скролл страницы, без скролла iframe. */
+  /** Р РѕРґРёС‚РµР»СЋ РїР»Р°С‚С„РѕСЂРјС‹: РІС‹СЃРѕС‚Р° РєРѕРЅС‚РµРЅС‚Р° > РѕРґРёРЅ СЃРєСЂРѕР»Р» СЃС‚СЂР°РЅРёС†С‹, Р±РµР· СЃРєСЂРѕР»Р»Р° iframe. */
   let _embedHeightSent = 0;
   function embedContentHeight() {
     const y = window.scrollY || window.pageYOffset || 0;
@@ -238,11 +238,11 @@
     damage: "MVP War-Score",
     armor: "MVP Armor",
   };
-  const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
+  const TIER_LABEL = { 1: "РўРёСЂ 1", 2: "РўРёСЂ 2", 3: "РўРёСЂ 3", 4: "РўРёСЂ 4" };
   /** Respect Points ranks: step 150, Iron I > Eclipse III, then Predator 4951+. */
   const TRAIN_RP = {
     startRp: 1000,
-    minRp: 1, // ниже 1 опуститься нельзя
+    minRp: 1, // РЅРёР¶Рµ 1 РѕРїСѓСЃС‚РёС‚СЊСЃСЏ РЅРµР»СЊР·СЏ
     step: 150,
     radiant3Max: 4950, // legacy key = ceiling before Predator (Eclipse III)
     names: [
@@ -427,7 +427,7 @@
         : p.rankKeyInfantry || p.rankKey;
       const crewTotal = vehDriver + vehGunner;
       let crewRole = null;
-      let crewRoleLabel = "—";
+      let crewRoleLabel = "вЂ”";
       let crewRoleScore = 0;
       if (crewTotal > 0) {
         if (vehDriver === vehGunner) {
@@ -437,12 +437,12 @@
         } else if (vehDriver > vehGunner) {
           crewRole = "driver";
           const pct = Math.round((vehDriver / crewTotal) * 100);
-          crewRoleLabel = pct >= 70 ? "Водитель" : `Водитель ${pct}%`;
+          crewRoleLabel = pct >= 70 ? "Р’РѕРґРёС‚РµР»СЊ" : `Р’РѕРґРёС‚РµР»СЊ ${pct}%`;
           crewRoleScore = vehDriver / crewTotal;
         } else {
           crewRole = "gunner";
           const pct = Math.round((vehGunner / crewTotal) * 100);
-          crewRoleLabel = pct >= 70 ? "Стрелок" : `Стрелок ${pct}%`;
+          crewRoleLabel = pct >= 70 ? "РЎС‚СЂРµР»РѕРє" : `РЎС‚СЂРµР»РѕРє ${pct}%`;
           crewRoleScore = vehGunner / crewTotal;
         }
       }
@@ -471,7 +471,7 @@
     return map;
   }
 
-  /** Композитный PWR 0–1000 — скрытый вес; в UI тренировок больше не показываем. */
+  /** РљРѕРјРїРѕР·РёС‚РЅС‹Р№ PWR 0вЂ“1000 вЂ” СЃРєСЂС‹С‚С‹Р№ РІРµСЃ; РІ UI С‚СЂРµРЅРёСЂРѕРІРѕРє Р±РѕР»СЊС€Рµ РЅРµ РїРѕРєР°Р·С‹РІР°РµРј. */
   const TRAIN_PWR = {
     mRes: 4,
     mNok: 3,
@@ -484,11 +484,11 @@
     roleMax: 0.65,
     roleAvg: 0.35,
     impact: { role: 0.55, surv: 0.2, win: 0.25 },
-    /** Множитель состава (тир клана). */
+    /** РњРЅРѕР¶РёС‚РµР»СЊ СЃРѕСЃС‚Р°РІР° (С‚РёСЂ РєР»Р°РЅР°). */
     tierMult: { 1: 1.4, 2: 1.3, 3: 1.2, 4: 1.1 },
-    /** KD < 1 > штраф. */
+    /** KD < 1 > С€С‚СЂР°С„. */
     kdLowMult: 0.9,
-    /** Ступени как в Valorant / Apex. [minPWR, label, cssKey] */
+    /** РЎС‚СѓРїРµРЅРё РєР°Рє РІ Valorant / Apex. [minPWR, label, cssKey] */
     bands: [
       [0, "Iron", "iron"],
       [100, "Bronze", "bronze"],
@@ -502,7 +502,7 @@
       [900, "Radiant", "radiant"],
     ],
   };
-  // Камера / не в составе — не в рейтинге игроков.
+  // РљР°РјРµСЂР° / РЅРµ РІ СЃРѕСЃС‚Р°РІРµ вЂ” РЅРµ РІ СЂРµР№С‚РёРЅРіРµ РёРіСЂРѕРєРѕРІ.
   const RATING_EXCLUDE = new Set(["shrein"]);
 
   let catalog = [];
@@ -612,9 +612,9 @@
         .join("");
       steps.push(
         `<span class="pwr-scale-step" data-rank-key="${key}" data-rank-name="${escapeHtml(name.toUpperCase())}">` +
-          `<span class="pwr-scale-range">${def.min}–${def.max}</span>` +
+          `<span class="pwr-scale-range">${def.min}вЂ“${def.max}</span>` +
           `<span class="rank-badge rank-${key} rank-badge-wide"><span class="pwr-scale-badge-label">${escapeHtml(name.toUpperCase())} ${def.roman}</span></span>` +
-          `<span class="pwr-scale-tier-btns" role="group" aria-label="${escapeHtml(name)} I–III">${btns}</span>` +
+          `<span class="pwr-scale-tier-btns" role="group" aria-label="${escapeHtml(name)} IвЂ“III">${btns}</span>` +
           `</span>`
       );
     });
@@ -653,7 +653,7 @@
       const roman = btn.getAttribute("data-roman") || "I";
       const min = btn.getAttribute("data-min") || "";
       const max = btn.getAttribute("data-max") || "";
-      if (rangeEl) rangeEl.textContent = `${min}–${max}`;
+      if (rangeEl) rangeEl.textContent = `${min}вЂ“${max}`;
       if (labelEl) labelEl.textContent = `${name} ${roman}`;
       step.querySelectorAll(".pwr-scale-tier-btn").forEach((b) => {
         const on = b === btn;
@@ -734,7 +734,7 @@
 
   function formatPwrDelta(nick) {
     const d = modalPwrDeltas[String(nick || "").trim().toLowerCase()];
-    if (d == null) return { text: "—", cls: "pwr-delta zero" };
+    if (d == null) return { text: "вЂ”", cls: "pwr-delta zero" };
     const v = Math.round(Number(d) || 0);
     if (v > 0) return { text: `+${v}`, cls: "pwr-delta plus" };
     if (v < 0) return { text: String(v), cls: "pwr-delta minus" };
@@ -742,15 +742,15 @@
   }
 
   function factionTitle(code) {
-    if (!code) return "—";
+    if (!code) return "вЂ”";
     const c = String(code).toUpperCase();
     const ru = factionLabels[c] || FACTION_FALLBACK[c];
-    return ru ? `${c} · ${ru}` : c;
+    return ru ? `${c} В· ${ru}` : c;
   }
 
   function factionShort(code) {
     const s = code ? String(code).trim() : "";
-    if (!s) return "—";
+    if (!s) return "вЂ”";
     const key = s.toLowerCase().replace(/[''?]/g, "'").replace(/\s+/g, " ");
     const known = {
       "people's liberation army": "PLA",
@@ -775,7 +775,7 @@
       "argentine army": "ARA",
     };
     if (known[key]) return known[key];
-    if (/^[A-Za-zА-Яа-яЁё0-9]{2,8}$/u.test(s) && !/\s/.test(s)) return s.toUpperCase();
+    if (/^[A-Za-zРђ-РЇР°-СЏРЃС‘0-9]{2,8}$/u.test(s) && !/\s/.test(s)) return s.toUpperCase();
     const parts = s.split(/[\s\-_./]+/).filter(Boolean);
     if (parts.length >= 2) {
       const abbr = parts.map((w) => w[0] || "").join("").toUpperCase();
@@ -806,7 +806,7 @@
   }
 
   /**
-   * ??????? ????? ???????? ????????? ? «??????» (???).
+   * ??????? ????? ???????? ????????? ? В«??????В» (???).
    * ?????? ?????????? ? ????? ????????? ????? ? ???????? ? ????? ?????? ? ?????? ????.
    */
   function pickDefaultMonthMeta(months, wantYear, wantMonth) {
@@ -866,7 +866,7 @@
   }
 
   function num(v) {
-    return v == null || v === "" ? "—" : escapeHtml(v);
+    return v == null || v === "" ? "вЂ”" : escapeHtml(v);
   }
 
   function syncDualScroll(wrap) {
@@ -928,11 +928,11 @@
 
   function profileHref(nick) {
     const clean = displayNick(nick);
-    if (!clean || clean === "—") return null;
+    if (!clean || clean === "вЂ”") return null;
     return `${PROFILE_BASE}/${encodeURIComponent(clean)}`;
   }
 
-  /** Клик в профиль только у зарегистрированных на сайте (есть regNo). */
+  /** РљР»РёРє РІ РїСЂРѕС„РёР»СЊ С‚РѕР»СЊРєРѕ Сѓ Р·Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°РЅРЅС‹С… РЅР° СЃР°Р№С‚Рµ (РµСЃС‚СЊ regNo). */
   function isRegisteredNick(nick) {
     const ro = rosterOf(nick);
     return ro.regNo != null && Number.isFinite(Number(ro.regNo));
@@ -953,7 +953,7 @@
             styleId: String(row.styleId || ""),
             tip:
               String(row.tip || "") ||
-              "Награда за достижение 15го уровня Battle Pass Тестовый сезон",
+              "РќР°РіСЂР°РґР° Р·Р° РґРѕСЃС‚РёР¶РµРЅРёРµ 15РіРѕ СѓСЂРѕРІРЅСЏ Battle Pass РўРµСЃС‚РѕРІС‹Р№ СЃРµР·РѕРЅ",
           };
           if (row.nick) {
             map.set(nickKey(row.nick), entry);
@@ -971,7 +971,7 @@
     const u = String(url || "").trim();
     if (!u) return "";
     if (/^https?:\/\//i.test(u)) return u;
-    // iframe /kv-static > корень сайта (public/bp-assets)
+    // iframe /kv-static > РєРѕСЂРµРЅСЊ СЃР°Р№С‚Р° (public/bp-assets)
     try {
       return new URL(u, "https://bb-squad.ru").href;
     } catch {
@@ -988,14 +988,14 @@
     return `<button type="button" class="nick-patch-mark" data-patch-id="${patchId}" aria-label="${tip}"><span class="nick-patch-mark-art" style="background-image:url('${url}')" aria-hidden="true"></span></button>`;
   }
 
-  /** styleId из nick-patches.json > CSS-класс (как profileNickStyles на платформе). */
+  /** styleId РёР· nick-patches.json > CSS-РєР»Р°СЃСЃ (РєР°Рє profileNickStyles РЅР° РїР»Р°С‚С„РѕСЂРјРµ). */
   const NICK_STYLE_CLASS = {
     "bp-l10-aurum-clean": "is-metallic-gold",
     "hw2-violet-gothic": "is-halloween-gothic",
   };
 
   function nickLinkHtml(nick) {
-    const label = displayNick(nick) || nick || "—";
+    const label = displayNick(nick) || nick || "вЂ”";
     const patch = nickPatchHtml(nick);
     const customization = nickPatchesByKey.get(nickKey(nick));
     const styleId = String(customization?.styleId || "").trim();
@@ -1006,7 +1006,7 @@
       : "";
     let core;
     if (!isRegisteredNick(nick)) {
-      core = `<span class="nick-plain${styleClass}" title="Нет аккаунта на сайте"${styleData}>${escapeHtml(label)}</span>`;
+      core = `<span class="nick-plain${styleClass}" title="РќРµС‚ Р°РєРєР°СѓРЅС‚Р° РЅР° СЃР°Р№С‚Рµ"${styleData}>${escapeHtml(label)}</span>`;
     } else {
       const href = profileHref(nick);
       core = href
@@ -1016,7 +1016,7 @@
     return `<span class="nick-with-patch">${core}${patch}</span>`;
   }
 
-  /** Ховер-тултип нашивки — как в рейтинге паблика */
+  /** РҐРѕРІРµСЂ-С‚СѓР»С‚РёРї РЅР°С€РёРІРєРё вЂ” РєР°Рє РІ СЂРµР№С‚РёРЅРіРµ РїР°Р±Р»РёРєР° */
   function ensureNickPatchTip() {
     let el = document.getElementById("nick-patch-tip");
     if (!el) {
@@ -1160,7 +1160,7 @@
     return displayNickByKey.get(key) || clean;
   }
 
-  /** Ключ для склейки рейтинга: алиасы (VaGNeR / Dedushkin Ghoul ?? …) > канон */
+  /** РљР»СЋС‡ РґР»СЏ СЃРєР»РµР№РєРё СЂРµР№С‚РёРЅРіР°: Р°Р»РёР°СЃС‹ (VaGNeR / Dedushkin Ghoul ?? вЂ¦) > РєР°РЅРѕРЅ */
   function resolveNickKey(nick) {
     const clean = profileNick(nick);
     const key = nickKey(clean);
@@ -1176,7 +1176,7 @@
     return TIER_LABEL[tier] || TIER_LABEL[4];
   }
 
-  /* ——— navigation ——— */
+  /* вЂ”вЂ”вЂ” navigation вЂ”вЂ”вЂ” */
   function showView(name) {
     document.getElementById("view-home").hidden = name !== "home";
     document.getElementById("view-cw").hidden = name !== "cw";
@@ -1343,7 +1343,7 @@
   }
   window.addEventListener("hashchange", applyHash);
 
-  /* ——— catalog / filters ——— */
+  /* вЂ”вЂ”вЂ” catalog / filters вЂ”вЂ”вЂ” */
   function fillYearMonthSelects() {
     const years = [...new Set(catalog.map((m) => m.year))].sort((a, b) => b - a);
     const yearSel = document.getElementById("filter-year");
@@ -1514,7 +1514,7 @@
     const title = document.getElementById("train-title");
     pageTmMatches = 1;
     if (!monthSel || !trainingCatalog.length) {
-      if (note) note.textContent = "Нет каталога тренировок";
+      if (note) note.textContent = "РќРµС‚ РєР°С‚Р°Р»РѕРіР° С‚СЂРµРЅРёСЂРѕРІРѕРє";
       trainMatches = [];
       paintTrainingTable();
       return;
@@ -1525,7 +1525,7 @@
     trainMonthKey = pad(meta.month);
     fetch(dataUrl(meta.url), { cache: "no-store" })
       .then((r) => {
-        if (!r.ok) throw new Error("Не удалось загрузить месяц тренировок");
+        if (!r.ok) throw new Error("РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ РјРµСЃСЏС† С‚СЂРµРЅРёСЂРѕРІРѕРє");
         return r.json();
       })
       .then((data) => {
@@ -1551,12 +1551,12 @@
     if (!box) return;
     const done = list.filter((m) => m.status !== "upcoming");
     box.innerHTML = `
-      <div class="stat"><strong>${list.length}</strong><span>каток</span></div>
-      <div class="stat"><strong>${done.length}</strong><span>сыграно</span></div>
+      <div class="stat"><strong>${list.length}</strong><span>РєР°С‚РѕРє</span></div>
+      <div class="stat"><strong>${done.length}</strong><span>СЃС‹РіСЂР°РЅРѕ</span></div>
     `;
   }
 
-  /** 00:00–00:29 МСК = хвост вечерней тренировки (после 23:59), не утро. */
+  /** 00:00вЂ“00:29 РњРЎРљ = С…РІРѕСЃС‚ РІРµС‡РµСЂРЅРµР№ С‚СЂРµРЅРёСЂРѕРІРєРё (РїРѕСЃР»Рµ 23:59), РЅРµ СѓС‚СЂРѕ. */
   function trainEveningMinutes(timeMsk) {
     const t = String(timeMsk || "").trim();
     const m = /^(\d{1,2}):(\d{2})/.exec(t);
@@ -1635,10 +1635,10 @@
   function paintTrainSortMarks() {
     document.querySelectorAll("#train-matches-table th.sortable").forEach((th) => {
       const key = th.dataset.tsort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
+      const base = th.dataset.label || th.textContent.replace(/\s*[^РЋ^v]\s*$/u, "").trim();
       th.dataset.label = base;
       const active = trainSortKey === key;
-      const arrow = active ? (trainSortDir === "asc" ? "^" : "Ў") : "";
+      const arrow = active ? (trainSortDir === "asc" ? "^" : "РЋ") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (trainSortDir === "asc" ? "ascending" : "descending") : "none");
       th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
@@ -1652,7 +1652,7 @@
     paintTrainSortMarks();
     paintTrainStats(list);
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="10" class="empty-row">Нет тренировок по фильтру</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="10" class="empty-row">РќРµС‚ С‚СЂРµРЅРёСЂРѕРІРѕРє РїРѕ С„РёР»СЊС‚СЂСѓ</td></tr>`;
       fillPager("tm-matches-pager-top", 1, 1, 0, PAGE_TM_MATCHES, () => {});
       fillPager("tm-matches-pager-bot", 1, 1, 0, PAGE_TM_MATCHES, () => {});
       return;
@@ -1686,14 +1686,14 @@
         const win = factionShort(m.winner);
         return `<tr class="clickable" data-train-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${trainMonthKey}</td>
-          <td class="num">${escapeHtml(m.timeMsk || "—")}</td>
-          <td>${escapeHtml(m.map || "—")}</td>
-          <td>${escapeHtml(m.mode || "—")}</td>
-          <td>${escapeHtml(m.server || "—")}</td>
+          <td class="num">${escapeHtml(m.timeMsk || "вЂ”")}</td>
+          <td>${escapeHtml(m.map || "вЂ”")}</td>
+          <td>${escapeHtml(m.mode || "вЂ”")}</td>
+          <td>${escapeHtml(m.server || "вЂ”")}</td>
           <td title="${escapeHtml(factionTitle(m.factionA))}">${escapeHtml(fa)}</td>
-          <td>${m.ticketsA != null ? m.ticketsA : "—"}</td>
+          <td>${m.ticketsA != null ? m.ticketsA : "вЂ”"}</td>
           <td title="${escapeHtml(factionTitle(m.factionB))}">${escapeHtml(fb)}</td>
-          <td>${m.ticketsB != null ? m.ticketsB : "—"}</td>
+          <td>${m.ticketsB != null ? m.ticketsB : "вЂ”"}</td>
           <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win)}</span></td>
         </tr>`;
       })
@@ -1755,7 +1755,7 @@
     monthKey = pad(meta.month);
     fetch(dataUrl(meta.url))
       .then((r) => {
-        if (!r.ok) throw new Error("Не удалось загрузить месяц");
+        if (!r.ok) throw new Error("РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ РјРµСЃСЏС†");
         return r.json();
       })
       .then((data) => {
@@ -1856,10 +1856,10 @@
   function paintMatchSortMarks() {
     document.querySelectorAll(".matches-table th.sortable").forEach((th) => {
       const key = th.dataset.msort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
+      const base = th.dataset.label || th.textContent.replace(/\s*[^РЋ^v]\s*$/u, "").trim();
       th.dataset.label = base;
       const active = matchSortKey === key;
-      const arrow = active ? (matchSortDir === "asc" ? "^" : "Ў") : "";
+      const arrow = active ? (matchSortDir === "asc" ? "^" : "РЋ") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (matchSortDir === "asc" ? "ascending" : "descending") : "none");
       th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
@@ -1889,7 +1889,7 @@
     return st === "win" || st === "lose" || st === "draw";
   }
 
-  /** Хост слота — BlackBerry, если clan пустой / BB / BlackBerry. Чужие КВ пишут clan=NKLV и т.п. */
+  /** РҐРѕСЃС‚ СЃР»РѕС‚Р° вЂ” BlackBerry, РµСЃР»Рё clan РїСѓСЃС‚РѕР№ / BB / BlackBerry. Р§СѓР¶РёРµ РљР’ РїРёС€СѓС‚ clan=NKLV Рё С‚.Рї. */
   function isBbHostMatch(m) {
     const c = String((m && m.clan) || "").trim();
     if (!c) return true;
@@ -1897,12 +1897,12 @@
   }
 
   function hostClanName(m) {
-    return isBbHostMatch(m) ? "BlackBerry" : String(m.clan || "").trim() || "—";
+    return isBbHostMatch(m) ? "BlackBerry" : String(m.clan || "").trim() || "вЂ”";
   }
 
   /**
-   * Тег хоста вкладок — только из данных этой катки (календарь дня / players.json).
-   * Пустой clan в календаре = наш слот BB (канон). Иначе любой тег: NKLV, FAL, …
+   * РўРµРі С…РѕСЃС‚Р° РІРєР»Р°РґРѕРє вЂ” С‚РѕР»СЊРєРѕ РёР· РґР°РЅРЅС‹С… СЌС‚РѕР№ РєР°С‚РєРё (РєР°Р»РµРЅРґР°СЂСЊ РґРЅСЏ / players.json).
+   * РџСѓСЃС‚РѕР№ clan РІ РєР°Р»РµРЅРґР°СЂРµ = РЅР°С€ СЃР»РѕС‚ BB (РєР°РЅРѕРЅ). РРЅР°С‡Рµ Р»СЋР±РѕР№ С‚РµРі: NKLV, FAL, вЂ¦
    */
   function hostClanTag(m, playersDoc) {
     const fromPlayers = String(
@@ -1924,10 +1924,10 @@
     const losses = played.filter((m) => m.status === "lose").length;
     const wr = played.length ? Math.round((100 * wins) / played.length) : 0;
     document.getElementById("stats").innerHTML = [
-      ["Всего", list.length, ""],
-      ["Сыграно BB", played.length, ""],
-      ["Впереди", upcoming.length, ""],
-      ["W–D–L", `${wins}–${draws}–${losses}`, ""],
+      ["Р’СЃРµРіРѕ", list.length, ""],
+      ["РЎС‹РіСЂР°РЅРѕ BB", played.length, ""],
+      ["Р’РїРµСЂРµРґРё", upcoming.length, ""],
+      ["WвЂ“DвЂ“L", `${wins}вЂ“${draws}вЂ“${losses}`, ""],
       ["Winrate BB", `${wr}%`, "winrate"],
     ]
       .map(([k, v, cls]) => `<div class="stat ${cls}"><span class="k">${k}</span><span class="v">${v}</span></div>`)
@@ -1940,7 +1940,7 @@
     paintStats(list);
     const tbody = document.getElementById("rows");
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="12" class="empty-row">Нет матчей по фильтру</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="12" class="empty-row">РќРµС‚ РјР°С‚С‡РµР№ РїРѕ С„РёР»СЊС‚СЂСѓ</td></tr>`;
       fillPager("cw-matches-pager-top", 1, 1, 0, PAGE_CW_MATCHES, () => {});
       fillPager("cw-matches-pager-bot", 1, 1, 0, PAGE_CW_MATCHES, () => {});
       return;
@@ -1973,16 +1973,16 @@
         const clanName = hostClanName(m);
         return `<tr class="${st} clickable" data-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${monthKey}</td>
-          <td class="num">${m.timeMsk || "—"}</td>
+          <td class="num">${m.timeMsk || "вЂ”"}</td>
           <td>${escapeHtml(clanName)}</td>
-          <td>${escapeHtml(m.opp || "—")}</td>
-          <td>${escapeHtml(m.map || "—")}</td>
-          <td class="ctr">${escapeHtml(m.size || "—")}</td>
-          <td>${escapeHtml(m.server || "—")}</td>
-          <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr">${escapeHtml(m.meeting || "—")}</td>
-          <td class="num">${escapeHtml(m.r1 || "—")}</td>
-          <td class="num">${escapeHtml(m.r2 || "—")}</td>
+          <td>${escapeHtml(m.opp || "вЂ”")}</td>
+          <td>${escapeHtml(m.map || "вЂ”")}</td>
+          <td class="ctr">${escapeHtml(m.size || "вЂ”")}</td>
+          <td>${escapeHtml(m.server || "вЂ”")}</td>
+          <td class="ctr">${escapeHtml(m.stack || "вЂ”")}</td>
+          <td class="ctr">${escapeHtml(m.meeting || "вЂ”")}</td>
+          <td class="num">${escapeHtml(m.r1 || "вЂ”")}</td>
+          <td class="num">${escapeHtml(m.r2 || "вЂ”")}</td>
           <td><span class="status"><span class="dot ${st}"></span>${STATUS_RU[st] || st}</span></td>
         </tr>`;
       })
@@ -2000,7 +2000,7 @@
     });
   }
 
-  /* ——— rating ——— */
+  /* вЂ”вЂ”вЂ” rating вЂ”вЂ”вЂ” */
   function loadRoster() {
     return fetch(ROSTER_URL, { cache: "no-store" })
       .then((r) => (r.ok ? r.json() : { byNick: {} }))
@@ -2016,13 +2016,13 @@
 
   function rosterOf(nick) {
     const info = rosterByNick[nickKey(nick)] || null;
-    // В рейтингах показываем только ТЕГ клана, не полное имя.
+    // Р’ СЂРµР№С‚РёРЅРіР°С… РїРѕРєР°Р·С‹РІР°РµРј С‚РѕР»СЊРєРѕ РўР•Р“ РєР»Р°РЅР°, РЅРµ РїРѕР»РЅРѕРµ РёРјСЏ.
     const tag = String(info?.tag || "").trim();
     return {
-      clan: tag || "—",
-      clanName: info?.clan || "—",
-      tag: tag || "—",
-      squad: info?.squad || "—",
+      clan: tag || "вЂ”",
+      clanName: info?.clan || "вЂ”",
+      tag: tag || "вЂ”",
+      squad: info?.squad || "вЂ”",
       regNo: info?.regNo != null ? Number(info.regNo) : null,
     };
   }
@@ -2044,10 +2044,10 @@
   function loadRating() {
     const note = document.getElementById("rating-note");
     pageCwRating = 1;
-    note.textContent = "Считаем рейтинг…";
+    note.textContent = "РЎС‡РёС‚Р°РµРј СЂРµР№С‚РёРЅРівЂ¦";
     const metas = selectedRatingMetas();
     if (!metas.length) {
-      note.textContent = "Нет месяцев для рейтинга";
+      note.textContent = "РќРµС‚ РјРµСЃСЏС†РµРІ РґР»СЏ СЂРµР№С‚РёРЅРіР°";
       ratingRows = [];
       paintRatingTable();
       return;
@@ -2088,11 +2088,11 @@
           const key = resolveNickKey(nick);
           if (!map.has(key)) {
             const ro = rosterOf(displayNick(nick));
-            const clanFromRoster = ro.clan && ro.clan !== "—" ? ro.clan : "";
+            const clanFromRoster = ro.clan && ro.clan !== "вЂ”" ? ro.clan : "";
             const clan =
               clanFromRoster ||
               (fallbackClan && String(fallbackClan).trim()) ||
-              "—";
+              "вЂ”";
             map.set(key, {
               nick: displayNick(nick),
               tier: tierOf(nick),
@@ -2108,12 +2108,12 @@
               mvpMedic: 0,
               mvpKiller: 0,
               mvpArmor: 0,
-              // только из логов (поле vehicleKills); p.veh со скрина — тикеты сторон, не ТЕХ
+              // С‚РѕР»СЊРєРѕ РёР· Р»РѕРіРѕРІ (РїРѕР»Рµ vehicleKills); p.veh СЃРѕ СЃРєСЂРёРЅР° вЂ” С‚РёРєРµС‚С‹ СЃС‚РѕСЂРѕРЅ, РЅРµ РўР•РҐ
               vehicleKills: 0,
             });
           } else if (fallbackClan) {
             const row = map.get(key);
-            if (row && (!row.clan || row.clan === "—")) {
+            if (row && (!row.clan || row.clan === "вЂ”")) {
               row.clan = String(fallbackClan).trim() || row.clan;
             }
           }
@@ -2173,7 +2173,7 @@
             if (bbWon === true) row.wins += 1;
           });
           oppInMeeting.forEach((key) => {
-            // если ник сыграл и за BB в этой встрече — уже учтён как наш
+            // РµСЃР»Рё РЅРёРє СЃС‹РіСЂР°Р» Рё Р·Р° BB РІ СЌС‚РѕР№ РІСЃС‚СЂРµС‡Рµ вЂ” СѓР¶Рµ СѓС‡С‚С‘РЅ РєР°Рє РЅР°С€
             if (bbInMeeting.has(key)) return;
             const row = map.get(key);
             if (!row) return;
@@ -2198,7 +2198,7 @@
               const row = touch(n, fb);
               if (row) row.mvpKiller += 1;
             });
-            // War-Score / боевой счёт в рейтинге КВ не считаем
+            // War-Score / Р±РѕРµРІРѕР№ СЃС‡С‘С‚ РІ СЂРµР№С‚РёРЅРіРµ РљР’ РЅРµ СЃС‡РёС‚Р°РµРј
             (block.armor || []).forEach((n) => {
               const row = touch(n, fb);
               if (row) row.mvpArmor += 1;
@@ -2213,7 +2213,7 @@
           const kills = Number(p.kills) || 0;
           const deaths = Number(p.deaths) || 0;
           const res = Number(p.res) || 0;
-          // TU — Ticket Utility: средние тикеты команде за игру (килл +1, рес +1, смерть ?1)
+          // TU вЂ” Ticket Utility: СЃСЂРµРґРЅРёРµ С‚РёРєРµС‚С‹ РєРѕРјР°РЅРґРµ Р·Р° РёРіСЂСѓ (РєРёР»Р» +1, СЂРµСЃ +1, СЃРјРµСЂС‚СЊ ?1)
           const ticketNet = kills + res - deaths;
           const tu =
             games > 0 ? Math.round((100 * ticketNet) / games) / 100 : null;
@@ -2243,12 +2243,12 @@
             ...base,
             rp: null,
             pwr: null,
-            pwrLabel: "—",
+            pwrLabel: "вЂ”",
             rankKey: "iron",
             predatorPlace: null,
           };
         });
-        // В таблице рейтинга — только зареганные (есть regNo). Остальные остаются в табло/pending.
+        // Р’ С‚Р°Р±Р»РёС†Рµ СЂРµР№С‚РёРЅРіР° вЂ” С‚РѕР»СЊРєРѕ Р·Р°СЂРµРіР°РЅРЅС‹Рµ (РµСЃС‚СЊ regNo). РћСЃС‚Р°Р»СЊРЅС‹Рµ РѕСЃС‚Р°СЋС‚СЃСЏ РІ С‚Р°Р±Р»Рѕ/pending.
         ratingRows = allRatingRows.filter(
           (p) => p.regNo != null && Number.isFinite(Number(p.regNo))
         );
@@ -2270,11 +2270,11 @@
         });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("rating-scope").value;
-        const scopeRu = scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+        const scopeRu = scope === "all" ? "Р·Р° РІСЃС‘ РІСЂРµРјСЏ" : scope === "year" ? "Р·Р° РіРѕРґ" : "Р·Р° РјРµСЃСЏС†";
         const orphanN = allRatingRows.length - ratingRows.length;
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. В рейтинге только зареганные: ${ratingRows.length}${orphanN > 0 ? ` (ещё ${orphanN} с табло ждут регистрацию)` : ""}. Сортировка по умолчанию — TU. Меньше 5 каток — калибровка, внизу таблицы.`
-          : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
+          ? `РџРµСЂРёРѕРґ: ${scopeRu}. РљР°С‚РѕРє РљР’ СЃРѕ СЃС‚Р°С‚РѕР№: ${withStats}. Р’ СЂРµР№С‚РёРЅРіРµ С‚РѕР»СЊРєРѕ Р·Р°СЂРµРіР°РЅРЅС‹Рµ: ${ratingRows.length}${orphanN > 0 ? ` (РµС‰С‘ ${orphanN} СЃ С‚Р°Р±Р»Рѕ Р¶РґСѓС‚ СЂРµРіРёСЃС‚СЂР°С†РёСЋ)` : ""}. РЎРѕСЂС‚РёСЂРѕРІРєР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ вЂ” TU. РњРµРЅСЊС€Рµ 5 РєР°С‚РѕРє вЂ” РєР°Р»РёР±СЂРѕРІРєР°, РІРЅРёР·Сѓ С‚Р°Р±Р»РёС†С‹.`
+          : "РџРѕРєР° РЅРµС‚ РєР°С‚РѕРє РљР’ СЃ РІРЅРµСЃС‘РЅРЅРѕР№ СЃС‚Р°С‚РѕР№ вЂ” СЂРµР№С‚РёРЅРі РїСѓСЃС‚.";
         paintRatingTable();
       })
       .catch((err) => {
@@ -2282,7 +2282,7 @@
       });
   }
 
-  /** Двухэтажный заголовок: data-th2="низ" + data-label="верх" */
+  /** Р”РІСѓС…СЌС‚Р°Р¶РЅС‹Р№ Р·Р°РіРѕР»РѕРІРѕРє: data-th2="РЅРёР·" + data-label="РІРµСЂС…" */
   function thTwoFloorHtml(base, th) {
     const line2 = (th?.dataset?.th2 || "").trim();
     let a = String(base || "").trim();
@@ -2301,10 +2301,10 @@
   function paintRatingSortMarks() {
     document.querySelectorAll("#cw-rating-table th.sortable").forEach((th) => {
       const key = th.dataset.rsort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
+      const base = th.dataset.label || th.textContent.replace(/\s*[^РЋ^v]\s*$/u, "").trim();
       th.dataset.label = base;
       const active = ratingSortKey === key;
-      const arrow = active ? (ratingSortDir === "asc" ? "^" : "Ў") : "";
+      const arrow = active ? (ratingSortDir === "asc" ? "^" : "РЋ") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (ratingSortDir === "asc" ? "ascending" : "descending") : "none");
       const labelHtml = th.dataset.th2 || key === "vehicleKills" || th.classList.contains("col-veh")
@@ -2369,7 +2369,7 @@
 
     const tbody = document.getElementById("rating-rows");
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="15" class="empty-row">РќРµС‚ РёРіСЂРѕРєРѕРІ</td></tr>`;
       fillPager("cw-rating-pager-top", 1, 1, 0, PAGE_CW_RATING, () => {});
       fillPager("cw-rating-pager-bot", 1, 1, 0, PAGE_CW_RATING, () => {});
       refreshDualScrolls();
@@ -2440,24 +2440,24 @@
                   ? "ctr col-tu tu-minus"
                   : "ctr col-tu";
         const tuText = p.calibrating
-          ? `<span class="tu-cal-label">калибровка</span>`
+          ? `<span class="tu-cal-label">РєР°Р»РёР±СЂРѕРІРєР°</span>`
           : tu == null
-            ? "—"
+            ? "вЂ”"
             : (tu > 0 ? "+" : "") + String(tu);
         const tuTitle = p.calibrating
-          ? "Меньше 5 каток КВ — калибровка"
+          ? "РњРµРЅСЊС€Рµ 5 РєР°С‚РѕРє РљР’ вЂ” РєР°Р»РёР±СЂРѕРІРєР°"
           : p.ticketNet != null
-            ? `Сумма тикетов: ${p.ticketNet > 0 ? "+" : ""}${p.ticketNet} за ${p.kv} кат.`
+            ? `РЎСѓРјРјР° С‚РёРєРµС‚РѕРІ: ${p.ticketNet > 0 ? "+" : ""}${p.ticketNet} Р·Р° ${p.kv} РєР°С‚.`
             : "";
         const tuRec = p.calibrating ? "" : rec(tu, maxTu, false);
         return `<tr class="${p.calibrating ? "is-cal" : ""}">
-        <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
+        <td class="ctr col-place">${p.place != null ? p.place : "вЂ”"}</td>
         <td class="${tuCls}${tuRec}" title="${escapeHtml(tuTitle)}">${p.calibrating ? tuText : `<strong>${tuText}</strong>`}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
-        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr col-tag">${escapeHtml(p.clan || "вЂ”")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr${rec(p.kv, maxKv, false)}">${p.kv}</td>
-        <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
+        <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "вЂ”"}</td>
         <td class="ctr${rec(p.res, maxRes, false)}">${p.res}</td>
         <td class="ctr${rec(p.nok, maxNok, false)}">${p.nok}</td>
         <td class="ctr${rec(p.kills, maxKills, false)}">${p.kills}</td>
@@ -2485,7 +2485,7 @@
     });
   });
 
-  /* ——— training rating (separate from CW) ——— */
+  /* вЂ”вЂ”вЂ” training rating (separate from CW) вЂ”вЂ”вЂ” */
   let trainRatingFiltersReady = false;
   function ensureTrainRatingFilters() {
     if (trainRatingFiltersReady) return;
@@ -2580,10 +2580,10 @@
     const note = document.getElementById("train-rating-note");
     if (!note) return;
     pageTmRating = 1;
-    note.textContent = "Считаем рейтинг тренировок…";
+    note.textContent = "РЎС‡РёС‚Р°РµРј СЂРµР№С‚РёРЅРі С‚СЂРµРЅРёСЂРѕРІРѕРєвЂ¦";
     const metas = selectedTrainingRatingMetas();
     if (!metas.length) {
-      note.textContent = "Нет месяцев тренировок";
+      note.textContent = "РќРµС‚ РјРµСЃСЏС†РµРІ С‚СЂРµРЅРёСЂРѕРІРѕРє";
       trainRatingRows = [];
       paintTrainingRatingTable();
       return;
@@ -2652,7 +2652,7 @@
         };
 
         if (track === "vehicle") {
-          /* Техника: каток = матчи, где был мехвод/наводчик на тяжёлой (не все тренировки) */
+          /* РўРµС…РЅРёРєР°: РєР°С‚РѕРє = РјР°С‚С‡Рё, РіРґРµ Р±С‹Р» РјРµС…РІРѕРґ/РЅР°РІРѕРґС‡РёРє РЅР° С‚СЏР¶С‘Р»РѕР№ (РЅРµ РІСЃРµ С‚СЂРµРЅРёСЂРѕРІРєРё) */
           Object.values(ledger?.players || {}).forEach((p) => {
             if (!p?.nick || !inRating(p.nick)) return;
             const hit =
@@ -2672,14 +2672,14 @@
             row._vehMatchIds = hit.vehMatchIds || new Set();
             const vh = vehicleHitOf(vehHits, p.nick);
             const zp = vh?.zonePct || {};
-            /* Роль = доля времени в слоте мехвод/наводчик (не события; секунды в UI не пишем) */
+            /* Р РѕР»СЊ = РґРѕР»СЏ РІСЂРµРјРµРЅРё РІ СЃР»РѕС‚Рµ РјРµС…РІРѕРґ/РЅР°РІРѕРґС‡РёРє (РЅРµ СЃРѕР±С‹С‚РёСЏ; СЃРµРєСѓРЅРґС‹ РІ UI РЅРµ РїРёС€РµРј) */
             if (vh && (vh.crewRole || Number(vh.seatDriverSec) > 0 || Number(vh.seatGunnerSec) > 0)) {
               row.crewRole = vh.crewRole || null;
-              row.crewRoleLabel = vh.crewRoleLabel || "—";
+              row.crewRoleLabel = vh.crewRoleLabel || "вЂ”";
               row.crewRoleScore = Number(vh.crewRoleScore) || 0;
             } else {
               row.crewRole = hit.crewRole || null;
-              row.crewRoleLabel = hit.crewRoleLabel || "—";
+              row.crewRoleLabel = hit.crewRoleLabel || "вЂ”";
               row.crewRoleScore = Number(hit.crewRoleScore) || 0;
             }
             row.dmgToVeh = Number(vh?.dmgToVeh) || 0;
@@ -2691,7 +2691,7 @@
             row.zWheel = Number(zp.wheel) || 0;
             row.zTrack = Number(zp.track) || 0;
           });
-          /* % побед — только по тем же матчам-технарям */
+          /* % РїРѕР±РµРґ вЂ” С‚РѕР»СЊРєРѕ РїРѕ С‚РµРј Р¶Рµ РјР°С‚С‡Р°Рј-С‚РµС…РЅР°СЂСЏРј */
           bundles.forEach(({ match, players }) => {
             if (!players || !match?.id) return;
             const mid = String(match.id);
@@ -2747,7 +2747,7 @@
               if (won) row.wins += 1;
             });
 
-            /* MVP только для рейтинга тренировок — в mvp-ledger / профиль КВ не пишем */
+            /* MVP С‚РѕР»СЊРєРѕ РґР»СЏ СЂРµР№С‚РёРЅРіР° С‚СЂРµРЅРёСЂРѕРІРѕРє вЂ” РІ mvp-ledger / РїСЂРѕС„РёР»СЊ РљР’ РЅРµ РїРёС€РµРј */
             const pool = list.filter((p) => p && p.nick && inRating(p.nick));
             const mvp =
               (players.mvp && players.mvp.train) || pickMvps(enrichRows(pool));
@@ -2797,12 +2797,12 @@
             ...base,
             rp: null,
             pwr: null,
-            pwrLabel: "—",
+            pwrLabel: "вЂ”",
             rankKey: "iron",
             predatorPlace: null,
           };
         });
-        /* Место в рейтинге выбранного трека по RP */
+        /* РњРµСЃС‚Рѕ РІ СЂРµР№С‚РёРЅРіРµ РІС‹Р±СЂР°РЅРЅРѕРіРѕ С‚СЂРµРєР° РїРѕ RP */
         trainRatingRows
           .slice()
           .sort(
@@ -2817,11 +2817,11 @@
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("train-rating-scope")?.value || "all";
         const scopeRu =
-          scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
-        const trackRu = track === "vehicle" ? "техника (мехвод/наводчик 10–15 тик.)" : "пехота";
+          scope === "all" ? "Р·Р° РІСЃС‘ РІСЂРµРјСЏ" : scope === "year" ? "Р·Р° РіРѕРґ" : "Р·Р° РјРµСЃСЏС†";
+        const trackRu = track === "vehicle" ? "С‚РµС…РЅРёРєР° (РјРµС…РІРѕРґ/РЅР°РІРѕРґС‡РёРє 10вЂ“15 С‚РёРє.)" : "РїРµС…РѕС‚Р°";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Режим: ${trackRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
-          : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
+          ? `РџРµСЂРёРѕРґ: ${scopeRu}. Р РµР¶РёРј: ${trackRu}. РўСЂРµРЅРёСЂРѕРІРѕРє СЃРѕ СЃС‚Р°С‚РѕР№: ${withStats}. РќРёРєРѕРІ: ${trainRatingRows.length}.`
+          : "РџРѕРєР° РЅРµС‚ С‚СЂРµРЅРёСЂРѕРІРѕРє СЃ РІРЅРµСЃС‘РЅРЅРѕР№ СЃС‚Р°С‚РѕР№ вЂ” СЂРµР№С‚РёРЅРі РїСѓСЃС‚.";
         paintTrainingRatingTable();
       })
       .catch((err) => {
@@ -2829,17 +2829,17 @@
       });
   }
 
-  /** Длинные заголовки рейтинга ТР > всегда 2 этажа (не раздувают ширину колонки) */
+  /** Р”Р»РёРЅРЅС‹Рµ Р·Р°РіРѕР»РѕРІРєРё СЂРµР№С‚РёРЅРіР° РўР  > РІСЃРµРіРґР° 2 СЌС‚Р°Р¶Р° (РЅРµ СЂР°Р·РґСѓРІР°СЋС‚ С€РёСЂРёРЅСѓ РєРѕР»РѕРЅРєРё) */
   const TRAIN_TH_2F = {
-    winPct: ["%", "побед"],
-    vehicleKills: ["Уничт.", "Тех"],
-    dmgToVeh: ["Урон", "vТех"],
-    zTurret: ["Башня", "%"],
-    zHull: ["Корпус", "%"],
-    zEngine: ["Двиг.", "%"],
-    zWheel: ["Колёса", "%"],
-    zTrack: ["Гусен.", "%"],
-    noPen: ["Непроб.", ""],
+    winPct: ["%", "РїРѕР±РµРґ"],
+    vehicleKills: ["РЈРЅРёС‡С‚.", "РўРµС…"],
+    dmgToVeh: ["РЈСЂРѕРЅ", "vРўРµС…"],
+    zTurret: ["Р‘Р°С€РЅСЏ", "%"],
+    zHull: ["РљРѕСЂРїСѓСЃ", "%"],
+    zEngine: ["Р”РІРёРі.", "%"],
+    zWheel: ["РљРѕР»С‘СЃР°", "%"],
+    zTrack: ["Р“СѓСЃРµРЅ.", "%"],
+    noPen: ["РќРµРїСЂРѕР±.", ""],
     mvpMedic: ["MVP", "Medic"],
     mvpKiller: ["MVP", "Killer"],
     mvpArmor: ["MVP", "Armor"],
@@ -2860,12 +2860,12 @@
           ? `<span class="th-2f"><span class="th-2f-a">${escapeHtml(floor[0])}</span><span class="th-2f-b">${escapeHtml(floor[1])}</span></span>`
           : escapeHtml(floor[0]);
       } else {
-        base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
+        base = th.dataset.label || th.textContent.replace(/\s*[^РЋ^v]\s*$/u, "").trim();
         th.dataset.label = base;
         labelHtml = thTwoFloorHtml(base, th);
       }
       const active = trainRatingSortKey === key;
-      const arrow = active ? (trainRatingSortDir === "asc" ? "^" : "Ў") : "";
+      const arrow = active ? (trainRatingSortDir === "asc" ? "^" : "РЋ") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute(
         "aria-sort",
@@ -2879,18 +2879,18 @@
     const veh = trainRatingTrack === "vehicle";
     const thRes = document.querySelector('#train-rating-table th[data-trsort="res"]');
     if (thRes) {
-      thRes.dataset.label = veh ? "Роль" : "Ресы";
+      thRes.dataset.label = veh ? "Р РѕР»СЊ" : "Р РµСЃС‹";
       delete thRes.dataset.th2;
       thRes.title = veh
-        ? "По времени в слоте тяжёлой: водитель (мехвод) или стрелок (F2/наводчик)"
-        : "Ресы — поднятия союзников";
-      /* не трогаем textContent — шапку перерисует paintTrainingRatingSortMarks */
+        ? "РџРѕ РІСЂРµРјРµРЅРё РІ СЃР»РѕС‚Рµ С‚СЏР¶С‘Р»РѕР№: РІРѕРґРёС‚РµР»СЊ (РјРµС…РІРѕРґ) РёР»Рё СЃС‚СЂРµР»РѕРє (F2/РЅР°РІРѕРґС‡РёРє)"
+        : "Р РµСЃС‹ вЂ” РїРѕРґРЅСЏС‚РёСЏ СЃРѕСЋР·РЅРёРєРѕРІ";
+      /* РЅРµ С‚СЂРѕРіР°РµРј textContent вЂ” С€Р°РїРєСѓ РїРµСЂРµСЂРёСЃСѓРµС‚ paintTrainingRatingSortMarks */
     }
     const thGames = document.querySelector('#train-rating-table th[data-trsort="games"]');
     if (thGames) {
       thGames.title = veh
-        ? "Каток в Техника — только матчи, где был мехвод/наводчик на тяжёлой (10–15 тик.), не все тренировки"
-        : "Число тренировочных матчей";
+        ? "РљР°С‚РѕРє РІ РўРµС…РЅРёРєР° вЂ” С‚РѕР»СЊРєРѕ РјР°С‚С‡Рё, РіРґРµ Р±С‹Р» РјРµС…РІРѕРґ/РЅР°РІРѕРґС‡РёРє РЅР° С‚СЏР¶С‘Р»РѕР№ (10вЂ“15 С‚РёРє.), РЅРµ РІСЃРµ С‚СЂРµРЅРёСЂРѕРІРєРё"
+        : "Р§РёСЃР»Рѕ С‚СЂРµРЅРёСЂРѕРІРѕС‡РЅС‹С… РјР°С‚С‡РµР№";
     }
     document.querySelectorAll("#train-rating-table .train-inf-only").forEach((el) => {
       el.hidden = !!veh;
@@ -2954,7 +2954,7 @@
         trainRatingSortKey === "pwr" ||
         trainRatingSortKey === "rp"
       ) {
-        /* Те же тайбрейки, что при выдаче «Место» (RP > каток > ник) */
+        /* РўРµ Р¶Рµ С‚Р°Р№Р±СЂРµР№РєРё, С‡С‚Рѕ РїСЂРё РІС‹РґР°С‡Рµ В«РњРµСЃС‚РѕВ» (RP > РєР°С‚РѕРє > РЅРёРє) */
         const d =
           scoreOrFloor(a.rp) - scoreOrFloor(b.rp) ||
           (Number(a.games) || 0) - (Number(b.games) || 0);
@@ -2969,7 +2969,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="${vehTrack ? 21 : 17}" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="${vehTrack ? 21 : 17}" class="empty-row">РќРµС‚ РёРіСЂРѕРєРѕРІ</td></tr>`;
       fillPager("tm-rating-pager-top", 1, 1, 0, PAGE_TM_RATING, () => {});
       fillPager("tm-rating-pager-bot", 1, 1, 0, PAGE_TM_RATING, () => {});
       refreshDualScrolls();
@@ -3001,8 +3001,8 @@
       .map((p) => {
         const roleCell = vehTrack
           ? `<td class="ctr col-crew-role" title="${escapeHtml(
-              `водитель ${Number(p.vehDriver) || 0} · стрелок ${Number(p.vehGunner) || 0}`
-            )}">${escapeHtml(p.crewRoleLabel || "—")}</td>`
+              `РІРѕРґРёС‚РµР»СЊ ${Number(p.vehDriver) || 0} В· СЃС‚СЂРµР»РѕРє ${Number(p.vehGunner) || 0}`
+            )}">${escapeHtml(p.crewRoleLabel || "вЂ”")}</td>`
           : `<td class="ctr">${p.res}</td>`;
         const tail = vehTrack
           ? `<td class="ctr" title="${Math.round(Number(p.dmgToVeh) || 0)}">${fmtDmgShort(p.dmgToVeh)}</td>
@@ -3016,14 +3016,14 @@
         <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
         <td class="ctr col-mvp-armor">${Number(p.mvpArmor) || 0}</td>`;
         return `<tr>
-        <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
-        <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
+        <td class="ctr col-place">${p.place != null ? p.place : "вЂ”"}</td>
+        <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "вЂ”")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
+        <td class="ctr col-pwr">${p.rp != null ? p.rp : "вЂ”"}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
-        <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
+        <td class="ctr col-tag">${escapeHtml(p.clan || "вЂ”")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
-        <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
+        <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "вЂ”"}</td>
         ${roleCell}
         <td class="ctr">${p.nok}</td>
         <td class="ctr">${p.kills}</td>
@@ -3037,7 +3037,7 @@
     refreshDualScrolls();
   }
 
-  /* ——— training analytics ——— */
+  /* вЂ”вЂ”вЂ” training analytics вЂ”вЂ”вЂ” */
   let trainAnFiltersReady = false;
   let cwAnFiltersReady = false;
 
@@ -3130,13 +3130,13 @@
     const body = document.getElementById("cw-an-body");
     const kpis = document.getElementById("cw-an-kpis");
     if (!note || !body || !kpis) return;
-    note.textContent = "Считаем аналитику КВ…";
+    note.textContent = "РЎС‡РёС‚Р°РµРј Р°РЅР°Р»РёС‚РёРєСѓ РљР’вЂ¦";
     body.hidden = true;
     kpis.innerHTML = "";
 
     const metas = selectedCwAnalyticsMetas();
     if (!metas.length) {
-      note.textContent = "Нет месяцев КВ";
+      note.textContent = "РќРµС‚ РјРµСЃСЏС†РµРІ РљР’";
       return;
     }
 
@@ -3159,7 +3159,7 @@
           if (!bundle || !bundle.data) return;
           (bundle.data.matches || []).forEach((m) => {
             if (m.status === "upcoming") return;
-            // Аналитика КВ на github.io — только матчи BlackBerry.
+            // РђРЅР°Р»РёС‚РёРєР° РљР’ РЅР° github.io вЂ” С‚РѕР»СЊРєРѕ РјР°С‚С‡Рё BlackBerry.
             if (!isBbHostMatch(m)) return;
             if (
               stackFilter !== "all" &&
@@ -3201,7 +3201,7 @@
     if (!note || !body || !kpis) return;
 
     if (!bundles.length) {
-      note.textContent = "В выбранном периоде нет сыгранных КВ";
+      note.textContent = "Р’ РІС‹Р±СЂР°РЅРЅРѕРј РїРµСЂРёРѕРґРµ РЅРµС‚ СЃС‹РіСЂР°РЅРЅС‹С… РљР’";
       body.hidden = true;
       return;
     }
@@ -3238,14 +3238,14 @@
     let tierSeatMatches = 0;
 
     const touchStack = (name) => {
-      const key = name || "—";
+      const key = name || "вЂ”";
       if (!stackStat.has(key)) {
         stackStat.set(key, { name: key, games: 0, wins: 0, draws: 0, losses: 0 });
       }
       return stackStat.get(key);
     };
     const touchOpp = (name) => {
-      const key = name || "—";
+      const key = name || "вЂ”";
       if (!oppStat.has(key)) {
         oppStat.set(key, {
           name: key,
@@ -3287,27 +3287,27 @@
     const matchRows = [];
 
     bundles.forEach(({ match: m, players }) => {
-      const map = m.map || "—";
+      const map = m.map || "вЂ”";
       mapCount.set(map, (mapCount.get(map) || 0) + 1);
       const fam = mapFamilyName(map);
       familyCount.set(fam, (familyCount.get(fam) || 0) + 1);
       if (m.status === "win") {
         familyWins.set(fam, (familyWins.get(fam) || 0) + 1);
       }
-      const size = m.size || "—";
+      const size = m.size || "вЂ”";
       sizeCount.set(size, (sizeCount.get(size) || 0) + 1);
-      const server = m.server || "—";
+      const server = m.server || "вЂ”";
       serverCount.set(server, (serverCount.get(server) || 0) + 1);
 
-      const st = touchStack(m.stack || "—");
+      const st = touchStack(m.stack || "вЂ”");
       st.games += 1;
       if (m.status === "win") st.wins += 1;
       else if (m.status === "draw") st.draws += 1;
       else if (m.status === "lose") st.losses += 1;
 
-      const opp = touchOpp(m.opp || "—");
+      const opp = touchOpp(m.opp || "вЂ”");
       opp.games += 1;
-      opp.stacks.add(m.stack || "—");
+      opp.stacks.add(m.stack || "вЂ”");
       if (m.status === "win") opp.wins += 1;
       else if (m.status === "draw") opp.draws += 1;
       else if (m.status === "lose") opp.losses += 1;
@@ -3407,21 +3407,21 @@
           const row = touchPlayer(n);
           if (row) row.mvpKiller += 1;
         });
-        // War-Score в аналитике КВ не копим
+        // War-Score РІ Р°РЅР°Р»РёС‚РёРєРµ РљР’ РЅРµ РєРѕРїРёРј
         (block.armor || []).forEach((n) => {
           const row = touchPlayer(n);
           if (row) row.mvpArmor += 1;
         });
       });
 
-      const factions = [d1?.us, d2?.us].filter(Boolean).join(" / ") || "—";
+      const factions = [d1?.us, d2?.us].filter(Boolean).join(" / ") || "вЂ”";
       const durLabel =
         len1 != null || len2 != null
           ? [len1, len2]
               .filter((x) => x != null)
               .map(formatDurationSec)
               .join(" + ")
-          : "—";
+          : "вЂ”";
 
       matchRows.push({
         m,
@@ -3430,8 +3430,8 @@
         t1pct: nicks.length
           ? Math.round((1000 * (tierCounts[1] || 0)) / nicks.length) / 10
           : null,
-        r1: m.r1 || players?.summary?.r1Tickets || "—",
-        r2: m.r2 || players?.summary?.r2Tickets || "—",
+        r1: m.r1 || players?.summary?.r1Tickets || "вЂ”",
+        r2: m.r2 || players?.summary?.r2Tickets || "вЂ”",
         durLabel,
         factions,
       });
@@ -3440,10 +3440,10 @@
     const scope = document.getElementById("cw-an-scope")?.value || "all";
     const stackFilter = document.getElementById("cw-an-stack")?.value || "all";
     const scopeRu =
-      scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+      scope === "all" ? "Р·Р° РІСЃС‘ РІСЂРµРјСЏ" : scope === "year" ? "Р·Р° РіРѕРґ" : "Р·Р° РјРµСЃСЏС†";
     const stackRu =
-      stackFilter === "all" ? "все составы" : stackFilter;
-    note.textContent = `Период: ${scopeRu} · ${stackRu}. Встреч: ${n} (${wins}W-${draws}D-${losses}L). Игроков: ${uniqueNicks.size}.`;
+      stackFilter === "all" ? "РІСЃРµ СЃРѕСЃС‚Р°РІС‹" : stackFilter;
+    note.textContent = `РџРµСЂРёРѕРґ: ${scopeRu} В· ${stackRu}. Р’СЃС‚СЂРµС‡: ${n} (${wins}W-${draws}D-${losses}L). РРіСЂРѕРєРѕРІ: ${uniqueNicks.size}.`;
 
     const avgRoster = rosterSizes.length
       ? Math.round(rosterSizes.reduce((a, b) => a + b, 0) / rosterSizes.length)
@@ -3458,14 +3458,14 @@
       : null;
 
     kpis.innerHTML = [
-      ["Встреч", String(n)],
-      ["Победы", `${wins} (${winrate}%)`],
-      ["Ничьи", String(draws)],
-      ["Поражения", String(losses)],
-      ["Игроков", String(uniqueNicks.size)],
-      ["Ср. явка", avgRoster != null ? String(avgRoster) : "—"],
-      ["Ср. раунд", avgDur != null ? formatDurationSec(avgDur) : "—"],
-      ["Ср. ? тикетов", avgMargin != null ? String(avgMargin) : "—"],
+      ["Р’СЃС‚СЂРµС‡", String(n)],
+      ["РџРѕР±РµРґС‹", `${wins} (${winrate}%)`],
+      ["РќРёС‡СЊРё", String(draws)],
+      ["РџРѕСЂР°Р¶РµРЅРёСЏ", String(losses)],
+      ["РРіСЂРѕРєРѕРІ", String(uniqueNicks.size)],
+      ["РЎСЂ. СЏРІРєР°", avgRoster != null ? String(avgRoster) : "вЂ”"],
+      ["РЎСЂ. СЂР°СѓРЅРґ", avgDur != null ? formatDurationSec(avgDur) : "вЂ”"],
+      ["РЎСЂ. ? С‚РёРєРµС‚РѕРІ", avgMargin != null ? String(avgMargin) : "вЂ”"],
     ]
       .map(
         ([k, v]) =>
@@ -3482,15 +3482,15 @@
     document.getElementById("cw-an-results").innerHTML = `
       ${taFactsCompact([
         { label: "Winrate", value: `${winrate}%`, hot: winrate >= 60 || winrate <= 40 },
-        { label: "Счёт", value: `${wins}–${draws}–${losses}` },
+        { label: "РЎС‡С‘С‚", value: `${wins}вЂ“${draws}вЂ“${losses}` },
       ])}
-      <h3 class="ta-subh">По составу</h3>
+      <h3 class="ta-subh">РџРѕ СЃРѕСЃС‚Р°РІСѓ</h3>
       ${taDenseTop(
         stackRows.map((s) => ({
           label: s.name,
           count: s.games,
           share: Math.round((1000 * s.games) / n) / 10,
-          extra: `${s.wins}W/${s.losses}L · ${s.pct}%`,
+          extra: `${s.wins}W/${s.losses}L В· ${s.pct}%`,
           wr: s.pct,
           hot: s.pct >= 70 || (s.pct <= 35 && s.games >= 2),
         })),
@@ -3522,9 +3522,9 @@
       .sort((a, b) => b.count - a.count);
 
     document.getElementById("cw-an-maps").innerHTML = `
-      <h3 class="ta-subh">Семейства</h3>
+      <h3 class="ta-subh">РЎРµРјРµР№СЃС‚РІР°</h3>
       ${taDenseTop(familyRanked, { limit: 5 })}
-      <h3 class="ta-subh">Слои</h3>
+      <h3 class="ta-subh">РЎР»РѕРё</h3>
       ${taDenseTop(layerRanked, { limit: 5 })}
     `;
 
@@ -3550,7 +3550,7 @@
       .join("");
 
     document.getElementById("cw-an-formats").innerHTML = `
-      <h3 class="ta-subh">Формат</h3>
+      <h3 class="ta-subh">Р¤РѕСЂРјР°С‚</h3>
       ${taDenseTop(
         [...sizeCount.entries()]
           .map(([label, count]) => ({
@@ -3561,7 +3561,7 @@
           .sort((a, b) => b.count - a.count),
         { limit: 5 }
       )}
-      <h3 class="ta-subh">Серверы</h3>
+      <h3 class="ta-subh">РЎРµСЂРІРµСЂС‹</h3>
       ${taDenseTop(
         [...serverCount.entries()]
           .map(([label, count]) => ({
@@ -3592,39 +3592,39 @@
       hlEl.innerHTML = taFactsCompact(
         [
           bestFam && {
-            label: "Лучшая карта",
-            value: `${bestFam.label} · ${bestFam.wr}% (${bestFam.count})`,
+            label: "Р›СѓС‡С€Р°СЏ РєР°СЂС‚Р°",
+            value: `${bestFam.label} В· ${bestFam.wr}% (${bestFam.count})`,
             hot: true,
           },
           worstFam &&
             worstFam.label !== bestFam?.label && {
-              label: "Слабая карта",
-              value: `${worstFam.label} · ${worstFam.wr}% (${worstFam.count})`,
+              label: "РЎР»Р°Р±Р°СЏ РєР°СЂС‚Р°",
+              value: `${worstFam.label} В· ${worstFam.wr}% (${worstFam.count})`,
               hot: true,
             },
           layerRanked[0] && {
-            label: "Частый слой",
-            value: `${layerRanked[0].label} · ${layerRanked[0].count}`,
+            label: "Р§Р°СЃС‚С‹Р№ СЃР»РѕР№",
+            value: `${layerRanked[0].label} В· ${layerRanked[0].count}`,
             hot: true,
           },
           softOpp && {
-            label: "Удобный опп",
-            value: `${softOpp.name} · ${softOpp.pct}% (${softOpp.games})`,
+            label: "РЈРґРѕР±РЅС‹Р№ РѕРїРї",
+            value: `${softOpp.name} В· ${softOpp.pct}% (${softOpp.games})`,
             hot: softOpp.pct >= 70,
           },
           hardOpp &&
             hardOpp.name !== softOpp?.name && {
-              label: "Тяжёлый опп",
-              value: `${hardOpp.name} · ${hardOpp.pct}% (${hardOpp.games})`,
+              label: "РўСЏР¶С‘Р»С‹Р№ РѕРїРї",
+              value: `${hardOpp.name} В· ${hardOpp.pct}% (${hardOpp.games})`,
               hot: hardOpp.pct <= 35,
             },
           {
-            label: "Разгромы / близкие",
+            label: "Р Р°Р·РіСЂРѕРјС‹ / Р±Р»РёР·РєРёРµ",
             value: `${blowouts} / ${closeR}`,
             hot: blowouts >= 3 || closeR >= 3,
           },
           avgMargin != null && {
-            label: "Ср. ? тикетов",
+            label: "РЎСЂ. ? С‚РёРєРµС‚РѕРІ",
             value: String(avgMargin),
             hot: Math.abs(avgMargin) >= 80,
           },
@@ -3634,19 +3634,19 @@
 
     document.getElementById("cw-an-pace").innerHTML = taFactsCompact([
       {
-        label: "Ср. раунд",
-        value: avgDur != null ? formatDurationSec(avgDur) : "—",
+        label: "РЎСЂ. СЂР°СѓРЅРґ",
+        value: avgDur != null ? formatDurationSec(avgDur) : "вЂ”",
       },
       {
-        label: "Ср. ?",
-        value: avgMargin != null ? String(avgMargin) : "—",
+        label: "РЎСЂ. ?",
+        value: avgMargin != null ? String(avgMargin) : "вЂ”",
         hot: avgMargin != null && Math.abs(avgMargin) >= 80,
       },
-      { label: "Разгромы", value: String(blowouts), hot: blowouts >= 3 },
-      { label: "Близкие", value: String(closeR), hot: closeR >= 3 },
+      { label: "Р Р°Р·РіСЂРѕРјС‹", value: String(blowouts), hot: blowouts >= 3 },
+      { label: "Р‘Р»РёР·РєРёРµ", value: String(closeR), hot: closeR >= 3 },
       {
-        label: "Пех / тех",
-        value: detailsN ? `${infUs}/${infThem} · ${vehUs}/${vehThem}` : "—",
+        label: "РџРµС… / С‚РµС…",
+        value: detailsN ? `${infUs}/${infThem} В· ${vehUs}/${vehThem}` : "вЂ”",
       },
       { label: "KD ?", value: String(kdAll), hot: kdAll >= 1.3 || kdAll <= 0.85 },
     ]);
@@ -3671,9 +3671,9 @@
           : 0,
     }));
     document.getElementById("cw-an-tiers").innerHTML = `
-      <h3 class="ta-subh">Микс / катка</h3>
+      <h3 class="ta-subh">РњРёРєСЃ / РєР°С‚РєР°</h3>
       ${taDenseTop(avgTierMix, { limit: 4 })}
-      <h3 class="ta-subh">Уники</h3>
+      <h3 class="ta-subh">РЈРЅРёРєРё</h3>
       ${taDenseTop(
         [1, 2, 3, 4].map((t) => ({
           label: tierLabel(t),
@@ -3707,7 +3707,7 @@
   }
 
   function formatDurationSec(sec) {
-    if (sec == null || !Number.isFinite(sec)) return "—";
+    if (sec == null || !Number.isFinite(sec)) return "вЂ”";
     const m = Math.floor(sec / 60);
     const s = Math.round(sec % 60);
     return `${m}:${String(s).padStart(2, "0")}`;
@@ -3718,7 +3718,7 @@
     const m = raw.match(
       /(?:SEC\s*\d+\s+)?([A-Za-z][A-Za-z0-9]*)/i
     );
-    if (!m) return raw || "—";
+    if (!m) return raw || "вЂ”";
     const name = m[1];
     const known = {
       goosebay: "GooseBay",
@@ -3796,7 +3796,7 @@
   function taDenseTop(rows, opts) {
     const limit = opts && opts.limit != null ? opts.limit : 5;
     const list = Array.isArray(rows) ? rows.slice() : [];
-    if (!list.length) return `<p class="muted">Нет данных</p>`;
+    if (!list.length) return `<p class="muted">РќРµС‚ РґР°РЅРЅС‹С…</p>`;
     const max = Math.max(...list.map((r) => Number(r.count) || 0), 1);
     const shown = list.slice(0, limit);
     const rest = list.length - shown.length;
@@ -3810,7 +3810,7 @@
           r.hot ||
           i === 0 ||
           (typeof r.wr === "number" && (r.wr >= 70 || (r.wr <= 30 && (r.n || count) >= 2)));
-        const meta = [share, extra].filter(Boolean).join(" · ");
+        const meta = [share, extra].filter(Boolean).join(" В· ");
         return `<li class="ta-dense-row${hot ? " ta-hot" : ""}">
           <span class="ta-dense-rank">${i + 1}</span>
           <span class="ta-dense-label" title="${escapeHtml(r.label)}">${escapeHtml(r.label)}</span>
@@ -3820,12 +3820,12 @@
       })
       .join("");
     return `<ul class="ta-dense">${html}</ul>${
-      rest > 0 ? `<p class="ta-dense-more muted">ещё ${rest}</p>` : ""
+      rest > 0 ? `<p class="ta-dense-more muted">РµС‰С‘ ${rest}</p>` : ""
     }`;
   }
 
   function taFactsCompact(items) {
-    if (!items || !items.length) return `<p class="muted">Нет данных</p>`;
+    if (!items || !items.length) return `<p class="muted">РќРµС‚ РґР°РЅРЅС‹С…</p>`;
     return `<ul class="ta-facts ta-facts-dense">${items
       .map((it) => {
         const hot = it.hot ? " ta-hot" : "";
@@ -3893,16 +3893,16 @@
         const hotT1 = t1pct != null && (t1pct >= 55 || t1pct <= 25);
         return `<tr class="${st}">
           <td class="ta-num">${pad(m.day)}.${pad(m._month)}.${m._year}</td>
-          <td><strong>${escapeHtml(m.opp || "—")}</strong></td>
+          <td><strong>${escapeHtml(m.opp || "вЂ”")}</strong></td>
           <td>${escapeHtml(mapFamilyName(m.map))}</td>
-          <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr ta-num">${escapeHtml(m.meeting || "—")}</td>
-          <td class="ctr ta-num">${nn || "—"}</td>
+          <td class="ctr">${escapeHtml(m.stack || "вЂ”")}</td>
+          <td class="ctr ta-num">${escapeHtml(m.meeting || "вЂ”")}</td>
+          <td class="ctr ta-num">${nn || "вЂ”"}</td>
           <td class="ctr ta-num tier tier-1">${tierCounts[1] || 0}</td>
           <td class="ctr ta-num tier tier-2">${tierCounts[2] || 0}</td>
           <td class="ctr ta-num tier tier-3">${tierCounts[3] || 0}</td>
           <td class="ctr ta-num tier tier-4">${tierCounts[4] || 0}</td>
-          <td class="ctr ta-num${hotT1 ? " ta-hot-cell" : ""}">${t1pct != null ? t1pct + "%" : "—"}</td>
+          <td class="ctr ta-num${hotT1 ? " ta-hot-cell" : ""}">${t1pct != null ? t1pct + "%" : "вЂ”"}</td>
         </tr>`;
       })
       .join("");
@@ -3954,7 +3954,7 @@
   function taRankDonut(rows) {
     const present = (rows || []).filter((r) => (Number(r.count) || 0) > 0);
     if (!present.length) {
-      return `<div class="ta-donut-wrap"><p class="muted">Нет данных</p></div>`;
+      return `<div class="ta-donut-wrap"><p class="muted">РќРµС‚ РґР°РЅРЅС‹С…</p></div>`;
     }
     const total = present.reduce((s, r) => s + (Number(r.count) || 0), 0) || 1;
     const cx = 100;
@@ -3994,7 +3994,7 @@
       const color =
         RANK_DONUT_COLORS[key] ||
         `hsl(${(i * 37) % 360} 70% 55%)`;
-      const tip = `${r.label}: ${count} игр. · ${share}%`;
+      const tip = `${r.label}: ${count} РёРіСЂ. В· ${share}%`;
       return { d, color, tip, label: r.label, count, share, key };
     });
 
@@ -4025,7 +4025,7 @@
     return (
       `<div class="ta-donut-wrap">` +
       `<div class="ta-donut-chart">` +
-      `<svg viewBox="0 0 200 200" class="ta-donut-svg" role="img" aria-label="Распределение рангов">` +
+      `<svg viewBox="0 0 200 200" class="ta-donut-svg" role="img" aria-label="Р Р°СЃРїСЂРµРґРµР»РµРЅРёРµ СЂР°РЅРіРѕРІ">` +
       paths +
       `</svg>` +
       `<div class="ta-donut-center" id="ta-donut-tip">${centerLabel}</div>` +
@@ -4043,9 +4043,9 @@
       el.addEventListener("mouseenter", () => {
         const t = el.getAttribute("data-tip") || "";
         if (tip && t) {
-          const parts = t.split(" · ");
+          const parts = t.split(" В· ");
           const head = parts[0] || t;
-          const rest = parts.slice(1).join(" · ");
+          const rest = parts.slice(1).join(" В· ");
           tip.innerHTML = `${escapeHtml(head)}${rest ? `<br /><strong>${escapeHtml(rest)}</strong>` : ""}`;
         }
         el.classList.add("is-hot");
@@ -4059,7 +4059,7 @@
 
   function taTopTable(title, rows, cols) {
     if (!rows.length) {
-      return `<div class="ta-top-block"><h3>${escapeHtml(title)}</h3><p class="muted">Нет данных</p></div>`;
+      return `<div class="ta-top-block"><h3>${escapeHtml(title)}</h3><p class="muted">РќРµС‚ РґР°РЅРЅС‹С…</p></div>`;
     }
     const head = cols.map((c) => `<th class="${c.cls || ""}">${escapeHtml(c.label)}</th>`).join("");
     const body = rows
@@ -4084,13 +4084,13 @@
     const body = document.getElementById("train-an-body");
     const kpis = document.getElementById("train-an-kpis");
     if (!note || !body || !kpis) return;
-    note.textContent = "Считаем аналитику тренировок…";
+    note.textContent = "РЎС‡РёС‚Р°РµРј Р°РЅР°Р»РёС‚РёРєСѓ С‚СЂРµРЅРёСЂРѕРІРѕРєвЂ¦";
     body.hidden = true;
     kpis.innerHTML = "";
 
     const metas = selectedTrainingAnalyticsMetas();
     if (!metas.length) {
-      note.textContent = "Нет месяцев тренировок";
+      note.textContent = "РќРµС‚ РјРµСЃСЏС†РµРІ С‚СЂРµРЅРёСЂРѕРІРѕРє";
       return;
     }
 
@@ -4139,27 +4139,27 @@
       });
   }
 
-  /* ——— hitmap by tier (BBHitZone) ——— */
+  /* вЂ”вЂ”вЂ” hitmap by tier (BBHitZone) вЂ”вЂ”вЂ” */
   const HIT_BONE_RU = {
-    Bip01_Head: "Голова",
-    Bip01_Neck: "Шея",
-    Bip01_Spine2: "Грудь",
-    Bip01_Spine: "Живот",
-    Bip01_Pelvis: "Таз",
-    Bip01_L_Clavicle: "L ключица",
-    Bip01_R_Clavicle: "R ключица",
-    Bip01_L_UpperArm: "L плечо",
-    Bip01_R_UpperArm: "R плечо",
-    Bip01_L_Forearm: "L предплечье",
-    Bip01_R_Forearm: "R предплечье",
-    Bip01_L_Hand: "L кисть",
-    Bip01_R_Hand: "R кисть",
-    Bip01_L_Thigh: "L бедро",
-    Bip01_R_Thigh: "R бедро",
-    Bip01_L_Calf: "L голень",
-    Bip01_R_Calf: "R голень",
-    Bip01_L_Foot: "L стопа",
-    Bip01_R_Foot: "R стопа",
+    Bip01_Head: "Р“РѕР»РѕРІР°",
+    Bip01_Neck: "РЁРµСЏ",
+    Bip01_Spine2: "Р“СЂСѓРґСЊ",
+    Bip01_Spine: "Р–РёРІРѕС‚",
+    Bip01_Pelvis: "РўР°Р·",
+    Bip01_L_Clavicle: "L РєР»СЋС‡РёС†Р°",
+    Bip01_R_Clavicle: "R РєР»СЋС‡РёС†Р°",
+    Bip01_L_UpperArm: "L РїР»РµС‡Рѕ",
+    Bip01_R_UpperArm: "R РїР»РµС‡Рѕ",
+    Bip01_L_Forearm: "L РїСЂРµРґРїР»РµС‡СЊРµ",
+    Bip01_R_Forearm: "R РїСЂРµРґРїР»РµС‡СЊРµ",
+    Bip01_L_Hand: "L РєРёСЃС‚СЊ",
+    Bip01_R_Hand: "R РєРёСЃС‚СЊ",
+    Bip01_L_Thigh: "L Р±РµРґСЂРѕ",
+    Bip01_R_Thigh: "R Р±РµРґСЂРѕ",
+    Bip01_L_Calf: "L РіРѕР»РµРЅСЊ",
+    Bip01_R_Calf: "R РіРѕР»РµРЅСЊ",
+    Bip01_L_Foot: "L СЃС‚РѕРїР°",
+    Bip01_R_Foot: "R СЃС‚РѕРїР°",
   };
   const HIT_BONE_ORDER = Object.keys(HIT_BONE_RU);
   const HIT_ANCHORS = {
@@ -4225,7 +4225,7 @@
             : `${Number(pct).toFixed(1)}%`;
       const tip =
         n > 0 && pctText
-          ? `${label} · ${n} (${pctText})`
+          ? `${label} В· ${n} (${pctText})`
           : label;
       return `<g class="hitmap-zone" data-bone="${escapeHtml(bone)}" data-label="${escapeHtml(tip)}">
         <circle class="hitmap-zone-glow" cx="${cx}" cy="${cy}" r="${r + 4}" fill="rgba(167,139,250,0.28)" stroke="rgba(196,181,253,0.85)" stroke-width="1.5" opacity="0" style="pointer-events:none"></circle>
@@ -4366,8 +4366,8 @@
     const uid = `t${tier.tier}`;
     return `<article class="hitmap-tier-card">
       <header class="hitmap-tier-head">
-        <h3>${escapeHtml(tier.label || `Тир ${tier.tier}`)}</h3>
-        <p class="muted">${tier.players || 0} игр. · ${tier.totalHits || 0} попаданий</p>
+        <h3>${escapeHtml(tier.label || `РўРёСЂ ${tier.tier}`)}</h3>
+        <p class="muted">${tier.players || 0} РёРіСЂ. В· ${tier.totalHits || 0} РїРѕРїР°РґР°РЅРёР№</p>
       </header>
       <div class="hitmap-tier-body">
         <svg class="hitmap-tier-svg" viewBox="0 0 240 380" role="img" aria-label="${escapeHtml(tier.label)}">
@@ -4399,7 +4399,7 @@
           <g style="pointer-events:none">${dots}</g>
           <g class="hitmap-zones">${hitZonesHtml(tier)}</g>
         </svg>
-        <ul class="hitmap-strip-list">${strip || '<li class="muted">Нет данных</li>'}</ul>
+        <ul class="hitmap-strip-list">${strip || '<li class="muted">РќРµС‚ РґР°РЅРЅС‹С…</li>'}</ul>
       </div>
     </article>`;
   }
@@ -4409,7 +4409,7 @@
     const grid = document.getElementById("train-hits-grid");
     if (!note || !grid) return;
     note.hidden = false;
-    note.textContent = "Загружаем карты попаданий…";
+    note.textContent = "Р—Р°РіСЂСѓР¶Р°РµРј РєР°СЂС‚С‹ РїРѕРїР°РґР°РЅРёР№вЂ¦";
     grid.hidden = true;
     grid.innerHTML = "";
     fetch(HITMAP_TIERS_URL, { cache: "no-store" })
@@ -4419,7 +4419,7 @@
       })
       .then((data) => {
         if (!data || !data.ok || !Array.isArray(data.tiers)) {
-          throw new Error(data && data.error ? data.error : "Пустой ответ");
+          throw new Error(data && data.error ? data.error : "РџСѓСЃС‚РѕР№ РѕС‚РІРµС‚");
         }
         const cards = data.tiers.map(renderTierHitmapCard).join("");
         grid.innerHTML = cards;
@@ -4427,13 +4427,13 @@
         grid.hidden = false;
         const withPlayers = data.tiers.filter((t) => t.players > 0).length;
         note.textContent = withPlayers
-          ? `Средний % по частям тела · равный вес игрока внутри тира · обновлено ${
-              data.updatedAt ? new Date(data.updatedAt).toLocaleString("ru-RU") : "—"
+          ? `РЎСЂРµРґРЅРёР№ % РїРѕ С‡Р°СЃС‚СЏРј С‚РµР»Р° В· СЂР°РІРЅС‹Р№ РІРµСЃ РёРіСЂРѕРєР° РІРЅСѓС‚СЂРё С‚РёСЂР° В· РѕР±РЅРѕРІР»РµРЅРѕ ${
+              data.updatedAt ? new Date(data.updatedAt).toLocaleString("ru-RU") : "вЂ”"
             }`
-          : "Пока нет попаданий у зареганных игроков — постреляйте на TR1.";
+          : "РџРѕРєР° РЅРµС‚ РїРѕРїР°РґР°РЅРёР№ Сѓ Р·Р°СЂРµРіР°РЅРЅС‹С… РёРіСЂРѕРєРѕРІ вЂ” РїРѕСЃС‚СЂРµР»СЏР№С‚Рµ РЅР° TR1.";
       })
       .catch((err) => {
-        note.textContent = `Не удалось загрузить: ${err.message || err}`;
+        note.textContent = `РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ: ${err.message || err}`;
         grid.hidden = true;
       });
   }
@@ -4485,10 +4485,10 @@
     if (!kits.length) {
       return `<article class="kit-tier-card">
         <header class="kit-tier-head">
-          <h3>${escapeHtml(tier.label || `Тир ${tier.tier}`)}</h3>
-          <p class="muted">${tier.players || 0} игр.</p>
+          <h3>${escapeHtml(tier.label || `РўРёСЂ ${tier.tier}`)}</h3>
+          <p class="muted">${tier.players || 0} РёРіСЂ.</p>
         </header>
-        <p class="muted kit-empty">Нет данных</p>
+        <p class="muted kit-empty">РќРµС‚ РґР°РЅРЅС‹С…</p>
       </article>`;
     }
     const top = kits[0];
@@ -4519,12 +4519,12 @@
       : `${Number(top.pct).toFixed(1)}%`;
     const topLabel =
       String(top.kit).length > 14
-        ? `${String(top.kit).slice(0, 13)}…`
+        ? `${String(top.kit).slice(0, 13)}вЂ¦`
         : top.kit;
     return `<article class="kit-tier-card">
       <header class="kit-tier-head">
-        <h3>${escapeHtml(tier.label || `Тир ${tier.tier}`)}</h3>
-        <p class="muted">${tier.players || 0} игр.</p>
+        <h3>${escapeHtml(tier.label || `РўРёСЂ ${tier.tier}`)}</h3>
+        <p class="muted">${tier.players || 0} РёРіСЂ.</p>
       </header>
       <div class="kit-tier-body">
         <svg class="kit-tier-donut" viewBox="0 0 120 120" role="img" aria-label="${escapeHtml(
@@ -4550,7 +4550,7 @@
     const rankPanel = document.getElementById("train-kits-rank");
     if (!note || !grid) return;
     note.hidden = false;
-    note.textContent = "Загружаем диаграммы ролей…";
+    note.textContent = "Р—Р°РіСЂСѓР¶Р°РµРј РґРёР°РіСЂР°РјРјС‹ СЂРѕР»РµР№вЂ¦";
     grid.hidden = true;
     grid.innerHTML = "";
     if (rankPanel) rankPanel.hidden = true;
@@ -4561,24 +4561,24 @@
       })
       .then((data) => {
         if (!data || !data.ok || !Array.isArray(data.tiers)) {
-          throw new Error(data && data.error ? data.error : "Пустой ответ");
+          throw new Error(data && data.error ? data.error : "РџСѓСЃС‚РѕР№ РѕС‚РІРµС‚");
         }
         grid.innerHTML = data.tiers.map(renderTierKitCard).join("");
         grid.hidden = false;
         const withPlayers = data.tiers.filter((t) => t.players > 0).length;
         note.textContent = withPlayers
-          ? `Средний % китов · равный вес игрока внутри тира · обновлено ${
+          ? `РЎСЂРµРґРЅРёР№ % РєРёС‚РѕРІ В· СЂР°РІРЅС‹Р№ РІРµСЃ РёРіСЂРѕРєР° РІРЅСѓС‚СЂРё С‚РёСЂР° В· РѕР±РЅРѕРІР»РµРЅРѕ ${
               data.updatedAt
                 ? new Date(data.updatedAt).toLocaleString("ru-RU")
-                : "—"
+                : "вЂ”"
             }`
-          : "Пока нет ролей у зареганных — поиграйте стандартными китами на TR1.";
+          : "РџРѕРєР° РЅРµС‚ СЂРѕР»РµР№ Сѓ Р·Р°СЂРµРіР°РЅРЅС‹С… вЂ” РїРѕРёРіСЂР°Р№С‚Рµ СЃС‚Р°РЅРґР°СЂС‚РЅС‹РјРё РєРёС‚Р°РјРё РЅР° TR1.";
         if (data.ranking && Array.isArray(data.ranking.players)) {
           initKitRankPanel(data.ranking);
         }
       })
       .catch((err) => {
-        note.textContent = `Не удалось загрузить роли: ${err.message || err}`;
+        note.textContent = `РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ СЂРѕР»Рё: ${err.message || err}`;
         grid.hidden = true;
         if (rankPanel) rankPanel.hidden = true;
       });
@@ -4602,7 +4602,7 @@
     }
     const sorted = [...kits].sort((a, b) => a.localeCompare(b, "ru"));
     sel.innerHTML =
-      `<option value="all">Все</option>` +
+      `<option value="all">Р’СЃРµ</option>` +
       sorted
         .map(
           (k) =>
@@ -4617,15 +4617,15 @@
     if (!el) return;
     const ins = insights || {};
     const cards = [
-      ["В таблице", String(filteredN)],
-      ["Игроков всего", String(ins.players || 0)],
-      ["Ср. китов / игрок", String(ins.avgKitsUsed ?? "—")],
-      ["Ср. % ур.1", ins.avgL1Pct != null ? `${ins.avgL1Pct}%` : "—"],
-      ["Спецы (не стрелок ур.1)", ins.specialistsPct != null ? `${ins.specialistsPct}%` : "—"],
-      ["Стрелок как ур.1", ins.riflemanL1Pct != null ? `${ins.riflemanL1Pct}%` : "—"],
-      ["Топ кит ур.1", ins.topL1Kit || "—"],
-      ["Редкий кит ур.1", ins.rarestL1Kit || "—"],
-      ["Смотрим уровень", `Ур. ${level}`],
+      ["Р’ С‚Р°Р±Р»РёС†Рµ", String(filteredN)],
+      ["РРіСЂРѕРєРѕРІ РІСЃРµРіРѕ", String(ins.players || 0)],
+      ["РЎСЂ. РєРёС‚РѕРІ / РёРіСЂРѕРє", String(ins.avgKitsUsed ?? "вЂ”")],
+      ["РЎСЂ. % СѓСЂ.1", ins.avgL1Pct != null ? `${ins.avgL1Pct}%` : "вЂ”"],
+      ["РЎРїРµС†С‹ (РЅРµ СЃС‚СЂРµР»РѕРє СѓСЂ.1)", ins.specialistsPct != null ? `${ins.specialistsPct}%` : "вЂ”"],
+      ["РЎС‚СЂРµР»РѕРє РєР°Рє СѓСЂ.1", ins.riflemanL1Pct != null ? `${ins.riflemanL1Pct}%` : "вЂ”"],
+      ["РўРѕРї РєРёС‚ СѓСЂ.1", ins.topL1Kit || "вЂ”"],
+      ["Р РµРґРєРёР№ РєРёС‚ СѓСЂ.1", ins.rarestL1Kit || "вЂ”"],
+      ["РЎРјРѕС‚СЂРёРј СѓСЂРѕРІРµРЅСЊ", `РЈСЂ. ${level}`],
     ];
     el.innerHTML = cards
       .map(
@@ -4659,13 +4659,13 @@
             return `<li>
               <div class="bar-meta">
                 <span>${escapeHtml(r.kit)}</span>
-                <strong>${r.count} · ${escapeHtml(pctText)}</strong>
+                <strong>${r.count} В· ${escapeHtml(pctText)}</strong>
               </div>
               <div class="bar-track"><div class="bar-fill" style="width:${w}%"></div></div>
             </li>`;
           })
           .join("")
-      : `<li class="muted">Нет данных для ур. ${level}</li>`;
+      : `<li class="muted">РќРµС‚ РґР°РЅРЅС‹С… РґР»СЏ СѓСЂ. ${level}</li>`;
 
     const tiersPresent = [...new Set(byTier.map((r) => r.tier))].sort(
       (a, b) => a - b
@@ -4688,23 +4688,23 @@
                   }</strong></li>`
               )
               .join("");
-            return `<div class="kit-rank-tier-block"><h5>Тир ${t}</h5><ul>${lis}</ul></div>`;
+            return `<div class="kit-rank-tier-block"><h5>РўРёСЂ ${t}</h5><ul>${lis}</ul></div>`;
           })
           .join("")
-      : `<p class="muted">Нет разбивки по тирам</p>`;
+      : `<p class="muted">РќРµС‚ СЂР°Р·Р±РёРІРєРё РїРѕ С‚РёСЂР°Рј</p>`;
 
     el.innerHTML = `
       <div class="kit-rank-sum-card">
-        <h4>Сколько каких китов · ур. ${level}</h4>
-        <p class="muted">Сколько игроков имеют этот кит на выбранном уровне</p>
+        <h4>РЎРєРѕР»СЊРєРѕ РєР°РєРёС… РєРёС‚РѕРІ В· СѓСЂ. ${level}</h4>
+        <p class="muted">РЎРєРѕР»СЊРєРѕ РёРіСЂРѕРєРѕРІ РёРјРµСЋС‚ СЌС‚РѕС‚ РєРёС‚ РЅР° РІС‹Р±СЂР°РЅРЅРѕРј СѓСЂРѕРІРЅРµ</p>
         <ul class="kit-rank-bars">${bars}</ul>
       </div>
       <div class="kit-rank-sum-card">
-        <h4>По тирам · ур. ${level}</h4>
+        <h4>РџРѕ С‚РёСЂР°Рј В· СѓСЂ. ${level}</h4>
         <p class="muted">${
           tierFilter === "all"
-            ? "Все тиры"
-            : `Фильтр: тир ${escapeHtml(String(tierFilter))}`
+            ? "Р’СЃРµ С‚РёСЂС‹"
+            : `Р¤РёР»СЊС‚СЂ: С‚РёСЂ ${escapeHtml(String(tierFilter))}`
         }</p>
         <div class="kit-rank-tier-grid">${tierBlocks}</div>
       </div>`;
@@ -4752,7 +4752,7 @@
               ? Number.isInteger(slot.pct)
                 ? `${slot.pct}%`
                 : `${Number(slot.pct).toFixed(1)}%`
-              : "—";
+              : "вЂ”";
             const fmt = (s) =>
               s
                 ? `${escapeHtml(s.kit)} <span class="kit-cell-muted">(${
@@ -4760,12 +4760,12 @@
                       ? s.pct
                       : Number(s.pct).toFixed(1)
                   }%)</span>`
-                : `<span class="kit-cell-muted">—</span>`;
+                : `<span class="kit-cell-muted">вЂ”</span>`;
             return `<tr>
               <td class="ctr">${i + 1}</td>
               <td>${escapeHtml(p.nick)}</td>
               <td class="ctr">${p.tier}</td>
-              <td class="kit-cell-active">${escapeHtml(slot ? slot.kit : "—")}</td>
+              <td class="kit-cell-active">${escapeHtml(slot ? slot.kit : "вЂ”")}</td>
               <td class="ctr">${escapeHtml(pctText)}</td>
               <td>${fmt(l1)}</td>
               <td>${fmt(l2)}</td>
@@ -4774,7 +4774,7 @@
             </tr>`;
           })
           .join("")
-      : `<tr><td colspan="9" class="muted">Нет игроков по фильтру</td></tr>`;
+      : `<tr><td colspan="9" class="muted">РќРµС‚ РёРіСЂРѕРєРѕРІ РїРѕ С„РёР»СЊС‚СЂСѓ</td></tr>`;
 
     renderKitRankInsights(kitRankState.insights, rows.length, level);
     renderKitRankSummary(kitRankState, level, tierF);
@@ -4807,7 +4807,7 @@
 
     const matches = bundles.map((b) => b.match);
     if (!matches.length) {
-      note.textContent = "В выбранном периоде нет сыгранных тренировок";
+      note.textContent = "Р’ РІС‹Р±СЂР°РЅРЅРѕРј РїРµСЂРёРѕРґРµ РЅРµС‚ СЃС‹РіСЂР°РЅРЅС‹С… С‚СЂРµРЅРёСЂРѕРІРѕРє";
       body.hidden = true;
       return;
     }
@@ -4865,13 +4865,13 @@
     };
 
     bundles.forEach(({ match: m, players }) => {
-      const map = m.map || "—";
+      const map = m.map || "вЂ”";
       mapCount.set(map, (mapCount.get(map) || 0) + 1);
       const fam = mapFamilyName(map);
       familyCount.set(fam, (familyCount.get(fam) || 0) + 1);
-      const mode = m.mode || "—";
+      const mode = m.mode || "вЂ”";
       modeCount.set(mode, (modeCount.get(mode) || 0) + 1);
-      const server = m.server || "—";
+      const server = m.server || "вЂ”";
       serverCount.set(server, (serverCount.get(server) || 0) + 1);
 
       const dayKey = `${m._year}-${String(m._month).padStart(2, "0")}-${String(m.day).padStart(2, "0")}`;
@@ -4970,7 +4970,7 @@
         };
         bumpMvp(mvp.medic, "mvpMedic");
         bumpMvp(mvp.killer, "mvpKiller");
-        // без War-Score на тренировках; Armor только по vehicleKills
+        // Р±РµР· War-Score РЅР° С‚СЂРµРЅРёСЂРѕРІРєР°С…; Armor С‚РѕР»СЊРєРѕ РїРѕ vehicleKills
         bumpMvp(mvp.armor, "mvpArmor");
       }
       if (roster > 0) {
@@ -4994,17 +4994,17 @@
 
     const scope = document.getElementById("train-an-scope")?.value || "all";
     const scopeRu =
-      scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
-    note.textContent = `Период: ${scopeRu}. Матчей: ${n}. Уникальных игроков: ${uniqueNicks.size}.`;
+      scope === "all" ? "Р·Р° РІСЃС‘ РІСЂРµРјСЏ" : scope === "year" ? "Р·Р° РіРѕРґ" : "Р·Р° РјРµСЃСЏС†";
+    note.textContent = `РџРµСЂРёРѕРґ: ${scopeRu}. РњР°С‚С‡РµР№: ${n}. РЈРЅРёРєР°Р»СЊРЅС‹С… РёРіСЂРѕРєРѕРІ: ${uniqueNicks.size}.`;
 
     kpis.innerHTML = [
-      ["Матчей", String(n)],
-      ["Дней", String(dayStat.size)],
-      ["Игроков", String(uniqueNicks.size)],
-      ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
-      ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
-      ["Килы ?", String(totalKills)],
-      ["Смерти ?", String(totalDeaths)],
+      ["РњР°С‚С‡РµР№", String(n)],
+      ["Р”РЅРµР№", String(dayStat.size)],
+      ["РРіСЂРѕРєРѕРІ", String(uniqueNicks.size)],
+      ["РЎСЂ. СЃРѕСЃС‚Р°РІ", avgRoster != null ? String(avgRoster) : "вЂ”"],
+      ["РЎСЂ. РґР»РёС‚.", avgDur != null ? formatDurationSec(avgDur) : "вЂ”"],
+      ["РљРёР»С‹ ?", String(totalKills)],
+      ["РЎРјРµСЂС‚Рё ?", String(totalDeaths)],
     ]
       .map(
         ([k, v]) =>
@@ -5026,16 +5026,16 @@
     const layerRanked = toRanked(mapCount);
 
     document.getElementById("train-an-maps").innerHTML = `
-      <h3 class="ta-subh">Семейства</h3>
+      <h3 class="ta-subh">РЎРµРјРµР№СЃС‚РІР°</h3>
       ${taDenseTop(familyRanked, { limit: 5 })}
-      <h3 class="ta-subh">Слои</h3>
+      <h3 class="ta-subh">РЎР»РѕРё</h3>
       ${taDenseTop(layerRanked, { limit: 5 })}
     `;
 
     document.getElementById("train-an-modes").innerHTML = `
-      <h3 class="ta-subh">Режимы</h3>
+      <h3 class="ta-subh">Р РµР¶РёРјС‹</h3>
       ${taDenseTop(toRanked(modeCount), { limit: 5 })}
-      <h3 class="ta-subh">Серверы</h3>
+      <h3 class="ta-subh">РЎРµСЂРІРµСЂС‹</h3>
       ${taDenseTop(toRanked(serverCount), { limit: 5 })}
     `;
 
@@ -5062,8 +5062,8 @@
         <td title="${escapeHtml(factionTitle(f.code))}"><strong>${escapeHtml(f.code)}</strong> <span class="muted">${escapeHtml(factionShort(f.code))}</span></td>
         <td class="ctr ta-num">${f.games}</td>
         <td class="ctr ta-num">${f.wins}</td>
-        <td class="ctr ta-num${hot ? " ta-hot-cell" : ""}">${f.winPct != null ? f.winPct + "%" : "—"}</td>
-        <td class="ctr ta-num">${f.avgTickets != null ? f.avgTickets : "—"}</td>
+        <td class="ctr ta-num${hot ? " ta-hot-cell" : ""}">${f.winPct != null ? f.winPct + "%" : "вЂ”"}</td>
+        <td class="ctr ta-num">${f.avgTickets != null ? f.avgTickets : "вЂ”"}</td>
       </tr>`;
       })
       .join("");
@@ -5092,33 +5092,33 @@
       hlEl.innerHTML = taFactsCompact(
         [
           layerRanked[0] && {
-            label: "Частый слой",
-            value: `${layerRanked[0].label} · ${layerRanked[0].count}`,
+            label: "Р§Р°СЃС‚С‹Р№ СЃР»РѕР№",
+            value: `${layerRanked[0].label} В· ${layerRanked[0].count}`,
             hot: true,
           },
           familyRanked[0] && {
-            label: "Частая карта",
-            value: `${familyRanked[0].label} · ${familyRanked[0].count}`,
+            label: "Р§Р°СЃС‚Р°СЏ РєР°СЂС‚Р°",
+            value: `${familyRanked[0].label} В· ${familyRanked[0].count}`,
             hot: true,
           },
           bestFac && {
-            label: "Лучшая фракция",
-            value: `${bestFac.code} · ${bestFac.winPct}% (${bestFac.games})`,
+            label: "Р›СѓС‡С€Р°СЏ С„СЂР°РєС†РёСЏ",
+            value: `${bestFac.code} В· ${bestFac.winPct}% (${bestFac.games})`,
             hot: true,
           },
           worstFac &&
             worstFac.code !== bestFac?.code && {
-              label: "Слабая фракция",
-              value: `${worstFac.code} · ${worstFac.winPct}% (${worstFac.games})`,
+              label: "РЎР»Р°Р±Р°СЏ С„СЂР°РєС†РёСЏ",
+              value: `${worstFac.code} В· ${worstFac.winPct}% (${worstFac.games})`,
               hot: true,
             },
           peakDay && {
-            label: "Пик дня",
-            value: `${peakDay.label} · ${peakDay.matches} кат. / ${peakDay.players.size} игр.`,
+            label: "РџРёРє РґРЅСЏ",
+            value: `${peakDay.label} В· ${peakDay.matches} РєР°С‚. / ${peakDay.players.size} РёРіСЂ.`,
             hot: peakDay.matches >= 3,
           },
           {
-            label: "Разгромы / близкие",
+            label: "Р Р°Р·РіСЂРѕРјС‹ / Р±Р»РёР·РєРёРµ",
             value: `${blowouts} / ${closeGames}`,
             hot: blowouts >= 3 || closeGames >= 3,
           },
@@ -5128,35 +5128,35 @@
 
     document.getElementById("train-an-pace").innerHTML = taFactsCompact([
       {
-        label: "Ср. длит.",
-        value: avgDur != null ? formatDurationSec(avgDur) : "—",
+        label: "РЎСЂ. РґР»РёС‚.",
+        value: avgDur != null ? formatDurationSec(avgDur) : "вЂ”",
       },
       {
-        label: "Мин / макс",
+        label: "РњРёРЅ / РјР°РєСЃ",
         value:
           minDur != null
-            ? `${formatDurationSec(minDur)} – ${formatDurationSec(maxDur)}`
-            : "—",
+            ? `${formatDurationSec(minDur)} вЂ“ ${formatDurationSec(maxDur)}`
+            : "вЂ”",
       },
       {
-        label: "Короткая",
+        label: "РљРѕСЂРѕС‚РєР°СЏ",
         value: shortest
-          ? `${formatDurationSec(shortest.sec)} · ${mapFamilyName(shortest.m.map)}`
-          : "—",
+          ? `${formatDurationSec(shortest.sec)} В· ${mapFamilyName(shortest.m.map)}`
+          : "вЂ”",
       },
       {
-        label: "Длинная",
+        label: "Р”Р»РёРЅРЅР°СЏ",
         value: longest
-          ? `${formatDurationSec(longest.sec)} · ${mapFamilyName(longest.m.map)}`
-          : "—",
+          ? `${formatDurationSec(longest.sec)} В· ${mapFamilyName(longest.m.map)}`
+          : "вЂ”",
         hot: longest && longest.sec >= 3600,
       },
       {
-        label: "Ср. тик. побед.",
-        value: avgWinTickets != null ? String(avgWinTickets) : "—",
+        label: "РЎСЂ. С‚РёРє. РїРѕР±РµРґ.",
+        value: avgWinTickets != null ? String(avgWinTickets) : "вЂ”",
       },
       {
-        label: "Близкие / разгромы",
+        label: "Р‘Р»РёР·РєРёРµ / СЂР°Р·РіСЂРѕРјС‹",
         value: `${closeGames} / ${blowouts}`,
         hot: closeGames >= 3 || blowouts >= 3,
       },
@@ -5169,18 +5169,18 @@
         ? totalKills
         : Math.round((100 * totalKills) / totalDeaths) / 100;
     document.getElementById("train-an-attendance").innerHTML = taFactsCompact([
-      { label: "Уники", value: String(uniqueNicks.size) },
+      { label: "РЈРЅРёРєРё", value: String(uniqueNicks.size) },
       {
-        label: "Ср. состав",
-        value: avgRoster != null ? String(avgRoster) : "—",
+        label: "РЎСЂ. СЃРѕСЃС‚Р°РІ",
+        value: avgRoster != null ? String(avgRoster) : "вЂ”",
         hot: avgRoster != null && (avgRoster >= 40 || avgRoster <= 20),
       },
       {
-        label: "Мин / макс",
-        value: minR != null ? `${minR} / ${maxR}` : "—",
+        label: "РњРёРЅ / РјР°РєСЃ",
+        value: minR != null ? `${minR} / ${maxR}` : "вЂ”",
         hot: maxR != null && maxR - (minR || 0) >= 20,
       },
-      { label: "Ресы / ноки", value: `${totalRes} / ${totalNok}` },
+      { label: "Р РµСЃС‹ / РЅРѕРєРё", value: `${totalRes} / ${totalNok}` },
       { label: "KD ?", value: String(kdAll), hot: kdAll >= 1.25 || kdAll <= 0.85 },
     ]);
 
@@ -5197,7 +5197,7 @@
         : 0,
     }));
     document.getElementById("train-an-tiers").innerHTML = `
-      <h3 class="ta-subh">Тиры</h3>
+      <h3 class="ta-subh">РўРёСЂС‹</h3>
       ${taDenseTop(tierRows, { limit: 4 })}
     `;
 
@@ -5218,7 +5218,7 @@
           rankKey: rpHit.rankKey,
         };
       }
-      return { ...base, rp: null, pwr: null, pwrLabel: "—", rankKey: "iron" };
+      return { ...base, rp: null, pwr: null, pwrLabel: "вЂ”", rankKey: "iron" };
     });
 
     const withRp = players.filter((p) => p.rp != null);
@@ -5230,14 +5230,14 @@
       : null;
 
     kpis.innerHTML = [
-      ["Матчей", String(n)],
-      ["Дней", String(dayStat.size)],
-      ["Игроков", String(uniqueNicks.size)],
-      ["Ср. RP", avgPwr != null ? String(avgPwr) : "—"],
-      ["Топ RP", topPwrVal != null ? String(topPwrVal) : "—"],
-      ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
-      ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
-      ["Килы ?", String(totalKills)],
+      ["РњР°С‚С‡РµР№", String(n)],
+      ["Р”РЅРµР№", String(dayStat.size)],
+      ["РРіСЂРѕРєРѕРІ", String(uniqueNicks.size)],
+      ["РЎСЂ. RP", avgPwr != null ? String(avgPwr) : "вЂ”"],
+      ["РўРѕРї RP", topPwrVal != null ? String(topPwrVal) : "вЂ”"],
+      ["РЎСЂ. СЃРѕСЃС‚Р°РІ", avgRoster != null ? String(avgRoster) : "вЂ”"],
+      ["РЎСЂ. РґР»РёС‚.", avgDur != null ? formatDurationSec(avgDur) : "вЂ”"],
+      ["РљРёР»С‹ ?", String(totalKills)],
     ]
       .map(
         ([k, v]) =>
@@ -5279,7 +5279,7 @@
   }
 
 
-  /* ——— match modal (player stats) ——— */
+  /* вЂ”вЂ”вЂ” match modal (player stats) вЂ”вЂ”вЂ” */
   function tabById(id) {
     return modalTabs.querySelector(`[data-tab-id="${id}"]`);
   }
@@ -5294,13 +5294,13 @@
     const r1Btn = tabById("r1");
     const r2Btn = tabById("r2");
     const bbTotalBtn = tabById("bbTotal");
-    if (totalBtn) totalBtn.textContent = "Итого";
+    if (totalBtn) totalBtn.textContent = "РС‚РѕРіРѕ";
     if (bbTotalBtn) {
-      bbTotalBtn.textContent = "BB · Итого"; // reset; labelTabs sets host tag
+      bbTotalBtn.textContent = "BB В· РС‚РѕРіРѕ"; // reset; labelTabs sets host tag
       bbTotalBtn.hidden = true;
     }
-    if (r1Btn) r1Btn.textContent = "Раунд 1";
-    if (r2Btn) r2Btn.textContent = "Раунд 2";
+    if (r1Btn) r1Btn.textContent = "Р Р°СѓРЅРґ 1";
+    if (r2Btn) r2Btn.textContent = "Р Р°СѓРЅРґ 2";
     const oppWrap = document.getElementById("modal-tabs-opp");
     if (oppWrap) oppWrap.hidden = true;
   }
@@ -5312,43 +5312,43 @@
     sortDir = "desc";
     const isTrain = m._kind === "training";
     if (isTrain) {
-      modalTitle.textContent = `${pad(m.day)}.${trainMonthKey || monthKey} · ${m.map || "тренировка"}`;
+      modalTitle.textContent = `${pad(m.day)}.${trainMonthKey || monthKey} В· ${m.map || "С‚СЂРµРЅРёСЂРѕРІРєР°"}`;
       modalSub.textContent = [
-        factionTitle(m.factionA) + ` ${m.ticketsA ?? "—"}`,
-        factionTitle(m.factionB) + ` ${m.ticketsB ?? "—"}`,
-        m.winner ? `победа ${factionShort(m.winner)}` : null,
-        m.duration ? `время ${m.duration}` : null,
+        factionTitle(m.factionA) + ` ${m.ticketsA ?? "вЂ”"}`,
+        factionTitle(m.factionB) + ` ${m.ticketsB ?? "вЂ”"}`,
+        m.winner ? `РїРѕР±РµРґР° ${factionShort(m.winner)}` : null,
+        m.duration ? `РІСЂРµРјСЏ ${m.duration}` : null,
         m.server,
       ]
         .filter(Boolean)
-        .join(" · ");
+        .join(" В· ");
     } else {
-      modalTitle.textContent = `${pad(m.day)}.${monthKey} vs ${m.opp || "—"}`;
+      modalTitle.textContent = `${pad(m.day)}.${monthKey} vs ${m.opp || "вЂ”"}`;
       modalSub.textContent = [
         m.map,
         m.size,
         m.stack,
-        m.meeting && m.meeting !== "—" ? `счёт ${m.meeting}` : null,
+        m.meeting && m.meeting !== "вЂ”" ? `СЃС‡С‘С‚ ${m.meeting}` : null,
         STATUS_RU[m.status] || m.status,
       ]
         .filter(Boolean)
-        .join(" · ");
+        .join(" В· ");
     }
 
-    modalBody.innerHTML = `<p class="modal-loading">Загрузка…</p>`;
+    modalBody.innerHTML = `<p class="modal-loading">Р—Р°РіСЂСѓР·РєР°вЂ¦</p>`;
     modal.hidden = false;
     document.body.classList.add("modal-open");
     modalTabs.hidden = true;
 
     if (m.status === "upcoming" && !m.playersUrl) {
-      modalBody.innerHTML = `<p class="modal-empty">Катка ещё не сыграна — статистики нет.</p>`;
+      modalBody.innerHTML = `<p class="modal-empty">РљР°С‚РєР° РµС‰С‘ РЅРµ СЃС‹РіСЂР°РЅР° вЂ” СЃС‚Р°С‚РёСЃС‚РёРєРё РЅРµС‚.</p>`;
       return;
     }
 
     if (m.playersUrl) {
       Promise.all([
         fetch(dataUrl(m.playersUrl)).then((r) => {
-          if (!r.ok) throw new Error("Нет файла статистики");
+          if (!r.ok) throw new Error("РќРµС‚ С„Р°Р№Р»Р° СЃС‚Р°С‚РёСЃС‚РёРєРё");
           return r.json();
         }),
         loadModalPwrDeltas(m),
@@ -5394,7 +5394,7 @@
             );
             const hasOpp = oppR1.length > 0 || oppR2.length > 0;
             modalPlayers = {
-              // Итого = все игроки (BB + соперник), когда есть oppR*
+              // РС‚РѕРіРѕ = РІСЃРµ РёРіСЂРѕРєРё (BB + СЃРѕРїРµСЂРЅРёРє), РєРѕРіРґР° РµСЃС‚СЊ oppR*
               total: hasOpp ? sumRounds(bbTotal, oppTotal) : bbTotal,
               bbTotal,
               r1,
@@ -5410,7 +5410,7 @@
                 oppR2: (data.mvp && data.mvp.oppR2) || pickMvps(oppR2),
               },
               _hasOpp: hasOpp,
-              // Хост/соперник — из данных матча дня (календарь + players), не хардкод BB
+              // РҐРѕСЃС‚/СЃРѕРїРµСЂРЅРёРє вЂ” РёР· РґР°РЅРЅС‹С… РјР°С‚С‡Р° РґРЅСЏ (РєР°Р»РµРЅРґР°СЂСЊ + players), РЅРµ С…Р°СЂРґРєРѕРґ BB
               _hostTag: hostClanTag(m, data),
               _oppTag:
                 String(data.opp || m.opp || "OPP").trim() || "OPP",
@@ -5422,34 +5422,34 @@
         .catch((err) => {
           console.error("players load failed", m.playersUrl, err);
           modalBody.innerHTML =
-            `<p class="modal-empty">Не удалось загрузить статистику.<br>` +
-            `Обнови страницу (Ctrl+F5) и открой катку ещё раз.</p>`;
+            `<p class="modal-empty">РќРµ СѓРґР°Р»РѕСЃСЊ Р·Р°РіСЂСѓР·РёС‚СЊ СЃС‚Р°С‚РёСЃС‚РёРєСѓ.<br>` +
+            `РћР±РЅРѕРІРё СЃС‚СЂР°РЅРёС†Сѓ (Ctrl+F5) Рё РѕС‚РєСЂРѕР№ РєР°С‚РєСѓ РµС‰С‘ СЂР°Р·.</p>`;
         });
       return;
     }
 
     modalBody.innerHTML =
-      `<p class="modal-empty">Статистика игроков ещё не внесена.<br>` +
-      `Ресы / ноки / килы / смерти — со скринов табло / логов.</p>`;
+      `<p class="modal-empty">РЎС‚Р°С‚РёСЃС‚РёРєР° РёРіСЂРѕРєРѕРІ РµС‰С‘ РЅРµ РІРЅРµСЃРµРЅР°.<br>` +
+      `Р РµСЃС‹ / РЅРѕРєРё / РєРёР»С‹ / СЃРјРµСЂС‚Рё вЂ” СЃРѕ СЃРєСЂРёРЅРѕРІ С‚Р°Р±Р»Рѕ / Р»РѕРіРѕРІ.</p>`;
   }
 
   function labelTrainTabs(m) {
     const a = factionShort(m.factionA);
     const b = factionShort(m.factionB);
-    // Restore stable ids first — never rely on button order (bbTotal sits at index 1).
+    // Restore stable ids first вЂ” never rely on button order (bbTotal sits at index 1).
     resetModalTabAttrs();
     const totalBtn = tabById("total");
     const r1Btn = tabById("r1");
     const r2Btn = tabById("r2");
     const bbTotalBtn = tabById("bbTotal");
-    if (totalBtn) totalBtn.textContent = "Все";
+    if (totalBtn) totalBtn.textContent = "Р’СЃРµ";
     if (bbTotalBtn) bbTotalBtn.hidden = true;
     if (r1Btn) {
-      r1Btn.textContent = `${a} · ${m.ticketsA ?? "—"}`;
+      r1Btn.textContent = `${a} В· ${m.ticketsA ?? "вЂ”"}`;
       r1Btn.dataset.tab = "teamA";
     }
     if (r2Btn) {
-      r2Btn.textContent = `${b} · ${m.ticketsB ?? "—"}`;
+      r2Btn.textContent = `${b} В· ${m.ticketsB ?? "вЂ”"}`;
       r2Btn.dataset.tab = "teamB";
     }
     const oppWrap = document.getElementById("modal-tabs-opp");
@@ -5509,7 +5509,7 @@
   }
 
   function flipTickets(t) {
-    if (!t || t === "—") return "—";
+    if (!t || t === "вЂ”") return "вЂ”";
     const parts = String(t).split(":");
     if (parts.length !== 2) return String(t);
     return `${parts[1].trim()}:${parts[0].trim()}`;
@@ -5522,26 +5522,26 @@
     const opp = (modalPlayers && modalPlayers._oppTag) || m.opp || "OPP";
     const our =
       (modalPlayers && modalPlayers._hostTag) || hostClanTag(m, null);
-    const r1Label = m.r1 && m.r1 !== "—" ? `Раунд 1 · ${m.r1}` : "Раунд 1";
-    const r2Label = m.r2 && m.r2 !== "—" ? `Раунд 2 · ${m.r2}` : "Раунд 2";
+    const r1Label = m.r1 && m.r1 !== "вЂ”" ? `Р Р°СѓРЅРґ 1 В· ${m.r1}` : "Р Р°СѓРЅРґ 1";
+    const r2Label = m.r2 && m.r2 !== "вЂ”" ? `Р Р°СѓРЅРґ 2 В· ${m.r2}` : "Р Р°СѓРЅРґ 2";
     const totalBtn = tabById("total");
     const bbTotalBtn = tabById("bbTotal");
     const r1Btn = tabById("r1");
     const r2Btn = tabById("r2");
-    // Итого = все; отдельные вкладки хост (BB/NKLV…) и соперник
+    // РС‚РѕРіРѕ = РІСЃРµ; РѕС‚РґРµР»СЊРЅС‹Рµ РІРєР»Р°РґРєРё С…РѕСЃС‚ (BB/NKLVвЂ¦) Рё СЃРѕРїРµСЂРЅРёРє
     if (totalBtn)
-      totalBtn.textContent = hasOpp ? "Итого · все" : "Итого";
+      totalBtn.textContent = hasOpp ? "РС‚РѕРіРѕ В· РІСЃРµ" : "РС‚РѕРіРѕ";
     if (bbTotalBtn) {
       bbTotalBtn.hidden = !hasOpp;
-      bbTotalBtn.textContent = `${our} · Итого`;
+      bbTotalBtn.textContent = `${our} В· РС‚РѕРіРѕ`;
     }
     if (r1Btn) {
-      r1Btn.hidden = !(m.r1 && m.r1 !== "—") && !(modalPlayers && modalPlayers.r1 && modalPlayers.r1.length);
-      r1Btn.textContent = hasOpp ? `${our} · ${r1Label}` : r1Label;
+      r1Btn.hidden = !(m.r1 && m.r1 !== "вЂ”") && !(modalPlayers && modalPlayers.r1 && modalPlayers.r1.length);
+      r1Btn.textContent = hasOpp ? `${our} В· ${r1Label}` : r1Label;
     }
     if (r2Btn) {
-      r2Btn.hidden = !(m.r2 && m.r2 !== "—") && !(modalPlayers && modalPlayers.r2 && modalPlayers.r2.length);
-      r2Btn.textContent = hasOpp ? `${our} · ${r2Label}` : r2Label;
+      r2Btn.hidden = !(m.r2 && m.r2 !== "вЂ”") && !(modalPlayers && modalPlayers.r2 && modalPlayers.r2.length);
+      r2Btn.textContent = hasOpp ? `${our} В· ${r2Label}` : r2Label;
     }
     // Prefer showing round tabs when player rows exist even if calendar score missing
     if (r1Btn && modalPlayers && modalPlayers.r1 && modalPlayers.r1.length) r1Btn.hidden = false;
@@ -5553,14 +5553,14 @@
         const ot = tabById("oppTotal");
         const o1 = tabById("oppR1");
         const o2 = tabById("oppR2");
-        if (ot) ot.textContent = `${opp} · Итого`;
+        if (ot) ot.textContent = `${opp} В· РС‚РѕРіРѕ`;
         if (o1) {
           o1.hidden = !(modalPlayers.oppR1 && modalPlayers.oppR1.length);
-          o1.textContent = `${opp} · Раунд 1 · ${flipTickets(m.r1)}`;
+          o1.textContent = `${opp} В· Р Р°СѓРЅРґ 1 В· ${flipTickets(m.r1)}`;
         }
         if (o2) {
           o2.hidden = !(modalPlayers.oppR2 && modalPlayers.oppR2.length);
-          o2.textContent = `${opp} · Раунд 2 · ${flipTickets(m.r2)}`;
+          o2.textContent = `${opp} В· Р Р°СѓРЅРґ 2 В· ${flipTickets(m.r2)}`;
         }
       }
     }
@@ -5634,7 +5634,7 @@
       return tied[0].nick;
     }
     function vehOf(p) {
-      // только vehicleKills из логов; p.veh со скрина — тикеты сторон («2:1»), не ТЕХ
+      // С‚РѕР»СЊРєРѕ vehicleKills РёР· Р»РѕРіРѕРІ; p.veh СЃРѕ СЃРєСЂРёРЅР° вЂ” С‚РёРєРµС‚С‹ СЃС‚РѕСЂРѕРЅ (В«2:1В»), РЅРµ РўР•РҐ
       return Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
     }
     function pickArmor() {
@@ -5775,14 +5775,14 @@
 
   function sortMark(key) {
     if (sortKey !== key) return "";
-    return sortDir === "asc" ? "^" : "Ў";
+    return sortDir === "asc" ? "^" : "РЋ";
   }
 
   function th(key, label, cls) {
     const active = sortKey === key;
     const aria = active ? (sortDir === "asc" ? "ascending" : "descending") : "none";
     const mark = sortMark(key);
-    return `<th class="sortable ${cls || ""} ${active ? "is-sorted" : ""}" data-sort="${key}" aria-sort="${aria}" title="Сортировать">${escapeHtml(label)}<span class="sort-ind" aria-hidden="true">${mark}</span></th>`;
+    return `<th class="sortable ${cls || ""} ${active ? "is-sorted" : ""}" data-sort="${key}" aria-sort="${aria}" title="РЎРѕСЂС‚РёСЂРѕРІР°С‚СЊ">${escapeHtml(label)}<span class="sort-ind" aria-hidden="true">${mark}</span></th>`;
   }
 
   function cellRecord(value, isRecord, anti) {
@@ -5805,7 +5805,7 @@
 
     const rows = currentRows();
     if (!rows.length) {
-      modalBody.innerHTML = `<p class="modal-empty">Нет строк для этой вкладки.</p>`;
+      modalBody.innerHTML = `<p class="modal-empty">РќРµС‚ СЃС‚СЂРѕРє РґР»СЏ СЌС‚РѕР№ РІРєР»Р°РґРєРё.</p>`;
       return;
     }
 
@@ -5828,14 +5828,14 @@
         <table class="players-table">
           <thead>
             <tr>
-              <th class="ctr">№</th>
-              ${th("nick", "Ник", "")}
-              ${th("res", "Ресы", "ctr")}
-              ${th("nok", "Ноки", "ctr")}
-              ${th("kills", "Килы", "ctr")}
-              ${th("deaths", "Смерти", "ctr")}
+              <th class="ctr">в„–</th>
+              ${th("nick", "РќРёРє", "")}
+              ${th("res", "Р РµСЃС‹", "ctr")}
+              ${th("nok", "РќРѕРєРё", "ctr")}
+              ${th("kills", "РљРёР»С‹", "ctr")}
+              ${th("deaths", "РЎРјРµСЂС‚Рё", "ctr")}
               ${th("kd", "KD", "ctr")}
-              ${showDmg ? th("dmg", "Боевой счёт", "ctr") : ""}
+              ${showDmg ? th("dmg", "Р‘РѕРµРІРѕР№ СЃС‡С‘С‚", "ctr") : ""}
               ${showPwrDelta ? th("pwrDelta", "? RP", "ctr") : ""}
             </tr>
           </thead>
@@ -5846,7 +5846,7 @@
                 const pd = formatPwrDelta(p.nick);
                 return `<tr>
               <td class="ctr">${i + 1}</td>
-              <td><div class="nick-cell">${nickLinkHtml(p.nick || "—")}${renderMedals(p.nick)}</div></td>
+              <td><div class="nick-cell">${nickLinkHtml(p.nick || "вЂ”")}${renderMedals(p.nick)}</div></td>
               ${cellRecord(p.res, records.res > 0 && p.res === records.res, false)}
               ${cellRecord(p.nok, records.nok > 0 && p.nok === records.nok, false)}
               ${cellRecord(p.kills, records.kills > 0 && p.kills === records.kills, false)}
@@ -5861,14 +5861,14 @@
           <tfoot>
             <tr>
               <td></td>
-              <td>Всего</td>
+              <td>Р’СЃРµРіРѕ</td>
               <td class="ctr">${num(foot.res)}</td>
               <td class="ctr">${num(foot.nok)}</td>
               <td class="ctr">${num(foot.kills)}</td>
               <td class="ctr">${num(foot.deaths)}</td>
               <td class="ctr">${formatKd(foot.deaths ? Math.round((foot.kills / foot.deaths) * 100) / 100 : foot.kills)}</td>
               ${showDmg ? `<td class="ctr">${num(foot.dmg)}</td>` : ""}
-              ${showPwrDelta ? `<td class="ctr">—</td>` : ""}
+              ${showPwrDelta ? `<td class="ctr">вЂ”</td>` : ""}
             </tr>
           </tfoot>
         </table>
@@ -5888,7 +5888,7 @@
   }
 
   function formatKd(v) {
-    if (v == null || v === "") return "—";
+    if (v == null || v === "") return "вЂ”";
     return Number.isInteger(v) ? String(v) : String(v);
   }
 
@@ -5905,51 +5905,51 @@
       return `
       <div class="match-summary match-summary-slim">
         <div class="match-summary-grid">
-          <div class="match-summary-item"><span class="k">Дата</span><span class="v">${escapeHtml(dateStr)}</span></div>
-          <div class="match-summary-item"><span class="k">${escapeHtml(factionShort(m.factionA))}</span><span class="v">${m.ticketsA != null ? m.ticketsA : "—"}</span></div>
-          <div class="match-summary-item"><span class="k">${escapeHtml(factionShort(m.factionB))}</span><span class="v">${m.ticketsB != null ? m.ticketsB : "—"}</span></div>
-          <div class="match-summary-item"><span class="k">Победитель</span><span class="v">${escapeHtml(factionShort(m.winner))}</span></div>
-          <div class="match-summary-item"><span class="k">Время</span><span class="v">${escapeHtml(m.duration || "—")}</span></div>
+          <div class="match-summary-item"><span class="k">Р”Р°С‚Р°</span><span class="v">${escapeHtml(dateStr)}</span></div>
+          <div class="match-summary-item"><span class="k">${escapeHtml(factionShort(m.factionA))}</span><span class="v">${m.ticketsA != null ? m.ticketsA : "вЂ”"}</span></div>
+          <div class="match-summary-item"><span class="k">${escapeHtml(factionShort(m.factionB))}</span><span class="v">${m.ticketsB != null ? m.ticketsB : "вЂ”"}</span></div>
+          <div class="match-summary-item"><span class="k">РџРѕР±РµРґРёС‚РµР»СЊ</span><span class="v">${escapeHtml(factionShort(m.winner))}</span></div>
+          <div class="match-summary-item"><span class="k">Р’СЂРµРјСЏ</span><span class="v">${escapeHtml(m.duration || "вЂ”")}</span></div>
         </div>
       </div>`;
     }
 
-    let tickets = "—";
-    let len = "—";
+    let tickets = "вЂ”";
+    let len = "вЂ”";
     if (modalTab === "r1") {
-      tickets = (d && d.r1 && d.r1.tickets) || m.r1 || "—";
-      len = (d && d.r1 && d.r1.len) || "—";
+      tickets = (d && d.r1 && d.r1.tickets) || m.r1 || "вЂ”";
+      len = (d && d.r1 && d.r1.len) || "вЂ”";
     } else if (modalTab === "r2") {
-      tickets = (d && d.r2 && d.r2.tickets) || m.r2 || "—";
-      len = (d && d.r2 && d.r2.len) || "—";
+      tickets = (d && d.r2 && d.r2.tickets) || m.r2 || "вЂ”";
+      len = (d && d.r2 && d.r2.len) || "вЂ”";
     } else if (modalTab === "oppR1") {
-      tickets = flipTickets((d && d.r1 && d.r1.tickets) || m.r1 || "—");
-      len = (d && d.r1 && d.r1.len) || "—";
+      tickets = flipTickets((d && d.r1 && d.r1.tickets) || m.r1 || "вЂ”");
+      len = (d && d.r1 && d.r1.len) || "вЂ”";
     } else if (modalTab === "oppR2") {
-      tickets = flipTickets((d && d.r2 && d.r2.tickets) || m.r2 || "—");
-      len = (d && d.r2 && d.r2.len) || "—";
+      tickets = flipTickets((d && d.r2 && d.r2.tickets) || m.r2 || "вЂ”");
+      len = (d && d.r2 && d.r2.len) || "вЂ”";
     } else if (modalTab === "oppTotal") {
-      const t1 = flipTickets((d && d.r1 && d.r1.tickets) || m.r1 || "—");
-      const t2 = flipTickets((d && d.r2 && d.r2.tickets) || m.r2 || "—");
-      tickets = `${t1} · ${t2}`;
+      const t1 = flipTickets((d && d.r1 && d.r1.tickets) || m.r1 || "вЂ”");
+      const t2 = flipTickets((d && d.r2 && d.r2.tickets) || m.r2 || "вЂ”");
+      tickets = `${t1} В· ${t2}`;
       const l1 = d && d.r1 && d.r1.len;
       const l2 = d && d.r2 && d.r2.len;
-      len = l1 || l2 ? [l1, l2].filter(Boolean).join(" · ") : "—";
+      len = l1 || l2 ? [l1, l2].filter(Boolean).join(" В· ") : "вЂ”";
     } else {
-      const t1 = (d && d.r1 && d.r1.tickets) || m.r1 || "—";
-      const t2 = (d && d.r2 && d.r2.tickets) || m.r2 || "—";
-      tickets = `${t1} · ${t2}`;
+      const t1 = (d && d.r1 && d.r1.tickets) || m.r1 || "вЂ”";
+      const t2 = (d && d.r2 && d.r2.tickets) || m.r2 || "вЂ”";
+      tickets = `${t1} В· ${t2}`;
       const l1 = d && d.r1 && d.r1.len;
       const l2 = d && d.r2 && d.r2.len;
-      len = l1 || l2 ? [l1, l2].filter(Boolean).join(" · ") : "—";
+      len = l1 || l2 ? [l1, l2].filter(Boolean).join(" В· ") : "вЂ”";
     }
 
     return `
       <div class="match-summary match-summary-slim">
         <div class="match-summary-grid">
-          <div class="match-summary-item"><span class="k">Дата</span><span class="v">${escapeHtml(dateStr)}</span></div>
-          <div class="match-summary-item"><span class="k">Тикеты</span><span class="v">${escapeHtml(tickets)}</span></div>
-          <div class="match-summary-item"><span class="k">Время</span><span class="v">${escapeHtml(len)}</span></div>
+          <div class="match-summary-item"><span class="k">Р”Р°С‚Р°</span><span class="v">${escapeHtml(dateStr)}</span></div>
+          <div class="match-summary-item"><span class="k">РўРёРєРµС‚С‹</span><span class="v">${escapeHtml(tickets)}</span></div>
+          <div class="match-summary-item"><span class="k">Р’СЂРµРјСЏ</span><span class="v">${escapeHtml(len)}</span></div>
         </div>
       </div>`;
   }
@@ -5982,10 +5982,10 @@
     paintPlayers();
   });
 
-  /* ——— boot ——— */
+  /* вЂ”вЂ”вЂ” boot вЂ”вЂ”вЂ” */
   Promise.all([
     fetch(dataUrl(INDEX_URL)).then((r) => {
-      if (!r.ok) throw new Error("Нет каталога месяцев");
+      if (!r.ok) throw new Error("РќРµС‚ РєР°С‚Р°Р»РѕРіР° РјРµСЃСЏС†РµРІ");
       return r.json();
     }),
     fetch(dataUrl(TIERS_URL))
