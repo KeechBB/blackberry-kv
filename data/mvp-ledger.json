@@ -1225,6 +1225,40 @@
       }
     },
     {
+      "id": "25-nklv-huh-narva",
+      "day": 25,
+      "opp": "ХУХ",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "Друг"
+        ],
+        "killer": [
+          "Eastt"
+        ],
+        "damage": [
+          "Карась"
+        ],
+        "antiDeath": [
+          "Hampton"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Друг"
+        ],
+        "killer": [
+          "Друг"
+        ],
+        "damage": [
+          "Друг"
+        ],
+        "antiDeath": [
+          "Карась"
+        ]
+      }
+    },
+    {
       "id": "25-nklv-huh",
       "day": 25,
       "opp": "ХУХ",
@@ -1257,17 +1291,30 @@
       }
     },
     {
-      "id": "25-nklv-huh-narva",
+      "id": "25-solid",
       "day": 25,
-      "opp": "ХУХ",
-      "meeting": "0–2",
+      "opp": ".solid",
+      "meeting": null,
       "r1": {
-        "medic": ["Друг"],
-        "killer": ["Eastt"],
-        "damage": ["Карась"],
-        "antiDeath": ["Hampton"]
+        "medic": [
+          "vasserman"
+        ],
+        "killer": [
+          "SHURUP"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "Kuchenchips"
+        ]
       },
-      "r2": {"medic": ["Друг"], "killer": ["Друг"], "damage": ["Друг"], "antiDeath": ["Карась"]}
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
     },
     {
       "id": "26-20r",
@@ -2322,14 +2369,6 @@
           "label": "Anti-MVP Death"
         },
         {
-          "matchId": "25-nklv-huh-narva",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
           "matchId": "13-nklv-fal",
           "day": 13,
           "opp": "FAL",
@@ -2344,6 +2383,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -2790,8 +2837,8 @@
     "Kuchenchips": {
       "mvpMedic": 0,
       "mvpKiller": 5,
-      "mvpDamage": 7,
-      "antiDeath": 1,
+      "mvpDamage": 8,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "10-avg",
@@ -2896,6 +2943,22 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -3485,7 +3548,7 @@
     },
     "SHURUP": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
@@ -3504,6 +3567,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -4772,7 +4843,7 @@
       ]
     },
     "vasserman": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -4782,6 +4853,14 @@
           "day": 15,
           "opp": "IH",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         }
@@ -4800,62 +4879,6 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
-        }
-      ]
-    },
-    "Друг": {
-      "mvpMedic": 2,
-      "mvpKiller": 2,
-      "mvpDamage": 2,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "25-nklv-huh",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "25-nklv-huh",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "25-nklv-huh-narva",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "25-nklv-huh-narva",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "25-nklv-huh-narva",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "25-nklv-huh-narva",
-          "day": 25,
-          "opp": "ХУХ",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
         }
       ]
     },
@@ -4912,6 +4935,62 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Друг": {
+      "mvpMedic": 2,
+      "mvpKiller": 2,
+      "mvpDamage": 2,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },

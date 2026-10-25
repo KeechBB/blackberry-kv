@@ -637,13 +637,15 @@
       "timeMsk": "21:00",
       "timeUtc": "18:00",
       "opp": ".solid",
-      "map": "SEC 26 Mutaha AAS v1",
+      "map": "SEC 26 Mutaha PAAS v1",
       "size": "26v26",
-      "server": "ANY",
+      "server": ".solid",
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · SEC 26 Mutaha AAS v1 · 26v26 · 21:00 · сервер ANY · первая Main vs .solid (Junior 0–2 11.10 Mutaha PAAS) · same day Junior vs ALPHA 20:00 · NO SCOUT"
+      "r1": "0:44",
+      "playersUrl": "data/players/25-solid.json",
+      "note": "Main · R1 0:44 Minor Defeat BAF·Militia 30:29 · Mutaha PAAS · сервер .solid · ждём R2 · сумма пока 0:44 · same day Junior vs ALPHA 20:00"
     },
     {
       "id": "26-alpha",

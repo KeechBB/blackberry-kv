@@ -1,34 +1,19 @@
 {
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-25",
   "holdDays": 2,
   "displayDays": 2,
-  "watches": [
-    {
-      "nick": "Oguzok",
-      "kind": "promote",
-      "fromTier": 4,
-      "toTier": 3,
-      "fit": 95.5,
-      "band": "strong",
-      "role": "Стрелок",
-      "lever": "Активность: 69% от эталона роли — заходи стабильно в клановые войны",
-      "since": "2026-10-23",
-      "daysHeld": 1,
-      "ready": false
-    },
+  "watches": [],
+  "transfers": [
     {
       "nick": "Runetik",
-      "kind": "demote",
       "fromTier": 3,
       "toTier": 4,
-      "fit": 73.2,
-      "band": "hard",
-      "role": "Стрелок",
-      "lever": "Урон/игра: 32% от эталона роли — больше урона по пехоте и технике",
-      "since": "2026-10-23",
-      "daysHeld": 1,
-      "ready": false
+      "dir": "down",
+      "at": "2026-10-25",
+      "fit": 73.1,
+      "note": "Авто Fit 73.1% · удержание 2д",
+      "actor": "автофит",
+      "lever": "Урон/игра: 32% от эталона роли — больше урона по пехоте и технике"
     }
-  ],
-  "transfers": []
+  ]
 }
