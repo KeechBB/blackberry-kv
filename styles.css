@@ -902,62 +902,6 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .dot.cancel { background: var(--muted); color: var(--muted); }
 .dot.move { background: var(--muted); color: var(--muted); }
 
-/* Тег исхода встречи — сразу видно победа / поражение */
-.result-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 3px 10px 3px 8px;
-  border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  white-space: nowrap;
-  border: 1px solid transparent;
-}
-.result-tag .dot {
-  width: 7px;
-  height: 7px;
-  flex: 0 0 auto;
-}
-.result-tag.win {
-  color: #bbf7d0;
-  background: rgba(52, 211, 153, 0.16);
-  border-color: rgba(52, 211, 153, 0.38);
-}
-.result-tag.lose {
-  color: #fecaca;
-  background: rgba(248, 113, 113, 0.16);
-  border-color: rgba(248, 113, 113, 0.38);
-}
-.result-tag.draw {
-  color: #fde68a;
-  background: rgba(251, 191, 36, 0.14);
-  border-color: rgba(251, 191, 36, 0.36);
-}
-.result-tag.upcoming {
-  color: #bae6fd;
-  background: rgba(125, 211, 252, 0.14);
-  border-color: rgba(125, 211, 252, 0.34);
-}
-.result-tag.cancel,
-.result-tag.move {
-  color: #cbd5e1;
-  background: rgba(148, 163, 184, 0.12);
-  border-color: rgba(148, 163, 184, 0.28);
-}
-.score-with-tag {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-.score-with-tag .score-sum {
-  font-variant-numeric: tabular-nums;
-  font-weight: 600;
-}
-
 .note {
   margin: 18px 4px 0;
   color: var(--muted);
