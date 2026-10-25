@@ -2092,6 +2092,15 @@ body.modal-open { overflow: hidden; }
   table-layout: auto;
   font-size: 0.86rem;
 }
+/* КВ рейтинг: без гориз. скролла / верхней полосы dual-scroll */
+#cw-rating .table-scroll-wrap[data-dual-scroll] > .table-scroll-top {
+  display: none !important;
+}
+#cw-rating .table-scroll-wrap[data-dual-scroll] .table-scroll-main {
+  border-radius: 18px;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
 /* КВ рейтинг: ~1.5× шрифт; колонки равные, ник — по обычному правилу (нашивка) */
 #cw-rating-table.rating-table {
   table-layout: fixed;
