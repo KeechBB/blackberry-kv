@@ -2099,6 +2099,11 @@ body.modal-open { overflow: hidden; }
   table-layout: auto;
   font-size: 0.86rem;
 }
+/* Тренировочный рейтинг: колонки одной ширины, ник шире под нашивку */
+#train-rating-table.rating-table {
+  table-layout: fixed;
+  width: 100%;
+}
 .rating-table th,
 .rating-table td {
   padding: 10px 8px;
@@ -2132,6 +2137,12 @@ body.modal-open { overflow: hidden; }
 #train-rating-table.rating-table thead tr {
   height: 3.5rem;
 }
+#train-rating-table.rating-table thead th,
+#train-rating-table.rating-table tbody td {
+  width: auto;
+  min-width: 0;
+  max-width: none;
+}
 #train-rating-table.rating-table thead th {
   white-space: normal !important;
   line-height: 1.05;
@@ -2141,30 +2152,16 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.01em;
   height: 3.5rem;
   min-height: 3.5rem;
-  max-width: 2.5rem;
-  min-width: 1.75rem;
-  width: 2.2rem;
   box-sizing: border-box;
 }
 #train-rating-table.rating-table thead th[data-trsort="nick"],
-#train-rating-table.rating-table thead th[data-label="Ник"] {
+#train-rating-table.rating-table thead th[data-label="Ник"],
+#train-rating-table.rating-table tbody td.col-nick {
   white-space: nowrap !important;
-  max-width: none;
-  min-width: 8.5rem;
-  width: auto;
+  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
   font-size: 0.7rem;
-}
-#train-rating-table.rating-table thead th.col-rank,
-#train-rating-table.rating-table thead th.col-pwr {
-  min-width: 3.2rem;
-  max-width: 4.5rem;
-  width: auto;
-}
-#train-rating-table.rating-table thead th.col-veh,
-#train-rating-table.rating-table thead th.col-veh-dmg-to {
-  max-width: 2.8rem;
-  min-width: 2.3rem;
-  width: 2.6rem;
 }
 #train-rating-table.rating-table thead th .sort-ind {
   display: block;
@@ -2181,6 +2178,28 @@ body.modal-open { overflow: hidden; }
 #train-rating-table.rating-table td.col-nick {
   padding-left: 6px !important;
   padding-right: 4px !important;
+  font-size: 0.82rem;
+}
+#train-rating-table .rank-cell {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#train-rating-table .rank-badge,
+#train-rating-table .rank-badge-wide {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 3px 2px;
+  font-size: 0.62rem;
+  letter-spacing: 0.01em;
+  white-space: normal;
+  line-height: 1.15;
+}
+#train-rating-table.rating-table td.col-rank {
+  white-space: normal;
+  overflow: hidden;
 }
 .rating-table th.col-veh {
   white-space: normal !important;
