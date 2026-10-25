@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261023-20r-closed";
+    new URLSearchParams(location.search).get("v") || "20261025-nklv-2meet";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -2831,7 +2831,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="${vehTrack ? 22 : 17}" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="${vehTrack ? 21 : 17}" class="empty-row">Нет игроков</td></tr>`;
       fillPager("tm-rating-pager-top", 1, 1, 0, PAGE_TM_RATING, () => {});
       fillPager("tm-rating-pager-bot", 1, 1, 0, PAGE_TM_RATING, () => {});
       refreshDualScrolls();
@@ -2868,7 +2868,6 @@
           : `<td class="ctr">${p.res}</td>`;
         const tail = vehTrack
           ? `<td class="ctr" title="${Math.round(Number(p.dmgToVeh) || 0)}">${fmtDmgShort(p.dmgToVeh)}</td>
-        <td class="ctr" title="${Math.round(Number(p.dmgFromVeh) || 0)}">${fmtDmgShort(p.dmgFromVeh)}</td>
         <td class="ctr">${Number(p.zTurret) || 0}%</td>
         <td class="ctr">${Number(p.zHull) || 0}%</td>
         <td class="ctr">${Number(p.zEngine) || 0}%</td>
