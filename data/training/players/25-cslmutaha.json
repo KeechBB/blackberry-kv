@@ -1,0 +1,443 @@
+{
+  "matchId": "25-cslmutaha",
+  "map": "CSL Mutaha Skirmish v1",
+  "mode": "Skirmish",
+  "server": "BlackBerry 1 (TR1)",
+  "serverKey": "TR1",
+  "duration": "55:07",
+  "winner": "People's Liberation Army",
+  "sideA": {
+    "name": "Canadian Armed Forces",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "People's Liberation Army",
+    "tickets": 3
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "Nickname",
+      "res": 1,
+      "nok": 33,
+      "kills": 26,
+      "deaths": 7,
+      "dmg": 10904,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Zerox",
+      "res": 1,
+      "nok": 27,
+      "kills": 26,
+      "deaths": 12,
+      "dmg": 10276,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "ПАДЛО",
+      "res": 1,
+      "nok": 33,
+      "kills": 25,
+      "deaths": 8,
+      "dmg": 10621,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 28,
+      "kills": 20,
+      "deaths": 12,
+      "dmg": 8933,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 21,
+      "kills": 16,
+      "deaths": 8,
+      "dmg": 8212,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "vasserman",
+      "res": 16,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 11,
+      "dmg": 4926,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "lepurple",
+      "res": 2,
+      "nok": 20,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 5933,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 6663,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "-Prostak-",
+      "res": 19,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 10,
+      "dmg": 3146,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 12,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 2589,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Shrein",
+      "res": 8,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 12,
+      "dmg": 2335,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Taipan",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2527,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "res": 7,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 2212,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 2430,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2612,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 2345,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 11,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 2445,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 26,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 1882,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "FLEX",
+      "res": 8,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 1442,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Varyag",
+      "res": 20,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 972,
+      "team": "Canadian Armed Forces",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 11,
+      "dmg": 839,
+      "team": "Canadian Armed Forces",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 45,
+      "kills": 30,
+      "deaths": 13,
+      "dmg": 12635,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 1,
+      "nok": 22,
+      "kills": 14,
+      "deaths": 14,
+      "dmg": 6722,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Inrikus",
+      "res": 9,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 9,
+      "dmg": 5286,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Tankist",
+      "res": 2,
+      "nok": 26,
+      "kills": 12,
+      "deaths": 10,
+      "dmg": 8427,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "akin0v",
+      "res": 1,
+      "nok": 20,
+      "kills": 11,
+      "deaths": 18,
+      "dmg": 4909,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 29,
+      "kills": 10,
+      "deaths": 16,
+      "dmg": 4718,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 3,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 3610,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 5,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 4209,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "firs",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 16,
+      "dmg": 3683,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 18,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 3916,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "KillReal",
+      "res": 14,
+      "nok": 14,
+      "kills": 6,
+      "deaths": 11,
+      "dmg": 3038,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 2917,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2050,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 13,
+      "dmg": 1619,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 11,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 1715,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "lobotomy",
+      "res": 10,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1211,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Prolik",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 1229,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Lt.Price",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 1202,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 972,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "Hu",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 362,
+      "team": "People's Liberation Army",
+      "won": true
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 620,
+      "team": "People's Liberation Army",
+      "won": true
+    }
+  ]
+}

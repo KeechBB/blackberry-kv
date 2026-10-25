@@ -1,0 +1,323 @@
+{
+  "matchId": "25-fclnarva",
+  "map": "FCL Narva",
+  "mode": "—",
+  "server": "BlackBerry 1 (TR1)",
+  "serverKey": "TR1",
+  "duration": "11:19",
+  "winner": "United States Army",
+  "sideA": {
+    "name": "Russian Ground Forces",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "United States Army",
+    "tickets": 70
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 1932,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 1898,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1800,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Taipan",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1696,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1455,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 2,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 1320,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1080,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 840,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "p1XeL",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 758,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 235,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 180,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 60,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "FLEX",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "team": "Russian Ground Forces",
+      "won": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "team": "Russian Ground Forces",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 11,
+      "kills": 11,
+      "deaths": 2,
+      "dmg": 4478,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "ПАДЛО",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 3174,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "Zerox",
+      "res": 1,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 2829,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "uglyfromyoung",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1511,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 1437,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "firs",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1435,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 1334,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1582,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1240,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "lobotomy",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 880,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "Tankist",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 401,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "Hu",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 362,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "Inrikus",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 486,
+      "team": "United States Army",
+      "won": true
+    },
+    {
+      "nick": "Prolik",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 362,
+      "team": "United States Army",
+      "won": true
+    }
+  ]
+}

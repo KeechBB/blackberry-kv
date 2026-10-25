@@ -1,0 +1,523 @@
+{
+  "matchId": "24-cslmutaha",
+  "map": "CSL Mutaha Skirmish v1",
+  "mode": "Skirmish",
+  "server": "BlackBerry 1 (TR1)",
+  "serverKey": "TR1",
+  "duration": "50:53",
+  "winner": "Russian Ground Forces",
+  "sideA": {
+    "name": "Russian Ground Forces",
+    "tickets": 7
+  },
+  "sideB": {
+    "name": "United States Army",
+    "tickets": 0
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 33,
+      "kills": 22,
+      "deaths": 11,
+      "dmg": 11976,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 22,
+      "kills": 16,
+      "deaths": 13,
+      "dmg": 7503,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Anna_Cokolovaaa",
+      "res": 0,
+      "nok": 19,
+      "kills": 14,
+      "deaths": 9,
+      "dmg": 5438,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 21,
+      "kills": 13,
+      "deaths": 6,
+      "dmg": 5960,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 11,
+      "dmg": 5239,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "haq34",
+      "res": 1,
+      "nok": 21,
+      "kills": 12,
+      "deaths": 5,
+      "dmg": 5650,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 7,
+      "dmg": 6403,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "MusKeR",
+      "res": 1,
+      "nok": 16,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 4346,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 13,
+      "dmg": 4072,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "-Prostak-",
+      "res": 4,
+      "nok": 15,
+      "kills": 6,
+      "deaths": 12,
+      "dmg": 3518,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "KingOfLobs",
+      "res": 1,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 3626,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 12,
+      "dmg": 2675,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "on_hik",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 2876,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 3,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 2404,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Buti",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 1804,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 2093,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "bambozy",
+      "res": 1,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 2359,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "CORWAX",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 1320,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Forks",
+      "res": 6,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1722,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 979,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 14,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 840,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 12,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 540,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Maga",
+      "res": 2,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 588,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "VITALYA",
+      "res": 23,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 480,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 0,
+      "team": "Russian Ground Forces",
+      "won": true
+    },
+    {
+      "nick": "vasserman",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "team": "Russian Ground Forces",
+      "won": true
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 28,
+      "kills": 22,
+      "deaths": 6,
+      "dmg": 11626,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 36,
+      "kills": 19,
+      "deaths": 12,
+      "dmg": 10161,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "ПАДЛО",
+      "res": 0,
+      "nok": 21,
+      "kills": 13,
+      "deaths": 13,
+      "dmg": 5600,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 20,
+      "kills": 13,
+      "deaths": 14,
+      "dmg": 4370,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 18,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 4930,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 16,
+      "dmg": 4858,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "JESTER",
+      "res": 2,
+      "nok": 11,
+      "kills": 12,
+      "deaths": 14,
+      "dmg": 4607,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "lepurple",
+      "res": 7,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 9,
+      "dmg": 3925,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Otto",
+      "res": 2,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 5,
+      "dmg": 4774,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Inrikus",
+      "res": 9,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 4073,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 2841,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Koperor",
+      "res": 3,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 3232,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Bahus",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 3041,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Gexord",
+      "res": 4,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2332,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Foden",
+      "res": 1,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2298,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "akin0v",
+      "res": 15,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 15,
+      "dmg": 2917,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 15,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 11,
+      "dmg": 1722,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 2520,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 15,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 14,
+      "dmg": 1559,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "section",
+      "res": 8,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1520,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "WoodMan",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1063,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 1187,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "KALASH",
+      "res": 10,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 848,
+      "team": "United States Army",
+      "won": false
+    },
+    {
+      "nick": "Oguzok",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "team": "United States Army",
+      "won": false
+    }
+  ]
+}

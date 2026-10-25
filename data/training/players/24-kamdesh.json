@@ -1,0 +1,773 @@
+{
+  "matchId": "24-kamdesh",
+  "map": "Kamdesh AAS v1",
+  "mode": "AAS",
+  "server": "BlackBerry 1 (TR1)",
+  "serverKey": "TR1",
+  "duration": "56:00",
+  "winner": "Turkish Land Forces",
+  "sideA": {
+    "name": "Ground Forces of Iran",
+    "tickets": 0
+  },
+  "sideB": {
+    "name": "Turkish Land Forces",
+    "tickets": 5
+  },
+  "note": "Авто из логов TR1",
+  "source": "tr1-logs-auto",
+  "teamA": [
+    {
+      "nick": "Steepich",
+      "res": 0,
+      "nok": 27,
+      "kills": 22,
+      "deaths": 1,
+      "dmg": 13346,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 19,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 5385,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "T-800",
+      "res": 2,
+      "nok": 21,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 5556,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 4963,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "AkiN",
+      "res": 0,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 4717,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 7,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 4212,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Anna_Cokolovaaa",
+      "res": 2,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 3364,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 2863,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "on_hik",
+      "res": 2,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 3160,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 2707,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "SkiLLeX",
+      "res": 0,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 3090,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "KingOfLobs",
+      "res": 0,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 3451,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "vasserman",
+      "res": 10,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 2411,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Senti",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 2067,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Barsik",
+      "res": 2,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 1739,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "haq34",
+      "res": 1,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 2854,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Nestor Mahno",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 2652,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "-Prostak-",
+      "res": 17,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1946,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Bugor",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 1993,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Buti",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 2270,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "RostislavKVL",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1827,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 2188,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "ADUN",
+      "res": 9,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 843,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Animo",
+      "res": 12,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 1370,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "ЗА ВАРКА",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 1165,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 838,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 632,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Bks",
+      "res": 1,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 949,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Ilyich",
+      "res": 3,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 1047,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "CORWAX",
+      "res": 1,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 938,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 496,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 462,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 532,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Forks",
+      "res": 8,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 44,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "VITALYA",
+      "res": 22,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 71,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "bambozy",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "team": "Ground Forces of Iran",
+      "won": false
+    },
+    {
+      "nick": "Sandro.86",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 0,
+      "team": "Ground Forces of Iran",
+      "won": false
+    }
+  ],
+  "teamB": [
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 27,
+      "kills": 24,
+      "deaths": 3,
+      "dmg": 10223,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Gexord",
+      "res": 10,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 5,
+      "dmg": 4773,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 5109,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 5333,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Inrikus",
+      "res": 5,
+      "nok": 9,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 3893,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "KALASH",
+      "res": 3,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 4721,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "yanchik",
+      "res": 0,
+      "nok": 13,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 4851,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "kitayskiy latyao",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 3687,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Водитель Газели",
+      "res": 0,
+      "nok": 15,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 3428,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 7,
+      "dmg": 3894,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "section",
+      "res": 2,
+      "nok": 6,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 2998,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "HSVarvar",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 2714,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 11,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 2103,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 14,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 2848,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 1,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 2820,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "WoodMan",
+      "res": 7,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 2076,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "etErNal tiLt",
+      "res": 14,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1532,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 2144,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "ПАДЛО",
+      "res": 1,
+      "nok": 10,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 1714,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 2065,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1370,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "JESTER",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1456,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Foden",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1071,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 1488,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Bahus",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1419,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "MadMax",
+      "res": 12,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 890,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 1255,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Crowle",
+      "res": 0,
+      "nok": 9,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 1539,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "MAn1n",
+      "res": 3,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 860,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "akin0v",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 760,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Goob",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 972,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "qop",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 420,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "lepurple",
+      "res": 7,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 815,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "MrFreshman",
+      "res": 5,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 420,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 120,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Elevator",
+      "res": 14,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "team": "Turkish Land Forces",
+      "won": true
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "team": "Turkish Land Forces",
+      "won": true
+    }
+  ]
+}

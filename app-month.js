@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261026-green-strip";
+    new URLSearchParams(location.search).get("v") || "20261026-train-full";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1694,7 +1694,8 @@
           <td>${m.ticketsA != null ? m.ticketsA : "—"}</td>
           <td title="${escapeHtml(factionTitle(m.factionB))}">${escapeHtml(fb)}</td>
           <td>${m.ticketsB != null ? m.ticketsB : "—"}</td>
-          <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win)}</span></td>
+          <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win ? `победа [${win}]` : "—")}</span></td>
+          <td class="ctr">—</td>
         </tr>`;
       })
       .join("");
