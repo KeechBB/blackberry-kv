@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261026-score-sum";
+    new URLSearchParams(location.search).get("v") || "20261026-result-tag";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1985,10 +1985,10 @@
           <td class="ctr">${escapeHtml(m.size || "—")}</td>
           <td>${escapeHtml(m.server || "—")}</td>
           <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr">${escapeHtml(formatScoreCell(m))}</td>
+          <td class="ctr">${scoreCellHtml(m)}</td>
           <td class="num">${escapeHtml(m.r1 || "—")}</td>
           <td class="num">${escapeHtml(m.r2 || "—")}</td>
-          <td><span class="status"><span class="dot ${st}"></span>${STATUS_RU[st] || st}</span></td>
+          <td>${resultTagHtml(st)}</td>
         </tr>`;
       })
       .join("");
@@ -3059,6 +3059,21 @@
     if (a && b) return `${a.us + b.us}:${a.them + b.them}`;
     if (a) return `${a.us}:${a.them}`;
     return (m && m.meeting) || "—";
+  }
+
+  function resultTagHtml(st) {
+    const key = st || "upcoming";
+    const label = STATUS_RU[key] || key;
+    return `<span class="result-tag ${escapeHtml(key)}"><span class="dot ${escapeHtml(key)}"></span>${escapeHtml(label)}</span>`;
+  }
+
+  function scoreCellHtml(m) {
+    const st = (m && m.status) || "upcoming";
+    const sum = formatScoreCell(m);
+    if (st === "win" || st === "lose" || st === "draw") {
+      return `<span class="score-with-tag">${resultTagHtml(st)}<span class="score-sum">${escapeHtml(sum)}</span></span>`;
+    }
+    return escapeHtml(sum);
   }
 
   function cwPlayerList(players) {
