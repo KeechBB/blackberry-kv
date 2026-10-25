@@ -297,6 +297,35 @@
       .catch(() => null);
   }
 
+  let vehicleHitStatsCache = null;
+  function loadVehicleHitStats() {
+    if (vehicleHitStatsCache) return Promise.resolve(vehicleHitStatsCache);
+    return fetch(dataUrl("data/training/vehicle-hit-stats.json"))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        vehicleHitStatsCache = data;
+        return data;
+      })
+      .catch(() => null);
+  }
+
+  function vehicleHitOf(stats, nick) {
+    if (!stats?.players || !nick) return null;
+    return (
+      stats.players[String(nick).trim().toLowerCase()] ||
+      stats.players[resolveNickKey(nick)] ||
+      null
+    );
+  }
+
+  function fmtDmgShort(n) {
+    const v = Number(n) || 0;
+    if (v >= 100000) return `${Math.round(v / 1000)}k`;
+    if (v >= 10000) return `${(v / 1000).toFixed(1)}k`;
+    if (v >= 1000) return `${(v / 1000).toFixed(1)}k`;
+    return String(Math.round(v));
+  }
+
   function rpLookupMap(ledger, track) {
     const map = new Map();
     if (!ledger?.players) return map;
@@ -1091,6 +1120,7 @@
     const tm = document.getElementById("view-tm");
     if (tm) tm.hidden = name !== "tm";
     document.body.classList.toggle("layout-cw", name === "cw" || name === "tm");
+    if (name !== "tm") document.body.classList.remove("layout-tm-rating");
     document.querySelectorAll(".nav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.nav === name);
     });
@@ -1131,6 +1161,7 @@
     if (analytics) analytics.hidden = panel !== "analytics";
     if (hits) hits.hidden = panel !== "hits";
     if (tiers) tiers.hidden = panel !== "tiers";
+    document.body.classList.toggle("layout-tm-rating", panel === "rating");
     document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tm === panel);
     });
@@ -2461,6 +2492,7 @@
     Promise.all([
       loadRoster(),
       loadRpLedger(),
+      loadVehicleHitStats(),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -2470,7 +2502,7 @@
         )
       ),
     ])
-      .then(([, ledger, months]) => {
+      .then(([, ledger, vehHits, months]) => {
         const matchList = [];
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
@@ -2485,9 +2517,9 @@
               .then((pj) => ({ match: m, players: pj }))
               .catch(() => ({ match: m, players: null }))
           )
-        ).then((bundles) => ({ bundles, ledger }));
+        ).then((bundles) => ({ bundles, ledger, vehHits }));
       })
-      .then(({ bundles, ledger }) => {
+      .then(({ bundles, ledger, vehHits }) => {
         const track = trainRatingTrack === "vehicle" ? "vehicle" : "infantry";
         const rpMap = rpLookupMap(ledger, track);
         const map = new Map();
@@ -2541,6 +2573,16 @@
             row.vehDriver = hit.vehDriver || 0;
             row.vehGunner = hit.vehGunner || 0;
             row._vehMatchIds = hit.vehMatchIds || new Set();
+            const vh = vehicleHitOf(vehHits, p.nick);
+            const zp = vh?.zonePct || {};
+            row.dmgToVeh = Number(vh?.dmgToVeh) || 0;
+            row.dmgFromVeh = Number(vh?.dmgFromVeh) || 0;
+            row.noPen = Number(vh?.noPen) || 0;
+            row.zTurret = Number(zp.turret) || 0;
+            row.zHull = Number(zp.hull) || 0;
+            row.zEngine = Number(zp.engine) || 0;
+            row.zWheel = Number(zp.wheel) || 0;
+            row.zTrack = Number(zp.track) || 0;
           });
           /* % побед — только по тем же матчам-технарям */
           bundles.forEach(({ match, players }) => {
@@ -2712,6 +2754,12 @@
         ? "Каток в Техника — только матчи, где был мехвод/наводчик на тяжёлой (10–15 тик.), не все тренировки"
         : "Число тренировочных матчей";
     }
+    document.querySelectorAll("#train-rating-table .train-inf-only").forEach((el) => {
+      el.hidden = !!veh;
+    });
+    document.querySelectorAll("#train-rating-table .train-veh-only").forEach((el) => {
+      el.hidden = !veh;
+    });
   }
 
   function paintTrainingRatingTable() {
@@ -2783,7 +2831,7 @@
 
     paintTrainingRatingSortMarks();
     if (!rows.length) {
-      tbody.innerHTML = `<tr><td colspan="16" class="empty-row">Нет игроков</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="${vehTrack ? 22 : 17}" class="empty-row">Нет игроков</td></tr>`;
       fillPager("tm-rating-pager-top", 1, 1, 0, PAGE_TM_RATING, () => {});
       fillPager("tm-rating-pager-bot", 1, 1, 0, PAGE_TM_RATING, () => {});
       refreshDualScrolls();
@@ -2818,6 +2866,18 @@
               `водитель ${Number(p.vehDriver) || 0} · стрелок ${Number(p.vehGunner) || 0}`
             )}">${escapeHtml(p.crewRoleLabel || "—")}</td>`
           : `<td class="ctr">${p.res}</td>`;
+        const tail = vehTrack
+          ? `<td class="ctr" title="${Math.round(Number(p.dmgToVeh) || 0)}">${fmtDmgShort(p.dmgToVeh)}</td>
+        <td class="ctr" title="${Math.round(Number(p.dmgFromVeh) || 0)}">${fmtDmgShort(p.dmgFromVeh)}</td>
+        <td class="ctr">${Number(p.zTurret) || 0}%</td>
+        <td class="ctr">${Number(p.zHull) || 0}%</td>
+        <td class="ctr">${Number(p.zEngine) || 0}%</td>
+        <td class="ctr">${Number(p.zWheel) || 0}%</td>
+        <td class="ctr">${Number(p.zTrack) || 0}%</td>
+        <td class="ctr">${Number(p.noPen) || 0}</td>`
+          : `<td class="ctr col-mvp-medic">${Number(p.mvpMedic) || 0}</td>
+        <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
+        <td class="ctr col-mvp-armor">${Number(p.mvpArmor) || 0}</td>`;
         return `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
         <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
@@ -2833,9 +2893,7 @@
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
         <td class="ctr col-veh">${Number(p.vehicleKills) || 0}</td>
-        <td class="ctr col-mvp-medic">${Number(p.mvpMedic) || 0}</td>
-        <td class="ctr col-mvp-killer">${Number(p.mvpKiller) || 0}</td>
-        <td class="ctr col-mvp-armor">${Number(p.mvpArmor) || 0}</td>
+        ${tail}
       </tr>`;
       })
       .join("");

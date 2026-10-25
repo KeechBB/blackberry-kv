@@ -94,6 +94,10 @@ body.layout-cw .wrap {
   padding-left: clamp(16px, 2.2vw, 24px);
   padding-right: clamp(16px, 2.2vw, 24px);
 }
+/* Рейтинг тренировок — чуть шире под колонки техники */
+body.layout-tm-rating .wrap {
+  max-width: min(1860px, 100%);
+}
 
 .topnav {
   position: sticky;

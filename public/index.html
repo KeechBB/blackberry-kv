@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261025-1752-train-tracks" />
+  <link rel="stylesheet" href="styles.css?v=20261025-1839-veh-hit" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -430,9 +430,17 @@
                   <th class="ctr sortable" data-trsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-trsort="kd" data-label="KD">KD</th>
                   <th class="ctr sortable col-veh" data-trsort="vehicleKills" data-label="Уничтожено ТЕХ" title="Уничтоженная техника с 17.10.2026 01:00 МСК">Уничтожено ТЕХ</th>
-                  <th class="ctr sortable col-mvp-medic" data-trsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
-                  <th class="ctr sortable col-mvp-killer" data-trsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
-                  <th class="ctr sortable col-mvp-armor" data-trsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники">MVP Armor</th>
+                  <th class="ctr sortable col-mvp-medic train-inf-only" data-trsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
+                  <th class="ctr sortable col-mvp-killer train-inf-only" data-trsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
+                  <th class="ctr sortable col-mvp-armor train-inf-only" data-trsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники">MVP Armor</th>
+                  <th class="ctr sortable col-veh-dmg-to train-veh-only" hidden data-trsort="dmgToVeh" data-label="Урон по ТЕХ" title="Суммарный урон по технике (ванильный лог)">Урон↓ТЕХ</th>
+                  <th class="ctr sortable col-veh-dmg-from train-veh-only" hidden data-trsort="dmgFromVeh" data-label="Урон из ТЕХ" title="Урон, нанесённый пока мехвод/наводчик на тяжёлой">Урон↑изТЕХ</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTurret" data-label="Башня %" title="Доля урона по башне">Бшн%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zHull" data-label="Корпус %" title="Доля урона по корпусу">Корп%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zEngine" data-label="Двигатель %" title="Доля урона по двигателю">Двг%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zWheel" data-label="Колёса %" title="Доля урона по колёсам">Кол%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="zTrack" data-label="Гусеницы %" title="Доля урона по гусеницам">Гус%</th>
+                  <th class="ctr sortable train-veh-only" hidden data-trsort="noPen" data-label="Непробития" title="Попадания по технике с 0 урона (шт.)">Непроб.</th>
                 </tr>
               </thead>
               <tbody id="train-rating-rows"></tbody>
@@ -773,7 +781,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261025-1822-veh-games"></script>
+  <script src="app.js?v=20261025-1839-veh-hit"></script>
   <script src="tfs-fit.js?v=20261007-fit-roles"></script>
 </body>
 </html>
