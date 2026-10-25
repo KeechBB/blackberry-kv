@@ -592,7 +592,22 @@
       "rules": "FCL",
       "stack": "—",
       "status": "upcoming",
-      "note": "чужой КВ · NKLV vs ХУХ (в посте XYX) · FCL_BlackCoast_Small_v1 · была Narva Small · 12v12 · FCL · 16:00 МСК · same day Junior vs ALPHA 20:00 / Main vs .solid 21:00 · NO SCOUT · NO MEETINGS"
+      "note": "чужой КВ · 1-я встреча NKLV vs ХУХ (в посте XYX) · FCL_BlackCoast_Small_v1 · 2 раунда · 12v12 · FCL · 16:00 МСК · 2-я встреча — Narva Small · same day Junior vs ALPHA 20:00 / Main vs .solid 21:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "25-nklv-huh-narva",
+      "day": 25,
+      "timeMsk": "16:00",
+      "timeUtc": "13:00",
+      "clan": "NKLV",
+      "opp": "ХУХ",
+      "map": "FCL Narva Small v1",
+      "size": "12v12",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "—",
+      "status": "upcoming",
+      "note": "чужой КВ · 2-я встреча NKLV vs ХУХ (в посте XYX) · FCL_Narva_Small_v1 · 2 раунда · 12v12 · FCL · 16:00 МСК · 1-я встреча — BlackCoast Small · same day Junior vs ALPHA 20:00 / Main vs .solid 21:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "25-alpha",
@@ -649,6 +664,21 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · HOTDROP · HD_Narva · 20v20 · 21:00 · сервер BB · vs clan Main 2–0 (22.09 Goose) · same day Junior vs ALPHA 20:00 · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "27-ra",
+      "day": 27,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "RA",
+      "map": "HotDrop TBA",
+      "size": "16v16",
+      "server": "после матчмейкинга",
+      "rules": "HOTDROP",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · HOTDROP · HotDrop TBA · 16v16 · 20:00 · сервер после матчмейкинга · заявка (принята на сайте) · NO SCOUT · NO MEETINGS",
+      "challengeId": "cmvj82f4n05royt1ru3b9bu7q"
     },
     {
       "id": "28-hq",
