@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261025-cw-month-now";
+    new URLSearchParams(location.search).get("v") || "20261025-cw-month-now2";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -841,8 +841,20 @@
     const y = years.includes(now.year) ? now.year : years.sort((a, b) => b - a)[0];
     if (y) yearSel.value = String(y);
     const monthsForYear = cat.filter((m) => Number(m.year) === Number(yearSel.value));
-    const pick = pickDefaultMonthMeta(monthsForYear.length ? monthsForYear : cat, now.year, now.month);
-    if (pick?.id) monthSel.value = pick.id;
+    const pick = pickDefaultMonthMeta(
+      monthsForYear.length ? monthsForYear : cat,
+      now.year,
+      now.month
+    );
+    if (!pick) return;
+    const id = pick.id || `${pick.year}-${pad(pick.month)}`;
+    // ????????? option ???? ???? value ?? ?????? ????? ??????? id
+    const opt =
+      [...monthSel.options].find((o) => o.value === id) ||
+      [...monthSel.options].find((o) => o.value.endsWith(`-${pad(pick.month)}`)) ||
+      [...monthSel.options].find((o) => Number(o.value.split("-")[1]) === Number(pick.month));
+    if (opt) monthSel.value = opt.value;
+    else monthSel.value = id;
   }
 
   function escapeHtml(s) {
@@ -5988,6 +6000,12 @@
       fillPwrRankScales();
       fillYearMonthSelects();
       wireMatchSort();
+      // ??? ??? ????? chips ? ?? ??????, ???? select ????????? ?? ?????? option
+      applyDefaultYearMonth(
+        document.getElementById("filter-year"),
+        document.getElementById("filter-month"),
+        catalog
+      );
       paintMonthChips();
       loadSelectedMonth();
       applyHash();
