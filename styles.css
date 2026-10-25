@@ -2110,68 +2110,88 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.02em;
   text-align: center;
 }
-/* Двухэтажный заголовок колонки */
+/* Двухэтажный заголовок: слово сверху / слово снизу */
 .th-2f {
-  display: inline-flex;
-  flex-direction: column;
+  display: inline-flex !important;
+  flex-direction: column !important;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  gap: 1px;
   line-height: 1.05;
-  vertical-align: middle;
+  max-width: 100%;
 }
 .th-2f-a,
 .th-2f-b {
-  display: block;
+  display: block !important;
   white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: clip;
 }
-/* Рейтинг тренировок: плотная шапка + узкие колонки */
+/* Строка заголовков рейтинга ТР ≈ в 2 раза выше; длинный текст только в 2 этажа */
+#train-rating-table.rating-table thead tr {
+  height: 3.5rem;
+}
 #train-rating-table.rating-table thead th {
   white-space: normal !important;
   line-height: 1.05;
   vertical-align: middle;
-  padding: 6px 2px;
-  font-size: 0.62rem;
-  letter-spacing: 0.02em;
-  max-width: 2.8rem;
-  min-width: 1.9rem;
+  padding: 4px 2px !important;
+  font-size: 0.58rem;
+  letter-spacing: 0.01em;
+  height: 3.5rem;
+  min-height: 3.5rem;
+  max-width: 2.5rem;
+  min-width: 1.75rem;
+  width: 2.2rem;
+  box-sizing: border-box;
 }
 #train-rating-table.rating-table thead th[data-trsort="nick"],
 #train-rating-table.rating-table thead th[data-label="Ник"] {
   white-space: nowrap !important;
   max-width: none;
-  min-width: 9rem;
-  font-size: 0.72rem;
+  min-width: 8.5rem;
+  width: auto;
+  font-size: 0.7rem;
+}
+#train-rating-table.rating-table thead th.col-rank,
+#train-rating-table.rating-table thead th.col-pwr {
+  min-width: 3.2rem;
+  max-width: 4.5rem;
+  width: auto;
 }
 #train-rating-table.rating-table thead th.col-veh,
 #train-rating-table.rating-table thead th.col-veh-dmg-to {
-  max-width: 3.2rem;
-  min-width: 2.6rem;
+  max-width: 2.8rem;
+  min-width: 2.3rem;
+  width: 2.6rem;
 }
 #train-rating-table.rating-table thead th .sort-ind {
   display: block;
   margin: 0 auto;
   line-height: 1;
-  opacity: 0.85;
+  font-size: 0.55rem;
+  opacity: 0.8;
 }
 #train-rating-table.rating-table td {
-  padding: 8px 4px;
-  font-size: 0.84rem;
+  padding: 6px 3px !important;
+  font-size: 0.82rem;
+  white-space: nowrap;
 }
 #train-rating-table.rating-table td.col-nick {
-  padding-left: 8px;
-  padding-right: 6px;
+  padding-left: 6px !important;
+  padding-right: 4px !important;
 }
 .rating-table th.col-veh {
   white-space: normal !important;
   line-height: 1.05;
-  min-width: 2.8rem;
-  max-width: 3.4rem;
-  width: 3rem;
+  min-width: 2.3rem;
+  max-width: 2.8rem;
+  width: 2.6rem;
   text-align: center;
   vertical-align: middle;
-  padding: 6px 2px;
-  font-size: 0.62rem;
+  padding: 4px 2px;
+  font-size: 0.58rem;
 }
 .rating-table th.col-mvp-medic,
 .rating-table th.col-mvp-killer,

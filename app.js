@@ -2748,11 +2748,41 @@
       });
   }
 
+  /** Длинные заголовки рейтинга ТР → всегда 2 этажа (не раздувают ширину колонки) */
+  const TRAIN_TH_2F = {
+    winPct: ["%", "побед"],
+    vehicleKills: ["Уничт.", "Тех"],
+    dmgToVeh: ["Урон", "↓Тех"],
+    zTurret: ["Башня", "%"],
+    zHull: ["Корпус", "%"],
+    zEngine: ["Двиг.", "%"],
+    zWheel: ["Колёса", "%"],
+    zTrack: ["Гусен.", "%"],
+    noPen: ["Непроб.", ""],
+    mvpMedic: ["MVP", "Medic"],
+    mvpKiller: ["MVP", "Killer"],
+    mvpArmor: ["MVP", "Armor"],
+  };
+
   function paintTrainingRatingSortMarks() {
     document.querySelectorAll("#train-rating-table th.sortable").forEach((th) => {
       const key = th.dataset.trsort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
-      th.dataset.label = base;
+      const floor = TRAIN_TH_2F[key];
+      let base;
+      let labelHtml;
+      if (floor) {
+        base = floor[0];
+        th.dataset.label = floor[0];
+        if (floor[1]) th.dataset.th2 = floor[1];
+        else delete th.dataset.th2;
+        labelHtml = floor[1]
+          ? `<span class="th-2f"><span class="th-2f-a">${escapeHtml(floor[0])}</span><span class="th-2f-b">${escapeHtml(floor[1])}</span></span>`
+          : escapeHtml(floor[0]);
+      } else {
+        base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+        th.dataset.label = base;
+        labelHtml = thTwoFloorHtml(base, th);
+      }
       const active = trainRatingSortKey === key;
       const arrow = active ? (trainRatingSortDir === "asc" ? "▲" : "▼") : "";
       th.classList.toggle("is-sorted", active);
@@ -2760,7 +2790,7 @@
         "aria-sort",
         active ? (trainRatingSortDir === "asc" ? "ascending" : "descending") : "none"
       );
-      th.innerHTML = `${thTwoFloorHtml(base, th)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
+      th.innerHTML = `${labelHtml}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
     });
   }
 
@@ -2769,10 +2799,11 @@
     const thRes = document.querySelector('#train-rating-table th[data-trsort="res"]');
     if (thRes) {
       thRes.dataset.label = veh ? "Роль" : "Ресы";
+      delete thRes.dataset.th2;
       thRes.title = veh
         ? "По времени в слоте тяжёлой: водитель (мехвод) или стрелок (F2/наводчик)"
         : "Ресы — поднятия союзников";
-      thRes.textContent = veh ? "Роль" : "Ресы";
+      /* не трогаем textContent — шапку перерисует paintTrainingRatingSortMarks */
     }
     const thGames = document.querySelector('#train-rating-table th[data-trsort="games"]');
     if (thGames) {
