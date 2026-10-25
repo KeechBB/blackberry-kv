@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261025-cw-month-now3";
+    new URLSearchParams(location.search).get("v") || "20261026-score-sum";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1798,8 +1798,13 @@
         return m.server || "";
       case "stack":
         return m.stack || "";
-      case "meeting":
+      case "meeting": {
+        const a = parseTicketPair(m.r1);
+        const b = parseTicketPair(m.r2);
+        if (a && b) return a.us + b.us - (a.them + b.them);
+        if (a) return a.us - a.them;
         return m.meeting || "";
+      }
       case "r1":
         return m.r1 || "";
       case "r2":
@@ -1980,7 +1985,7 @@
           <td class="ctr">${escapeHtml(m.size || "—")}</td>
           <td>${escapeHtml(m.server || "—")}</td>
           <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr">${escapeHtml(m.meeting || "—")}</td>
+          <td class="ctr">${escapeHtml(formatScoreCell(m))}</td>
           <td class="num">${escapeHtml(m.r1 || "—")}</td>
           <td class="num">${escapeHtml(m.r2 || "—")}</td>
           <td><span class="status"><span class="dot ${st}"></span>${STATUS_RU[st] || st}</span></td>
@@ -3047,6 +3052,15 @@
     return { us: Number(m[1]), them: Number(m[2]) };
   }
 
+  /** Колонка «Счёт»: сумма тикетов R1+R2 (канон победы встречи). meeting 2–0 остаётся в данных. */
+  function formatScoreCell(m) {
+    const a = parseTicketPair(m && m.r1);
+    const b = parseTicketPair(m && m.r2);
+    if (a && b) return `${a.us + b.us}:${a.them + b.them}`;
+    if (a) return `${a.us}:${a.them}`;
+    return (m && m.meeting) || "—";
+  }
+
   function cwPlayerList(players) {
     if (!players) return [];
     if (players.total && players.total.length) return players.total;
@@ -3896,7 +3910,7 @@
           <td><strong>${escapeHtml(m.opp || "—")}</strong></td>
           <td>${escapeHtml(mapFamilyName(m.map))}</td>
           <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr ta-num">${escapeHtml(m.meeting || "—")}</td>
+          <td class="ctr ta-num">${escapeHtml(formatScoreCell(m))}</td>
           <td class="ctr ta-num">${nn || "—"}</td>
           <td class="ctr ta-num tier tier-1">${tierCounts[1] || 0}</td>
           <td class="ctr ta-num tier tier-2">${tierCounts[2] || 0}</td>
@@ -5328,7 +5342,14 @@
         m.map,
         m.size,
         m.stack,
-        m.meeting && m.meeting !== "—" ? `счёт ${m.meeting}` : null,
+        (() => {
+          const sum = formatScoreCell(m);
+          if (!sum || sum === "—") return null;
+          if (m.meeting && m.meeting !== "—" && sum !== m.meeting) {
+            return `сумма ${sum} · серия ${m.meeting}`;
+          }
+          return `счёт ${sum}`;
+        })(),
         STATUS_RU[m.status] || m.status,
       ]
         .filter(Boolean)
