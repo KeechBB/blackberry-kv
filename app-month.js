@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261026-winner-only";
+    new URLSearchParams(location.search).get("v") || "20261026-green-strip";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1988,7 +1988,7 @@
           <td class="ctr">${escapeHtml(formatScoreCell(m))}</td>
           <td class="num">${escapeHtml(m.r1 || "—")}</td>
           <td class="num">${escapeHtml(m.r2 || "—")}</td>
-          <td><span class="status"><span class="dot ${st}"></span>${escapeHtml(statusWithWinnerTag(m))}</span></td>
+          <td><span class="status"><span class="dot ${st === "lose" ? "win" : st}"></span>${escapeHtml(statusWithWinnerTag(m))}</span></td>
         </tr>`;
       })
       .join("");
