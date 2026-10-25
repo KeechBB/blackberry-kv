@@ -1228,7 +1228,7 @@
       "id": "25-nklv-huh",
       "day": 25,
       "opp": "ХУХ",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "Башмак в клетке"
@@ -1245,9 +1245,15 @@
       },
       "r2": {
         "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "killer": [
+          "Друг"
+        ],
+        "damage": [
+          "Друг"
+        ],
+        "antiDeath": [
+          "Bear"
+        ]
       }
     },
     {
@@ -1684,7 +1690,7 @@
       "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "13-nklv-fal-2",
@@ -1693,6 +1699,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -4757,6 +4771,30 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Друг": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-nklv-huh",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
