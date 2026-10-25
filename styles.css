@@ -2185,7 +2185,11 @@ body.modal-open { overflow: hidden; }
 #train-rating-table.rating-table td.col-nick {
   padding-left: 6px !important;
   padding-right: 4px !important;
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+#train-rating-table.rating-table td.col-nick .nick-profile-link,
+#train-rating-table.rating-table td.col-nick .nick-plain {
+  font-size: 1rem;
 }
 #train-rating-table .rank-cell {
   display: flex;
