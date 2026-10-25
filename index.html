@@ -351,7 +351,7 @@
           </div>
           <div class="kv-pager" id="tm-matches-pager-top" hidden></div>
           <div class="table-scroll">
-            <table class="matches-table" id="train-matches-table">
+            <table class="matches-table matches-table-compact" id="train-matches-table">
               <thead>
                 <tr>
                   <th class="sortable" data-tsort="date" data-label="Дата">Дата</th>
@@ -359,11 +359,12 @@
                   <th class="sortable" data-tsort="map" data-label="Карта">Карта</th>
                   <th class="sortable" data-tsort="mode" data-label="Режим">Режим</th>
                   <th class="sortable" data-tsort="server" data-label="Сервер">Сервер</th>
-                  <th class="sortable" data-tsort="factionA" data-label="Фракция A">Фракция A</th>
-                  <th class="sortable" data-tsort="ticketsA" data-label="Тикеты A">Тикеты A</th>
-                  <th class="sortable" data-tsort="factionB" data-label="Фракция B">Фракция B</th>
-                  <th class="sortable" data-tsort="ticketsB" data-label="Тикеты B">Тикеты B</th>
-                  <th class="sortable" data-tsort="winner" data-label="Победитель">Победитель</th>
+                  <th class="sortable" data-tsort="factionA" data-label="Фр. A">Фр. A</th>
+                  <th class="sortable" data-tsort="ticketsA" data-label="Тик. A">Тик. A</th>
+                  <th class="sortable" data-tsort="factionB" data-label="Фр. B">Фр. B</th>
+                  <th class="sortable" data-tsort="ticketsB" data-label="Тик. B">Тик. B</th>
+                  <th class="sortable" data-tsort="winner" data-label="Победа">Победа</th>
+                  <th data-label="Оценка">Оценка</th>
                 </tr>
               </thead>
               <tbody id="train-rows"></tbody>
@@ -402,12 +403,10 @@
             <h2>Рейтинг игроков · тренировки</h2>
             <p class="board-sub">Только тренировочные матчи · RP (рейтинговые очки) · MVP только здесь</p>
           </div>
-          <aside class="metrics-glossary" aria-label="Термины рейтинга">
-            <p><strong>ORR</strong> — польза в составе, текущая форма (все матчи сайта).</p>
-            <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
-            <p><strong>PWR</strong> — скрытый рейтинг силы со всех матчей на сайте (вес «кто сильнее» в RP).</p>
-            <p><strong>FIT</strong> — насколько подходишь тиру по КВ (вкладка Тиры Fit / окно на главной).</p>
-          </aside>
+          <div class="train-rating-track" role="tablist" aria-label="Тип рейтинга">
+            <button type="button" class="train-rating-track-btn is-on" data-train-track="infantry" role="tab" aria-selected="true">Пехота</button>
+            <button type="button" class="train-rating-track-btn" data-train-track="vehicle" role="tab" aria-selected="false">Техника</button>
+          </div>
           <div class="kv-pager" id="tm-rating-pager-top" hidden></div>
           <div class="table-scroll-wrap" data-dual-scroll>
             <div class="table-scroll-top" aria-hidden="true">

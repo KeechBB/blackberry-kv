@@ -554,6 +554,38 @@ th.is-sorted .sort-ind { opacity: 1; }
   font-size: 0.85rem;
 }
 
+.train-rating-track {
+  margin: 0 0 12px;
+  display: inline-flex;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(167, 139, 250, 0.28);
+  background: rgba(12, 10, 22, 0.55);
+}
+.train-rating-track-btn {
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+  padding: 8px 18px;
+  border-radius: 9px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: rgba(210, 200, 235, 0.75);
+  background: transparent;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.train-rating-track-btn:hover {
+  color: #f5f1ff;
+  background: rgba(167, 139, 250, 0.12);
+}
+.train-rating-track-btn.is-on {
+  color: #0b0a10;
+  background: linear-gradient(180deg, #c4b5fd, #a78bfa);
+  box-shadow: 0 0 14px rgba(167, 139, 250, 0.35);
+}
 .metrics-glossary {
   margin: 0 0 12px;
   padding: 10px 12px;

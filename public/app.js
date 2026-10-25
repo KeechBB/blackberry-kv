@@ -297,23 +297,69 @@
       .catch(() => null);
   }
 
-  function rpLookupMap(ledger) {
+  function rpLookupMap(ledger, track) {
     const map = new Map();
     if (!ledger?.players) return map;
+    const mode = track === "vehicle" ? "vehicle" : "infantry";
     Object.values(ledger.players).forEach((p) => {
       if (!p || !p.nick) return;
       let vehicleKills = 0;
+      let vehGames = 0;
+      let vehRes = 0;
+      let vehNok = 0;
+      let vehKills = 0;
+      let vehDeaths = 0;
       (p.matches || []).forEach((m) => {
         vehicleKills += Math.max(0, Math.floor(Number(m.vehicleKills) || 0));
+        const nv = Number(m.netVehicle);
+        if (Number.isFinite(nv) && Math.abs(nv) > 0.05) vehGames += 1;
+        const trackOf = (e, asVictim) => {
+          if (!e) return "infantry";
+          if (asVictim) return e.victimTrack === "vehicle" ? "vehicle" : "infantry";
+          return e.track === "vehicle" ? "vehicle" : "infantry";
+        };
+        (m.kills || []).forEach((e) => {
+          if (trackOf(e, false) !== "vehicle") return;
+          if (e.kind === "vehicle_kill" || e.kind === "die" || (e.kind === "driver_share" && e.reason !== "nok"))
+            vehKills += 1;
+        });
+        (m.noks || []).forEach((e) => {
+          if (trackOf(e, false) === "vehicle") vehNok += 1;
+        });
+        (m.revives || []).forEach((e) => {
+          if (trackOf(e, false) === "vehicle") vehRes += 1;
+        });
+        (m.deaths || []).forEach((e) => {
+          if (trackOf(e, true) === "vehicle") vehDeaths += 1;
+        });
       });
+      const useVeh = mode === "vehicle";
+      const rpRaw = useVeh
+        ? p.rpVehicle != null
+          ? p.rpVehicle
+          : p.rp
+        : p.rpInfantry != null
+          ? p.rpInfantry
+          : p.rp;
+      const pred = useVeh ? p.predatorPlaceVehicle : p.predatorPlaceInfantry;
+      const rankLabel = useVeh
+        ? p.rankLabelVehicle || p.rankLabel
+        : p.rankLabelInfantry || p.rankLabel;
+      const rankKey = useVeh
+        ? p.rankKeyVehicle || p.rankKey
+        : p.rankKeyInfantry || p.rankKey;
       const entry = {
-        rp: Math.round(Number(p.rp) || 0),
-        rankLabel: p.predatorPlace
-          ? `PREDATOR #${p.predatorPlace}`
-          : p.rankLabel,
-        rankKey: p.rankKey || "iron",
-        predatorPlace: p.predatorPlace ?? null,
+        rp: Math.round(Number(rpRaw) || 0),
+        rankLabel: pred ? `PREDATOR #${pred}` : rankLabel,
+        rankKey: rankKey || "iron",
+        predatorPlace: pred ?? null,
         vehicleKills,
+        hasVehicle: vehGames > 0 || vehicleKills > 0 || vehKills > 0 || vehNok > 0,
+        vehGames,
+        vehRes,
+        vehNok,
+        vehKills,
+        vehDeaths,
       };
       map.set(String(p.nick).trim().toLowerCase(), entry);
       map.set(resolveNickKey(p.nick), entry);
@@ -375,6 +421,8 @@
   let ratingSortDir = "desc";
   let trainRatingRows = [];
   let trainRatingSortKey = "rp";
+  /** @type {"infantry"|"vehicle"} */
+  let trainRatingTrack = "infantry";
   let trainRatingSortDir = "desc";
 
   function softSat(x, mid) {
@@ -2268,6 +2316,19 @@
       loadTrainingRating();
     });
     monthSel.addEventListener("change", loadTrainingRating);
+    document.querySelectorAll(".train-rating-track-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const track = btn.dataset.trainTrack === "vehicle" ? "vehicle" : "infantry";
+        if (trainRatingTrack === track) return;
+        trainRatingTrack = track;
+        document.querySelectorAll(".train-rating-track-btn").forEach((b) => {
+          const on = b.dataset.trainTrack === track;
+          b.classList.toggle("is-on", on);
+          b.setAttribute("aria-selected", on ? "true" : "false");
+        });
+        loadTrainingRating();
+      });
+    });
     const nickEl = document.getElementById("train-rating-nick");
     if (nickEl) {
       nickEl.addEventListener("input", () => {
@@ -2352,7 +2413,8 @@
         ).then((bundles) => ({ bundles, ledger }));
       })
       .then(({ bundles, ledger }) => {
-        const rpMap = rpLookupMap(ledger);
+        const track = trainRatingTrack === "vehicle" ? "vehicle" : "infantry";
+        const rpMap = rpLookupMap(ledger, track);
         const map = new Map();
         const touch = (nick) => {
           if (!inRating(nick)) return null;
@@ -2382,52 +2444,74 @@
           return map.get(key);
         };
 
-        bundles.forEach(({ match, players }) => {
-          if (!players) return;
-          const list =
-            players.players && players.players.length
-              ? players.players
-              : [].concat(players.teamA || [], players.teamB || []);
-          const seen = new Set();
-          list.forEach((p) => {
-            if (!p || !p.nick || !inRating(p.nick)) return;
+        if (track === "vehicle") {
+          /* Техника: только кто был мехвод/наводчик на тяжёлой — стата из ledger events */
+          rpMap.forEach((hit, key) => {
+            if (!hit || !hit.hasVehicle) return;
+            if (typeof key !== "string" || key.includes(" ")) return; // skip nick lower dup
+          });
+          Object.values(ledger?.players || {}).forEach((p) => {
+            if (!p?.nick || !inRating(p.nick)) return;
+            const hit =
+              rpMap.get(resolveNickKey(p.nick)) ||
+              rpMap.get(String(p.nick).trim().toLowerCase());
+            if (!hit || !hit.hasVehicle) return;
             const row = touch(p.nick);
             if (!row) return;
-            row.res += Number(p.res) || 0;
-            row.nok += Number(p.nok) || 0;
-            row.kills += Number(p.kills) || 0;
-            row.deaths += Number(p.deaths) || 0;
-            row.vehicleKills =
-              (Number(row.vehicleKills) || 0) +
-              Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
-            row.dmg += Number(p.dmg) || 0;
-            const key = resolveNickKey(p.nick);
-            if (seen.has(key)) return;
-            seen.add(key);
-            row.games += 1;
-            const won =
-              p.won === true ||
-              (match.winner &&
-                p.team &&
-                String(p.team).toUpperCase() === String(match.winner).toUpperCase());
-            if (won) row.wins += 1;
+            row.games = hit.vehGames || 0;
+            row.res = hit.vehRes || 0;
+            row.nok = hit.vehNok || 0;
+            row.kills = hit.vehKills || 0;
+            row.deaths = hit.vehDeaths || 0;
+            row.vehicleKills = hit.vehicleKills || 0;
           });
-
-          /* MVP только для рейтинга тренировок — в mvp-ledger / профиль КВ не пишем */
-          const pool = list.filter((p) => p && p.nick && inRating(p.nick));
-          const mvp =
-            (players.mvp && players.mvp.train) || pickMvps(enrichRows(pool));
-          const bump = (nicks, keyName) => {
-            (nicks || []).forEach((n) => {
-              const row = touch(n);
-              if (row) row[keyName] += 1;
+        } else {
+          bundles.forEach(({ match, players }) => {
+            if (!players) return;
+            const list =
+              players.players && players.players.length
+                ? players.players
+                : [].concat(players.teamA || [], players.teamB || []);
+            const seen = new Set();
+            list.forEach((p) => {
+              if (!p || !p.nick || !inRating(p.nick)) return;
+              const row = touch(p.nick);
+              if (!row) return;
+              row.res += Number(p.res) || 0;
+              row.nok += Number(p.nok) || 0;
+              row.kills += Number(p.kills) || 0;
+              row.deaths += Number(p.deaths) || 0;
+              row.vehicleKills =
+                (Number(row.vehicleKills) || 0) +
+                Math.max(0, Math.floor(Number(p.vehicleKills) || 0));
+              row.dmg += Number(p.dmg) || 0;
+              const key = resolveNickKey(p.nick);
+              if (seen.has(key)) return;
+              seen.add(key);
+              row.games += 1;
+              const won =
+                p.won === true ||
+                (match.winner &&
+                  p.team &&
+                  String(p.team).toUpperCase() === String(match.winner).toUpperCase());
+              if (won) row.wins += 1;
             });
-          };
-          bump(mvp.medic, "mvpMedic");
-          bump(mvp.killer, "mvpKiller");
-          // War-Score / боевой счёт — не считаем; Armor только по vehicleKills из логов
-          bump(mvp.armor, "mvpArmor");
-        });
+
+            /* MVP только для рейтинга тренировок — в mvp-ledger / профиль КВ не пишем */
+            const pool = list.filter((p) => p && p.nick && inRating(p.nick));
+            const mvp =
+              (players.mvp && players.mvp.train) || pickMvps(enrichRows(pool));
+            const bump = (nicks, keyName) => {
+              (nicks || []).forEach((n) => {
+                const row = touch(n);
+                if (row) row[keyName] += 1;
+              });
+            };
+            bump(mvp.medic, "mvpMedic");
+            bump(mvp.killer, "mvpKiller");
+            bump(mvp.armor, "mvpArmor");
+          });
+        }
 
         trainRatingRows = Array.from(map.values()).map((p) => {
           const winPct =
@@ -2468,7 +2552,7 @@
             predatorPlace: null,
           };
         });
-        /* Место в общем рейтинге по RP */
+        /* Место в рейтинге выбранного трека по RP */
         trainRatingRows
           .slice()
           .sort(
@@ -2484,8 +2568,9 @@
         const scope = document.getElementById("train-rating-scope")?.value || "all";
         const scopeRu =
           scope === "all" ? "за всё время" : scope === "year" ? "за год" : "за месяц";
+        const trackRu = track === "vehicle" ? "техника (мехвод/наводчик 10–15 тик.)" : "пехота";
         note.textContent = withStats
-          ? `Период: ${scopeRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}. RP: финал Die + штраф TK.`
+          ? `Период: ${scopeRu}. Режим: ${trackRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
           : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
         paintTrainingRatingTable();
       })
