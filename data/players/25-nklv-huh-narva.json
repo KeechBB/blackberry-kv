@@ -1,0 +1,45 @@
+{
+  "matchId": "25-nklv-huh-narva",
+  "clan": "NKLV",
+  "opp": "ХУХ",
+  "note": "чужой КВ · R1 0:12 · FCL Narva Small v1 · NKLV #1 · XYX взял раунд · R2 нет · Батя cam skip",
+  "server": "[RU][NKLV] Сибирский Анклав (Модды) #1",
+  "map": "FCL Narva Small v1",
+  "r1": [
+    {"nick": "SpokSL", "res": 0, "nok": 9, "kills": 6, "deaths": 7, "dmg": 211},
+    {"nick": "Eastt", "res": 0, "nok": 11, "kills": 9, "deaths": 7, "dmg": 286},
+    {"nick": "Bear", "res": 2, "nok": 5, "kills": 4, "deaths": 5, "dmg": 118},
+    {"nick": "Gruze", "res": 1, "nok": 5, "kills": 2, "deaths": 5, "dmg": 97},
+    {"nick": "Карась", "res": 0, "nok": 9, "kills": 9, "deaths": 6, "dmg": 289},
+    {"nick": "Nikita_Enisey", "res": 0, "nok": 2, "kills": 0, "deaths": 2, "dmg": 73},
+    {"nick": "Друг", "res": 3, "nok": 6, "kills": 4, "deaths": 4, "dmg": 133},
+    {"nick": "Sceef the Maid", "res": 1, "nok": 8, "kills": 7, "deaths": 5, "dmg": 199},
+    {"nick": "Девятый", "res": 0, "nok": 1, "kills": 1, "deaths": 6, "dmg": 45},
+    {"nick": "Hampton", "res": 1, "nok": 4, "kills": 4, "deaths": 7, "dmg": 122},
+    {"nick": "(RU)KRIPerOK", "res": 0, "nok": 4, "kills": 2, "deaths": 4, "dmg": 110},
+    {"nick": "Башмак в клетке", "res": 2, "nok": 4, "kills": 2, "deaths": 4, "dmg": 80}
+  ],
+  "oppR1": [
+    {"nick": "Umochka", "res": 0, "nok": 4, "kills": 4, "deaths": 4, "dmg": 124},
+    {"nick": "CUBE", "res": 1, "nok": 10, "kills": 8, "deaths": 4, "dmg": 251},
+    {"nick": "multirum", "res": 11, "nok": 2, "kills": 2, "deaths": 4, "dmg": 71},
+    {"nick": "Nyskan", "res": 0, "nok": 3, "kills": 2, "deaths": 4, "dmg": 83},
+    {"nick": "LordOggy", "res": 3, "nok": 3, "kills": 3, "deaths": 5, "dmg": 88},
+    {"nick": "mobceri", "res": 0, "nok": 2, "kills": 2, "deaths": 3, "dmg": 92},
+    {"nick": "hella", "res": 0, "nok": 3, "kills": 2, "deaths": 3, "dmg": 74},
+    {"nick": "WARFACEexileassassin", "res": 1, "nok": 10, "kills": 7, "deaths": 4, "dmg": 210},
+    {"nick": "Sir George 1st", "res": 0, "nok": 6, "kills": 4, "deaths": 4, "dmg": 149},
+    {"nick": "Zaxar_D", "res": 0, "nok": 16, "kills": 15, "deaths": 5, "dmg": 391},
+    {"nick": "maz1La", "res": 1, "nok": 5, "kills": 3, "deaths": 5, "dmg": 127},
+    {"nick": "♦Panihida♦", "res": 2, "nok": 13, "kills": 10, "deaths": 5, "dmg": 266}
+  ],
+  "mvp": {
+    "r1": {
+      "medic": ["Друг"],
+      "killer": ["Eastt"],
+      "damage": ["Карась"],
+      "antiDeath": ["Hampton"]
+    },
+    "r2": {"medic": [], "killer": [], "damage": [], "antiDeath": []}
+  }
+}

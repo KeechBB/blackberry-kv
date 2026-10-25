@@ -42,7 +42,7 @@
 | 23 | [23-AVG](23-AVG/match.md) | AVG | **Junior**, **2–0** · сумма **80:49** (80:0 · 0:49) · раунды 1–1 · CSL Narva Skirmish v1 · [players](../data/players/23-avg.json) · [analytics.md](23-AVG/analytics.md) |
 | 23 | [23-20R](23-20R/match.md) | 20Royals | **мейн-стак**, **2–0** · сумма **58:36** (R1 0:36 · R2 58:0) · раунды 1–1 · SEC 26 GooseBay AAS v1 · 50:02 / 38:32 · [analytics.md](23-20R/analytics.md) |
 | 25 | [25-NKLV-HUH](25-NKLV-HUH/match.md) | NKLV vs ХУХ | **чужой КВ**, **0–2** · сумма **0:114** (0:26 · 0:88) · FCL BlackCoast Small v1 · ХУХ, [analytics.md](25-NKLV-HUH/analytics.md) |
-| 25 | [25-NKLV-HUH-2](25-NKLV-HUH-2/match.md) | NKLV vs ХУХ | **чужой КВ**, 2-я встреча, FCL Narva Small v1, **2 раунда**, **12v12**, **16:00** МСК, [analytics.md](25-NKLV-HUH-2/analytics.md) |
+| 25 | [25-NKLV-HUH-2](25-NKLV-HUH-2/match.md) | NKLV vs ХУХ | **чужой КВ**, 2-я встреча, R1 **0:12**, R2 ждём, FCL Narva Small v1, [analytics.md](25-NKLV-HUH-2/analytics.md) |
 | 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я Mutaha vs ALPHA (после 09.10), [analytics.md](25-ALPHA/analytics.md) |
 | 25 | [25-solid](25-solid/match.md) | .solid | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер ANY · первая Main vs .solid (Junior 0–2 11.10 PAAS), [analytics.md](25-solid/analytics.md) |
 | 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |

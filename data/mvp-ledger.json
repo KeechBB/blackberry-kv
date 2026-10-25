@@ -1257,6 +1257,19 @@
       }
     },
     {
+      "id": "25-nklv-huh-narva",
+      "day": 25,
+      "opp": "ХУХ",
+      "meeting": null,
+      "r1": {
+        "medic": ["Друг"],
+        "killer": ["Eastt"],
+        "damage": ["Карась"],
+        "antiDeath": ["Hampton"]
+      },
+      "r2": {"medic": [], "killer": [], "damage": [], "antiDeath": []}
+    },
+    {
       "id": "26-20r",
       "day": 26,
       "opp": "20Royals",
@@ -2072,7 +2085,7 @@
     },
     "Eastt": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
@@ -2083,6 +2096,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -2290,13 +2311,21 @@
       "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "13-nklv-fal-2",
           "day": 13,
           "opp": "FAL",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         },
@@ -4775,7 +4804,7 @@
       ]
     },
     "Друг": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 1,
       "antiDeath": 0,
@@ -4795,6 +4824,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -4857,7 +4894,7 @@
     "Карась": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
         {
@@ -4865,6 +4902,14 @@
           "day": 13,
           "opp": "FAL",
           "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-nklv-huh-narva",
+          "day": 25,
+          "opp": "ХУХ",
+          "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
         }
