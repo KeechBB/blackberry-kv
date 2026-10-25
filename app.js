@@ -311,21 +311,25 @@
       let vehDeaths = 0;
       let vehDriver = 0;
       let vehGunner = 0;
+      const vehMatchIds = new Set();
       const nickLc = String(p.nick).trim().toLowerCase();
       (p.matches || []).forEach((m) => {
         vehicleKills += Math.max(0, Math.floor(Number(m.vehicleKills) || 0));
-        const nv = Number(m.netVehicle);
-        if (Number.isFinite(nv) && Math.abs(nv) > 0.05) vehGames += 1;
         const trackOf = (e, asVictim) => {
           if (!e) return "infantry";
           if (asVictim) return e.victimTrack === "vehicle" ? "vehicle" : "infantry";
           return e.track === "vehicle" ? "vehicle" : "infantry";
+        };
+        let matchHasVeh = false;
+        const markVeh = () => {
+          matchHasVeh = true;
         };
         const countCrewRole = (e, asVictim) => {
           if (!e) return;
           if (asVictim) {
             if (trackOf(e, true) !== "vehicle") return;
             if (String(e.victim || "").trim().toLowerCase() !== nickLc) return;
+            markVeh();
             const role = e.victimCrewRole || e.crewRole;
             if (role === "driver") vehDriver += 1;
             else if (role === "gunner") vehGunner += 1;
@@ -333,30 +337,49 @@
           }
           if (trackOf(e, false) !== "vehicle") return;
           if (String(e.killer || "").trim().toLowerCase() !== nickLc) return;
+          markVeh();
           const role = e.crewRole;
           if (role === "driver") vehDriver += 1;
           else if (role === "gunner") vehGunner += 1;
         };
         (m.kills || []).forEach((e) => {
           if (trackOf(e, false) !== "vehicle") return;
+          markVeh();
           if (e.kind === "vehicle_kill" || e.kind === "die" || (e.kind === "driver_share" && e.reason !== "nok"))
             vehKills += 1;
           countCrewRole(e, false);
         });
         (m.noks || []).forEach((e) => {
-          if (trackOf(e, false) === "vehicle") vehNok += 1;
+          if (trackOf(e, false) === "vehicle") {
+            markVeh();
+            vehNok += 1;
+          }
           countCrewRole(e, false);
         });
         (m.revives || []).forEach((e) => {
-          if (trackOf(e, false) === "vehicle") vehRes += 1;
+          if (trackOf(e, false) === "vehicle") {
+            markVeh();
+            vehRes += 1;
+          }
           countCrewRole(e, false);
         });
         (m.deaths || []).forEach((e) => {
-          if (trackOf(e, true) === "vehicle") vehDeaths += 1;
+          if (trackOf(e, true) === "vehicle") {
+            markVeh();
+            vehDeaths += 1;
+          }
           countCrewRole(e, true);
         });
         (m.teamkills || []).forEach((e) => countCrewRole(e, false));
         (m.gotNoks || []).forEach((e) => countCrewRole(e, true));
+        const nv = Number(m.netVehicle);
+        if (!matchHasVeh && Number.isFinite(nv) && Math.abs(nv) > 0.05) {
+          matchHasVeh = true;
+        }
+        if (matchHasVeh) {
+          vehGames += 1;
+          if (m.id != null) vehMatchIds.add(String(m.id));
+        }
       });
       const useVeh = mode === "vehicle";
       const rpRaw = useVeh
@@ -411,6 +434,7 @@
         crewRole,
         crewRoleLabel,
         crewRoleScore,
+        vehMatchIds,
       };
       map.set(String(p.nick).trim().toLowerCase(), entry);
       map.set(resolveNickKey(p.nick), entry);
@@ -2496,11 +2520,7 @@
         };
 
         if (track === "vehicle") {
-          /* Техника: только кто был мехвод/наводчик на тяжёлой — стата из ledger events */
-          rpMap.forEach((hit, key) => {
-            if (!hit || !hit.hasVehicle) return;
-            if (typeof key !== "string" || key.includes(" ")) return; // skip nick lower dup
-          });
+          /* Техника: каток = матчи, где был мехвод/наводчик на тяжёлой (не все тренировки) */
           Object.values(ledger?.players || {}).forEach((p) => {
             if (!p?.nick || !inRating(p.nick)) return;
             const hit =
@@ -2520,6 +2540,31 @@
             row.crewRoleScore = Number(hit.crewRoleScore) || 0;
             row.vehDriver = hit.vehDriver || 0;
             row.vehGunner = hit.vehGunner || 0;
+            row._vehMatchIds = hit.vehMatchIds || new Set();
+          });
+          /* % побед — только по тем же матчам-технарям */
+          bundles.forEach(({ match, players }) => {
+            if (!players || !match?.id) return;
+            const mid = String(match.id);
+            const list =
+              players.players && players.players.length
+                ? players.players
+                : [].concat(players.teamA || [], players.teamB || []);
+            const seen = new Set();
+            list.forEach((p) => {
+              if (!p || !p.nick || !inRating(p.nick)) return;
+              const row = touch(p.nick);
+              if (!row || !row._vehMatchIds || !row._vehMatchIds.has(mid)) return;
+              const key = resolveNickKey(p.nick);
+              if (seen.has(key)) return;
+              seen.add(key);
+              const won =
+                p.won === true ||
+                (match.winner &&
+                  p.team &&
+                  String(p.team).toUpperCase() === String(match.winner).toUpperCase());
+              if (won) row.wins += 1;
+            });
           });
         } else {
           bundles.forEach(({ match, players }) => {
@@ -2652,14 +2697,21 @@
   }
 
   function syncTrainRatingResHeader() {
-    const th = document.querySelector('#train-rating-table th[data-trsort="res"]');
-    if (!th) return;
     const veh = trainRatingTrack === "vehicle";
-    th.dataset.label = veh ? "Роль" : "Ресы";
-    th.title = veh
-      ? "Чаще в слоте: водитель (мехвод) или стрелок (F2/наводчик) на тяжёлой технике"
-      : "Ресы — поднятия союзников";
-    th.textContent = veh ? "Роль" : "Ресы";
+    const thRes = document.querySelector('#train-rating-table th[data-trsort="res"]');
+    if (thRes) {
+      thRes.dataset.label = veh ? "Роль" : "Ресы";
+      thRes.title = veh
+        ? "Чаще в слоте: водитель (мехвод) или стрелок (F2/наводчик) на тяжёлой технике"
+        : "Ресы — поднятия союзников";
+      thRes.textContent = veh ? "Роль" : "Ресы";
+    }
+    const thGames = document.querySelector('#train-rating-table th[data-trsort="games"]');
+    if (thGames) {
+      thGames.title = veh
+        ? "Каток в Техника — только матчи, где был мехвод/наводчик на тяжёлой (10–15 тик.), не все тренировки"
+        : "Число тренировочных матчей";
+    }
   }
 
   function paintTrainingRatingTable() {
