@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261025-2008-nick" />
+  <link rel="stylesheet" href="styles.css?v=20261026-cw-rating-slim" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -94,7 +94,7 @@
                   <th class="ctr sortable" data-msort="size" data-label="Формат">Формат</th>
                   <th class="sortable" data-msort="server" data-label="Сервер">Сервер</th>
                   <th class="ctr sortable" data-msort="stack" data-label="Состав">Состав</th>
-                  <th class="ctr sortable" data-msort="meeting" data-label="Счёт">Счёт</th>
+                  <th class="ctr sortable" data-msort="meeting" data-label="Счёт">Сумма</th>
                   <th class="num sortable" data-msort="r1" data-label="R1">R1</th>
                   <th class="num sortable" data-msort="r2" data-label="R2">R2</th>
                   <th class="sortable" data-msort="status" data-label="Статус">Статус</th>
@@ -139,9 +139,8 @@
           <aside class="metrics-glossary" aria-label="Термины рейтинга">
             <p><strong>TU</strong> — Ticket Utility: (киллы + ресы − смерти) ÷ катки. Килл забирает тикет у врага, рес сохраняет свой, смерть отдаёт. Может быть минус.</p>
             <p><strong>Калибровка</strong> — меньше 5 каток КВ. Эти игроки внизу таблицы, вместо TU написано «калибровка».</p>
-            <p>Лучшая цифра в столбце — жёлтым. <strong>Уничт. Тех</strong> и MVP Armor — только из логов TR (со скринов не считаем).</p>
+            <p>Лучшая цифра в столбце — жёлтым.</p>
             <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
-            <p><strong>FIT</strong> — насколько подходишь тиру по КВ (окно «Тиры» / вкладка Тиры Fit).</p>
           </aside>
           <div class="kv-pager" id="cw-rating-pager-top" hidden></div>
           <div class="table-scroll-wrap" data-dual-scroll>
@@ -154,7 +153,7 @@
                 <tr>
                   <th class="ctr" data-label="Место" title="Место в рейтинге по TU">Место</th>
                   <th class="ctr sortable col-tu" data-rsort="tu" data-label="TU" title="TU — Ticket Utility: средние тикеты команде за игру КВ (киллы + ресы − смерти) / катки">TU</th>
-                  <th class="sortable" data-rsort="nick" data-label="Ник">Ник</th>
+                  <th class="sortable col-nick" data-rsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-rsort="clan" data-label="Клан">Клан</th>
                   <th class="ctr sortable" data-rsort="tier" data-label="Тир">Тир</th>
                   <th class="ctr sortable" data-rsort="kv" data-label="Каток">Каток</th>
@@ -164,10 +163,8 @@
                   <th class="ctr sortable" data-rsort="kills" data-label="Килы">Килы</th>
                   <th class="ctr sortable" data-rsort="deaths" data-label="Смерти">Смерти</th>
                   <th class="ctr sortable" data-rsort="kd" data-label="KD">KD</th>
-                  <th class="ctr sortable col-veh" data-rsort="vehicleKills" data-label="Уничт." data-th2="Тех" title="Уничтоженная техника с 17.10.2026 01:00 МСК — только из логов TR, не со скринов"><span class="th-2f"><span class="th-2f-a">Уничт.</span><span class="th-2f-b">Тех</span></span></th>
                   <th class="ctr sortable col-mvp-medic" data-rsort="mvpMedic" data-label="MVP Medic">MVP Medic</th>
                   <th class="ctr sortable col-mvp-killer" data-rsort="mvpKiller" data-label="MVP Killer">MVP Killer</th>
-                  <th class="ctr sortable col-mvp-armor" data-rsort="mvpArmor" data-label="MVP Armor" title="MVP за уничтожение техники (логи)">MVP Armor</th>
                 </tr>
               </thead>
               <tbody id="rating-rows"></tbody>
@@ -318,7 +315,6 @@
             <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
             <button type="button" class="subnav-btn" data-tm="analytics" role="tab">Аналитика</button>
             <button type="button" class="subnav-btn" data-tm="hits" role="tab">Прочая статистика</button>
-            <button type="button" class="subnav-btn" data-tm="tiers" role="tab">Тиры Fit</button>
           </div>
         </div>
         <div id="tm-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="RP ranks"></div>
@@ -780,7 +776,7 @@
     </div>
   </div>
 
-  <script src="app.js?v=20261025-nklv-narva-final"></script>
+  <script src="app-month.js?v=20261026-cw-rating-slim"></script>
   <script src="tfs-fit.js?v=20261007-fit-roles"></script>
 </body>
 </html>

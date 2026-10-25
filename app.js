@@ -2313,7 +2313,7 @@
       const arrow = active ? (ratingSortDir === "asc" ? "^" : "Ў") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (ratingSortDir === "asc" ? "ascending" : "descending") : "none");
-      const labelHtml = th.dataset.th2 || key === "vehicleKills" || th.classList.contains("col-veh")
+      const labelHtml = th.dataset.th2
         ? thTwoFloorHtml(base, th)
         : escapeHtml(base);
       th.innerHTML = `${labelHtml}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
@@ -2408,8 +2408,6 @@
     const maxKd = maxOf((r) => r.kd);
     const maxMedic = maxOf((r) => r.mvpMedic);
     const maxKiller = maxOf((r) => r.mvpKiller);
-    const maxArmor = maxOf((r) => r.mvpArmor);
-    const maxVeh = maxOf((r) => r.vehicleKills);
     const slice = pageSlice(rows, pageCwRating, PAGE_CW_RATING);
     pageCwRating = slice.page;
     const paintPage = (p) => {
@@ -2469,10 +2467,8 @@
         <td class="ctr${rec(p.kills, maxKills, false)}">${p.kills}</td>
         <td class="ctr${rec(p.deaths, maxDeaths, true)}">${p.deaths}</td>
         <td class="ctr${rec(p.kd, maxKd, false)}">${p.kd}</td>
-        <td class="ctr col-veh${rec(p.vehicleKills, maxVeh, false)}">${p.vehicleKills || 0}</td>
         <td class="ctr col-mvp-medic${rec(p.mvpMedic, maxMedic, false)}">${p.mvpMedic}</td>
         <td class="ctr col-mvp-killer${rec(p.mvpKiller, maxKiller, false)}">${p.mvpKiller}</td>
-        <td class="ctr col-mvp-armor${rec(p.mvpArmor, maxArmor, false)}">${p.mvpArmor || 0}</td>
       </tr>`;
       })
       .join("");

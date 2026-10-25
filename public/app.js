@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const STATUS_RU = {
     win: "победа",
     lose: "поражение",
@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261025-nklv-narva-r1";
+    new URLSearchParams(location.search).get("v") || "20261026-train-full";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -156,7 +156,7 @@
     }
   }
 
-  /** Родителю платформы: высота контента → один скролл страницы, без скролла iframe. */
+  /** Родителю платформы: высота контента > один скролл страницы, без скролла iframe. */
   let _embedHeightSent = 0;
   function embedContentHeight() {
     const y = window.scrollY || window.pageYOffset || 0;
@@ -239,7 +239,7 @@
     armor: "MVP Armor",
   };
   const TIER_LABEL = { 1: "Тир 1", 2: "Тир 2", 3: "Тир 3", 4: "Тир 4" };
-  /** Respect Points ranks: step 150, Iron I → Eclipse III, then Predator 4951+. */
+  /** Respect Points ranks: step 150, Iron I > Eclipse III, then Predator 4951+. */
   const TRAIN_RP = {
     startRp: 1000,
     minRp: 1, // ниже 1 опуститься нельзя
@@ -486,7 +486,7 @@
     impact: { role: 0.55, surv: 0.2, win: 0.25 },
     /** Множитель состава (тир клана). */
     tierMult: { 1: 1.4, 2: 1.3, 3: 1.2, 4: 1.1 },
-    /** KD < 1 → штраф. */
+    /** KD < 1 > штраф. */
     kdLowMult: 0.9,
     /** Ступени как в Valorant / Apex. [minPWR, label, cssKey] */
     bands: [
@@ -629,7 +629,7 @@
         (s, i) =>
           s +
           (i < steps.length - 1
-            ? `<span class="pwr-scale-arrow" aria-hidden="true">→</span>`
+            ? `<span class="pwr-scale-arrow" aria-hidden="true">></span>`
             : "")
       )
       .join("");
@@ -751,7 +751,7 @@
   function factionShort(code) {
     const s = code ? String(code).trim() : "";
     if (!s) return "—";
-    const key = s.toLowerCase().replace(/[''′]/g, "'").replace(/\s+/g, " ");
+    const key = s.toLowerCase().replace(/[''?]/g, "'").replace(/\s+/g, " ");
     const known = {
       "people's liberation army": "PLA",
       "peoples liberation army": "PLA",
@@ -792,6 +792,69 @@
 
   function pad(n) {
     return String(n).padStart(2, "0");
+  }
+
+  /** ??????? ???/????? ?? ?????? (????????? ??/?????). */
+  function mskNowYm() {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Europe/Moscow",
+      year: "numeric",
+      month: "numeric",
+    }).formatToParts(new Date());
+    const n = (t) => Number(parts.find((p) => p.type === t)?.value || 0);
+    return { year: n("year"), month: n("month") };
+  }
+
+  /**
+   * ??????? ????? ???????? ????????? ? «??????» (???).
+   * ?????? ?????????? ? ????? ????????? ????? ? ???????? ? ????? ?????? ? ?????? ????.
+   */
+  function pickDefaultMonthMeta(months, wantYear, wantMonth) {
+    const list = (months || []).slice();
+    if (!list.length) return null;
+    const exact = list.find((m) => Number(m.year) === wantYear && Number(m.month) === wantMonth);
+    if (exact) return exact;
+    const sameYear = list
+      .filter((m) => Number(m.year) === wantYear && Number(m.month) <= wantMonth)
+      .sort((a, b) => Number(b.month) - Number(a.month));
+    if (sameYear.length) return sameYear[0];
+    const earlier = list
+      .filter(
+        (m) =>
+          Number(m.year) < wantYear ||
+          (Number(m.year) === wantYear && Number(m.month) <= wantMonth)
+      )
+      .sort(
+        (a, b) =>
+          Number(b.year) - Number(a.year) || Number(b.month) - Number(a.month)
+      );
+    if (earlier.length) return earlier[0];
+    return list.slice().sort(
+      (a, b) => Number(b.year) - Number(a.year) || Number(b.month) - Number(a.month)
+    )[0];
+  }
+
+  function applyDefaultYearMonth(yearSel, monthSel, cat) {
+    if (!yearSel || !monthSel || !cat?.length) return;
+    const now = mskNowYm();
+    const years = [...new Set(cat.map((m) => Number(m.year)))].filter(Boolean);
+    const y = years.includes(now.year) ? now.year : years.sort((a, b) => b - a)[0];
+    if (y) yearSel.value = String(y);
+    const monthsForYear = cat.filter((m) => Number(m.year) === Number(yearSel.value));
+    const pick = pickDefaultMonthMeta(
+      monthsForYear.length ? monthsForYear : cat,
+      now.year,
+      now.month
+    );
+    if (!pick) return;
+    const id = pick.id || `${pick.year}-${pad(pick.month)}`;
+    // ????????? option ???? ???? value ?? ?????? ????? ??????? id
+    const opt =
+      [...monthSel.options].find((o) => o.value === id) ||
+      [...monthSel.options].find((o) => o.value.endsWith(`-${pad(pick.month)}`)) ||
+      [...monthSel.options].find((o) => Number(o.value.split("-")[1]) === Number(pick.month));
+    if (opt) monthSel.value = opt.value;
+    else monthSel.value = id;
   }
 
   function escapeHtml(s) {
@@ -908,7 +971,7 @@
     const u = String(url || "").trim();
     if (!u) return "";
     if (/^https?:\/\//i.test(u)) return u;
-    // iframe /kv-static → корень сайта (public/bp-assets)
+    // iframe /kv-static > корень сайта (public/bp-assets)
     try {
       return new URL(u, "https://bb-squad.ru").href;
     } catch {
@@ -925,7 +988,7 @@
     return `<button type="button" class="nick-patch-mark" data-patch-id="${patchId}" aria-label="${tip}"><span class="nick-patch-mark-art" style="background-image:url('${url}')" aria-hidden="true"></span></button>`;
   }
 
-  /** styleId из nick-patches.json → CSS-класс (как profileNickStyles на платформе). */
+  /** styleId из nick-patches.json > CSS-класс (как profileNickStyles на платформе). */
   const NICK_STYLE_CLASS = {
     "bp-l10-aurum-clean": "is-metallic-gold",
     "hw2-violet-gothic": "is-halloween-gothic",
@@ -1097,7 +1160,7 @@
     return displayNickByKey.get(key) || clean;
   }
 
-  /** Ключ для склейки рейтинга: алиасы (VaGNeR / Dedushkin Ghoul 福父 …) → канон */
+  /** Ключ для склейки рейтинга: алиасы (VaGNeR / Dedushkin Ghoul ?? …) > канон */
   function resolveNickKey(nick) {
     const clean = profileNick(nick);
     const key = nickKey(clean);
@@ -1290,9 +1353,20 @@
 
     const syncMatchMonths = () => {
       const y = Number(yearSel.value);
-      const months = catalog.filter((m) => m.year === y).sort((a, b) => b.month - a.month);
+      const now = mskNowYm();
+      const months = catalog
+        .filter((m) => Number(m.year) === y)
+        .sort((a, b) => Number(a.month) - Number(b.month));
+      const pick =
+        pickDefaultMonthMeta(months, now.year, now.month) ||
+        months[months.length - 1] ||
+        null;
+      const pickId = pick?.id || "";
       document.getElementById("filter-month").innerHTML = months
-        .map((m) => `<option value="${m.id}">${MONTH_RU[m.month] || m.month}</option>`)
+        .map(
+          (m) =>
+            `<option value="${m.id}"${m.id === pickId ? " selected" : ""}>${MONTH_RU[m.month] || m.month}</option>`
+        )
         .join("");
     };
     const syncRatingMonths = () => {
@@ -1341,10 +1415,14 @@
     });
 
     if (years.length) {
-      yearSel.value = String(years[0]);
-      ratingYear.value = String(years[0]);
+      const now = mskNowYm();
+      const y = years.includes(now.year) ? now.year : years[0];
+      yearSel.value = String(y);
+      ratingYear.value = String(y);
       syncMatchMonths();
       syncRatingMonths();
+      applyDefaultYearMonth(yearSel, document.getElementById("filter-month"), catalog);
+      applyDefaultYearMonth(ratingYear, document.getElementById("rating-month"), catalog);
       scopeEl.value = "all";
       syncRatingScopeUi();
     }
@@ -1395,8 +1473,11 @@
       });
     });
     if (years.length) {
-      yearSel.value = String(years[0]);
+      const now = mskNowYm();
+      const y = years.includes(now.year) ? now.year : years[0];
+      yearSel.value = String(y);
       syncMonths();
+      applyDefaultYearMonth(yearSel, monthSel, trainingCatalog);
     }
     trainingFiltersReady = true;
   }
@@ -1554,10 +1635,10 @@
   function paintTrainSortMarks() {
     document.querySelectorAll("#train-matches-table th.sortable").forEach((th) => {
       const key = th.dataset.tsort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      const base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
       th.dataset.label = base;
       const active = trainSortKey === key;
-      const arrow = active ? (trainSortDir === "asc" ? "▲" : "▼") : "";
+      const arrow = active ? (trainSortDir === "asc" ? "^" : "Ў") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (trainSortDir === "asc" ? "ascending" : "descending") : "none");
       th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
@@ -1613,7 +1694,8 @@
           <td>${m.ticketsA != null ? m.ticketsA : "—"}</td>
           <td title="${escapeHtml(factionTitle(m.factionB))}">${escapeHtml(fb)}</td>
           <td>${m.ticketsB != null ? m.ticketsB : "—"}</td>
-          <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win)}</span></td>
+          <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win ? `победа [${win}]` : "—")}</span></td>
+          <td class="ctr">—</td>
         </tr>`;
       })
       .join("");
@@ -1717,8 +1799,13 @@
         return m.server || "";
       case "stack":
         return m.stack || "";
-      case "meeting":
+      case "meeting": {
+        const a = parseTicketPair(m.r1);
+        const b = parseTicketPair(m.r2);
+        if (a && b) return a.us + b.us - (a.them + b.them);
+        if (a) return a.us - a.them;
         return m.meeting || "";
+      }
       case "r1":
         return m.r1 || "";
       case "r2":
@@ -1775,10 +1862,10 @@
   function paintMatchSortMarks() {
     document.querySelectorAll(".matches-table th.sortable").forEach((th) => {
       const key = th.dataset.msort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      const base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
       th.dataset.label = base;
       const active = matchSortKey === key;
-      const arrow = active ? (matchSortDir === "asc" ? "▲" : "▼") : "";
+      const arrow = active ? (matchSortDir === "asc" ? "^" : "Ў") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (matchSortDir === "asc" ? "ascending" : "descending") : "none");
       th.innerHTML = `${escapeHtml(base)}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
@@ -1899,10 +1986,10 @@
           <td class="ctr">${escapeHtml(m.size || "—")}</td>
           <td>${escapeHtml(m.server || "—")}</td>
           <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr">${escapeHtml(m.meeting || "—")}</td>
+          <td class="ctr">${escapeHtml(formatScoreCell(m))}</td>
           <td class="num">${escapeHtml(m.r1 || "—")}</td>
           <td class="num">${escapeHtml(m.r2 || "—")}</td>
-          <td><span class="status"><span class="dot ${st}"></span>${STATUS_RU[st] || st}</span></td>
+          <td><span class="status"><span class="dot ${st === "lose" ? "win" : st}"></span>${escapeHtml(statusWithWinnerTag(m))}</span></td>
         </tr>`;
       })
       .join("");
@@ -2132,7 +2219,7 @@
           const kills = Number(p.kills) || 0;
           const deaths = Number(p.deaths) || 0;
           const res = Number(p.res) || 0;
-          // TU — Ticket Utility: средние тикеты команде за игру (килл +1, рес +1, смерть −1)
+          // TU — Ticket Utility: средние тикеты команде за игру (килл +1, рес +1, смерть ?1)
           const ticketNet = kills + res - deaths;
           const tu =
             games > 0 ? Math.round((100 * ticketNet) / games) / 100 : null;
@@ -2220,13 +2307,13 @@
   function paintRatingSortMarks() {
     document.querySelectorAll("#cw-rating-table th.sortable").forEach((th) => {
       const key = th.dataset.rsort;
-      const base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+      const base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
       th.dataset.label = base;
       const active = ratingSortKey === key;
-      const arrow = active ? (ratingSortDir === "asc" ? "▲" : "▼") : "";
+      const arrow = active ? (ratingSortDir === "asc" ? "^" : "Ў") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute("aria-sort", active ? (ratingSortDir === "asc" ? "ascending" : "descending") : "none");
-      const labelHtml = th.dataset.th2 || key === "vehicleKills" || th.classList.contains("col-veh")
+      const labelHtml = th.dataset.th2
         ? thTwoFloorHtml(base, th)
         : escapeHtml(base);
       th.innerHTML = `${labelHtml}<span class="sort-ind" aria-hidden="true">${arrow}</span>`;
@@ -2321,8 +2408,6 @@
     const maxKd = maxOf((r) => r.kd);
     const maxMedic = maxOf((r) => r.mvpMedic);
     const maxKiller = maxOf((r) => r.mvpKiller);
-    const maxArmor = maxOf((r) => r.mvpArmor);
-    const maxVeh = maxOf((r) => r.vehicleKills);
     const slice = pageSlice(rows, pageCwRating, PAGE_CW_RATING);
     pageCwRating = slice.page;
     const paintPage = (p) => {
@@ -2382,10 +2467,8 @@
         <td class="ctr${rec(p.kills, maxKills, false)}">${p.kills}</td>
         <td class="ctr${rec(p.deaths, maxDeaths, true)}">${p.deaths}</td>
         <td class="ctr${rec(p.kd, maxKd, false)}">${p.kd}</td>
-        <td class="ctr col-veh${rec(p.vehicleKills, maxVeh, false)}">${p.vehicleKills || 0}</td>
         <td class="ctr col-mvp-medic${rec(p.mvpMedic, maxMedic, false)}">${p.mvpMedic}</td>
         <td class="ctr col-mvp-killer${rec(p.mvpKiller, maxKiller, false)}">${p.mvpKiller}</td>
-        <td class="ctr col-mvp-armor${rec(p.mvpArmor, maxArmor, false)}">${p.mvpArmor || 0}</td>
       </tr>`;
       })
       .join("");
@@ -2748,11 +2831,11 @@
       });
   }
 
-  /** Длинные заголовки рейтинга ТР → всегда 2 этажа (не раздувают ширину колонки) */
+  /** Длинные заголовки рейтинга ТР > всегда 2 этажа (не раздувают ширину колонки) */
   const TRAIN_TH_2F = {
     winPct: ["%", "побед"],
     vehicleKills: ["Уничт.", "Тех"],
-    dmgToVeh: ["Урон", "↓Тех"],
+    dmgToVeh: ["Урон", "vТех"],
     zTurret: ["Башня", "%"],
     zHull: ["Корпус", "%"],
     zEngine: ["Двиг.", "%"],
@@ -2779,12 +2862,12 @@
           ? `<span class="th-2f"><span class="th-2f-a">${escapeHtml(floor[0])}</span><span class="th-2f-b">${escapeHtml(floor[1])}</span></span>`
           : escapeHtml(floor[0]);
       } else {
-        base = th.dataset.label || th.textContent.replace(/\s*[▲▼↑↓]\s*$/u, "").trim();
+        base = th.dataset.label || th.textContent.replace(/\s*[^Ў^v]\s*$/u, "").trim();
         th.dataset.label = base;
         labelHtml = thTwoFloorHtml(base, th);
       }
       const active = trainRatingSortKey === key;
-      const arrow = active ? (trainRatingSortDir === "asc" ? "▲" : "▼") : "";
+      const arrow = active ? (trainRatingSortDir === "asc" ? "^" : "Ў") : "";
       th.classList.toggle("is-sorted", active);
       th.setAttribute(
         "aria-sort",
@@ -2873,7 +2956,7 @@
         trainRatingSortKey === "pwr" ||
         trainRatingSortKey === "rp"
       ) {
-        /* Те же тайбрейки, что при выдаче «Место» (RP → каток → ник) */
+        /* Те же тайбрейки, что при выдаче «Место» (RP > каток > ник) */
         const d =
           scoreOrFloor(a.rp) - scoreOrFloor(b.rp) ||
           (Number(a.games) || 0) - (Number(b.games) || 0);
@@ -2961,9 +3044,34 @@
   let cwAnFiltersReady = false;
 
   function parseTicketPair(raw) {
-    const m = String(raw || "").match(/(\d+)\s*[:：]\s*(\d+)/);
+    const m = String(raw || "").match(/(\d+)\s*[::]\s*(\d+)/);
     if (!m) return null;
     return { us: Number(m[1]), them: Number(m[2]) };
+  }
+
+  /** Колонка «Счёт»: сумма тикетов R1+R2 (канон победы встречи). meeting 2–0 остаётся в данных. */
+  function formatScoreCell(m) {
+    const a = parseTicketPair(m && m.r1);
+    const b = parseTicketPair(m && m.r2);
+    if (a && b) return `${a.us + b.us}:${a.them + b.them}`;
+    if (a) return `${a.us}:${a.them}`;
+    return (m && m.meeting) || "—";
+  }
+
+  /** Статус: всегда «победа [тег победителя]»; без слова «поражение». */
+  function statusWithWinnerTag(m) {
+    const st = (m && m.status) || "upcoming";
+    if (st === "win" || st === "lose") {
+      let tag;
+      if (st === "win") {
+        tag = hostClanTag(m);
+      } else {
+        tag = String((m && m.opp) || "").trim().replace(/^\[|\]$/g, "");
+      }
+      if (!tag || tag === "—") return "победа";
+      return `победа [${tag}]`;
+    }
+    return STATUS_RU[st] || st;
   }
 
   function cwPlayerList(players) {
@@ -3384,7 +3492,7 @@
       ["Игроков", String(uniqueNicks.size)],
       ["Ср. явка", avgRoster != null ? String(avgRoster) : "—"],
       ["Ср. раунд", avgDur != null ? formatDurationSec(avgDur) : "—"],
-      ["Ср. Δ тикетов", avgMargin != null ? String(avgMargin) : "—"],
+      ["Ср. ? тикетов", avgMargin != null ? String(avgMargin) : "—"],
     ]
       .map(
         ([k, v]) =>
@@ -3543,7 +3651,7 @@
             hot: blowouts >= 3 || closeR >= 3,
           },
           avgMargin != null && {
-            label: "Ср. Δ тикетов",
+            label: "Ср. ? тикетов",
             value: String(avgMargin),
             hot: Math.abs(avgMargin) >= 80,
           },
@@ -3557,7 +3665,7 @@
         value: avgDur != null ? formatDurationSec(avgDur) : "—",
       },
       {
-        label: "Ср. Δ",
+        label: "Ср. ?",
         value: avgMargin != null ? String(avgMargin) : "—",
         hot: avgMargin != null && Math.abs(avgMargin) >= 80,
       },
@@ -3567,7 +3675,7 @@
         label: "Пех / тех",
         value: detailsN ? `${infUs}/${infThem} · ${vehUs}/${vehThem}` : "—",
       },
-      { label: "KD ∑", value: String(kdAll), hot: kdAll >= 1.3 || kdAll <= 0.85 },
+      { label: "KD ?", value: String(kdAll), hot: kdAll >= 1.3 || kdAll <= 0.85 },
     ]);
 
     const uniqueTier = new Map();
@@ -3711,7 +3819,7 @@
     return taDenseTop(rows, { limit: 99 });
   }
 
-  /** Compact ranked list (default top‑5). Yellow = hot/outlier. */
+  /** Compact ranked list (default top?5). Yellow = hot/outlier. */
   function taDenseTop(rows, opts) {
     const limit = opts && opts.limit != null ? opts.limit : 5;
     const list = Array.isArray(rows) ? rows.slice() : [];
@@ -3815,7 +3923,7 @@
           <td><strong>${escapeHtml(m.opp || "—")}</strong></td>
           <td>${escapeHtml(mapFamilyName(m.map))}</td>
           <td class="ctr">${escapeHtml(m.stack || "—")}</td>
-          <td class="ctr ta-num">${escapeHtml(m.meeting || "—")}</td>
+          <td class="ctr ta-num">${escapeHtml(formatScoreCell(m))}</td>
           <td class="ctr ta-num">${nn || "—"}</td>
           <td class="ctr ta-num tier tier-1">${tierCounts[1] || 0}</td>
           <td class="ctr ta-num tier tier-2">${tierCounts[2] || 0}</td>
@@ -4922,8 +5030,8 @@
       ["Игроков", String(uniqueNicks.size)],
       ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
       ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
-      ["Килы ∑", String(totalKills)],
-      ["Смерти ∑", String(totalDeaths)],
+      ["Килы ?", String(totalKills)],
+      ["Смерти ?", String(totalDeaths)],
     ]
       .map(
         ([k, v]) =>
@@ -5100,7 +5208,7 @@
         hot: maxR != null && maxR - (minR || 0) >= 20,
       },
       { label: "Ресы / ноки", value: `${totalRes} / ${totalNok}` },
-      { label: "KD ∑", value: String(kdAll), hot: kdAll >= 1.25 || kdAll <= 0.85 },
+      { label: "KD ?", value: String(kdAll), hot: kdAll >= 1.25 || kdAll <= 0.85 },
     ]);
 
     const tierCount = new Map();
@@ -5156,7 +5264,7 @@
       ["Топ RP", topPwrVal != null ? String(topPwrVal) : "—"],
       ["Ср. состав", avgRoster != null ? String(avgRoster) : "—"],
       ["Ср. длит.", avgDur != null ? formatDurationSec(avgDur) : "—"],
-      ["Килы ∑", String(totalKills)],
+      ["Килы ?", String(totalKills)],
     ]
       .map(
         ([k, v]) =>
@@ -5247,7 +5355,14 @@
         m.map,
         m.size,
         m.stack,
-        m.meeting && m.meeting !== "—" ? `счёт ${m.meeting}` : null,
+        (() => {
+          const sum = formatScoreCell(m);
+          if (!sum || sum === "—") return null;
+          if (m.meeting && m.meeting !== "—" && sum !== m.meeting) {
+            return `сумма ${sum} · серия ${m.meeting}`;
+          }
+          return `счёт ${sum}`;
+        })(),
         STATUS_RU[m.status] || m.status,
       ]
         .filter(Boolean)
@@ -5435,7 +5550,7 @@
   }
 
   function labelTabs(m) {
-    // Always restore data-tab from data-tab-id before labeling (fixes train→CW bleed).
+    // Always restore data-tab from data-tab-id before labeling (fixes train>CW bleed).
     resetModalTabAttrs();
     const hasOpp = !!(modalPlayers && modalPlayers._hasOpp);
     const opp = (modalPlayers && modalPlayers._oppTag) || m.opp || "OPP";
@@ -5641,7 +5756,7 @@
       const n = counts[kind];
       if (!n) return;
       const cls = `mvp-badge ${kindClass[kind]}`;
-      const label = n > 1 ? `×${n} ${MVP_LABEL[kind]}` : MVP_LABEL[kind];
+      const label = n > 1 ? `?${n} ${MVP_LABEL[kind]}` : MVP_LABEL[kind];
       parts.push(
         `<span class="${cls}" title="${escapeHtml(label)}">` +
           `<img src="${MVP_ICONS[kind]}" alt="" width="14" height="14" />` +
@@ -5694,7 +5809,7 @@
 
   function sortMark(key) {
     if (sortKey !== key) return "";
-    return sortDir === "asc" ? "▲" : "▼";
+    return sortDir === "asc" ? "^" : "Ў";
   }
 
   function th(key, label, cls) {
@@ -5755,7 +5870,7 @@
               ${th("deaths", "Смерти", "ctr")}
               ${th("kd", "KD", "ctr")}
               ${showDmg ? th("dmg", "Боевой счёт", "ctr") : ""}
-              ${showPwrDelta ? th("pwrDelta", "Δ RP", "ctr") : ""}
+              ${showPwrDelta ? th("pwrDelta", "? RP", "ctr") : ""}
             </tr>
           </thead>
           <tbody>
@@ -5930,6 +6045,12 @@
       fillPwrRankScales();
       fillYearMonthSelects();
       wireMatchSort();
+      // ??? ??? ????? chips ? ?? ??????, ???? select ????????? ?? ?????? option
+      applyDefaultYearMonth(
+        document.getElementById("filter-year"),
+        document.getElementById("filter-month"),
+        catalog
+      );
       paintMonthChips();
       loadSelectedMonth();
       applyHash();
