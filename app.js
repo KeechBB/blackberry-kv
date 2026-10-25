@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261025-alpha-fix";
+    new URLSearchParams(location.search).get("v") || "20261025-cw-month-now";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -794,6 +794,57 @@
     return String(n).padStart(2, "0");
   }
 
+  /** ??????? ???/????? ?? ?????? (????????? ??/?????). */
+  function mskNowYm() {
+    const parts = new Intl.DateTimeFormat("en-GB", {
+      timeZone: "Europe/Moscow",
+      year: "numeric",
+      month: "numeric",
+    }).formatToParts(new Date());
+    const n = (t) => Number(parts.find((p) => p.type === t)?.value || 0);
+    return { year: n("year"), month: n("month") };
+  }
+
+  /**
+   * ??????? ????? ???????? ????????? ? «??????» (???).
+   * ?????? ?????????? ? ????? ????????? ????? ? ???????? ? ????? ?????? ? ?????? ????.
+   */
+  function pickDefaultMonthMeta(months, wantYear, wantMonth) {
+    const list = (months || []).slice();
+    if (!list.length) return null;
+    const exact = list.find((m) => Number(m.year) === wantYear && Number(m.month) === wantMonth);
+    if (exact) return exact;
+    const sameYear = list
+      .filter((m) => Number(m.year) === wantYear && Number(m.month) <= wantMonth)
+      .sort((a, b) => Number(b.month) - Number(a.month));
+    if (sameYear.length) return sameYear[0];
+    const earlier = list
+      .filter(
+        (m) =>
+          Number(m.year) < wantYear ||
+          (Number(m.year) === wantYear && Number(m.month) <= wantMonth)
+      )
+      .sort(
+        (a, b) =>
+          Number(b.year) - Number(a.year) || Number(b.month) - Number(a.month)
+      );
+    if (earlier.length) return earlier[0];
+    return list.slice().sort(
+      (a, b) => Number(b.year) - Number(a.year) || Number(b.month) - Number(a.month)
+    )[0];
+  }
+
+  function applyDefaultYearMonth(yearSel, monthSel, cat) {
+    if (!yearSel || !monthSel || !cat?.length) return;
+    const now = mskNowYm();
+    const years = [...new Set(cat.map((m) => Number(m.year)))].filter(Boolean);
+    const y = years.includes(now.year) ? now.year : years.sort((a, b) => b - a)[0];
+    if (y) yearSel.value = String(y);
+    const monthsForYear = cat.filter((m) => Number(m.year) === Number(yearSel.value));
+    const pick = pickDefaultMonthMeta(monthsForYear.length ? monthsForYear : cat, now.year, now.month);
+    if (pick?.id) monthSel.value = pick.id;
+  }
+
   function escapeHtml(s) {
     return String(s)
       .replace(/&/g, "&amp;")
@@ -1341,10 +1392,14 @@
     });
 
     if (years.length) {
-      yearSel.value = String(years[0]);
-      ratingYear.value = String(years[0]);
+      const now = mskNowYm();
+      const y = years.includes(now.year) ? now.year : years[0];
+      yearSel.value = String(y);
+      ratingYear.value = String(y);
       syncMatchMonths();
       syncRatingMonths();
+      applyDefaultYearMonth(yearSel, document.getElementById("filter-month"), catalog);
+      applyDefaultYearMonth(ratingYear, document.getElementById("rating-month"), catalog);
       scopeEl.value = "all";
       syncRatingScopeUi();
     }
@@ -1395,8 +1450,11 @@
       });
     });
     if (years.length) {
-      yearSel.value = String(years[0]);
+      const now = mskNowYm();
+      const y = years.includes(now.year) ? now.year : years[0];
+      yearSel.value = String(y);
       syncMonths();
+      applyDefaultYearMonth(yearSel, monthSel, trainingCatalog);
     }
     trainingFiltersReady = true;
   }
