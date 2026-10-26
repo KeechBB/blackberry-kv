@@ -309,6 +309,27 @@
       .catch(() => null);
   }
 
+  let accuracyStatsCache = null;
+  function loadAccuracyStats() {
+    if (accuracyStatsCache) return Promise.resolve(accuracyStatsCache);
+    return fetch(dataUrl("data/training/accuracy-stats.json"))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        accuracyStatsCache = data;
+        return data;
+      })
+      .catch(() => null);
+  }
+
+  function accuracyOf(stats, nick) {
+    if (!stats?.byNick || !nick) return null;
+    return (
+      stats.byNick[String(nick).trim().toLowerCase()] ||
+      stats.byNick[resolveNickKey(nick)] ||
+      null
+    );
+  }
+
   function vehicleHitOf(stats, nick) {
     if (!stats?.players || !nick) return null;
     return (
@@ -1217,12 +1238,10 @@
     const matches = document.getElementById("tm-matches");
     const rating = document.getElementById("tm-rating");
     const analytics = document.getElementById("tm-analytics");
-    const hits = document.getElementById("tm-hits");
     const tiers = document.getElementById("tm-tiers");
     if (matches) matches.hidden = panel !== "matches";
     if (rating) rating.hidden = panel !== "rating";
     if (analytics) analytics.hidden = panel !== "analytics";
-    if (hits) hits.hidden = panel !== "hits";
     if (tiers) tiers.hidden = panel !== "tiers";
     document.body.classList.toggle("layout-tm-rating", panel === "rating");
     document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
@@ -1240,10 +1259,6 @@
     if (panel === "analytics") {
       ensureTrainAnalyticsFilters();
       loadTrainingAnalytics();
-    }
-    if (panel === "hits") {
-      loadTrainingHitmaps();
-      loadTrainingKits();
     }
     if (panel === "tiers" && typeof window.loadTfsFit === "function") {
       window.loadTfsFit(dataUrl("data/tfs-fit.json"));
@@ -2595,6 +2610,7 @@
       loadRoster(),
       loadRpLedger(),
       loadVehicleHitStats(),
+      loadAccuracyStats(),
       Promise.all(
         metas.map((meta) =>
           fetch(dataUrl(meta.url))
@@ -2604,7 +2620,7 @@
         )
       ),
     ])
-      .then(([, ledger, vehHits, months]) => {
+      .then(([, ledger, vehHits, accStats, months]) => {
         const matchList = [];
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
@@ -2619,9 +2635,9 @@
               .then((pj) => ({ match: m, players: pj }))
               .catch(() => ({ match: m, players: null }))
           )
-        ).then((bundles) => ({ bundles, ledger, vehHits }));
+        ).then((bundles) => ({ bundles, ledger, vehHits, accStats }));
       })
-      .then(({ bundles, ledger, vehHits }) => {
+      .then(({ bundles, ledger, vehHits, accStats }) => {
         const track = trainRatingTrack === "vehicle" ? "vehicle" : "infantry";
         const rpMap = rpLookupMap(ledger, track);
         const map = new Map();
@@ -2648,6 +2664,7 @@
               mvpDamage: 0,
               mvpArmor: 0,
               vehicleKills: 0,
+              accuracyPct: null,
             });
           }
           return map.get(key);
@@ -2692,6 +2709,8 @@
             row.zEngine = Number(zp.engine) || 0;
             row.zWheel = Number(zp.wheel) || 0;
             row.zTrack = Number(zp.track) || 0;
+            const ac = accuracyOf(accStats, p.nick);
+            if (ac && ac.accuracyPct != null) row.accuracyPct = Number(ac.accuracyPct);
           });
           /* % побед — только по тем же матчам-технарям */
           bundles.forEach(({ match, players }) => {
@@ -2804,6 +2823,11 @@
             predatorPlace: null,
           };
         });
+        trainRatingRows.forEach((p) => {
+          const ac = accuracyOf(accStats, p.nick);
+          if (ac && ac.accuracyPct != null) p.accuracyPct = Number(ac.accuracyPct);
+          else if (p.accuracyPct == null) p.accuracyPct = null;
+        });
         /* Место в рейтинге выбранного трека по RP */
         trainRatingRows
           .slice()
@@ -2835,6 +2859,7 @@
   const TRAIN_TH_2F = {
     winPct: ["%", "побед"],
     vehicleKills: ["Уничт.", "Тех"],
+    accuracyPct: ["Точн.", "%"],
     dmgToVeh: ["Урон", "vТех"],
     zTurret: ["Башня", "%"],
     zHull: ["Корпус", "%"],
@@ -3031,6 +3056,7 @@
         <td class="ctr">${p.kills}</td>
         <td class="ctr">${p.deaths}</td>
         <td class="ctr">${p.kd}</td>
+        <td class="ctr col-acc">${p.accuracyPct != null ? `${p.accuracyPct}%` : "—"}</td>
         <td class="ctr col-veh">${Number(p.vehicleKills) || 0}</td>
         ${tail}
       </tr>`;
