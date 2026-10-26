@@ -2092,6 +2092,7 @@ body.modal-open { overflow: hidden; }
   table-layout: auto;
   font-size: 0.86rem;
 }
+
 /* КВ рейтинг: без гориз. скролла / верхней полосы dual-scroll */
 #cw-rating .table-scroll-wrap[data-dual-scroll] > .table-scroll-top {
   display: none !important;
@@ -2156,6 +2157,7 @@ body.modal-open { overflow: hidden; }
 #cw-rating-table .tu-cal-label {
   font-size: 0.95rem;
 }
+
 /* Тренировочный рейтинг: колонки одной ширины, ник шире под нашивку */
 #train-rating-table.rating-table {
   table-layout: fixed;
