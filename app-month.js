@@ -683,13 +683,10 @@
   }
 
   function fillPwrRankScales() {
-    const html = pwrRankScaleHtml();
     const el = document.getElementById("tm-pwr-rank-scale");
     if (el) {
-      el.innerHTML = html;
-      el.setAttribute("aria-label", "RP ranks");
-      el.dataset.tierWired = "";
-      wirePwrRankScaleTiers(el);
+      el.innerHTML = "";
+      el.hidden = true;
     }
     const cw = document.getElementById("cw-pwr-rank-scale");
     if (cw) {
@@ -699,13 +696,13 @@
   }
 
   function setPwrRankScaleVisible(id, visible) {
-    if (id === "cw-pwr-rank-scale") {
-      const el = document.getElementById(id);
-      if (el) el.hidden = true;
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (id === "cw-pwr-rank-scale" || id === "tm-pwr-rank-scale") {
+      el.hidden = true;
       return;
     }
-    const el = document.getElementById(id);
-    if (el) el.hidden = !visible;
+    el.hidden = !visible;
   }
 
   let matchSortKey = "date";
