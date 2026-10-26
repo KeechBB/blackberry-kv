@@ -457,13 +457,11 @@
           crewRoleScore = 0.5;
         } else if (vehDriver > vehGunner) {
           crewRole = "driver";
-          const pct = Math.round((vehDriver / crewTotal) * 100);
-          crewRoleLabel = pct >= 70 ? "Водитель" : `Водитель ${pct}%`;
+          crewRoleLabel = "Водитель";
           crewRoleScore = vehDriver / crewTotal;
         } else {
           crewRole = "gunner";
-          const pct = Math.round((vehGunner / crewTotal) * 100);
-          crewRoleLabel = pct >= 70 ? "Стрелок" : `Стрелок ${pct}%`;
+          crewRoleLabel = "Наводчик";
           crewRoleScore = vehGunner / crewTotal;
         }
       }
@@ -2692,9 +2690,32 @@
             const vh = vehicleHitOf(vehHits, p.nick);
             const zp = vh?.zonePct || {};
             /* Роль = доля времени в слоте мехвод/наводчик (не события; секунды в UI не пишем) */
-            if (vh && (vh.crewRole || Number(vh.seatDriverSec) > 0 || Number(vh.seatGunnerSec) > 0)) {
-              row.crewRole = vh.crewRole || null;
-              row.crewRoleLabel = vh.crewRoleLabel || "—";
+            if (vh && (Number(vh.seatDriverSec) > 0 || Number(vh.seatGunnerSec) > 0)) {
+              const dSec = Number(vh.seatDriverSec) || 0;
+              const gSec = Number(vh.seatGunnerSec) || 0;
+              if (gSec > dSec) {
+                row.crewRole = "gunner";
+                row.crewRoleLabel = "Наводчик";
+                row.crewRoleScore = gSec / (dSec + gSec);
+              } else if (dSec > gSec) {
+                row.crewRole = "driver";
+                row.crewRoleLabel = "Водитель";
+                row.crewRoleScore = dSec / (dSec + gSec);
+              } else {
+                row.crewRole = "split";
+                row.crewRoleLabel = "50/50";
+                row.crewRoleScore = 0.5;
+              }
+            } else if (vh && vh.crewRole) {
+              row.crewRole = vh.crewRole;
+              row.crewRoleLabel =
+                vh.crewRole === "gunner"
+                  ? "Наводчик"
+                  : vh.crewRole === "driver"
+                    ? "Водитель"
+                    : vh.crewRole === "split"
+                      ? "50/50"
+                      : vh.crewRoleLabel || "—";
               row.crewRoleScore = Number(vh.crewRoleScore) || 0;
             } else {
               row.crewRole = hit.crewRole || null;
