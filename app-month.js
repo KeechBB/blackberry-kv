@@ -543,7 +543,7 @@
   let ratingSortKey = "tu";
   let ratingSortDir = "desc";
   let trainRatingRows = [];
-  let trainRatingSortKey = "rp";
+  let trainRatingSortKey = "games";
   /** @type {"infantry"|"vehicle"} */
   let trainRatingTrack = "infantry";
   let trainRatingSortDir = "desc";
@@ -1185,6 +1185,42 @@
     const key = nickKey(clean);
     const canon = displayNickByKey.get(key);
     return canon ? nickKey(canon) : key;
+  }
+
+  let mainRoleByNick = null;
+  let mainRoleLoad = null;
+
+  function ensureMainRoles() {
+    if (mainRoleByNick) return Promise.resolve(mainRoleByNick);
+    if (mainRoleLoad) return mainRoleLoad;
+    mainRoleLoad = fetch(KIT_TIERS_URL, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        const map = new Map();
+        const players = (data && data.ranking && data.ranking.players) || [];
+        players.forEach((p) => {
+          const kit = p && p.levels && p.levels[0] && p.levels[0].kit;
+          if (!p || !p.nick || !kit) return;
+          map.set(resolveNickKey(p.nick), kit);
+          map.set(String(p.nick).trim().toLowerCase(), kit);
+        });
+        mainRoleByNick = map;
+        return map;
+      })
+      .catch(() => {
+        mainRoleByNick = new Map();
+        return mainRoleByNick;
+      });
+    return mainRoleLoad;
+  }
+
+  function mainRoleOf(nick) {
+    if (!mainRoleByNick || !nick) return "—";
+    return (
+      mainRoleByNick.get(resolveNickKey(nick)) ||
+      mainRoleByNick.get(String(nick).trim().toLowerCase()) ||
+      "—"
+    );
   }
 
   function tierOf(nick) {
@@ -2817,6 +2853,8 @@
             vehicleKills: Math.max(0, Math.floor(Number(p.vehicleKills) || 0)),
             kd: p.deaths === 0 ? p.kills : Math.round((p.kills / p.deaths) * 100) / 100,
             winPct,
+            mainRole: mainRoleOf(p.nick),
+            lvl: null,
           };
           const rpHit =
             rpMap.get(resolveNickKey(p.nick)) ||
@@ -2828,34 +2866,22 @@
                 Number(base.vehicleKills) || 0,
                 Number(rpHit.vehicleKills) || 0
               ),
-              rp: clampTrainRp(rpHit.rp),
-              pwr: clampTrainRp(rpHit.rp),
-              pwrLabel: rpHit.rankLabel,
-              rankKey: rpHit.rankKey,
-              predatorPlace: rpHit.predatorPlace,
             };
           }
-          return {
-            ...base,
-            rp: null,
-            pwr: null,
-            pwrLabel: "—",
-            rankKey: "iron",
-            predatorPlace: null,
-          };
+          return base;
         });
         trainRatingRows.forEach((p) => {
           const ac = accuracyOf(accStats, p.nick);
           if (ac && ac.accuracyPct != null) p.accuracyPct = Number(ac.accuracyPct);
           else if (p.accuracyPct == null) p.accuracyPct = null;
         });
-        /* Место в рейтинге выбранного трека по RP */
+        /* Место — по каткам, не по RP */
         trainRatingRows
           .slice()
           .sort(
             (a, b) =>
-              scoreOrFloor(b.rp) - scoreOrFloor(a.rp) ||
               (Number(b.games) || 0) - (Number(a.games) || 0) ||
+              (Number(b.kills) || 0) - (Number(a.kills) || 0) ||
               String(a.nick).localeCompare(String(b.nick), "ru")
           )
           .forEach((p, i) => {
@@ -2870,6 +2896,17 @@
           ? `Период: ${scopeRu}. Режим: ${trackRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
           : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
         paintTrainingRatingTable();
+        ensureMainRoles().then(() => {
+          let changed = false;
+          trainRatingRows.forEach((p) => {
+            const role = mainRoleOf(p.nick);
+            if (p.mainRole !== role) {
+              p.mainRole = role;
+              changed = true;
+            }
+          });
+          if (changed) paintTrainingRatingTable();
+        });
       })
       .catch((err) => {
         note.textContent = String(err.message || err);
@@ -2891,6 +2928,7 @@
     mvpMedic: ["MVP", "Medic"],
     mvpKiller: ["MVP", "Killer"],
     mvpArmor: ["MVP", "Armor"],
+    mainRole: ["Осн.", "роль"],
   };
 
   function paintTrainingRatingSortMarks() {
@@ -2996,17 +3034,15 @@
           "ru"
         );
       }
-      if (
-        trainRatingSortKey === "pwrLabel" ||
-        trainRatingSortKey === "rank" ||
-        trainRatingSortKey === "pwr" ||
-        trainRatingSortKey === "rp"
-      ) {
-        /* Те же тайбрейки, что при выдаче «Место» (RP > каток > ник) */
-        const d =
-          scoreOrFloor(a.rp) - scoreOrFloor(b.rp) ||
-          (Number(a.games) || 0) - (Number(b.games) || 0);
+      if (trainRatingSortKey === "mainRole") {
+        const d = String(a.mainRole || "—").localeCompare(
+          String(b.mainRole || "—"),
+          "ru"
+        );
         if (d !== 0) return dir * d;
+        return a.nick.localeCompare(b.nick, "ru");
+      }
+      if (trainRatingSortKey === "lvl") {
         return a.nick.localeCompare(b.nick, "ru");
       }
       const av = Number(a[trainRatingSortKey]) || 0;
@@ -3065,8 +3101,8 @@
         <td class="ctr col-mvp-armor">${Number(p.mvpArmor) || 0}</td>`;
         return `<tr>
         <td class="ctr col-place">${p.place != null ? p.place : "—"}</td>
-        <td class="ctr col-rank"><div class="rank-cell"><span class="rank-badge rank-badge-wide rank-${escapeHtml(p.rankKey || "iron")}">${escapeHtml(p.pwrLabel || "—")}${p.predatorPlace != null ? `<br /><small>#${p.predatorPlace}</small>` : ""}</span></div></td>
-        <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
+        <td class="ctr col-rank col-main-role">${escapeHtml(p.mainRole || "—")}</td>
+        <td class="ctr col-pwr">—</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
         <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>

@@ -2267,9 +2267,12 @@ body.modal-open { overflow: hidden; }
   white-space: normal;
   line-height: 1.15;
 }
-#train-rating-table.rating-table td.col-rank {
+#train-rating-table.rating-table td.col-rank,
+#train-rating-table.rating-table td.col-main-role {
   white-space: normal;
-  overflow: hidden;
+  overflow: visible;
+  line-height: 1.15;
+  font-size: 0.68rem;
 }
 .rating-table th.col-veh {
   white-space: normal !important;
