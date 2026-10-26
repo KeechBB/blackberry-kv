@@ -65,7 +65,8 @@
       "r1": "112:0",
       "r2": "104:0",
       "note": "Junior · сумма 216:0 (112:0 · 104:0) · #3 FCL ARENA",
-      "playersUrl": "data/players/03-alpha.json"
+      "playersUrl": "data/players/03-alpha.json",
+      "mode": "FCL"
     },
     {
       "id": "03-imp",
@@ -183,7 +184,8 @@
       "playersUrl": "data/players/09-alpha.json",
       "r1": "50:0",
       "r2": "97:0",
-      "meeting": "2–0"
+      "meeting": "2–0",
+      "mode": "FCL"
     },
     {
       "id": "09-dcai",
@@ -251,7 +253,8 @@
       "playersUrl": "data/players/11-nklv.json",
       "r1": "91:0",
       "r2": "46:0",
-      "meeting": "2–0"
+      "meeting": "2–0",
+      "mode": "FCL"
     },
     {
       "id": "11-solid",
@@ -302,7 +305,8 @@
       "r1": "0:24",
       "meeting": "0–2",
       "playersUrl": "data/players/13-nklv-fal.json",
-      "r2": "0:42"
+      "r2": "0:42",
+      "mode": "FCL"
     },
     {
       "id": "13-nklv-fal-2",
@@ -321,7 +325,8 @@
       "r1": "11:7",
       "meeting": "2–0",
       "playersUrl": "data/players/13-nklv-fal-2.json",
-      "r2": "21:2"
+      "r2": "21:2",
+      "mode": "FCL"
     },
     {
       "id": "13-nklv-fal-3",
@@ -336,7 +341,8 @@
       "rules": "FCL",
       "stack": "—",
       "status": "cancel",
-      "note": "отмена · чужой КВ · NKLV vs FAL · FCL GooseBay Small v1 · 10v10 · 20:00 · 3/3 same day · same slot Junior vs HELL · NO SCOUT · NO MEETINGS"
+      "note": "отмена · чужой КВ · NKLV vs FAL · FCL GooseBay Small v1 · 10v10 · 20:00 · 3/3 same day · same slot Junior vs HELL · NO SCOUT · NO MEETINGS",
+      "mode": "FCL"
     },
     {
       "id": "13-ra",
@@ -350,7 +356,8 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "cancel",
-      "note": "отмена · Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
+      "note": "отмена · Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS",
+      "mode": "FCL"
     },
     {
       "id": "13-hell",
@@ -418,7 +425,8 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "cancel",
-      "note": "отмена · Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS"
+      "note": "отмена · Junior · FCL · 8v8 · заявка RA · same day Junior vs HELL 20:00 · NO SCOUT · NO MEETINGS",
+      "mode": "FCL"
     },
     {
       "id": "15-hell",
@@ -473,7 +481,8 @@
       "playersUrl": "data/players/17-nklv-rpss.json",
       "r1": "0:84",
       "r2": "31:0",
-      "meeting": "0–2"
+      "meeting": "0–2",
+      "mode": "FCL"
     },
     {
       "id": "18-sph",
@@ -596,7 +605,8 @@
       "r1": "0:26",
       "r2": "0:88",
       "meeting": "0–2",
-      "note": "чужой КВ · 1-я встреча NKLV vs ХУХ (в посте XYX) · сумма 0:114 (0:26 · 0:88) · раунды 0–2 · встреча 0–2 · ХУХ по сумме тикетов · FCL_BlackCoast_Small_v1 · 12v12 · сервер NKLV #1 · Батя cam skip · 2-я встреча Narva 0–2 сумма 0:99"
+      "note": "чужой КВ · 1-я встреча NKLV vs ХУХ (в посте XYX) · сумма 0:114 (0:26 · 0:88) · раунды 0–2 · встреча 0–2 · ХУХ по сумме тикетов · FCL_BlackCoast_Small_v1 · 12v12 · сервер NKLV #1 · Батя cam skip · 2-я встреча Narva 0–2 сумма 0:99",
+      "mode": "FCL"
     },
     {
       "id": "25-nklv-huh-narva",
@@ -615,7 +625,8 @@
       "r1": "0:12",
       "r2": "0:87",
       "meeting": "0–2",
-      "note": "чужой КВ · 2-я встреча NKLV vs ХУХ (в посте XYX) · сумма 0:99 (0:12 · 0:87) · раунды 0–2 · встреча 0–2 · ХУХ по сумме тикетов · FCL_Narva_Small_v1 · 12v12 · сервер NKLV #1 · Батя cam skip · 1-я встреча BlackCoast 0–2"
+      "note": "чужой КВ · 2-я встреча NKLV vs ХУХ (в посте XYX) · сумма 0:99 (0:12 · 0:87) · раунды 0–2 · встреча 0–2 · ХУХ по сумме тикетов · FCL_Narva_Small_v1 · 12v12 · сервер NKLV #1 · Батя cam skip · 1-я встреча BlackCoast 0–2",
+      "mode": "FCL"
     },
     {
       "id": "25-alpha",
@@ -633,7 +644,8 @@
       "meeting": "2–0",
       "r1": "5:37",
       "r2": "95:0",
-      "playersUrl": "data/players/25-alpha.json"
+      "playersUrl": "data/players/25-alpha.json",
+      "mode": "FCL"
     },
     {
       "id": "25-solid",
@@ -665,7 +677,8 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL BlackCoast · 16v16 · 20:00 · 2-я BlackCoast vs ALPHA (после 03.10 2–0) · same weekend 25.10 Mutaha · NO SCOUT · NO MEETINGS"
+      "note": "Junior · FCL · FCL BlackCoast · 16v16 · 20:00 · 2-я BlackCoast vs ALPHA (после 03.10 2–0) · same weekend 25.10 Mutaha · NO SCOUT · NO MEETINGS",
+      "mode": "FCL"
     },
     {
       "id": "26-gm",

@@ -247,7 +247,8 @@
       "r1": "48:0",
       "r2": "49:42",
       "note": "Junior · сумма 97:42 · r2 пиррова",
-      "playersUrl": "data/players/26-alpha.json"
+      "playersUrl": "data/players/26-alpha.json",
+      "mode": "FCL"
     },
     {
       "id": "26-20r",
