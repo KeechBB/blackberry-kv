@@ -1,0 +1,757 @@
+{
+  "matchId": "26-gm",
+  "opp": "GM",
+  "note": "Main · HotDrop Narva Skirmish · сумма 210:0 (R1 62:0 · R2 148:0) · USA vs IMF · R1 36:37 · R2 31:58 · сервер GM Arena EU · скрины · камера ★CAM★ slith не внесена",
+  "source": "screenshot",
+  "server": "『GM』Grand Masters Arena EU",
+  "map": "HotDrop Narva",
+  "r1": [
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 28,
+      "kills": 17,
+      "deaths": 8,
+      "dmg": 295,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 19,
+      "kills": 13,
+      "deaths": 11,
+      "dmg": 228,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 26,
+      "kills": 20,
+      "deaths": 1,
+      "dmg": 353,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "LordWolf",
+      "res": 4,
+      "nok": 14,
+      "kills": 13,
+      "deaths": 10,
+      "dmg": 254,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "CAT",
+      "res": 1,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 176,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 6,
+      "dmg": 167,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 189,
+      "vehicleKills": 2
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 126,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 114,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "AkiN",
+      "res": 7,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 89,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "lepurple",
+      "res": 3,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 98,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Nickname",
+      "res": 0,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 106,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Runetik",
+      "res": 3,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 107,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 111,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Mukuru",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 72,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Treppen",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 62,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Otto",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 83,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Morty",
+      "res": 3,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 80,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ADUN",
+      "res": 12,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 45,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Radislave",
+      "res": 3,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 30,
+      "vehicleKills": 0
+    }
+  ],
+  "r2": [
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 19,
+      "kills": 13,
+      "deaths": 3,
+      "dmg": 227,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Chidori",
+      "res": 1,
+      "nok": 16,
+      "kills": 13,
+      "deaths": 4,
+      "dmg": 185,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 170,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "lepurple",
+      "res": 9,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 2,
+      "dmg": 151,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 15,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 163,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Nickname",
+      "res": 1,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 135,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 171,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 169,
+      "vehicleKills": 2
+    },
+    {
+      "nick": "Runetik",
+      "res": 2,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 121,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 115,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Treppen",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 88,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 130,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 89,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Otto",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 95,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Morty",
+      "res": 7,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 69,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 47,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "AkiN",
+      "res": 12,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 27,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 516,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ADUN",
+      "res": 6,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 507,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Radislave",
+      "res": 7,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 22,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "Rhympex",
+      "res": 0,
+      "nok": 18,
+      "kills": 13,
+      "deaths": 10,
+      "dmg": 223,
+      "vehicleKills": 0
+    },
+    {
+      "nick": ".400IQ Tequila",
+      "res": 1,
+      "nok": 20,
+      "kills": 13,
+      "deaths": 7,
+      "dmg": 224,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Isooo",
+      "res": 0,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 11,
+      "dmg": 185,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "AYIBOGAN",
+      "res": 1,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 9,
+      "dmg": 199,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Cuguvero",
+      "res": 5,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 6,
+      "dmg": 174,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "DariussII",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 12,
+      "dmg": 154,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "meme",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 140,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "hxh .AVCIOGLU",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 134,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HOLYM8 IN KAYIP DI",
+      "res": 2,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 155,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Borshuva",
+      "res": 1,
+      "nok": 13,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 116,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Barista Ahmed",
+      "res": 10,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 105,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "I3lack",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 98,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Swell",
+      "res": 7,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 77,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Adonis",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 59,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Simur Paşa",
+      "res": 4,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 54,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 63,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CAN",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 85,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "saul goodman",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 105,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Batista",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 78,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Ärys",
+      "res": 7,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 10,
+      "dmg": 51,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "meme",
+      "res": 2,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 151,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HOLYM8 IN KAYIP DI",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 134,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "I3lack",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 143,
+      "vehicleKills": 2
+    },
+    {
+      "nick": "Rhympex",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 102,
+      "vehicleKills": 0
+    },
+    {
+      "nick": ".400IQ Tequila",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 11,
+      "dmg": 98,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "AYIBOGAN",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 9,
+      "dmg": 95,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Batista",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 91,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CAN",
+      "res": 0,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 89,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "hxh .AVCIOGLU",
+      "res": 1,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 88,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Cuguvero",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 79,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Ärys",
+      "res": 4,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 76,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Isooo",
+      "res": 0,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 71,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Simur Paşa",
+      "res": 3,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 70,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Barista Ahmed",
+      "res": 11,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 61,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Adonis",
+      "res": 3,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 45,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Swell",
+      "res": 2,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 43,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Borshuva",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 40,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 92,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "saul goodman",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 16,
+      "vehicleKills": 0
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "ADUN"
+      ],
+      "killer": [
+        "Keech"
+      ],
+      "damage": [
+        "Keech"
+      ],
+      "antiDeath": [
+        "Runetik"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "AkiN"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Trixx"
+      ],
+      "antiDeath": [
+        "Pymba"
+      ]
+    }
+  }
+}

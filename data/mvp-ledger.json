@@ -1427,6 +1427,40 @@
       }
     },
     {
+      "id": "26-gm",
+      "day": 26,
+      "opp": "GM",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "ADUN"
+        ],
+        "killer": [
+          "Keech"
+        ],
+        "damage": [
+          "Keech"
+        ],
+        "antiDeath": [
+          "Runetik"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "AkiN"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "Pymba"
+        ]
+      }
+    },
+    {
       "id": "27-sph",
       "day": 27,
       "opp": "SPH",
@@ -1564,8 +1598,32 @@
     }
   ],
   "players": {
+    "_VaGNeR_": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "10-avg",
+          "day": 10,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "ADUN": {
-      "mvpMedic": 7,
+      "mvpMedic": 8,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -1633,35 +1691,19 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
-        }
-      ]
-    },
-    "ART": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "13-20r",
-          "day": 13,
-          "opp": "20Royals",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
         },
         {
-          "matchId": "13-20r",
-          "day": 13,
-          "opp": "20Royals",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
     "AkiN": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 2,
       "mvpDamage": 0,
       "antiDeath": 3,
@@ -1713,6 +1755,94 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "akin0v": {
+      "mvpMedic": 3,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 2,
+      "awards": [
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "30-dcai",
+          "day": 30,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "angel": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 2,
+      "awards": [
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "18-ih",
+          "day": 18,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -1729,6 +1859,30 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "ART": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -1769,6 +1923,134 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "bambozy": {
+      "mvpMedic": 0,
+      "mvpKiller": 8,
+      "mvpDamage": 7,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-hell",
+          "day": 13,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-hell",
+          "day": 13,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "13-hell",
+          "day": 13,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-hell",
+          "day": 13,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "14-omen",
+          "day": 14,
+          "opp": "OMEN",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "14-omen",
+          "day": 14,
+          "opp": "OMEN",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-ih",
+          "day": 19,
+          "opp": "IH",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "21-ra",
+          "day": 21,
+          "opp": "RA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "21-ra",
+          "day": 21,
+          "opp": "RA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "23-avg",
+          "day": 23,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -1956,6 +2238,46 @@
         }
       ]
     },
+    "Chidori": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 3,
+      "awards": [
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-44th",
+          "day": 17,
+          "opp": "44th",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "COBRA": {
       "mvpMedic": 0,
       "mvpKiller": 2,
@@ -2036,43 +2358,19 @@
         }
       ]
     },
-    "Chidori": {
+    "daddy": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
-      "antiDeath": 3,
+      "mvpDamage": 0,
+      "antiDeath": 1,
       "awards": [
         {
-          "matchId": "07-dcai",
-          "day": 7,
-          "opp": "DCAI",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "07-dcai",
-          "day": 7,
+          "matchId": "15-dcai",
+          "day": 15,
           "opp": "DCAI",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "17-44th",
-          "day": 17,
-          "opp": "44th",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "23-20r",
-          "day": 23,
-          "opp": "20Royals",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
         }
       ]
     },
@@ -2236,6 +2534,38 @@
         }
       ]
     },
+    "firs": {
+      "mvpMedic": 3,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "07-avg",
+          "day": 7,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "13-20r",
+          "day": 13,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "FLEX": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -2297,6 +2627,86 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "freak": {
+      "mvpMedic": 6,
+      "mvpKiller": 2,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "08-hq",
+          "day": 8,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-hell",
+          "day": 13,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "17-44th",
+          "day": 17,
+          "opp": "44th",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "21-ra",
+          "day": 21,
+          "opp": "RA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "23-avg",
+          "day": 23,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "26-alpha",
+          "day": 26,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "30-ih",
+          "day": 30,
+          "opp": "IH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -2420,22 +2830,6 @@
         }
       ]
     },
-    "HSVarvar": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "01-gm",
-          "day": 1,
-          "opp": "GM",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
     "Hampton": {
       "mvpMedic": 2,
       "mvpKiller": 0,
@@ -2516,6 +2910,22 @@
         }
       ]
     },
+    "HSVarvar": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "HunterN7": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -2529,6 +2939,142 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "iKEppA": {
+      "mvpMedic": 0,
+      "mvpKiller": 12,
+      "mvpDamage": 4,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-20r",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "06-fox",
+          "day": 6,
+          "opp": "FOX",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "07-dcai",
+          "day": 7,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-dcai",
+          "day": 15,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "16-hell",
+          "day": 16,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "24-hq",
+          "day": 24,
+          "opp": "HQ",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-h1gh",
+          "day": 25,
+          "opp": "H1gh",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "27-sph",
+          "day": 27,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -2620,66 +3166,10 @@
         }
       ]
     },
-    "KIM": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "13-nklv-fal",
-          "day": 13,
-          "opp": "FAL",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "13-nklv-fal",
-          "day": 13,
-          "opp": "FAL",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        }
-      ]
-    },
-    "KTO--TO": {
-      "mvpMedic": 0,
-      "mvpKiller": 2,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "25-alpha",
-          "day": 25,
-          "opp": "ALPHA",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "25-alpha",
-          "day": 25,
-          "opp": "ALPHA",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "26-alpha",
-          "day": 26,
-          "opp": "ALPHA",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
     "Keech": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
-      "mvpDamage": 4,
+      "mvpKiller": 3,
+      "mvpDamage": 5,
       "antiDeath": 5,
       "awards": [
         {
@@ -2769,6 +3259,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -2833,6 +3339,30 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "KIM": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -2964,6 +3494,38 @@
         }
       ]
     },
+    "KTO--TO": {
+      "mvpMedic": 0,
+      "mvpKiller": 2,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-alpha",
+          "day": 25,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "26-alpha",
+          "day": 26,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "Kuchenchips": {
       "mvpMedic": 0,
       "mvpKiller": 5,
@@ -3089,6 +3651,38 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "lepurple": {
+      "mvpMedic": 3,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "22-gm",
+          "day": 22,
+          "opp": "GM",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "23-20r",
+          "day": 23,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -3448,7 +4042,7 @@
       "mvpMedic": 0,
       "mvpKiller": 2,
       "mvpDamage": 1,
-      "antiDeath": 3,
+      "antiDeath": 4,
       "awards": [
         {
           "matchId": "14-fal",
@@ -3495,6 +4089,46 @@
           "day": 26,
           "opp": "20Royals",
           "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "r4mp": {
+      "mvpMedic": 0,
+      "mvpKiller": 3,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "11-dcai",
+          "day": 11,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "15-hell",
+          "day": 15,
+          "opp": "HELL",
+          "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
         }
@@ -3612,16 +4246,40 @@
         }
       ]
     },
-    "Runetik": {
+    "rezZzister": {
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
         {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Runetik": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 2,
+      "awards": [
+        {
           "matchId": "25-h1gh",
           "day": 25,
           "opp": "H1gh",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -3657,70 +4315,6 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "SEX": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 1,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "13-nklv-fal",
-          "day": 13,
-          "opp": "FAL",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "13-nklv-fal",
-          "day": 13,
-          "opp": "FAL",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "13-nklv-fal",
-          "day": 13,
-          "opp": "FAL",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        }
-      ]
-    },
-    "SHURUP": {
-      "mvpMedic": 0,
-      "mvpKiller": 2,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "13-two",
-          "day": 13,
-          "opp": "TWO",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "13-two",
-          "day": 13,
-          "opp": "TWO",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "25-solid",
-          "day": 25,
-          "opp": ".solid",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
         }
       ]
     },
@@ -3788,6 +4382,70 @@
         }
       ]
     },
+    "SEX": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-nklv-fal",
+          "day": 13,
+          "opp": "FAL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "SHURUP": {
+      "mvpMedic": 0,
+      "mvpKiller": 2,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-two",
+          "day": 13,
+          "opp": "TWO",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "SkiLLeX": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -3801,6 +4459,30 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "spartan": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 2,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "01-gm",
+          "day": 1,
+          "opp": "GM",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "29-44th",
+          "day": 29,
+          "opp": "44th",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -4052,6 +4734,22 @@
         }
       ]
     },
+    "tonyganca": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "17-nklv-rpss",
+          "day": 17,
+          "opp": "RPSS",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Treppen": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -4103,7 +4801,7 @@
     "Trixx": {
       "mvpMedic": 0,
       "mvpKiller": 3,
-      "mvpDamage": 7,
+      "mvpDamage": 8,
       "antiDeath": 1,
       "awards": [
         {
@@ -4193,6 +4891,78 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "26-gm",
+          "day": 26,
+          "opp": "GM",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "uglyfromyoung": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-20royals",
+          "day": 4,
+          "opp": "20Royals",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Varyag": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "18-sph",
+          "day": 18,
+          "opp": "SPH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "vasserman": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-ih",
+          "day": 15,
+          "opp": "IH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "25-solid",
+          "day": 25,
+          "opp": ".solid",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -4252,70 +5022,6 @@
         }
       ]
     },
-    "Varyag": {
-      "mvpMedic": 2,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "18-sph",
-          "day": 18,
-          "opp": "SPH",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "18-sph",
-          "day": 18,
-          "opp": "SPH",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "ZLOBA1917": {
-      "mvpMedic": 3,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "15-hell",
-          "day": 15,
-          "opp": "HELL",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "19-ih",
-          "day": 19,
-          "opp": "IH",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "19-ih",
-          "day": 19,
-          "opp": "IH",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "23-20r",
-          "day": 23,
-          "opp": "20Royals",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
     "ZensU": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -4364,513 +5070,33 @@
         }
       ]
     },
-    "_VaGNeR_": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
+    "ZLOBA1917": {
+      "mvpMedic": 3,
+      "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
         {
-          "matchId": "10-avg",
-          "day": 10,
-          "opp": "AVG",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "24-hq",
-          "day": 24,
-          "opp": "HQ",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "akin0v": {
-      "mvpMedic": 3,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 2,
-      "awards": [
-        {
-          "matchId": "07-dcai",
-          "day": 7,
-          "opp": "DCAI",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "08-hq",
-          "day": 8,
-          "opp": "HQ",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "27-sph",
-          "day": 27,
-          "opp": "SPH",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "29-44th",
-          "day": 29,
-          "opp": "44th",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "30-dcai",
-          "day": 30,
-          "opp": "DCAI",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "angel": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
-      "antiDeath": 2,
-      "awards": [
-        {
-          "matchId": "06-fox",
-          "day": 6,
-          "opp": "FOX",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "18-ih",
-          "day": 18,
-          "opp": "IH",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "18-ih",
-          "day": 18,
-          "opp": "IH",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "bambozy": {
-      "mvpMedic": 0,
-      "mvpKiller": 8,
-      "mvpDamage": 7,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "13-hell",
-          "day": 13,
-          "opp": "HELL",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "13-hell",
-          "day": 13,
-          "opp": "HELL",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "13-hell",
-          "day": 13,
-          "opp": "HELL",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "13-hell",
-          "day": 13,
-          "opp": "HELL",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "14-omen",
-          "day": 14,
-          "opp": "OMEN",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "14-omen",
-          "day": 14,
-          "opp": "OMEN",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
           "matchId": "15-hell",
           "day": 15,
           "opp": "HELL",
           "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "15-hell",
-          "day": 15,
-          "opp": "HELL",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "15-hell",
-          "day": 15,
-          "opp": "HELL",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "19-ih",
           "day": 19,
           "opp": "IH",
           "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
+          "type": "medic",
+          "label": "MVP Medic"
         },
         {
           "matchId": "19-ih",
           "day": 19,
           "opp": "IH",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "21-ra",
-          "day": 21,
-          "opp": "RA",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "21-ra",
-          "day": 21,
-          "opp": "RA",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "23-20r",
-          "day": 23,
-          "opp": "20Royals",
           "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "23-avg",
-          "day": 23,
-          "opp": "AVG",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "daddy": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "15-dcai",
-          "day": 15,
-          "opp": "DCAI",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "firs": {
-      "mvpMedic": 3,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "07-avg",
-          "day": 7,
-          "opp": "AVG",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "13-20r",
-          "day": 13,
-          "opp": "20Royals",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "15-hell",
-          "day": 15,
-          "opp": "HELL",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "freak": {
-      "mvpMedic": 6,
-      "mvpKiller": 2,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "01-gm",
-          "day": 1,
-          "opp": "GM",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "01-gm",
-          "day": 1,
-          "opp": "GM",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "08-hq",
-          "day": 8,
-          "opp": "HQ",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "13-hell",
-          "day": 13,
-          "opp": "HELL",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "17-44th",
-          "day": 17,
-          "opp": "44th",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "21-ra",
-          "day": 21,
-          "opp": "RA",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "23-avg",
-          "day": 23,
-          "opp": "AVG",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "26-alpha",
-          "day": 26,
-          "opp": "ALPHA",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "30-ih",
-          "day": 30,
-          "opp": "IH",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "iKEppA": {
-      "mvpMedic": 0,
-      "mvpKiller": 11,
-      "mvpDamage": 4,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "04-20r",
-          "day": 4,
-          "opp": "20Royals",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "04-20r",
-          "day": 4,
-          "opp": "20Royals",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "04-20r",
-          "day": 4,
-          "opp": "20Royals",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "06-fox",
-          "day": 6,
-          "opp": "FOX",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "07-dcai",
-          "day": 7,
-          "opp": "DCAI",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "07-dcai",
-          "day": 7,
-          "opp": "DCAI",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "15-dcai",
-          "day": 15,
-          "opp": "DCAI",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "16-hell",
-          "day": 16,
-          "opp": "HELL",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "18-sph",
-          "day": 18,
-          "opp": "SPH",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "18-sph",
-          "day": 18,
-          "opp": "SPH",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "22-gm",
-          "day": 22,
-          "opp": "GM",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "24-hq",
-          "day": 24,
-          "opp": "HQ",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "25-h1gh",
-          "day": 25,
-          "opp": "H1gh",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "27-sph",
-          "day": 27,
-          "opp": "SPH",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "27-sph",
-          "day": 27,
-          "opp": "SPH",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "lepurple": {
-      "mvpMedic": 3,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "13-two",
-          "day": 13,
-          "opp": "TWO",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "22-gm",
-          "day": 22,
-          "opp": "GM",
-          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         },
@@ -4878,134 +5104,6 @@
           "matchId": "23-20r",
           "day": 23,
           "opp": "20Royals",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "r4mp": {
-      "mvpMedic": 0,
-      "mvpKiller": 3,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "04-20royals",
-          "day": 4,
-          "opp": "20Royals",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "11-dcai",
-          "day": 11,
-          "opp": "DCAI",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "15-hell",
-          "day": 15,
-          "opp": "HELL",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "rezZzister": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "13-two",
-          "day": 13,
-          "opp": "TWO",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "spartan": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 2,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "01-gm",
-          "day": 1,
-          "opp": "GM",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "29-44th",
-          "day": 29,
-          "opp": "44th",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        }
-      ]
-    },
-    "tonyganca": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "17-nklv-rpss",
-          "day": 17,
-          "opp": "RPSS",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "uglyfromyoung": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "04-20royals",
-          "day": 4,
-          "opp": "20Royals",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "vasserman": {
-      "mvpMedic": 2,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-ih",
-          "day": 15,
-          "opp": "IH",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "25-solid",
-          "day": 25,
-          "opp": ".solid",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"

@@ -688,11 +688,15 @@
       "opp": "GM",
       "map": "HotDrop Narva",
       "size": "20v20",
-      "server": "BB",
+      "server": "『GM』Grand Masters Arena EU",
       "rules": "HOTDROP",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · HOTDROP · HD_Narva · 20v20 · 21:00 · сервер BB · vs clan Main 2–0 (22.09 Goose) · same day Junior vs ALPHA 20:00 · NO SCOUT · NO MEETINGS"
+      "status": "win",
+      "note": "Main · HOTDROP · HotDrop Narva Skirmish · сумма 210:0 (62:0 · 148:0) · USA vs IMF · R1 36:37 · R2 31:58 · сервер GM · скрины",
+      "r1": "62:0",
+      "r2": "148:0",
+      "meeting": "2–0",
+      "playersUrl": "data/players/26-gm.json"
     },
     {
       "id": "27-ra",

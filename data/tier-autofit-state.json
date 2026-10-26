@@ -1,8 +1,22 @@
 {
-  "updatedAt": "2026-10-25",
+  "updatedAt": "2026-10-27",
   "holdDays": 2,
   "displayDays": 2,
-  "watches": [],
+  "watches": [
+    {
+      "nick": "Oguzok",
+      "kind": "promote",
+      "fromTier": 4,
+      "toTier": 3,
+      "fit": 95.3,
+      "band": "strong",
+      "role": "Стрелок",
+      "lever": "Активность: 67% от эталона роли — заходи стабильно в клановые войны",
+      "since": "2026-10-27",
+      "daysHeld": 0,
+      "ready": false
+    }
+  ],
   "transfers": [
     {
       "nick": "Runetik",
