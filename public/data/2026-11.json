@@ -1,0 +1,21 @@
+{
+  "month": "2026-11",
+  "title": "КВ — ноябрь 2026",
+  "note": "Тикеты — сторона A (клан) : сторона B (соперник). Победа = большая сумма тикетов за два раунда (ничьих нет). Winrate сверху — только матчи BlackBerry. Чужие КВ (NKLV/RPSS и др.) тоже в календаре. Клик по строке — стата игроков.",
+  "matches": [
+    {
+      "id": "01-ns",
+      "day": 1,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "NS",
+      "map": "CSL Mutaha Skirmish v2",
+      "size": "20v20",
+      "server": "FCL ARENA 2",
+      "rules": "CSL",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · перенос с 31.10 (до этого 17.10, не отмена) · NO SCOUT · NO MEETINGS"
+    }
+  ]
+}
