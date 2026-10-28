@@ -16,6 +16,34 @@
       "stack": "Main",
       "status": "upcoming",
       "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · перенос с 31.10 (до этого 17.10, не отмена) · NO SCOUT · NO MEETINGS"
+    },
+    {
+      "id": "02-ra",
+      "day": 2,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "RA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "FCL",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · FCL · 1/2 vs RA в нояб. (вторая 04.11)"
+    },
+    {
+      "id": "04-ra",
+      "day": 4,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "RA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "FCL",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · FCL · 2/2 vs RA в нояб. (первая 02.11)"
     }
   ]
 }
