@@ -47,5 +47,5 @@
 | 25 | [25-solid](25-solid/match.md) | .solid | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер ANY · первая Main vs .solid (Junior 0–2 11.10 PAAS), [analytics.md](25-solid/analytics.md) |
 | 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |
 | 26 | [26-GM](26-GM/match.md) | GM | **мейн-стак**, HotDrop Narva (`HD_Narva`), **20v20**, **21:00** МСК (18:00 UTC), сервер **BB**, HD · same day Junior vs ALPHA 20:00, [analytics.md](26-GM/analytics.md) |
-| 28 | [28-HQ](28-HQ/match.md) | HQ | **мейн-стак**, карта **TBA**, **26v26**, **21:00** МСК (18:00 UTC), сервер **HQ**, SEC · 2-я vs HQ в окт. (08.10 0–2) · same week 30.10, [analytics.md](28-HQ/analytics.md) |
-| 30 | [30-HQ](30-HQ/match.md) | HQ | **мейн-стак**, карта **TBA**, **26v26**, **21:00** МСК (18:00 UTC), сервер **HQ**, SEC · 3-я vs HQ в окт. · same week 28.10, [analytics.md](30-HQ/analytics.md) |
+| 28 | [28-HQ](28-HQ/match.md) | HQ | **отмена** · мейн-стак, карта **TBA**, **26v26**, **21:00** МСК, сервер **HQ**, SEC · [analytics.md](28-HQ/analytics.md) |
+| 30 | [30-HQ](30-HQ/match.md) | HQ | **отмена** · мейн-стак, карта **TBA**, **26v26**, **21:00** МСК, сервер **HQ**, SEC · 3-я vs HQ в окт. · same week 28.10, [analytics.md](30-HQ/analytics.md) |
