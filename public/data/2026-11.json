@@ -32,6 +32,34 @@
       "note": "Junior · FCL · FCL Mutaha · 16v16 · FCL · 1/2 vs RA в нояб. (вторая 04.11)"
     },
     {
+      "id": "03-alpha",
+      "day": 3,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "ALPHA",
+      "map": "FCL Anvil",
+      "size": "16v16",
+      "server": "FCL ARENA #4",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Anvil_16 · 16v16 · 20:00 · FCL ARENA #4 · 1/4 vs ALPHA в нояб. · заявка 30.10"
+    },
+    {
+      "id": "03-alpha-2",
+      "day": 3,
+      "timeMsk": "20:40",
+      "timeUtc": "17:40",
+      "opp": "ALPHA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "FCL ARENA #4",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Mutaha_16 · 16v16 · 20:40 · FCL ARENA #4 · 2/4 vs ALPHA в нояб. · заявка 30.10"
+    },
+    {
       "id": "04-ra",
       "day": 4,
       "timeMsk": "20:00",
@@ -44,6 +72,34 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · FCL · FCL Mutaha · 16v16 · FCL · 2/2 vs RA в нояб. (первая 02.11)"
+    },
+    {
+      "id": "06-alpha",
+      "day": 6,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "ALPHA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "FCL ARENA #4",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Mutaha_16 · 16v16 · 20:00 · FCL ARENA #4 · 3/4 vs ALPHA в нояб. · заявка 30.10"
+    },
+    {
+      "id": "06-alpha-2",
+      "day": 6,
+      "timeMsk": "20:40",
+      "timeUtc": "17:40",
+      "opp": "ALPHA",
+      "map": "FCL BlackCoast",
+      "size": "16v16",
+      "server": "FCL ARENA #4",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_BlackCoast_16 · 16v16 · 20:40 · FCL ARENA #4 · 4/4 vs ALPHA в нояб. · заявка 30.10"
     }
   ]
 }
