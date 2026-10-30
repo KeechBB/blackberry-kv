@@ -4,6 +4,20 @@
   "note": "Тикеты — сторона A (клан) : сторона B (соперник). Победа = большая сумма тикетов за два раунда (ничьих нет). Winrate сверху — только матчи BlackBerry. Чужие КВ (NKLV/RPSS и др.) тоже в календаре. Клик по строке — стата игроков.",
   "matches": [
     {
+      "id": "01-avg",
+      "day": 1,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "AVG",
+      "map": "SEC 26 Yehorivka AAS v1",
+      "size": "26v26",
+      "server": "BlackBerry",
+      "rules": "SEC",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · сервер BlackBerry · same day Main vs NS 21:00 · заявка 30.10"
+    },
+    {
       "id": "01-ns",
       "day": 1,
       "timeMsk": "21:00",
@@ -15,7 +29,7 @@
       "rules": "CSL",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · перенос с 31.10 (до этого 17.10, не отмена) · NO SCOUT · NO MEETINGS"
+      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · перенос с 31.10 (до этого 17.10, не отмена) · same day Junior vs AVG 20:00 · NO SCOUT · NO MEETINGS"
     },
     {
       "id": "02-ra",
