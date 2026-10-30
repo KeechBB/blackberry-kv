@@ -7,7 +7,7 @@
 - **17:00 UTC** / **20:00 МСК**
 - **26v26**
 - Карта: **SEC 26 Yehorivka AAS v1** (`SEC_Yehorivka`)
-- Сервер: **BlackBerry**
+- Сервер: **AVG**
 - Правила: **SEC**
 - Состав: **Junior**
 
