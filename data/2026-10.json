@@ -753,6 +753,7 @@
       "rules": "CSL",
       "stack": "Main",
       "status": "move",
+      "movedTo": "01-ns",
       "note": "перенос → 01.11 (не отмена) · Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · было 17.10 → 31.10"
     }
   ]
