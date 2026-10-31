@@ -15,7 +15,7 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · сервер AVG · same day Main vs NS 21:00 · заявка 30.10"
+      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · сервер AVG · заявка 30.10 · Main vs NS ушёл на 14.11"
     },
     {
       "id": "01-ns",
@@ -28,8 +28,8 @@
       "server": "FCL ARENA 2",
       "rules": "CSL",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 2 · North Star · перенос с 31.10 (до этого 17.10, не отмена) · same day Junior vs AVG 20:00 · NO SCOUT · NO MEETINGS"
+      "status": "move",
+      "note": "перенос → 14.11 (не отмена) · Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · было FCL ARENA 2 · North Star · цепочка 17.10 → 31.10 → 01.11 → 14.11"
     },
     {
       "id": "02-ra",
@@ -114,6 +114,20 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · FCL · FCL_BlackCoast_16 · 16v16 · 20:40 · FCL ARENA #4 · 4/4 vs ALPHA в нояб. · заявка 30.10"
+    },
+    {
+      "id": "14-ns",
+      "day": 14,
+      "timeMsk": "21:00",
+      "timeUtc": "18:00",
+      "opp": "NS",
+      "map": "CSL Mutaha Skirmish v2",
+      "size": "20v20",
+      "server": "FCL ARENA 3",
+      "rules": "CSL",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · CSL · CSL_MutahaSkirmishv2 · 20v20 · FCL ARENA 3 (#2 лёг) · North Star · перенос с 01.11 (цепочка с 17.10, не отмена) · NO SCOUT · NO MEETINGS"
     }
   ]
 }
