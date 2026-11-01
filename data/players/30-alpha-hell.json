@@ -1,0 +1,195 @@
+{
+  "matchId": "30-alpha-hell",
+  "clan": "ALPHA",
+  "opp": "HELL",
+  "note": "чужой КВ · R1 ALPHA 151:0 · SEC 26 Fallujah AAS v1 · HELL TRAINING · SEC · R2 нет · HELL табло свёрнуто · cam skip",
+  "server": "HELL TRAINING",
+  "map": "SEC 26 Fallujah AAS v1",
+  "r1": [
+    {
+      "nick": "limon",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 72
+    },
+    {
+      "nick": "Astro Biba1993",
+      "res": 4,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 169
+    },
+    {
+      "nick": "gondi31",
+      "res": 5,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 174
+    },
+    {
+      "nick": "FART Лампа",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 238
+    },
+    {
+      "nick": "Konrad",
+      "res": 1,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 304
+    },
+    {
+      "nick": "Ustinov",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 83
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 108
+    },
+    {
+      "nick": "Banka_RedBulla",
+      "res": 4,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 140
+    },
+    {
+      "nick": "SSF LICHER",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 162
+    },
+    {
+      "nick": "VoVaN Eshkere Hype",
+      "res": 8,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 143
+    },
+    {
+      "nick": "VoVaN СВИНОПАС ЖИРО",
+      "res": 5,
+      "nok": 29,
+      "kills": 24,
+      "deaths": 3,
+      "dmg": 877
+    },
+    {
+      "nick": "PANDA_646",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 128
+    },
+    {
+      "nick": "BiBiF",
+      "res": 8,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 76
+    },
+    {
+      "nick": "tehnik",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 23
+    },
+    {
+      "nick": "Artyrka",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 293
+    },
+    {
+      "nick": "BOTRune",
+      "res": 2,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 393
+    },
+    {
+      "nick": "ШКАФ",
+      "res": 3,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 135
+    },
+    {
+      "nick": "Ishack",
+      "res": 2,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 146
+    },
+    {
+      "nick": "BEZDARIO",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 320
+    },
+    {
+      "nick": "Лжец",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 151
+    }
+  ],
+  "oppR1": [],
+  "r2": [],
+  "oppR2": [],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "VoVaN Eshkere Hype"
+      ],
+      "killer": [
+        "VoVaN СВИНОПАС ЖИРО"
+      ],
+      "damage": [
+        "VoVaN СВИНОПАС ЖИРО"
+      ],
+      "antiDeath": [
+        "Konrad"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

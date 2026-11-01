@@ -33,19 +33,18 @@
 | 15 | [15-IH](15-IH/match.md) | IH / Iron Horde | **мейн-стак**, **2–0** · сумма **92:0** (61:0 · 31:0) · HotDrop Narva · TR1 · стата полная · [analytics.md](15-IH/analytics.md) |
 | 17 | [17-NKLV-RPSS](17-NKLV-RPSS/match.md) | NKLV vs RPSS | **чужой КВ**, FCL Narva Small v1, **12v12**, **17:00** МСК (14:00 UTC), SEC, [analytics.md](17-NKLV-RPSS/analytics.md) |
 | 17 | [17-NS](17-NS/match.md) | NS / North Star | **перенос → 01.11** (через 31.10, не отмена) |
-| 31 | [31-NS](31-NS/match.md) | NS / North Star | **перенос → 01.11** (не отмена) |
+| 31 | [31-NS](31-NS/match.md) | NS / North Star | **перенос → 01.11** (не отмена) · было 21:00 МСК, CSL Mutaha Skirmish v2, FCL ARENA 2 |
 | 18 | [18-SPH](18-SPH/match.md) | SPH | **мейн-стак**, **2–0** · сумма **279:0** (R1 83:0 · R2 196:0) · SEC 26 Mutaha PAAS v1 · FCL ARENA #2 (TR2) · авто обе команды, [analytics.md](18-SPH/analytics.md) |
-| 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, **0–2** · сумма **0:253** (0:62 · 0:191) · HotDrop Skorpo · Iron Horde, [analytics.md](19-IH/analytics.md) |
+| 19 | [19-IH](19-IH/match.md) | IH / Iron Horde | **Junior**, Hotdrop Skorpo, **20v20**, **21:00** МСК (18:00 UTC), сервер ANY, HOTDROP, [analytics.md](19-IH/analytics.md) |
 | 21 | [21-RA](21-RA/match.md) | RA | **Junior**, HotDrop Narva, **16v16**, **20:00** МСК (17:00 UTC), сервер **BB**, HOTDROP, [analytics.md](21-RA/analytics.md) |
-| 22 | [22-NKLV](22-NKLV/match.md) | NKLV vs NKLV | **чужая тренировка**, FCL BlackCoast Small v1, **8v8**, **18:00** МСК (15:00 UTC), FCL, [analytics.md](22-NKLV/analytics.md) |
 | 22 | [22-RNL](22-RNL/match.md) | RNL | **мейн-стак**, SEC 26 Chora AAS v2, **26v26**, **21:00** МСК (18:00 UTC), сервер **RNL EU**, SEC, [analytics.md](22-RNL/analytics.md) |
-| 23 | [23-AVG](23-AVG/match.md) | AVG | **Junior**, **2–0** · сумма **80:49** (80:0 · 0:49) · раунды 1–1 · CSL Narva Skirmish v1 · [players](../data/players/23-avg.json) · [analytics.md](23-AVG/analytics.md) |
+| 23 | [23-AVG](23-AVG/match.md) | AVG | **Junior**, **2–0** · сумма **80:49** (80:0 · 0:49) · раунды 1–1 · CSL Narva Skirmish v1 · [analytics.md](23-AVG/analytics.md) |
 | 23 | [23-20R](23-20R/match.md) | 20Royals | **мейн-стак**, **2–0** · сумма **58:36** (R1 0:36 · R2 58:0) · раунды 1–1 · SEC 26 GooseBay AAS v1 · 50:02 / 38:32 · [analytics.md](23-20R/analytics.md) |
-| 25 | [25-NKLV-HUH](25-NKLV-HUH/match.md) | NKLV vs ХУХ | **чужой КВ**, **0–2** · сумма **0:114** (0:26 · 0:88) · FCL BlackCoast Small v1 · ХУХ, [analytics.md](25-NKLV-HUH/analytics.md) |
-| 25 | [25-NKLV-HUH-2](25-NKLV-HUH-2/match.md) | NKLV vs ХУХ | **чужой КВ**, **0–2** · сумма **0:99** (0:12 · 0:87) · FCL Narva Small v1 · ХУХ, [analytics.md](25-NKLV-HUH-2/analytics.md) |
-| 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я Mutaha vs ALPHA (после 09.10), [analytics.md](25-ALPHA/analytics.md) |
-| 25 | [25-solid](25-solid/match.md) | .solid | **мейн-стак**, SEC 26 Mutaha AAS v1, **26v26**, **21:00** МСК (18:00 UTC), сервер ANY · первая Main vs .solid (Junior 0–2 11.10 PAAS), [analytics.md](25-solid/analytics.md) |
+| 25 | [25-NKLV-HUH](25-NKLV-HUH/match.md) | NKLV vs ХУХ | **чужой КВ**, 1-я встреча, FCL BlackCoast Small v1, **2 раунда**, **12v12**, **16:00** МСК, тег в посте XYX |
+| 25 | [25-NKLV-HUH-2](25-NKLV-HUH-2/match.md) | NKLV vs ХУХ | **чужой КВ**, 2-я встреча, FCL Narva Small v1, **2 раунда**, **12v12**, **16:00** МСК |
+| 25 | [25-ALPHA](25-ALPHA/match.md) | ALPHA | **Junior** · FCL Mutaha · **2–0** сумма **100:37** (5:37 · 95:0) · [analytics.md](25-ALPHA/analytics.md) |
+| 25 | [25-solid](25-solid/match.md) | .solid | **Main** · Mutaha PAAS · **0–2** сумма **0:149** (0:44 · 0:105) · [analytics.md](25-solid/analytics.md) |
 | 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |
-| 26 | [26-GM](26-GM/match.md) | GM | **мейн-стак**, HotDrop Narva (`HD_Narva`), **20v20**, **21:00** МСК (18:00 UTC), сервер **BB**, HD · same day Junior vs ALPHA 20:00, [analytics.md](26-GM/analytics.md) |
-| 28 | [28-HQ](28-HQ/match.md) | HQ | **отмена** · мейн-стак, карта **TBA**, **26v26**, **21:00** МСК, сервер **HQ**, SEC · [analytics.md](28-HQ/analytics.md) |
-| 30 | [30-HQ](30-HQ/match.md) | HQ | **отмена** · мейн-стак, карта **TBA**, **26v26**, **21:00** МСК, сервер **HQ**, SEC · 3-я vs HQ в окт. · same week 28.10, [analytics.md](30-HQ/analytics.md) |
+| 26 | [26-GM](26-GM/match.md) | GM | **мейн-стак**, **2–0** · сумма **210:0** (62:0 · 148:0) · HotDrop Narva Skirmish · сервер GM · [analytics.md](26-GM/analytics.md) |
+| 29 | [29-IH](29-IH/match.md) | IH / Iron Horde | **мейн-стак**, HotDrop Yehorivka, **20v20**, **20:30** МСК (17:30 UTC), сервер **FCL ARENA #2**, HOTDROP, [analytics.md](29-IH/analytics.md) |
+| 30 | [30-ALPHA-HELL](30-ALPHA-HELL/match.md) | ALPHA vs HELL | **чужой КВ** · R1 **151:0** · SEC 26 Fallujah AAS v1 · **20v20** · **20:00** МСК · HELL TRAINING · SEC · R2 нет · заявка задним числом 02.11, [analytics.md](30-ALPHA-HELL/analytics.md) |

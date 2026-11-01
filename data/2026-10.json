@@ -728,6 +728,24 @@
       "note": "отмена · Main · SEC · карта TBA · 26v26 · 21:00 · сервер HQ · заявка 20.10 · слот 30.10 тоже отменён"
     },
     {
+      "id": "30-alpha-hell",
+      "day": 30,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "clan": "ALPHA",
+      "opp": "HELL",
+      "map": "SEC 26 Fallujah AAS v1",
+      "size": "20v20",
+      "server": "HELL TRAINING",
+      "rules": "SEC",
+      "stack": "—",
+      "status": "upcoming",
+      "r1": "151:0",
+      "playersUrl": "data/players/30-alpha-hell.json",
+      "note": "чужой КВ · ALPHA vs HELL · R1 151:0 · SEC_26_Fallujah_AAS_v1 · 20v20 · HELL TRAINING · SEC · заявка задним числом 02.11 · R2 нет · HELL табло свёрнуто · NO SCOUT · NO MEETINGS",
+      "mode": "SEC"
+    },
+    {
       "id": "30-hq",
       "day": 30,
       "timeMsk": "21:00",

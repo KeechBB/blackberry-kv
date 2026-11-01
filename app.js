@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261026-train-full";
+    new URLSearchParams(location.search).get("v") || "20261102-alpha-hell";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1571,15 +1571,12 @@
     `;
   }
 
-  /** 00:00–00:29 МСК = хвост вечерней тренировки (после 23:59), не утро. */
+  /** Реальные минуты суток МСК — для хронологии календаря (00:16 раньше 22:24 того же дня). */
   function trainEveningMinutes(timeMsk) {
     const t = String(timeMsk || "").trim();
     const m = /^(\d{1,2}):(\d{2})/.exec(t);
     if (!m) return -1;
-    const h = Number(m[1]);
-    const mi = Number(m[2]);
-    if (h === 0 && mi <= 29) return 24 * 60 + mi;
-    return h * 60 + mi;
+    return Number(m[1]) * 60 + Number(m[2]);
   }
 
   function trainSortValue(m, key) {
@@ -1795,10 +1792,7 @@
         const t = String(m.timeMsk || "");
         const parts = t.split(":");
         if (parts.length >= 2) {
-          const h = Number(parts[0]);
-          const mi = Number(parts[1]);
-          if (h === 0 && mi <= 29) return 24 * 60 + mi;
-          return h * 60 + mi;
+          return Number(parts[0]) * 60 + Number(parts[1]);
         }
         return t;
       }
@@ -2353,10 +2347,6 @@
         if (av !== bv) return dir * (av - bv);
         return a.nick.localeCompare(b.nick, "ru");
       }
-      if (ratingSortKey === "tier") {
-        if (a.tier !== b.tier) return dir * (a.tier - b.tier);
-        return a.nick.localeCompare(b.nick, "ru");
-      }
       if (ratingSortKey === "winPct") {
         const av = a.winPct == null ? -1 : Number(a.winPct);
         const bv = b.winPct == null ? -1 : Number(b.winPct);
@@ -2474,7 +2464,6 @@
         <td class="${tuCls}${tuRec}" title="${escapeHtml(tuTitle)}">${p.calibrating ? tuText : `<strong>${tuText}</strong>`}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
-        <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr${rec(p.kv, maxKv, false)}">${p.kv}</td>
         <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr${rec(p.res, maxRes, false)}">${p.res}</td>
@@ -2496,7 +2485,7 @@
       if (ratingSortKey === key) ratingSortDir = ratingSortDir === "asc" ? "desc" : "asc";
       else {
         ratingSortKey = key;
-        ratingSortDir = key === "nick" || key === "tier" || key === "clan" || key === "regNo" ? "asc" : "desc";
+        ratingSortDir = key === "nick" || key === "clan" || key === "regNo" ? "asc" : "desc";
       }
       paintRatingTable();
     });
@@ -2567,7 +2556,7 @@
         } else {
           trainRatingSortKey = key;
           trainRatingSortDir =
-            key === "nick" || key === "clan" || key === "regNo" || key === "tier"
+            key === "nick" || key === "clan" || key === "regNo"
               ? "asc"
               : "desc";
         }
@@ -2948,12 +2937,6 @@
           )
         );
       }
-      if (trainRatingSortKey === "tier") {
-        const av = Number(a.tier) || 4;
-        const bv = Number(b.tier) || 4;
-        if (av !== bv) return dir * (av - bv);
-        return a.nick.localeCompare(b.nick, "ru");
-      }
       if (trainRatingSortKey === "regNo") {
         const av = a.regNo == null ? Number.POSITIVE_INFINITY : Number(a.regNo);
         const bv = b.regNo == null ? Number.POSITIVE_INFINITY : Number(b.regNo);
@@ -3048,7 +3031,6 @@
         <td class="ctr col-pwr">${p.rp != null ? p.rp : "—"}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
-        <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         ${roleCell}

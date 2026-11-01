@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261027-gm-r2";
+    new URLSearchParams(location.search).get("v") || "20261102-alpha-hell";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -135,11 +135,29 @@
   const tfsEmbed = _qs.has("tfsEmbed");
   if (isEmbed) {
     document.documentElement.classList.add("embed");
-    if (
-      !tfsEmbed &&
-      (!location.hash || location.hash === "#" || location.hash === "#/")
-    ) {
-      history.replaceState(null, "", `${location.pathname}${location.search}#/cw`);
+  }
+  const roleSlug = (_qs.get("role") || "").trim();
+  if (/^[a-z0-9-]+$/.test(roleSlug)) {
+    const want = `#/tm/${roleSlug}`;
+    if ((location.hash || "") !== want) {
+      history.replaceState(null, "", `${location.pathname}${location.search}${want}`);
+    }
+  } else if (
+    isEmbed &&
+    !tfsEmbed &&
+    (!location.hash || location.hash === "#" || location.hash === "#/")
+  ) {
+    history.replaceState(null, "", `${location.pathname}${location.search}#/cw`);
+  }
+  function mirrorHashToParent() {
+    if (!isEmbed || window.parent === window) return;
+    try {
+      window.parent.postMessage(
+        { type: "bb-kv-hash", hash: location.hash || "" },
+        window.location.origin
+      );
+    } catch (_) {
+      /* ignore */
     }
   }
   if (hideTiersTab) {
@@ -321,13 +339,83 @@
       .catch(() => null);
   }
 
+  function trainYmd(year, month, day) {
+    const y = Number(year) || 0;
+    const mo = Number(month) || 0;
+    const d = Number(day) || 0;
+    if (!y || !mo || !d) return "";
+    return `${y}-${String(mo).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+  }
+
+  const TRAIN_STATS_SINCE = "2026-10-20";
+  const ROLE_WINDOW_DAYS = 14;
+  const trainMatchDay = new Map();
+
+  function trainStatsYmdOk(year, month, day) {
+    const ymd = trainYmd(year, month, day);
+    return Boolean(ymd) && ymd >= TRAIN_STATS_SINCE;
+  }
+
+  function mskTodayYmd() {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Europe/Moscow",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(new Date());
+  }
+
+  function shiftYmd(ymd, delta) {
+    const [y, m, d] = String(ymd).split("-").map(Number);
+    const dt = new Date(Date.UTC(y, m - 1, d));
+    dt.setUTCDate(dt.getUTCDate() + delta);
+    const yy = dt.getUTCFullYear();
+    const mm = String(dt.getUTCMonth() + 1).padStart(2, "0");
+    const dd = String(dt.getUTCDate()).padStart(2, "0");
+    return `${yy}-${mm}-${dd}`;
+  }
+
+  function rolling14() {
+    const to = mskTodayYmd();
+    return { from: shiftYmd(to, -(ROLE_WINDOW_DAYS - 1)), to };
+  }
+
+  function rememberTrainDays(meta, matches) {
+    (matches || []).forEach((m) => {
+      if (!m || !m.id) return;
+      const ymd = trainYmd(meta && meta.year, meta && meta.month, m.day);
+      if (ymd) trainMatchDay.set(String(m.id), ymd);
+    });
+  }
+
   function accuracyOf(stats, nick) {
     if (!stats?.byNick || !nick) return null;
-    return (
+    const row =
       stats.byNick[String(nick).trim().toLowerCase()] ||
       stats.byNick[resolveNickKey(nick)] ||
-      null
-    );
+      null;
+    if (!row) return null;
+    const by = row.byMatch;
+    if (!by || typeof by !== "object") return null;
+    const win = rolling14();
+    let hits = 0;
+    let shots = 0;
+    let dated = 0;
+    Object.entries(by).forEach(([mid, slot]) => {
+      const ymd = (slot && slot.day) || trainMatchDay.get(String(mid)) || "";
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(ymd)) return;
+      dated += 1;
+      if (ymd < win.from || ymd > win.to) return;
+      const h = Number(slot.hits) || 0;
+      const s = Number(slot.shots) || 0;
+      if (s <= 0 || h <= 0 || h > s) return;
+      hits += h;
+      shots += s;
+    });
+    if (!dated || shots < 20 || hits <= 0) return null;
+    return {
+      accuracyPct: Math.min(100, Math.round((1000 * hits) / shots) / 10),
+    };
   }
 
   function vehicleHitOf(stats, nick) {
@@ -543,10 +631,18 @@
   let ratingSortKey = "tu";
   let ratingSortDir = "desc";
   let trainRatingRows = [];
-  let trainRatingSortKey = "games";
+  let trainRatingSortKey = "kills";
   /** @type {"infantry"|"vehicle"} */
   let trainRatingTrack = "infantry";
   let trainRatingSortDir = "desc";
+  /** Первым кликом: буквы/роль/№ — A→Я / 1→N; цифры — от большего к меньшему. */
+  const TRAIN_SORT_ASC_FIRST = new Set([
+    "nick",
+    "clan",
+    "mainRole",
+    "place",
+    "regNo",
+  ]);
 
   function softSat(x, mid) {
     const v = Math.max(0, Number(x) || 0);
@@ -683,6 +779,7 @@
   }
 
   function fillPwrRankScales() {
+    /* RP RANKS на тренировках больше не показываем */
     const el = document.getElementById("tm-pwr-rank-scale");
     if (el) {
       el.innerHTML = "";
@@ -695,14 +792,511 @@
     }
   }
 
-  function setPwrRankScaleVisible(id, visible) {
+  function setPwrRankScaleVisible(id, _visible) {
     const el = document.getElementById(id);
-    if (!el) return;
-    if (id === "cw-pwr-rank-scale" || id === "tm-pwr-rank-scale") {
-      el.hidden = true;
+    if (el) el.hidden = true;
+  }
+
+  function openTmDevModal(title, sub) {
+    const modal = document.getElementById("tm-dev-modal");
+    if (!modal) return;
+    const t = document.getElementById("tm-dev-modal-title");
+    const s = modal.querySelector(".tm-dev-modal-sub");
+    if (t) t.textContent = title || "Раздел в разработке";
+    if (s) s.textContent = sub || "Аналитика тренировок скоро появится здесь.";
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+  }
+
+  function closeTmDevModal() {
+    const modal = document.getElementById("tm-dev-modal");
+    if (!modal) return;
+    modal.hidden = true;
+    document.body.classList.remove("modal-open");
+  }
+
+  function wireTmDevModal() {
+    const modal = document.getElementById("tm-dev-modal");
+    if (!modal || modal.dataset.wired === "1") return;
+    modal.dataset.wired = "1";
+    modal.querySelectorAll("[data-tm-dev-close]").forEach((el) => {
+      el.addEventListener("click", () => closeTmDevModal());
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal && !modal.hidden) closeTmDevModal();
+    });
+  }
+
+  const GROWTH_ROLES = [
+    { id: "rifle", slug: "rifleman", name: "Стрелок", live: true, color: "#6d4aff" },
+    { id: "sl", slug: "squad-lead", name: "Командир отряда", color: "#14b8a6" },
+    { id: "med", slug: "medic", name: "Медик", live: true, color: "#22c55e" },
+    { id: "lmg", slug: "lmg", name: "Легкий Пулемет", color: "#eab308" },
+    { id: "hmg", slug: "hmg", name: "Тяжелый Пулемет", color: "#f97316" },
+    { id: "eng", slug: "engineer", name: "Сапер/Инженер", color: "#e11d48" },
+    { id: "crewlead", slug: "crew-lead", name: "Наводчик", color: "#2563eb" },
+    { id: "crew", slug: "crewman", name: "Мехвод", color: "#65a30d" },
+    { id: "gren", slug: "grenadier", name: "Гранатомет подствольный", color: "#d97706" },
+    { id: "lat", slug: "lat", name: "Легкая Труба", color: "#ea580c" },
+    { id: "hat", slug: "hat", name: "Тандем", color: "#a855f7" },
+    { id: "sniper", slug: "sniper", name: "Снайпер", color: "#0891b2" },
+    { id: "marks", slug: "marksman", name: "Марксман", color: "#be123c" },
+    { id: "scout", slug: "scout", name: "Разведчик", color: "#4d7c0f" },
+    { id: "raider", slug: "raider", name: "Рейдер", color: "#db2777" },
+    { id: "pilot", slug: "pilot", name: "Пилот", color: "#475569" },
+  ];
+  const GROWTH_ND = {
+    life: 2, kpm: 3, vital: 1, kpg: 2, taken: 2, dpg: 2, acc: 1, rifle: 1, kd: 2, week: 1,
+    res_pg: 2, res_total: 0, hp_min: 1, no_hp: 1, hp_res: 1, variety: 1, noks: 2, res_min: 2,
+  };
+  let growthTimer = null;
+  let growthLadder = null;
+  let growthSortKey = "level";
+  let growthSortDir = "desc";
+  let growthPage = 1;
+  let growthFit = 0;
+  let growthRowH = 0;
+
+  function growthSuffix(key) {
+    return key === "vital" || key === "acc" || key === "no_hp" ? "%" : "";
+  }
+
+  function growthStyle(v) {
+    return Number(v) >= 20 ? "Покет" : "Отрядный";
+  }
+
+  function growthShown(key, v, nd) {
+    if (key === "variety") return growthStyle(v);
+    return growthComma(v, nd) + growthSuffix(key);
+  }
+
+  function growthComma(v, nd) {
+    if (v == null || Number.isNaN(Number(v))) return "—";
+    return Number(v).toFixed(nd).replace(".", ",");
+  }
+
+  function growthLvlColor(lvl) {
+    const t = Math.max(0, Math.min(1, (Number(lvl) - 1) / 9));
+    const r = Math.round(196 * (1 - t) + 52 * t);
+    const g = Math.round(64 * (1 - t) + 186 * t);
+    const b = Math.round(78 * (1 - t) + 96 * t);
+    return `rgb(${r},${g},${b})`;
+  }
+
+  function growthWhen(iso) {
+    if (!iso) return "";
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return "";
+    const msk = new Date(d.getTime() + 3 * 3600 * 1000);
+    const p = (n) => String(n).padStart(2, "0");
+    return `${p(msk.getUTCDate())}.${p(msk.getUTCMonth() + 1)} ${p(msk.getUTCHours())}:${p(msk.getUTCMinutes())} МСК`;
+  }
+
+  function paintGrowthGrid() {
+    const root = document.getElementById("tm-growth-grid");
+    if (!root || root.dataset.ready === "1") return;
+    root.dataset.ready = "1";
+    root.innerHTML = GROWTH_ROLES.map((role) => {
+      const note = role.live
+        ? ""
+        : `<span class="growth-tile-note">в разработке</span>`;
+      return (
+        `<button type="button" class="growth-tile${role.live ? " is-live" : " is-stub"}" data-growth-role="${role.id}" style="--kit-img:url('assets/kits/${role.slug}.jpg')">` +
+        `<span class="growth-tile-name">${escapeHtml(role.name)}</span>` +
+        note +
+        `</button>`
+      );
+    }).join("");
+    root.addEventListener("click", (ev) => {
+      const btn = ev.target.closest && ev.target.closest("[data-growth-role]");
+      if (!btn || !root.contains(btn)) return;
+      const role = GROWTH_ROLES.find((r) => r.id === btn.dataset.growthRole);
+      if (!role) return;
+      openGrowthRole(role);
+    });
+  }
+
+  function growthLeaveRoleMode() {
+    document.documentElement.classList.remove("role-page");
+    document.body.classList.remove("layout-tm-role");
+    const roleEl = document.getElementById("tm-role");
+    if (roleEl) roleEl.hidden = true;
+  }
+
+  function openGrowthRole(role) {
+    const path = `/tm/${role.slug}`;
+    if (window.top && window.top !== window.self) {
+      window.top.location.href = path;
       return;
     }
-    el.hidden = !visible;
+    location.hash = `#/tm/${role.slug}`;
+  }
+
+  function showGrowthRolePage(slug) {
+    const role = GROWTH_ROLES.find((r) => r.slug === slug);
+    document.documentElement.classList.add("role-page");
+    document.body.classList.add("layout-tm-role");
+    document.body.classList.remove("layout-tm-growth", "layout-tm-rating");
+    ["tm-matches", "tm-rating", "tm-tiers", "tm-growth"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.hidden = true;
+    });
+    const roleEl = document.getElementById("tm-role");
+    if (roleEl) roleEl.hidden = false;
+    document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
+      btn.classList.toggle("active", false);
+    });
+    closeRifleLadder();
+    if (!role) {
+      paintRoleStub({ name: slug, color: "#334155" });
+      return;
+    }
+    if (role.live) openGrowthLadder(role.slug);
+    else paintRoleStub(role);
+  }
+
+  function paintRoleStub(role) {
+    const body = document.getElementById("tm-role-body");
+    if (!body) return;
+    body.innerHTML =
+      `<div class="growth-role-stub" style="background:${role.color || "#334155"}">` +
+      `<button type="button" class="growth-back" data-growth-back>← Развитие</button>` +
+      `<h2>${escapeHtml(role.name || "")}</h2>` +
+      `<p>Эта роль в разработке. Лестница пока есть у стрелка и медика.</p>` +
+      `</div>`;
+  }
+
+  function closeRifleLadder() {
+    const modal = document.getElementById("tm-growth-modal");
+    if (modal) modal.hidden = true;
+    if (growthTimer) {
+      clearInterval(growthTimer);
+      growthTimer = null;
+    }
+    const dev = document.getElementById("tm-dev-modal");
+    if (!dev || dev.hidden) document.body.classList.remove("modal-open");
+  }
+
+  function growthSortVal(player, key) {
+    if (key === "place") return player._ord == null ? null : Number(player._ord);
+    if (key === "nick") return String(player.nick || "");
+    if (key === "level") return player.level == null ? null : Number(player.level);
+    if (key === "days" || key === "games") return Number(player[key]) || 0;
+    const cell = player.raw && player.raw[key];
+    if (!cell || !cell.ok || cell.v == null) return null;
+    return Number(cell.v);
+  }
+
+  function growthSorted(players) {
+    const list = players.slice();
+    const key = growthSortKey;
+    list.sort((a, b) => {
+      const va = growthSortVal(a, key);
+      const vb = growthSortVal(b, key);
+      const aEmpty = va == null || va === "";
+      const bEmpty = vb == null || vb === "";
+      if (aEmpty && bEmpty) return String(a.nick).localeCompare(String(b.nick), "ru");
+      if (aEmpty) return 1;
+      if (bEmpty) return -1;
+      let cmp = 0;
+      if (typeof va === "string") cmp = va.localeCompare(vb, "ru");
+      else cmp = va - vb;
+      if (cmp === 0) return String(a.nick).localeCompare(String(b.nick), "ru");
+      return growthSortDir === "asc" ? cmp : -cmp;
+    });
+    return list;
+  }
+
+  function growthTh(key, title, sub) {
+    const on = growthSortKey === key;
+    const arrow = on ? `<span class="growth-arrow">${growthSortDir === "asc" ? "↑" : "↓"}</span>` : "";
+    const nickCls = key === "nick" ? " growth-nick-h" : "";
+    return (
+      `<th class="growth-sort${nickCls}${on ? " is-sorted" : ""}" data-gsort="${key}">` +
+      `${escapeHtml(title)}${arrow}` +
+      (sub ? `<small>${escapeHtml(sub)}</small>` : "") +
+      `</th>`
+    );
+  }
+
+  function growthRows() {
+    const wrap = document.querySelector(".growth-sheet-table");
+    return wrap ? [...wrap.querySelectorAll("tbody tr")] : [];
+  }
+
+  function syncGrowthRowHeight() {
+    const rows = growthRows();
+    if (!rows.length) return 0;
+    if (!growthRowH) {
+      let max = 0;
+      rows.forEach((r) => {
+        const h = r.getBoundingClientRect().height;
+        if (h > max) max = h;
+      });
+      growthRowH = Math.ceil(max);
+    }
+    const px = growthRowH + "px";
+    const table = document.querySelector(".growth-sheet-table .growth-table");
+    if (table) table.style.setProperty("--growth-row-h", px);
+    rows.forEach((r) => {
+      r.style.height = px;
+    });
+    return rows[0].getBoundingClientRect().height;
+  }
+
+  function measureGrowthFit() {
+    const wrap = document.querySelector(".growth-sheet-table");
+    const head = wrap && wrap.querySelector("thead");
+    const h = syncGrowthRowHeight();
+    if (!wrap || h < 8) return 0;
+    const avail = wrap.clientHeight - (head ? head.offsetHeight : 0);
+    return Math.max(1, Math.floor(avail / h) - 1);
+  }
+
+  function renderRifleLadder(data) {
+    growthLadder = data;
+    growthRowH = 0;
+    growthFit = 0;
+    paintGrowthSheet();
+  }
+
+  function paintGrowthSheet() {
+    const body = document.getElementById("tm-role-body");
+    const data = growthLadder;
+    if (!body || !data) return;
+    const metrics = data.metrics || [];
+    (data.players || []).forEach((p, i) => {
+      if (p._ord == null) p._ord = i;
+    });
+    const players = growthSorted(data.players || []);
+    const anchors = data.anchors || {};
+    const when = growthWhen(data.generatedAt);
+    const fitKnown = growthFit > 0;
+    const fit = fitKnown ? growthFit : Math.max(1, players.length);
+    const pages = Math.max(1, Math.ceil(players.length / fit));
+    if (growthPage > pages) growthPage = pages;
+    if (growthPage < 1) growthPage = 1;
+    const start = (growthPage - 1) * fit;
+    const slice = players.slice(start, start + fit);
+    const cards = metrics.map((m) => {
+      const a = anchors[m.key] || {};
+      const nd = GROWTH_ND[m.key] != null ? GROWTH_ND[m.key] : 1;
+      const suffix = growthSuffix(m.key);
+      if (m.scored === false || m.key === "variety") {
+        return (
+          `<div class="growth-anchor"><b>${escapeHtml(m.title)}</b>` +
+          `<div class="dim">без уровня</div>` +
+          `<div class="dim">Покет — один игрок забрал 20% ресов и больше. Иначе Отрядный.</div></div>`
+        );
+      }
+      if (!a.n) {
+        return (
+          `<div class="growth-anchor"><b>${escapeHtml(m.title)}</b>` +
+          `<div class="dim">лестницы нет</div><div class="dim">нет 5 дней</div></div>`
+        );
+      }
+      const bestNames = (a.bestNicks || []).slice(0, 2).join(", ");
+      const worstNames = (a.worstNicks || []).slice(0, 2).join(", ");
+      const same = a.best === a.worst;
+      const bestTxt = growthShown(m.key, a.best, nd);
+      const worstTxt = growthShown(m.key, a.worst, nd);
+      const hint = m.key === "variety"
+        ? "отрядный или покет"
+        : (m.higher ? "больше — лучше" : "меньше — лучше");
+      const worstLine = same
+        ? `<div class="dim">лучший и худший совпали — уровень 10</div>`
+        : `<div class="lo">1 ${escapeHtml(worstNames)} ${escapeHtml(worstTxt)}</div>`;
+      return (
+        `<div class="growth-anchor"><b>${escapeHtml(m.title)}</b>` +
+        `<div class="dim">${hint}</div>` +
+        `<div class="hi">10 ${escapeHtml(bestNames)} ${escapeHtml(bestTxt)}</div>` +
+        worstLine +
+        `<div class="dim">в лестнице ${a.n}</div></div>`
+      );
+    }).join("");
+    const head =
+      growthTh("place", "#", "") +
+      growthTh("nick", "Игрок", "") +
+      growthTh("level", "Уровень", "сумма / " + (data.metricCount || metrics.length || 10)) +
+      growthTh("days", "Дней", "") +
+      growthTh("games", "Каток", "") +
+      metrics.map((m) => {
+        const way = anchors[m.key] && !anchors[m.key].n
+          ? "калибровка"
+          : (m.scored === false || m.key === "variety" ? "без уровня" : (m.higher ? "больше лучше" : "меньше лучше"));
+        return growthTh(m.key, m.title, way);
+      }).join("");
+    const rows = slice.map((p, idx) => {
+      const cells = metrics.map((m) => {
+        const cell = (p.raw && p.raw[m.key]) || {};
+        const nd = GROWTH_ND[m.key] != null ? GROWTH_ND[m.key] : 1;
+        const suffix = growthSuffix(m.key);
+        if (!cell.ok) return `<td class="growth-cal">калибровка</td>`;
+        if (m.scored === false || m.key === "variety") {
+          return `<td>${escapeHtml(growthStyle(cell.v))}</td>`;
+        }
+        const col = growthLvlColor(cell.lvl);
+        return (
+          `<td>${escapeHtml(growthShown(m.key, cell.v, nd))}<br><span style="color:${col};font-weight:700">ур. ${growthComma(cell.lvl, 1)}</span></td>`
+        );
+      }).join("");
+      const lvl = p.level == null
+        ? `<span class="growth-cal">калибровка</span>`
+        : `<span class="growth-lvl" style="background:${growthLvlColor(p.level)}">${growthComma(p.level, 2)}</span>`;
+      const n = start + idx + 1;
+      return (
+        `<tr class="${idx % 2 ? "growth-row-alt" : ""}">` +
+        `<td>${n}</td>` +
+        `<td class="growth-nick">${escapeHtml(p.nick)}</td>` +
+        `<td>${lvl}</td>` +
+        `<td>${p.days}</td>` +
+        `<td>${p.games}</td>` +
+        cells +
+        `</tr>`
+      );
+    }).join("");
+    const withLevel = players.filter((p) => p.level != null).length;
+    const fromN = players.length ? start + 1 : 0;
+    const toN = start + slice.length;
+    const pageBtns = Array.from({ length: pages }, (_, i) => i + 1)
+      .map((n) => `<button type="button" class="growth-page-btn${n === growthPage ? " is-active" : ""}" data-gpage="${n}">${n}</button>`)
+      .join("");
+    const pager = pages > 1
+      ? `<div class="growth-pager">` +
+        `<button type="button" class="growth-page-btn" data-gpage="prev"${growthPage <= 1 ? " disabled" : ""}>←</button>` +
+        pageBtns +
+        `<button type="button" class="growth-page-btn" data-gpage="next"${growthPage >= pages ? " disabled" : ""}>→</button>` +
+        `<span class="muted">${fromN}–${toN} из ${players.length}</span>` +
+        `</div>`
+      : `<div class="growth-pager" hidden></div>`;
+    body.innerHTML =
+      `<div class="growth-sheet-chrome">` +
+      `<button type="button" class="growth-back" data-growth-back>← Развитие</button>` +
+      `<h2 id="tm-growth-modal-title" class="growth-sheet-title">${escapeHtml(data.title || "Стрелок · уровень 1–10")}</h2>` +
+      `<p class="growth-sheet-sub">Окно ${escapeHtml(data.window || "")}. Цифра, только если внутри окна есть 5 дней с данными этого показателя, иначе калибровка. На показателе лучший = 10, худший = 1. Уровень игрока = сумма уровней / ${data.metricCount || metrics.length || 10}. Обновлено ${escapeHtml(when || "—")}.</p>` +
+      `<div class="growth-anchors">${cards}</div>` +
+      `</div>` +
+      `<div class="growth-sheet-table"><table class="growth-table"><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>` +
+      `<div class="growth-sheet-foot">${pager}` +
+      `<p class="growth-sheet-sub">С уровнем ${withLevel} из ${players.length}. ${escapeHtml(data.foot || "Жизнь — от деплоя или подъёма до нока. Нок и убийство — только чужая сторона.")}</p>` +
+      `</div>`;
+    if (!fitKnown) {
+      requestAnimationFrame(() => {
+        const measured = measureGrowthFit();
+        if (!measured) return;
+        growthFit = measured;
+        if (measured < players.length) paintGrowthSheet();
+      });
+    } else {
+      syncGrowthRowHeight();
+    }
+  }
+
+  function onGrowthSheetClick(ev) {
+    const back = ev.target.closest && ev.target.closest("[data-growth-back]");
+    if (back) {
+      if (window.top && window.top !== window.self) window.top.location.href = "/tm?tab=growth";
+      else location.hash = "#/tm/growth";
+      return;
+    }
+    const sortEl = ev.target.closest && ev.target.closest("[data-gsort]");
+    if (sortEl) {
+      const key = sortEl.getAttribute("data-gsort");
+      if (growthSortKey === key) {
+        growthSortDir = growthSortDir === "asc" ? "desc" : "asc";
+      } else {
+        growthSortKey = key;
+        growthSortDir = key === "nick" || key === "place" ? "asc" : "desc";
+      }
+      growthPage = 1;
+      paintGrowthSheet();
+      return;
+    }
+    const pageEl = ev.target.closest && ev.target.closest("[data-gpage]");
+    if (!pageEl || pageEl.disabled) return;
+    const raw = pageEl.getAttribute("data-gpage");
+    const pages = growthFit > 0 && growthLadder
+      ? Math.max(1, Math.ceil((growthLadder.players || []).length / growthFit))
+      : 1;
+    if (raw === "prev") growthPage = Math.max(1, growthPage - 1);
+    else if (raw === "next") growthPage = Math.min(pages, growthPage + 1);
+    else growthPage = Number(raw) || 1;
+    paintGrowthSheet();
+  }
+
+  const GROWTH_FILES = {
+    rifleman: "data/rifle-ladder.json",
+    medic: "data/medic-ladder.json",
+  };
+  let growthSlug = "rifleman";
+
+  function loadGrowthLadder() {
+    const body = document.getElementById("tm-role-body");
+    const file = GROWTH_FILES[growthSlug] || GROWTH_FILES.rifleman;
+    const who = growthSlug === "medic" ? "Медик" : "Стрелок";
+    if (body && !body.querySelector(".growth-table")) {
+      body.innerHTML = `<p class="growth-sheet-sub">Считаю лестницу за последние 14 суток…</p>`;
+    }
+    const url = `${dataUrl(file)}&t=${Date.now()}`;
+    return fetch(url, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(String(r.status)))))
+      .then((data) => renderRifleLadder(data))
+      .catch(() => {
+        if (body) {
+          body.innerHTML = `<h2 class="growth-sheet-title">${who}</h2><p class="growth-sheet-sub">Лестница ещё не лежит на диске. Как только пересчёт за последние 14 суток запишет файл, таблица появится сама.</p>`;
+        }
+      });
+  }
+
+  function openGrowthLadder(slug) {
+    growthSlug = slug || "rifleman";
+    growthLadder = null;
+    growthPage = 1;
+    growthFit = 0;
+    growthRowH = 0;
+    growthSortKey = "level";
+    growthSortDir = "desc";
+    const panel = document.getElementById("tm-role");
+    if (panel) panel.hidden = false;
+    loadGrowthLadder();
+    if (growthTimer) clearInterval(growthTimer);
+    growthTimer = setInterval(() => {
+      if (!panel || panel.hidden) return;
+      loadGrowthLadder();
+    }, 10 * 60 * 1000);
+  }
+
+  function loadRifleLadder() {
+    return loadGrowthLadder();
+  }
+
+  function openRifleLadder() {
+    openGrowthLadder("rifleman");
+  }
+
+  function wireGrowthModal() {
+    const modal = document.getElementById("tm-growth-modal");
+    if (!modal || modal.dataset.wired === "1") return;
+    modal.dataset.wired = "1";
+    modal.querySelectorAll("[data-tm-growth-close]").forEach((el) => {
+      el.addEventListener("click", () => closeRifleLadder());
+    });
+    document.addEventListener("click", (e) => {
+      const root = document.getElementById("tm-role");
+      if (!root || root.hidden || !root.contains(e.target)) return;
+      onGrowthSheetClick(e);
+    });
+    window.addEventListener("resize", () => {
+      if (document.body.classList.contains("layout-tm-growth")) growthFillPage();
+      const role = document.getElementById("tm-role");
+      if (!role || role.hidden || !growthLadder) return;
+      growthFit = 0;
+      growthRowH = 0;
+      paintGrowthSheet();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && modal && !modal.hidden) closeRifleLadder();
+    });
   }
 
   let matchSortKey = "date";
@@ -1235,7 +1829,12 @@
     const tm = document.getElementById("view-tm");
     if (tm) tm.hidden = name !== "tm";
     document.body.classList.toggle("layout-cw", name === "cw" || name === "tm");
-    if (name !== "tm") document.body.classList.remove("layout-tm-rating");
+    if (name !== "tm") {
+      document.body.classList.remove("layout-tm-rating");
+      document.body.classList.remove("layout-tm-growth");
+      growthLeaveRoleMode();
+      closeRifleLadder();
+    }
     document.querySelectorAll(".nav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.nav === name);
     });
@@ -1266,19 +1865,27 @@
   }
 
   function showTmPanel(panel) {
+    /* аналитика ТР — только плашка «в разработке», без перехода */
+    if (panel === "analytics") {
+      openTmDevModal();
+      return;
+    }
     const matches = document.getElementById("tm-matches");
     const rating = document.getElementById("tm-rating");
-    const analytics = document.getElementById("tm-analytics");
     const tiers = document.getElementById("tm-tiers");
+    const growth = document.getElementById("tm-growth");
+    growthLeaveRoleMode();
     if (matches) matches.hidden = panel !== "matches";
     if (rating) rating.hidden = panel !== "rating";
-    if (analytics) analytics.hidden = panel !== "analytics";
     if (tiers) tiers.hidden = panel !== "tiers";
+    if (growth) growth.hidden = panel !== "growth";
     document.body.classList.toggle("layout-tm-rating", panel === "rating");
+    document.body.classList.toggle("layout-tm-growth", panel === "growth");
+    if (panel !== "growth") closeRifleLadder();
     document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
       btn.classList.toggle("active", btn.dataset.tm === panel);
     });
-    setPwrRankScaleVisible("tm-pwr-rank-scale", panel === "rating");
+    setPwrRankScaleVisible("tm-pwr-rank-scale", false);
     if (panel === "matches") {
       ensureTrainingFilters();
       loadSelectedTrainingMonth();
@@ -1287,13 +1894,34 @@
       ensureTrainRatingFilters();
       loadTrainingRating();
     }
-    if (panel === "analytics") {
-      ensureTrainAnalyticsFilters();
-      loadTrainingAnalytics();
-    }
     if (panel === "tiers" && typeof window.loadTfsFit === "function") {
       window.loadTfsFit(dataUrl("data/tfs-fit.json"));
     }
+    if (panel === "growth") {
+      paintGrowthGrid();
+      requestAnimationFrame(() => growthFillPage());
+    } else {
+      const growthPanel = document.getElementById("tm-growth");
+      if (growthPanel) growthPanel.style.minHeight = "";
+    }
+  }
+
+  function growthFillPage() {
+    const panel = document.getElementById("tm-growth");
+    if (!panel || panel.hidden) return;
+    let viewH = window.innerHeight;
+    try {
+      if (window.parent && window.parent !== window && window.frameElement) {
+        const frameTop = window.frameElement.getBoundingClientRect().top;
+        viewH = window.parent.innerHeight - frameTop - 16;
+      }
+    } catch (_) {
+      /* iframe недоступен */
+    }
+    const panelTop = panel.getBoundingClientRect().top + (window.scrollY || 0);
+    const avail = Math.max(640, Math.round(viewH - Math.max(0, panelTop) - 36));
+    panel.style.minHeight = avail + "px";
+    if (typeof notifyEmbedHeight === "function") notifyEmbedHeight();
   }
 
   document.querySelectorAll("[data-nav]").forEach((el) => {
@@ -1303,6 +1931,7 @@
       showView(nav);
       const hash = nav === "cw" ? "#/cw" : nav === "tm" ? "#/tm" : "#/";
       history.replaceState(null, "", hash);
+      mirrorHashToParent();
     });
   });
   document.querySelectorAll("#view-cw .subnav-btn").forEach((btn) => {
@@ -1315,19 +1944,26 @@
             ? "#/cw/analytics"
             : "#/cw";
       history.replaceState(null, "", hash);
+      mirrorHashToParent();
     });
   });
   document.querySelectorAll("#view-tm .subnav-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const tm = btn.dataset.tm;
+      if (tm === "analytics") {
+        openTmDevModal();
+        return;
+      }
       if (hideTiersTab && tm === "tiers") {
         history.replaceState(null, "", "#/tm");
         showTmPanel("matches");
+        mirrorHashToParent();
         return;
       }
       if (tfsEmbed) {
         showTmPanel("tiers");
         history.replaceState(null, "", "#/tm/tiers");
+        mirrorHashToParent();
         return;
       }
       showTmPanel(tm);
@@ -1336,16 +1972,19 @@
         "",
         tm === "rating"
           ? "#/tm/rating"
-          : tm === "analytics"
-            ? "#/tm/analytics"
-            : tm === "hits"
-              ? "#/tm/hits"
-              : tm === "tiers"
-                ? "#/tm/tiers"
+          : tm === "hits"
+            ? "#/tm/hits"
+            : tm === "tiers"
+              ? "#/tm/tiers"
+              : tm === "growth"
+                ? "#/tm/growth"
                 : "#/tm"
       );
+      mirrorHashToParent();
     });
   });
+  wireTmDevModal();
+  wireGrowthModal();
 
   function applyHash() {
     const h = location.hash || "#/";
@@ -1362,18 +2001,25 @@
     }
     if (h.startsWith("#/tm")) {
       showView("tm");
+      const roleMatch = h.match(/^#\/tm\/([a-z0-9-]+)\/?$/);
+      const reservedTm = { rating: 1, hits: 1, tiers: 1, growth: 1, analytics: 1 };
+      if (roleMatch && !reservedTm[roleMatch[1]]) {
+        showGrowthRolePage(roleMatch[1]);
+        return;
+      }
       const wantTiers = h.includes("/tiers") && !hideTiersTab;
       showTmPanel(
         wantTiers
           ? "tiers"
           : h.includes("/hits")
             ? "hits"
-            : h.includes("analytics")
-              ? "analytics"
+            : h.includes("/growth")
+              ? "growth"
               : h.includes("rating")
                 ? "rating"
                 : "matches"
       );
+      if (h.includes("analytics")) openTmDevModal();
     } else if (h.startsWith("#/cw")) {
       showView("cw");
       showCwPanel(
@@ -1386,6 +2032,7 @@
     } else {
       showView("home");
     }
+    mirrorHashToParent();
   }
   window.addEventListener("hashchange", applyHash);
 
@@ -1602,14 +2249,13 @@
     `;
   }
 
-  /** 00:00–00:29 МСК = хвост вечерней тренировки (после 23:59), не утро. */
+  /** Real MSK clock. 00:24 is before 22:03 the same day. */
   function trainEveningMinutes(timeMsk) {
     const t = String(timeMsk || "").trim();
     const m = /^(\d{1,2}):(\d{2})/.exec(t);
     if (!m) return -1;
     const h = Number(m[1]);
     const mi = Number(m[2]);
-    if (h === 0 && mi <= 29) return 24 * 60 + mi;
     return h * 60 + mi;
   }
 
@@ -1828,7 +2474,6 @@
         if (parts.length >= 2) {
           const h = Number(parts[0]);
           const mi = Number(parts[1]);
-          if (h === 0 && mi <= 29) return 24 * 60 + mi;
           return h * 60 + mi;
         }
         return t;
@@ -2023,7 +2668,8 @@
       .map((m) => {
         const st = m.status || "upcoming";
         const clanName = hostClanName(m);
-        return `<tr class="${st} clickable" data-i="${m._i}" tabindex="0" role="button">
+        const bbWin = st === "win" && isBbHostMatch(m) ? " bb-win" : "";
+        return `<tr class="${st}${bbWin} clickable" data-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${monthKey}</td>
           <td class="num">${m.timeMsk || "—"}</td>
           <td>${escapeHtml(clanName)}</td>
@@ -2505,7 +3151,6 @@
         <td class="${tuCls}${tuRec}" title="${escapeHtml(tuTitle)}">${p.calibrating ? tuText : `<strong>${tuText}</strong>`}</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
-        <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr${rec(p.kv, maxKv, false)}">${p.kv}</td>
         <td class="ctr${rec(p.winPct, maxWin, false)}">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         <td class="ctr${rec(p.res, maxRes, false)}">${p.res}</td>
@@ -2597,10 +3242,7 @@
           trainRatingSortDir = trainRatingSortDir === "asc" ? "desc" : "asc";
         } else {
           trainRatingSortKey = key;
-          trainRatingSortDir =
-            key === "nick" || key === "clan" || key === "regNo" || key === "tier"
-              ? "asc"
-              : "desc";
+          trainRatingSortDir = TRAIN_SORT_ASC_FIRST.has(key) ? "asc" : "desc";
         }
         paintTrainingRatingTable();
       });
@@ -2655,8 +3297,11 @@
         const matchList = [];
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
+          rememberTrainDays(bundle.meta, bundle.data.matches);
           (bundle.data.matches || []).forEach((m) => {
-            if (m.playersUrl) matchList.push(m);
+            if (!m.playersUrl) return;
+            if (!trainStatsYmdOk(bundle.meta && bundle.meta.year, bundle.meta && bundle.meta.month, m.day)) return;
+            matchList.push(m);
           });
         });
         return Promise.all(
@@ -2702,16 +3347,17 @@
         };
 
         if (track === "vehicle") {
-          /* Техника: каток = матчи, где был мехвод/наводчик на тяжёлой (не все тренировки) */
+          /* Техника: только те, у кого ≥1 катка мехвод/наводчик на тяжёлой */
           Object.values(ledger?.players || {}).forEach((p) => {
             if (!p?.nick || !inRating(p.nick)) return;
             const hit =
               rpMap.get(resolveNickKey(p.nick)) ||
               rpMap.get(String(p.nick).trim().toLowerCase());
-            if (!hit || !hit.hasVehicle) return;
+            const vehGames = Number(hit?.vehGames) || 0;
+            if (!hit || vehGames <= 0) return;
             const row = touch(p.nick);
             if (!row) return;
-            row.games = hit.vehGames || 0;
+            row.games = vehGames;
             row.res = hit.vehRes || 0;
             row.nok = hit.vehNok || 0;
             row.kills = hit.vehKills || 0;
@@ -2838,7 +3484,9 @@
           });
         }
 
-        trainRatingRows = Array.from(map.values()).map((p) => {
+        trainRatingRows = Array.from(map.values())
+          .filter((p) => track !== "vehicle" || (Number(p.games) || 0) > 0)
+          .map((p) => {
           const winPct =
             p.games > 0 ? Math.round((1000 * p.wins) / p.games) / 10 : null;
           const base = {
@@ -2872,18 +3520,13 @@
           if (ac && ac.accuracyPct != null) p.accuracyPct = Number(ac.accuracyPct);
           else if (p.accuracyPct == null) p.accuracyPct = null;
         });
-        /* Место — по каткам, не по RP */
-        trainRatingRows
-          .slice()
-          .sort(
-            (a, b) =>
-              (Number(b.games) || 0) - (Number(a.games) || 0) ||
-              (Number(b.kills) || 0) - (Number(a.kills) || 0) ||
-              String(a.nick).localeCompare(String(b.nick), "ru")
-          )
-          .forEach((p, i) => {
-            p.place = i + 1;
-          });
+        /* Место = № регистрации на сайте (не меняется от сортировки колонок) */
+        trainRatingRows.forEach((p) => {
+          p.place =
+            p.regNo != null && Number.isFinite(Number(p.regNo))
+              ? Number(p.regNo)
+              : null;
+        });
         const withStats = bundles.filter((b) => b.players).length;
         const scope = document.getElementById("train-rating-scope")?.value || "all";
         const scopeRu =
@@ -2926,6 +3569,7 @@
     mvpKiller: ["MVP", "Killer"],
     mvpArmor: ["MVP", "Armor"],
     mainRole: ["Осн.", "роль"],
+    lvl: ["Уровень", "в разработке"],
   };
 
   function paintTrainingRatingSortMarks() {
@@ -2992,35 +3636,66 @@
       .trim()
       .toLowerCase();
     let rows = trainRatingRows;
+    if (vehTrack) {
+      rows = rows.filter((p) => (Number(p.games) || 0) > 0);
+    }
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
     const dir = trainRatingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
+      const nickTie = () => a.nick.localeCompare(b.nick, "ru");
       if (trainRatingSortKey === "nick" || trainRatingSortKey === "clan") {
-        return (
-          dir *
-          String(a[trainRatingSortKey] || "").localeCompare(
-            String(b[trainRatingSortKey] || ""),
-            "ru"
-          )
+        const d = String(a[trainRatingSortKey] || "").localeCompare(
+          String(b[trainRatingSortKey] || ""),
+          "ru"
         );
+        if (d !== 0) return dir * d;
+        return nickTie();
+      }
+      if (trainRatingSortKey === "mainRole") {
+        const blank = (v) => !v || v === "—";
+        const aBlank = blank(a.mainRole) ? 1 : 0;
+        const bBlank = blank(b.mainRole) ? 1 : 0;
+        if (aBlank !== bBlank) return aBlank - bBlank;
+        const d = String(a.mainRole || "").localeCompare(
+          String(b.mainRole || ""),
+          "ru"
+        );
+        if (d !== 0) return dir * d;
+        return nickTie();
       }
       if (trainRatingSortKey === "tier") {
         const av = Number(a.tier) || 4;
         const bv = Number(b.tier) || 4;
         if (av !== bv) return dir * (av - bv);
-        return a.nick.localeCompare(b.nick, "ru");
+        return nickTie();
       }
-      if (trainRatingSortKey === "regNo") {
-        const av = a.regNo == null ? Number.POSITIVE_INFINITY : Number(a.regNo);
-        const bv = b.regNo == null ? Number.POSITIVE_INFINITY : Number(b.regNo);
+      if (
+        trainRatingSortKey === "regNo" ||
+        trainRatingSortKey === "place"
+      ) {
+        const av =
+          a.regNo == null ? Number.POSITIVE_INFINITY : Number(a.regNo);
+        const bv =
+          b.regNo == null ? Number.POSITIVE_INFINITY : Number(b.regNo);
         if (av !== bv) return dir * (av - bv);
-        return a.nick.localeCompare(b.nick, "ru");
+        return nickTie();
       }
-      if (trainRatingSortKey === "winPct") {
-        const av = a.winPct == null ? -1 : Number(a.winPct);
-        const bv = b.winPct == null ? -1 : Number(b.winPct);
+      if (
+        trainRatingSortKey === "winPct" ||
+        trainRatingSortKey === "accuracyPct" ||
+        trainRatingSortKey === "lvl"
+      ) {
+        /* null / «—» всегда внизу при любом направлении */
+        const rawA = a[trainRatingSortKey];
+        const rawB = b[trainRatingSortKey];
+        const aNull = rawA == null || !Number.isFinite(Number(rawA));
+        const bNull = rawB == null || !Number.isFinite(Number(rawB));
+        if (aNull !== bNull) return aNull ? 1 : -1;
+        if (aNull && bNull) return nickTie();
+        const av = Number(rawA);
+        const bv = Number(rawB);
         if (av !== bv) return dir * (av - bv);
-        return a.nick.localeCompare(b.nick, "ru");
+        return nickTie();
       }
       if (trainRatingSortKey === "res" && vehTrack) {
         const av = Number(a.crewRoleScore) || 0;
@@ -3031,21 +3706,10 @@
           "ru"
         );
       }
-      if (trainRatingSortKey === "mainRole") {
-        const d = String(a.mainRole || "—").localeCompare(
-          String(b.mainRole || "—"),
-          "ru"
-        );
-        if (d !== 0) return dir * d;
-        return a.nick.localeCompare(b.nick, "ru");
-      }
-      if (trainRatingSortKey === "lvl") {
-        return a.nick.localeCompare(b.nick, "ru");
-      }
       const av = Number(a[trainRatingSortKey]) || 0;
       const bv = Number(b[trainRatingSortKey]) || 0;
       if (av !== bv) return dir * (av - bv);
-      return a.nick.localeCompare(b.nick, "ru");
+      return nickTie();
     });
 
     paintTrainingRatingSortMarks();
@@ -3102,7 +3766,6 @@
         <td class="ctr col-pwr">—</td>
         <td class="col-nick">${nickLinkHtml(p.nick)}</td>
         <td class="ctr col-tag">${escapeHtml(p.clan || "—")}</td>
-        <td class="ctr tier tier-${p.tier || 4}">${escapeHtml(tierLabel(p.tier || 4))}</td>
         <td class="ctr">${p.games}</td>
         <td class="ctr">${p.winPct != null ? `${p.winPct}%` : "—"}</td>
         ${roleCell}
@@ -3995,9 +4658,8 @@
       return String(av).localeCompare(String(bv), "ru") * mul;
     });
     tbody.innerHTML = rows
-      .map(({ m, nicks: nn, tierCounts, t1pct }) => {
+      .map(({ m, nicks: nn }) => {
         const st = m.status || "";
-        const hotT1 = t1pct != null && (t1pct >= 55 || t1pct <= 25);
         return `<tr class="${st}">
           <td class="ta-num">${pad(m.day)}.${pad(m._month)}.${m._year}</td>
           <td><strong>${escapeHtml(m.opp || "—")}</strong></td>
@@ -4005,11 +4667,6 @@
           <td class="ctr">${escapeHtml(m.stack || "—")}</td>
           <td class="ctr ta-num">${escapeHtml(formatScoreCell(m))}</td>
           <td class="ctr ta-num">${nn || "—"}</td>
-          <td class="ctr ta-num tier tier-1">${tierCounts[1] || 0}</td>
-          <td class="ctr ta-num tier tier-2">${tierCounts[2] || 0}</td>
-          <td class="ctr ta-num tier tier-3">${tierCounts[3] || 0}</td>
-          <td class="ctr ta-num tier tier-4">${tierCounts[4] || 0}</td>
-          <td class="ctr ta-num${hotT1 ? " ta-hot-cell" : ""}">${t1pct != null ? t1pct + "%" : "—"}</td>
         </tr>`;
       })
       .join("");
@@ -4217,8 +4874,10 @@
         const matchList = [];
         (months || []).forEach((bundle) => {
           if (!bundle || !bundle.data) return;
+          rememberTrainDays(bundle.meta, bundle.data.matches);
           (bundle.data.matches || []).forEach((m) => {
             if (m.status === "upcoming") return;
+            if (!trainStatsYmdOk(bundle.meta && bundle.meta.year, bundle.meta && bundle.meta.month, m.day)) return;
             matchList.push({
               ...m,
               _year: bundle.meta.year,
@@ -5904,6 +6563,15 @@
     return `<td class="ctr ${cls}">${num(value)}</td>`;
   }
 
+  function squadMarkHtml(p) {
+    const n = Number(p && p.squad);
+    if (!n) return "";
+    const side = factionShort(p.squadSide || p.team || "");
+    const name = p.squadName ? ` · ${p.squadName}` : "";
+    const title = `${side} · отряд ${n}${name} · открыл отряд`;
+    return `<span class="squad-mark squad-mark-${n}" title="${escapeHtml(title)}">${n}</span>`;
+  }
+
   function paintPlayers() {
     const isTrain = !!(modalPlayers && modalPlayers._training);
     const hasRounds = isTrain
@@ -5960,7 +6628,7 @@
                 const pd = formatPwrDelta(p.nick);
                 return `<tr>
               <td class="ctr">${i + 1}</td>
-              <td><div class="nick-cell">${nickLinkHtml(p.nick || "—")}${renderMedals(p.nick)}</div></td>
+              <td><div class="nick-cell">${nickLinkHtml(p.nick || "—")}${squadMarkHtml(p)}${renderMedals(p.nick)}</div></td>
               ${cellRecord(p.res, records.res > 0 && p.res === records.res, false)}
               ${cellRecord(p.nok, records.nok > 0 && p.nok === records.nok, false)}
               ${cellRecord(p.kills, records.kills > 0 && p.kills === records.kills, false)}
