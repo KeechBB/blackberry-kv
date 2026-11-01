@@ -123,6 +123,20 @@
       "note": "Junior · FCL · FCL_Mutaha_16 · 16v16 · 20:00 · FCL ARENA #4 · 3/4 vs ALPHA в нояб. · заявка 30.10"
     },
     {
+      "id": "06-dcai",
+      "day": 6,
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
+      "opp": "DCAI",
+      "map": "LC Al Basrah",
+      "size": "26v26",
+      "server": "DCAI",
+      "rules": "LC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · LC · LC_AlBasrah · 26v26 · 20:30 · сервер DCAI · заявка 02.11 · не склеивать с Junior vs ALPHA 20:00 и 20:40"
+    },
+    {
       "id": "06-alpha-2",
       "day": 6,
       "timeMsk": "20:40",
