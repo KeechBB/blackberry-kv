@@ -2,7 +2,7 @@
   "matchId": "01-avg",
   "opp": "AVG",
   "stack": "Junior",
-  "note": "Скрины AVG Training Server · SEC 26 Yehorivka AAS v1 · R1 12:0 · AFU[BB] vs СВ РФ[AVG] · ждём R2 · OSI",
+  "note": "Скрины AVG Training Server · SEC 26 Yehorivka AAS v1 · R1 12:0 · R2 23:0 · сумма 35:0 · встреча 2–0 · AFU[BB] R1 / СВ РФ[BB] R2 · OSI · oppR2 partial (scroll: О5/О6 не полностью на кадрах)",
   "source": "screens",
   "server": "AVG Training Server",
   "map": "SEC 26 Yehorivka AAS v1",
@@ -218,7 +218,217 @@
       "vehicleKills": 1
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "Don Padlo",
+      "res": 0,
+      "nok": 14,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 802
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 129
+    },
+    {
+      "nick": "Forks",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 94
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 207
+    },
+    {
+      "nick": "ADUN",
+      "res": 9,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 124
+    },
+    {
+      "nick": "Koperor",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 83
+    },
+    {
+      "nick": "Chim_Chopa",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 67
+    },
+    {
+      "nick": "akin0v",
+      "res": 2,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 359
+    },
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 23,
+      "kills": 17,
+      "deaths": 9,
+      "dmg": 751,
+      "vehicleKills": 3
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 105
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 15,
+      "kills": 7,
+      "deaths": 10,
+      "dmg": 309
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 74
+    },
+    {
+      "nick": "CORWAX",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 58
+    },
+    {
+      "nick": "CERBER",
+      "res": 0,
+      "nok": 15,
+      "kills": 12,
+      "deaths": 5,
+      "dmg": 380
+    },
+    {
+      "nick": "firo",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 78
+    },
+    {
+      "nick": "m3rz0st",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 164
+    },
+    {
+      "nick": "MadMax",
+      "res": 8,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 148
+    },
+    {
+      "nick": "Trigger",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 182
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 104
+    },
+    {
+      "nick": "T-800",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 179
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 3,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 161
+    },
+    {
+      "nick": "Musker",
+      "res": 1,
+      "nok": 24,
+      "kills": 19,
+      "deaths": 6,
+      "dmg": 520
+    },
+    {
+      "nick": "Trixx",
+      "res": 1,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 550
+    },
+    {
+      "nick": "Oguzok",
+      "res": 9,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 156
+    },
+    {
+      "nick": "Steepioh",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 209
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 200
+    }
+  ],
   "oppR1": [
     {
       "nick": "SapiC-)",
@@ -431,7 +641,176 @@
       "vehicleKills": 3
     }
   ],
-  "oppR2": [],
+  "oppR2": [
+    {
+      "nick": "Dobermann",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 206
+    },
+    {
+      "nick": "Степан",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 130
+    },
+    {
+      "nick": "n1 :)",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 244
+    },
+    {
+      "nick": "That's the one",
+      "res": 2,
+      "nok": 13,
+      "kills": 11,
+      "deaths": 10,
+      "dmg": 316
+    },
+    {
+      "nick": "15cm",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 0
+    },
+    {
+      "nick": "бронхит",
+      "res": 3,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 143
+    },
+    {
+      "nick": "Serj",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 138
+    },
+    {
+      "nick": "Saltsway",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 223
+    },
+    {
+      "nick": "терпение",
+      "res": 1,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 8,
+      "dmg": 290
+    },
+    {
+      "nick": "boris_britva",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 101
+    },
+    {
+      "nick": "SapiC-)",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 114
+    },
+    {
+      "nick": "SnowKeks",
+      "res": 6,
+      "nok": 14,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 322
+    },
+    {
+      "nick": "NND",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 482
+    },
+    {
+      "nick": "pxbz andreyka",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 189
+    },
+    {
+      "nick": "KoMPoT",
+      "res": 12,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 112
+    },
+    {
+      "nick": "Антон Чигур",
+      "res": 1,
+      "nok": 28,
+      "kills": 21,
+      "deaths": 3,
+      "dmg": 569
+    },
+    {
+      "nick": "Yanun",
+      "res": 1,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 146
+    },
+    {
+      "nick": "пакость",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 86
+    },
+    {
+      "nick": "CryHavoc",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 178
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 3,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 96
+    },
+    {
+      "nick": "r3nzy",
+      "res": 3,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 151
+    }
+  ],
   "mvp": {
     "r1": {
       "medic": [
@@ -448,10 +827,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Oguzok"
+      ],
+      "killer": [
+        "Musker"
+      ],
+      "damage": [
+        "Don Padlo"
+      ],
+      "antiDeath": [
+        "ZensU"
+      ]
     }
   }
 }

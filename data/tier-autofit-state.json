@@ -2,7 +2,21 @@
   "updatedAt": "2026-11-02",
   "holdDays": 2,
   "displayDays": 2,
-  "watches": [],
+  "watches": [
+    {
+      "nick": "Musker",
+      "kind": "demote",
+      "fromTier": 2,
+      "toTier": 3,
+      "fit": 50.7,
+      "band": "hard",
+      "role": "Медик",
+      "lever": "Ресы/игра: 24% от эталона роли — чаще поднимай союзников",
+      "since": "2026-11-02",
+      "daysHeld": 0,
+      "ready": false
+    }
+  ],
   "transfers": [
     {
       "nick": "Oguzok",

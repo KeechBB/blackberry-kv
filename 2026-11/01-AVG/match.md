@@ -1,6 +1,6 @@
 # 2026-11-01 — AVG vs BlackBerry Junior
 
-**Раунд 1 сыгран.** Встреча открыта — ждём R2. Победа встречи = сумма тикетов (ничьих нет).
+**Встреча закрыта 2–0** по сумме тикетов **35:0** (ничьих нет).
 
 - **17:00 UTC** / **20:00 МСК**
 - **26v26**
@@ -9,11 +9,15 @@
 - Правила: **SEC** / слой **OSI**
 - Состав: **Junior**
 - **R1:** **12:0** (AFU / BB Junior) — AVG 0
-- **R2:** —
-- Сумма пока: **12:0**
+- **R2:** **23:0** (СВ РФ / BB Junior) — AVG 0
+- **Встреча:** **2–0** · сумма тикетов **35:0**
 
 Лого: `brand/logos/avg.png` + `blackberry-junior.png`.
 
 Стата: `data/players/01-avg.json`.
+
+Послематчевые:
+- R1: [../../previews/2026-11-01-avg-r1-expectations.png](../../previews/2026-11-01-avg-r1-expectations.png)
+- R2: [../../previews/2026-11-01-avg-r2-expectations.png](../../previews/2026-11-01-avg-r2-expectations.png)
 
 Заметки: [analytics.md](analytics.md).

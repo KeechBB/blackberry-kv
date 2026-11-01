@@ -20,7 +20,7 @@
       "id": "01-avg",
       "day": 1,
       "opp": "AVG",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Forks"
@@ -36,10 +36,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Oguzok"
+        ],
+        "killer": [
+          "Musker"
+        ],
+        "damage": [
+          "Don Padlo"
+        ],
+        "antiDeath": [
+          "ZensU"
+        ]
       }
     },
     {
@@ -2298,6 +2306,22 @@
         }
       ]
     },
+    "Don Padlo": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Durik": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -3530,6 +3554,22 @@
         }
       ]
     },
+    "Musker": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "Nestor Mahno": {
       "mvpMedic": 0,
       "mvpKiller": 2,
@@ -3555,11 +3595,19 @@
       ]
     },
     "Oguzok": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "15-hell",
           "day": 15,
@@ -4574,8 +4622,16 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "25-h1gh",
           "day": 25,

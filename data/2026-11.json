@@ -14,10 +14,12 @@
       "server": "AVG",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · AVG Training Server · R1 12:0 · ждём R2 · сумма пока 12:0 · OSI · заявка 30.10",
+      "status": "win",
+      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · AVG Training Server · R1 12:0 · R2 23:0 · сумма 35:0 · встреча 2–0 · OSI",
       "r1": "12:0",
-      "playersUrl": "data/players/01-avg.json"
+      "playersUrl": "data/players/01-avg.json",
+      "r2": "23:0",
+      "meeting": "2–0"
     },
     {
       "id": "01-ns",
