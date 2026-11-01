@@ -1,6 +1,6 @@
-# 2026-11-15 — BlackBerry Main vs Deadline
+# 2026-11-15 — BlackBerry (весь клан) vs Deadline
 
-Ещё не сыграно. Заявка **01.11.2026**. Играет **мейн-стак**.
+Ещё не сыграно. Заявка **01.11.2026**. Играет **весь клан** — и Main, и Junior. Это не слот одного состава.
 
 Новый соперник — **Deadline**. Встреч в архиве нет — **NO SCOUT** / **NO MEETINGS**.
 
@@ -9,7 +9,7 @@
 - Карта: **Al Basrah AAS v3** (`AlBasrah_AAS_v3`)
 - Сервер: **Deadline**
 - Правила: **vanilla**
-- Состав: **мейн-стак**
+- Состав: **весь клан**
 
 Лого: `brand/logos/deadline.jpg` + `blackberry.png`.
 
