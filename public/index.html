@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261026-tm-acc" />
+  <link rel="stylesheet" href="styles.css?v=20261102-tm-pad" />
 </head>
 <body>
   <div class="atmosphere" aria-hidden="true">
@@ -126,6 +126,12 @@
             <span>Месяц</span>
             <select id="rating-month"></select>
           </label>
+          <label class="filter">
+            <span>Клан</span>
+            <select id="rating-clan">
+              <option value="">Все кланы</option>
+            </select>
+          </label>
           <label class="filter filter-grow">
             <span>Поиск ника</span>
             <input id="rating-nick" type="search" placeholder="Ник игрока…" autocomplete="off" />
@@ -140,7 +146,6 @@
             <p><strong>TU</strong> — Ticket Utility: (киллы + ресы − смерти) ÷ катки. Килл забирает тикет у врага, рес сохраняет свой, смерть отдаёт. Может быть минус.</p>
             <p><strong>Калибровка</strong> — меньше 5 каток КВ. Эти игроки внизу таблицы, вместо TU написано «калибровка».</p>
             <p>Лучшая цифра в столбце — жёлтым.</p>
-            <p><strong>RP</strong> — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой.</p>
           </aside>
           <div class="kv-pager" id="cw-rating-pager-top" hidden></div>
           <div class="table-scroll-wrap" data-dual-scroll>
@@ -155,7 +160,6 @@
                   <th class="ctr sortable col-tu" data-rsort="tu" data-label="TU" title="TU — Ticket Utility: средние тикеты команде за игру КВ (киллы + ресы − смерти) / катки">TU</th>
                   <th class="sortable col-nick" data-rsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-rsort="clan" data-label="Клан">Клан</th>
-                  <th class="ctr sortable" data-rsort="tier" data-label="Тир">Тир</th>
                   <th class="ctr sortable" data-rsort="kv" data-label="Каток">Каток</th>
                   <th class="ctr sortable" data-rsort="winPct" data-label="% побед" title="% побед во встречах КВ">% побед</th>
                   <th class="ctr sortable" data-rsort="res" data-label="Ресы">Ресы</th>
@@ -200,6 +204,12 @@
               <option value="all">Все</option>
               <option value="Main">Main</option>
               <option value="Junior">Junior</option>
+            </select>
+          </label>
+          <label class="filter">
+            <span>Клан</span>
+            <select id="cw-an-clan">
+              <option value="">Все кланы</option>
             </select>
           </label>
         </div>
@@ -314,6 +324,7 @@
             <button type="button" class="subnav-btn active" data-tm="matches" role="tab">Матчи</button>
             <button type="button" class="subnav-btn" data-tm="rating" role="tab">Рейтинг игроков</button>
             <button type="button" class="subnav-btn" data-tm="analytics" role="tab">Аналитика</button>
+            <button type="button" class="subnav-btn" data-tm="growth" role="tab">Развитие</button>
           </div>
         </div>
         <div id="tm-pwr-rank-scale" class="pwr-rank-scale" hidden aria-label="RP ranks"></div>
@@ -388,6 +399,12 @@
             <span>Месяц</span>
             <select id="train-rating-month"></select>
           </label>
+          <label class="filter">
+            <span>Клан</span>
+            <select id="train-rating-clan">
+              <option value="">Все кланы</option>
+            </select>
+          </label>
           <label class="filter filter-grow">
             <span>Поиск ника</span>
             <input id="train-rating-nick" type="search" placeholder="Ник игрока…" autocomplete="off" />
@@ -396,7 +413,7 @@
         <section class="board">
           <div class="board-head">
             <h2>Рейтинг игроков · тренировки</h2>
-            <p class="board-sub">Только тренировочные матчи · RP (рейтинговые очки) · MVP только здесь</p>
+            <p class="board-sub">Только тренировочные матчи · основная роль · уровень позже · MVP только здесь</p>
           </div>
           <div class="train-rating-track" role="tablist" aria-label="Тип рейтинга">
             <button type="button" class="train-rating-track-btn is-on" data-train-track="infantry" role="tab" aria-selected="true">Пехота</button>
@@ -411,12 +428,11 @@
             <table class="rating-table" id="train-rating-table">
               <thead>
                 <tr>
-                  <th class="ctr" data-label="Место" title="Место в общем рейтинге по RP (не меняется от поиска)">Место</th>
-                  <th class="ctr sortable col-rank" data-trsort="rp" data-label="Rank" title="Ранг по RP: Iron I→Eclipse III (шаг 150), затем Predator 4951+">Rank</th>
-                  <th class="ctr sortable col-pwr" data-trsort="rp" data-label="RP" title="RP — рейтинговые очки за тренировки: килл/рес сильного даёт больше; смерть от сильного — малый минус, от слабого — большой">RP</th>
+                  <th class="ctr" data-label="Место" title="Место по числу каток (не меняется от поиска)">Место</th>
+                  <th class="ctr sortable col-rank" data-trsort="mainRole" data-label="Осн. роль" title="Основная роль — кит, в котором больше всего времени на тренировках">Осн. роль</th>
+                  <th class="ctr sortable col-pwr" data-trsort="lvl" data-label="lvl" title="Уровень. Пока прочерк, механика будет позже">lvl</th>
                   <th class="sortable" data-trsort="nick" data-label="Ник">Ник</th>
                   <th class="ctr sortable" data-trsort="clan" data-label="Клан">Клан</th>
-                  <th class="ctr sortable" data-trsort="tier" data-label="Тир">Тир</th>
                   <th class="ctr sortable" data-trsort="games" data-label="Каток">Каток</th>
                   <th class="ctr sortable" data-trsort="winPct" data-label="%" data-th2="побед" title="% побед на тренировках"><span class="th-2f"><span class="th-2f-a">%</span><span class="th-2f-b">побед</span></span></th>
                   <th class="ctr sortable" data-trsort="res" data-label="Ресы">Ресы</th>
@@ -464,6 +480,12 @@
           <label class="filter" id="train-an-month-wrap">
             <span>Месяц</span>
             <select id="train-an-month"></select>
+          </label>
+          <label class="filter">
+            <span>Клан</span>
+            <select id="train-an-clan">
+              <option value="">Все кланы</option>
+            </select>
           </label>
         </div>
 
@@ -667,6 +689,23 @@
           <div class="tfs-an-grid" id="tfs-an-body"></div>
         </div>
       </div>
+    <div id="tm-role" class="cw-panel tm-role" hidden>
+        <div id="tm-role-body" class="tm-role-body"></div>
+      </div>
+
+      <div id="tm-growth" class="cw-panel" hidden>
+        <section class="board">
+          <div class="board-head">
+            <h2>Развитие</h2>
+            <p class="board-sub">Каждая роль — свой прямоугольник. Сейчас открыты стрелок и медик, остальные роли в разработке. Окно — последние 14 суток.</p>
+          </div>
+          <div class="growth-grid" id="tm-growth-grid"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  
     </section>
   </main>
 
@@ -697,7 +736,25 @@
     </div>
   </div>
 
-  <script src="app-month.js?v=20261026-tm-acc"></script>
+  <div id="tm-growth-modal" class="tm-growth-modal" hidden>
+    <div class="tm-growth-modal-backdrop" data-tm-growth-close></div>
+    <div class="tm-growth-modal-card" role="dialog" aria-modal="true" aria-labelledby="tm-growth-modal-title">
+      <button type="button" class="tm-growth-modal-close" data-tm-growth-close aria-label="Закрыть">×</button>
+      <div id="tm-growth-modal-body"></div>
+    </div>
+  </div>
+
+  <div id="tm-dev-modal" class="tm-dev-modal" hidden>
+    <div class="tm-dev-modal-backdrop" data-tm-dev-close></div>
+    <div class="tm-dev-modal-card" role="dialog" aria-modal="true" aria-labelledby="tm-dev-modal-title">
+      <button type="button" class="tm-dev-modal-close" data-tm-dev-close aria-label="Закрыть">×</button>
+      <p id="tm-dev-modal-title" class="tm-dev-modal-title">Раздел в разработке</p>
+      <p class="tm-dev-modal-sub">Аналитика тренировок скоро появится здесь.</p>
+    </div>
+  </div>
+
+  
+  <script src="app-month.js?v=20261102-tm-pad"></script>
   <script src="tfs-fit.js?v=20261007-fit-roles"></script>
 </body>
 </html>

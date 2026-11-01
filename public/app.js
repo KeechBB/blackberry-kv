@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261102-alpha-hell-r2";
+    new URLSearchParams(location.search).get("v") || "20261102-tm-pad";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -1571,15 +1571,12 @@
     `;
   }
 
-  /** 00:00–00:29 МСК = хвост вечерней тренировки (после 23:59), не утро. */
+  /** Реальные минуты суток МСК — для хронологии календаря (00:16 раньше 22:24 того же дня). */
   function trainEveningMinutes(timeMsk) {
     const t = String(timeMsk || "").trim();
     const m = /^(\d{1,2}):(\d{2})/.exec(t);
     if (!m) return -1;
-    const h = Number(m[1]);
-    const mi = Number(m[2]);
-    if (h === 0 && mi <= 29) return 24 * 60 + mi;
-    return h * 60 + mi;
+    return Number(m[1]) * 60 + Number(m[2]);
   }
 
   function trainSortValue(m, key) {
@@ -1660,6 +1657,19 @@
     });
   }
 
+  const TRAIN_MATCH_COLS = 11;
+
+  /** Keep the matches board full-page tall even when the month has 1–2 games. */
+  function padMatchRowsHtml(filledCount, colCount, pageSize) {
+    const n = Math.max(0, pageSize - filledCount);
+    if (!n) return "";
+    const cells = Array.from({ length: colCount }, () => "<td>&nbsp;</td>").join("");
+    return Array.from(
+      { length: n },
+      () => `<tr class="pad-row" aria-hidden="true">${cells}</tr>`
+    ).join("");
+  }
+
   function paintTrainingTable() {
     const tbody = document.getElementById("train-rows");
     if (!tbody) return;
@@ -1667,9 +1677,16 @@
     paintTrainSortMarks();
     paintTrainStats(list);
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="10" class="empty-row">Нет тренировок по фильтру</td></tr>`;
+      tbody.innerHTML =
+        `<tr><td colspan="${TRAIN_MATCH_COLS}" class="empty-row">Нет тренировок по фильтру</td></tr>` +
+        padMatchRowsHtml(1, TRAIN_MATCH_COLS, PAGE_TM_MATCHES);
       fillPager("tm-matches-pager-top", 1, 1, 0, PAGE_TM_MATCHES, () => {});
       fillPager("tm-matches-pager-bot", 1, 1, 0, PAGE_TM_MATCHES, () => {});
+      try {
+        requestAnimationFrame(() => notifyEmbedHeight());
+      } catch (_) {
+        notifyEmbedHeight();
+      }
       return;
     }
     const slice = pageSlice(list, pageTmMatches, PAGE_TM_MATCHES);
@@ -1694,12 +1711,13 @@
       PAGE_TM_MATCHES,
       paintPage
     );
-    tbody.innerHTML = slice.rows
-      .map((m) => {
-        const fa = factionShort(m.factionA);
-        const fb = factionShort(m.factionB);
-        const win = factionShort(m.winner);
-        return `<tr class="clickable" data-train-i="${m._i}" tabindex="0" role="button">
+    tbody.innerHTML =
+      slice.rows
+        .map((m) => {
+          const fa = factionShort(m.factionA);
+          const fb = factionShort(m.factionB);
+          const win = factionShort(m.winner);
+          return `<tr class="clickable" data-train-i="${m._i}" tabindex="0" role="button">
           <td>${pad(m.day)}.${trainMonthKey}</td>
           <td class="num">${escapeHtml(m.timeMsk || "—")}</td>
           <td>${escapeHtml(m.map || "—")}</td>
@@ -1712,8 +1730,8 @@
           <td title="${escapeHtml(factionTitle(m.winner))}"><span class="status"><span class="dot win"></span>${escapeHtml(win ? `победа [${win}]` : "—")}</span></td>
           <td class="ctr">—</td>
         </tr>`;
-      })
-      .join("");
+        })
+        .join("") + padMatchRowsHtml(slice.rows.length, TRAIN_MATCH_COLS, PAGE_TM_MATCHES);
 
     tbody.querySelectorAll("tr.clickable").forEach((tr) => {
       const open = () => openMatch(trainMatches[Number(tr.dataset.trainI)]);
@@ -1795,10 +1813,7 @@
         const t = String(m.timeMsk || "");
         const parts = t.split(":");
         if (parts.length >= 2) {
-          const h = Number(parts[0]);
-          const mi = Number(parts[1]);
-          if (h === 0 && mi <= 29) return 24 * 60 + mi;
-          return h * 60 + mi;
+          return Number(parts[0]) * 60 + Number(parts[1]);
         }
         return t;
       }
