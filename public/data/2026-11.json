@@ -15,7 +15,9 @@
       "rules": "SEC",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · сервер AVG · заявка 30.10 · Main vs NS ушёл на 14.11"
+      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · AVG Training Server · R1 12:0 · ждём R2 · сумма пока 12:0 · OSI · заявка 30.10",
+      "r1": "12:0",
+      "playersUrl": "data/players/01-avg.json"
     },
     {
       "id": "01-ns",

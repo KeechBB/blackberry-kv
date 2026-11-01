@@ -17,6 +17,32 @@
   "updated": "2026-09-19",
   "matches": [
     {
+      "id": "01-avg",
+      "day": 1,
+      "opp": "AVG",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Forks"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "MORBIUS"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "01-gm",
       "day": 1,
       "opp": "GM",
@@ -54,7 +80,7 @@
       "id": "03-alpha",
       "day": 3,
       "opp": "ALPHA",
-      "meeting": "2–0",
+      "meeting": null,
       "r1": {
         "medic": [
           "Prolik"
@@ -2353,11 +2379,19 @@
       ]
     },
     "Forks": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 4,
       "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "01-gm",
           "day": 1,
@@ -3259,6 +3293,22 @@
           "day": 15,
           "opp": "IH",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "MORBIUS": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -4674,10 +4724,26 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 8,
-      "mvpDamage": 7,
+      "mvpKiller": 9,
+      "mvpDamage": 8,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "01-avg",
+          "day": 1,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "13-hell",
           "day": 13,
