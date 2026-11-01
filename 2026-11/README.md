@@ -12,3 +12,4 @@
 | 04 | [04-RA](04-RA/match.md) | RA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), сервер FCL · 2/2 vs RA в нояб., [analytics.md](04-RA/analytics.md) |
 | 06 | [06-ALPHA](06-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL ARENA #4 · 3/4 vs ALPHA, [analytics.md](06-ALPHA/analytics.md) |
 | 06 | [06-ALPHA-2](06-ALPHA-2/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:40** МСК (17:40 UTC), FCL ARENA #4 · 4/4 vs ALPHA, [analytics.md](06-ALPHA-2/analytics.md) |
+| 15 | [15-DEADLINE](15-DEADLINE/match.md) | Deadline | **мейн-стак**, Al Basrah AAS v3 (`AlBasrah_AAS_v3`), **48v48**, **19:00** МСК (16:00 UTC), сервер **Deadline**, vanilla, [analytics.md](15-DEADLINE/analytics.md) |
