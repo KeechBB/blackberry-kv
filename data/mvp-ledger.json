@@ -1532,7 +1532,7 @@
       "id": "30-alpha-hell",
       "day": 30,
       "opp": "HELL",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "VoVaN Eshkere Hype"
@@ -1548,10 +1548,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "gondi31"
+        ],
+        "killer": [
+          "Artyrka"
+        ],
+        "damage": [
+          "VoVaN СВИНОПАС ЖИРО"
+        ],
+        "antiDeath": [
+          "gondi31"
+        ]
       }
     },
     {
@@ -1805,6 +1813,22 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Artyrka": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "30-alpha-hell",
+          "day": 30,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -4427,7 +4451,7 @@
     "VoVaN СВИНОПАС ЖИРО": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
         {
@@ -4443,6 +4467,14 @@
           "day": 30,
           "opp": "HELL",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "30-alpha-hell",
+          "day": 30,
+          "opp": "HELL",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -4893,6 +4925,30 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "gondi31": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "30-alpha-hell",
+          "day": 30,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "30-alpha-hell",
+          "day": 30,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },

@@ -47,4 +47,4 @@
 | 26 | [26-ALPHA](26-ALPHA/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:00** МСК (17:00 UTC), FCL · 2-я BlackCoast vs ALPHA (после 03.10), [analytics.md](26-ALPHA/analytics.md) |
 | 26 | [26-GM](26-GM/match.md) | GM | **мейн-стак**, **2–0** · сумма **210:0** (62:0 · 148:0) · HotDrop Narva Skirmish · сервер GM · [analytics.md](26-GM/analytics.md) |
 | 29 | [29-IH](29-IH/match.md) | IH / Iron Horde | **мейн-стак**, HotDrop Yehorivka, **20v20**, **20:30** МСК (17:30 UTC), сервер **FCL ARENA #2**, HOTDROP, [analytics.md](29-IH/analytics.md) |
-| 30 | [30-ALPHA-HELL](30-ALPHA-HELL/match.md) | ALPHA vs HELL | **чужой КВ** · R1 **151:0** · SEC 26 Fallujah AAS v1 · **20v20** · **20:00** МСК · HELL TRAINING · SEC · R2 нет · заявка задним числом 02.11, [analytics.md](30-ALPHA-HELL/analytics.md) |
+| 30 | [30-ALPHA-HELL](30-ALPHA-HELL/match.md) | ALPHA vs HELL | **чужой КВ** · **2–0** · сумма **266:0** (151:0 · 115:0) · SEC 26 Fallujah AAS v1 · **20v20** · **20:00** МСК · HELL TRAINING · SEC · заявка задним числом 02.11, [analytics.md](30-ALPHA-HELL/analytics.md) |

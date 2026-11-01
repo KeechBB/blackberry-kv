@@ -739,10 +739,12 @@
       "server": "HELL TRAINING",
       "rules": "SEC",
       "stack": "—",
-      "status": "upcoming",
+      "status": "win",
+      "meeting": "2–0",
       "r1": "151:0",
+      "r2": "115:0",
       "playersUrl": "data/players/30-alpha-hell.json",
-      "note": "чужой КВ · ALPHA vs HELL · R1 151:0 · SEC_26_Fallujah_AAS_v1 · 20v20 · HELL TRAINING · SEC · заявка задним числом 02.11 · R2 нет · HELL табло свёрнуто · NO SCOUT · NO MEETINGS",
+      "note": "чужой КВ · ALPHA vs HELL · сумма 266:0 (151:0 · 115:0) · ALPHA 2–0 · SEC_26_Fallujah_AAS_v1 · 20v20 · HELL TRAINING · SEC · заявка задним числом 02.11 · HELL табло свёрнуто · NO SCOUT · NO MEETINGS",
       "mode": "SEC"
     },
     {

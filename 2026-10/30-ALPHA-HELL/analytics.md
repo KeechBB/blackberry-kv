@@ -2,6 +2,7 @@
 
 Заявка задним числом 02.11.2026. SEC 26 Fallujah AAS v1 · 20v20 · 20:00 МСК · HELL TRAINING · SEC.
 
-R1: ALPHA 151:0. Скрины только ALPHA развёрнуты; HELL — агрегаты отрядов без ников.
+**FINAL 2–0** сумма **266:0** (R1 151:0 · R2 115:0).
 
-Встреча открыта — ждём R2.
+MVP R1: Medic BiBiF · Killer/War VoVaN СВИНОПАС ЖИРО · Anti SSF LICHER.  
+MVP R2: Medic gondi31 · Killer Artyrka · War VoVaN СВИНОПАС ЖИРО · Anti BiBiF.
