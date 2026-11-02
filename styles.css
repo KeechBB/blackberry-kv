@@ -903,9 +903,9 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .matches-table tbody tr.move td:nth-child(1)::before {
   background: linear-gradient(
     90deg,
-    rgba(251, 146, 60, 0.42) 0%,
-    rgba(251, 146, 60, 0.2) 42%,
-    rgba(251, 146, 60, 0.07) 72%,
+    rgba(251, 146, 60, 0.38) 0%,
+    rgba(251, 146, 60, 0.18) 42%,
+    rgba(251, 146, 60, 0.06) 72%,
     transparent 100%
   );
 }
@@ -939,20 +939,6 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .dot.move { background: #fb923c; color: #fb923c; }
 .matches-table tbody tr.cancel .status { color: #facc15; }
 .matches-table tbody tr.move .status { color: #fb923c; }
-.matches-table tbody tr.cancel td {
-  background-color: rgba(250, 204, 21, 0.12);
-}
-.matches-table tbody tr.move td {
-  background-color: rgba(251, 146, 60, 0.14);
-}
-.matches-table tbody tr.cancel:hover td,
-.matches-table tbody tr.cancel:focus-visible td {
-  background-color: rgba(250, 204, 21, 0.18);
-}
-.matches-table tbody tr.move:hover td,
-.matches-table tbody tr.move:focus-visible td {
-  background-color: rgba(251, 146, 60, 0.2);
-}
 
 .note {
   margin: 18px 4px 0;
