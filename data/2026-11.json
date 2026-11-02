@@ -47,10 +47,12 @@
       "server": "FCL ARENA #2",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
+      "status": "win",
       "r1": "40:0",
+      "r2": "35:16",
+      "meeting": "2–0",
       "playersUrl": "data/players/02-ra.json",
-      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:30 · FCL ARENA #2 (TR2) · R1 40:0 · R2 идёт · 1/2 vs RA в нояб. (вторая 04.11)"
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:30 · FCL ARENA #2 (TR2) · R1 40:0 · R2 35:16 · сумма 75:16 · встреча 2–0"
     },
     {
       "id": "02-grad-st9",
