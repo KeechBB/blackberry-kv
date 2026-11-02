@@ -1426,6 +1426,53 @@ body.modal-open { overflow: hidden; }
     opacity: 1;
   }
 }
+/* Halloween S2: нож/АК — бледно-зелёное (как в рейтинге паблика) */
+.nick-patch-mark[data-patch-id="hw2-knife-hook"],
+.nick-patch-mark[data-patch-id="hw2-ak-pumpkin"] {
+  width: 148px;
+  height: 46px;
+}
+.nick-patch-mark[data-patch-id="hw2-knife-hook"] .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="hw2-ak-pumpkin"] .nick-patch-mark-art {
+  filter:
+    drop-shadow(0 0 5px rgba(120, 210, 140, 0.72))
+    drop-shadow(0 0 12px rgba(90, 180, 120, 0.45))
+    drop-shadow(0 0 20px rgba(70, 160, 100, 0.28));
+  animation: hw2-knife-pale-glow 3.4s ease-in-out infinite;
+}
+.nick-patch-mark[data-patch-id="hw2-knife-hook"]:hover .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="hw2-knife-hook"]:focus-visible .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="hw2-knife-hook"].is-active .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="hw2-ak-pumpkin"]:hover .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="hw2-ak-pumpkin"]:focus-visible .nick-patch-mark-art,
+.nick-patch-mark[data-patch-id="hw2-ak-pumpkin"].is-active .nick-patch-mark-art {
+  animation: none;
+  transform: scaleX(-1) scale(1.1);
+  filter:
+    drop-shadow(0 4px 8px rgba(110, 200, 135, 0.7))
+    drop-shadow(0 0 14px rgba(120, 210, 140, 0.65))
+    drop-shadow(0 0 24px rgba(80, 170, 110, 0.4))
+    brightness(1.08)
+    saturate(1.05);
+  opacity: 1;
+}
+@keyframes hw2-knife-pale-glow {
+  0%,
+  100% {
+    filter:
+      drop-shadow(0 0 5px rgba(120, 210, 140, 0.62))
+      drop-shadow(0 0 12px rgba(90, 180, 120, 0.38))
+      drop-shadow(0 0 18px rgba(70, 160, 100, 0.22));
+    opacity: 0.94;
+  }
+  50% {
+    filter:
+      drop-shadow(0 0 7px rgba(140, 220, 155, 0.82))
+      drop-shadow(0 0 16px rgba(100, 195, 130, 0.55))
+      drop-shadow(0 0 26px rgba(80, 170, 110, 0.32));
+    opacity: 1;
+  }
+}
 .nick-patch-mark[data-patch-id="creator-orange-phantom"] {
   width: 132px;
 }
