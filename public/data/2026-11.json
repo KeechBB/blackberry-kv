@@ -64,11 +64,13 @@
       "server": "HELL TRAINING",
       "rules": "SEC",
       "stack": "—",
-      "status": "upcoming",
+      "status": "win",
       "r1": "134:0",
       "playersUrl": "data/players/02-grad-st9.json",
-      "note": "чужой КВ · GRAD vs ST-9 · SEC 26 GooseBay AAS v1 · 26v26 · HELL TRAINING · OSI · R1 134:0 · R2 ждём · NO SCOUT · NO MEETINGS",
-      "mode": "SEC"
+      "note": "чужой КВ · GRAD vs ST-9 · SEC 26 GooseBay AAS v1 · 26v26 · HELL TRAINING · OSI · R1 134:0 · R2 124:0 · сумма 258:0 · раунды 2-0 · NO SCOUT · NO MEETINGS",
+      "mode": "SEC",
+      "r2": "124:0",
+      "meeting": "2-0"
     },
     {
       "id": "03-alpha",
