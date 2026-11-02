@@ -829,7 +829,8 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .matches-table tbody tr.lose td:nth-child(1),
 .matches-table tbody tr.draw td:nth-child(1),
 .matches-table tbody tr.upcoming td:nth-child(1),
-.matches-table tbody tr.cancel td:nth-child(1) {
+.matches-table tbody tr.cancel td:nth-child(1),
+.matches-table tbody tr.move td:nth-child(1) {
   box-shadow: none;
   position: relative;
   overflow: visible;
@@ -838,7 +839,8 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .matches-table tbody tr.lose td:nth-child(1)::before,
 .matches-table tbody tr.draw td:nth-child(1)::before,
 .matches-table tbody tr.upcoming td:nth-child(1)::before,
-.matches-table tbody tr.cancel td:nth-child(1)::before {
+.matches-table tbody tr.cancel td:nth-child(1)::before,
+.matches-table tbody tr.move td:nth-child(1)::before {
   content: "";
   position: absolute;
   left: 0;
@@ -892,9 +894,18 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .matches-table tbody tr.cancel td:nth-child(1)::before {
   background: linear-gradient(
     90deg,
-    rgba(155, 147, 176, 0.28) 0%,
-    rgba(155, 147, 176, 0.12) 42%,
-    rgba(155, 147, 176, 0.04) 72%,
+    rgba(250, 204, 21, 0.38) 0%,
+    rgba(250, 204, 21, 0.18) 42%,
+    rgba(250, 204, 21, 0.06) 72%,
+    transparent 100%
+  );
+}
+.matches-table tbody tr.move td:nth-child(1)::before {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 146, 60, 0.42) 0%,
+    rgba(251, 146, 60, 0.2) 42%,
+    rgba(251, 146, 60, 0.07) 72%,
     transparent 100%
   );
 }
@@ -902,7 +913,8 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .matches-table tbody tr.lose td:nth-child(1),
 .matches-table tbody tr.draw td:nth-child(1),
 .matches-table tbody tr.upcoming td:nth-child(1),
-.matches-table tbody tr.cancel td:nth-child(1) {
+.matches-table tbody tr.cancel td:nth-child(1),
+.matches-table tbody tr.move td:nth-child(1) {
   z-index: 1;
 }
 
@@ -923,8 +935,24 @@ tbody tr.clickable:focus-visible td { background: rgba(167, 139, 250, 0.14); out
 .dot.lose { background: var(--lose); color: var(--lose); }
 .dot.draw { background: var(--draw); color: var(--draw); }
 .dot.upcoming { background: var(--soon); color: var(--soon); }
-.dot.cancel { background: var(--muted); color: var(--muted); }
-.dot.move { background: var(--muted); color: var(--muted); }
+.dot.cancel { background: #facc15; color: #facc15; }
+.dot.move { background: #fb923c; color: #fb923c; }
+.matches-table tbody tr.cancel .status { color: #facc15; }
+.matches-table tbody tr.move .status { color: #fb923c; }
+.matches-table tbody tr.cancel td {
+  background-color: rgba(250, 204, 21, 0.12);
+}
+.matches-table tbody tr.move td {
+  background-color: rgba(251, 146, 60, 0.14);
+}
+.matches-table tbody tr.cancel:hover td,
+.matches-table tbody tr.cancel:focus-visible td {
+  background-color: rgba(250, 204, 21, 0.18);
+}
+.matches-table tbody tr.move:hover td,
+.matches-table tbody tr.move:focus-visible td {
+  background-color: rgba(251, 146, 60, 0.2);
+}
 
 .note {
   margin: 18px 4px 0;
