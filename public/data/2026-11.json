@@ -37,8 +37,8 @@
     {
       "id": "02-ra",
       "day": 2,
-      "timeMsk": "20:00",
-      "timeUtc": "17:00",
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
       "opp": "RA",
       "map": "FCL Mutaha",
       "size": "16v16",
@@ -46,7 +46,7 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL Mutaha · 16v16 · FCL · 1/2 vs RA в нояб. (вторая 04.11)"
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:30 · перенос с 20:00 · FCL · 1/2 vs RA в нояб. (вторая 04.11)"
     },
     {
       "id": "02-grad-st9",
