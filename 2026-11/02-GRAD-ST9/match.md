@@ -1,14 +1,18 @@
 ﻿# 2026-11-02 — GRAD vs ST-9
 
-Чужой КВ (не BlackBerry). Регистрация на сайте по тем же правилам календаря (тикет-сумма, win/lose/upcoming/cancel, NO SCOUT / NO MEETINGS).
+Чужой КВ (не BlackBerry). Встреча **не закрыта**: есть только R1.
 
 - **17:00 UTC** / **20:00 МСК**
 - **26v26**
-- Карта: **SEC 26 GooseBay AAS v1** (`SEC_26_GooseBay_AAS_v1`)
-- Сервер: **DeadLine**
-- Правила: **SEC**
-- Стороны: **GRAD** vs **ST-9**
+- Карта: **SEC 26 GooseBay AAS v1**
+- Сервер: **HELL TRAINING** (в заявке был DeadLine)
+- Правила: **SEC** · слой **OSI**
+- **R1:** **134:0** — GRAD (ВДВ РФ) 134, ST-9 (КВС) 0. 30:37. Решающая победа.
+- **R2:** ждём
+- Сумма пока **134:0**. Ничьей нет, встречу не закрываем.
 
-Лого GRAD: `brand/logos/grad.png`. Лого ST-9 — нет (только текст).
+Лого GRAD: `brand/logos/grad.png`. Лого ST-9 нет.
 
-Счёт и скрины — после катки. Заметки: [analytics.md](analytics.md).
+Стата GRAD: `data/players/02-grad-st9.json`. Табло ST-9 на скринах было свёрнуто, личных строк нет.
+
+Заметки: [analytics.md](analytics.md).

@@ -1,0 +1,229 @@
+{
+  "matchId": "02-grad-st9",
+  "clan": "GRAD",
+  "opp": "ST-9",
+  "note": "чужой КВ · R1 134:0 · ВДВ РФ (GRAD) · КВС 0 · 30:37 · SEC 26 GooseBay AAS v1 · HELL TRAINING · OSI · табло ST-9 свёрнуто, личных строк нет · R2 ждём",
+  "server": "HELL TRAINING",
+  "map": "SEC 26 GooseBay AAS v1",
+  "r1": [
+    {
+      "nick": "pxbz andreyka",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 184
+    },
+    {
+      "nick": "Morietsu",
+      "res": 0,
+      "nok": 18,
+      "kills": 13,
+      "deaths": 5,
+      "dmg": 357
+    },
+    {
+      "nick": "Delta877",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 128
+    },
+    {
+      "nick": "TicketToHawaii",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 272
+    },
+    {
+      "nick": "диба",
+      "res": 3,
+      "nok": 15,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 253
+    },
+    {
+      "nick": "SHALFEY",
+      "res": 0,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 174
+    },
+    {
+      "nick": "zaxinyy",
+      "res": 1,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 288
+    },
+    {
+      "nick": "Fokusma",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 1
+    },
+    {
+      "nick": "shavadros",
+      "res": 2,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 624
+    },
+    {
+      "nick": "Ske-let",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 81
+    },
+    {
+      "nick": "VeD9uK",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 508
+    },
+    {
+      "nick": "Limbo",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 502
+    },
+    {
+      "nick": "neArtic",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 584
+    },
+    {
+      "nick": "bobruxa",
+      "res": 1,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 0,
+      "dmg": 714
+    },
+    {
+      "nick": "Zai4ik",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 132
+    },
+    {
+      "nick": "каска",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 121
+    },
+    {
+      "nick": "Mazino",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 103
+    },
+    {
+      "nick": "SharFix",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 41
+    },
+    {
+      "nick": "Пузо",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 10
+    },
+    {
+      "nick": "Kyzik",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 6
+    },
+    {
+      "nick": "Миша Навальный",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 6
+    },
+    {
+      "nick": "K1pSa",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 166
+    },
+    {
+      "nick": "BarsikDPR",
+      "res": 0,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 331
+    },
+    {
+      "nick": "Metалист",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 132
+    }
+  ],
+  "r2": [],
+  "oppR1": [],
+  "oppR2": [],
+  "details": {
+    "r1": {
+      "tickets": "134:0",
+      "len": "30:37"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Limbo"
+      ],
+      "killer": [
+        "Morietsu"
+      ],
+      "damage": [
+        "bobruxa"
+      ],
+      "antiDeath": [
+        "TicketToHawaii"
+      ]
+    }
+  }
+}
