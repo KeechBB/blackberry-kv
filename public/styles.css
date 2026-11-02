@@ -1290,40 +1290,44 @@ body.modal-open { overflow: hidden; }
     background-position: -45% 0;
   }
 }
-/* Halloween S2 · Фиолетовая готика */
+/* Halloween S2 · Неоновая жатва */
 .nick-profile-link.is-halloween-gothic,
 .nick-plain.is-halloween-gothic {
   position: relative;
   display: inline-block;
+  overflow: visible;
   color: transparent;
   border-bottom: 0;
   background:
     linear-gradient(
       180deg,
-      #fff4e0 0%,
-      #ffd089 16%,
-      #ff9a2e 38%,
-      #e85d04 58%,
-      #9a3412 78%,
-      #ffb347 100%
+      #f3ffe9 0%,
+      #c8ff7a 12%,
+      #57ff20 34%,
+      #22c55e 54%,
+      #15803d 76%,
+      #86efac 100%
     );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1.2px rgba(255, 255, 255, 0.92);
-  paint-order: stroke fill;
+  -webkit-text-stroke: 0;
   font-family: Oxanium, Manrope, sans-serif;
-  font-size: 1.26rem;
+  font-size: 1.28rem;
   font-weight: 900;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.028em;
   line-height: 1.05;
   text-transform: none;
-  filter:
-    drop-shadow(0 1px 0 rgba(255, 255, 255, 0.55))
-    drop-shadow(0 2px 0 rgba(154, 52, 18, 0.85))
-    drop-shadow(0 3px 1px rgba(0, 0, 0, 0.55))
-    drop-shadow(0 0 6px rgba(255, 140, 40, 0.35));
-  transition: filter 0.16s ease;
+  text-shadow:
+    0 1px 0 #0f3d1a,
+    0 2px 0 #0a2e14,
+    0 3px 0 #06200e,
+    0 4px 3px rgba(0, 0, 0, 0.45),
+    0 0 6px rgba(87, 255, 32, 0.85),
+    0 0 14px rgba(57, 255, 20, 0.45),
+    0 0 22px rgba(34, 197, 94, 0.25);
+  transition: text-shadow 0.16s ease;
+  animation: hw2-neon-nick-breathe 4.8s ease-in-out infinite;
 }
 .nick-profile-link.is-halloween-gothic::before,
 .nick-plain.is-halloween-gothic::before {
@@ -1333,51 +1337,79 @@ body.modal-open { overflow: hidden; }
   z-index: -1;
   pointer-events: none;
   color: transparent;
-  -webkit-text-stroke: 0;
-  background: linear-gradient(180deg, #7c2d12 0%, #431407 100%);
+  background: linear-gradient(180deg, #14532d 0%, #052e16 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font: inherit;
   letter-spacing: inherit;
-  transform: translate(1.2px, 1.6px);
-  filter: blur(0.2px);
-  opacity: 0.9;
+  transform: translate(1.5px, 2.2px);
+  opacity: 0.95;
 }
 .nick-profile-link.is-halloween-gothic::after,
 .nick-plain.is-halloween-gothic::after {
-  content: attr(data-text);
+  content: "";
   position: absolute;
-  inset: 0;
+  left: 16%;
+  bottom: -1px;
+  width: 4px;
+  height: 9px;
   pointer-events: none;
-  color: transparent;
+  z-index: 2;
   background:
-    linear-gradient(
-      105deg,
-      transparent 20%,
-      rgba(255, 250, 240, 0.15) 38%,
-      rgba(255, 255, 255, 0.85) 48%,
-      rgba(255, 200, 120, 0.25) 58%,
-      transparent 74%
-    );
-  background-position: 145% 0;
-  background-size: 240% 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font: inherit;
-  letter-spacing: inherit;
-  animation: aurum-clean-nick-shine 5.6s ease-in-out infinite;
+    radial-gradient(circle at 32% 22%, rgba(255, 200, 200, 0.7) 0 18%, transparent 19%),
+    radial-gradient(ellipse 70% 40% at 50% 92%, #3b0a10 0 55%, transparent 56%),
+    linear-gradient(180deg, #fb7185 0%, #e11d48 30%, #9f1239 68%, #450a0a 100%);
+  border-radius: 40% 40% 55% 55% / 22% 22% 78% 78%;
+  box-shadow:
+    0 -1px 0 0.5px #be123c,
+    0 0 3px rgba(185, 28, 28, 0.55),
+    34px 1px 0 0 #e11d48,
+    34px 6px 0 -0.5px #7f1d1d,
+    34px -1px 0 0.4px #be123c,
+    34px 0 3px rgba(185, 28, 28, 0.4),
+    58px 0 0 -0.2px #dc2626,
+    58px 4px 0 -0.8px #7f1d1d,
+    58px -1px 0 0.2px #be123c,
+    58px 0 2px rgba(153, 27, 27, 0.35);
+  opacity: 0.95;
 }
 .nick-profile-link.is-halloween-gothic:hover,
 .nick-profile-link.is-halloween-gothic:focus-visible {
   color: transparent;
   border-bottom: 0;
-  filter:
-    drop-shadow(0 1px 0 rgba(255, 255, 255, 0.7))
-    drop-shadow(0 2px 0 rgba(154, 52, 18, 0.9))
-    drop-shadow(0 3px 2px rgba(0, 0, 0, 0.6))
-    drop-shadow(0 0 9px rgba(255, 150, 50, 0.5));
+  animation: none;
+  text-shadow:
+    0 1px 0 #0f3d1a,
+    0 2px 0 #0a2e14,
+    0 3px 0 #06200e,
+    0 4px 3px rgba(0, 0, 0, 0.5),
+    0 0 8px rgba(140, 255, 90, 0.95),
+    0 0 18px rgba(57, 255, 20, 0.6),
+    0 0 28px rgba(34, 197, 94, 0.35);
+}
+@keyframes hw2-neon-nick-breathe {
+  0%,
+  100% {
+    text-shadow:
+      0 1px 0 #0f3d1a,
+      0 2px 0 #0a2e14,
+      0 3px 0 #06200e,
+      0 4px 3px rgba(0, 0, 0, 0.45),
+      0 0 5px rgba(87, 255, 32, 0.7),
+      0 0 12px rgba(57, 255, 20, 0.35),
+      0 0 20px rgba(34, 197, 94, 0.2);
+  }
+  50% {
+    text-shadow:
+      0 1px 0 #0f3d1a,
+      0 2px 0 #0a2e14,
+      0 3px 0 #06200e,
+      0 4px 3px rgba(0, 0, 0, 0.45),
+      0 0 8px rgba(140, 255, 90, 0.95),
+      0 0 18px rgba(57, 255, 20, 0.55),
+      0 0 28px rgba(34, 197, 94, 0.32);
+  }
 }
 .rating-table td.col-nick .nick-profile-link.is-metallic-gold,
 .rating-table td.col-nick .nick-plain.is-metallic-gold,
