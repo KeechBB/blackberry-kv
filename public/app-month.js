@@ -88,6 +88,8 @@
     return v == null || !Number.isFinite(Number(v)) ? -1e9 : Number(v);
   }
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
+  const CLANS_URL = "https://bb-squad.ru/api/public/clans";
+  let siteClans = [];
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
   const KIT_SLICE_COLORS = [
@@ -1475,6 +1477,79 @@
       .replace(/"/g, "&quot;");
   }
 
+  function loadSiteClans() {
+    return fetch(CLANS_URL, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : { clans: [] }))
+      .then((data) => {
+        siteClans = Array.isArray(data.clans) ? data.clans : [];
+        ["rating-clan", "train-rating-clan", "cw-an-clan", "train-an-clan"].forEach(
+          (id) => fillClanSelect(id, [])
+        );
+        return siteClans;
+      })
+      .catch(() => {
+        siteClans = [];
+        return siteClans;
+      });
+  }
+
+  function fillClanSelect(id, extraRows) {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    const prev = sel.value;
+    const byKey = new Map();
+    siteClans.forEach((c) => {
+      const tag = String(c.tag || "").trim();
+      if (!tag) return;
+      byKey.set(tag.toLowerCase(), { tag, name: String(c.name || "").trim() });
+    });
+    (extraRows || []).forEach((p) => {
+      const tag = String(p && p.clan ? p.clan : "").trim();
+      if (!tag || tag === "—") return;
+      const key = tag.toLowerCase();
+      if (!byKey.has(key)) byKey.set(key, { tag, name: "" });
+    });
+    const list = [...byKey.values()].sort((a, b) =>
+      a.tag.localeCompare(b.tag, "ru", { sensitivity: "base" })
+    );
+    sel.innerHTML =
+      `<option value="">Все кланы</option>` +
+      list
+        .map((c) => {
+          const label =
+            c.name && c.name.toUpperCase() !== c.tag.toUpperCase()
+              ? `${c.tag} · ${c.name}`
+              : c.tag;
+          return `<option value="${escapeHtml(c.tag)}">${escapeHtml(label)}</option>`;
+        })
+        .join("");
+    if (prev && [...sel.options].some((o) => o.value === prev)) sel.value = prev;
+  }
+
+  function selectedClanTag(id) {
+    return String(document.getElementById(id)?.value || "").trim();
+  }
+
+  function sameClan(a, b) {
+    return String(a || "").trim().toLowerCase() === String(b || "").trim().toLowerCase();
+  }
+
+  function bundleHasClan(bundle, tag) {
+    if (!tag) return true;
+    const pj = bundle && bundle.players;
+    if (!pj) return false;
+    const lines = [].concat(
+      pj.r1 || [],
+      pj.r2 || [],
+      pj.oppR1 || [],
+      pj.oppR2 || [],
+      pj.players || []
+    );
+    return lines.some(
+      (p) => p && p.nick && sameClan(rosterOf(p.nick).clan, tag)
+    );
+  }
+
   function num(v) {
     return v == null || v === "" ? "—" : escapeHtml(v);
   }
@@ -2106,6 +2181,13 @@
       pageCwRating = 1;
       paintRatingTable();
     });
+    const ratingClanEl = document.getElementById("rating-clan");
+    if (ratingClanEl) {
+      ratingClanEl.addEventListener("change", () => {
+        pageCwRating = 1;
+        paintRatingTable();
+      });
+    }
 
     if (years.length) {
       const now = mskNowYm();
@@ -2994,6 +3076,7 @@
         note.textContent = withStats
           ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. В рейтинге только зареганные: ${ratingRows.length}${orphanN > 0 ? ` (ещё ${orphanN} с табло ждут регистрацию)` : ""}. Сортировка по умолчанию — TU. Меньше 5 каток — калибровка, внизу таблицы.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
+        fillClanSelect("rating-clan", ratingRows);
         paintRatingTable();
       })
       .catch((err) => {
@@ -3035,7 +3118,9 @@
 
   function paintRatingTable() {
     const q = (document.getElementById("rating-nick").value || "").trim().toLowerCase();
+    const clanTag = selectedClanTag("rating-clan");
     let rows = ratingRows;
+    if (clanTag) rows = rows.filter((p) => sameClan(p.clan, clanTag));
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
     const dir = ratingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
@@ -3252,6 +3337,13 @@
     const nickEl = document.getElementById("train-rating-nick");
     if (nickEl) {
       nickEl.addEventListener("input", () => {
+        pageTmRating = 1;
+        paintTrainingRatingTable();
+      });
+    }
+    const trainClanEl = document.getElementById("train-rating-clan");
+    if (trainClanEl) {
+      trainClanEl.addEventListener("change", () => {
         pageTmRating = 1;
         paintTrainingRatingTable();
       });
@@ -3556,6 +3648,7 @@
         note.textContent = withStats
           ? `Период: ${scopeRu}. Режим: ${trackRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
           : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
+        fillClanSelect("train-rating-clan", trainRatingRows);
         paintTrainingRatingTable();
         ensureMainRoles().then(() => {
           let changed = false;
@@ -3656,10 +3749,12 @@
     const q = (document.getElementById("train-rating-nick")?.value || "")
       .trim()
       .toLowerCase();
+    const clanTag = selectedClanTag("train-rating-clan");
     let rows = trainRatingRows;
     if (vehTrack) {
       rows = rows.filter((p) => (Number(p.games) || 0) > 0);
     }
+    if (clanTag) rows = rows.filter((p) => sameClan(p.clan, clanTag));
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
     const dir = trainRatingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
@@ -3897,6 +3992,8 @@
     });
     monthSel.addEventListener("change", reload);
     if (stackEl) stackEl.addEventListener("change", reload);
+    const clanEl = document.getElementById("cw-an-clan");
+    if (clanEl) clanEl.addEventListener("change", reload);
     if (years.length) {
       yearSel.value = String(years[0]);
       syncMonths();
@@ -3978,7 +4075,11 @@
         );
       })
       .then((bundles) => {
-        paintCwAnalytics(bundles || []);
+        const tag = selectedClanTag("cw-an-clan");
+        const list = tag
+          ? (bundles || []).filter((b) => bundleHasClan(b, tag))
+          : bundles || [];
+        paintCwAnalytics(list);
       })
       .catch((err) => {
         note.textContent = String(err.message || err);
@@ -4560,6 +4661,8 @@
       loadTrainingAnalytics();
     });
     monthSel.addEventListener("change", loadTrainingAnalytics);
+    const trainAnClanEl = document.getElementById("train-an-clan");
+    if (trainAnClanEl) trainAnClanEl.addEventListener("change", loadTrainingAnalytics);
     if (years.length) {
       yearSel.value = String(years[0]);
       syncMonths();
@@ -4919,7 +5022,11 @@
         ).then((bundles) => ({ bundles, ledger }));
       })
       .then(({ bundles, ledger }) => {
-        paintTrainingAnalytics(bundles || [], ledger);
+        const tag = selectedClanTag("train-an-clan");
+        const list = tag
+          ? (bundles || []).filter((b) => bundleHasClan(b, tag))
+          : bundles || [];
+        paintTrainingAnalytics(list, ledger);
       })
       .catch((err) => {
         note.textContent = String(err.message || err);
@@ -6801,6 +6908,7 @@
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null),
     loadRoster(),
+    loadSiteClans(),
     loadNickPatches(),
   ])
     .then(([data, tiers, trainIdx, factions]) => {
