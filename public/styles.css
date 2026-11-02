@@ -1307,10 +1307,8 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.03em;
   line-height: 1.05;
   text-transform: none;
-  text-shadow:
-    0 0 6px rgba(255, 42, 42, 0.9),
-    0 0 14px rgba(255, 20, 20, 0.5);
-  transition: text-shadow 0.16s ease, color 0.16s ease;
+  text-shadow: none;
+  transition: color 0.16s ease;
 }
 .nick-profile-link.is-halloween-gothic::before,
 .nick-plain.is-halloween-gothic::before,
@@ -1323,9 +1321,7 @@ body.modal-open { overflow: hidden; }
   color: #FF5555;
   -webkit-text-fill-color: #FF5555;
   border-bottom: 0;
-  text-shadow:
-    0 0 8px rgba(255, 85, 85, 0.95),
-    0 0 18px rgba(255, 42, 42, 0.6);
+  text-shadow: none;
 }
 .rating-table td.col-nick .nick-profile-link.is-metallic-gold,
 .rating-table td.col-nick .nick-plain.is-metallic-gold,
