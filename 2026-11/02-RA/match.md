@@ -1,21 +1,23 @@
 # 2026-11-02 — RA vs BlackBerry Junior
 
-Ещё не сыграно. Заявка **28.10.2026**. Играет **Junior**.
+**Раунд 1 сыгран.** Встреча открыта — ждём R2. Победа встречи = сумма тикетов (ничьих нет).
+
+Заявка **28.10.2026**. Играет **Junior**. Старт перенесён с 20:00 на **20:30**. Играли на **TR2**.
 
 **1-я из 2** встреч Junior vs RA в ноябре (вторая — [04-RA](../04-RA/match.md), та же карта/формат).
 
-Ранее Junior vs RA:
-
-- **13.10** / **15.10** — FCL 8v8, **отмена**
-- **21.10** — HotDrop Narva 16v16, **2–0**, сумма **232:0**
-
-- **17:30 UTC** / **20:30 МСК** (перенос с 20:00)
+- **17:30 UTC** / **20:30 МСК**
 - **16v16**
 - Карта: **FCL Mutaha**
-- Сервер: **FCL**
+- Сервер: **FCL ARENA #2** (TR2)
 - Правила: **FCL**
 - Состав: **Junior**
+- **R1:** **40:0** — мы USA (10th Mountain), они RGF (1398th) **0**. Около 21 мин.
+- **R2:** —
+- Сумма пока: **40:0**
 
-Лого: `brand/logos/ra.png` + `blackberry.png` (тег BB JUNIOR).
+Лого: `brand/logos/ra.png` + `blackberry-junior.png`.
 
-Превью: [../../previews/2026-11-02-ra-fcl-mutaha.png](../../previews/2026-11-02-ra-fcl-mutaha.png). Заметки: [analytics.md](analytics.md).
+Стата: `data/players/02-ra.json`.
+
+Заметки: [analytics.md](analytics.md).
