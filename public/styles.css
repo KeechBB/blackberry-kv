@@ -1290,16 +1290,16 @@ body.modal-open { overflow: hidden; }
     background-position: -45% 0;
   }
 }
-/* Halloween S2 · Неоновая жатва — яркий плоский неон, без объёма */
+/* Halloween S2 · Алая жатва — ярко-алый плоский неон, без объёма */
 .nick-profile-link.is-halloween-gothic,
 .nick-plain.is-halloween-gothic {
   position: relative;
   display: inline-block;
   overflow: visible;
-  color: #7CFF3A;
+  color: #FF2A2A;
   border-bottom: 0;
   background: none;
-  -webkit-text-fill-color: #7CFF3A;
+  -webkit-text-fill-color: #FF2A2A;
   -webkit-text-stroke: 0;
   font-family: Oxanium, Manrope, sans-serif;
   font-size: 1.28rem;
@@ -1308,8 +1308,8 @@ body.modal-open { overflow: hidden; }
   line-height: 1.05;
   text-transform: none;
   text-shadow:
-    0 0 6px rgba(124, 255, 58, 0.85),
-    0 0 14px rgba(57, 255, 20, 0.45);
+    0 0 6px rgba(255, 42, 42, 0.9),
+    0 0 14px rgba(255, 20, 20, 0.5);
   transition: text-shadow 0.16s ease, color 0.16s ease;
 }
 .nick-profile-link.is-halloween-gothic::before,
@@ -1320,12 +1320,12 @@ body.modal-open { overflow: hidden; }
 }
 .nick-profile-link.is-halloween-gothic:hover,
 .nick-profile-link.is-halloween-gothic:focus-visible {
-  color: #A8FF66;
-  -webkit-text-fill-color: #A8FF66;
+  color: #FF5555;
+  -webkit-text-fill-color: #FF5555;
   border-bottom: 0;
   text-shadow:
-    0 0 8px rgba(168, 255, 102, 0.95),
-    0 0 18px rgba(124, 255, 58, 0.55);
+    0 0 8px rgba(255, 85, 85, 0.95),
+    0 0 18px rgba(255, 42, 42, 0.6);
 }
 .rating-table td.col-nick .nick-profile-link.is-metallic-gold,
 .rating-table td.col-nick .nick-plain.is-metallic-gold,
