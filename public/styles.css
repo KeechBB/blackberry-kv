@@ -1290,7 +1290,7 @@ body.modal-open { overflow: hidden; }
     background-position: -45% 0;
   }
 }
-/* Halloween S2 · Неоновая жатва */
+/* Halloween S2 · Неоновая жатва — объёмные буквы без glow-подложки */
 .nick-profile-link.is-halloween-gothic,
 .nick-plain.is-halloween-gothic {
   position: relative;
@@ -1301,13 +1301,12 @@ body.modal-open { overflow: hidden; }
   background:
     linear-gradient(
       180deg,
-      #ffffff 0%,
-      #eaffb8 10%,
-      #b8ff3d 28%,
-      #7cff14 48%,
-      #39ff14 68%,
-      #a8ff5c 88%,
-      #d4ff9a 100%
+      #ecfdf5 0%,
+      #bbf7d0 14%,
+      #86efac 32%,
+      #4ade80 52%,
+      #22c55e 78%,
+      #6ee7b7 100%
     );
   background-clip: text;
   -webkit-background-clip: text;
@@ -1316,19 +1315,17 @@ body.modal-open { overflow: hidden; }
   font-family: Oxanium, Manrope, sans-serif;
   font-size: 1.28rem;
   font-weight: 900;
-  letter-spacing: 0.028em;
+  letter-spacing: 0.03em;
   line-height: 1.05;
   text-transform: none;
   text-shadow:
     0 1px 0 #14532d,
     0 2px 0 #0f3d1a,
-    0 3px 0 #06200e,
-    0 4px 3px rgba(0, 0, 0, 0.5),
-    0 0 8px rgba(140, 255, 60, 0.95),
-    0 0 16px rgba(57, 255, 20, 0.65),
-    0 0 28px rgba(57, 255, 20, 0.35);
+    0 3px 0 #052e16,
+    0 4px 1px rgba(0, 0, 0, 0.45),
+    0 0 1px rgba(236, 253, 245, 0.9),
+    0 0 4px rgba(74, 222, 128, 0.75);
   transition: text-shadow 0.16s ease;
-  animation: hw2-neon-nick-breathe 4.8s ease-in-out infinite;
 }
 .nick-profile-link.is-halloween-gothic::before,
 .nick-plain.is-halloween-gothic::before {
@@ -1344,8 +1341,8 @@ body.modal-open { overflow: hidden; }
   -webkit-text-fill-color: transparent;
   font: inherit;
   letter-spacing: inherit;
-  transform: translate(1.5px, 2.2px);
-  opacity: 0.9;
+  transform: translate(1.4px, 2px);
+  opacity: 0.92;
 }
 .nick-profile-link.is-halloween-gothic::after,
 .nick-plain.is-halloween-gothic::after {
@@ -1355,38 +1352,14 @@ body.modal-open { overflow: hidden; }
 .nick-profile-link.is-halloween-gothic:focus-visible {
   color: transparent;
   border-bottom: 0;
-  animation: none;
   text-shadow:
     0 1px 0 #14532d,
     0 2px 0 #0f3d1a,
-    0 3px 0 #06200e,
-    0 4px 3px rgba(0, 0, 0, 0.55),
-    0 0 10px rgba(180, 255, 100, 1),
-    0 0 22px rgba(80, 255, 40, 0.8),
-    0 0 36px rgba(57, 255, 20, 0.45);
-}
-@keyframes hw2-neon-nick-breathe {
-  0%,
-  100% {
-    text-shadow:
-      0 1px 0 #14532d,
-      0 2px 0 #0f3d1a,
-      0 3px 0 #06200e,
-      0 4px 3px rgba(0, 0, 0, 0.5),
-      0 0 7px rgba(140, 255, 60, 0.85),
-      0 0 14px rgba(57, 255, 20, 0.55),
-      0 0 24px rgba(57, 255, 20, 0.28);
-  }
-  50% {
-    text-shadow:
-      0 1px 0 #14532d,
-      0 2px 0 #0f3d1a,
-      0 3px 0 #06200e,
-      0 4px 3px rgba(0, 0, 0, 0.5),
-      0 0 10px rgba(180, 255, 100, 1),
-      0 0 20px rgba(80, 255, 40, 0.75),
-      0 0 34px rgba(57, 255, 20, 0.4);
-  }
+    0 3px 0 #052e16,
+    0 4px 1px rgba(0, 0, 0, 0.5),
+    0 0 1px rgba(236, 253, 245, 1),
+    0 0 5px rgba(134, 239, 172, 0.95),
+    0 0 10px rgba(74, 222, 128, 0.55);
 }
 .rating-table td.col-nick .nick-profile-link.is-metallic-gold,
 .rating-table td.col-nick .nick-plain.is-metallic-gold,
