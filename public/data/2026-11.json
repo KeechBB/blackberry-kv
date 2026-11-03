@@ -201,7 +201,7 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL_Narva_Small_v1 · 8v8 · 18:30 · FCL ARENA #3 · 1/2 vs NKLV · заявка 03.11"
+      "note": "Junior · FCL · FCL_Narva_Small_v1 · 8v8 · 18:30 · FCL ARENA #3 · 1/2 vs NKLV 10.11 · заявка 03.11"
     },
     {
       "id": "10-nklv-2",
@@ -215,7 +215,35 @@
       "rules": "FCL",
       "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #3 · 2/2 vs NKLV · заявка 03.11"
+      "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #3 · 2/2 vs NKLV 10.11 · заявка 03.11"
+    },
+    {
+      "id": "12-nklv",
+      "day": 12,
+      "timeMsk": "18:30",
+      "timeUtc": "15:30",
+      "opp": "NKLV",
+      "map": "FCL Narva Small v1",
+      "size": "8v8",
+      "server": "FCL ARENA #3",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Narva_Small_v1 · 8v8 · 18:30 · FCL ARENA #3 · 1/2 vs NKLV 12.11 · заявка 03.11"
+    },
+    {
+      "id": "12-nklv-2",
+      "day": 12,
+      "timeMsk": "19:10",
+      "timeUtc": "16:10",
+      "opp": "NKLV",
+      "map": "FCL Albasrah Small v1",
+      "size": "8v8",
+      "server": "FCL ARENA #3",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #3 · 2/2 vs NKLV 12.11 · заявка 03.11"
     },
     {
       "id": "14-ns",

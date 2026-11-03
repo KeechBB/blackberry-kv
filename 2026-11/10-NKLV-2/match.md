@@ -4,6 +4,8 @@
 
 **2/2** vs NKLV в этот день (первая — [10-NKLV](../10-NKLV/match.md) в 18:30, Narva).
 
+Серия в ноябре: **10.11** (эта пара) · **12.11** ([12-NKLV](../12-NKLV/match.md) / [12-NKLV-2](../12-NKLV-2/match.md)).
+
 - **16:10 UTC** / **19:10 МСК**
 - **8v8**
 - Карта: **FCL Albasrah Small v1** (`FCL_Albasrah_Small_v1`)
