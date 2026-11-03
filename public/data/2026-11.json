@@ -14,10 +14,12 @@
       "server": "AVG",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · AVG Training Server · R1 12:0 · ждём R2 · сумма пока 12:0 · OSI · заявка 30.10",
+      "status": "win",
+      "note": "Junior · SEC · SEC_Yehorivka · 26v26 · 20:00 · AVG Training Server · R1 12:0 · R2 23:0 · сумма 35:0 · встреча 2–0 · OSI",
       "r1": "12:0",
-      "playersUrl": "data/players/01-avg.json"
+      "playersUrl": "data/players/01-avg.json",
+      "r2": "23:0",
+      "meeting": "2–0"
     },
     {
       "id": "01-ns",
@@ -186,6 +188,34 @@
       "status": "upcoming",
       "note": "Main · SEC · Al basrah_26_V1 · 26v26 · 20:00 · FCL ARENA #2 · заявка 02.11 · NO SCOUT · NO MEETINGS",
       "mode": "SEC"
+    },
+    {
+      "id": "10-nklv",
+      "day": 10,
+      "timeMsk": "18:30",
+      "timeUtc": "15:30",
+      "opp": "NKLV",
+      "map": "FCL Narva Small v1",
+      "size": "8v8",
+      "server": "FCL ARENA #3",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Narva_Small_v1 · 8v8 · 18:30 · FCL ARENA #3 · 1/2 vs NKLV · заявка 03.11"
+    },
+    {
+      "id": "10-nklv-2",
+      "day": 10,
+      "timeMsk": "19:10",
+      "timeUtc": "16:10",
+      "opp": "NKLV",
+      "map": "FCL Albasrah Small v1",
+      "size": "8v8",
+      "server": "FCL ARENA #3",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #3 · 2/2 vs NKLV · заявка 03.11"
     },
     {
       "id": "14-ns",
