@@ -19,6 +19,8 @@
 | 03 | [03-ALPHA](03-ALPHA/match.md) | ALPHA | **Junior**, FCL Anvil, **16v16**, **20:00** МСК (17:00 UTC), FCL ARENA #4 · 1/4 vs ALPHA, [analytics.md](03-ALPHA/analytics.md) |
 | 03 | [03-ALPHA-2](03-ALPHA-2/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:40** МСК (17:40 UTC), FCL ARENA #4 · 2/4 vs ALPHA, [analytics.md](03-ALPHA-2/analytics.md) |
 | 04 | [04-RA](04-RA/match.md) | RA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), сервер FCL · 2/2 vs RA в нояб., [analytics.md](04-RA/analytics.md) |
+| 04 | [04-AVG](04-AVG/match.md) | AVG | **мейн-стак**, HotDrop Narva, **20v20**, **20:00** МСК, сервер **AVG**, R1 **160:0**, R2 **86:0**, сумма **246:0**, встреча **2–0**, [analytics.md](04-AVG/analytics.md) |
+| 05 | [05-AVG](05-AVG/match.md) | AVG | **Junior**, CSL Mutaha Skirmish v2, **20v20**, **20:00** МСК (17:00 UTC), сервер **DCAI**, CSL, [analytics.md](05-AVG/analytics.md) |
 | 06 | [06-ALPHA](06-ALPHA/match.md) | ALPHA | **Junior**, FCL Mutaha, **16v16**, **20:00** МСК (17:00 UTC), FCL ARENA #4 · 3/4 vs ALPHA, [analytics.md](06-ALPHA/analytics.md) |
 | 06 | [06-ALPHA-2](06-ALPHA-2/match.md) | ALPHA | **Junior**, FCL BlackCoast, **16v16**, **20:40** МСК (17:40 UTC), FCL ARENA #4 · 4/4 vs ALPHA, [analytics.md](06-ALPHA-2/analytics.md) |
 | 06 | [06-DCAI](06-DCAI/match.md) | DCAI | **мейн-стак**, LC Al Basrah (`LC_AlBasrah`), **26v26**, **20:30** МСК (17:30 UTC), сервер **DCAI**, LC, [analytics.md](06-DCAI/analytics.md) |

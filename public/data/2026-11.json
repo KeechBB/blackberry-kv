@@ -85,8 +85,12 @@
       "server": "FCL ARENA #4",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Anvil_16 · 16v16 · 20:00 · FCL ARENA #4 · 1/4 vs ALPHA в нояб. · заявка 30.10"
+      "status": "win",
+      "r1": "89:33",
+      "r2": "45:61",
+      "meeting": "2–0",
+      "playersUrl": "data/players/03-alpha.json",
+      "note": "Junior · FCL · FCL Anvil · TR3 · сумма 134:94 (89:33 · 45:61) · раунды 1–1 · авто обе команды"
     },
     {
       "id": "03-alpha-2",
@@ -99,8 +103,12 @@
       "server": "FCL ARENA #4",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Mutaha_16 · 16v16 · 20:40 · FCL ARENA #4 · 2/4 vs ALPHA в нояб. · заявка 30.10"
+      "status": "win",
+      "r1": "111:0",
+      "r2": "64:0",
+      "meeting": "2–0",
+      "playersUrl": "data/players/03-alpha-2.json",
+      "note": "Junior · FCL · FCL Mutaha · TR3 · сумма 175:0 (111:0 · 64:0) · раунды 2–0 · авто обе команды"
     },
     {
       "id": "04-ra",
@@ -110,11 +118,47 @@
       "opp": "RA",
       "map": "FCL Mutaha",
       "size": "16v16",
-      "server": "FCL",
+      "server": "FCL ARENA #3",
       "rules": "FCL",
       "stack": "Junior",
+      "status": "lose",
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:00 · FCL ARENA #3 (TR3) · R1 44:57 · R2 0:111 · сумма 44:168 · встреча 0–2 · оба раунда мы RGF · авто обе команды",
+      "playersUrl": "data/players/04-ra.json",
+      "r1": "44:57",
+      "r2": "0:111",
+      "meeting": "0–2"
+    },
+    {
+      "id": "04-avg",
+      "day": 4,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "AVG",
+      "map": "HotDrop Narva",
+      "size": "20v20",
+      "server": "AVG",
+      "rules": "HOTDROP",
+      "stack": "Main",
+      "status": "win",
+      "r1": "160:0",
+      "r2": "86:0",
+      "meeting": "2–0",
+      "playersUrl": "data/players/04-avg.json",
+      "note": "Main · HOTDROP · HotDrop Narva · AVG Training Server · сумма 246:0 (160:0 · 86:0) · встреча 2–0 · R2 45:37 · R1 без табло · oppR2 неполный"
+    },
+    {
+      "id": "05-avg",
+      "day": 5,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "AVG",
+      "map": "CSL Mutaha Skirmish v2",
+      "size": "20v20",
+      "server": "DCAI",
+      "rules": "CSL",
+      "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL Mutaha · 16v16 · FCL · 2/2 vs RA в нояб. (первая 02.11)"
+      "note": "Junior · CSL · CSL_MutahaSkirmishv2 · 20v20 · 20:00 · сервер DCAI · заявка 04.11 · не склеивать с 01-AVG (SEC) и 04-AVG (HotDrop Main)"
     },
     {
       "id": "06-alpha",
