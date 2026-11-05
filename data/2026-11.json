@@ -140,11 +140,11 @@
       "rules": "HOTDROP",
       "stack": "Main",
       "status": "win",
-      "r1": "160:0",
+      "r1": "156:0",
       "r2": "86:0",
       "meeting": "2–0",
       "playersUrl": "data/players/04-avg.json",
-      "note": "Main · HOTDROP · HotDrop Narva · AVG Training Server · сумма 246:0 (160:0 · 86:0) · встреча 2–0 · R2 45:37 · R1 без табло · oppR2 неполный"
+      "note": "Main · HOTDROP · HotDrop Narva · AVG Training Server · сумма 242:0 (156:0 · 86:0) · встреча 2–0 · R2 45:37 · R1 табло есть · oppR1 нет · oppR2 неполный"
     },
     {
       "id": "05-avg",

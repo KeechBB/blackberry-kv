@@ -1,0 +1,482 @@
+{
+  "matchId": "04-avg",
+  "opp": "AVG",
+  "stack": "Main",
+  "note": "AVG Training Server · HotDrop Narva Skirmish · R1 156:0 · R2 86:0 · 45:37 · сумма 242:0 · встреча 2–0 · R1 мы США они НО · R2 мы НО они США · oppR1 нет (отряды свёрнуты) · oppR2 неполный",
+  "source": "screens",
+  "server": "AVG Training Server",
+  "map": "HotDrop Narva",
+  "r1": [
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 18
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 517
+    },
+    {
+      "nick": "yanchik",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 63
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 587
+    },
+    {
+      "nick": "Antohe152",
+      "res": 7,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 36
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 188
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 22,
+      "kills": 17,
+      "deaths": 4,
+      "dmg": 277
+    },
+    {
+      "nick": "Gadler",
+      "res": 5,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 254
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 7,
+      "dmg": 224
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 8,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 138
+    },
+    {
+      "nick": "vasserman",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 110
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 20,
+      "kills": 14,
+      "deaths": 5,
+      "dmg": 231
+    },
+    {
+      "nick": "KillReal",
+      "res": 7,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 79
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 1,
+      "dmg": 128
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 510
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 50
+    },
+    {
+      "nick": "Azure",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 504
+    },
+    {
+      "nick": "FLEX",
+      "res": 1,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 151
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 78
+    },
+    {
+      "nick": "Animo",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 21
+    }
+  ],
+  "r2": [
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 45
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 59
+    },
+    {
+      "nick": "yanchik",
+      "res": 4,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 119
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 108
+    },
+    {
+      "nick": "Antohe152",
+      "res": 11,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 65
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 13,
+      "dmg": 182
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 18,
+      "kills": 15,
+      "deaths": 7,
+      "dmg": 252
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 14,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 123
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 16,
+      "kills": 10,
+      "deaths": 10,
+      "dmg": 191
+    },
+    {
+      "nick": "Gadler",
+      "res": 6,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 14,
+      "dmg": 187
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 21,
+      "kills": 13,
+      "deaths": 7,
+      "dmg": 244
+    },
+    {
+      "nick": "KillReal",
+      "res": 6,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 87
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 115
+    },
+    {
+      "nick": "FLEX",
+      "res": 3,
+      "nok": 14,
+      "kills": 14,
+      "deaths": 6,
+      "dmg": 213
+    },
+    {
+      "nick": "r4mp",
+      "res": 1,
+      "nok": 15,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 162
+    },
+    {
+      "nick": "Animo",
+      "res": 10,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 87
+    },
+    {
+      "nick": "Keech",
+      "res": 2,
+      "nok": 30,
+      "kills": 19,
+      "deaths": 8,
+      "dmg": 353
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 172
+    },
+    {
+      "nick": "Azure",
+      "res": 14,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 49
+    }
+  ],
+  "oppR1": [],
+  "oppR2": [
+    {
+      "nick": "NND",
+      "res": 0,
+      "nok": 18,
+      "kills": 13,
+      "deaths": 10,
+      "dmg": 217
+    },
+    {
+      "nick": "Антон Чипур",
+      "res": 0,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 6,
+      "dmg": 81
+    },
+    {
+      "nick": "Wkaf (Dolap)",
+      "res": 7,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 4,
+      "dmg": 170
+    },
+    {
+      "nick": "CryHavoc",
+      "res": 2,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 131
+    },
+    {
+      "nick": "Апельсин",
+      "res": 7,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 141
+    },
+    {
+      "nick": "Sapi(C)",
+      "res": 0,
+      "nok": 8,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 155
+    },
+    {
+      "nick": "ZeroTwo",
+      "res": 2,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 71
+    },
+    {
+      "nick": "Степан",
+      "res": 3,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 71
+    },
+    {
+      "nick": "Saltsway",
+      "res": 2,
+      "nok": 25,
+      "kills": 17,
+      "deaths": 10,
+      "dmg": 282
+    },
+    {
+      "nick": "That's the one",
+      "res": 2,
+      "nok": 20,
+      "kills": 10,
+      "deaths": 8,
+      "dmg": 201
+    },
+    {
+      "nick": "Serj",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 30
+    },
+    {
+      "nick": "терпение",
+      "res": 12,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 107
+    },
+    {
+      "nick": "15cm",
+      "res": 0,
+      "nok": 12,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 190
+    },
+    {
+      "nick": "n1:)",
+      "res": 0,
+      "nok": 12,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 104
+    }
+  ],
+  "details": {
+    "r1": {
+      "tickets": "156:0"
+    },
+    "r2": {
+      "tickets": "86:0",
+      "len": "45:37"
+    },
+    "total": {
+      "tickets": "242:0"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "ASCETICH"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "MrChaykaa"
+      ],
+      "antiDeath": [
+        "vasserman"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "ASCETICH"
+      ],
+      "killer": [
+        "Keech"
+      ],
+      "damage": [
+        "Keech"
+      ],
+      "antiDeath": [
+        "Gadler"
+      ]
+    }
+  }
+}
