@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("20261106-dcai-r1") || "20261105-avg-r1";
+    new URLSearchParams(location.search).get("20261106-dcai-r2") || "20261105-avg-r1";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;

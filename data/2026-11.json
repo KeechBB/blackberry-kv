@@ -189,10 +189,12 @@
       "server": "DCAI",
       "rules": "LC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · LC · LizardCup AlBasrah · 26v26 · 20:30 · сервер DCAI · R1 4:0 · 38:15 · мы CAF они RGF · pyrrhic · табло частично · ждём R2 · не склеивать с Junior vs ALPHA 20:00/20:40",
+      "status": "win",
+      "note": "Main · LC · LizardCup AlBasrah · 26v26 · 20:30 · сервер DCAI · R1 4:0 · R2 26:0 · сумма 30:0 · встреча 2–0 · R1 мы CAF / R2 мы RGF · pyrrhic оба · не склеивать с Junior vs ALPHA 20:00/20:40",
       "r1": "4:0",
-      "playersUrl": "data/players/06-dcai.json"
+      "playersUrl": "data/players/06-dcai.json",
+      "r2": "26:0",
+      "meeting": "2-0"
     },
     {
       "id": "06-alpha-2",

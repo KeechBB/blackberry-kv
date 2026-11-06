@@ -2,7 +2,7 @@
   "matchId": "06-dcai",
   "opp": "DCAI",
   "stack": "Main",
-  "note": "DCAI · LizardCup AlBasrah Skirmish · R1 4:0 · 38:15 · pyrrhic · мы CAF они RGF · сервер DCAI · табло обрезано (~19/26 наших) · oppR1 неполный · ждём R2 · сумма открыта",
+  "note": "DCAI · LizardCup AlBasrah Skirmish · R1 4:0 · R2 26:0 · сумма 30:0 · встреча 2–0 · R2 30:50 · мы RGF они CAF · pyrrhic · сервер DCAI · табло ~22/26 наших · oppR2 почти полный",
   "source": "screens",
   "server": "DCAI",
   "map": "LizardCup AlBasrah",
@@ -298,14 +298,371 @@
       "dmg": 227
     }
   ],
-  "r2": [],
-  "oppR2": [],
+  "r2": [
+    {
+      "nick": "Daddy",
+      "res": 1,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 8,
+      "dmg": 273
+    },
+    {
+      "nick": "ZensU",
+      "res": 1,
+      "nok": 16,
+      "kills": 14,
+      "deaths": 5,
+      "dmg": 399
+    },
+    {
+      "nick": "Radislave",
+      "res": 12,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 151
+    },
+    {
+      "nick": "Runetik",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 152
+    },
+    {
+      "nick": "freak",
+      "res": 6,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 258
+    },
+    {
+      "nick": "Keech",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 250
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 260
+    },
+    {
+      "nick": "KillReal",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 75
+    },
+    {
+      "nick": "iKEppA",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 291
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 65
+    },
+    {
+      "nick": "LordWolf",
+      "res": 6,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 204
+    },
+    {
+      "nick": "yanchik",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 365
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 348
+    },
+    {
+      "nick": "FLEX",
+      "res": 8,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 33
+    },
+    {
+      "nick": "akin0v",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 196
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 10,
+      "dmg": 160
+    },
+    {
+      "nick": "Mukuru",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 118
+    },
+    {
+      "nick": "Chidori",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 80
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 37
+    },
+    {
+      "nick": "Antoher152",
+      "res": 7,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 89
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 55
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 2,
+      "nok": 20,
+      "kills": 18,
+      "deaths": 6,
+      "dmg": 642
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "Vamok",
+      "res": 5,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 158
+    },
+    {
+      "nick": "пакость666",
+      "res": 0,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 399
+    },
+    {
+      "nick": "GamEOveR",
+      "res": 3,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 99
+    },
+    {
+      "nick": "Андрей Арматура",
+      "res": 2,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 217
+    },
+    {
+      "nick": "yambichelik",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 164
+    },
+    {
+      "nick": "Patrego",
+      "res": 1,
+      "nok": 19,
+      "kills": 10,
+      "deaths": 0,
+      "dmg": 1104
+    },
+    {
+      "nick": "Апельсин",
+      "res": 1,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 10,
+      "dmg": 212
+    },
+    {
+      "nick": "Snowyaga",
+      "res": 0,
+      "nok": 27,
+      "kills": 16,
+      "deaths": 7,
+      "dmg": 536
+    },
+    {
+      "nick": "РЕМОНТ МЕНТОВ",
+      "res": 6,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 87
+    },
+    {
+      "nick": "PIMP Livemanru",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 202
+    },
+    {
+      "nick": "СОСИСКА В ПРАЙМ",
+      "res": 1,
+      "nok": 17,
+      "kills": 11,
+      "deaths": 6,
+      "dmg": 369
+    },
+    {
+      "nick": "Afraidist",
+      "res": 5,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 266
+    },
+    {
+      "nick": "MRAZ HAWK",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 191
+    },
+    {
+      "nick": "Ariyl",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 106
+    },
+    {
+      "nick": "Kop3uHa_Ba3eJIuH",
+      "res": 0,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 11,
+      "dmg": 470
+    },
+    {
+      "nick": "6ATA",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 9,
+      "dmg": 256
+    },
+    {
+      "nick": "zlajamalekula",
+      "res": 7,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 202
+    },
+    {
+      "nick": "Salgulag",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 129
+    },
+    {
+      "nick": "n1:)",
+      "res": 2,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 199
+    },
+    {
+      "nick": "Сова на Скакалке",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 78
+    },
+    {
+      "nick": "Wkaf (Dolap)",
+      "res": 0,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 521
+    }
+  ],
   "details": {
     "r1": {
       "tickets": "4:0",
       "duration": "38:15",
       "faction": "CAF",
       "oppFaction": "RGF"
+    },
+    "r2": {
+      "tickets": "26:0",
+      "duration": "30:50",
+      "faction": "RGF",
+      "oppFaction": "CAF"
+    },
+    "meeting": {
+      "ticketsSum": "30:0",
+      "series": "2-0",
+      "status": "win"
     }
   },
   "mvp": {
@@ -324,10 +681,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Radislave"
+      ],
+      "killer": [
+        "Kuchenchips"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "Summer"
+      ]
     }
   }
 }

@@ -1,6 +1,6 @@
 # 2026-11-06 — DCAI vs BlackBerry Main
 
-Раунд 1 сыгран. Заявка **02.11.2026**. Играет **мейн-стак**.
+Встреча закрыта **2–0** (сумма тикетов **30:0**). Заявка **02.11.2026**. Играет **мейн-стак**.
 
 Не склеивать с прошлыми DCAI и с Junior в этот же вечер:
 
@@ -24,13 +24,20 @@
 - Тикеты наши:их = **4:0** (pyrrhic victory)
 - Длительность **38:15**
 - Мы **CAF**, они **RGF**
-- MVP раунда: Medic **Radislave** (13 ресов, топ-медик UI), Killer + War-Score **Diray** (19 / 563), Anti **Summer** (9 смертей); второй по килам **Daddy** (17)
-- Топ supply UI: **JESTER** · топ отряд: Squad 6
-- На табло ~19/26 наших; oppR1 неполный (скролл)
+- MVP: Medic **Radislave**, Killer + War-Score **Diray**, Anti **Summer**
 
 ## Раунд 2
 
-Ещё не залит — встреча открыта (сумма тикетов).
+- Тикеты наши:их = **26:0** (pyrrhic victory)
+- Длительность **30:50**
+- Мы **RGF**, они **CAF**
+- TOP SQUAD UI: **Squad 3** · TOP MEDIC UI: **Radislave** · TOP SUPPLY UI: **Андрей Арматура** (DCAI)
+- MVP раунда: Medic **Radislave** (12), Killer + War-Score **Kuchenchips** (18 / 642), Anti **Summer** (10); сильные **ZensU** 14, **Diray**/iKEppA 10
+- На табло ~22/26 наших
+
+## Встреча
+
+- Сумма тикетов **30:0** → серия **2–0**, статус **win**
 
 Лого: `brand/logos/dcai.jpg` + `brand/logos/blackberry.png`.
 
