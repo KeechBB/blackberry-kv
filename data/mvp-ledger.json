@@ -85,36 +85,138 @@
       }
     },
     {
-      "id": "03-alpha",
-      "day": 3,
-      "opp": "ALPHA",
-      "meeting": null,
+      "id": "02-grad-st9",
+      "day": 2,
+      "opp": "ST-9",
+      "meeting": "2-0",
       "r1": {
         "medic": [
-          "Prolik"
+          "Limbo"
         ],
         "killer": [
-          "Jimmy Neutron"
+          "Morietsu"
         ],
         "damage": [
-          "COBRA"
+          "bobruxa"
         ],
         "antiDeath": [
-          "Sandro.86"
+          "TicketToHawaii"
         ]
       },
       "r2": {
         "medic": [
-          "Prolik"
+          "диба"
         ],
         "killer": [
-          "Jimmy Neutron"
+          "pxbz andreyka"
         ],
         "damage": [
-          "Trixx"
+          "+W"
         ],
         "antiDeath": [
-          "Sandro.86"
+          "Ske-let"
+        ]
+      }
+    },
+    {
+      "id": "02-ra",
+      "day": 2,
+      "opp": "RA",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Gorbatiy"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Edge_CM"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Forks"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Trixx"
+        ]
+      }
+    },
+    {
+      "id": "03-alpha-2",
+      "day": 3,
+      "opp": "ALPHA",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Mahorka"
+        ],
+        "killer": [
+          "Steepich"
+        ],
+        "damage": [
+          "Steepich"
+        ],
+        "antiDeath": [
+          "MORBIUS"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "WoodMan"
+        ],
+        "killer": [
+          "KTO--TO"
+        ],
+        "damage": [
+          "KTO--TO"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      }
+    },
+    {
+      "id": "03-alpha",
+      "day": 3,
+      "opp": "ALPHA",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Edge_CM"
+        ],
+        "killer": [
+          "Barsik"
+        ],
+        "damage": [
+          "Barsik"
+        ],
+        "antiDeath": [
+          "Edge_CM"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "m3rz0st"
+        ],
+        "killer": [
+          "ZLOBA1917"
+        ],
+        "damage": [
+          "ZLOBA1917"
+        ],
+        "antiDeath": [
+          "SkiLLeX"
         ]
       }
     },
@@ -184,6 +286,100 @@
         "antiDeath": [
           "Forks"
         ]
+      }
+    },
+    {
+      "id": "04-avg",
+      "day": 4,
+      "opp": "AVG",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "ASCETICH"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "MrChaykaa"
+        ],
+        "antiDeath": [
+          "vasserman"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "ASCETICH"
+        ],
+        "killer": [
+          "Keech"
+        ],
+        "damage": [
+          "Keech"
+        ],
+        "antiDeath": [
+          "Gadler"
+        ]
+      }
+    },
+    {
+      "id": "04-ra",
+      "day": 4,
+      "opp": "RA",
+      "meeting": "0–2",
+      "r1": {
+        "medic": [
+          "Sandro.86"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "MORBIUS"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "One Attack"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "Oguzok"
+        ]
+      }
+    },
+    {
+      "id": "06-dcai",
+      "day": 6,
+      "opp": "DCAI",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "Diray"
+        ],
+        "antiDeath": [
+          "Summer"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
       }
     },
     {
@@ -1666,6 +1862,22 @@
     }
   ],
   "players": {
+    "+W": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "ADUN": {
       "mvpMedic": 8,
       "mvpKiller": 1,
@@ -1767,6 +1979,30 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "ASCETICH": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -1908,10 +2144,26 @@
     },
     "Barsik": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
-      "mvpDamage": 0,
+      "mvpKiller": 3,
+      "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "12-hell",
           "day": 12,
@@ -2093,21 +2345,13 @@
     "COBRA": {
       "mvpMedic": 0,
       "mvpKiller": 2,
-      "mvpDamage": 6,
+      "mvpDamage": 5,
       "antiDeath": 1,
       "awards": [
         {
           "matchId": "01-gm",
           "day": 1,
           "opp": "GM",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
-        },
-        {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
@@ -2228,10 +2472,26 @@
     },
     "Diray": {
       "mvpMedic": 0,
-      "mvpKiller": 6,
-      "mvpDamage": 2,
+      "mvpKiller": 7,
+      "mvpDamage": 3,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "06-dcai",
+          "day": 6,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "06-dcai",
+          "day": 6,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "15-ih",
           "day": 15,
@@ -2386,6 +2646,38 @@
         }
       ]
     },
+    "Edge_CM": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 2,
+      "awards": [
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "FLEX": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -2403,7 +2695,7 @@
       ]
     },
     "Forks": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 4,
@@ -2423,6 +2715,14 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         },
         {
           "matchId": "04-20royals",
@@ -2478,8 +2778,16 @@
       "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 5,
-      "antiDeath": 3,
+      "antiDeath": 4,
       "awards": [
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "08-hq",
           "day": 8,
@@ -2559,6 +2867,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Gorbatiy": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -2748,26 +3072,10 @@
     },
     "Jimmy Neutron": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
+      "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
       "awards": [
-        {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
-        {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        },
         {
           "matchId": "26-alpha",
           "day": 26,
@@ -2804,10 +3112,26 @@
     },
     "KTO--TO": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
-      "mvpDamage": 1,
+      "mvpKiller": 3,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "25-alpha",
           "day": 25,
@@ -2836,10 +3160,26 @@
     },
     "Keech": {
       "mvpMedic": 0,
-      "mvpKiller": 3,
-      "mvpDamage": 5,
+      "mvpKiller": 4,
+      "mvpDamage": 6,
       "antiDeath": 5,
       "awards": [
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "06-fox",
           "day": 6,
@@ -3282,6 +3622,22 @@
         }
       ]
     },
+    "Limbo": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "LordWolf": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -3326,7 +3682,7 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "01-avg",
@@ -3335,15 +3691,47 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
     "Mahorka": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 3,
+      "antiDeath": 4,
       "awards": [
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "07-avg",
           "day": 7,
@@ -3415,6 +3803,22 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Morietsu": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -3493,9 +3897,17 @@
     "MrChaykaa": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "26-20r",
           "day": 26,
@@ -3598,7 +4010,7 @@
       "mvpMedic": 2,
       "mvpKiller": 1,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "01-avg",
@@ -3607,6 +4019,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "15-hell",
@@ -3623,6 +4043,22 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        }
+      ]
+    },
+    "One Attack": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -3647,30 +4083,6 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
-        }
-      ]
-    },
-    "Prolik": {
-      "mvpMedic": 2,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        },
-        {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
         }
       ]
     },
@@ -3739,7 +4151,7 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 10,
+      "mvpMedic": 11,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
@@ -3756,6 +4168,14 @@
           "matchId": "04-20royals",
           "day": 4,
           "opp": "20Royals",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "06-dcai",
+          "day": 6,
+          "opp": "DCAI",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
@@ -3971,26 +4391,18 @@
       ]
     },
     "Sandro.86": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 2,
+      "antiDeath": 0,
       "awards": [
         {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
           "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        },
-        {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -4034,12 +4446,36 @@
         }
       ]
     },
+    "Ske-let": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "SkiLLeX": {
       "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "11-nklv",
           "day": 11,
@@ -4090,12 +4526,44 @@
         }
       ]
     },
+    "Steepich": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Summer": {
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
+        {
+          "matchId": "06-dcai",
+          "day": 6,
+          "opp": "DCAI",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "14-omen",
           "day": 14,
@@ -4132,15 +4600,79 @@
     },
     "Tankist": {
       "mvpMedic": 1,
-      "mvpKiller": 3,
-      "mvpDamage": 13,
+      "mvpKiller": 7,
+      "mvpDamage": 17,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "04-20royals",
           "day": 4,
           "opp": "20Royals",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "04-ra",
+          "day": 4,
+          "opp": "RA",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         },
@@ -4298,6 +4830,22 @@
         }
       ]
     },
+    "TicketToHawaii": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Treppen": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -4349,16 +4897,16 @@
     "Trixx": {
       "mvpMedic": 0,
       "mvpKiller": 3,
-      "mvpDamage": 8,
-      "antiDeath": 1,
+      "mvpDamage": 7,
+      "antiDeath": 2,
       "awards": [
         {
-          "matchId": "03-alpha",
-          "day": 3,
-          "opp": "ALPHA",
+          "matchId": "02-ra",
+          "day": 2,
+          "opp": "RA",
           "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "07-avg",
@@ -4578,12 +5126,44 @@
         }
       ]
     },
-    "ZLOBA1917": {
-      "mvpMedic": 3,
+    "WoodMan": {
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "03-alpha-2",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "ZLOBA1917": {
+      "mvpMedic": 3,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "15-hell",
           "day": 15,
@@ -4922,6 +5502,22 @@
         }
       ]
     },
+    "bobruxa": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "daddy": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -5076,7 +5672,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 12,
+      "mvpKiller": 13,
       "mvpDamage": 4,
       "antiDeath": 0,
       "awards": [
@@ -5103,6 +5699,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "06-fox",
@@ -5242,6 +5846,38 @@
         }
       ]
     },
+    "m3rz0st": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "03-alpha",
+          "day": 3,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "pxbz andreyka": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "r4mp": {
       "mvpMedic": 0,
       "mvpKiller": 3,
@@ -5350,8 +5986,16 @@
       "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "04-avg",
+          "day": 4,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "15-ih",
           "day": 15,
@@ -5543,6 +6187,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "диба": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "02-grad-st9",
+          "day": 2,
+          "opp": "ST-9",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },

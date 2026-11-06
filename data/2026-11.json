@@ -154,11 +154,15 @@
       "opp": "AVG",
       "map": "CSL Mutaha Skirmish v2",
       "size": "20v20",
-      "server": "DCAI",
+      "server": "FCL ARENA #2 (TR2)",
       "rules": "CSL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · CSL · CSL_MutahaSkirmishv2 · 20v20 · 20:00 · сервер DCAI · заявка 04.11 · не склеивать с 01-AVG (SEC) и 04-AVG (HotDrop Main)"
+      "status": "lose",
+      "note": "Junior · CSL · CSL Mutaha Skirmish v2 · 20v20 · FCL ARENA #2 (TR2) · заявка была DCAI, сыграли у нас · сумма 0:125 (0:49 · 0:76) · встреча 0–2 · R1 46:31 мы США · R2 42:58 мы ВС РФ · не склеивать с 01-AVG и 04-AVG",
+      "r1": "0:49",
+      "r2": "0:76",
+      "meeting": "0–2",
+      "playersUrl": "data/players/05-avg.json"
     },
     {
       "id": "06-alpha",
@@ -186,7 +190,9 @@
       "rules": "LC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · LC · LC_AlBasrah · 26v26 · 20:30 · сервер DCAI · заявка 02.11 · не склеивать с Junior vs ALPHA 20:00 и 20:40"
+      "note": "Main · LC · LizardCup AlBasrah · 26v26 · 20:30 · сервер DCAI · R1 4:0 · 38:15 · мы CAF они RGF · pyrrhic · табло частично · ждём R2 · не склеивать с Junior vs ALPHA 20:00/20:40",
+      "r1": "4:0",
+      "playersUrl": "data/players/06-dcai.json"
     },
     {
       "id": "06-alpha-2",
@@ -228,10 +234,40 @@
       "size": "26v26",
       "server": "FCL ARENA #2",
       "rules": "SEC",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · SEC · Al basrah_26_V1 · 26v26 · 20:00 · FCL ARENA #2 · заявка 02.11 · NO SCOUT · NO MEETINGS",
+      "mode": "SEC"
+    },
+    {
+      "id": "8-20royals",
+      "day": 8,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "20Royals",
+      "map": "SEC_26_Sanxian_AAS v1",
+      "size": "26v26",
+      "server": "20R",
+      "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · Al basrah_26_V1 · 26v26 · 20:00 · FCL ARENA #2 · заявка 02.11 · NO SCOUT · NO MEETINGS",
+      "note": "Main · SEC · SEC_26_Sanxian_AAS v1 · 26v26 · 20:00 · сервер 20R · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
       "mode": "SEC"
+    },
+    {
+      "id": "9-ra",
+      "day": 9,
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
+      "opp": "RA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:30 · сервер после матчмейкинга · заявка (принята на сайте) · NO SCOUT · NO MEETINGS",
+      "challengeId": "cmw2m3boh04hfaeny1b9c16z6"
     },
     {
       "id": "10-nklv",
@@ -260,6 +296,21 @@
       "stack": "Junior",
       "status": "upcoming",
       "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #3 · 2/2 vs NKLV 10.11 · заявка 03.11"
+    },
+    {
+      "id": "11-ra",
+      "day": 11,
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
+      "opp": "RA",
+      "map": "FCL Mutaha",
+      "size": "16v16",
+      "server": "после матчмейкинга",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:30 · сервер после матчмейкинга · заявка (принята на сайте) · NO SCOUT · NO MEETINGS",
+      "challengeId": "cmw2m3jzs02urk1ayz3dlktgb"
     },
     {
       "id": "12-nklv",

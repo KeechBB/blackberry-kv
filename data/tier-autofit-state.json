@@ -1,33 +1,60 @@
 {
-  "updatedAt": "2026-11-02",
+  "updatedAt": "2026-11-06",
   "holdDays": 2,
   "displayDays": 2,
   "watches": [
     {
-      "nick": "Musker",
+      "nick": "Tankist",
+      "kind": "promote",
+      "fromTier": 2,
+      "toTier": 1,
+      "fit": 97.4,
+      "band": "strong",
+      "role": "Тех / водитель",
+      "lever": "Активность: 74% от эталона роли — заходи стабильно в клановые войны",
+      "since": "2026-11-06",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "ZLOBA1917",
+      "kind": "promote",
+      "fromTier": 4,
+      "toTier": 3,
+      "fit": 97.0,
+      "band": "strong",
+      "role": "Стрелок",
+      "lever": "Активность: 70% от эталона роли — заходи стабильно в клановые войны",
+      "since": "2026-11-06",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "JESTER",
       "kind": "demote",
       "fromTier": 2,
       "toTier": 3,
-      "fit": 50.7,
+      "fit": 72.7,
       "band": "hard",
-      "role": "Медик",
-      "lever": "Ресы/игра: 24% от эталона роли — чаще поднимай союзников",
-      "since": "2026-11-02",
+      "role": "Стрелок",
+      "lever": "Урон/игра: 53% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-11-06",
+      "daysHeld": 0,
+      "ready": false
+    },
+    {
+      "nick": "Otto",
+      "kind": "demote",
+      "fromTier": 2,
+      "toTier": 3,
+      "fit": 74.0,
+      "band": "hard",
+      "role": "КО (SL)",
+      "lever": "Урон/игра: 53% от эталона роли — больше урона по пехоте и технике",
+      "since": "2026-11-06",
       "daysHeld": 0,
       "ready": false
     }
   ],
-  "transfers": [
-    {
-      "nick": "Oguzok",
-      "fromTier": 4,
-      "toTier": 3,
-      "dir": "up",
-      "at": "2026-11-02",
-      "fit": 95.2,
-      "note": "Авто Fit 95.2% · удержание 6д",
-      "actor": "автофит",
-      "lever": "Активность: 62% от эталона роли — заходи стабильно в клановые войны"
-    }
-  ]
+  "transfers": []
 }
