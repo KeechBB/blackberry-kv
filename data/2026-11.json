@@ -175,8 +175,12 @@
       "server": "FCL ARENA #4",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Mutaha_16 · 16v16 · 20:00 · FCL ARENA #4 · 3/4 vs ALPHA в нояб. · заявка 30.10"
+      "status": "lose",
+      "note": "Junior · FCL · FCL Mutaha · TR2 · сумма 0:172 (0:86 · 0:86) · авто обе команды",
+      "playersUrl": "data/players/06-alpha.json",
+      "r1": "0:86",
+      "r2": "0:86",
+      "meeting": "0–2"
     },
     {
       "id": "06-dcai",
@@ -207,8 +211,12 @@
       "server": "FCL ARENA #4",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_BlackCoast_16 · 16v16 · 20:40 · FCL ARENA #4 · 4/4 vs ALPHA в нояб. · заявка 30.10"
+      "status": "win",
+      "note": "Junior · FCL · FCL Black Coast · TR2 · сумма 141:26 (112:0 · 29:26) · авто обе команды",
+      "playersUrl": "data/players/06-alpha-2.json",
+      "r1": "112:0",
+      "r2": "29:26",
+      "meeting": "2–0"
     },
     {
       "id": "07-grad-imp",
@@ -252,8 +260,8 @@
       "server": "20R",
       "rules": "SEC",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · SEC_26_Sanxian_AAS v1 · 26v26 · 20:00 · сервер 20R · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
+      "status": "cancel",
+      "note": "отмена · Main · SEC · SEC_26_Sanxian_AAS v1 · 26v26 · 20:00 · сервер 20R · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
       "mode": "SEC"
     },
     {
