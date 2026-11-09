@@ -12,6 +12,7 @@
 | 02 | [02-GRAD-ST9](02-GRAD-ST9/match.md) | GRAD vs ST-9 | **чужой КВ**, SEC 26 GooseBay AAS v1, **26v26**, **20:00** МСК, **HELL TRAINING**, R1 **134:0**, R2 **124:0**, сумма **258:0**, встреча **2–0** GRAD, [analytics.md](02-GRAD-ST9/analytics.md) |
 | 07 | [07-GRAD-IMP](07-GRAD-IMP/match.md) | GRAD vs IMP | **чужой КВ**, Yehorivka AAS v1, **20v20**, **20:00** МСК (17:00 UTC), сервер **DeadLine**, BZPT, [analytics.md](07-GRAD-IMP/analytics.md) |
 | 08 | [08-GRAD](08-GRAD/match.md) | GRAD | **мейн-стак**, Al Basrah 26 v1 (`Al basrah_26_V1`), **26v26**, **20:00** МСК (17:00 UTC), сервер **FCL ARENA #2**, SEC, [analytics.md](08-GRAD/analytics.md) |
+| 09 | [09-RA](09-RA/match.md) | RA | **Junior**, FCL Mutaha, **16v16**, **20:30** МСК (17:30 UTC), сервер **FCL ARENA #2 (TR2)**, FCL, [analytics.md](09-RA/analytics.md) |
 | 08 | [08-20ROYALS](08-20ROYALS/match.md) | 20Royals | **отмена** · мейн-стак, SEC 26 Sanxian AAS v1, **26v26**, **20:00** МСК, сервер **20R** |
 | 10 | [10-NKLV](10-NKLV/match.md) | NKLV | **Junior**, FCL Narva Small v1, **8v8**, **18:30** МСК (15:30 UTC), сервер **FCL ARENA #3**, FCL · 1/2 vs NKLV 10.11, [analytics.md](10-NKLV/analytics.md) |
 | 10 | [10-NKLV-2](10-NKLV-2/match.md) | NKLV | **Junior**, FCL Albasrah Small v1, **8v8**, **19:10** МСК (16:10 UTC), сервер **FCL ARENA #3**, FCL · 2/2 vs NKLV 10.11, [analytics.md](10-NKLV-2/analytics.md) |
