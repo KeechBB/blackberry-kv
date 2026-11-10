@@ -259,12 +259,16 @@
       "opp": "RA",
       "map": "FCL Mutaha",
       "size": "16v16",
-      "server": "FCL ARENA #2 (TR2)",
+      "server": "после матчмейкинга",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL Mutaha · 16v16 · 20:30 · FCL ARENA #2 (TR2) · заявка (принята на сайте) · сервер назначен 09.11 · NO SCOUT · NO MEETINGS",
-      "challengeId": "cmw2m3boh04hfaeny1b9c16z6"
+      "status": "win",
+      "note": "Junior · FCL · FCL Mutaha · TR2 · сумма 210:0 (98:0 · 112:0) · авто обе команды",
+      "challengeId": "cmw2m3boh04hfaeny1b9c16z6",
+      "playersUrl": "data/players/9-ra.json",
+      "r1": "98:0",
+      "r2": "112:0",
+      "meeting": "2–0"
     },
     {
       "id": "10-nklv",
@@ -396,6 +400,51 @@
       "note": "весь клан · не Main и не Junior · vanilla · AlBasrah_AAS_v3 · 48v48 · 19:00 · сервер Deadline · заявка 01.11 · NO SCOUT · NO MEETINGS"
     },
     {
+      "id": "15-alpha",
+      "day": 15,
+      "timeMsk": "19:30",
+      "timeUtc": "16:30",
+      "opp": "ALPHA",
+      "map": "FCL_BlackCoast_16",
+      "size": "16v16",
+      "server": "FCL ARENA",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_BlackCoast_16 · 16v16 · 19:30 · сервер FCL ARENA · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
+      "mode": "FCL"
+    },
+    {
+      "id": "15-alpha-2",
+      "day": 15,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "ALPHA",
+      "map": "FCL_MUTAHA_16",
+      "size": "16v16",
+      "server": "FCL ARENA",
+      "rules": "FCL",
+      "stack": "Junior",
+      "status": "upcoming",
+      "note": "Junior · FCL · FCL_MUTAHA_16 · 16v16 · 20:00 · сервер FCL ARENA · заявка 10.11 (чат; Рега КВ раньше затирала 15-alpha) · NO SCOUT · NO MEETINGS",
+      "mode": "FCL"
+    },
+    {
+      "id": "18-faq",
+      "day": 18,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "FAQ",
+      "map": "SEC_26_Al BASRAH",
+      "size": "26v26",
+      "server": "FAQ",
+      "rules": "SEC",
+      "stack": "Main",
+      "status": "upcoming",
+      "note": "Main · SEC · SEC_26_Al BASRAH · 26v26 · 20:00 · сервер FAQ · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
+      "mode": "SEC"
+    },
+    {
       "id": "05-avg",
       "day": 5,
       "timeMsk": "20:00",
@@ -412,21 +461,6 @@
       "r2": "0:76",
       "meeting": "0–2",
       "playersUrl": "data/players/05-avg.json"
-    },
-    {
-      "id": "18-faq",
-      "day": 18,
-      "timeMsk": "20:00",
-      "timeUtc": "17:00",
-      "opp": "FAQ",
-      "map": "SEC_26_Al BASRAH",
-      "size": "26v26",
-      "server": "FAQ",
-      "rules": "SEC",
-      "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · SEC · SEC_26_Al BASRAH · 26v26 · 20:00 · сервер FAQ · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
-      "mode": "SEC"
     }
   ]
 }

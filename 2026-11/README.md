@@ -8,6 +8,8 @@
 | 01 | [01-NS](01-NS/match.md) | NS / North Star | **перенос → 14.11** (не отмена) · было 21:00 МСК, CSL Mutaha Skirmish v2, FCL ARENA 2 |
 | 14 | [14-NS](14-NS/match.md) | NS / North Star | **мейн-стак**, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК (18:00 UTC), сервер **FCL ARENA 3** · перенос с 01.11 (цепочка с 17.10), [analytics.md](14-NS/analytics.md) |
 | 15 | [15-DEADLINE](15-DEADLINE/match.md) | Deadline | **весь клан** (не Main и не Junior), Al Basrah AAS v3 (`AlBasrah_AAS_v3`), **48v48**, **19:00** МСК (16:00 UTC), сервер **Deadline**, vanilla, [analytics.md](15-DEADLINE/analytics.md) |
+| 15 | [15-ALPHA](15-ALPHA/match.md) | ALPHA | **Junior**, FCL_BlackCoast_16, **16v16**, **19:30** МСК (16:30 UTC), сервер **FCL ARENA**, FCL, [analytics.md](15-ALPHA/analytics.md) |
+| 15 | [15-ALPHA-2](15-ALPHA-2/match.md) | ALPHA | **Junior**, FCL_MUTAHA_16, **16v16**, **20:00** МСК (17:00 UTC), сервер **FCL ARENA**, FCL · 2/2 vs ALPHA 15.11, [analytics.md](15-ALPHA-2/analytics.md) |
 | 02 | [02-RA](02-RA/match.md) | RA | **Junior**, FCL Mutaha, **16v16**, **20:30** МСК, **FCL ARENA #2**, R1 **40:0**, R2 **35:16**, сумма **75:16**, встреча **2–0**, [analytics.md](02-RA/analytics.md) |
 | 02 | [02-GRAD-ST9](02-GRAD-ST9/match.md) | GRAD vs ST-9 | **чужой КВ**, SEC 26 GooseBay AAS v1, **26v26**, **20:00** МСК, **HELL TRAINING**, R1 **134:0**, R2 **124:0**, сумма **258:0**, встреча **2–0** GRAD, [analytics.md](02-GRAD-ST9/analytics.md) |
 | 07 | [07-GRAD-IMP](07-GRAD-IMP/match.md) | GRAD vs IMP | **чужой КВ**, Yehorivka AAS v1, **20v20**, **20:00** МСК (17:00 UTC), сервер **DeadLine**, BZPT, [analytics.md](07-GRAD-IMP/analytics.md) |

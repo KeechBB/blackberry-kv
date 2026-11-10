@@ -1,0 +1,16 @@
+# 2026-11-15 — ALPHA vs BlackBerry Junior (2/2)
+
+Ещё не сыграно. Заявка **10.11.2026**. Играет **Junior**.
+
+Не склеивать с [15-ALPHA](../15-ALPHA/match.md) — там **19:30**, **FCL_BlackCoast_16**. Это вторая игра дня: **20:00**, **FCL_MUTAHA_16**.
+
+- **17:00 UTC** / **20:00 МСК**
+- **16v16**
+- Карта: **FCL Mutaha** (`FCL_MUTAHA_16`)
+- Сервер: **FCL ARENA**
+- Правила: **FCL**
+- Состав: **Junior**
+
+Лого: `brand/logos/alpha.png` + `brand/logos/blackberry-junior.png`.
+
+Заметки: [analytics.md](analytics.md).
