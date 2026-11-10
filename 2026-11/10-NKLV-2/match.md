@@ -9,7 +9,7 @@
 - **16:10 UTC** / **19:10 МСК**
 - **8v8**
 - Карта: **FCL Albasrah Small v1** (`FCL_Albasrah_Small_v1`)
-- Сервер: **FCL ARENA #3**
+- Сервер: **FCL ARENA #4 (TR4)**
 - Правила: **FCL**
 - Состав: **Junior**
 

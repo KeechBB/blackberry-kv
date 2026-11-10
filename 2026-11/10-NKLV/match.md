@@ -9,7 +9,7 @@
 - **15:30 UTC** / **18:30 МСК**
 - **8v8**
 - Карта: **FCL Narva Small v1** (`FCL_Narva_Small_v1`)
-- Сервер: **FCL ARENA #3**
+- Сервер: **FCL ARENA #4 (TR4)**
 - Правила: **FCL**
 - Состав: **Junior**
 
