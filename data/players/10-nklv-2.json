@@ -1,0 +1,304 @@
+{
+  "matchId": "10-nklv-2",
+  "opp": "NKLV",
+  "note": "Авто из логов TR · TR4 · сумма 185:0 · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "TR4",
+  "map": "FCL AlBasrah",
+  "r1": [
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 0,
+      "dmg": 3338,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 6,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 2380,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 1174,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1230,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 1195,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 720,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 4,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 360,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "r4mp",
+      "res": 4,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 540,
+      "vehicleKills": 0
+    }
+  ],
+  "r2": [
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 2671,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "r4mp",
+      "res": 4,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 2482,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 2035,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 1898,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trixx",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 1673,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1334,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 2,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1041,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 362,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "Bear",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 788,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Kael'thas 卡尔",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 910,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "SpokSL",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1158,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Джигурда",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 477,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Hampton",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 269,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "little chmony",
+      "res": 5,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 62,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "West",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 115,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KRIPerOK",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "SpokSL",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 773,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Kael'thas 卡尔",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 720,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "little chmony",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 420,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Hampton",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 360,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "West",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 180,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bear",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KRIPerOK",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Джигурда",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ]
+}

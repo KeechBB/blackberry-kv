@@ -281,8 +281,12 @@
       "server": "FCL ARENA #4 (TR4)",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Narva_Small_v1 · 8v8 · 18:30 · FCL ARENA #4 (TR4) · 1/2 vs NKLV 10.11 · заявка 03.11"
+      "status": "win",
+      "note": "Junior · FCL · FCL Narva · TR4 · сумма 169:0 (74:0 · 95:0) · авто обе команды",
+      "playersUrl": "data/players/10-nklv.json",
+      "r1": "74:0",
+      "r2": "95:0",
+      "meeting": "2–0"
     },
     {
       "id": "10-nklv-2",
@@ -295,8 +299,12 @@
       "server": "FCL ARENA #4 (TR4)",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #4 (TR4) · 2/2 vs NKLV 10.11 · заявка 03.11"
+      "status": "win",
+      "note": "Junior · FCL · FCL AlBasrah · TR4 · сумма 185:0 (91:0 · 94:0) · авто обе команды",
+      "playersUrl": "data/players/10-nklv-2.json",
+      "r1": "91:0",
+      "r2": "94:0",
+      "meeting": "2–0"
     },
     {
       "id": "11-ra",
