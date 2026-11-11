@@ -418,8 +418,24 @@
       "server": "FCL ARENA",
       "rules": "FCL",
       "stack": "Junior",
+      "status": "move",
+      "note": "перенос → 17.11 (17-alpha) · Junior · FCL · FCL_BlackCoast_16 · 16v16 · 19:30 · сервер FCL ARENA · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
+      "mode": "FCL",
+      "movedTo": "17-alpha"
+    },
+    {
+      "id": "17-alpha",
+      "day": 17,
+      "timeMsk": "19:30",
+      "timeUtc": "16:30",
+      "opp": "ALPHA",
+      "map": "FCL_BlackCoast_16",
+      "size": "16v16",
+      "server": "FCL ARENA",
+      "rules": "FCL",
+      "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL_BlackCoast_16 · 16v16 · 19:30 · сервер FCL ARENA · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
+      "note": "Junior · FCL · FCL_BlackCoast_16 · 16v16 · 19:30 · сервер FCL ARENA · перенос с 15.11 · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
       "mode": "FCL"
     },
     {
@@ -433,8 +449,24 @@
       "server": "FCL ARENA",
       "rules": "FCL",
       "stack": "Junior",
+      "status": "move",
+      "note": "перенос → 17.11 (17-alpha-2) · Junior · FCL · FCL_MUTAHA_16 · 16v16 · 20:00 · сервер FCL ARENA · заявка 10.11 (чат; Рега КВ раньше затирала 15-alpha) · NO SCOUT · NO MEETINGS",
+      "mode": "FCL",
+      "movedTo": "17-alpha-2"
+    },
+    {
+      "id": "17-alpha-2",
+      "day": 17,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "ALPHA",
+      "map": "FCL_MUTAHA_16",
+      "size": "16v16",
+      "server": "FCL ARENA",
+      "rules": "FCL",
+      "stack": "Junior",
       "status": "upcoming",
-      "note": "Junior · FCL · FCL_MUTAHA_16 · 16v16 · 20:00 · сервер FCL ARENA · заявка 10.11 (чат; Рега КВ раньше затирала 15-alpha) · NO SCOUT · NO MEETINGS",
+      "note": "Junior · FCL · FCL_MUTAHA_16 · 16v16 · 20:00 · сервер FCL ARENA · перенос с 15.11 · 2/2 vs ALPHA · NO SCOUT · NO MEETINGS",
       "mode": "FCL"
     },
     {

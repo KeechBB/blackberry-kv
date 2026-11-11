@@ -1,7 +1,3 @@
-# 2026-11-15 — Junior vs ALPHA · Mutaha · заметки
+# 2026-11-15 — Junior vs ALPHA · Mutaha · перенос
 
-Заявка: **FCL_MUTAHA_16** · 16v16 · 20:00 МСК (17:00 UTC) · сервер **FCL ARENA** · правила FCL · состав **Junior**.
-
-Вторая встреча с ALPHA в этот день (после BlackCoast 19:30).
-
-Счёт и стата — после катки.
+Слот перенесён на **17.11** → [17-ALPHA-2](../17-ALPHA-2/match.md).
