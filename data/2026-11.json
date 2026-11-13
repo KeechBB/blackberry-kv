@@ -392,11 +392,13 @@
       "server": "IMP",
       "rules": "BZP",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
       "mode": "BZP",
       "playersUrl": "data/players/13-imp.json",
       "r1": "127:0",
-      "note": "Main · BZP · BZP20 Chora AAS v1 · 20v20 · 20:00 · сервер IMP · R1 127:0 · мы НОАК они БВС · R2 идёт · стату R1 только Отряд 3"
+      "r2": "153:0",
+      "meeting": "2–0",
+      "note": "Main · BZP · BZP20 Chora AAS v1 · 20v20 · 20:00 · сервер IMP · R1 127:0 мы НОАК они БВС · R2 153:0 мы БВС они НОАК · сумма 280:0 · встреча 2–0 · R1 стату только Отряд 3 · R2 полный BB"
     },
     {
       "id": "14-ns",

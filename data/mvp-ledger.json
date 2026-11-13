@@ -880,7 +880,7 @@
       "id": "13-imp",
       "day": 13,
       "opp": "IMP",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Jopliik"
@@ -896,10 +896,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "FLEX"
+        ],
+        "killer": [
+          "Kuchenchips"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "LordWolf"
+        ]
       }
     },
     {
@@ -2823,7 +2831,7 @@
       ]
     },
     "FLEX": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -2835,6 +2843,14 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -3656,8 +3672,8 @@
     },
     "Kuchenchips": {
       "mvpMedic": 0,
-      "mvpKiller": 6,
-      "mvpDamage": 9,
+      "mvpKiller": 7,
+      "mvpDamage": 10,
       "antiDeath": 2,
       "awards": [
         {
@@ -3699,6 +3715,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "14-fal",
@@ -3818,7 +3850,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "06-fox",
@@ -3843,6 +3875,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "15-ih",
