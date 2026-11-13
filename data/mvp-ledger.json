@@ -579,6 +579,74 @@
       }
     },
     {
+      "id": "10-nklv-2",
+      "day": 10,
+      "opp": "NKLV",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "r4mp"
+        ],
+        "killer": [
+          "Summer"
+        ],
+        "damage": [
+          "Summer"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "r4mp"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "tank2284"
+        ]
+      }
+    },
+    {
+      "id": "10-nklv",
+      "day": 10,
+      "opp": "NKLV",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "r4mp"
+        ],
+        "killer": [
+          "tank2284"
+        ],
+        "damage": [
+          "tank2284"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "r4mp"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "Mahorka"
+        ]
+      }
+    },
+    {
       "id": "11-dcai",
       "day": 11,
       "opp": "DCAI",
@@ -610,6 +678,32 @@
         "antiDeath": [
           "Trigger"
         ]
+      }
+    },
+    {
+      "id": "11-ih",
+      "day": 11,
+      "opp": "IH",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Trixx"
+        ],
+        "killer": [
+          "Tankist"
+        ],
+        "damage": [
+          "Tankist"
+        ],
+        "antiDeath": [
+          "MrChaykaa"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
       }
     },
     {
@@ -780,6 +874,32 @@
         "antiDeath": [
           "Forks"
         ]
+      }
+    },
+    {
+      "id": "13-imp",
+      "day": 13,
+      "opp": "IMP",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Jopliik"
+        ],
+        "killer": [
+          "yanchik"
+        ],
+        "damage": [
+          "Chidori"
+        ],
+        "antiDeath": [
+          "Durik"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
       }
     },
     {
@@ -2425,7 +2545,7 @@
     "Chidori": {
       "mvpMedic": 0,
       "mvpKiller": 0,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 3,
       "awards": [
         {
@@ -2443,6 +2563,14 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "17-44th",
@@ -2594,7 +2722,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "11-dcai",
@@ -2611,6 +2739,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "15-dcai",
@@ -3091,6 +3227,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Jopliik": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -3738,7 +3890,7 @@
       "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 4,
+      "antiDeath": 7,
       "awards": [
         {
           "matchId": "03-alpha-2",
@@ -3768,6 +3920,30 @@
           "matchId": "07-avg",
           "day": 7,
           "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -3922,7 +4098,7 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 1,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "04-avg",
@@ -3931,6 +4107,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "26-20r",
@@ -4584,8 +4768,8 @@
     },
     "Summer": {
       "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
       "antiDeath": 3,
       "awards": [
         {
@@ -4603,6 +4787,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "14-omen",
@@ -4640,8 +4840,8 @@
     },
     "Tankist": {
       "mvpMedic": 1,
-      "mvpKiller": 7,
-      "mvpDamage": 17,
+      "mvpKiller": 8,
+      "mvpDamage": 18,
       "antiDeath": 1,
       "awards": [
         {
@@ -4745,6 +4945,22 @@
           "day": 7,
           "opp": "AVG",
           "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
         },
@@ -4935,7 +5151,7 @@
       ]
     },
     "Trixx": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 3,
       "mvpDamage": 7,
       "antiDeath": 2,
@@ -4963,6 +5179,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         },
         {
           "matchId": "11-nklv",
@@ -5400,8 +5624,8 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 9,
-      "mvpDamage": 8,
+      "mvpKiller": 11,
+      "mvpDamage": 10,
       "antiDeath": 0,
       "awards": [
         {
@@ -5417,6 +5641,38 @@
           "day": 1,
           "opp": "AVG",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         },
@@ -5919,7 +6175,7 @@
       ]
     },
     "r4mp": {
-      "mvpMedic": 0,
+      "mvpMedic": 4,
       "mvpKiller": 3,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -5931,6 +6187,38 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         },
         {
           "matchId": "11-dcai",
@@ -5985,6 +6273,38 @@
           "day": 29,
           "opp": "44th",
           "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
+    "tank2284": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "10-nklv-2",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "10-nklv",
+          "day": 10,
+          "opp": "NKLV",
+          "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
         }
@@ -6051,6 +6371,22 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "yanchik": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "13-imp",
+          "day": 13,
+          "opp": "IMP",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },

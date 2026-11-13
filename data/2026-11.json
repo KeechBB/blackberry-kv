@@ -322,6 +322,23 @@
       "challengeId": "cmw2m3jzs02urk1ayz3dlktgb"
     },
     {
+      "id": "11-ih",
+      "day": 11,
+      "timeMsk": "20:30",
+      "timeUtc": "17:30",
+      "opp": "IH",
+      "map": "Lizard Cup Al Basrah",
+      "size": "26v26",
+      "server": "FCL ARENA",
+      "rules": "LC",
+      "stack": "Main",
+      "status": "upcoming",
+      "mode": "LC",
+      "playersUrl": "data/players/11-ih.json",
+      "r1": "159:0",
+      "note": "Main · LC · LizardCup AlBasrah · TR3 · R1 159:0 · R2 идёт · авто обе команды"
+    },
+    {
       "id": "12-nklv",
       "day": 12,
       "timeMsk": "18:30",
@@ -376,8 +393,10 @@
       "rules": "BZP",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · BZP · BZP20_Chora_AAS_v1 · 20v20 · 20:00 · сервер IMP · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
-      "mode": "BZP"
+      "mode": "BZP",
+      "playersUrl": "data/players/13-imp.json",
+      "r1": "127:0",
+      "note": "Main · BZP · BZP20 Chora AAS v1 · 20v20 · 20:00 · сервер IMP · R1 127:0 · мы НОАК они БВС · R2 идёт · стату R1 только Отряд 3"
     },
     {
       "id": "14-ns",
