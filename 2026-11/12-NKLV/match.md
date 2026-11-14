@@ -1,17 +1,17 @@
 # 2026-11-12 — NKLV vs BlackBerry Junior · 18:30
 
-Ещё не сыграно. Заявка **03.11.2026**. Играет **Junior**.
+Сыграно. **Junior**. Сервер **FCL ARENA #3 (TR4)**.
 
-**1/2** vs NKLV в этот день (вторая — [12-NKLV-2](../12-NKLV-2/match.md) в 19:10, Albasrah).
-
-Серия в ноябре: **10.11** ([10-NKLV](../10-NKLV/match.md) / [10-NKLV-2](../10-NKLV-2/match.md)) · **12.11** (эта пара). Ранее **11.10** — FCL Narva Small 8v8, **2–0**, сумма **137:0**.
+**1/2** vs NKLV (вторая — [12-NKLV-2](../12-NKLV-2/match.md) в 19:10).
 
 - **15:30 UTC** / **18:30 МСК**
 - **8v8**
-- Карта: **FCL Narva Small v1** (`FCL_Narva_Small_v1`)
-- Сервер: **FCL ARENA #3**
+- Карта: **FCL Narva** (слот: FCL Narva Small v1)
 - Правила: **FCL**
-- Состав: **Junior**
+
+**R1:** 83:0 · **R2:** 51:0 · **сумма 134:0** · встреча **2–0**.
+
+Стата обеих команд — авто из логов TR4.
 
 Лого: `brand/logos/nklv.png` + `blackberry-junior.png`.
 

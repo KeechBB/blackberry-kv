@@ -329,14 +329,16 @@
       "opp": "IH",
       "map": "Lizard Cup Al Basrah",
       "size": "26v26",
-      "server": "FCL ARENA",
+      "server": "FCL ARENA #3 (TR3)",
       "rules": "LC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
       "mode": "LC",
       "playersUrl": "data/players/11-ih.json",
       "r1": "159:0",
-      "note": "Main · LC · LizardCup AlBasrah · TR3 · R1 159:0 · R2 идёт · авто обе команды"
+      "note": "Main · LC · LizardCup AlBasrah · TR3 · сумма 159:119 (159:0 · 0:119) · встреча 2–0 · авто обе команды",
+      "r2": "0:119",
+      "meeting": "2–0"
     },
     {
       "id": "12-nklv",
@@ -346,11 +348,15 @@
       "opp": "NKLV",
       "map": "FCL Narva Small v1",
       "size": "8v8",
-      "server": "FCL ARENA #3",
+      "server": "FCL ARENA #3 (TR4)",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Narva_Small_v1 · 8v8 · 18:30 · FCL ARENA #3 · 1/2 vs NKLV 12.11 · заявка 03.11"
+      "status": "win",
+      "note": "Junior · FCL · FCL Narva · TR4 · сумма 134:0 (83:0 · 51:0) · встреча 2–0 · авто обе команды",
+      "r1": "83:0",
+      "r2": "51:0",
+      "meeting": "2–0",
+      "playersUrl": "data/players/12-nklv.json"
     },
     {
       "id": "12-nklv-2",
@@ -360,11 +366,15 @@
       "opp": "NKLV",
       "map": "FCL Albasrah Small v1",
       "size": "8v8",
-      "server": "FCL ARENA #3",
+      "server": "FCL ARENA #3 (TR4)",
       "rules": "FCL",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · FCL · FCL_Albasrah_Small_v1 · 8v8 · 19:10 · FCL ARENA #3 · 2/2 vs NKLV 12.11 · заявка 03.11"
+      "status": "win",
+      "note": "Junior · FCL · FCL AlBasrah · TR4 · сумма 110:0 (44:0 · 66:0) · встреча 2–0 · авто обе команды",
+      "r1": "44:0",
+      "r2": "66:0",
+      "meeting": "2–0",
+      "playersUrl": "data/players/12-nklv-2.json"
     },
     {
       "id": "12-pohuy",
@@ -372,14 +382,18 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "по✘уй",
-      "map": "CSL_Mutaha_v1",
+      "map": "CSL Mutaha Skirmish v1",
       "size": "26v26",
-      "server": "по✘уй",
+      "server": "FCL ARENA #2 (TR2)",
       "rules": "CSL",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · CSL · CSL_Mutaha_v1 · 26v26 · 20:00 · сервер по✘уй · было SEC Logar 20v20 · правка 09.11 · NO SCOUT · NO MEETINGS",
-      "mode": "CSL"
+      "status": "win",
+      "note": "Main · CSL · CSL Mutaha Skirmish v1 · TR2 · сумма 281:0 (121:0 · 160:0) · встреча 2–0 · авто обе команды",
+      "mode": "CSL",
+      "r1": "121:0",
+      "r2": "160:0",
+      "meeting": "2–0",
+      "playersUrl": "data/players/12-pohuy.json"
     },
     {
       "id": "13-imp",

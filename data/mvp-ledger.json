@@ -684,7 +684,7 @@
       "id": "11-ih",
       "day": 11,
       "opp": "IH",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Trixx"
@@ -700,10 +700,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Treppen"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "CAT"
+        ],
+        "antiDeath": [
+          "Runetik"
+        ]
       }
     },
     {
@@ -805,6 +813,108 @@
         ],
         "antiDeath": [
           "Zik"
+        ]
+      }
+    },
+    {
+      "id": "12-nklv-2",
+      "day": 12,
+      "opp": "NKLV",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "MusKeR"
+        ],
+        "killer": [
+          "One Attack"
+        ],
+        "damage": [
+          "Forks"
+        ],
+        "antiDeath": [
+          "Barsik"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Radislave"
+        ],
+        "killer": [
+          "Barsik"
+        ],
+        "damage": [
+          "Barsik"
+        ],
+        "antiDeath": [
+          "Barsik"
+        ]
+      }
+    },
+    {
+      "id": "12-nklv",
+      "day": 12,
+      "opp": "NKLV",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "MusKeR"
+        ],
+        "killer": [
+          "Barsik"
+        ],
+        "damage": [
+          "Barsik"
+        ],
+        "antiDeath": [
+          "Forks"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Oguzok"
+        ],
+        "killer": [
+          "Maga"
+        ],
+        "damage": [
+          "Barsik"
+        ],
+        "antiDeath": [
+          "Forks"
+        ]
+      }
+    },
+    {
+      "id": "12-pohuy",
+      "day": 12,
+      "opp": "по✘уй",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Morty"
+        ],
+        "killer": [
+          "Kuchenchips"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "akin0v"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "lepurple"
+        ],
+        "killer": [
+          "Kuchenchips"
+        ],
+        "damage": [
+          "Kuchenchips"
+        ],
+        "antiDeath": [
+          "akin0v"
         ]
       }
     },
@@ -2280,9 +2390,9 @@
     },
     "Barsik": {
       "mvpMedic": 0,
-      "mvpKiller": 3,
-      "mvpDamage": 1,
-      "antiDeath": 0,
+      "mvpKiller": 5,
+      "mvpDamage": 4,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "03-alpha",
@@ -2307,6 +2417,62 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "29-44th",
@@ -2425,7 +2591,7 @@
     "CAT": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 2,
       "awards": [
         {
@@ -2440,6 +2606,14 @@
           "matchId": "07-dcai",
           "day": 7,
           "opp": "DCAI",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
@@ -2857,8 +3031,8 @@
     "Forks": {
       "mvpMedic": 2,
       "mvpKiller": 0,
-      "mvpDamage": 1,
-      "antiDeath": 4,
+      "mvpDamage": 2,
+      "antiDeath": 6,
       "awards": [
         {
           "matchId": "01-avg",
@@ -2899,6 +3073,30 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "13-hell",
@@ -3672,8 +3870,8 @@
     },
     "Kuchenchips": {
       "mvpMedic": 0,
-      "mvpKiller": 7,
-      "mvpDamage": 10,
+      "mvpKiller": 9,
+      "mvpDamage": 12,
       "antiDeath": 2,
       "awards": [
         {
@@ -3715,6 +3913,38 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "13-imp",
@@ -3926,6 +4156,22 @@
         }
       ]
     },
+    "Maga": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
     "Mahorka": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -4063,7 +4309,7 @@
       ]
     },
     "Morty": {
-      "mvpMedic": 8,
+      "mvpMedic": 9,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -4088,6 +4334,14 @@
           "matchId": "10-avg",
           "day": 10,
           "opp": "AVG",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
@@ -4214,6 +4468,30 @@
         }
       ]
     },
+    "MusKeR": {
+      "mvpMedic": 2,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Musker": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -4255,7 +4533,7 @@
       ]
     },
     "Oguzok": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -4277,6 +4555,14 @@
           "label": "Anti-MVP Death"
         },
         {
+          "matchId": "12-nklv",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
           "matchId": "15-hell",
           "day": 15,
           "opp": "HELL",
@@ -4296,7 +4582,7 @@
     },
     "One Attack": {
       "mvpMedic": 1,
-      "mvpKiller": 0,
+      "mvpKiller": 1,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
@@ -4307,6 +4593,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },
@@ -4399,7 +4693,7 @@
       ]
     },
     "Radislave": {
-      "mvpMedic": 12,
+      "mvpMedic": 13,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
@@ -4448,6 +4742,14 @@
           "matchId": "07-avg",
           "day": 7,
           "opp": "AVG",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "12-nklv-2",
+          "day": 12,
+          "opp": "NKLV",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -4530,8 +4832,16 @@
       "mvpMedic": 0,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
         {
           "matchId": "25-h1gh",
           "day": 25,
@@ -5143,7 +5453,7 @@
       ]
     },
     "Treppen": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -5155,6 +5465,14 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -5586,7 +5904,7 @@
       "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 2,
+      "antiDeath": 4,
       "awards": [
         {
           "matchId": "07-dcai",
@@ -5600,6 +5918,22 @@
           "matchId": "08-hq",
           "day": 8,
           "opp": "HQ",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -6008,7 +6342,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 13,
+      "mvpKiller": 14,
       "mvpDamage": 4,
       "antiDeath": 0,
       "awards": [
@@ -6067,6 +6401,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "11-ih",
+          "day": 11,
+          "opp": "IH",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "15-dcai",
@@ -6151,11 +6493,19 @@
       ]
     },
     "lepurple": {
-      "mvpMedic": 3,
+      "mvpMedic": 4,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "12-pohuy",
+          "day": 12,
+          "opp": "по✘уй",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "13-two",
           "day": 13,

@@ -1,0 +1,343 @@
+{
+  "matchId": "12-nklv-2",
+  "opp": "NKLV",
+  "note": "Авто из логов TR · TR4 · сумма 110:0 · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "TR4",
+  "map": "FCL AlBasrah",
+  "r1": [
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 12,
+      "kills": 12,
+      "deaths": 4,
+      "dmg": 4480,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 7,
+      "dmg": 4490,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 3289,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Oguzok",
+      "res": 3,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 2,
+      "dmg": 3087,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MusKeR",
+      "res": 4,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1611,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 1673,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Radislave",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1412,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HunterN7",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "r2": [
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 3475,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "One Attack",
+      "res": 0,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 2678,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1681,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HunterN7",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1538,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Radislave",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MusKeR",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1054,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1261,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Oguzok",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1070,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "tviks",
+      "res": 0,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 3481,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "SpokSL",
+      "res": 0,
+      "nok": 12,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 3221,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Gruze",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 2520,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "little chmony",
+      "res": 4,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1583,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Antohka220",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1699,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bear",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 1500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Adv0kat",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 11,
+      "dmg": 1380,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Кент肯特",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 1064,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "tviks",
+      "res": 0,
+      "nok": 7,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 2798,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "SpokSL",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 3046,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Gruze",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 2513,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bear",
+      "res": 2,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 2154,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Adv0kat",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 897,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Antohka220",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 1122,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Кент肯特",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 716,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "little chmony",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 486,
+      "vehicleKills": 0
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "MusKeR"
+      ],
+      "killer": [
+        "One Attack"
+      ],
+      "damage": [
+        "Forks"
+      ],
+      "antiDeath": [
+        "Barsik"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Radislave"
+      ],
+      "killer": [
+        "Barsik"
+      ],
+      "damage": [
+        "Barsik"
+      ],
+      "antiDeath": [
+        "Barsik"
+      ]
+    }
+  }
+}
