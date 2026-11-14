@@ -28,7 +28,7 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261103-cw-map-all";
+    new URLSearchParams(location.search).get("v") || "20261113-imp-r2";
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -88,6 +88,8 @@
     return v == null || !Number.isFinite(Number(v)) ? -1e9 : Number(v);
   }
   const ROSTER_URL = "https://bb-squad.ru/api/public/roster";
+  const CLANS_URL = "https://bb-squad.ru/api/public/clans";
+  let siteClans = [];
   const HITMAP_TIERS_URL = "https://bb-squad.ru/api/public/hitmap-tiers";
   const KIT_TIERS_URL = "https://bb-squad.ru/api/public/kit-tiers";
   const KIT_SLICE_COLORS = [
@@ -839,7 +841,7 @@
     { id: "crewlead", slug: "crew-lead", name: "Наводчик", color: "#2563eb" },
     { id: "crew", slug: "crewman", name: "Мехвод", color: "#65a30d" },
     { id: "gren", slug: "grenadier", name: "Гранатомет подствольный", color: "#d97706" },
-    { id: "lat", slug: "lat", name: "Легкая Труба", live: true, color: "#ea580c" },
+    { id: "lat", slug: "lat", name: "Легкая Труба", color: "#ea580c" },
     { id: "hat", slug: "hat", name: "Тандем", color: "#a855f7" },
     { id: "sniper", slug: "sniper", name: "Снайпер", color: "#0891b2" },
     { id: "marks", slug: "marksman", name: "Марксман", color: "#be123c" },
@@ -850,7 +852,6 @@
   const GROWTH_ND = {
     life: 2, kpm: 3, vital: 1, kpg: 2, taken: 2, dpg: 2, acc: 1, rifle: 1, kd: 2, week: 1,
     res_pg: 2, res_total: 0, hp_min: 1, no_hp: 1, hp_res: 1, variety: 1, noks: 2, res_min: 2,
-    lat_min: 1, veh_dpg: 0, veh_hpg: 2, tube_kpg: 2,
   };
   let growthTimer = null;
   let growthLadder = null;
@@ -1063,14 +1064,6 @@
     paintGrowthSheet();
   }
 
-  function growthHalfSentence(metrics) {
-    const titles = (metrics || []).filter((m) => Number(m.weight) === 0.5).map((m) => m.title);
-    if (!titles.length) return "";
-    if (titles.length === 1) return ` ${titles[0]} входит в сумму наполовину: 10 в столбце даёт 5.`;
-    const last = titles[titles.length - 1];
-    return ` ${titles.slice(0, -1).join(", ")} и ${last} входят в сумму наполовину: 10 в столбце даёт 5.`;
-  }
-
   function paintGrowthSheet() {
     const body = document.getElementById("tm-role-body");
     const data = growthLadder;
@@ -1128,15 +1121,13 @@
     const head =
       growthTh("place", "#", "") +
       growthTh("nick", "Игрок", "") +
-      growthTh("level", "Уровень", "сумма / " + (data.metricCount || metrics.length || 10) + (metrics.some((m) => Number(m.weight) === 0.5) ? ", помеченные ×0,5" : "")) +
+      growthTh("level", "Уровень", "сумма / " + (data.metricCount || metrics.length || 10)) +
       growthTh("days", "Дней", "") +
       growthTh("games", "Каток", "") +
       metrics.map((m) => {
-        const wayBase = m.higher ? "больше лучше" : "меньше лучше";
-        const wayHalf = Number(m.weight) === 0.5;
         const way = anchors[m.key] && !anchors[m.key].n
           ? "калибровка"
-          : (m.scored === false || m.key === "variety" ? "без уровня" : (wayHalf ? wayBase + " · в уровень ×0,5" : wayBase));
+          : (m.scored === false || m.key === "variety" ? "без уровня" : (m.higher ? "больше лучше" : "меньше лучше"));
         return growthTh(m.key, m.title, way);
       }).join("");
     const rows = slice.map((p, idx) => {
@@ -1186,7 +1177,7 @@
       `<div class="growth-sheet-chrome">` +
       `<button type="button" class="growth-back" data-growth-back>← Развитие</button>` +
       `<h2 id="tm-growth-modal-title" class="growth-sheet-title">${escapeHtml(data.title || "Стрелок · уровень 1–10")}</h2>` +
-      `<p class="growth-sheet-sub">Окно ${escapeHtml(data.window || "")}. Цифра, только если внутри окна есть 5 дней с данными этого показателя, иначе калибровка. На показателе лучший = 10, худший = 1. Уровень игрока = сумма уровней / ${data.metricCount || metrics.length || 10}.${growthHalfSentence(metrics)} Обновлено ${escapeHtml(when || "—")}.</p>` +
+      `<p class="growth-sheet-sub">Окно ${escapeHtml(data.window || "")}. Цифра, только если внутри окна есть 5 дней с данными этого показателя, иначе калибровка. На показателе лучший = 10, худший = 1. Уровень игрока = сумма уровней / ${data.metricCount || metrics.length || 10}. Обновлено ${escapeHtml(when || "—")}.</p>` +
       `<div class="growth-anchors">${cards}</div>` +
       `</div>` +
       `<div class="growth-sheet-table"><table class="growth-table"><thead><tr>${head}</tr></thead><tbody>${rows}</tbody></table></div>` +
@@ -1240,19 +1231,13 @@
   const GROWTH_FILES = {
     rifleman: "data/rifle-ladder.json",
     medic: "data/medic-ladder.json",
-    lat: "data/lat-ladder.json",
-  };
-  const GROWTH_WHO = {
-    rifleman: "Стрелок",
-    medic: "Медик",
-    lat: "Легкая Труба",
   };
   let growthSlug = "rifleman";
 
   function loadGrowthLadder() {
     const body = document.getElementById("tm-role-body");
     const file = GROWTH_FILES[growthSlug] || GROWTH_FILES.rifleman;
-    const who = GROWTH_WHO[growthSlug] || "Стрелок";
+    const who = growthSlug === "medic" ? "Медик" : "Стрелок";
     if (body && !body.querySelector(".growth-table")) {
       body.innerHTML = `<p class="growth-sheet-sub">Считаю лестницу за последние 14 суток…</p>`;
     }
@@ -1492,6 +1477,79 @@
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;");
+  }
+
+  function loadSiteClans() {
+    return fetch(CLANS_URL, { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : { clans: [] }))
+      .then((data) => {
+        siteClans = Array.isArray(data.clans) ? data.clans : [];
+        ["rating-clan", "train-rating-clan", "cw-an-clan", "train-an-clan"].forEach(
+          (id) => fillClanSelect(id, [])
+        );
+        return siteClans;
+      })
+      .catch(() => {
+        siteClans = [];
+        return siteClans;
+      });
+  }
+
+  function fillClanSelect(id, extraRows) {
+    const sel = document.getElementById(id);
+    if (!sel) return;
+    const prev = sel.value;
+    const byKey = new Map();
+    siteClans.forEach((c) => {
+      const tag = String(c.tag || "").trim();
+      if (!tag) return;
+      byKey.set(tag.toLowerCase(), { tag, name: String(c.name || "").trim() });
+    });
+    (extraRows || []).forEach((p) => {
+      const tag = String(p && p.clan ? p.clan : "").trim();
+      if (!tag || tag === "—") return;
+      const key = tag.toLowerCase();
+      if (!byKey.has(key)) byKey.set(key, { tag, name: "" });
+    });
+    const list = [...byKey.values()].sort((a, b) =>
+      a.tag.localeCompare(b.tag, "ru", { sensitivity: "base" })
+    );
+    sel.innerHTML =
+      `<option value="">Все кланы</option>` +
+      list
+        .map((c) => {
+          const label =
+            c.name && c.name.toUpperCase() !== c.tag.toUpperCase()
+              ? `${c.tag} · ${c.name}`
+              : c.tag;
+          return `<option value="${escapeHtml(c.tag)}">${escapeHtml(label)}</option>`;
+        })
+        .join("");
+    if (prev && [...sel.options].some((o) => o.value === prev)) sel.value = prev;
+  }
+
+  function selectedClanTag(id) {
+    return String(document.getElementById(id)?.value || "").trim();
+  }
+
+  function sameClan(a, b) {
+    return String(a || "").trim().toLowerCase() === String(b || "").trim().toLowerCase();
+  }
+
+  function bundleHasClan(bundle, tag) {
+    if (!tag) return true;
+    const pj = bundle && bundle.players;
+    if (!pj) return false;
+    const lines = [].concat(
+      pj.r1 || [],
+      pj.r2 || [],
+      pj.oppR1 || [],
+      pj.oppR2 || [],
+      pj.players || []
+    );
+    return lines.some(
+      (p) => p && p.nick && sameClan(rosterOf(p.nick).clan, tag)
+    );
   }
 
   function num(v) {
@@ -2107,13 +2165,6 @@
       pageCwMatches = 1;
       paintMatchesTable();
     });
-    const mapFilter = document.getElementById("filter-map");
-    if (mapFilter) {
-      mapFilter.addEventListener("input", () => {
-        pageCwMatches = 1;
-        paintMatchesTable();
-      });
-    }
 
     const scopeEl = document.getElementById("rating-scope");
     const yearWrap = document.getElementById("rating-year-wrap");
@@ -2144,7 +2195,6 @@
         paintRatingTable();
       });
     }
-    loadSiteClans().then(() => fillClanSelect("rating-clan"));
 
     if (years.length) {
       const now = mskNowYm();
@@ -2517,7 +2567,12 @@
   function matchDateLabel(m) {
     const mo = pad(m._month != null ? m._month : monthKey);
     const day = pad(m.day);
-    if (cwAllTime || (m._year != null && currentMonthMeta && Number(m._year) !== Number(currentMonthMeta.year))) {
+    if (
+      cwAllTime ||
+      (m._year != null &&
+        currentMonthMeta &&
+        Number(m._year) !== Number(currentMonthMeta.year))
+    ) {
       return `${day}.${mo}.${m._year}`;
     }
     return `${day}.${mo}`;
@@ -2538,18 +2593,11 @@
       })
       .then((data) => {
         monthData = data;
-        matches = (data.matches || []).map((m, i) => ({
-          ...m,
-          _i: i,
-          _month: meta.month,
-          _year: meta.year,
-          _monthId: meta.id,
-        }));
+        matches = (data.matches || []).map((m, i) => ({ ...m, _i: i, _month: meta.month, _year: meta.year }));
         document.getElementById("title").textContent = data.title || meta.label;
         document.getElementById("note").textContent = data.note || "";
         paintStats(matches);
         paintMatchesTable();
-        paintMonthChips();
       })
       .catch((err) => {
         document.getElementById("note").textContent = String(err.message || err);
@@ -2587,7 +2635,11 @@
             });
           }
         }
-        all.sort((a, b) => matchDateKey(b) - matchDateKey(a) || String(b.timeMsk || "").localeCompare(String(a.timeMsk || ""), "ru"));
+        all.sort(
+          (a, b) =>
+            matchDateKey(b) - matchDateKey(a) ||
+            String(b.timeMsk || "").localeCompare(String(a.timeMsk || ""), "ru")
+        );
         all.forEach((m, i) => {
           m._i = i;
         });
@@ -2654,7 +2706,6 @@
 
   function filteredMatches() {
     const q = (document.getElementById("filter-clan").value || "").trim().toLowerCase();
-    const mq = (document.getElementById("filter-map")?.value || "").trim().toLowerCase();
     let list = matches;
     if (q) {
       list = list.filter((m) => {
@@ -2662,9 +2713,6 @@
         const opp = String(m.opp || "").toLowerCase();
         return clanName.includes(q) || opp.includes(q);
       });
-    }
-    if (mq) {
-      list = list.filter((m) => String(m.map || "").toLowerCase().includes(mq));
     }
     const dir = matchSortDir === "asc" ? 1 : -1;
     const textKeys = new Set(["clan", "opp", "map", "size", "server", "stack", "meeting", "r1", "r2"]);
@@ -2856,47 +2904,6 @@
         rosterByNick = {};
         return rosterByNick;
       });
-  }
-
-  let siteClans = null;
-
-  function loadSiteClans() {
-    if (siteClans) return Promise.resolve(siteClans);
-    return fetch("/api/public/clans", { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : { clans: [] }))
-      .then((data) => {
-        siteClans = Array.isArray(data.clans) ? data.clans : [];
-        return siteClans;
-      })
-      .catch(() => {
-        siteClans = [];
-        return siteClans;
-      });
-  }
-
-  function fillClanSelect(id) {
-    const sel = document.getElementById(id);
-    if (!sel || !siteClans) return;
-    const current = sel.value;
-    const opts = ['<option value="">Все кланы</option>'];
-    siteClans.forEach((c) => {
-      const tag = String(c.tag || "").trim();
-      if (!tag) return;
-      const name = String(c.name || "").trim();
-      const label =
-        name && name.toUpperCase() !== tag.toUpperCase() ? `${tag} · ${name}` : tag;
-      opts.push(`<option value="${escapeHtml(tag)}">${escapeHtml(label)}</option>`);
-    });
-    sel.innerHTML = opts.join("");
-    if ([...sel.options].some((o) => o.value === current)) sel.value = current;
-  }
-
-  function selectedClan(id) {
-    return (document.getElementById(id)?.value || "").trim().toUpperCase();
-  }
-
-  function rowClanTag(row) {
-    return String((row && row.clan) || "").trim().toUpperCase();
   }
 
   function rosterOf(nick) {
@@ -3160,6 +3167,7 @@
         note.textContent = withStats
           ? `Период: ${scopeRu}. Каток КВ со статой: ${withStats}. В рейтинге только зареганные: ${ratingRows.length}${orphanN > 0 ? ` (ещё ${orphanN} с табло ждут регистрацию)` : ""}. Сортировка по умолчанию — TU. Меньше 5 каток — калибровка, внизу таблицы.`
           : "Пока нет каток КВ с внесённой статой — рейтинг пуст.";
+        fillClanSelect("rating-clan", ratingRows);
         paintRatingTable();
       })
       .catch((err) => {
@@ -3201,10 +3209,10 @@
 
   function paintRatingTable() {
     const q = (document.getElementById("rating-nick").value || "").trim().toLowerCase();
-    const clanQ = selectedClan("rating-clan");
+    const clanTag = selectedClanTag("rating-clan");
     let rows = ratingRows;
+    if (clanTag) rows = rows.filter((p) => sameClan(p.clan, clanTag));
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
-    if (clanQ) rows = rows.filter((p) => rowClanTag(p) === clanQ);
     const dir = ratingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
       const calA = a.calibrating ? 1 : 0;
@@ -3431,7 +3439,6 @@
         paintTrainingRatingTable();
       });
     }
-    loadSiteClans().then(() => fillClanSelect("train-rating-clan"));
     document.querySelectorAll("#train-rating-table th.sortable").forEach((th) => {
       th.addEventListener("click", () => {
         const key = th.dataset.trsort;
@@ -3732,6 +3739,7 @@
         note.textContent = withStats
           ? `Период: ${scopeRu}. Режим: ${trackRu}. Тренировок со статой: ${withStats}. Ников: ${trainRatingRows.length}.`
           : "Пока нет тренировок с внесённой статой — рейтинг пуст.";
+        fillClanSelect("train-rating-clan", trainRatingRows);
         paintTrainingRatingTable();
         ensureMainRoles().then(() => {
           let changed = false;
@@ -3832,13 +3840,13 @@
     const q = (document.getElementById("train-rating-nick")?.value || "")
       .trim()
       .toLowerCase();
+    const clanTag = selectedClanTag("train-rating-clan");
     let rows = trainRatingRows;
     if (vehTrack) {
       rows = rows.filter((p) => (Number(p.games) || 0) > 0);
     }
+    if (clanTag) rows = rows.filter((p) => sameClan(p.clan, clanTag));
     if (q) rows = rows.filter((p) => p.nick.toLowerCase().includes(q));
-    const trainClanQ = selectedClan("train-rating-clan");
-    if (trainClanQ) rows = rows.filter((p) => rowClanTag(p) === trainClanQ);
     const dir = trainRatingSortDir === "asc" ? 1 : -1;
     rows = rows.slice().sort((a, b) => {
       const nickTie = () => a.nick.localeCompare(b.nick, "ru");
@@ -4075,6 +4083,8 @@
     });
     monthSel.addEventListener("change", reload);
     if (stackEl) stackEl.addEventListener("change", reload);
+    const clanEl = document.getElementById("cw-an-clan");
+    if (clanEl) clanEl.addEventListener("change", reload);
     if (years.length) {
       yearSel.value = String(years[0]);
       syncMonths();
@@ -4156,7 +4166,11 @@
         );
       })
       .then((bundles) => {
-        paintCwAnalytics(bundles || []);
+        const tag = selectedClanTag("cw-an-clan");
+        const list = tag
+          ? (bundles || []).filter((b) => bundleHasClan(b, tag))
+          : bundles || [];
+        paintCwAnalytics(list);
       })
       .catch((err) => {
         note.textContent = String(err.message || err);
@@ -4738,6 +4752,8 @@
       loadTrainingAnalytics();
     });
     monthSel.addEventListener("change", loadTrainingAnalytics);
+    const trainAnClanEl = document.getElementById("train-an-clan");
+    if (trainAnClanEl) trainAnClanEl.addEventListener("change", loadTrainingAnalytics);
     if (years.length) {
       yearSel.value = String(years[0]);
       syncMonths();
@@ -5097,7 +5113,11 @@
         ).then((bundles) => ({ bundles, ledger }));
       })
       .then(({ bundles, ledger }) => {
-        paintTrainingAnalytics(bundles || [], ledger);
+        const tag = selectedClanTag("train-an-clan");
+        const list = tag
+          ? (bundles || []).filter((b) => bundleHasClan(b, tag))
+          : bundles || [];
+        paintTrainingAnalytics(list, ledger);
       })
       .catch((err) => {
         note.textContent = String(err.message || err);
@@ -6979,6 +6999,7 @@
       .then((r) => (r.ok ? r.json() : null))
       .catch(() => null),
     loadRoster(),
+    loadSiteClans(),
     loadNickPatches(),
   ])
     .then(([data, tiers, trainIdx, factions]) => {

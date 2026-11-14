@@ -620,6 +620,8 @@
   let currentMonthMeta = null;
   let monthData = null;
   let matches = [];
+  /** Календарь КВ: весь каталог месяцев сразу (кнопка «За всё время»). */
+  let cwAllTime = false;
   let trainMonthMeta = null;
   let trainMatches = [];
   let trainMonthKey = "09";
@@ -2147,10 +2149,15 @@
 
     yearSel.addEventListener("change", () => {
       syncMatchMonths();
+      if (cwAllTime) {
+        paintMonthChips();
+        return;
+      }
       loadSelectedMonth();
       paintMonthChips();
     });
     document.getElementById("filter-month").addEventListener("change", () => {
+      cwAllTime = false;
       loadSelectedMonth();
       paintMonthChips();
     });
@@ -2527,14 +2534,22 @@
     const selected = document.getElementById("filter-month").value;
     const months = catalog.filter((m) => m.year === y).sort((a, b) => a.month - b.month);
     const box = document.getElementById("month-chips");
-    box.innerHTML = months
-      .map(
-        (m) =>
-          `<button type="button" class="chip ${m.id === selected ? "active" : ""}" data-month="${m.id}">${MONTH_RU[m.month]}</button>`
-      )
-      .join("");
+    const allChip = `<button type="button" class="chip ${cwAllTime ? "active" : ""}" data-month="__all__">За всё время</button>`;
+    box.innerHTML =
+      allChip +
+      months
+        .map(
+          (m) =>
+            `<button type="button" class="chip ${!cwAllTime && m.id === selected ? "active" : ""}" data-month="${m.id}">${MONTH_RU[m.month]}</button>`
+        )
+        .join("");
     box.querySelectorAll(".chip").forEach((btn) => {
       btn.addEventListener("click", () => {
+        if (btn.dataset.month === "__all__") {
+          loadAllTimeMatches();
+          return;
+        }
+        cwAllTime = false;
         document.getElementById("filter-month").value = btn.dataset.month;
         loadSelectedMonth();
         paintMonthChips();
@@ -2542,11 +2557,33 @@
     });
   }
 
+  function matchDateKey(m) {
+    const y = Number(m._year) || 0;
+    const mo = Number(m._month) || 0;
+    const d = Number(m.day) || 0;
+    return y * 10000 + mo * 100 + d;
+  }
+
+  function matchDateLabel(m) {
+    const mo = pad(m._month != null ? m._month : monthKey);
+    const day = pad(m.day);
+    if (
+      cwAllTime ||
+      (m._year != null &&
+        currentMonthMeta &&
+        Number(m._year) !== Number(currentMonthMeta.year))
+    ) {
+      return `${day}.${mo}.${m._year}`;
+    }
+    return `${day}.${mo}`;
+  }
+
   function loadSelectedMonth() {
     const id = document.getElementById("filter-month").value;
     const meta = catalog.find((m) => m.id === id);
     if (!meta) return;
     pageCwMatches = 1;
+    cwAllTime = false;
     currentMonthMeta = meta;
     monthKey = pad(meta.month);
     fetch(dataUrl(meta.url))
@@ -2567,10 +2604,64 @@
       });
   }
 
+  function loadAllTimeMatches() {
+    if (!catalog.length) return;
+    pageCwMatches = 1;
+    cwAllTime = true;
+    currentMonthMeta = null;
+    monthKey = "00";
+    const note = document.getElementById("note");
+    const title = document.getElementById("title");
+    title.textContent = "КВ — за всё время";
+    note.textContent = "Загружаем все месяцы…";
+    paintMonthChips();
+    Promise.all(
+      catalog.map((meta) =>
+        fetch(dataUrl(meta.url))
+          .then((r) => (r.ok ? r.json() : { matches: [] }))
+          .then((data) => ({ meta, data }))
+          .catch(() => ({ meta, data: { matches: [] } }))
+      )
+    )
+      .then((bundles) => {
+        const all = [];
+        for (const { meta, data } of bundles) {
+          for (const m of data.matches || []) {
+            all.push({
+              ...m,
+              _month: meta.month,
+              _year: meta.year,
+              _monthId: meta.id,
+            });
+          }
+        }
+        all.sort(
+          (a, b) =>
+            matchDateKey(b) - matchDateKey(a) ||
+            String(b.timeMsk || "").localeCompare(String(a.timeMsk || ""), "ru")
+        );
+        all.forEach((m, i) => {
+          m._i = i;
+        });
+        matches = all;
+        monthData = { matches: all, title: "КВ — за всё время" };
+        const years = [...new Set(catalog.map((m) => m.year))].sort((a, b) => a - b);
+        const span =
+          years.length > 1 ? `${years[0]}–${years[years.length - 1]}` : String(years[0] || "");
+        title.textContent = span ? `КВ — за всё время (${span})` : "КВ — за всё время";
+        note.textContent = `${all.length} матчей из ${catalog.length} мес.`;
+        paintStats(all);
+        paintMatchesTable();
+      })
+      .catch((err) => {
+        note.textContent = String(err.message || err);
+      });
+  }
+
   function matchSortValue(m, key) {
     switch (key) {
       case "date":
-        return Number(m.day) || 0;
+        return cwAllTime ? matchDateKey(m) : Number(m.day) || 0;
       case "time": {
         const t = String(m.timeMsk || "");
         const parts = t.split(":");
@@ -2773,7 +2864,7 @@
         const clanName = hostClanName(m);
         const bbWin = st === "win" && isBbHostMatch(m) ? " bb-win" : "";
         return `<tr class="${st}${bbWin} clickable" data-i="${m._i}" tabindex="0" role="button">
-          <td>${pad(m.day)}.${monthKey}</td>
+          <td>${matchDateLabel(m)}</td>
           <td class="num">${m.timeMsk || "—"}</td>
           <td>${escapeHtml(clanName)}</td>
           <td>${escapeHtml(m.opp || "—")}</td>
@@ -6217,7 +6308,7 @@
         .filter(Boolean)
         .join(" · ");
     } else {
-      modalTitle.textContent = `${pad(m.day)}.${monthKey} vs ${m.opp || "—"}`;
+      modalTitle.textContent = `${matchDateLabel(m)} vs ${m.opp || "—"}`;
       modalSub.textContent = [
         m.map,
         m.size,
