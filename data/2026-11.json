@@ -505,6 +505,21 @@
       "mode": "FCL"
     },
     {
+      "id": "17-lk",
+      "day": 17,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "LK",
+      "map": "LC Fallujah",
+      "size": "20v20",
+      "server": "FCL ARENA",
+      "rules": "LC",
+      "stack": "Main",
+      "status": "cancel",
+      "note": "отмена · Main · LC · LC_Fallujah · 20v20 · 20:00 · сервер FCL ARENA · отмена 15.11 · NO SCOUT · NO MEETINGS",
+      "mode": "LC"
+    },
+    {
       "id": "18-faq",
       "day": 18,
       "timeMsk": "20:00",
