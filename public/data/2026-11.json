@@ -439,8 +439,11 @@
       "server": "Deadline",
       "rules": "vanilla",
       "stack": "Клан",
-      "status": "upcoming",
-      "note": "весь клан · не Main и не Junior · vanilla · AlBasrah_AAS_v3 · 48v48 · 19:00 · сервер Deadline · заявка 01.11 · NO SCOUT · NO MEETINGS"
+      "status": "r1",
+      "note": "весь клан · не Main и не Junior · vanilla · Al Basrah AAS v3 · 48v48 · 19:00 · сервер DeadLine Training · R1 145:0 мы IMF они VDV · 30:35 · встреча не закрыта, ждём R2 · топ-отряд ВильдДанБаллан · топ-сапплай Мушмула · следующий слой Lashkar RAAS v1 · NO SCOUT · NO MEETINGS",
+      "playersUrl": "data/players/15-deadline.json",
+      "r1": "145:0",
+      "r2": ""
     },
     {
       "id": "15-alpha",

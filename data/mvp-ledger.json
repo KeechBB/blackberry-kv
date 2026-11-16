@@ -1225,6 +1225,32 @@
       }
     },
     {
+      "id": "15-deadline",
+      "day": 15,
+      "opp": "Deadline",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Клубника"
+        ],
+        "killer": [
+          "Папайя"
+        ],
+        "damage": [
+          "Черника"
+        ],
+        "antiDeath": [
+          "Гуава"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "15-hell",
       "day": 15,
       "opp": "HELL",
@@ -6828,6 +6854,22 @@
         }
       ]
     },
+    "Гуава": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "Джигурда": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -6940,6 +6982,22 @@
         }
       ]
     },
+    "Клубника": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Отчимус Прайм": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -6953,6 +7011,38 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Папайя": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Черника": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
