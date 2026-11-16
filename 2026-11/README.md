@@ -7,7 +7,7 @@
 | 01 | [01-AVG](01-AVG/match.md) | AVG | **Junior**, SEC 26 Yehorivka AAS v1, **26v26**, **20:00** МСК (17:00 UTC), сервер **AVG**, SEC, [analytics.md](01-AVG/analytics.md) |
 | 01 | [01-NS](01-NS/match.md) | NS / North Star | **перенос → 14.11** (не отмена) · было 21:00 МСК, CSL Mutaha Skirmish v2, FCL ARENA 2 |
 | 14 | [14-NS](14-NS/match.md) | NS / North Star | **отмена** · мейн-стак, CSL Mutaha Skirmish v2, **20v20**, **21:00** МСК, сервер **FCL ARENA 3** · было перенос с 01.11 (цепочка с 17.10) |
-| 15 | [15-DEADLINE](15-DEADLINE/match.md) | Deadline | **весь клан** (не Main и не Junior), Al Basrah AAS v3, **48v48**, **19:00** МСК, сервер **DeadLine Training**, vanilla · R1 **145:0** мы IMF они VDV · 30:35 · встреча не закрыта, ждём R2, [analytics.md](15-DEADLINE/analytics.md) |
+| 15 | [15-DEADLINE](15-DEADLINE/match.md) | Deadline | **весь клан** (не Main и не Junior), Al Basrah AAS v3, **48v48**, **19:00** МСК, сервер **DeadLine Training**, vanilla · R1 **145:0** мы IMF · R2 **295:0** мы VDV · сумма **440:0** · серия **2–0**, [analytics.md](15-DEADLINE/analytics.md) |
 | 15 | [15-ALPHA](15-ALPHA/match.md) | ALPHA | **перенос → 17.11** (не отмена) · было Junior, FCL_BlackCoast_16, **16v16**, **19:30** МСК |
 | 15 | [15-ALPHA-2](15-ALPHA-2/match.md) | ALPHA | **перенос → 17.11** (не отмена) · было Junior, FCL_MUTAHA_16, **16v16**, **20:00** МСК |
 | 17 | [17-ALPHA](17-ALPHA/match.md) | ALPHA | **Junior**, FCL_BlackCoast_16, **16v16**, **19:30** МСК (16:30 UTC), сервер **FCL ARENA**, FCL · перенос с 15.11, [analytics.md](17-ALPHA/analytics.md) |

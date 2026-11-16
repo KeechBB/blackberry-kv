@@ -2,7 +2,7 @@
   "matchId": "15-deadline",
   "opp": "Deadline",
   "stack": "Клан",
-  "note": "Deadline · Al Basrah AAS v3 · R1 145:0 мы IMF они VDV · 30:35 · source=screens · встреча не закрыта, ждём R2 · камеры Sohrze и Shimelys не внесены",
+  "note": "Deadline · Al Basrah AAS v3 · R1 145:0 мы IMF они VDV · 30:35 · R2 295:0 мы VDV они IMF · 24:21 · сумма 440:0 · серия 2–0 · source=screens · камеры Мангостин и HIVE Shmelys не внесены · 3 ника соперника не попали на кадры",
   "source": "screens",
   "server": "DeadLine Training",
   "map": "Al Basrah AAS v3",
@@ -440,7 +440,440 @@
       "vehicleKills": 0
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "Хурма",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 85,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Айва",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 222,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Слива",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 3,
+      "dmg": 336,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Груша",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 50,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Абрикос",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 163,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Персик",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 79,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Нектарин",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 30,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Вишня",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 532,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Черешня",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 60,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Клубника",
+      "res": 3,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 7,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Земляника",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 99,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Малина",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 43,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Ежевика",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 752,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Крыжовник",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Черника",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 676,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Брусника",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 84,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Голубика",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Клюква",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 505,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Апельсин",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 82,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Киви",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 75,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Лимон",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 79,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Мандарин",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 81,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Лайм",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 26,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Грейпфрут",
+      "res": 7,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 56,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Рамбутан",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 567,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Фейхоа",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Мушмула",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Авокадо",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 500,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Смородина",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 172,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Арбуз",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 71,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Помело",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 167,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Кумкват",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 39,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Дыня",
+      "res": 7,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 13,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Карамбола",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 70,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Манго",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 109,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Личи",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 1133,
+      "vehicleKills": 11
+    },
+    {
+      "nick": "Ананас",
+      "res": 2,
+      "nok": 11,
+      "kills": 9,
+      "deaths": 1,
+      "dmg": 257,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Кокос",
+      "res": 4,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 590,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Папайя",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 194,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Гуава",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 182,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Яблоко",
+      "res": 0,
+      "nok": 0,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 3,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Банан",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 469,
+      "vehicleKills": 4
+    },
+    {
+      "nick": "Дуриан",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 147,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Инжир",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 16,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Питайя",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 93,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Маракуйя",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 103,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Гранат",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 126,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "|PZ-L| xakep YouTube",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
   "oppR1": [
     {
       "nick": "HIVE leshkasagitov",
@@ -857,7 +1290,314 @@
       "vehicleKills": 0
     }
   ],
-  "oppR2": [],
+  "oppR2": [
+    {
+      "nick": "DEAD Kot_31",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 114,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD Rommel",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 23,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD Barbi",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 3,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD mortira",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 16,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[13] Enrage",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 62,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[13] Bradley-ODS-sa",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 71,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[13] КОПАТЫЧ",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 140,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "13r34 miwa100",
+      "res": 4,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 29,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[13] Suzuya",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 297,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "[13] Mariachi",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 132,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[13] maxmax23 (mikey)",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 32,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE leshkasagitov",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 21,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE Penquin",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 113,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE леон фростморн",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 24,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE classic",
+      "res": 1,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 48,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE torz",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 36,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE 4eReMsHa",
+      "res": 0,
+      "nok": 7,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 186,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE LighthouseGames You",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 105,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE Just_DeD",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 67,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE Найедикович",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 67,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[=PPL] DouglasCosta - Aura",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 76,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "/catG/ Grouse",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 72,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KORJIK",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 160,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI J7W1",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 111,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI Hukah",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 93,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI VEXIKOL",
+      "res": 0,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 131,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI Vzmaxsmerty",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 91,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI Afraidist",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 72,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD Sohrze",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 14,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI GATA",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 72,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DEAD Tipich",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 504,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Degurechaff",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 557,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HIVE iboroski",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 24,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DCAI пакость666",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 289,
+      "vehicleKills": 1
+    }
+  ],
   "mvp": {
     "r1": {
       "medic": [
@@ -874,10 +1614,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Грейпфрут"
+      ],
+      "killer": [
+        "Слива"
+      ],
+      "damage": [
+        "Личи"
+      ],
+      "antiDeath": [
+        "Лимон"
+      ]
     }
   }
 }

@@ -439,11 +439,12 @@
       "server": "Deadline",
       "rules": "vanilla",
       "stack": "Клан",
-      "status": "r1",
-      "note": "весь клан · не Main и не Junior · vanilla · Al Basrah AAS v3 · 48v48 · 19:00 · сервер DeadLine Training · R1 145:0 мы IMF они VDV · 30:35 · встреча не закрыта, ждём R2 · топ-отряд ВильдДанБаллан · топ-сапплай Мушмула · следующий слой Lashkar RAAS v1 · NO SCOUT · NO MEETINGS",
+      "status": "win",
+      "note": "весь клан · не Main и не Junior · vanilla · Al Basrah AAS v3 · 48v48 · 19:00 · сервер DeadLine Training · R1 145:0 мы IMF они VDV · 30:35 · R2 295:0 мы VDV они IMF · 24:21 · сумма 440:0 · серия 2–0 · топ-отряд ВильдДанБаллан · R2 топ-медик Грейпфрут · R2 топ-сапплай Клюква · следующий слой Goose Bay RAAS v1 · NO SCOUT · NO MEETINGS",
       "playersUrl": "data/players/15-deadline.json",
       "r1": "145:0",
-      "r2": ""
+      "r2": "295:0",
+      "meeting": "2–0"
     },
     {
       "id": "15-alpha",

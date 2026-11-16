@@ -1228,7 +1228,7 @@
       "id": "15-deadline",
       "day": 15,
       "opp": "Deadline",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Клубника"
@@ -1244,10 +1244,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Грейпфрут"
+        ],
+        "killer": [
+          "Слива"
+        ],
+        "damage": [
+          "Личи"
+        ],
+        "antiDeath": [
+          "Лимон"
+        ]
       }
     },
     {
@@ -6854,6 +6862,22 @@
         }
       ]
     },
+    "Грейпфрут": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Гуава": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -6998,6 +7022,38 @@
         }
       ]
     },
+    "Лимон": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "Личи": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        }
+      ]
+    },
     "Отчимус Прайм": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -7025,6 +7081,22 @@
           "day": 15,
           "opp": "Deadline",
           "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        }
+      ]
+    },
+    "Слива": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
         }
