@@ -1231,30 +1231,30 @@
       "meeting": "2–0",
       "r1": {
         "medic": [
-          "Клубника"
+          "Azure"
         ],
         "killer": [
-          "Папайя"
+          "Hikkomaru"
         ],
         "damage": [
-          "Черника"
+          "S.M.P"
         ],
         "antiDeath": [
-          "Гуава"
+          "Trixx"
         ]
       },
       "r2": {
         "medic": [
-          "Грейпфрут"
+          "SkiLLeX"
         ],
         "killer": [
-          "Слива"
+          "Diray"
         ],
         "damage": [
-          "Личи"
+          "Gadler"
         ],
         "antiDeath": [
-          "Лимон"
+          "CAT"
         ]
       }
     },
@@ -2383,7 +2383,7 @@
       ]
     },
     "Azure": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -2392,6 +2392,14 @@
           "matchId": "08-hq",
           "day": 8,
           "opp": "HQ",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
@@ -2626,7 +2634,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 2,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "07-dcai",
@@ -2656,6 +2664,14 @@
           "matchId": "14-fal",
           "day": 14,
           "opp": "FAL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
@@ -2824,7 +2840,7 @@
     },
     "Diray": {
       "mvpMedic": 0,
-      "mvpKiller": 7,
+      "mvpKiller": 8,
       "mvpDamage": 3,
       "antiDeath": 1,
       "awards": [
@@ -2843,6 +2859,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "15-ih",
@@ -3169,7 +3193,7 @@
     "Gadler": {
       "mvpMedic": 1,
       "mvpKiller": 1,
-      "mvpDamage": 5,
+      "mvpDamage": 6,
       "antiDeath": 4,
       "awards": [
         {
@@ -3192,6 +3216,14 @@
           "matchId": "08-hq",
           "day": 8,
           "opp": "HQ",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
@@ -3368,10 +3400,18 @@
     },
     "Hikkomaru": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
         {
           "matchId": "18-sph",
           "day": 18,
@@ -4897,9 +4937,17 @@
     "S.M.P": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 1,
       "awards": [
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
         {
           "matchId": "15-ih",
           "day": 15,
@@ -5063,7 +5111,7 @@
       ]
     },
     "SkiLLeX": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 1,
@@ -5080,6 +5128,14 @@
           "matchId": "11-nklv",
           "day": 11,
           "opp": "NKLV",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -5546,7 +5602,7 @@
       "mvpMedic": 1,
       "mvpKiller": 3,
       "mvpDamage": 7,
-      "antiDeath": 2,
+      "antiDeath": 3,
       "awards": [
         {
           "matchId": "02-ra",
@@ -5611,6 +5667,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "15-deadline",
+          "day": 15,
+          "opp": "Deadline",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "15-hell",
@@ -6862,38 +6926,6 @@
         }
       ]
     },
-    "Грейпфрут": {
-      "mvpMedic": 1,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r2",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "Гуава": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r1",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
     "Джигурда": {
       "mvpMedic": 1,
       "mvpKiller": 0,
@@ -7006,54 +7038,6 @@
         }
       ]
     },
-    "Клубника": {
-      "mvpMedic": 1,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r1",
-          "type": "medic",
-          "label": "MVP Medic"
-        }
-      ]
-    },
-    "Лимон": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 0,
-      "antiDeath": 1,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r2",
-          "type": "antiDeath",
-          "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "Личи": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r2",
-          "type": "damage",
-          "label": "MVP War-Score"
-        }
-      ]
-    },
     "Отчимус Прайм": {
       "mvpMedic": 0,
       "mvpKiller": 0,
@@ -7067,54 +7051,6 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
-        }
-      ]
-    },
-    "Папайя": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r1",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "Слива": {
-      "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 0,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r2",
-          "type": "killer",
-          "label": "MVP Killer"
-        }
-      ]
-    },
-    "Черника": {
-      "mvpMedic": 0,
-      "mvpKiller": 0,
-      "mvpDamage": 1,
-      "antiDeath": 0,
-      "awards": [
-        {
-          "matchId": "15-deadline",
-          "day": 15,
-          "opp": "Deadline",
-          "round": "r1",
-          "type": "damage",
-          "label": "MVP War-Score"
         }
       ]
     },

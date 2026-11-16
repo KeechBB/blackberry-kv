@@ -2,13 +2,13 @@
   "matchId": "15-deadline",
   "opp": "Deadline",
   "stack": "Клан",
-  "note": "Deadline · Al Basrah AAS v3 · R1 145:0 мы IMF они VDV · 30:35 · R2 295:0 мы VDV они IMF · 24:21 · сумма 440:0 · серия 2–0 · source=screens · камеры Мангостин и HIVE Shmelys не внесены · 3 ника соперника не попали на кадры",
+  "note": "Deadline · Al Basrah AAS v3 · R1 145:0 мы IMF они VDV · 30:35 · R2 295:0 мы VDV они IMF · 24:21 · сумма 440:0 · серия 2–0 · source=screens · камера Barsik и HIVE Shmelys не внесены · 3 ника соперника не попали на кадры",
   "source": "screens",
   "server": "DeadLine Training",
   "map": "Al Basrah AAS v3",
   "r1": [
     {
-      "nick": "Хурма",
+      "nick": "bambozy",
       "res": 2,
       "nok": 12,
       "kills": 11,
@@ -17,7 +17,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Айва",
+      "nick": "Summer",
       "res": 0,
       "nok": 3,
       "kills": 0,
@@ -26,7 +26,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Слива",
+      "nick": "Diray",
       "res": 0,
       "nok": 14,
       "kills": 9,
@@ -35,7 +35,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Груша",
+      "nick": "KillReal",
       "res": 8,
       "nok": 2,
       "kills": 1,
@@ -44,7 +44,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Абрикос",
+      "nick": "SHURUP",
       "res": 1,
       "nok": 6,
       "kills": 4,
@@ -53,7 +53,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Персик",
+      "nick": "vasserman",
       "res": 7,
       "nok": 3,
       "kills": 3,
@@ -62,7 +62,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Апельсин",
+      "nick": "Zerox",
       "res": 0,
       "nok": 8,
       "kills": 5,
@@ -71,7 +71,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Киви",
+      "nick": "FLEX",
       "res": 5,
       "nok": 3,
       "kills": 1,
@@ -80,7 +80,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Лимон",
+      "nick": "CAT",
       "res": 0,
       "nok": 6,
       "kills": 3,
@@ -89,7 +89,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Лайм",
+      "nick": "COBRA",
       "res": 1,
       "nok": 3,
       "kills": 2,
@@ -98,7 +98,7 @@
       "vehicleKills": 2
     },
     {
-      "nick": "Мандарин",
+      "nick": "HunterN7",
       "res": 0,
       "nok": 2,
       "kills": 1,
@@ -107,7 +107,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Грейпфрут",
+      "nick": "SkiLLeX",
       "res": 8,
       "nok": 2,
       "kills": 1,
@@ -116,7 +116,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Смородина",
+      "nick": "Runetik",
       "res": 0,
       "nok": 7,
       "kills": 7,
@@ -125,7 +125,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Карамбола",
+      "nick": "WoodMan",
       "res": 0,
       "nok": 2,
       "kills": 1,
@@ -134,7 +134,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Арбуз",
+      "nick": "SquirieZzz",
       "res": 0,
       "nok": 10,
       "kills": 8,
@@ -143,7 +143,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Помело",
+      "nick": "r4mp",
       "res": 1,
       "nok": 5,
       "kills": 5,
@@ -152,7 +152,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Кумкват",
+      "nick": "ASCETICH",
       "res": 0,
       "nok": 4,
       "kills": 4,
@@ -161,7 +161,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Дыня",
+      "nick": "VET",
       "res": 8,
       "nok": 1,
       "kills": 0,
@@ -170,7 +170,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Рамбутан",
+      "nick": "Chidori",
       "res": 0,
       "nok": 11,
       "kills": 7,
@@ -179,7 +179,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Мушмула",
+      "nick": "Treppen",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -188,7 +188,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Фейхоа",
+      "nick": "ADUN",
       "res": 6,
       "nok": 0,
       "kills": 0,
@@ -197,7 +197,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Авокадо",
+      "nick": "Varyag",
       "res": 1,
       "nok": 2,
       "kills": 2,
@@ -206,7 +206,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Мангостин",
+      "nick": "Barsik",
       "res": 0,
       "nok": 2,
       "kills": 1,
@@ -215,7 +215,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Манго",
+      "nick": "Keech",
       "res": 0,
       "nok": 11,
       "kills": 7,
@@ -224,7 +224,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Личи",
+      "nick": "Gadler",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -233,7 +233,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Ананас",
+      "nick": "iKEppA",
       "res": 1,
       "nok": 13,
       "kills": 8,
@@ -242,7 +242,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Кокос",
+      "nick": "lepurple",
       "res": 5,
       "nok": 9,
       "kills": 8,
@@ -251,7 +251,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Папайя",
+      "nick": "Hikkomaru",
       "res": 1,
       "nok": 15,
       "kills": 13,
@@ -260,7 +260,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Гуава",
+      "nick": "Trixx",
       "res": 0,
       "nok": 6,
       "kills": 2,
@@ -269,7 +269,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Нектарин",
+      "nick": "Jimmy Neutron",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -278,7 +278,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Вишня",
+      "nick": "Forks",
       "res": 0,
       "nok": 6,
       "kills": 2,
@@ -287,7 +287,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Черешня",
+      "nick": "ZensU",
       "res": 0,
       "nok": 9,
       "kills": 8,
@@ -296,7 +296,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Клубника",
+      "nick": "Azure",
       "res": 9,
       "nok": 6,
       "kills": 4,
@@ -305,7 +305,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Земляника",
+      "nick": "Tatarin",
       "res": 0,
       "nok": 4,
       "kills": 3,
@@ -314,7 +314,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Малина",
+      "nick": "etErNal tiLt",
       "res": 9,
       "nok": 5,
       "kills": 2,
@@ -323,7 +323,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Ежевика",
+      "nick": "Mukuru",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -332,7 +332,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Черника",
+      "nick": "S.M.P",
       "res": 0,
       "nok": 4,
       "kills": 3,
@@ -341,7 +341,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Брусника",
+      "nick": "yanchik",
       "res": 0,
       "nok": 3,
       "kills": 2,
@@ -350,7 +350,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Крыжовник",
+      "nick": "Jopllik",
       "res": 2,
       "nok": 1,
       "kills": 1,
@@ -359,7 +359,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Голубика",
+      "nick": "Musker",
       "res": 0,
       "nok": 6,
       "kills": 4,
@@ -368,7 +368,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Клюква",
+      "nick": "Anna_Cokolovaaa",
       "res": 0,
       "nok": 1,
       "kills": 1,
@@ -377,7 +377,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Дуриан",
+      "nick": "Pymba",
       "res": 1,
       "nok": 2,
       "kills": 0,
@@ -386,7 +386,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Питайя",
+      "nick": "angel",
       "res": 1,
       "nok": 17,
       "kills": 12,
@@ -395,7 +395,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Гранат",
+      "nick": "MrChaykaa",
       "res": 1,
       "nok": 2,
       "kills": 2,
@@ -404,7 +404,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Маракуйя",
+      "nick": "LordWolf",
       "res": 0,
       "nok": 2,
       "kills": 2,
@@ -413,7 +413,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Инжир",
+      "nick": "Kroasawn",
       "res": 4,
       "nok": 3,
       "kills": 3,
@@ -422,7 +422,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Яблоко",
+      "nick": "Bayle The Dread",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -431,7 +431,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Банан",
+      "nick": "ZLOBA1917",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -442,7 +442,7 @@
   ],
   "r2": [
     {
-      "nick": "Хурма",
+      "nick": "bambozy",
       "res": 0,
       "nok": 5,
       "kills": 4,
@@ -451,7 +451,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Айва",
+      "nick": "Summer",
       "res": 0,
       "nok": 5,
       "kills": 5,
@@ -460,7 +460,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Слива",
+      "nick": "Diray",
       "res": 0,
       "nok": 14,
       "kills": 10,
@@ -469,7 +469,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Груша",
+      "nick": "KillReal",
       "res": 3,
       "nok": 2,
       "kills": 1,
@@ -478,7 +478,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Абрикос",
+      "nick": "SHURUP",
       "res": 0,
       "nok": 7,
       "kills": 6,
@@ -487,7 +487,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Персик",
+      "nick": "vasserman",
       "res": 5,
       "nok": 3,
       "kills": 3,
@@ -496,7 +496,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Нектарин",
+      "nick": "Jimmy Neutron",
       "res": 0,
       "nok": 1,
       "kills": 1,
@@ -505,7 +505,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Вишня",
+      "nick": "Forks",
       "res": 0,
       "nok": 1,
       "kills": 1,
@@ -514,7 +514,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Черешня",
+      "nick": "ZensU",
       "res": 0,
       "nok": 2,
       "kills": 2,
@@ -523,7 +523,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Клубника",
+      "nick": "Azure",
       "res": 3,
       "nok": 1,
       "kills": 0,
@@ -532,7 +532,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Земляника",
+      "nick": "Tatarin",
       "res": 1,
       "nok": 4,
       "kills": 4,
@@ -541,7 +541,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Малина",
+      "nick": "etErNal tiLt",
       "res": 1,
       "nok": 1,
       "kills": 1,
@@ -550,7 +550,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Ежевика",
+      "nick": "Mukuru",
       "res": 0,
       "nok": 1,
       "kills": 1,
@@ -559,7 +559,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Крыжовник",
+      "nick": "Jopllik",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -568,7 +568,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Черника",
+      "nick": "S.M.P",
       "res": 0,
       "nok": 2,
       "kills": 1,
@@ -577,7 +577,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Брусника",
+      "nick": "yanchik",
       "res": 0,
       "nok": 1,
       "kills": 1,
@@ -586,7 +586,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Голубика",
+      "nick": "Musker",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -595,7 +595,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Клюква",
+      "nick": "Anna_Cokolovaaa",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -604,7 +604,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Апельсин",
+      "nick": "Zerox",
       "res": 1,
       "nok": 4,
       "kills": 4,
@@ -613,7 +613,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Киви",
+      "nick": "FLEX",
       "res": 0,
       "nok": 4,
       "kills": 4,
@@ -622,7 +622,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Лимон",
+      "nick": "CAT",
       "res": 0,
       "nok": 2,
       "kills": 2,
@@ -631,7 +631,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Мандарин",
+      "nick": "HunterN7",
       "res": 0,
       "nok": 2,
       "kills": 2,
@@ -640,7 +640,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Лайм",
+      "nick": "COBRA",
       "res": 0,
       "nok": 1,
       "kills": 1,
@@ -649,7 +649,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Грейпфрут",
+      "nick": "SkiLLeX",
       "res": 7,
       "nok": 2,
       "kills": 2,
@@ -658,7 +658,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Рамбутан",
+      "nick": "Chidori",
       "res": 0,
       "nok": 2,
       "kills": 1,
@@ -667,7 +667,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Фейхоа",
+      "nick": "ADUN",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -676,7 +676,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Мушмула",
+      "nick": "Treppen",
       "res": 1,
       "nok": 0,
       "kills": 0,
@@ -685,7 +685,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Авокадо",
+      "nick": "Varyag",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -694,7 +694,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Смородина",
+      "nick": "Runetik",
       "res": 0,
       "nok": 8,
       "kills": 7,
@@ -703,7 +703,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Арбуз",
+      "nick": "SquirieZzz",
       "res": 0,
       "nok": 3,
       "kills": 1,
@@ -712,7 +712,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Помело",
+      "nick": "r4mp",
       "res": 0,
       "nok": 8,
       "kills": 7,
@@ -721,7 +721,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Кумкват",
+      "nick": "ASCETICH",
       "res": 0,
       "nok": 1,
       "kills": 0,
@@ -730,7 +730,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Дыня",
+      "nick": "VET",
       "res": 7,
       "nok": 0,
       "kills": 0,
@@ -739,7 +739,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Карамбола",
+      "nick": "WoodMan",
       "res": 0,
       "nok": 3,
       "kills": 3,
@@ -748,7 +748,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Манго",
+      "nick": "Keech",
       "res": 0,
       "nok": 0,
       "kills": 0,
@@ -757,7 +757,7 @@
       "vehicleKills": 1
     },
     {
-      "nick": "Личи",
+      "nick": "Gadler",
       "res": 0,
       "nok": 10,
       "kills": 8,
@@ -766,7 +766,7 @@
       "vehicleKills": 11
     },
     {
-      "nick": "Ананас",
+      "nick": "iKEppA",
       "res": 2,
       "nok": 11,
       "kills": 9,
@@ -775,7 +775,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Кокос",
+      "nick": "lepurple",
       "res": 4,
       "nok": 4,
       "kills": 2,
@@ -784,7 +784,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Папайя",
+      "nick": "Hikkomaru",
       "res": 0,
       "nok": 9,
       "kills": 6,
@@ -793,7 +793,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Гуава",
+      "nick": "Trixx",
       "res": 0,
       "nok": 8,
       "kills": 7,
@@ -802,7 +802,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Яблоко",
+      "nick": "Bayle The Dread",
       "res": 0,
       "nok": 0,
       "kills": 1,
@@ -811,7 +811,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Банан",
+      "nick": "ZLOBA1917",
       "res": 0,
       "nok": 7,
       "kills": 5,
@@ -820,7 +820,7 @@
       "vehicleKills": 4
     },
     {
-      "nick": "Дуриан",
+      "nick": "Pymba",
       "res": 0,
       "nok": 6,
       "kills": 5,
@@ -829,7 +829,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Инжир",
+      "nick": "Kroasawn",
       "res": 3,
       "nok": 0,
       "kills": 0,
@@ -838,7 +838,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Питайя",
+      "nick": "angel",
       "res": 1,
       "nok": 4,
       "kills": 3,
@@ -847,7 +847,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Маракуйя",
+      "nick": "LordWolf",
       "res": 0,
       "nok": 5,
       "kills": 3,
@@ -856,7 +856,7 @@
       "vehicleKills": 0
     },
     {
-      "nick": "Гранат",
+      "nick": "MrChaykaa",
       "res": 0,
       "nok": 3,
       "kills": 3,
@@ -1601,30 +1601,30 @@
   "mvp": {
     "r1": {
       "medic": [
-        "Клубника"
+        "Azure"
       ],
       "killer": [
-        "Папайя"
+        "Hikkomaru"
       ],
       "damage": [
-        "Черника"
+        "S.M.P"
       ],
       "antiDeath": [
-        "Гуава"
+        "Trixx"
       ]
     },
     "r2": {
       "medic": [
-        "Грейпфрут"
+        "SkiLLeX"
       ],
       "killer": [
-        "Слива"
+        "Diray"
       ],
       "damage": [
-        "Личи"
+        "Gadler"
       ],
       "antiDeath": [
-        "Лимон"
+        "CAT"
       ]
     }
   }
