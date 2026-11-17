@@ -1398,7 +1398,7 @@
       "id": "17-avg",
       "day": 17,
       "opp": "AVG",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Diray"
@@ -1414,10 +1414,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Diray"
+        ],
+        "killer": [
+          "SHURUP"
+        ],
+        "damage": [
+          "COBRA"
+        ],
+        "antiDeath": [
+          "SquirieZzz"
+        ]
       }
     },
     {
@@ -2731,7 +2739,7 @@
     "COBRA": {
       "mvpMedic": 0,
       "mvpKiller": 2,
-      "mvpDamage": 5,
+      "mvpDamage": 6,
       "antiDeath": 2,
       "awards": [
         {
@@ -2773,6 +2781,14 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "23-avg",
@@ -2873,7 +2889,7 @@
       ]
     },
     "Diray": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 9,
       "mvpDamage": 3,
       "antiDeath": 1,
@@ -2949,6 +2965,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         },
         {
           "matchId": "18-ih",
@@ -5058,7 +5082,7 @@
     },
     "SHURUP": {
       "mvpMedic": 0,
-      "mvpKiller": 2,
+      "mvpKiller": 3,
       "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
@@ -5077,6 +5101,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "25-solid",
@@ -5229,6 +5261,22 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        }
+      ]
+    },
+    "SquirieZzz": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },

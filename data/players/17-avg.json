@@ -3,7 +3,7 @@
   "clan": "BB",
   "opp": "AVG",
   "stack": "Main",
-  "note": "AVG Training Server · LizardCup AlBasrah Skirmish · R1 203:0 · мы KBC они СВ РФ · 26v25 · source=screens · ждём R2 · oppR1 неполный (на кадрах ~14/25, скролл AVG не двигали)",
+  "note": "AVG Training Server · LizardCup AlBasrah Skirmish · R1 203:0 мы KBC они СВ РФ · R2 0:10 мы СВ РФ они KBC · сумма 203:10 · встреча 2–0 · source=screens · oppR1 неполный · oppR2 почти полный",
   "source": "screens",
   "server": "AVG Training Server",
   "map": "LizardCup AlBasrah",
@@ -217,7 +217,208 @@
       "dmg": 265
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "qop",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 100
+    },
+    {
+      "nick": "Jopllik",
+      "res": 8,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 43
+    },
+    {
+      "nick": "Antoher152",
+      "res": 5,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 547
+    },
+    {
+      "nick": "Keech",
+      "res": 9,
+      "nok": 15,
+      "kills": 13,
+      "deaths": 6,
+      "dmg": 279
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 3,
+      "dmg": 192
+    },
+    {
+      "nick": "COBRA",
+      "res": 1,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 638
+    },
+    {
+      "nick": "SHURUP",
+      "res": 2,
+      "nok": 23,
+      "kills": 20,
+      "deaths": 3,
+      "dmg": 314
+    },
+    {
+      "nick": "Runetik",
+      "res": 2,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 194
+    },
+    {
+      "nick": "Gadler",
+      "res": 4,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 8,
+      "dmg": 179
+    },
+    {
+      "nick": "angel",
+      "res": 6,
+      "nok": 23,
+      "kills": 13,
+      "deaths": 7,
+      "dmg": 341
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 179
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 17,
+      "kills": 13,
+      "deaths": 3,
+      "dmg": 32
+    },
+    {
+      "nick": "Diray",
+      "res": 22,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 107
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 16,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 185
+    },
+    {
+      "nick": "SquirieZzz",
+      "res": 2,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 10,
+      "dmg": 133
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 20,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 74
+    },
+    {
+      "nick": "Chidori",
+      "res": 2,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 38
+    },
+    {
+      "nick": "vasserman",
+      "res": 14,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 141
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 41
+    },
+    {
+      "nick": "LordWolf",
+      "res": 2,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 165
+    },
+    {
+      "nick": "Durik",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 96
+    },
+    {
+      "nick": "Azure",
+      "res": 7,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 26
+    },
+    {
+      "nick": "Animo",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 57
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 92
+    },
+    {
+      "nick": "ZoZo",
+      "res": 12,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 27
+    }
+  ],
   "oppR1": [
     {
       "nick": "Sunderd",
@@ -332,7 +533,200 @@
       "dmg": 35
     }
   ],
-  "oppR2": [],
+  "oppR2": [
+    {
+      "nick": "Dobermann",
+      "res": 3,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 110
+    },
+    {
+      "nick": "NND",
+      "res": 0,
+      "nok": 31,
+      "kills": 20,
+      "deaths": 9,
+      "dmg": 396
+    },
+    {
+      "nick": "andreyka",
+      "res": 0,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 152
+    },
+    {
+      "nick": "Uncle Bobr",
+      "res": 12,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 79
+    },
+    {
+      "nick": "n1:)",
+      "res": 5,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 103
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 13,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 37
+    },
+    {
+      "nick": "Delta877",
+      "res": 3,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 71
+    },
+    {
+      "nick": "пакость",
+      "res": 2,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 74
+    },
+    {
+      "nick": "Decudiussage",
+      "res": 3,
+      "nok": 9,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 112
+    },
+    {
+      "nick": "100% талант",
+      "res": 1,
+      "nok": 10,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 86
+    },
+    {
+      "nick": "Татарин",
+      "res": 0,
+      "nok": 15,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 179
+    },
+    {
+      "nick": "Sunderd",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 11,
+      "dmg": 57
+    },
+    {
+      "nick": "Oshibka",
+      "res": 0,
+      "nok": 19,
+      "kills": 10,
+      "deaths": 13,
+      "dmg": 201
+    },
+    {
+      "nick": "Morietsu",
+      "res": 3,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 47
+    },
+    {
+      "nick": "терпение",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 8,
+      "dmg": 180
+    },
+    {
+      "nick": "крестоносец",
+      "res": 5,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 64
+    },
+    {
+      "nick": "ZeroTwo",
+      "res": 0,
+      "nok": 13,
+      "kills": 0,
+      "deaths": 12,
+      "dmg": 103
+    },
+    {
+      "nick": "Степан",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 43
+    },
+    {
+      "nick": "Tilt",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 125
+    },
+    {
+      "nick": "гафу я",
+      "res": 4,
+      "nok": 5,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 55
+    },
+    {
+      "nick": "Sstendaryo",
+      "res": 0,
+      "nok": 23,
+      "kills": 7,
+      "deaths": 1,
+      "dmg": 287
+    },
+    {
+      "nick": "Saitsway",
+      "res": 2,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 9,
+      "dmg": 101
+    },
+    {
+      "nick": "G4L4S",
+      "res": 0,
+      "nok": 10,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 90
+    },
+    {
+      "nick": "NH",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 34
+    }
+  ],
   "details": {
     "r1": {
       "tickets": "203:0",
@@ -347,8 +741,23 @@
       "fobsCreated": "",
       "note": "мы KBC (CAF) · они СВ РФ · Skirmish · табло СЧЕТ"
     },
-    "r2": {},
-    "total": {}
+    "r2": {
+      "tickets": "0:10",
+      "len": "",
+      "goals": "",
+      "infantry": "",
+      "fob": "",
+      "veh": "",
+      "bleed": "",
+      "ammo": "",
+      "build": "",
+      "fobsCreated": "",
+      "note": "мы СВ РФ · они KBC (CAF) · Skirmish · табло СЧЕТ"
+    },
+    "total": {
+      "tickets": "203:10",
+      "note": "сумма тикетов · встреча 2–0"
+    }
   },
   "mvp": {
     "r1": {
@@ -366,10 +775,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Diray"
+      ],
+      "killer": [
+        "SHURUP"
+      ],
+      "damage": [
+        "COBRA"
+      ],
+      "antiDeath": [
+        "SquirieZzz"
+      ]
     }
   }
 }

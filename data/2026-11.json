@@ -534,11 +534,13 @@
       "server": "AVG Training Server",
       "rules": "LC",
       "stack": "Main",
-      "status": "upcoming",
+      "status": "win",
       "r1": "203:0",
       "playersUrl": "data/players/17-avg.json",
-      "note": "Main · LC · LizardCup AlBasrah Skirmish · 26v26 · 20:00 · AVG Training Server · R1 203:0 мы KBC они СВ РФ · ждём R2 · вместо отменённого 17-lk · NO SCOUT · NO MEETINGS",
-      "mode": "LC"
+      "note": "Main · LC · LizardCup AlBasrah Skirmish · 26v26 · 20:00 · AVG Training Server · R1 203:0 мы KBC · R2 0:10 мы СВ РФ · сумма 203:10 · встреча 2–0 · вместо отменённого 17-lk · NO SCOUT · NO MEETINGS",
+      "mode": "LC",
+      "r2": "0:10",
+      "meeting": "2–0"
     },
     {
       "id": "18-faq",
