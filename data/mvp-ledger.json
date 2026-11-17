@@ -1395,6 +1395,74 @@
       }
     },
     {
+      "id": "17-alpha-2",
+      "day": 17,
+      "opp": "ALPHA",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "Edge_CM"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "MadMax"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Steepich"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "Gorbatiy"
+        ]
+      }
+    },
+    {
+      "id": "17-alpha",
+      "day": 17,
+      "opp": "ALPHA",
+      "meeting": "2–0",
+      "r1": {
+        "medic": [
+          "MadMax"
+        ],
+        "killer": [
+          "Trixx"
+        ],
+        "damage": [
+          "Trixx"
+        ],
+        "antiDeath": [
+          "Gorbatiy"
+        ]
+      },
+      "r2": {
+        "medic": [
+          "Trigger"
+        ],
+        "killer": [
+          "r4mp"
+        ],
+        "damage": [
+          "r4mp"
+        ],
+        "antiDeath": [
+          "firs"
+        ]
+      }
+    },
+    {
       "id": "17-avg",
       "day": 17,
       "opp": "AVG",
@@ -3105,7 +3173,7 @@
       ]
     },
     "Edge_CM": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 2,
@@ -3133,6 +3201,14 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -3372,7 +3448,7 @@
       "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "02-ra",
@@ -3381,6 +3457,22 @@
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -4301,6 +4393,30 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        }
+      ]
+    },
+    "MadMax": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -5281,7 +5397,7 @@
       ]
     },
     "Steepich": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 1,
       "mvpDamage": 1,
       "antiDeath": 0,
@@ -5301,6 +5417,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
@@ -5665,7 +5789,7 @@
       ]
     },
     "Trigger": {
-      "mvpMedic": 0,
+      "mvpMedic": 1,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 3,
@@ -5693,13 +5817,21 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
         }
       ]
     },
     "Trixx": {
       "mvpMedic": 1,
-      "mvpKiller": 3,
-      "mvpDamage": 7,
+      "mvpKiller": 4,
+      "mvpDamage": 8,
       "antiDeath": 3,
       "awards": [
         {
@@ -5781,6 +5913,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "21-ra",
@@ -6202,8 +6350,8 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 11,
-      "mvpDamage": 10,
+      "mvpKiller": 13,
+      "mvpDamage": 12,
       "antiDeath": 0,
       "awards": [
         {
@@ -6322,6 +6470,38 @@
           "matchId": "15-hell",
           "day": 15,
           "opp": "HELL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-alpha-2",
+          "day": 17,
+          "opp": "ALPHA",
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
@@ -6412,7 +6592,7 @@
       "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "07-avg",
@@ -6437,6 +6617,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },
@@ -6770,8 +6958,8 @@
     },
     "r4mp": {
       "mvpMedic": 4,
-      "mvpKiller": 3,
-      "mvpDamage": 0,
+      "mvpKiller": 4,
+      "mvpDamage": 1,
       "antiDeath": 0,
       "awards": [
         {
@@ -6829,6 +7017,22 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-alpha",
+          "day": 17,
+          "opp": "ALPHA",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },

@@ -1,0 +1,595 @@
+{
+  "matchId": "17-alpha-2",
+  "opp": "ALPHA",
+  "note": "Авто из логов TR · TR4 · сумма 238:0 · source=tr-cw-auto",
+  "source": "tr-cw-auto",
+  "server": "TR4",
+  "map": "FCL Mutaha",
+  "r1": [
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 10,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 4219,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "nightmare-",
+      "res": 0,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 0,
+      "dmg": 2880,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Steepich",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 2344,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 2460,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 2280,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 1478,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "firs",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 1680,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "spartan",
+      "res": 1,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1418,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 2,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1260,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1205,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 698,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 690,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 480,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bayle The Dread",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MadMax",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "r2": [
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 2436,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 1810,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Varyag",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 1911,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "VET",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 1881,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1572,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "spartan",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1396,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 848,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 610,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 525,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 424,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "nightmare-",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 525,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 362,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Steepich",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 337,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bayle The Dread",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "Goodlike",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1549,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Heiz3r",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1424,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "ya barsik",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1536,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 2,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1034,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Zanuda",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 1220,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Konrad",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 763,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "gondi31",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 825,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "VEX",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 541,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Ustinov",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 362,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Banka_RedBulla",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 212,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "PANDA_646",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 186,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "SOUP",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 62,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "BiBiF",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "soundcloud",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZESAWI",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "PANDA_646",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1560,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1068,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Zanuda",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 932,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Heiz3r",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 760,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Konrad",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 840,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "SOUP",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 840,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Goodlike",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 439,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Banka_RedBulla",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 360,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "BiBiF",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "firs",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "gondi31",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "soundcloud",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Ustinov",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "VEX",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ya barsik",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZESAWI",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Edge_CM"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "MadMax"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "Steepich"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "Gorbatiy"
+      ]
+    }
+  }
+}
