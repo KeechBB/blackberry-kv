@@ -1,0 +1,375 @@
+{
+  "matchId": "17-avg",
+  "clan": "BB",
+  "opp": "AVG",
+  "stack": "Main",
+  "note": "AVG Training Server · LizardCup AlBasrah Skirmish · R1 203:0 · мы KBC они СВ РФ · 26v25 · source=screens · ждём R2 · oppR1 неполный (на кадрах ~14/25, скролл AVG не двигали)",
+  "source": "screens",
+  "server": "AVG Training Server",
+  "map": "LizardCup AlBasrah",
+  "r1": [
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 36
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 83
+    },
+    {
+      "nick": "Azure",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 26
+    },
+    {
+      "nick": "Animo",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 64
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 9
+    },
+    {
+      "nick": "ZoZo",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 13
+    },
+    {
+      "nick": "qop",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 130
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 12
+    },
+    {
+      "nick": "Jopllik",
+      "res": 2,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 2
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 16
+    },
+    {
+      "nick": "Antoher152",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 0
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 1
+    },
+    {
+      "nick": "Keech",
+      "res": 1,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 118
+    },
+    {
+      "nick": "DirecTor",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 53
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 64
+    },
+    {
+      "nick": "vasserman",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 43
+    },
+    {
+      "nick": "SHURUP",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 38
+    },
+    {
+      "nick": "Runetik",
+      "res": 1,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 32
+    },
+    {
+      "nick": "Diray",
+      "res": 5,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 0,
+      "dmg": 129
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 73
+    },
+    {
+      "nick": "Summer",
+      "res": 0,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 0,
+      "dmg": 58
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 34
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 37
+    },
+    {
+      "nick": "SquirieZzz",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 84
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 4
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 0,
+      "dmg": 265
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "Sunderd",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 12
+    },
+    {
+      "nick": "крестоносец",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 34
+    },
+    {
+      "nick": "Oshibka",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 14
+    },
+    {
+      "nick": "ZeroTwo",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 28
+    },
+    {
+      "nick": "Decudiussage",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 35
+    },
+    {
+      "nick": "Sstendaryo",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 9
+    },
+    {
+      "nick": "гафу я",
+      "res": 1,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 21
+    },
+    {
+      "nick": "Tilt",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 12
+    },
+    {
+      "nick": "Dobermann",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 37
+    },
+    {
+      "nick": "пакость",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 31
+    },
+    {
+      "nick": "Uncle Bobr",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 5
+    },
+    {
+      "nick": "n1:)",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 57
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 10
+    },
+    {
+      "nick": "andreyka",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 35
+    }
+  ],
+  "oppR2": [],
+  "details": {
+    "r1": {
+      "tickets": "203:0",
+      "len": "",
+      "goals": "",
+      "infantry": "",
+      "fob": "",
+      "veh": "",
+      "bleed": "",
+      "ammo": "",
+      "build": "",
+      "fobsCreated": "",
+      "note": "мы KBC (CAF) · они СВ РФ · Skirmish · табло СЧЕТ"
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Diray"
+      ],
+      "killer": [
+        "Diray"
+      ],
+      "damage": [
+        "angel"
+      ],
+      "antiDeath": [
+        "COBRA"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

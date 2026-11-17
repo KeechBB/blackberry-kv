@@ -524,6 +524,23 @@
       "mode": "LC"
     },
     {
+      "id": "17-avg",
+      "day": 17,
+      "timeMsk": "20:00",
+      "timeUtc": "17:00",
+      "opp": "AVG",
+      "map": "LizardCup AlBasrah",
+      "size": "26v26",
+      "server": "AVG Training Server",
+      "rules": "LC",
+      "stack": "Main",
+      "status": "upcoming",
+      "r1": "203:0",
+      "playersUrl": "data/players/17-avg.json",
+      "note": "Main · LC · LizardCup AlBasrah Skirmish · 26v26 · 20:00 · AVG Training Server · R1 203:0 мы KBC они СВ РФ · ждём R2 · вместо отменённого 17-lk · NO SCOUT · NO MEETINGS",
+      "mode": "LC"
+    },
+    {
       "id": "18-faq",
       "day": 18,
       "timeMsk": "20:00",

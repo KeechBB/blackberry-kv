@@ -1395,6 +1395,32 @@
       }
     },
     {
+      "id": "17-avg",
+      "day": 17,
+      "opp": "AVG",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Diray"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "angel"
+        ],
+        "antiDeath": [
+          "COBRA"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "17-nklv-rpss",
       "day": 17,
       "opp": "RPSS",
@@ -2706,7 +2732,7 @@
       "mvpMedic": 0,
       "mvpKiller": 2,
       "mvpDamage": 5,
-      "antiDeath": 1,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "01-gm",
@@ -2739,6 +2765,14 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "23-avg",
@@ -2839,8 +2873,8 @@
       ]
     },
     "Diray": {
-      "mvpMedic": 0,
-      "mvpKiller": 8,
+      "mvpMedic": 1,
+      "mvpKiller": 9,
       "mvpDamage": 3,
       "antiDeath": 1,
       "awards": [
@@ -2897,6 +2931,22 @@
           "day": 17,
           "opp": "44th",
           "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
         },
@@ -6065,7 +6115,7 @@
     "angel": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 2,
       "awards": [
         {
@@ -6075,6 +6125,14 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "17-avg",
+          "day": 17,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "18-ih",
