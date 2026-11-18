@@ -13,10 +13,10 @@
 
 | Раунд | Счёт | Примечание |
 |---|---|---|
-| **R1** | **200:0** | мы **USA** · они **MEI** · 23:46 · source=screens · топ-медик Azure · топ-отряд Squad 3 |
-| **R2** | — | ждём |
+| **R1** | **200:0** | мы **USA** · они **MEI** · 23:46 · source=screens |
+| **R2** | **225:0** | мы **MEI** · они **USA** · 20:06 · source=screens · топ-медик Morty · топ-отряд Squad 5 |
 
-Встреча открыта (сумма тикетов после R2).
+Встреча **2–0** · сумма тикетов **425:0**.
 
-Стата: [players/18-faq.json](../../public/data/players/18-faq.json) (`r1` + `oppR1`).
+Стата: [players/18-faq.json](../../public/data/players/18-faq.json) (`r1`/`r2` + `oppR1`/`oppR2`).
 Заметки: [analytics.md](analytics.md).

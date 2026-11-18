@@ -3,7 +3,7 @@
   "clan": "BB",
   "opp": "FAQ",
   "stack": "Main",
-  "note": "CITADEL Training · SEC 26 AlBasrah AAS v1 · R1 200:0 мы USA они MEI · 23:46 · source=screens · ждём R2",
+  "note": "CITADEL Training · SEC 26 AlBasrah AAS v1 · R1 200:0 мы USA · R2 225:0 мы MEI · сумма 425:0 · встреча 2–0 · source=screens",
   "source": "screens",
   "server": "CITADEL Training",
   "map": "SEC 26 AlBasrah AAS v1",
@@ -217,7 +217,216 @@
       "dmg": 568
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 526
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 533
+    },
+    {
+      "nick": "Shrein",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 502
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 0,
+      "dmg": 702
+    },
+    {
+      "nick": "FLEX",
+      "res": 3,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 536
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 545
+    },
+    {
+      "nick": "Daddy",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 0,
+      "dmg": 560
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 103
+    },
+    {
+      "nick": "Morty",
+      "res": 8,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 1,
+      "dmg": 121
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 158
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 154
+    },
+    {
+      "nick": "Summer",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 15
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 2,
+      "dmg": 134
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 319
+    },
+    {
+      "nick": "lepurple",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 69
+    },
+    {
+      "nick": "Pymba",
+      "res": 0,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 230
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 8,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 88
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 150
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 84
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 89
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 157
+    },
+    {
+      "nick": "Azure",
+      "res": 5,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 9
+    },
+    {
+      "nick": "Barsik",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 0,
+      "dmg": 708
+    },
+    {
+      "nick": "Antoher152",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 183
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 505
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 0,
+      "nok": 25,
+      "kills": 20,
+      "deaths": 0,
+      "dmg": 1390
+    }
+  ],
   "oppR1": [
     {
       "nick": "RUSLAN4IK",
@@ -428,7 +637,216 @@
       "dmg": 327
     }
   ],
-  "oppR2": [],
+  "oppR2": [
+    {
+      "nick": "Бинтик",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 45
+    },
+    {
+      "nick": "Skverniy",
+      "res": 2,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 78
+    },
+    {
+      "nick": "DedSmex",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 21
+    },
+    {
+      "nick": "Wroirat",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 33
+    },
+    {
+      "nick": "Пятисотый",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 67
+    },
+    {
+      "nick": "zaxinyy",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 26
+    },
+    {
+      "nick": "RUSLAN4IK",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 55
+    },
+    {
+      "nick": "bobruxa",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 72
+    },
+    {
+      "nick": "Миша Навальный",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 41
+    },
+    {
+      "nick": "Limbo",
+      "res": 2,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 39
+    },
+    {
+      "nick": "Dushman",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 93
+    },
+    {
+      "nick": "Golden_Fors",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 48
+    },
+    {
+      "nick": "Ske-let",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 15
+    },
+    {
+      "nick": "O_Lascor4ik_O",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 55
+    },
+    {
+      "nick": "mirai",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 72
+    },
+    {
+      "nick": "Lane",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 49
+    },
+    {
+      "nick": "Pollux",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 138
+    },
+    {
+      "nick": "$ATANA",
+      "res": 0,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 133
+    },
+    {
+      "nick": "DERTISE",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 7,
+      "dmg": 56
+    },
+    {
+      "nick": "BANZAI",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 67
+    },
+    {
+      "nick": "SSF LICHER",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 157
+    },
+    {
+      "nick": "набираю форму",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 82
+    },
+    {
+      "nick": "Пузо",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 5
+    },
+    {
+      "nick": "Kritik",
+      "res": 3,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 100
+    },
+    {
+      "nick": "n e y",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 81
+    },
+    {
+      "nick": "neArtic",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 56
+    }
+  ],
   "details": {
     "r1": {
       "tickets": "200:0",
@@ -443,10 +861,22 @@
       "fobsCreated": "",
       "note": "мы USA · они MEI · MAJOR VICTORY · топ-медик Azure · топ-отряд Squad 3 · топ-сапплай DedSmex (FAQ)"
     },
-    "r2": {},
+    "r2": {
+      "tickets": "225:0",
+      "len": "20:06",
+      "goals": "",
+      "infantry": "",
+      "fob": "",
+      "veh": "",
+      "bleed": "",
+      "ammo": "",
+      "build": "",
+      "fobsCreated": "",
+      "note": "мы MEI · они USA · MAJOR VICTORY · топ-медик Morty · топ-отряд Squad 5 · топ-сапплай Shrein"
+    },
     "total": {
-      "tickets": "200:0",
-      "note": "только R1 · встреча открыта"
+      "tickets": "425:0",
+      "note": "сумма тикетов · встреча 2–0"
     }
   },
   "mvp": {
@@ -465,10 +895,18 @@
       ]
     },
     "r2": {
-      "medic": [],
-      "killer": [],
-      "damage": [],
-      "antiDeath": []
+      "medic": [
+        "Morty"
+      ],
+      "killer": [
+        "Kuchenchips"
+      ],
+      "damage": [
+        "Kuchenchips"
+      ],
+      "antiDeath": [
+        "LordWolf"
+      ]
     }
   }
 }
