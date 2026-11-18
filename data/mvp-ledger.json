@@ -1531,6 +1531,32 @@
       }
     },
     {
+      "id": "18-faq",
+      "day": 18,
+      "opp": "FAQ",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Azure"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "Treppen"
+        ],
+        "antiDeath": [
+          "Summer"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "18-ih",
       "day": 18,
       "opp": "IH",
@@ -2485,7 +2511,7 @@
       ]
     },
     "Azure": {
-      "mvpMedic": 2,
+      "mvpMedic": 3,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -2502,6 +2528,14 @@
           "matchId": "15-deadline",
           "day": 15,
           "opp": "Deadline",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "18-faq",
+          "day": 18,
+          "opp": "FAQ",
           "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
@@ -5432,7 +5466,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 3,
+      "antiDeath": 4,
       "awards": [
         {
           "matchId": "06-dcai",
@@ -5471,6 +5505,14 @@
           "day": 14,
           "opp": "OMEN",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "18-faq",
+          "day": 18,
+          "opp": "FAQ",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -5767,7 +5809,7 @@
     "Treppen": {
       "mvpMedic": 1,
       "mvpKiller": 0,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
         {
@@ -5785,6 +5827,14 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        },
+        {
+          "matchId": "18-faq",
+          "day": 18,
+          "opp": "FAQ",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
@@ -6734,7 +6784,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 14,
+      "mvpKiller": 15,
       "mvpDamage": 4,
       "antiDeath": 0,
       "awards": [
@@ -6815,6 +6865,14 @@
           "day": 16,
           "opp": "HELL",
           "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "18-faq",
+          "day": 18,
+          "opp": "FAQ",
+          "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
         },

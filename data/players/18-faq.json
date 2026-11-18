@@ -1,0 +1,474 @@
+{
+  "matchId": "18-faq",
+  "clan": "BB",
+  "opp": "FAQ",
+  "stack": "Main",
+  "note": "CITADEL Training · SEC 26 AlBasrah AAS v1 · R1 200:0 мы USA они MEI · 23:46 · source=screens · ждём R2",
+  "source": "screens",
+  "server": "CITADEL Training",
+  "map": "SEC 26 AlBasrah AAS v1",
+  "r1": [
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 33
+    },
+    {
+      "nick": "Durik",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 135
+    },
+    {
+      "nick": "Shrein",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 11
+    },
+    {
+      "nick": "Treppen",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 593
+    },
+    {
+      "nick": "S.M.P",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 77
+    },
+    {
+      "nick": "FLEX",
+      "res": 4,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 34
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 66
+    },
+    {
+      "nick": "Hikkomaru",
+      "res": 0,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 9
+    },
+    {
+      "nick": "Pymba",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 128
+    },
+    {
+      "nick": "ASCETICH",
+      "res": 5,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 75
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 20,
+      "kills": 18,
+      "deaths": 2,
+      "dmg": 527
+    },
+    {
+      "nick": "lepurple",
+      "res": 6,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 99
+    },
+    {
+      "nick": "Daddy",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 96
+    },
+    {
+      "nick": "angel",
+      "res": 0,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 1,
+      "dmg": 172
+    },
+    {
+      "nick": "Morty",
+      "res": 3,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 59
+    },
+    {
+      "nick": "Diray",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 297
+    },
+    {
+      "nick": "COBRA",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 255
+    },
+    {
+      "nick": "Summer",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 52
+    },
+    {
+      "nick": "CAT",
+      "res": 0,
+      "nok": 11,
+      "kills": 10,
+      "deaths": 1,
+      "dmg": 248
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 148
+    },
+    {
+      "nick": "Azure",
+      "res": 7,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 1,
+      "dmg": 79
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 9,
+      "kills": 9,
+      "deaths": 2,
+      "dmg": 196
+    },
+    {
+      "nick": "Barsik",
+      "res": 2,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 207
+    },
+    {
+      "nick": "Antoher152",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 1,
+      "dmg": 28
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 104
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 1,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 2,
+      "dmg": 568
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "RUSLAN4IK",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 30
+    },
+    {
+      "nick": "Golden_Fors",
+      "res": 1,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 43
+    },
+    {
+      "nick": "Limbo",
+      "res": 3,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 90
+    },
+    {
+      "nick": "bobruxa",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 189
+    },
+    {
+      "nick": "Dushman",
+      "res": 1,
+      "nok": 7,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 124
+    },
+    {
+      "nick": "Миша Навальный",
+      "res": 2,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 75
+    },
+    {
+      "nick": "Бинтик",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 35
+    },
+    {
+      "nick": "Skverniy",
+      "res": 1,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 136
+    },
+    {
+      "nick": "Пятисотый",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 32
+    },
+    {
+      "nick": "DedSmex",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 13
+    },
+    {
+      "nick": "Wroirat",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 22
+    },
+    {
+      "nick": "zaxinyy",
+      "res": 0,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 707
+    },
+    {
+      "nick": "DERTISE",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 100
+    },
+    {
+      "nick": "SSF LICHER",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 87
+    },
+    {
+      "nick": "BANZAI",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 42
+    },
+    {
+      "nick": "набираю форму",
+      "res": 0,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 165
+    },
+    {
+      "nick": "Пузо",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 37
+    },
+    {
+      "nick": "Kritik",
+      "res": 5,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 35
+    },
+    {
+      "nick": "n e y",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 164
+    },
+    {
+      "nick": "neArtic",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 63
+    },
+    {
+      "nick": "Ske-let",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 63
+    },
+    {
+      "nick": "Pollux",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 51
+    },
+    {
+      "nick": "O_Lascor4ik_O",
+      "res": 0,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 9,
+      "dmg": 74
+    },
+    {
+      "nick": "Lane",
+      "res": 3,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 64
+    },
+    {
+      "nick": "mirai",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 15
+    },
+    {
+      "nick": "$ATANA",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 1,
+      "dmg": 327
+    }
+  ],
+  "oppR2": [],
+  "details": {
+    "r1": {
+      "tickets": "200:0",
+      "len": "23:46",
+      "goals": "",
+      "infantry": "",
+      "fob": "",
+      "veh": "",
+      "bleed": "",
+      "ammo": "",
+      "build": "",
+      "fobsCreated": "",
+      "note": "мы USA · они MEI · MAJOR VICTORY · топ-медик Azure · топ-отряд Squad 3 · топ-сапплай DedSmex (FAQ)"
+    },
+    "r2": {},
+    "total": {
+      "tickets": "200:0",
+      "note": "только R1 · встреча открыта"
+    }
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Azure"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "Treppen"
+      ],
+      "antiDeath": [
+        "Summer"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

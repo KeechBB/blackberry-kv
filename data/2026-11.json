@@ -556,14 +556,16 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "FAQ",
-      "map": "SEC_26_Al BASRAH",
+      "map": "SEC 26 AlBasrah AAS v1",
       "size": "26v26",
-      "server": "FAQ",
+      "server": "CITADEL Training",
       "rules": "SEC",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · SEC · SEC_26_Al BASRAH · 26v26 · 20:00 · сервер FAQ · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
-      "mode": "SEC"
+      "note": "Main · SEC · SEC 26 AlBasrah AAS v1 · 26v26 · 20:00 · CITADEL Training · R1 200:0 мы USA они MEI · 23:46 · ждём R2 · NO SCOUT · NO MEETINGS",
+      "mode": "SEC",
+      "r1": "200:0",
+      "playersUrl": "data/players/18-faq.json"
     },
     {
       "id": "05-avg",
