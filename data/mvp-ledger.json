@@ -1636,7 +1636,7 @@
       "id": "19-hell",
       "day": 19,
       "opp": "HELL",
-      "meeting": "—",
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "FemboySMR"
@@ -1652,10 +1652,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "lepurple"
+        ],
+        "killer": [
+          "Diray"
+        ],
+        "damage": [
+          "Diray"
+        ],
+        "antiDeath": [
+          "bambozy"
+        ]
       }
     },
     {
@@ -3026,8 +3034,8 @@
     },
     "Diray": {
       "mvpMedic": 2,
-      "mvpKiller": 9,
-      "mvpDamage": 3,
+      "mvpKiller": 10,
+      "mvpDamage": 4,
       "antiDeath": 1,
       "awards": [
         {
@@ -3125,6 +3133,22 @@
           "round": "r2",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "23-20r",
@@ -6492,7 +6516,7 @@
       "mvpMedic": 0,
       "mvpKiller": 14,
       "mvpDamage": 12,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "01-avg",
@@ -6653,6 +6677,14 @@
           "round": "r1",
           "type": "killer",
           "label": "MVP Killer"
+        },
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "19-ih",
@@ -7049,7 +7081,7 @@
       ]
     },
     "lepurple": {
-      "mvpMedic": 4,
+      "mvpMedic": 5,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
@@ -7066,6 +7098,14 @@
           "matchId": "13-two",
           "day": 13,
           "opp": "TWO",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"

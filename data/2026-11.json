@@ -620,12 +620,12 @@
       "server": "HELL TRAINING",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "r1",
-      "note": "Junior · SEC · SEC 26 Sumari AAS v1 · 26v26 · 20:00 · сервер HELL TRAINING · R1 114:0 мы WPMC они TLF · 35:55 · топ-отряд Squad 6 · топ-медик FemboySMR · топ-сапплай tank2284 · камера FLEX не внесена · R2 нет · NO SCOUT · NO MEETINGS",
+      "status": "win",
+      "note": "Junior · SEC · SEC 26 Sumari AAS v1 · 26v26 · 20:00 · сервер HELL TRAINING · R1 114:0 мы WPMC они TLF · 35:55 · R2 88:0 мы TLF они WPMC · 36:30 · сумма 202:0 · встреча 2–0 · R2 топ-отряд Squad 6 · топ-медик lepurple · топ-сапплай CAT · NO SCOUT · NO MEETINGS",
       "mode": "SEC",
       "r1": "114:0",
-      "r2": "",
-      "meeting": "—",
+      "r2": "88:0",
+      "meeting": "2–0",
       "playersUrl": "data/players/19-hell.json"
     },
     {
