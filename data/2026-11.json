@@ -615,14 +615,18 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "HELL",
-      "map": "SEC_26_Sumari_AAS_v1",
+      "map": "SEC 26 Sumari AAS v1",
       "size": "26v26",
-      "server": "FCL ARENA",
+      "server": "HELL TRAINING",
       "rules": "SEC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · SEC · SEC_26_Sumari_AAS_v1 · 26v26 · 20:00 · сервер FCL ARENA · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
-      "mode": "SEC"
+      "status": "r1",
+      "note": "Junior · SEC · SEC 26 Sumari AAS v1 · 26v26 · 20:00 · сервер HELL TRAINING · R1 114:0 мы WPMC они TLF · 35:55 · топ-отряд Squad 6 · топ-медик FemboySMR · топ-сапплай tank2284 · камера FLEX не внесена · R2 нет · NO SCOUT · NO MEETINGS",
+      "mode": "SEC",
+      "r1": "114:0",
+      "r2": "",
+      "meeting": "—",
+      "playersUrl": "data/players/19-hell.json"
     },
     {
       "id": "20-aut",

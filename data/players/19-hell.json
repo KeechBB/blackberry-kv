@@ -1,0 +1,481 @@
+{
+  "matchId": "19-hell",
+  "r1": [
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 99,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "lepurple",
+      "res": 4,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 88,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZensU",
+      "res": 2,
+      "nok": 9,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 173,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Mahorka",
+      "res": 0,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 3,
+      "dmg": 121,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Jimmy Neutron",
+      "res": 0,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 233,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Forks",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 121,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "T-800",
+      "res": 1,
+      "nok": 5,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 162,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Animo",
+      "res": 12,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 105,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bambozy",
+      "res": 2,
+      "nok": 21,
+      "kills": 16,
+      "deaths": 5,
+      "dmg": 459,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "LordWolf",
+      "res": 1,
+      "nok": 13,
+      "kills": 13,
+      "deaths": 5,
+      "dmg": 338,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "FemboySMR",
+      "res": 15,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 70,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "HunterN7",
+      "res": 1,
+      "nok": 12,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 513,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "daddy",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 538,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Ynur",
+      "res": 4,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 83,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Diray",
+      "res": 1,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 282,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 0,
+      "dmg": 532,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Kosh",
+      "res": 3,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 14,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 0,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 8,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "tank2284",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 107,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 6,
+      "dmg": 145,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "angel",
+      "res": 3,
+      "nok": 23,
+      "kills": 13,
+      "deaths": 2,
+      "dmg": 435,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Kuchenchips",
+      "res": 8,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 2,
+      "dmg": 191,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "freak",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 639,
+      "vehicleKills": 4
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 2,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 159,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Steepich",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 5,
+      "dmg": 158,
+      "vehicleKills": 0
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "[HELL] Kiber Flower",
+      "res": 0,
+      "nok": 6,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 172,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] andreyka",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 5,
+      "dmg": 315,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Liros",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 245,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "「AVG」 Uncle Bobr",
+      "res": 13,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 124,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Morietsu",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 7,
+      "dmg": 168,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Delta877",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 85,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Grinch",
+      "res": 1,
+      "nok": 8,
+      "kills": 7,
+      "deaths": 4,
+      "dmg": 208,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] qeer",
+      "res": 1,
+      "nok": 11,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 330,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "•AVG• Sunderd",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 8,
+      "dmg": 151,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] SPACE PLiNe",
+      "res": 2,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 74,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Mr.Brooks",
+      "res": 4,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 96,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Regulator",
+      "res": 1,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 131,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] PAUL FINCH",
+      "res": 1,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 220,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Grimm2074",
+      "res": 2,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 142,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[IMF] Ubivashka",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 156,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[IMF] Oner OG",
+      "res": 3,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 189,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] белоснежка",
+      "res": 0,
+      "nok": 9,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 214,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] DARKSAID",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 31,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] дгба",
+      "res": 0,
+      "nok": 14,
+      "kills": 8,
+      "deaths": 4,
+      "dmg": 328,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "IMP • neko",
+      "res": 2,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 224,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] TicketToHawaii",
+      "res": 1,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 122,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[FAL] Lane",
+      "res": 7,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 157,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] Holiken",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 84,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "[HELL] MaksMalks",
+      "res": 0,
+      "nok": 7,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 101,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Alexey Imperative",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 94,
+      "vehicleKills": 0
+    }
+  ],
+  "oppR2": [],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "FemboySMR"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "freak"
+      ],
+      "antiDeath": [
+        "Forks"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

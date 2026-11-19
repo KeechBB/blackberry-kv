@@ -1633,6 +1633,32 @@
       }
     },
     {
+      "id": "19-hell",
+      "day": 19,
+      "opp": "HELL",
+      "meeting": "—",
+      "r1": {
+        "medic": [
+          "FemboySMR"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "freak"
+        ],
+        "antiDeath": [
+          "Forks"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "19-ih",
       "day": 19,
       "opp": "IH",
@@ -3278,11 +3304,27 @@
         }
       ]
     },
+    "FemboySMR": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Forks": {
       "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 2,
-      "antiDeath": 6,
+      "antiDeath": 7,
       "awards": [
         {
           "matchId": "01-avg",
@@ -3353,6 +3395,14 @@
           "day": 13,
           "opp": "HELL",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         },
@@ -6440,7 +6490,7 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 13,
+      "mvpKiller": 14,
       "mvpDamage": 12,
       "antiDeath": 0,
       "awards": [
@@ -6597,6 +6647,14 @@
           "label": "MVP War-Score"
         },
         {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
           "matchId": "19-ih",
           "day": 19,
           "opp": "IH",
@@ -6721,7 +6779,7 @@
     "freak": {
       "mvpMedic": 6,
       "mvpKiller": 2,
-      "mvpDamage": 0,
+      "mvpDamage": 1,
       "antiDeath": 1,
       "awards": [
         {
@@ -6763,6 +6821,14 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "19-hell",
+          "day": 19,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "21-ra",
