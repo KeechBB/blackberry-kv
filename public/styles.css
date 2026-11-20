@@ -2191,9 +2191,9 @@ body.layout-tm-growth #tm-growth .board-head {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(8, 6, 14, 0.18) 0%, rgba(8, 6, 14, 0.55) 100%),
+    linear-gradient(180deg, rgba(8, 6, 14, 0.05) 0%, rgba(8, 6, 14, 0.34) 100%),
     var(--kit-img) center / cover no-repeat;
-  opacity: 0.78;
+  opacity: 0.94;
   z-index: 0;
 }
 .growth-tile:hover {
@@ -2486,6 +2486,35 @@ html.role-page .growth-table {
   width: 100%;
   min-width: 0;
   table-layout: fixed;
+}
+/* # · ник · уровень · дней · каток — узкие дни/катки, чтобы АК-патч не наезжал на уровень */
+html.role-page .growth-table th:nth-child(1),
+html.role-page .growth-table td:nth-child(1) {
+  width: 2.4rem;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+html.role-page .growth-table th:nth-child(2),
+html.role-page .growth-table td:nth-child(2) {
+  width: 15.5rem;
+  overflow: visible;
+}
+html.role-page .growth-table th:nth-child(3),
+html.role-page .growth-table td:nth-child(3) {
+  width: 5.6rem;
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  z-index: 1;
+}
+html.role-page .growth-table th:nth-child(4),
+html.role-page .growth-table td:nth-child(4),
+html.role-page .growth-table th:nth-child(5),
+html.role-page .growth-table td:nth-child(5) {
+  width: 2.85rem;
+  max-width: 2.85rem;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 html.role-page .growth-anchors {
   width: 100%;

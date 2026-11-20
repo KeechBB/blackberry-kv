@@ -925,19 +925,49 @@
     return `${msk.getUTCFullYear()}-${p(msk.getUTCMonth() + 1)}-${p(msk.getUTCDate())}`;
   }
 
-  function growthArt(role) {
-    if (role.id === "crew" || role.id === "crewlead") {
-      return `assets/kits/factions/legion/${role.slug}.jpg`;
-    }
-    const day = growthMskDay();
-    const key = `${day}|${role.slug}`;
+  function growthHash(s) {
     let h = 2166136261;
-    for (let i = 0; i < key.length; i++) {
-      h ^= key.charCodeAt(i);
+    for (let i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
       h = Math.imul(h, 16777619);
     }
-    const faction = GROWTH_FACTIONS[(h >>> 0) % GROWTH_FACTIONS.length];
-    return `assets/kits/factions/${faction}/${role.slug}.jpg?d=${day}`;
+    return h >>> 0;
+  }
+
+  function growthDayMap(day) {
+    const roles = GROWTH_ROLES.filter((r) => r.id !== "crew" && r.id !== "crewlead");
+    const counts = {};
+    GROWTH_FACTIONS.forEach((f) => {
+      counts[f] = 2;
+    });
+    const rot = growthHash(`${day}|extra`) % GROWTH_FACTIONS.length;
+    for (let i = 0; i < roles.length - GROWTH_FACTIONS.length * 2; i++) {
+      counts[GROWTH_FACTIONS[(rot + i) % GROWTH_FACTIONS.length]] += 1;
+    }
+    const bag = [];
+    GROWTH_FACTIONS.forEach((f) => {
+      for (let n = 0; n < counts[f]; n++) bag.push(f);
+    });
+    for (let i = bag.length - 1; i > 0; i--) {
+      const j = growthHash(`${day}|slot|${i}`) % (i + 1);
+      const t = bag[i];
+      bag[i] = bag[j];
+      bag[j] = t;
+    }
+    const map = {};
+    roles.forEach((r, i) => {
+      map[r.slug] = bag[i];
+    });
+    return map;
+  }
+
+  function growthArt(role) {
+    if (role.id === "crew" || role.id === "crewlead") {
+      return `assets/kits/factions/legion/${role.slug}.jpg?v=hue`;
+    }
+    const day = growthMskDay();
+    const faction = growthDayMap(day)[role.slug];
+    return `assets/kits/factions/${faction}/${role.slug}.jpg?d=${day}&v=hue`;
   }
 
   function paintGrowthGrid() {
