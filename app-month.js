@@ -4,10 +4,21 @@
     lose: "поражение",
     draw: "ничья",
     upcoming: "скоро",
+    tba: "Уточняется",
     cancel: "отмена",
     move: "перенос",
     r1: "раунд 1",
   };
+  const CW_EDIT_STATUSES = [
+    { id: "upcoming", label: "скоро" },
+    { id: "tba", label: "Уточняется" },
+    { id: "win", label: "победа" },
+    { id: "lose", label: "поражение" },
+    { id: "draw", label: "ничья" },
+    { id: "cancel", label: "отмена" },
+    { id: "move", label: "перенос" },
+    { id: "r1", label: "раунд 1" },
+  ];
   const MONTH_RU = [
     "",
     "Январь",
@@ -29,7 +40,16 @@
   const TIERS_URL = "data/tiers.json";
   const FACTIONS_URL = "data/factions.json";
   const DATA_VER =
-    new URLSearchParams(location.search).get("v") || "20261120-hell-r2";
+    new URLSearchParams(location.search).get("v") || "20261119-hell-r1";
+  const SITE_API =
+    /bb-squad\.ru$/i.test(location.hostname) ||
+    location.hostname === "localhost" ||
+    location.hostname === "127.0.0.1"
+      ? ""
+      : "https://bb-squad.ru";
+  let canEditCwMatches = false;
+  let cwEditMode = false;
+  let cwEditSaving = false;
 
   /** Пагинация таблиц (один скролл страницы, без max-height у .table-scroll). */
   const PAGE_CW_MATCHES = 15;
@@ -842,7 +862,7 @@
     { id: "crewlead", slug: "crew-lead", name: "Наводчик", color: "#2563eb" },
     { id: "crew", slug: "crewman", name: "Мехвод", color: "#65a30d" },
     { id: "gren", slug: "grenadier", name: "Гранатомет подствольный", color: "#d97706" },
-    { id: "lat", slug: "lat", name: "Легкая Труба", color: "#ea580c" },
+    { id: "lat", slug: "lat", name: "Легкая Труба", live: true, color: "#ea580c" },
     { id: "hat", slug: "hat", name: "Тандем", color: "#a855f7" },
     { id: "sniper", slug: "sniper", name: "Снайпер", color: "#0891b2" },
     { id: "marks", slug: "marksman", name: "Марксман", color: "#be123c" },
@@ -897,6 +917,29 @@
     return `${p(msk.getUTCDate())}.${p(msk.getUTCMonth() + 1)} ${p(msk.getUTCHours())}:${p(msk.getUTCMinutes())} МСК`;
   }
 
+  const GROWTH_FACTIONS = ["staya", "orda", "sbord", "uley", "tabor"];
+
+  function growthMskDay() {
+    const msk = new Date(Date.now() + 3 * 3600 * 1000);
+    const p = (n) => String(n).padStart(2, "0");
+    return `${msk.getUTCFullYear()}-${p(msk.getUTCMonth() + 1)}-${p(msk.getUTCDate())}`;
+  }
+
+  function growthArt(role) {
+    if (role.id === "crew" || role.id === "crewlead") {
+      return `assets/kits/factions/legion/${role.slug}.jpg`;
+    }
+    const day = growthMskDay();
+    const key = `${day}|${role.slug}`;
+    let h = 2166136261;
+    for (let i = 0; i < key.length; i++) {
+      h ^= key.charCodeAt(i);
+      h = Math.imul(h, 16777619);
+    }
+    const faction = GROWTH_FACTIONS[(h >>> 0) % GROWTH_FACTIONS.length];
+    return `assets/kits/factions/${faction}/${role.slug}.jpg?d=${day}`;
+  }
+
   function paintGrowthGrid() {
     const root = document.getElementById("tm-growth-grid");
     if (!root || root.dataset.ready === "1") return;
@@ -906,7 +949,7 @@
         ? ""
         : `<span class="growth-tile-note">в разработке</span>`;
       return (
-        `<button type="button" class="growth-tile${role.live ? " is-live" : " is-stub"}" data-growth-role="${role.id}" style="--kit-img:url('assets/kits/${role.slug}.jpg')">` +
+        `<button type="button" class="growth-tile${role.live ? " is-live" : " is-stub"}" data-growth-role="${role.id}" style="--kit-img:url('${growthArt(role)}')">` +
         `<span class="growth-tile-name">${escapeHtml(role.name)}</span>` +
         note +
         `</button>`
@@ -967,7 +1010,7 @@
       `<div class="growth-role-stub" style="background:${role.color || "#334155"}">` +
       `<button type="button" class="growth-back" data-growth-back>← Развитие</button>` +
       `<h2>${escapeHtml(role.name || "")}</h2>` +
-      `<p>Эта роль в разработке. Лестница пока есть у стрелка и медика.</p>` +
+      `<p>Эта роль в разработке. Лестница пока есть у стрелка, медика и лёгкой трубы.</p>` +
       `</div>`;
   }
 
@@ -1232,13 +1275,14 @@
   const GROWTH_FILES = {
     rifleman: "data/rifle-ladder.json",
     medic: "data/medic-ladder.json",
+    lat: "data/lat-ladder.json",
   };
   let growthSlug = "rifleman";
 
   function loadGrowthLadder() {
     const body = document.getElementById("tm-role-body");
     const file = GROWTH_FILES[growthSlug] || GROWTH_FILES.rifleman;
-    const who = growthSlug === "medic" ? "Медик" : "Стрелок";
+    const who = growthSlug === "medic" ? "Медик" : growthSlug === "lat" ? "Легкая Труба" : "Стрелок";
     if (body && !body.querySelector(".growth-table")) {
       body.innerHTML = `<p class="growth-sheet-sub">Считаю лестницу за последние 14 суток…</p>`;
     }
@@ -2810,7 +2854,9 @@
   function paintStats(list) {
     const bb = list.filter(isBbHostMatch);
     const played = bb.filter((m) => isPlayedStatus(m.status));
-    const upcoming = list.filter((m) => m.status === "upcoming");
+    const upcoming = list.filter(
+      (m) => m.status === "upcoming" || m.status === "tba"
+    );
     const wins = played.filter((m) => m.status === "win").length;
     const draws = played.filter((m) => m.status === "draw").length;
     const losses = played.filter((m) => m.status === "lose").length;
@@ -2826,13 +2872,149 @@
       .join("");
   }
 
+  function cwEditInput(name, value, cls) {
+    return `<input class="cw-edit-input${cls ? ` ${cls}` : ""}" data-f="${name}" value="${escapeHtml(String(value ?? ""))}" spellcheck="false" />`;
+  }
+
+  function cwEditStatusSelect(st) {
+    const cur = st || "upcoming";
+    const opts = CW_EDIT_STATUSES.map(
+      (s) =>
+        `<option value="${s.id}"${s.id === cur ? " selected" : ""}>${escapeHtml(s.label)}</option>`
+    ).join("");
+    return `<select class="cw-edit-select" data-f="status">${opts}</select>`;
+  }
+
+  function paintCwEditToggle() {
+    const host = document.getElementById("cw-matches-edit-host");
+    if (!host) return;
+    if (!canEditCwMatches) {
+      host.innerHTML = "";
+      host.hidden = true;
+      return;
+    }
+    host.hidden = false;
+    host.innerHTML = `<button type="button" class="cw-edit-toggle${cwEditMode ? " is-on" : ""}" id="cw-edit-toggle">${cwEditMode ? "Готово" : "Правка"}</button>`;
+    const btn = document.getElementById("cw-edit-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+      cwEditMode = !cwEditMode;
+      paintMatchesTable();
+      paintCwEditToggle();
+      try {
+        notifyEmbedHeight();
+      } catch (_) {}
+    });
+  }
+
+  async function probeCwEditAccess() {
+    try {
+      const r = await fetch(`${SITE_API}/api/admin/cw-match`, {
+        credentials: "include",
+        cache: "no-store",
+      });
+      if (!r.ok) return;
+      const data = await r.json();
+      canEditCwMatches = Boolean(data && data.canEdit);
+      if (Array.isArray(data.statuses) && data.statuses.length) {
+        CW_EDIT_STATUSES.splice(
+          0,
+          CW_EDIT_STATUSES.length,
+          ...data.statuses.map((s) => ({
+            id: String(s.id),
+            label: String(s.label || s.id),
+          }))
+        );
+      }
+      paintCwEditToggle();
+      if (canEditCwMatches) paintMatchesTable();
+    } catch (_) {
+      canEditCwMatches = false;
+    }
+  }
+
+  async function saveCwMatchRow(tr) {
+    if (cwEditSaving) return;
+    const idx = Number(tr.dataset.i);
+    const m = matches[idx];
+    if (!m || !m.id) return;
+    const val = (name) => {
+      const el = tr.querySelector(`[data-f="${name}"]`);
+      return el ? String(el.value || "").trim() : "";
+    };
+    const dateRaw = val("date");
+    let day = Number(m.day);
+    const dm = dateRaw.match(/^(\d{1,2})(?:[./-](\d{1,2}))?/);
+    if (dm) day = Number(dm[1]);
+    const year = Number(m._year || currentMonthMeta?.year);
+    const month = Number(m._month || currentMonthMeta?.month);
+    const body = {
+      id: m.id,
+      year,
+      month,
+      day,
+      timeMsk: val("time"),
+      clan: val("clan"),
+      opp: val("opp"),
+      map: val("map"),
+      size: val("size"),
+      server: val("server"),
+      stack: val("stack"),
+      meeting: val("meeting"),
+      r1: val("r1"),
+      r2: val("r2"),
+      status: val("status"),
+    };
+    cwEditSaving = true;
+    tr.classList.add("is-saving");
+    try {
+      const r = await fetch(`${SITE_API}/api/admin/cw-match`, {
+        method: "PATCH",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok || !data.ok) {
+        throw new Error((data && data.error) || `HTTP ${r.status}`);
+      }
+      const row = data.row || {};
+      Object.assign(m, row);
+      m._i = idx;
+      m._year = year;
+      m._month = month;
+      if (row.clan == null) delete m.clan;
+      paintMatchesTable();
+    } catch (e) {
+      alert(`Не сохранилось: ${e && e.message ? e.message : e}`);
+    } finally {
+      cwEditSaving = false;
+      tr.classList.remove("is-saving");
+    }
+  }
+
   function paintMatchesTable() {
+    paintCwEditToggle();
     const list = filteredMatches();
     paintMatchSortMarks();
     paintStats(list);
     const tbody = document.getElementById("rows");
+    const theadRow = document.querySelector(".matches-table thead tr");
+    if (theadRow) {
+      let act = theadRow.querySelector("th.cw-edit-th");
+      if (cwEditMode && canEditCwMatches) {
+        if (!act) {
+          act = document.createElement("th");
+          act.className = "cw-edit-th";
+          act.textContent = "";
+          theadRow.appendChild(act);
+        }
+      } else if (act) {
+        act.remove();
+      }
+    }
     if (!list.length) {
-      tbody.innerHTML = `<tr><td colspan="12" class="empty-row">Нет матчей по фильтру</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="${cwEditMode ? 13 : 12}" class="empty-row">Нет матчей по фильтру</td></tr>`;
       fillPager("cw-matches-pager-top", 1, 1, 0, PAGE_CW_MATCHES, () => {});
       fillPager("cw-matches-pager-bot", 1, 1, 0, PAGE_CW_MATCHES, () => {});
       return;
@@ -2864,6 +3046,23 @@
         const st = m.status || "upcoming";
         const clanName = hostClanName(m);
         const bbWin = st === "win" && isBbHostMatch(m) ? " bb-win" : "";
+        if (cwEditMode && canEditCwMatches) {
+          return `<tr class="${st}${bbWin} cw-edit-row" data-i="${m._i}" data-id="${escapeHtml(m.id || "")}">
+          <td>${cwEditInput("date", matchDateLabel(m))}</td>
+          <td class="num">${cwEditInput("time", m.timeMsk || "", "num")}</td>
+          <td>${cwEditInput("clan", clanName)}</td>
+          <td>${cwEditInput("opp", m.opp || "")}</td>
+          <td>${cwEditInput("map", m.map || "")}</td>
+          <td class="ctr">${cwEditInput("size", m.size || "", "ctr")}</td>
+          <td>${cwEditInput("server", m.server || "")}</td>
+          <td class="ctr">${cwEditInput("stack", m.stack || "", "ctr")}</td>
+          <td class="ctr">${cwEditInput("meeting", formatScoreCell(m), "ctr")}</td>
+          <td class="num">${cwEditInput("r1", m.r1 || "", "num")}</td>
+          <td class="num">${cwEditInput("r2", m.r2 || "", "num")}</td>
+          <td>${cwEditStatusSelect(st)}</td>
+          <td class="cw-edit-actions"><button type="button" class="cw-edit-save">Сохранить</button></td>
+        </tr>`;
+        }
         return `<tr class="${st}${bbWin} clickable" data-i="${m._i}" tabindex="0" role="button">
           <td>${matchDateLabel(m)}</td>
           <td class="num">${m.timeMsk || "—"}</td>
@@ -2880,6 +3079,26 @@
         </tr>`;
       })
       .join("");
+
+    if (cwEditMode && canEditCwMatches) {
+      tbody.querySelectorAll("tr.cw-edit-row").forEach((tr) => {
+        const btn = tr.querySelector(".cw-edit-save");
+        if (btn) btn.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          void saveCwMatchRow(tr);
+        });
+        tr.querySelectorAll("input, select").forEach((el) => {
+          el.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+              e.preventDefault();
+              void saveCwMatchRow(tr);
+            }
+          });
+        });
+      });
+      return;
+    }
 
     tbody.querySelectorAll("tr.clickable").forEach((tr) => {
       const open = () => openMatch(matches[Number(tr.dataset.i)]);
@@ -7022,6 +7241,7 @@
       );
       paintMonthChips();
       loadSelectedMonth();
+      void probeCwEditAccess();
       applyHash();
     })
     .catch((err) => {
