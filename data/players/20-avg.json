@@ -1,0 +1,358 @@
+{
+  "matchId": "20-avg",
+  "clan": "BB",
+  "opp": "AVG",
+  "stack": "Main",
+  "note": "DCAI · CSL Skorpo Skirmish v1 · R1 115:0 мы США они СВ РФ · R2 ещё нет · source=screens · oppR1 полный (18) · сервер DCAI (заявка была FCL ARENA)",
+  "source": "screens",
+  "server": "DCAI",
+  "map": "CSL Skorpo Skirmish v1",
+  "r1": [
+    {
+      "nick": "Runetik",
+      "res": 0,
+      "nok": 13,
+      "kills": 10,
+      "deaths": 8,
+      "dmg": 320
+    },
+    {
+      "nick": "iKEppA",
+      "res": 0,
+      "nok": 23,
+      "kills": 18,
+      "deaths": 8,
+      "dmg": 652
+    },
+    {
+      "nick": "Summer",
+      "res": 1,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 210
+    },
+    {
+      "nick": "Kroasawn",
+      "res": 15,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 173
+    },
+    {
+      "nick": "Pymba",
+      "res": 2,
+      "nok": 19,
+      "kills": 12,
+      "deaths": 6,
+      "dmg": 428
+    },
+    {
+      "nick": "Azure",
+      "res": 6,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 6,
+      "dmg": 52
+    },
+    {
+      "nick": "ZensU",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 22
+    },
+    {
+      "nick": "Jopllik",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 72
+    },
+    {
+      "nick": "Radislave",
+      "res": 5,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 40
+    },
+    {
+      "nick": "MusKeR",
+      "res": 0,
+      "nok": 10,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 233
+    },
+    {
+      "nick": "Animo",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 78
+    },
+    {
+      "nick": "Chidori",
+      "res": 0,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 9,
+      "dmg": 216
+    },
+    {
+      "nick": "MrChaykaa",
+      "res": 3,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 220
+    },
+    {
+      "nick": "ALEKSGAR",
+      "res": 8,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 90
+    },
+    {
+      "nick": "Ilyich",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 85
+    },
+    {
+      "nick": "Gadler",
+      "res": 0,
+      "nok": 3,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 67
+    },
+    {
+      "nick": "angel",
+      "res": 1,
+      "nok": 18,
+      "kills": 17,
+      "deaths": 6,
+      "dmg": 794
+    },
+    {
+      "nick": "LordWolf",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 11,
+      "dmg": 198
+    },
+    {
+      "nick": "SquirieZzz",
+      "res": 5,
+      "nok": 15,
+      "kills": 12,
+      "deaths": 8,
+      "dmg": 357
+    },
+    {
+      "nick": "Treppen",
+      "res": 5,
+      "nok": 21,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 406
+    }
+  ],
+  "r2": [],
+  "oppR1": [
+    {
+      "nick": "Апельсин",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 120
+    },
+    {
+      "nick": "n1:)",
+      "res": 0,
+      "nok": 16,
+      "kills": 9,
+      "deaths": 9,
+      "dmg": 302
+    },
+    {
+      "nick": "IE Wkaf (Dalap)",
+      "res": 2,
+      "nok": 15,
+      "kills": 14,
+      "deaths": 6,
+      "dmg": 555
+    },
+    {
+      "nick": "GamEOveR",
+      "res": 0,
+      "nok": 6,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 216
+    },
+    {
+      "nick": "Patrego",
+      "res": 8,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 170
+    },
+    {
+      "nick": "xls",
+      "res": 6,
+      "nok": 6,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 178
+    },
+    {
+      "nick": "Gosu",
+      "res": 2,
+      "nok": 15,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 405
+    },
+    {
+      "nick": "SapiC:)",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 122
+    },
+    {
+      "nick": "Uncle Bobr",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 221
+    },
+    {
+      "nick": "Dobermann",
+      "res": 0,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 5,
+      "dmg": 198
+    },
+    {
+      "nick": "Татарин",
+      "res": 1,
+      "nok": 12,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 484
+    },
+    {
+      "nick": "Oshibka",
+      "res": 2,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 194
+    },
+    {
+      "nick": "That's the one",
+      "res": 1,
+      "nok": 6,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 123
+    },
+    {
+      "nick": "Theoldmix",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 56
+    },
+    {
+      "nick": "NND",
+      "res": 1,
+      "nok": 13,
+      "kills": 8,
+      "deaths": 14,
+      "dmg": 400
+    },
+    {
+      "nick": "Bergman",
+      "res": 3,
+      "nok": 8,
+      "kills": 6,
+      "deaths": 13,
+      "dmg": 194
+    },
+    {
+      "nick": "andreyka",
+      "res": 1,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 6,
+      "dmg": 215
+    },
+    {
+      "nick": "пакость",
+      "res": 3,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 211
+    }
+  ],
+  "oppR2": [],
+  "details": {
+    "r1": {
+      "tickets": "115:0",
+      "len": "",
+      "goals": "",
+      "infantry": "",
+      "fob": "",
+      "veh": "",
+      "bleed": "",
+      "ammo": "",
+      "build": "",
+      "fobsCreated": ""
+    },
+    "r2": {},
+    "total": {}
+  },
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Kroasawn"
+      ],
+      "killer": [
+        "iKEppA"
+      ],
+      "damage": [
+        "angel"
+      ],
+      "antiDeath": [
+        "LordWolf"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}

@@ -1701,6 +1701,58 @@
       }
     },
     {
+      "id": "20-aut",
+      "day": 20,
+      "opp": "AuT",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "ZoZo"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "bambozy"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
+      "id": "20-avg",
+      "day": 20,
+      "opp": "AVG",
+      "meeting": null,
+      "r1": {
+        "medic": [
+          "Kroasawn"
+        ],
+        "killer": [
+          "iKEppA"
+        ],
+        "damage": [
+          "angel"
+        ],
+        "antiDeath": [
+          "LordWolf"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "21-ra",
       "day": 21,
       "opp": "RA",
@@ -4129,7 +4181,7 @@
       ]
     },
     "Kroasawn": {
-      "mvpMedic": 10,
+      "mvpMedic": 11,
       "mvpKiller": 0,
       "mvpDamage": 1,
       "antiDeath": 0,
@@ -4171,6 +4223,14 @@
           "day": 17,
           "opp": "44th",
           "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r1",
           "type": "medic",
           "label": "MVP Medic"
         },
@@ -4452,7 +4512,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 4,
+      "antiDeath": 5,
       "awards": [
         {
           "matchId": "06-fox",
@@ -4499,6 +4559,14 @@
           "day": 18,
           "opp": "FAQ",
           "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -6384,6 +6452,22 @@
         }
       ]
     },
+    "ZoZo": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "_VaGNeR_": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -6475,7 +6559,7 @@
     "angel": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 2,
       "awards": [
         {
@@ -6509,14 +6593,22 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 14,
-      "mvpDamage": 12,
-      "antiDeath": 1,
+      "mvpKiller": 15,
+      "mvpDamage": 13,
+      "antiDeath": 2,
       "awards": [
         {
           "matchId": "01-avg",
@@ -6701,6 +6793,30 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "21-ra",
@@ -6922,7 +7038,7 @@
     },
     "iKEppA": {
       "mvpMedic": 0,
-      "mvpKiller": 15,
+      "mvpKiller": 16,
       "mvpDamage": 4,
       "antiDeath": 0,
       "awards": [
@@ -7029,6 +7145,14 @@
           "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
         },
         {
           "matchId": "22-gm",

@@ -652,14 +652,17 @@
       "timeMsk": "20:00",
       "timeUtc": "17:00",
       "opp": "AVG",
-      "map": "CSl_SkorpoSkirmish_V1",
+      "map": "CSL Skorpo Skirmish v1",
       "size": "20v20",
-      "server": "FCL ARENA",
+      "server": "DCAI",
       "rules": "CSL",
       "stack": "Main",
       "status": "upcoming",
-      "note": "Main · CSL · CSl_SkorpoSkirmish_V1 · 20v20 · 20:00 · сервер FCL ARENA · заявка (сайт · Рега КВ) · NO SCOUT · NO MEETINGS",
-      "mode": "CSL"
+      "note": "Main · CSL · CSL Skorpo Skirmish v1 · 20v20 · 20:00 · DCAI (заявка FCL ARENA) · R1 115:0 мы США · R2 ещё нет · NO SCOUT · NO MEETINGS",
+      "mode": "CSL",
+      "r1": "115:0",
+      "r2": "",
+      "playersUrl": "data/players/20-avg.json"
     },
     {
       "id": "20-ra",
