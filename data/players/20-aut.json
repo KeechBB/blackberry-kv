@@ -1,7 +1,7 @@
 {
   "matchId": "20-aut",
   "opp": "AuT",
-  "note": "Авто из логов TR · FCL ARENA #3 (TR3) · R1 0:27 · R2 идёт · source=tr-cw-auto · перенос из training 20-lizardcupfallu",
+  "note": "Авто из логов TR · FCL ARENA #3 (TR3) · R1 0:27 · R2 0:125 · сумма 0:152 · встреча 0–2 · source=tr-cw-auto",
   "source": "tr-cw-auto",
   "server": "FCL ARENA #3 (TR3)",
   "map": "LizardCup Fallujah",
@@ -241,7 +241,242 @@
       "vehicleKills": 0
     }
   ],
-  "r2": [],
+  "r2": [
+    {
+      "nick": "bambozy",
+      "res": 0,
+      "nok": 29,
+      "kills": 25,
+      "deaths": 11,
+      "dmg": 10088,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Tatarin",
+      "res": 2,
+      "nok": 12,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 4207,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "r4mp",
+      "res": 0,
+      "nok": 7,
+      "kills": 6,
+      "deaths": 8,
+      "dmg": 2575,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Ynur",
+      "res": 2,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 2490,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Gorbatiy",
+      "res": 2,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 1967,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Trigger",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 2908,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Forks",
+      "res": 1,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 11,
+      "dmg": 1229,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "_ByBaJIeX_",
+      "res": 1,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1492,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Maga",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 1302,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Edge_CM",
+      "res": 6,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 1175,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KingOfLobs",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 1014,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Tankist",
+      "res": 3,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 1242,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "CORWAX",
+      "res": 0,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 10,
+      "dmg": 808,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "NagiSeishiro",
+      "res": 9,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 930,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Varyag",
+      "res": 1,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 820,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "MORBIUS",
+      "res": 0,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 835,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "READY",
+      "res": 1,
+      "nok": 3,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 480,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "p1XeL",
+      "res": 5,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 12,
+      "dmg": 385,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "T-800",
+      "res": 0,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 5,
+      "dmg": 588,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Barsik",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 2,
+      "dmg": 362,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Bayle The Dread",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 4,
+      "dmg": 325,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZLOBA1917",
+      "res": 7,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 360,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "KTO--TO",
+      "res": 5,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 5,
+      "dmg": 110,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "CERBER",
+      "res": 7,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 28,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "firs",
+      "res": 3,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 8,
+      "dmg": 55,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ZoZo",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 6,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
   "oppR1": [
     {
       "nick": "@Na_FoXE",
@@ -478,5 +713,270 @@
       "vehicleKills": 0
     }
   ],
-  "oppR2": []
+  "oppR2": [
+    {
+      "nick": "lomayo",
+      "res": 0,
+      "nok": 20,
+      "kills": 14,
+      "deaths": 3,
+      "dmg": 5203,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "kartoshka",
+      "res": 0,
+      "nok": 16,
+      "kills": 13,
+      "deaths": 4,
+      "dmg": 5453,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "ReShadeツツツ",
+      "res": 0,
+      "nok": 16,
+      "kills": 12,
+      "deaths": 3,
+      "dmg": 5226,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bl1kkyyn",
+      "res": 0,
+      "nok": 14,
+      "kills": 11,
+      "deaths": 1,
+      "dmg": 5052,
+      "vehicleKills": 2
+    },
+    {
+      "nick": "Tomaha+WK",
+      "res": 0,
+      "nok": 17,
+      "kills": 10,
+      "deaths": 4,
+      "dmg": 4056,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "bombavzriv",
+      "res": 0,
+      "nok": 15,
+      "kills": 10,
+      "deaths": 0,
+      "dmg": 3151,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "набираю форму",
+      "res": 0,
+      "nok": 14,
+      "kills": 10,
+      "deaths": 7,
+      "dmg": 3704,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "LICHER",
+      "res": 0,
+      "nok": 9,
+      "kills": 10,
+      "deaths": 2,
+      "dmg": 3475,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "шадоу мем",
+      "res": 0,
+      "nok": 10,
+      "kills": 9,
+      "deaths": 3,
+      "dmg": 3772,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "BANZAI",
+      "res": 3,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 6,
+      "dmg": 3392,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "We1der☆",
+      "res": 0,
+      "nok": 9,
+      "kills": 7,
+      "deaths": 2,
+      "dmg": 3786,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Толя Мрамор",
+      "res": 2,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 2174,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "eshkere hype",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 2067,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "ПУСИDESTROER",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 2006,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "@Na_FoXE",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 1,
+      "dmg": 1543,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "jitakuzu <3 峠 魂",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 3,
+      "dmg": 1563,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Suzuya",
+      "res": 0,
+      "nok": 4,
+      "kills": 4,
+      "deaths": 2,
+      "dmg": 1534,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "DERTISE",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 1450,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "вонючкаsix seven",
+      "res": 1,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 1257,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "6udtoprizrak",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 0,
+      "dmg": 1104,
+      "vehicleKills": 2
+    },
+    {
+      "nick": "Lerow⁴²",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 1127,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "vida",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 802,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "WOLFHOOK",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 3,
+      "dmg": 1266,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "пацан",
+      "res": 0,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 3,
+      "dmg": 326,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "houshou marine 独尊",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 2,
+      "dmg": 0,
+      "vehicleKills": 0
+    },
+    {
+      "nick": "Vaskes",
+      "res": 2,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 0,
+      "vehicleKills": 0
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "ZoZo"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "bambozy"
+      ]
+    },
+    "r2": {
+      "medic": [
+        "NagiSeishiro"
+      ],
+      "killer": [
+        "bambozy"
+      ],
+      "damage": [
+        "bambozy"
+      ],
+      "antiDeath": [
+        "p1XeL"
+      ]
+    }
+  }
 }

@@ -1704,7 +1704,7 @@
       "id": "20-aut",
       "day": 20,
       "opp": "AuT",
-      "meeting": null,
+      "meeting": "0–2",
       "r1": {
         "medic": [
           "ZoZo"
@@ -1720,10 +1720,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "NagiSeishiro"
+        ],
+        "killer": [
+          "bambozy"
+        ],
+        "damage": [
+          "bambozy"
+        ],
+        "antiDeath": [
+          "p1XeL"
+        ]
       }
     },
     {
@@ -5020,6 +5028,22 @@
         }
       ]
     },
+    "NagiSeishiro": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "Nestor Mahno": {
       "mvpMedic": 0,
       "mvpKiller": 2,
@@ -6654,8 +6678,8 @@
     },
     "bambozy": {
       "mvpMedic": 0,
-      "mvpKiller": 15,
-      "mvpDamage": 13,
+      "mvpKiller": 16,
+      "mvpDamage": 14,
       "antiDeath": 2,
       "awards": [
         {
@@ -6865,6 +6889,22 @@
           "round": "r1",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "21-ra",
@@ -7313,6 +7353,22 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "p1XeL": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "20-aut",
+          "day": 20,
+          "opp": "AuT",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         }
       ]
     },

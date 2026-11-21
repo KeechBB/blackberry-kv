@@ -639,11 +639,12 @@
       "server": "FCL ARENA #3 (TR3)",
       "rules": "LC",
       "stack": "Junior",
-      "status": "upcoming",
-      "note": "Junior · LC · LizardCup Fallujah · 26v26 · 20:00 · FCL ARENA #3 (TR3) · R1 0:27 мы CAF они IMF · R2 идёт · авто обе команды",
+      "status": "lose",
+      "note": "Junior · LC · LizardCup Fallujah · 26v26 · 20:00 · FCL ARENA #3 (TR3) · сумма 0:152 (0:27 · 0:125) · встреча 0–2 · R1 мы CAF они IMF · авто обе команды",
       "mode": "LC",
       "r1": "0:27",
-      "r2": "",
+      "r2": "0:125",
+      "meeting": "0–2",
       "playersUrl": "data/players/20-aut.json"
     },
     {
