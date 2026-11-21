@@ -1730,7 +1730,7 @@
       "id": "20-avg",
       "day": 20,
       "opp": "AVG",
-      "meeting": null,
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Kroasawn"
@@ -1746,10 +1746,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "ALEKSGAR"
+        ],
+        "killer": [
+          "angel"
+        ],
+        "damage": [
+          "ZensU"
+        ],
+        "antiDeath": [
+          "LordWolf"
+        ]
       }
     },
     {
@@ -2454,6 +2462,22 @@
           "matchId": "30-ih",
           "day": 30,
           "opp": "IH",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
+    "ALEKSGAR": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
@@ -4512,7 +4536,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 5,
+      "antiDeath": 6,
       "awards": [
         {
           "matchId": "06-fox",
@@ -4567,6 +4591,14 @@
           "day": 20,
           "opp": "AVG",
           "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
         }
@@ -6399,7 +6431,7 @@
     "ZensU": {
       "mvpMedic": 0,
       "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpDamage": 2,
       "antiDeath": 1,
       "awards": [
         {
@@ -6409,6 +6441,14 @@
           "round": "r2",
           "type": "antiDeath",
           "label": "Anti-MVP Death"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "damage",
+          "label": "MVP War-Score"
         },
         {
           "matchId": "25-h1gh",
@@ -6558,7 +6598,7 @@
     },
     "angel": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
+      "mvpKiller": 2,
       "mvpDamage": 2,
       "antiDeath": 2,
       "awards": [
@@ -6601,6 +6641,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "20-avg",
+          "day": 20,
+          "opp": "AVG",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
         }
       ]
     },

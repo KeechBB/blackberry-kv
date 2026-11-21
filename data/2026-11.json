@@ -657,11 +657,12 @@
       "server": "DCAI",
       "rules": "CSL",
       "stack": "Main",
-      "status": "upcoming",
-      "note": "Main · CSL · CSL Skorpo Skirmish v1 · 20v20 · 20:00 · DCAI (заявка FCL ARENA) · R1 115:0 мы США · R2 ещё нет · NO SCOUT · NO MEETINGS",
+      "status": "win",
+      "note": "Main · CSL · CSL Skorpo Skirmish v1 · 20v20 · 20:00 · DCAI (заявка FCL ARENA) · сумма 302:0 (115:0 · 187:0) · встреча 2–0 · R1 мы США · R2 мы СВ РФ · NO SCOUT · NO MEETINGS",
       "mode": "CSL",
       "r1": "115:0",
-      "r2": "",
+      "r2": "187:0",
+      "meeting": "2–0",
       "playersUrl": "data/players/20-avg.json"
     },
     {
