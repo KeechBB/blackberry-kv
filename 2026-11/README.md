@@ -16,7 +16,7 @@
 | 17 | [17-AVG](17-AVG/match.md) | AVG | **мейн-стак**, LizardCup AlBasrah Skirmish, **26v26**, **20:00** МСК, сервер **AVG Training Server**, LC · R1 **203:0** · R2 **0:10** · сумма **203:10** · встреча **2–0** · вместо 17-lk |
 | 20 | [20-AUT](20-AUT/match.md) | AuT | **Junior**, LizardCup Fallujah, **26v26**, **20:00** МСК, сервер **FCL ARENA #3 (TR3)**, LC · R1 **0:27** · R2 **0:125** · сумма **0:152** · встреча **0–2** · авто |
 | 20 | [20-AVG](20-AVG/match.md) | AVG | **мейн-стак**, CSL Skorpo Skirmish v1, **20v20**, **20:00** МСК, сервер **DCAI** (заявка FCL ARENA), CSL · R1 **115:0** · R2 **187:0** · сумма **302:0** · встреча **2–0** |
-| 25 | [25-NKLV-HELL](25-NKLV-HELL/match.md) | NKLV vs HELL | **чужой КВ**, R1 **0:92** (CAF / ЗЧВК), **20v20**, R2 ожидает · карта/сервер со скрина не читаются |
+| 25 | [25-NKLV-HELL](25-NKLV-HELL/match.md) | NKLV vs HELL | **чужой КВ**, BZP Black Coast AAS V.1, **20v20**, **19:00** МСК, сервер **HELL**, BZP · R1 **0:92** · R2 ожидает |
 | 02 | [02-RA](02-RA/match.md) | RA | **Junior**, FCL Mutaha, **16v16**, **20:30** МСК, **FCL ARENA #2**, R1 **40:0**, R2 **35:16**, сумма **75:16**, встреча **2–0**, [analytics.md](02-RA/analytics.md) |
 | 02 | [02-GRAD-ST9](02-GRAD-ST9/match.md) | GRAD vs ST-9 | **чужой КВ**, SEC 26 GooseBay AAS v1, **26v26**, **20:00** МСК, **HELL TRAINING**, R1 **134:0**, R2 **124:0**, сумма **258:0**, встреча **2–0** GRAD, [analytics.md](02-GRAD-ST9/analytics.md) |
 | 07 | [07-GRAD-IMP](07-GRAD-IMP/match.md) | GRAD vs IMP | **чужой КВ**, Yehorivka AAS v1, **20v20**, **20:00** МСК (17:00 UTC), сервер **DeadLine**, BZPT, [analytics.md](07-GRAD-IMP/analytics.md) |
