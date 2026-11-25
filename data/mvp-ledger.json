@@ -2007,6 +2007,32 @@
       }
     },
     {
+      "id": "25-nklv-hell",
+      "day": 25,
+      "opp": "HELL",
+      "meeting": "—",
+      "r1": {
+        "medic": [
+          "Башмак в клетке"
+        ],
+        "killer": [
+          "Вика2012"
+        ],
+        "damage": [
+          "Вика2012"
+        ],
+        "antiDeath": [
+          "hennow"
+        ]
+      },
+      "r2": {
+        "medic": [],
+        "killer": [],
+        "damage": [],
+        "antiDeath": []
+      }
+    },
+    {
       "id": "25-nklv-huh-narva",
       "day": 25,
       "opp": "ХУХ",
@@ -7124,6 +7150,22 @@
         }
       ]
     },
+    "hennow": {
+      "mvpMedic": 0,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 1,
+      "awards": [
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
+        }
+      ]
+    },
     "iKEppA": {
       "mvpMedic": 0,
       "mvpKiller": 16,
@@ -7621,11 +7663,19 @@
       ]
     },
     "Башмак в клетке": {
-      "mvpMedic": 1,
+      "mvpMedic": 2,
       "mvpKiller": 0,
       "mvpDamage": 0,
       "antiDeath": 0,
       "awards": [
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "medic",
+          "label": "MVP Medic"
+        },
         {
           "matchId": "25-nklv-huh",
           "day": 25,
@@ -7649,6 +7699,30 @@
           "round": "r2",
           "type": "medic",
           "label": "MVP Medic"
+        }
+      ]
+    },
+    "Вика2012": {
+      "mvpMedic": 0,
+      "mvpKiller": 1,
+      "mvpDamage": 1,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
         }
       ]
     },

@@ -683,6 +683,26 @@
       "r1": "",
       "r2": "",
       "meeting": "—"
+    },
+    {
+      "id": "25-nklv-hell",
+      "day": 25,
+      "timeMsk": "—",
+      "timeUtc": "—",
+      "clan": "NKLV",
+      "opp": "HELL",
+      "map": "—",
+      "size": "20v20",
+      "server": "—",
+      "rules": "—",
+      "stack": "—",
+      "status": "upcoming",
+      "r1": "0:92",
+      "r2": "",
+      "meeting": "—",
+      "playersUrl": "data/players/25-nklv-hell.json",
+      "note": "чужой КВ · NKLV vs HELL · R1 0:92 (CAF 0 / ЗЧВК 92) · 21 vs 20 · R2 ожидает · карта/сервер со скрина не читаются · NO SCOUT · NO MEETINGS",
+      "mode": "—"
     }
   ]
 }

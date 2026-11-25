@@ -1,0 +1,358 @@
+{
+  "matchId": "25-nklv-hell",
+  "clan": "NKLV",
+  "opp": "HELL",
+  "note": "чужой КВ · R1 0:92 · NKLV CAF 0 тикетов / HELL ЗЧВК 92 · 21 vs 20 · карта/сервер со скрина не читаются · R2 ожидает · CAM skip · NO SCOUT · NO MEETINGS",
+  "server": "—",
+  "map": "—",
+  "r1": [
+    {
+      "nick": "Hampton",
+      "res": 2,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 84
+    },
+    {
+      "nick": "Карась",
+      "res": 0,
+      "nok": 6,
+      "kills": 6,
+      "deaths": 6,
+      "dmg": 160
+    },
+    {
+      "nick": "hennow",
+      "res": 2,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 12,
+      "dmg": 255
+    },
+    {
+      "nick": "SpokSL",
+      "res": 2,
+      "nok": 19,
+      "kills": 15,
+      "deaths": 6,
+      "dmg": 425
+    },
+    {
+      "nick": "Kael'thas",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 119
+    },
+    {
+      "nick": "Gruze",
+      "res": 6,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 6,
+      "dmg": 114
+    },
+    {
+      "nick": "hella",
+      "res": 1,
+      "nok": 10,
+      "kills": 6,
+      "deaths": 7,
+      "dmg": 250
+    },
+    {
+      "nick": "Panihida",
+      "res": 2,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 7,
+      "dmg": 177
+    },
+    {
+      "nick": "Zaxar_D",
+      "res": 4,
+      "nok": 15,
+      "kills": 11,
+      "deaths": 5,
+      "dmg": 315
+    },
+    {
+      "nick": "raid3n",
+      "res": 1,
+      "nok": 4,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 203
+    },
+    {
+      "nick": "WARFACEexileassasir",
+      "res": 4,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 8,
+      "dmg": 371
+    },
+    {
+      "nick": "(RU)KRIPerOK",
+      "res": 0,
+      "nok": 5,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 109
+    },
+    {
+      "nick": "Батя",
+      "res": 0,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 5,
+      "dmg": 73
+    },
+    {
+      "nick": "Вика2012",
+      "res": 2,
+      "nok": 21,
+      "kills": 19,
+      "deaths": 4,
+      "dmg": 720,
+      "vehicleKills": 3
+    },
+    {
+      "nick": "Military bastards",
+      "res": 0,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 4,
+      "dmg": 122
+    },
+    {
+      "nick": "tRayQ1",
+      "res": 9,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 76
+    },
+    {
+      "nick": "Eastt",
+      "res": 0,
+      "nok": 8,
+      "kills": 4,
+      "deaths": 8,
+      "dmg": 185
+    },
+    {
+      "nick": "Еврей",
+      "res": 3,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 10,
+      "dmg": 189
+    },
+    {
+      "nick": "Башмак в клетке",
+      "res": 9,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 83
+    },
+    {
+      "nick": "Maboy",
+      "res": 2,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 115
+    }
+  ],
+  "oppR1": [
+    {
+      "nick": "Regulator",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 138
+    },
+    {
+      "nick": "tarasov",
+      "res": 5,
+      "nok": 7,
+      "kills": 7,
+      "deaths": 3,
+      "dmg": 199
+    },
+    {
+      "nick": "Alexey Imperative",
+      "res": 6,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 132
+    },
+    {
+      "nick": "KiRa",
+      "res": 4,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 228
+    },
+    {
+      "nick": "PAUL FINCH",
+      "res": 0,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 194
+    },
+    {
+      "nick": "qeer",
+      "res": 6,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 212
+    },
+    {
+      "nick": "Grimm2074",
+      "res": 2,
+      "nok": 7,
+      "kills": 5,
+      "deaths": 4,
+      "dmg": 175
+    },
+    {
+      "nick": "Liros",
+      "res": 3,
+      "nok": 9,
+      "kills": 8,
+      "deaths": 5,
+      "dmg": 192
+    },
+    {
+      "nick": "kur'y chai",
+      "res": 2,
+      "nok": 14,
+      "kills": 4,
+      "deaths": 6,
+      "dmg": 253
+    },
+    {
+      "nick": "SanRayz",
+      "res": 0,
+      "nok": 8,
+      "kills": 8,
+      "deaths": 7,
+      "dmg": 373,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "SPACE PLiNe",
+      "res": 1,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 276
+    },
+    {
+      "nick": "Grinch",
+      "res": 0,
+      "nok": 13,
+      "kills": 7,
+      "deaths": 8,
+      "dmg": 282
+    },
+    {
+      "nick": "Morietsu",
+      "res": 1,
+      "nok": 6,
+      "kills": 5,
+      "deaths": 3,
+      "dmg": 134
+    },
+    {
+      "nick": "andreyka",
+      "res": 4,
+      "nok": 16,
+      "kills": 13,
+      "deaths": 6,
+      "dmg": 348
+    },
+    {
+      "nick": "Delta877",
+      "res": 4,
+      "nok": 7,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 191
+    },
+    {
+      "nick": "диба",
+      "res": 2,
+      "nok": 19,
+      "kills": 9,
+      "deaths": 8,
+      "dmg": 407
+    },
+    {
+      "nick": "MaksMalks",
+      "res": 0,
+      "nok": 7,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 512,
+      "vehicleKills": 3
+    },
+    {
+      "nick": "MishaDiadler",
+      "res": 0,
+      "nok": 1,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 26
+    },
+    {
+      "nick": "G4L4S",
+      "res": 11,
+      "nok": 12,
+      "kills": 11,
+      "deaths": 7,
+      "dmg": 409,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "Protein",
+      "res": 1,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 3,
+      "dmg": 181
+    }
+  ],
+  "mvp": {
+    "r1": {
+      "medic": [
+        "Башмак в клетке"
+      ],
+      "killer": [
+        "Вика2012"
+      ],
+      "damage": [
+        "Вика2012"
+      ],
+      "antiDeath": [
+        "hennow"
+      ]
+    },
+    "r2": {
+      "medic": [],
+      "killer": [],
+      "damage": [],
+      "antiDeath": []
+    }
+  }
+}
