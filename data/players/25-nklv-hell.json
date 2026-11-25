@@ -2,9 +2,9 @@
   "matchId": "25-nklv-hell",
   "clan": "NKLV",
   "opp": "HELL",
-  "note": "чужой КВ · R1 0:92 · NKLV CAF 0 тикетов / HELL ЗЧВК 92 · 21 vs 20 · карта/сервер со скрина не читаются · R2 ожидает · CAM skip · NO SCOUT · NO MEETINGS",
-  "server": "—",
-  "map": "—",
+  "note": "чужой КВ · BZP_Black Coast AAS V.1 · HELL · 19:00 · R1 0:92 · NKLV CAF 0 / HELL ЗЧВК 92 · 21 vs 20 · R2 ожидает · CAM skip · NO SCOUT · NO MEETINGS",
+  "server": "HELL",
+  "map": "BZP_Black Coast AAS V.1",
   "r1": [
     {
       "nick": "Hampton",
