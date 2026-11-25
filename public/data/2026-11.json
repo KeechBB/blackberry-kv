@@ -716,12 +716,12 @@
       "server": "HELL",
       "rules": "BZP",
       "stack": "—",
-      "status": "upcoming",
-      "note": "чужой КВ · NKLV vs HELL · BZP_Black Coast AAS V.1 · 20v20 · 19:00 · сервер HELL · BZP · R1 0:92 (CAF 0 / ЗЧВК 92) · R2 ожидает · NO SCOUT · NO MEETINGS",
+      "status": "win",
+      "note": "чужой КВ · NKLV vs HELL · BZP_Black Coast AAS V.1 · 20v20 · 19:00 · сервер HELL · BZP · R1 0:92 · R2 112:0 · сумма 112:92 · раунды 1–1 · встреча 2–0 · NO SCOUT · NO MEETINGS",
       "mode": "BZP",
       "r1": "0:92",
-      "r2": "",
-      "meeting": "—",
+      "r2": "112:0",
+      "meeting": "2–0",
       "playersUrl": "data/players/25-nklv-hell.json"
     },
     {

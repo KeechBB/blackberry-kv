@@ -2010,7 +2010,7 @@
       "id": "25-nklv-hell",
       "day": 25,
       "opp": "HELL",
-      "meeting": "—",
+      "meeting": "2–0",
       "r1": {
         "medic": [
           "Башмак в клетке"
@@ -2026,10 +2026,18 @@
         ]
       },
       "r2": {
-        "medic": [],
-        "killer": [],
-        "damage": [],
-        "antiDeath": []
+        "medic": [
+          "Zaxar_D"
+        ],
+        "killer": [
+          "Вика2012"
+        ],
+        "damage": [
+          "Вика2012"
+        ],
+        "antiDeath": [
+          "Eastt"
+        ]
       }
     },
     {
@@ -3354,7 +3362,7 @@
       "mvpMedic": 0,
       "mvpKiller": 1,
       "mvpDamage": 1,
-      "antiDeath": 0,
+      "antiDeath": 1,
       "awards": [
         {
           "matchId": "13-nklv-fal-2",
@@ -3363,6 +3371,14 @@
           "round": "r1",
           "type": "damage",
           "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "antiDeath",
+          "label": "Anti-MVP Death"
         },
         {
           "matchId": "25-nklv-huh-narva",
@@ -6478,6 +6494,22 @@
         }
       ]
     },
+    "Zaxar_D": {
+      "mvpMedic": 1,
+      "mvpKiller": 0,
+      "mvpDamage": 0,
+      "antiDeath": 0,
+      "awards": [
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "medic",
+          "label": "MVP Medic"
+        }
+      ]
+    },
     "ZensU": {
       "mvpMedic": 0,
       "mvpKiller": 1,
@@ -7704,8 +7736,8 @@
     },
     "Вика2012": {
       "mvpMedic": 0,
-      "mvpKiller": 1,
-      "mvpDamage": 1,
+      "mvpKiller": 2,
+      "mvpDamage": 2,
       "antiDeath": 0,
       "awards": [
         {
@@ -7721,6 +7753,22 @@
           "day": 25,
           "opp": "HELL",
           "round": "r1",
+          "type": "damage",
+          "label": "MVP War-Score"
+        },
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r2",
+          "type": "killer",
+          "label": "MVP Killer"
+        },
+        {
+          "matchId": "25-nklv-hell",
+          "day": 25,
+          "opp": "HELL",
+          "round": "r2",
           "type": "damage",
           "label": "MVP War-Score"
         }

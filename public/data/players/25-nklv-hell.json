@@ -2,7 +2,7 @@
   "matchId": "25-nklv-hell",
   "clan": "NKLV",
   "opp": "HELL",
-  "note": "чужой КВ · BZP_Black Coast AAS V.1 · HELL · 19:00 · R1 0:92 · NKLV CAF 0 / HELL ЗЧВК 92 · 21 vs 20 · R2 ожидает · CAM skip · NO SCOUT · NO MEETINGS",
+  "note": "чужой КВ · BZP_Black Coast AAS V.1 · HELL · 19:00 · R1 0:92 · R2 112:0 · сумма 112:92 · раунды 1–1 · встреча 2–0 · R1 CAF/ЗЧВК · R2 ЗЧВК/CAF · CAM skip · NO SCOUT · NO MEETINGS",
   "server": "HELL",
   "map": "BZP_Black Coast AAS V.1",
   "r1": [
@@ -354,5 +354,308 @@
       "damage": [],
       "antiDeath": []
     }
-  }
+  },
+  "r2": [
+    {
+      "nick": "hella",
+      "res": 1,
+      "nok": 11,
+      "kills": 7,
+      "deaths": 5,
+      "dmg": 201
+    },
+    {
+      "nick": "Panihida",
+      "res": 1,
+      "nok": 15,
+      "kills": 15,
+      "deaths": 5,
+      "dmg": 376
+    },
+    {
+      "nick": "Zaxar_D",
+      "res": 9,
+      "nok": 14,
+      "kills": 9,
+      "deaths": 5,
+      "dmg": 291
+    },
+    {
+      "nick": "WARFACEexileassasir",
+      "res": 6,
+      "nok": 23,
+      "kills": 16,
+      "deaths": 9,
+      "dmg": 467
+    },
+    {
+      "nick": "raid3n",
+      "res": 1,
+      "nok": 11,
+      "kills": 6,
+      "deaths": 4,
+      "dmg": 240
+    },
+    {
+      "nick": "Eastt",
+      "res": 0,
+      "nok": 4,
+      "kills": 0,
+      "deaths": 9,
+      "dmg": 114
+    },
+    {
+      "nick": "Maboy",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 7,
+      "dmg": 70
+    },
+    {
+      "nick": "Еврей",
+      "res": 4,
+      "nok": 0,
+      "kills": 0,
+      "deaths": 4,
+      "dmg": 148
+    },
+    {
+      "nick": "Kael'thas",
+      "res": 0,
+      "nok": 8,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 204
+    },
+    {
+      "nick": "Башмак в клетке",
+      "res": 9,
+      "nok": 0,
+      "kills": 4,
+      "deaths": 4,
+      "dmg": 77
+    },
+    {
+      "nick": "(RU)KRIPerOK",
+      "res": 1,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 3,
+      "dmg": 78
+    },
+    {
+      "nick": "tRayQ1",
+      "res": 4,
+      "nok": 2,
+      "kills": 2,
+      "deaths": 1,
+      "dmg": 76
+    },
+    {
+      "nick": "Hampton",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 2,
+      "dmg": 137
+    },
+    {
+      "nick": "hennow",
+      "res": 1,
+      "nok": 10,
+      "kills": 5,
+      "deaths": 8,
+      "dmg": 229
+    },
+    {
+      "nick": "Gruze",
+      "res": 5,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 2,
+      "dmg": 123
+    },
+    {
+      "nick": "SpokSL",
+      "res": 1,
+      "nok": 27,
+      "kills": 21,
+      "deaths": 5,
+      "dmg": 514
+    },
+    {
+      "nick": "Батя",
+      "res": 1,
+      "nok": 1,
+      "kills": 1,
+      "deaths": 1,
+      "dmg": 25
+    },
+    {
+      "nick": "Вика2012",
+      "res": 0,
+      "nok": 28,
+      "kills": 21,
+      "deaths": 2,
+      "dmg": 1115,
+      "vehicleKills": 6
+    }
+  ],
+  "oppR2": [
+    {
+      "nick": "Regulator",
+      "res": 1,
+      "nok": 2,
+      "kills": 0,
+      "deaths": 0,
+      "dmg": 68
+    },
+    {
+      "nick": "PAUL FINCH",
+      "res": 3,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 4,
+      "dmg": 325
+    },
+    {
+      "nick": "KiRa",
+      "res": 6,
+      "nok": 11,
+      "kills": 8,
+      "deaths": 11,
+      "dmg": 296
+    },
+    {
+      "nick": "qeer",
+      "res": 2,
+      "nok": 9,
+      "kills": 6,
+      "deaths": 9,
+      "dmg": 215
+    },
+    {
+      "nick": "Liros",
+      "res": 6,
+      "nok": 2,
+      "kills": 1,
+      "deaths": 7,
+      "dmg": 101
+    },
+    {
+      "nick": "диба",
+      "res": 2,
+      "nok": 18,
+      "kills": 14,
+      "deaths": 8,
+      "dmg": 395
+    },
+    {
+      "nick": "Alexey Imperative",
+      "res": 1,
+      "nok": 5,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 268,
+      "vehicleKills": 1
+    },
+    {
+      "nick": "kur'y chai",
+      "res": 0,
+      "nok": 4,
+      "kills": 2,
+      "deaths": 8,
+      "dmg": 104
+    },
+    {
+      "nick": "Protein",
+      "res": 6,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 4,
+      "dmg": 108
+    },
+    {
+      "nick": "Grimm2074",
+      "res": 0,
+      "nok": 5,
+      "kills": 4,
+      "deaths": 5,
+      "dmg": 125
+    },
+    {
+      "nick": "SanRayz",
+      "res": 1,
+      "nok": 3,
+      "kills": 2,
+      "deaths": 9,
+      "dmg": 96
+    },
+    {
+      "nick": "Morietsu",
+      "res": 3,
+      "nok": 5,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 135
+    },
+    {
+      "nick": "G4L4S",
+      "res": 3,
+      "nok": 9,
+      "kills": 5,
+      "deaths": 11,
+      "dmg": 55
+    },
+    {
+      "nick": "Grinch",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 136
+    },
+    {
+      "nick": "SPACE PLiNe",
+      "res": 0,
+      "nok": 16,
+      "kills": 11,
+      "deaths": 2,
+      "dmg": 336
+    },
+    {
+      "nick": "andreyka",
+      "res": 0,
+      "nok": 6,
+      "kills": 3,
+      "deaths": 7,
+      "dmg": 188
+    },
+    {
+      "nick": "Delta877",
+      "res": 0,
+      "nok": 4,
+      "kills": 3,
+      "deaths": 5,
+      "dmg": 102
+    },
+    {
+      "nick": "tarasov",
+      "res": 3,
+      "nok": 10,
+      "kills": 8,
+      "deaths": 3,
+      "dmg": 226
+    },
+    {
+      "nick": "MaksMalks",
+      "res": 0,
+      "nok": 3,
+      "kills": 3,
+      "deaths": 6,
+      "dmg": 170,
+      "vehicleKills": 1
+    }
+  ]
 }
